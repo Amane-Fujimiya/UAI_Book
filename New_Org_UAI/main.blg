@@ -1,0 +1,98 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: content/introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter1.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc1.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc2.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc3.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc4.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc5.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter2.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter4.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter5.aux
+Reallocating 'name_of_file' (item size: 1) to 34 items.
+A level-1 auxiliary file: content/theory_main/chaptert1.aux
+Reallocating 'name_of_file' (item size: 1) to 34 items.
+A level-1 auxiliary file: content/theory_main/chaptert2.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/draft/c1_research.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/draft/c2_research.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Database file #1: reference1.bib
+Warning--I'm ignoring boucheron_concentration_2013's extra "doi" field
+--line 1455 of file reference1.bib
+Warning--to sort, need author or key in VeltenetalMathematicalModelling
+Warning--to sort, need author or key in noauthor_bias-variance_nodate
+Warning--to sort, need author or key in unified_bias_composition
+Warning--to sort, need author or key in noauthor_pdf_nodate-1
+Warning--to sort, need author or key in noauthor_neural_nodate
+Warning--empty year in noauthor_bias-variance_nodate
+Warning--empty year in noauthor_neural_nodate
+Warning--empty year in noauthor_pdf_nodate-1
+Warning--empty year in unified_bias_composition
+Warning--empty booktitle in Briggs2014MachineE
+Warning--empty booktitle in Cristianini2000AnIT
+Warning--empty journal in DreyfusImpasse1979
+Warning--empty year in modelcomplex_exp
+Warning--empty publisher in STL_Hajek_Maxim_2021
+Warning--empty year in GRP_Hamilton
+Warning--empty year in GRP_Hamilton
+Warning--empty title in 1180370208
+Warning--empty chapter and pages in 1180370208
+Warning--empty year in neurondoctrinemishqat
+You've used 81 entries,
+            2773 wiz_defined-function locations,
+            1120 strings with 21278 characters,
+and the built_in function-call counts, 34870 in all, are:
+= -- 3111
+> -- 1966
+< -- 53
++ -- 681
+- -- 594
+* -- 2751
+:= -- 5347
+add.period$ -- 330
+call.type$ -- 81
+change.case$ -- 429
+chr.to.int$ -- 75
+cite$ -- 186
+duplicate$ -- 1570
+empty$ -- 2934
+format.name$ -- 712
+if$ -- 7385
+int.to.chr$ -- 7
+int.to.str$ -- 1
+missing$ -- 63
+newline$ -- 495
+num.names$ -- 309
+pop$ -- 982
+preamble$ -- 1
+purify$ -- 359
+quote$ -- 0
+skip$ -- 1239
+stack$ -- 0
+substring$ -- 741
+swap$ -- 173
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 816
+warning$ -- 19
+while$ -- 268
+width$ -- 0
+write$ -- 1184
+(There were 20 warnings)

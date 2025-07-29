@@ -1,0 +1,152 @@
+\documentclass[10pt,oldfontcommands,twoside,titles,dvipsnames,a4paper]{memoir}
+\usepackage{ETbb}
+\usepackage{titlesec}
+
+\DisemulatePackage{crop}
+\usepackage[a4,center]{crop}
+%\makeatletter
+%\DeclareOption{weird}{\CROP@size{190truemm}{277truemm}}
+%\makeatother
+
+\newcommand*\smallcross{%
+\begin{picture}(0,0)
+\unitlength1cm\thinlines
+\put(-0.5,0){\line(1,0){1}}
+\put(0,-0.5){\line(0,1){1}}
+\end{picture}%
+}
+% define crop mode with four crosses, one on each corner of the page
+\cropdef\smallcross\smallcross\smallcross\smallcross{mycross}
+
+\input{setting/preamble.tex}
+\input{setting/toc.tex}
+\input{mathcommand.tex}
+%\def\labelitemi{--}
+\usepackage{epigraph}
+\setlength\epigraphwidth{.6\textwidth}
+\setlength\epigraphrule{0pt}
+\renewcommand{\epigraphflush}{flushleft}  % or 'center' or 'flushright'
+\renewcommand{\textflush}{flushleft}      % author alignment
+\newcommand{\partepigraph}[2]{%
+  \gdef\thepartepigraph{\epigraph{#1}{#2}}%
+}
+% Custom part format
+\makeatletter
+\titleformat{\part}[hang]
+  {\Huge\normalfont\sffamily\raggedright}
+  {\thepart.}{1em}
+  {}  % Apply epigraph style page
+  [\vspace{1.25cm}\@afterheading\thepartepigraph]  % <--- epigraph inserted here
+\makeatother
+
+
+
+%------------------------------------------------------------------------------------%
+%DATA ON PAGES
+
+\begin{document}
+
+%\crop[mycross]
+
+% Begin
+\clearpage
+
+\newgeometry{left=4cm, right=4cm}
+\maketitle
+\thispagestyle{empty}
+\restoregeometry
+
+\clearpage
+
+\begingroup
+\let\MakeUppercase\relax
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\renewcommand{\numberline}[1]{#1\hspace{1em}}
+%\listoftheorems
+\endgroup
+
+
+
+\frontmatter
+
+\input{content/introduction.tex}
+
+\mainmatter
+
+\input{content/chapter1.tex}
+
+\clearpage
+\partepigraph{ Everything to note of the foundation language of science.}{}
+\part{Mathematical Minimum}
+
+\input{appendix/appendix1.tex}
+
+\input{appendix/appendix1.2.tex}
+
+\input{appendix/appendix1.1.tex}
+
+\input{appendix/appendix3.tex}
+
+\input{appendix/appendix4.tex}
+
+\clearpage
+\partepigraph{ The classic of the old, the foundation of the past. What are of their uses?}{}
+\part{Classical Learning Theory}
+
+\input{content/chapter2.tex}
+
+\input{content/chapter4.tex}
+
+\input{content/chapter5.tex}
+
+%\clearpage
+%\partepigraph{The physical world where all things reside, where all phenomena are observed, and of all life and purposes, to be given meaning.}{Edmund. D. K.}
+%\part{Physics}
+%\clearpage
+%
+%\input{content/physics/physicsc1.tex}
+%
+%\input{content/physics/physicsc2.tex}
+
+
+\clearpage
+\partepigraph{Theory and theory. All those conjecture and ideas, in one single place.}{}
+\part{Modern Theory}
+\clearpage
+
+\input{content/theory_main/chaptert1.tex}
+
+\input{content/theory_main/chaptert2.tex}
+
+
+\clearpage
+\partepigraph{A man who thinks all the time, has nothing except thoughts. If we want to do something, I would rather do it in practice}{}
+\part{Research}
+
+\input{content/p_practical/c1_research.tex}
+
+\input{content/p_practical/c2_research.tex}
+
+%\input{content/p_practical/c3_research_e.tex}
+
+\backmatter
+
+\printindex
+
+\input{appendix/appendix2.tex}
+
+%\input{content/physics/physicsc2.1.tex}
+
+{
+\small
+\nocite{*}
+\bibliography{reference1}
+% modification to natbib citations
+\setcitestyle{authoryear,open={[},close={]}}
+\bibliographystyle{plainnat}
+%\setcitestyle{authoryear,round,citesep={;},aysep={,},yysep={;}}
+}
+\end{document}

@@ -1,0 +1,425 @@
+\chapter{Theoretical mechanics}
+
+\section{Introduction}
+
+\section{Calculus of variations}
+The \textit{calculus of variations} involves finding the minimum or maximum of a quantity that is expressible as an integral. To see how this can arise, we have some examples. 
+
+\subsection{The shortest path between two points}
+
+Given the two points in a plane, what is the shortest path between them? While the answer is a straight line, there are probably no proofs. Except if we can use calculus of variation. The problem is illustrated by two points, $(x_{1},y_{1})$ and $(x_{2},y_{2})$, and a path, $y=y(x)$ joining them. Our task is to find the path $y(x)$ that has the shortest length and to show that it is in fact a straight line. 
+
+The length of a short segment of the path is $ds=\sqrt{ dx^{2} +dy^{2}}$, which, since $$dy=\frac{dy}{dx}dx=y'(x)dx$$
+we can rewrite it as $$ds=\sqrt{ 1+y'(x)^{2} }dx$$
+Thus the total length of the path between points 1 and 2 is $$L=\int_{1}^{2} \, ds = \int_{x_{1}}^{x_{2}} \sqrt{ 1+y'(x)^{2} } \, dx  $$
+
+
+This equation puts our problem in mathematical form. The unknown problem now is the function $y=y(x)$ for which the integral is the minimum, which, mind you, is not 0. It is interesting to contrast this with the standard minimization problem of elementary calculus, where the unknown is the value of $x$ at which a known function $f(x)$ is a minimum. Obviously, it is much more complicated than this old one. Before solving this problem, let's consider another example. 
+
+\subsection{Fermat's Principle}
+
+A similar problem is to find the path that light will follow between two points. If the refractive index of the medium is constant, then the path is a straight line. But if it varies, or if we interpose a mirror or lens, the path is not so obvious. Fermat discovered that the required path is the path for which the time of travel of the light is minimum, $v=c/n$ where $n$ is the refractive index. Thus Fermat's principle says that the correct path between points 1 and 2 is the path for which the time: $$\sum t = \int _{1}^{2}  \, dt = \int _{1}^{2} \frac{ds}{v} = \frac{1}{c} \int _{1}^{2} n \, ds   $$
+is a minimum. If $n$ is constant, then it can be taken outside the integral and the problem reduces to finding the shortest path between points 1 and 2 (and the answer is, of course, a straight line). In general, the refractive index can very for $n=n(x,y)$, and our problem is to find the path $y(x)$ for which the integral $$\int_{1}^{2} n(x,y) \, ds = \int _{x_{1}}^{x_{2}} n(x,y)\sqrt{ 1+y'(x)^{2} } \, dx  $$
+is minimum. 
+
+The integral that has to be minimized in connection with Fermat's principle is very similar to the integral of the length of a path; it is just a little more complicated, since the factor $n(x,y)$ introduces an extra dependence on $x$ and $y$. Similar integrals arise in many other problems. Sometimes we want the path for which an integral is a \textit{maximum}, and sometimes we are interested in both maxima and minima. It is helpful to think about this, as to give some ideas, to the problem of finding maxima and minima of functions in elementary calculus. 
+
+There, we know that the necessary condition for a maximum or minimum of a function $f(x)$ is that its derivative vanish, $dq/dx=0$. Unfortunately, this condition is not quite enough to guarantee a maximum or minimum. As you certainly recall from introductory calculus, there are essentially three possibilities, as illustrated in a typical introductory course in elementary calculus. 
+
+A point $x_{0}$ where $df/dx$ is zero may be a maximum or a minimum, or if $d^{2}f/dx^{2}$ is also zero, it may be neither. When $df/dx=0$ at a point $x_{0}$ but we don't know which of the three possibility obtains, we say that $x_{0}$ is a \textbf{stationary point} of the function $f(x)$, since an infinitesimal displacement of $x$ from $x_{0}$ leaves $f(x)$ unchanged. 
+
+The method that is used to solve the shortest path problem, is actually to find the path that makes an integral like $L$ to be stationary, in the sense that infinitesimal variation of the path from its correct course doesn't change the value of the integral concerned. If you need to know that the integral is definitely minimum, you have to check this separately. Since our concern is how infinitesimal variations of a path change an integral, the subject is, as we might have seen this, \textbf{calculus of variations}. For the same reason, the methods we shall develop are called variational methods, and a principle like Fermat's is a variational principle. \index{calculus of variations}
+\subsection{The Euler-Lagrange equation}
+The two examples of the last section illustrate the general form of the so-called variational problem. We have an integral of the form $$S=\int _{x_{1}}^{x_{2}}f[y(x),y'(x),x] \, dx $$
+where $y(x)$ is an as-yet unknown curve joining $(x_{1},y_{1})$ and $(x_{2},y_{2})$, that is: $$y(x_{1})=y_{1},\quad y(x_{2})=y_{2}$$
+Among all the possible curves satisfying 6.5, that is, joining points 1 and 2, we have to find the one that makes the integral $S$ a minimum, or at least stationary. Though, as for what we want, we wish for it to be a minimum. Because the integral follows the path $y=y(x)$, the integrand is actually a function of just $x$. 
+
+Let us denote the correct solution to our problem by $y=y(x)$. Then, the integral $S$ in 6.4 evaluated for $y=y(x)$ is less than for any neighbouring curve $y=Y(x)$, as sketched in Fig 6.3. It is convenient to write the \textit{wrong} curve $Y(x)$ as $$Y(x)=y(x)+\eta(x)$$
+is the difference between the wrong $Y(x)$ and the right $y(x)$. Since $Y(x)$ must pass through the endpoints 1 and 2, $\eta(x)$ must satisfy $$\eta(x_{1})=\eta(x_{2})=0\quad (6.7)$$
+There are infinitely many choices for the difference $\eta(x)$: for example, we could choose $\eta=(x-x_{1})(x_{2}-x)$ or some form as $\eta(x)=\sin{[\pi(x-x_{1})/(x_{2}-x_{1})]}$. The integral $S$ taken along the wrong curve $Y(x)$ must be larger than that along the right curve, no matter how close the former is to the latter. To express this requirement, we shall introduce a parameter $\alpha$ and redefine $Y(x)$ to be $$Y(x)=y(x)+\alpha \eta(x)$$
+The integral taken along the curve $Y(x)$ now depends on the parameter $\alpha$. We then call the integral for such as $S(\alpha)$. The right curve $y(x)$ is obtained by $\alpha=0$. Thus the requirement that $S$ is minimum implies that $S(\alpha)$ is minimum at $\alpha=0$. With this, we converted our problem from elementary calculus of making sure that an ordinary function has a minimum at a specified point. If we write out the integral $S(\alpha)$ in detail, it looks like: $$S(\alpha)=\int _{x_{1}}^{x_{2}} f(Y,Y',x) \, dx = \int _{x_{1}}^{x_{2}} f(y+\alpha \eta, y'+\alpha \eta', x) \, dx  $$
+To differentiate this with respect to $\alpha$, we note that $\alpha$ appears in the integrand $f$, so we need $\partial f/\partial \alpha$. Since $\alpha$ appears in two of the arguments of $f$, this gives two terms, namely: $$\frac{\partial f(y+\alpha \eta,y'+\alpha \eta',x)}{\partial \alpha}=\frac{\eta (\partial f)}{\partial y}+ \eta' \frac{\partial f}{\partial y'}$$
+and for $dS/d\alpha$, which has to be zero, then $$\frac{dS}{d\alpha}=\int _{x_{1}}^{x_{2}} \frac{\partial f}{\partial \alpha} \, dx = \int _{x_{1}}^{x_{2}} \left( \frac{\eta (\partial f)}{\partial y} + \eta' \frac{\partial f}{\partial y'} \right)\: dx = 0$$
+This condition must be true for any $\eta(x)$ satisfying (6.7), that is, for any choice of the wrong path. We can rewrite the second term on the right using integration by parts, which gives us: $$\int _{x_{1}}^{x_{2}} \eta'(x) \frac{\partial f}{\partial y'} \, dx = \left[ \eta(x) \frac{\partial f}{\partial y'} \right] - \int _{x_{1}}^{x_{2}}\eta(x) \frac{d}{dx}\left( \frac{\partial f}{\partial y'} \right) \, dx $$
+Because of the condition in (6.7), the first term on the right is zero, hence we can remove them all. Thus, $$\int _{x_{1}}^{x_{2}} \eta'(x) \frac{\partial f}{\partial y'} \, dx =  - \int _{x_{1}}^{x_{2}}\eta(x) \frac{d}{dx}\left( \frac{\partial f}{\partial y'} \right) \, dx $$
+Substituting this into the equation above, we get $$\int _{x_{1}}^{x_{2}} \eta(x) \left( \frac{\partial f}{\partial y} - \frac{d}{dx} \frac{\partial f}{\partial y'} \right) \, dx = 0 $$
+This condition must be satisfied for any choice of the function $\eta(x)$. Therefore, the factor in the large parentheses must be zero, that is: $$\frac{\partial f}{\partial y}- \frac{d}{dx} \frac{\partial f}{\partial y'} = 0$$
+
+This is called the \textbf{Euler-Lagrange equation}\index{Euler-Lagrange equation}, for all $x$ in the interval $[x_{1},x_{2}]$. This equation of Leonhard Euler and Joseph Lagrange lets us find the path for which the integral $S$ is stationary. However, before that, we need to argue why we can say that the factor in the large parentheses must be zero. 
+
+Our above equation has the form \begin{equation}
+    \int \eta(x)g(x) \, dx = 0
+\end{equation}
+
+It would be not so nice to claim that this condition alone implies that $g(x)=0$ for all $x$. However, it needs to hold for all choice of $\eta(x)$, no matter how much it can be, and if the above integral is true for \textit{any} $\eta(x)$, then we can conclude that the only actionable factor here is that $g(x)=\alpha=0$. To prove this, we must assume that all functions concerned are continuous. Now, to prove this, let us assume the contrary that $g(x)\neq 0$ in some interval between $x_{1}$ and $x_{2}$. Then, choose a function $\eta(x)$ that has the same sign as $g(x)$, that is, positive when $g(x)$ is, and negative when $g(x)$ be. Then the integrand is continuous, satisfies $\eta(x)g(x)\geq 0$, and is non-zero in at least some interval. Under these conditions, the integral \textit{cannot be zero}, which implies there exists no minimal path. This contradiction implies that $g(x)$ is zero for all $x$. This completes the proof of the Euler-Lagrange equation. 
+
+\subsection{More than two variables}
+
+So far we have considered only problems with just two variables, the independent variable (usually $x$) and the dependent (usually $y$). For most applications in mechanics, we shall find that there are several dependent variables, though through parameterization, there can be a singular independent variable, like $t$. For a simple example where there are two dependent variables, we can go back to the problem of the shortest path between two points. When we found the shortest path between two points 1 and 2, we assumed that the required path could be written in the form $y=y(x)$. Reasonable as this seems, it is easy to think of paths that cannot be written in this way, such as this:
+
+If we want to be perfectly sure we have found the shortest path among \textit{all possible paths}, we must find a method that includes these. The way to do this is to write the path in parametric form as: $$x=x(u)\quad y=y(u)$$
+where $u$ is any convenient variable in terms of which the curve can be parameterized. The parametric form includes all the curves considered before. The length of a small segment of the path is then: 
+$$ds=\sqrt{ dx^{2}+ dy^{2} }=\sqrt{ x'(u)^{2}+ y'(u)^{2} }\: du$$
+
+Thus, the total path length is: $$L=\int _{u_{1}}^{u_{2}} \sqrt{ x'(u)^{2}+y'(u)^{2} } \, du $$
+and our job is to find the two functions $x(u)$ and $y(u)$ that the integral is minimum. for now, the problem is more complicated than before, because there are now two unknown function $x(u)$ and $y(u)$. The general problem of this type is this: Given an integral of the form $$S=\int _{u_{1}}^{u_{2}} f[x(u),y(u),x'(u),y'(u),u] \, du $$
+
+between two fixed points $[x(u_{1}),y(u_{1})]$ and $[x(u_{2}),y(u_{2})]$, to find the path $[x(u),y(u)]$ for which the integral $S$ is stationary. The solution to this problem is very similar to the one-variable case, and we will perhaps analyse it for now. The upshot is that with two dependent variables, we get two Euler-Lagrange equations. To prove this, we proceed very much as before. Let the correct path given by $$x=x(u)\quad y=y(u)$$
+
+and then consider a neighbouring "wrong" path of the form 
+$$x= x(u)+\alpha \xi(u)\quad y + y(u)+\beta \eta(u)$$
+
+The requirement that the integral $S$ be stationary for the right path is equivalent to the requirement that the integral $S(\alpha,\beta)$ satisfies $$\frac{\partial S}{\partial \alpha}=0\quad \frac{\partial S}{\partial \beta}=0\quad \alpha=\beta=0$$
+
+The Euler-Lagrange is hence: $$\frac{\partial f}{\partial x} = \frac{d}{du} \frac{\partial f}{\partial x'}\quad \quad \frac{\partial f}{\partial y}=\frac{d}{du} \frac{\partial f}{\partial y'}$$
+
+A more generalized formulation will give you the notion of \textbf{generalized coordinates} and its configuration space. 
+
+\subsection{Generalize formalism}
+
+The independent variable in Lagrangian mechanics is the \textit{time} $t$. The dependent variables are coordinates that specify positions, or \textit{configuration} of a system, denoted by $q_{1},\dots,q_{n}$. The number $n$ of coordinates depends on the nature of the system. For a single particle moving unconstrained in three dimensions then $n=3$. Not that we say about \textbf{unconstrained system}, the 'free' configuration of the system in a constrained system is smaller, as well will see. The name \textbf{generalized coordinates} is inherently because, well, there are simply too many things about it that can specify the variables. 
+
+The \textbf{goal} of Lagrangian mechanics is to find how coordinates vary with time, or to find the $n$ functions $q_{1}(t),\dots,q_{n}(t)$. This is specified from Newton's law, yes, but also equivalent to the expression of Newton's law. Sometimes, it is even easier. The integral $S$ whose stationary value determines the evolution of the system is called the \textit{action integral}. Its integrand is called the \textbf{Lagrangian} $\mathcal{L}$ and depends on the $n$ coordinates, their derivatives, and $t$: $$\mathcal{L}=\mathcal{L}(q_{1},\dot{q_{1}},\dots,q_{n},\dot{q_{n}}, t)$$
+Notice that since the independent variable is $t$, the derivative is denoted by the $\dot{q}$ notation. The requirement for the integral $S$: $$S=\int _{t_{1}}^{t_{2}} \mathcal{L}(q_{1},\dot{q_{1}},\dots,q_{n},\dot{q_{n}},t) \, dx $$
+to be stationary implies $n$ Euler-Lagrange equations: 
+\begin{equation}
+  \frac{\partial \mathcal{L}}{\partial q_{1}}=\frac{d}{dt} \frac{\partial \mathcal{L}}{\dot{\partial}q_{1}},\quad \dots \quad , \frac{\partial \mathcal{L}}{\partial q_{n}}= \frac{d}{dt} \frac{\partial \mathcal{L}}{\dot{\partial}q_{n}}
+\end{equation}
+
+\section{Lagrangian mechanics}
+The Lagrangian of classical mechanics depends on several notions. From the get-go, maybe this is realizable because we have been building up the calculus of variation technique. However, we are missing one final tool in the shed. So before that, we will have to find it. 
+\subsection{Degree of freedom}
+The number of degrees of freedom determines how many generalized coordinates are in Lagrangian mechanics. Usually, the good way to calculate them is as followed. Note that even though the procedure looks easy, there are many times that you would have a hard time applying it. Also, there is this principle: If you cannot find the constraints, then give up and get the degree of freedom as it is. 
+
+Defining the dimension of the configuration space as the \textbf{degrees of freedom}, we then: 
+
+\begin{enumerate}[topsep=1.25pt,itemsep=1pt]
+  \item  Determine the number of coordinate components (Cartesian, polar, spherical, etc.) for each component of the dynamical system (for example, the double pendulum is then the two masses). This is denoted by $kN$, where $k$ is the component of the coordinate system, and $N$ is the amount of objects. 
+  \item Determine the constraint of the system, or the relational quantities - for example, the length of the stick between the two pendulum. This is denoted by $m$.
+  \item Calculate the degrees of freedom - the freely movable and dynamical part, as $n = kN - m$.
+\end{enumerate}
+
+By such, we can get a somewhat perfect representation of the degree of freedom of a system. This will ultimately justify the numbering of Lagrangian generalized coordinate, and this is also what and why we need the generalized coordinate consideration. 
+
+\subsection{Lagrangian formalism}
+
+For a system, there exists its \textbf{phase space}\index{phase space}, or the space of all possible configuration state that the system can be at a given time or incident. For example, the uniform circular motion will have the phase space as exactly the circle - as its evolution in time is subjected to position on the circle of radius $r$. By this, we can classify system based on how the phase space varies with time. If the phase space stays the same throughout its evolution in time, then we say the system is \textbf{conservative}. Else, if the system's phase space varies with time, then we call it \textbf{nonconservative}; in more detailed terms, we have \textbf{dissipative system} \index{dissipative system} for system with reduced phase space, and \textbf{expanding system}\index{expanding system} for system with its phase space increased. 
+
+Newtonian mechanics is fully sufficient practically for interpreting and analysing mechanical system and behaviours. Indeed, sometimes with all the laws and $\vec{F}=m\vec{a}$, it is enough to specifies all the evolution and factors of the system. However, with increasingly complex system, Newtonian formalism becomes much more difficult to work on, as its basis of specifying forces and additives of system's components together. Instead, it is desirable to find a way to obtain equations of motion from some scalar generating function, or rather, some inherent qualities that encode information about the system into itself, and can be used to defer to the equation of motion, which is, of importance is the evolutionary law of any given system based on mechanics. For conservative systems, the complete information about the system is contained in the total energy: 
+$$
+E= E_{k} + U
+$$
+This is expressed by a function of coordinates and velocities, or angles and their time derivatives for some system considered above. However, using this, there is no way to obtain equations of motion from the energy function directly. This can be deferred to the loss of information in the reversing direction, for the given mathematical realization of the physical system backward. It turns out, however, that the generating function of equations of motion is the quantity called \textbf{the Lagrangian} (or \textit{Lagrange function}), taken in the form 
+$$
+\mathcal{L} = E_{k} - U = T- U
+$$
+The Lagrange formalism is build upon the so-called \textbf{Least-Action principle}, also called the \textbf{Hamiltonian principle}. According to this principle, that can be put into the foundation of mechanics, the actual dynamics of the system, that is, the actual time dependence of its \textit{generalized coordinates} $\{q_{i}(t)\}$ minimize the action on the way from state 1 to state 2, that is the action path that the system choose will always be the minimal path, such that 
+$$
+\mathcal{S} = \int_{t_1}^{t_2} \mathcal{L}(q(t),\dot{q}(t),t) \: dt , \quad q\equiv \{q_{i}\}
+$$
+is minimum, hence must satisfy the Euler-Lagrange equation. One of such is the shortest path problem we have encountered in our example of the calculus of variation. Up to now, want can then ask about the reason why Lagrangian mechanics depends on the Hamiltonian principle (or why it is formulated as such). If we are to see the Lagrangian $\mathcal{L}$ as a somewhat energy functional of the system, then we can then interpret the integral $\mathcal{S}$ as the total effect of such energy function has on the given system, assuming that all information has been proxied by the energy functional of Lagrangian. Then, Hamiltonian's principle only states that the path that they take - or the real world takes, will be the one where the action is the least possible. This might not be clear for now, and surely it is for me, but perhaps it can be there to be dedicated in another post. 
+
+Some properties we can cite for the Lagrangian can be then conducted, which will be helpful in formalising the consequences of the Lagrangian formulation. First, the Lagrangian is independent of space and time. That is, the Lagrangian at this position, and at that position, as long as it is the same system, will not change. And secondly, it also does not depend on the direction of the system. This is all because we are indeed, still treating the Lagrangian in an \textbf{inertial reference frame}. Intrinsic of the Lagrangian, on the other hand, includes the property of a \textbf{stationary point} - subtle variations of the system won't change the Lagrangian by much of its least action; and secondly, it possesses the linearity property, that is, $\mathcal{L}=\mathcal{L}_{1}+\mathcal{L}_{2}$, for all Lagrangians of interest. We will see how this is done in the latter sections. 
+
+\subsection{Lagrangian of free mass (unconstrained motion)}
+
+Consider a particle moving unconstrained in three dimensions. They are not subjected to anything (short of a potential). Then, the Lagrangian $\mathcal{L}$ can be said to only be determined on the kinetic energy $T$ of the particle. That is, $\mathcal{L}=T$. So, how do we solve this particular problem? 
+
+We will begin this section with an alternative approach to forming the Lagrangian in this case. Hopefully, it still comes around to the above formation, just a bit not so out-of-context derivation as it is. Because the Lagrangian depends on the kinetic energy, apparently, it means it, \textit{perhaps} depends on the velocity of the particle. But we remember that the Lagrangian is equivalent for all direction - which makes the velocity being independent of the Lagrangian. Except for the magnitude. We then can say that the Lagrangian depends on $v^{2}$, of the squared magnitude of the velocity. That is, $\mathcal{L}(v^2)$. This dependency can then be expressed as 
+$$
+\mathcal{L}(v^{2}) = av^2
+$$
+where $a$ is an arbitrary constant. If we based off ourselves with the Galilee transformation, this choice also makes sense, because with this choice, the transformation of the Lagrangian from an inertial frame to another inertial frame, it will stay the same or at least with very small deviation (I will write about this later, please). 
+
+For $a$, usually, we take it as $m/2$. It is also pretty evidential, somewhat, because we said that it only have kinetic energy. Then the Lagrangian is formulated by: 
+$$
+\mathcal{L} = T = \frac{1}{2}m \dot{\vec{r}}^{2} = \frac{1}{2} m (\dot{x}^2 + \dot{y}^{2}+ \dot{z}^{2})
+$$
+for a 3-dimensional system in the Cartesian coordinates. If we only take the foremost expression, and apply it to the Euler-Lagrange equation, it gives 
+$$
+\frac{d}{dt} m\vec{v} = 0
+$$
+which is indeed $m\vec{a}=0$. This fits the description of a free particle in an inertial frame. For spherical coordinate, you can express it as: 
+$$
+\mathcal{L} = \frac{m}{2} (\dot{r}^{2} + r^2 \dot{\varphi}^{2} + \dot{z}^{2})
+$$
+And in the spherical coordinate: 
+$$
+\mathcal{L} = \frac{m}{2} (\dot{r}^{2} + r^2 \dot{\theta}^{2} + r^2 \sin{\theta}^{2}\varphi^{2})
+$$
+If you get it a potential $U(r)$, the Lagrangian will only change by (given the Cartesian coordinates): 
+$$
+\mathcal{L} = \frac{1}{2} m (\dot{x}^2 + \dot{y}^{2}+ \dot{z}^{2}) + U(x,y,z)
+$$
+In general, it holds for all generalized coordinates. 
+
+
+\subsection{Multiple particles in actions}
+For an interacting system of multiple particles, we can then get the expression to be enumerated: 
+\begin{equation}
+  \mathcal{L} = \sum_{i=1}^{n} \frac{1}{2}m_{i} v_{i}^{2} - U(x_1, y_1, z_1, \dots , x_n, y_n, z_n)
+\end{equation}
+As usual, the force on the two particles are $F_{i}=-\nabla_{i}U$. Newton's second law then can be applied to each particle and yields the equations of momentum and force using the Euler-Lagrange equation: 
+\begin{equation}
+  \frac{\partial \mathcal{L}}{\partial q_{1}}=\frac{d}{dt} \frac{\partial \mathcal{L}}{\dot{\partial}q_{1}},\quad \dots \quad , \frac{\partial \mathcal{L}}{\partial q_{n}}= \frac{d}{dt} \frac{\partial \mathcal{L}}{\dot{\partial}q_{n}}
+\end{equation}
+which is equivalent to, for each particle present in the system (we currently assume the Cartesian reference frame),
+\begin{equation}
+  m_{i} \frac{d}{dt} \mathbf{v}_{i} = \frac{\partial U}{\partial x}, m_{i} \frac{d}{dt} \mathbf{v}_{i} = \frac{\partial U}{\partial y}, m_{i} \frac{d}{dt} \mathbf{v}_{i} = \frac{\partial U}{\partial z}
+\end{equation}
+which are just also variations of Newton's second law $F_{i}=m\ddot{x}=\dot{p}_{i}$. This then is repeated for all particles. 
+
+These equations then imply that the integral \begin{equation}
+  S=\int_{t_{1}}^{t_{2}} \mathcal{L}\: dt 
+\end{equation}
+is stationary. Also notice that we have to get $\vec{v}$ instead because the magnitude squared is cancelled out. It is also interestingly, the Lagrangian derivation form of the Newton's second law for multi-particle interactions of a system. If we do not wish to use Cartesian, then we can go for any generalized coordinate system, and the result will still hold, no matter the case for the generalized coordinates. Though often this is preferably not included as a proof, we would try to tackle on this for our own, most likely in the setting of multiple particles in free actions. Note that our formulation is conducted in the \textbf{inertial reference frame}. 
+
+For a generalized coordinate system, then, we can use a trick of which we express the generalized system into the Cartesian frame. That is, for particle $a$, then
+\begin{equation}
+  x_{a} = f_{a} (q_1 , q_2 , \dots, q_{S}), \quad \dot{x}_{a} = \sum_{k} \frac{\partial f_{a}}{\partial q_k}
+\end{equation}
+where $f_{a}$ is the respective transformation that gives the expression for $x_{a}$ from the generalized coordinate. Do this for all the axis $(x,y,z)$, for $f_{ax}, f_{ay}, f_{az}$. Recall the Lagrangian in Cartesian coordinate, then we have: 
+\begin{equation}
+    \begin{split}
+  \mathcal{L} & = \frac{1}{2} \sum^{n}_{i=1} m_{i} (\dot{x_{i}}^{2}+ \dot{y_{i}}^{2} + \dot{z_{i}}^{2}) - U(q_{1},\dots,q_{S})\\ 
+  & = \frac{1}{2}  \sum_{i=1}^{n} m_{i} \left[  \left(\sum_{k}\frac{\partial f_{ix}}{\partial q_{k}} \dot{q}_{k}\right)^{2} + \left(\sum_{k}\frac{\partial f_{iy}}{\partial q_{k}} \dot{q}_{k}\right)^{2} + \left(\sum_{k}\frac{\partial f_{iz}}{\partial q_{k}} \dot{q}_{k} \right)^{2} \right] - U(q_{1},\dots,q_{S})\\
+\end{split}
+\end{equation}
+Now, set each of the inner sum component as: 
+$$
+\frac{\partial f_{ix}}{\partial q_{k}} \dot{q}_{k} = a_{ik}, \quad \frac{\partial f_{iy}}{\partial q_{k}}\dot{q}_{k}  = b_{ik} ,\quad \frac{\partial f_{iz}}{\partial q_{k}}\dot{q}_{k}  = c_{ik}
+$$
+We reduce the sum to: 
+\begin{align}
+\mathcal{L} &= \frac{1}{2} \sum_{i=1}^{n} m_{i} \left[ 
+\left( \sum_{k} a_{ik} \right)^{2} + 
+\left( \sum_{k} b_{ik} \right)^{2} + 
+\left( \sum_{k} c_{ik} \right)^{2} 
+\right] - U(q_{1},\dots,q_{S}) \nonumber \\
+&= \frac{1}{2} \sum_{i=1}^{n} m_{i} \left[
+\sum_{k} a_{ik}^{2} + 
+\sum_{k} b_{ik}^{2} + 
+\sum_{k} c_{ik}^{2} + 
+2\sum_{k<j} a_{ik} a_{ij} + 
+2\sum_{k<j} b_{ik} b_{ij} + 
+2\sum_{k<j} c_{ik} c_{ij} 
+\right] \nonumber \\
+&\quad - U(q_{1},\dots,q_{S})
+\end{align}
+Up to this point, you can then realize that we can substitute back the terms $a_{ik},b_{ik},c_{ik}$ inside. Then, we have the following expansion: 
+\begin{align}
+ & \sum_{k} a_{ik}^{2} = \sum_{k} \left( \frac{\partial f_{ix}}{\partial q_{k}} \right)^{2} \dot{q}_{k}^{2} \\
+ & \sum_{k} b_{ik}^{2} = \sum_{k} \left( \frac{\partial f_{iy}}{\partial q_{k}} \right)^{2} \dot{q}_{k}^{2} \\
+ &\sum_{k} c_{ik}^{2} = \sum_{k} \left( \frac{\partial f_{iz}}{\partial q_{k}} \right)^{2} \dot{q}_{k}^{2} \\
+ & \sum_{k<j} a_{ik}a_{ij} = \sum_{k<j} \left( \frac{\partial f_{ix}}{\partial q_{k}} \right)\left( \frac{\partial f_{ix}}{\partial q_{j}} \right) \dot{q}_{k} \dot{q}_{j}\\
+ & \sum_{k<j} b_{ik}b_{ij} = \sum_{k<j} \left( \frac{\partial f_{iy}}{\partial q_{k}} \right)\left( \frac{\partial f_{iy}}{\partial q_{j}} \right) \dot{q}_{k} \dot{q}_{j}\\
+ & \sum_{k<j} c_{ik}c_{ij} = \sum_{k<j} \left( \frac{\partial f_{iz}}{\partial q_{k}} \right)\left( \frac{\partial f_{iz}}{\partial q_{j}} \right) \dot{q}_{k} \dot{q}_{j}\\
+\end{align}
+Substitute all of this into the tray, well..., for the kinetic energy $T$ of the Lagrangian, we have: 
+\begin{align}
+T 
+&= \frac{1}{2} \sum_{i=1}^{n} m_{i} \left( \dot{x}_{i}^{2} + \dot{y}_{i}^{2} + \dot{z}_{i}^{2} \right) \nonumber \\
+&= \frac{1}{2} \sum_{i=1}^{n} m_i \Biggl[
+  \sum_{k} \left(
+    \left( \frac{\partial f_{ix}}{\partial q_k} \right)^2
+    + \left( \frac{\partial f_{iy}}{\partial q_k} \right)^2
+    + \left( \frac{\partial f_{iz}}{\partial q_k} \right)^2
+  \right) \dot{q}_k^2 \nonumber \\
+&\qquad\qquad + 2 \sum_{k < j} \left(
+    \frac{\partial f_{ix}}{\partial q_k} \frac{\partial f_{ix}}{\partial q_j}
+    + \frac{\partial f_{iy}}{\partial q_k} \frac{\partial f_{iy}}{\partial q_j}
+    + \frac{\partial f_{iz}}{\partial q_k} \frac{\partial f_{iz}}{\partial q_j}
+  \right) \dot{q}_k \dot{q}_j
+\Biggr]
+\end{align}
+Realize that you have two types of term, the diagonal terms where $k=j$ (since it is a square, so two repeated terms), and the non-diagonal terms, we can then group them together into a sum, that is: 
+\begin{equation}
+    T = \frac{1}{2}\sum_{k=1}^s\sum_{j=1}^s
+\sum_{i=1}^n m_i
+       \left(
+         \frac{\partial f_{ix}}{\partial q_k}\frac{\partial f_{ix}}{\partial q_j}
+        +\frac{\partial f_{iy}}{\partial q_k}\frac{\partial f_{iy}}{\partial q_j}
+        +\frac{\partial f_{iz}}{\partial q_k}\frac{\partial f_{iz}}{\partial q_j}
+       \right)
+     \dot q_k\,\dot q_j
+\end{equation}
+Now, we can simplify this form of the kinetic energy by considering a definite \textbf{metric} for the system. This is perhaps quite outlandish, suddenly, but simply speaking, now we are considering the metric space in which our particles, our system will operate. hence, consequentially, metric in this form will give us the relevant positional information, and the contributive mass of each particle subsequently. You can think about it as the contributing velocity, positional, and mass configuration of the system, in the generalized coordinate. You can reference this back to the original Cartesian/Descartes coordinate, though. Then, denote by $a_{jk}(q)$, we can set it as: 
+$$
+a_{jk} (q) = \sum_{i=1}^n m_i
+       \left(
+         \frac{\partial f_{ix}}{\partial q_k}\frac{\partial f_{ix}}{\partial q_j}
+        +\frac{\partial f_{iy}}{\partial q_k}\frac{\partial f_{iy}}{\partial q_j}
+        +\frac{\partial f_{iz}}{\partial q_k}\frac{\partial f_{iz}}{\partial q_j}
+       \right)
+$$
+and we call this the supposed \textbf{Lagrangian metric} for a multi-particle system. The system then is reduced to: 
+$$
+\mathcal{L} = \frac{1}{2}\sum_{k=1}^s\sum_{j=1}^s a_{kj}(q)\,\dot q_k\,\dot q_j -U(q_{1},\dots,q_{S}) = \frac{1}{2}\sum_{k,j}^s a_{kj}(q)\,\dot q_k\,\dot q_j -U(q_{1},\dots,q_{S})
+$$
+
+Which concludes our form of the Lagrangian. Under this form, however, also note that for a dynamical system of many particles, now $U$ might, in circumstances, depends on time. 
+\section{Lagrangian on constrained system}
+It is arguably then, one of the greatest strength of Lagrangian approach, is that it can handle systems that are constrained so that they cannot move arbitrarily in the space that they occupy. This is most illustrated in the example of the \textit{plane pendulum}, or the more difficult variation called the \textit{double plane pendulum}. Working this out, it is perhaps then our interest to investigate those systems in earnest, to see the way or, \textit{how long of an expression} can Newtonian formalism makes instead of Lagrangian. 
+
+\subsection{An example}
+We then give the very, perhaps nominally famous example of the pendulum and double pendulum. The double pendulum consists of two masses $m_{1}$ and $m_{2}$, connected by rigid weightless rods of length $l_{1}$ and $l_{2}$, subject to gravity forces, and constrained by the hinges in the rods to move in a plane. We choose a coordinate system with the origin at the top suspension point, the $x$-axis as a horizontal axis in the plane of motion, and the $y$-axis pointing down (so that gravity forces have positive components). The single plane pendulum, a simpler case, has a single particle hanging from a rigid rod, hence the component $m,l$. 
+
+For the \textit{constraints}, in the simple pendulum system, we have a single particle with position vector $\mathbf{r}=(x,y,z)$. There are two constraints present: oscillation in the $(x,y)$-plane, and it is always at a fixed distance from the suspension point. Mathematically, 
+\begin{equation}
+  z=0, \quad \lvert \mathbf{r} \rvert = l
+\end{equation}
+
+Usually, we would not consider the suspension point to be specified of coordinate. However, in certain setting like \textit{plane pendulum with moving support} (or suspension), then it is then detrimental to at least specify the direction of free motion of the suspension part. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.4\textwidth]{img/expreise.png}
+  \caption{Diagram of a single pendulum with a single mass $m$ and a rod of length $\ell$ connecting it.}
+  \label{fig:pendulum1}
+\end{figure}
+
+The double pendulum, on the other hand, has two particles for $N=2$, with position vectors $\mathbf{r}_{1},\mathbf{r}_{2}$ each with components $(x_i,y_i,z_i)$. There are four constraints, up from two: each particle moving in the $(x,y)$-plane, and each rod having constant lengths. These constraints can be expressed as: 
+\begin{align}
+  z_{1} & = 0 \\
+  z_{2} & = 0\\
+  \lvert \mathbf{r}_{1}\rvert &= l_{1}\\
+  \lvert \mathbf{r}_{2} - \mathbf{r}_{1} \rvert &= l_{2}
+\end{align}
+These constraints are \textit{holonomic} \index{holonomic}, that is, constraints that are only algebraic relationships between the coordinates, and do not involve any "moving part" as derivative or inequalities. This is presented in the diagram of Figure~\ref{fig:pendulum1}.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.4\textwidth]{img/doublependulum.png}
+  \caption{Diagram of a double pendulum with two masses: $m_{1}$ and $m_2$, with their respective $\ell_{1}$ connecting the origin to $m_1$, and $\ell_{2}$ connecting $m_1$ to $m_2$.}
+  \label{fig:pendulum2}
+\end{figure}
+
+In the single pendulum case, we only have \textit{one particle}, hence $N=1$, hence three component coordinates of $3N=3$. Since we now have two constraints, so $m=2$, we are left with $n=3N-m=1$, only one generalized coordinate. This is the angular position of the pendulum $\theta$, which we then can write the position vector as 
+\begin{equation}
+  \mathbf{r} = l\cdot (\sin{\theta}, \cos{\theta},0)
+\end{equation} 
+To not be confused, here instead of writing the entire expression, each one for $x,y,z$, we denote the entire $(\sin{\theta}, \cos{\theta},0)$ as a unit vector of such positional coordinate. Later on, kinematic and force analysis on the system of our plane pendulums can also remove $0$, since it does not matter either way.  Now, for the double pendulum again, we know that there should be only two generalized coordinates, sine there are $3N=6$ coordinates. By the number of constraints being 4, so $3N-m=2$ generalized coordinate. This is analogous to the two angular positions $\theta_{1},\theta_{2}$, which can express $\mathbf{r}_{1},\mathbf{r}_{2}$ as 
+\begin{align}
+  \mathbf{r}_{1} & = l_{1} (\sin{\theta_{1}}, \cos{\theta_{1}},0)\\
+  \mathbf{r}_{2} & = \mathbf{r}_{1} + l_{2} (\sin{\theta_{2}}, \cos{\theta_{2}},0)
+\end{align}
+With this, we can analyse two components that specify the equation of motion later on - the \textit{kinematic} and the \textit{force} of the system. 
+\subsubsection{Kinematic}
+For the singular pendulum, we can express velocity and acceleration vectors in terms of generalized coordinate as
+\begin{align}
+  \mathbf{r} & = l(\sin{\theta},\cos{\theta},0) \\
+  \dot{\mathbf{r}} = \mathbf{v} & = l\dot{\theta}(\cos{\theta},-\sin{\theta}) \\
+  \ddot{\mathbf{r}}= \mathbf{a} & = l\ddot{\theta} (\cos{\theta},-\sin{\theta}) - l \dot{\theta}^{2} (\sin{\theta},\cos{\theta}) = l \ddot{\theta} \hat{\mathbf{v}} - l \dot{\theta}^{2} \hat{\mathbf{r}}
+\end{align}
+for the two unit vectors. The velocity vector $\mathbf{v}$ is perpendicular to the position vector $\mathbf{r}$, which is the expression of the constraint $\lvert \mathbf{r}\rvert = l = \mathrm{const}$. For the acceleration, there is the tangential and the centripetal acceleration terms, proportional to the velocity and to the inverted radial directions, respectively. For the double pendulum, we derive the same expressions for the first particle, albeit now it is a bit messier. 
+
+\begin{align}
+    \mathbf{r}_1 &= l_1 (\sin \theta_1, \cos \theta_1) \\
+    \dot{\mathbf{r}}_1 = \mathbf{v}_1 &= l_1 \dot{\theta}_1 (\cos \theta_1, -\sin \theta_1) \\
+    \ddot{\mathbf{r}}_1 = \mathbf{a}_1 &= l_1 \ddot{\theta}_1 (\cos \theta_1, -\sin \theta_1) 
+        - l_1 \dot{\theta}_1^2 (\sin \theta_1, \cos \theta_1) \\
+        &= l_1 \ddot{\theta}_1 \hat{\mathbf{v}}_1 - l_1 \dot{\theta}_1^2 \hat{\mathbf{r}}_1
+\end{align}
+and the second particle as:
+\begin{align}
+    \mathbf{r}_2 &= \mathbf{r}_1 + l_2 (\sin \theta_2, \cos \theta_2) \\
+    \dot{\mathbf{r}}_2 = \mathbf{v}_2 &= \mathbf{v}_1 + l_2 \dot{\theta}_2 (\cos \theta_2, -\sin \theta_2) \\
+    \ddot{\mathbf{r}}_2 = \mathbf{a}_2 &= \mathbf{a}_1 + l_2 \ddot{\theta}_2 (\cos \theta_2, -\sin \theta_2) 
+        - l_2 \dot{\theta}_2^2 (\sin \theta_2, \cos \theta_2)
+\end{align}
+From here, we can already see the expression is very long. Combine them with forces, and we would have a lot of trouble managing all the terms - for the single simple problem. 
+
+\subsubsection{Forces}
+In the single pendulum case, the forces on the particle are gravity and tension. Gravity is along the $y$-direction, or the direction of the gravitational acceleration $\mathbf{g}$, and the tension is pointing towards the origin, along the direction of $-\mathbf{r}$: 
+\begin{equation}
+  \mathbf{F} = T \frac{-\mathbf{r}}{\lvert \mathbf{r}\rvert} + m \mathbf{g} = \frac{T}{l} \mathbf{r} + m \mathbf{g}
+\end{equation}
+In the double pendulum, the forces on $m_{1}$ are the tension in the two rods, and gravity. The tension in the upper rod is along the direction $-\mathbf{r}_{1}$, the tension force on $m_{1}$ due to the lower rod is along the direction $\mathbf{r}_{2}-\mathbf{r}_{1}$, so we can write the force $\mathbf{F}_{1}$ as
+\begin{equation}
+  \begin{split}
+    \mathbf{F}_{1} &= T_{1} \frac{-\mathbf{r}_{1}}{\lvert \mathbf{r}_{1}\rvert} + T_{2} \frac{\mathbf{r}_{2}-\mathbf{r}_{1}}{\lvert \mathbf{r}_{2}-\mathbf{r}_{1}\rvert} + m_{1}\mathbf{g} \\
+    & = \frac{T_{1}}{l_{1}} \mathbf{r}_{1} + \frac{T_{2}}{l_{2}} (\mathbf{r}_{2}-\mathbf{r}_{1}) + m_{1}\mathbf{g}
+  \end{split}
+\end{equation}
+
+The forces on $m_{2}$ includes the tension in the lower rod and gravity, with the tension on $m_{2}$ being along the direction of $-(\mathbf{r}_{2}-\mathbf{r}_{1})$: 
+\begin{equation}
+  \mathbf{F} = T_{2} \frac{-(\mathbf{r}_{2}-\mathbf{r}_{1})}{\lvert \mathbf{r}_{2}-\mathbf{r}_{1}\rvert} + m_{2}\mathbf{g} = \frac{T_{2}}{l_{2}} (\mathbf{r}_{2}-\mathbf{r}_{1}) + m_{2}\mathbf{g}
+\end{equation}
+
+\subsubsection{Newtonian analysis}
+In the \textbf{single pendulum case}, Newton's law is $\mathbf{F}=m\ddot{\mathbf{r}}$. Writing the two non-trivial components, we have: 
+\begin{equation}
+  m\ddot{\mathbf{r}} = F = -\frac{T}{l}\mathbf{r} + m\mathbf{g}
+\end{equation}
+This is expanded to
+\begin{equation}
+  ml\Big( \ddot{\theta} (cos{\theta},-\sin{\theta}) - \dot{\theta}^{2}(\sin{\theta},\cos{\theta})  \Big) = -T (\sin{\theta},\cos{\theta}) + mg(0,1)
+\end{equation}
+
+We thus have two equations: 
+\begin{align}
+  ml\Big(\ddot{\theta}\cos{\theta}-\dot{\theta}^{2}\sin{\theta}\Big) & = -T\sin{\theta}\label{eq:eq_1_pendulum}\\
+  -ml \Big(\ddot{\theta}\sin{\theta}+ \dot{\theta}^{2}\cos{\theta}\Big) & = -T\cos{\theta} + mg\label{eq:eq_2_pendulum}
+\end{align}
+Notice that although we only have one generalized coordinate $\theta$, we have two equations. That is because the equation also have the magnitude of the tension as an unknown, so we have two equations for the two unknowns, $\theta$ and $T$. One particular observation can conclude that they are nonlinear, involving trigonometric functions, which is very, very hard to solve directly. We can, though, do this the easy way and use trigonometric identities. For example, multiplying Equation~\ref{eq:eq_1_pendulum} by $\cos{\theta}$ and adding it with Equation~\ref{eq:eq_2_pendulum} multiplied by $-\sin{\theta}$, we obtain a simpler equation for $\ddot{\theta}$. Using these identities, we can write the equation as: 
+\begin{align}
+  l\ddot{\theta} & - -g\sin{\theta}\\
+  ml\dot{\theta}^{2} & = T
+\end{align}
+This cannot be solved analytically, though we can solve it numerically, or in small angle approximation, of which this particular differential equation would then again, be quite hard to reach with integration. 
+
+In the \textbf{double pendulum case}, we also proceed to do the same. However, by the time you increase the system dynamic up to two pendulums, the system gets insanely complex. Though the process is the same, we obtain the four equation of motions as: 
+
+
+\begin{align}
+l_1 \ddot{\theta}_1 & =\left(T_2 / m_1\right) \sin \left(\theta_2-\theta_1\right)-g \sin \theta_1 \\
+l_1 \dot{\theta}_1^2 & =\left(T_1 / m_1\right)-\left(T_2 / m_1\right) \cos \left(\theta_2-\theta_1\right)-g \cos \theta_1 \\
+l_2 \ddot{\theta}_2 & =-\left(T_1 / m_1\right) \sin \left(\theta_2-\theta_1\right) \\
+l_2 \dot{\theta}_2^2 & =\left(T_2 / m_2\right)+\left(T_2 / m_1\right)-\left(T_1 / m_1\right) \cos \left(\theta_2-\theta_1\right)
+\end{align}
+
+Since there are no derivatives for $T_{1},T_{2}$, the best way to cast these equations for analytical or numerical solutions is to obtain two differential equations for $\theta_{1},\theta_{2}$ without $T_{1},T_{2}$, and use their solution in expression for $T_{1},T_{2}$ in terms of $\theta_{1},\theta_{2}$. From there, we obtain: 
+
+\begin{align}
+  T_{1} & = -m_{1} \frac{l_{2} \ddot{\theta}_{2}}{\sin{(\theta_{2}-\theta_{1})}} \\
+  T_{2} &= m_{1} \frac{l_{1}\ddot{\theta}_{1}+ g\sin{\theta_{1}}}{\sin{(\theta_{2}-\theta_{1})}}
+\end{align}
+We can now finally use these to obtain the form of our equations: 
+
+\begin{align}
+  l_{1} \dot{\theta}_{1}^{2} & = -\frac{l_{2} \ddot{\theta}_{2}}{\sin{(\theta_{2}-\theta_{1})}} - \frac{l_{1}\ddot{\theta}_{1}+ g\sin{\theta_{1}}}{\sin{(\theta_{2}-\theta_{1})}}\cos{(\theta_{2}-\theta_{1})} - g\cos{\theta_{1}}\\
+  - l_{1} \dot{\theta}_{1}^{2} \sin{(\theta_{2}-\theta_{1})} & = l_{2}\ddot{\theta}_{2} + l_{1} \ddot{\theta}_{1} \cos{(\theta_{2}-\theta_{1})} + g\sin{\theta_{2}}
+\end{align}
+It took a while for us to get to this point. 
+
+\subsubsection{Lagrangian analysis}
+
+Now, as we have been observing of the Newtonian analysis for both single pendulum and double pendulum, it is very long, complex and cumbersome, especially when it comes to counting forces and factors. Let's do it in the Lagrangian way. 
+
+In the \textbf{single pendulum} case, there is only one generalized coordinate, $\theta$, so we want to write the Lagrangian in terms of $\theta,\dot{\theta}$ and then derive the equation of motion as $\theta$ from the Lagrangian. 
+
+\section{Generalized system in general}
+Consider now an arbitrary system of $N$ particles, $\alpha = 1,\dots, N$ with positions $\mathbf{r}_{\alpha}$. We say that the parameters $q_{1},\dots,q_{n}$ are a set of \textbf{generalized coordinates} for the system if each position $\mathbf{r}_{\alpha}$ can be expressed as a function of $q_{1},\dots,q_{n}$, and possibly the time $t$, that is
+\begin{equation}
+  \mathbf{r}_{\alpha} = \mathbf{r}_{\alpha} (q_{1},\dots,q_{n},t)\quad [\alpha = 1,\dots,N]
+\end{equation}
+and conversely each $q_{i}$ can be expressed in terms of the $\mathbf{r}_{\alpha}$ and possibly $t$, 
+\begin{equation}
+  q_{i} = q_{i} (\mathbf{r}_{1},\dots,\mathbf{r}_{N},t), \quad [i=1,\dots,n]
+\end{equation}
+Intuitively, this is pretty simple. In a constrained system, components is then related to each other such that their position is restricted by other generalize coordinate contributions. Conversely, the coordinate themselves can be specified, or expressed, in terms of calculating others coordinate of the system itself. An unconstrained system, will have its full coordinates (by the degree of freedom, which indicts restrictions on how many coordinates might ensue), and it will not be restricted by any means - hence effectively, all the generalized coordinate in such system is independent of each other, 
+\begin{equation}
+  q_{i} = q_{i}(0,0,\dots, \mathbf{r}_{i},\dots,0,t)
+\end{equation}
+for example. Somehow, because of that, introducing degree of freedom early is somewhat unnecessary, because only now we would be using it. Nevertheless. In addition, we require that the number of the generalized coordinate $n$ is the smallest number that allows the system to be parameterized this way. In our three-dimensional world, the number $n$ of generalized coordinates for $N$ particles is certainly no more than $3N$, as established, though for constrained system the number would certainly be less. At this place, we would be required to brought up two notions about the constraints and their form. This will proceed as followed. 
+
+When the number of degree of freedom of an $N$-particle system in three dimensions is less than $3N$, then we say it is \textit{constrained}\index{constrained system}, or by $kN$ for each dimension. If, furthermore, the number of degrees of freedom is equal to the number of generalized coordinates needed to describe the system's configuration, then is said to be \textbf{holonomic}. Holonomic systems are easier to treat than nonholonomic, and we would see why. 
+
+Though, it is nice to also notice that what we have been doing comes down to the \textbf{positional features} in the more generalized coordinate system of the \textit{reference frame} instead. Hence, we can say that, in a lot of cases, \textit{nonholonomic systems} are inherently more complex because they have added, non-positional features strictly to the reference frame of the object in consideration. For example, to facilitate motions in three-dimension, one would simply need to get three coordinates, and hence they are also the degree of freedom, positionally. However, consider the makeshift name of the \textit{degree of configuration}, then if the object is a ball, and we somehow add the requirement that their motions are dictated by rolling in 3D (not sure how that is, but you can imagine that as rolling a ball with variations of a hyperplane), then there exists another configuration called the \textit{angular configuration} that indicate its orientation. Since the ball is `rolling' in three dimensions, then it needs three more generalized coordinates of the vertical and the two plane horizontal rotating orientation - in fact, these configurations are equal to the classification of symmetry group $C_{3}$, hence brings the total of coordinate required to six. Evidently, this is a nonholonomic system for $(x,y,z)$ specifying the level set $z$-hyperplane, and $(\phi_{1},\phi_{2},\phi_{3})$ being orientation parameters.
+
+Although nonholonomic systems certainly exist, they are more complicated to analyse than holonomic system. For any holonomic system with generalized coordinates $q_{1},\dots,q_{n}$ and potential energy $U(q_{1},\dots,q_{n},t)$, which may depend on $t$ or not, the evolution in time is determined by the $n$ Lagrange equations: 
+
+\begin{equation}
+  \frac{\partial \mathcal{L}}{\partial q_{i}} = \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot{q}_{i}}, \quad [i=1,\dots,n]
+\end{equation}
+where the Lagrangian $\mathcal{L}$ is defined as usual to be $\mathcal{L}=T-U$. 

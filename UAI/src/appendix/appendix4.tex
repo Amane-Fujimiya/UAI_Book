@@ -1,0 +1,67 @@
+\chapter{Concentration inequalities}
+A lot of results in statistical learning is proved using bounds. For example, if $X_{1},\dots,X_n$ are independent Bernoulli $(\theta)$ random variables representing the outcomes of a sequence of $n$ tosses of a coin with bias (probability of head), then for any $\epsilon \in (0,1)$: 
+\begin{equation}\label{eqs:coin_toss_bound}
+    \mathbb{P} \Big(\lvert \hat{\theta}_{n} - \theta \geq \epsilon\Big) \leq 2e^{-2\epsilon^{2}}, \quad \text{for } \hat{\theta}_{n} = \frac{1}{n} \sum^{n}_{i=1} X_i
+\end{equation}
+For the fraction of heads in $X^n=(X_1,\dots,X_n)$. Since $\theta = \mathbb{E}\hat{\theta}_{n}$, \ref{eqs:coin_toss_bound} says that the sample (or empirical) average of $X_{i}$ concentrates sharply around the statistical average. Bound like these are fundamental in statistical learning theory (well, mostly for proof, not going to lie). For now, let us learn the technique used to derive such bounds for settings much more complicated than coin tossing. 
+
+\section{What are concentration inequalities?}
+
+In a probabilistic setting, we are sometimes interested of the random fluctuations of functions of independent random variables. \textit{Concentration inequalities} quantify such statements, typically by bounding the probability that such a function differs from its expected value (or from its median) by more than a certain amount. \index{concentration inequalities}
+
+The search for concentration inequalities has been a topic of intensive research in the last decades in a variety of areas because of their importance in numerous applications. Typically, this falls into the range of designing non-deterministic (by the definition of such words), dynamic randomized algorithms or procedure of interest, while able to bound them with concentration inequalities to a certain given degree of high probabilistic `accuracy', for example. Among the areas of applications, without trying to be exhaustive, we mention statistics, learning theory, discrete mathematics, statistical mechanics, random matrix theory, information theory, and high-dimensional geometry (while not actually sure why geometry is in here). 
+
+Informally, the \textit{concentration phenomenon} asserts that if $X_{1},\dots,X_{n}$ are independent random variables, then $f(X_{1},\dots,X_{n})$ does not deviate much from its mean provided that $f(x_{1},\dots,x_{n})$ is not too sensitive in any of its coordinate $x_{i}$. While concentration properties for sums of independent random variables were thoroughly studied and fairly well understood in classical probability theory, powerful tools to handle more general functions of independent random variables were not introduced until the appearance of \textit{martingale methods} in the 1970s, by Yurinskii (1976), Maurey (1979), Milman and Schechtman (1986), Shamir and Spencer (1987) and McDiarmid (1989). \index{martingale methods}
+\begin{note}
+    While the topic itself is much more complex than it is guaranteed to be, a \textit{martingale} can be defined as a sequence of random variables (i.e. for a stochastic process) for which, at a particular time, the conditional expectation of the next value in the sequence is equal to the present value, regardless of all prior values. A basic definition can be achieved. For a process $(M_n)_{n\geq 0}$, it is called martingale if:
+    \begin{itemize}[noitemsep,topsep=1pt]
+        \item For every $n\geq 0$, the expectation $\mathbb{E}[M_n]$ is finite, and hence equivalently, $\mathbb{E}[\lvert M_n \rvert]< \infty$.
+        \item For every $n\geq 0$ and all $m_{n},m_{n-1},\dots,m_{0}$ we have: \begin{equation}
+            \mathbb{E}(M_{n+1}\mid M_n = m_{n},\dots, M_{0}=m_{0}) = m_{n}
+        \end{equation}
+    \end{itemize} 
+\end{note}
+
+\section{Basic tools}
+To derive a lot of our concentration bounds, we have to develop a few basic tools in the analysis. This will include Markov's inequality, Chebyshev's inequality, the Chernoff bound (often called the Chernoff trick), and Hoeffding's lemma. 
+\subsection{Markov's inequality}
+Let $Y\in \mathbb{R}$ be a nonnegative random variable. Then for any $t> 0$, we have: 
+\begin{equation}
+    \mathbb{P}(Y\geq t) \leq \frac{\mathbb{E}[Y]}{t}
+\end{equation}
+Before jumping straight into a proof, let us see what are we looking at from the perspective of the inequality.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/markovbound.png}
+    \caption{Markov's inequality bounds the probability for the shaded region $\mathbb{P}[X\geq a]$}
+\end{figure}
+\begin{proof}
+    The proof is straightforward: \begin{equation}
+        \begin{split}
+            \mathbb{P}(Y\geq t) & = \mathbb{E}[\mathbbm{1}_{(Y\geq t)}]\\
+            & \leq \frac{\mathbb{E}[Y\mathbbm{1}_{(Y\geq t)}]}{t}\\
+            & \leq \frac{\mathbb{E}[Y]}{t}
+        \end{split}
+    \end{equation}
+    We use the fact that\begin{equation}
+        \mathbb{P}(Y\in A) = \int_{A} P_{Y} (dy) = \int_{Y} \mathbbm{1}_{(x\in A)} P_{Y}(dy) = \mathbb{E}[\mathbbm{1}_{Y\in A}]
+    \end{equation}
+    Additionally, we also have $Y\geq t > 0$ implies $Y/t \geq 1$, and $Y\geq 0\implies Y \mathbbm{1}_{(Y\geq t)}\leq Y$ which implies their expected value.
+\end{proof}
+\subsection{Chebyshev's inequality}
+Let $X$ be an arbitrary real random variable. Then for any $t> 0$, 
+\begin{equation}
+    \mathbb{P}(|X-\mathbb{E}[X]| \geq t) \leq \frac{\mathrm{Var}[X]}{t^{2}} 
+\end{equation}
+Where $\mathrm{Var}[X]:= \mathbb{E}[|X-\mathbb{E}X|^{2}]=\mathbb{E}[X^{2}]- (\mathbb{E}[X])^{2}$ is the variance of $X$. 
+\subsection{McDiarmid's inequality}
+A generalization of Hoeffding's inequality is the McDiarmid's, or Bounded Difference inequality, where the quantity of interest is some function of the data, i.e. $S_{n}= \phi(X_{1},\dots,X_{n})$. Some restrictions on $\phi$ are required to get exponential bounds. 
+\begin{theorem}[McDiarmid's Inequality]
+    Let $X_{1},\dots,X_{n}$ be independent random variables, where $X_{i}$ has range $\mathcal{X}_{i}$. Let $f:\mathcal{X}_{1}\times \dots \times \mathcal{X}_{n}\to \mathbb{R}$ be any function with the $(c_1, \dots, c_{n})$-bounded difference property: for every $i=1,\dots,n$ and every $(x_1,\dots,x_n),(x_{1}',\dots,x_{n}')\in \mathcal{X}_{1}\times \dots\times \mathcal{X}_{n}$ that differ only in the $i$-th coordinate, we have: \begin{equation}
+        \lvert f(x_1,\dots,x_n) - f(x_{1}',\dots,x_{n}') \rvert \leq c_{i}
+    \end{equation}
+    For any $t>0$: 
+    \begin{equation}
+        \mathbb{P}\Big([f(X_{1},\dots,X_{n})] - \mathbb{E}[f(X_{1},\dots,X_{n})]\geq t\Big) \geq \exp{\left(-\frac{2t^{2}}{\sum_{i=1}^{n}c_{i}^{2}}\right)}
+    \end{equation}
+\end{theorem}

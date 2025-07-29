@@ -1,0 +1,200 @@
+\chapter{Linear algebra}
+Linear algebra is, perhaps, the golden horse of mathematics. In one way or another, it stands on par with calculus in the list of "top mathematical stuff that I don't want to learn" for almost everyone, but also the list of "top mathematical topics that are so necessary that I would have to read it either way.". Indeed, of mathematics, linear algebra is perhaps the most important field, yet requires not so much bargain on the mind to study something that is full of proof but not too abstract. 
+
+Before learning something, it is best to ask the question of how useful it is for us to learn it, especially when the book is already bloated with contents, and the reader might as well only need to have a hand-waving knowledge of linear algebra. It is well-known of certain fact that linear algebra is particularly "hard". In some way or another, that is true, mostly because of the way it is interpreted and approach, or how the materials are presented. For example, a later topic that we will perhaps include (if there are times and spaces) is the concept of eigenvalue and eigenvectors of its theorem or properties. To prove such, most of the time (or most books) must define determinant to further their work for such proof. This is difficult, nonintuitive, and often derived without any sort of motivation just like how matrix is defined yet there exists no talks about what it actually represents every time you put your pen down and write the $3\times 3$ matrix (somehow, it is a \textit{linear transformation}). So to effectively learn something, we have to sort such things out, to worth the time that we will eventually spend learning this, and I myself writing this. 
+
+Linear algebra in a rough sense can be said to be the study of functions on vectors. More specifically so, then it is the encoding, the language and methods of the general scaling of a high-dimensional space, depends on how you define dimensional, and is restricted to a class of such space called \textit{vector space}. Indeed, one feels pretty much natural extending objects to finite many dimensions (the case of infinitely many dimensions is studied in a sense, of \textit{functional analysis}). Other than that, it is also can be said to explore interactions in \textit{linearity sense} - of which you can only displace something on a straight line (I don't care if that straight line is oriented in any way, just get it straight), or just either shrink or extend it, again, linearly with respect to a straight line. In application sense, any system with a particularly large amount of dependencies, parameters, variables, et cetera, will benefit from the usage of linear algebra. Such is also said of encoding transformation, functions in which changes the state of certain system of interest, can also be represented in linear algebra. 
+
+One of the main thing that is also good of linear algebra is that, most of the questions posed in an introductory course, can be answered in said introductory course. That is, it is relatively stable, unlike in number theory, or so, where questions as simple as the twin primes problem takes forever to solve. Or rather, linear algebra is \textit{thoroughly understood}, which makes it a very powerful tool for any kind of problems that can be represented neatly by it. for our cases, those applications will be apparent throughout the text. In fact, I recommend you to skip this section in a kind of binge-reading way - just browsing through. Whenever you see the application or usage, going back. 
+
+With that said, I will approach the problem of linear algebra in a fairly different way. Or rather, not so much I guess. Because in the field we are researching, and the topic by itself has many utilizations and analogous notations or conventions on objects of linear algebraical properties, we would separate our investigation into two parts: the part on the \textit{representation}, encoding, the data structure in which we will represent our object; and the actual linear algebra itself. 
+\section{Notation and structure}
+Mathematics works in an encoding way. That is, even though we say that mathematics is abstract, as perhaps certainly it can take every values possible in existence of permission, as for all things to be spelled out, they need something to represent and express it \footnote{This is generally true. Even for the notion of infinity is often misunderstood in such case, as for the restriction of even the human brain there can be no infinite imagination, or infinite representation of an endless line of numbers. There are, usually, thought experiences using the notion of infiniteness, implicitly defined, and often spoke of ambiguity rather than it can be grounded in rigorous manner. On the other side of our argument, representation, encoding is everywhere to work on such abstract and arbitrary concept - the process of writing something down is one of said action, in the language of writing.}. In linear algebra, this notation is what trivially presented as the \textbf{array form}, and the special case of the array form used in linear algebra is \textbf{matrix}. 
+\subsection{Array form}
+Consider a large number of data, normally represented as a list of $x,y,b,qr,\dots,m$. This list can be either ordered or not. Enforce the specific encapsulation and positional ordering, we have the one-dimensional array: \footnote{We use \texttt{bmatrix}, the matrix form notation. However, usually, it is also presented by the normal square bracket with comma, such as: \begin{equation*}
+    \mathrm{Ar} = [a_1, a_2, b_1, b_2, c_1, c_2,\dots]
+\end{equation*}}
+\begin{equation*}
+    \begin{bmatrix}
+        x& y & b & qr & \dots &m
+    \end{bmatrix}
+\end{equation*}
+An array has the positional order of index for an index set $I$. Conventionally, this order is presented from left to right. So one can expect an array $A$ to take the form
+\begin{equation*}
+    A = \begin{bmatrix}
+        a_1 & a_2 & a_2 & \dots & a_n
+    \end{bmatrix}
+\end{equation*}
+
+For each element now is indexed by the subscript $i=1,2,3,\dots,n$. if you want, it is similar to a mask, such that for all $a\in A$, we have done a masking of data such that we have the pair $(1,x),(2,y),(3,qr)$ and so on for each $a$ of the respective ordering. Similarly, we can also present the two-dimensional array by adding another dimension for expansion: 
+
+\begin{equation}
+    A' = \begin{bmatrix}
+        a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
+        a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
+        \vdots & \vdots & \vdots & \ddots & \vdots \\
+        a_{m1} & a_{m2} & a_{m3} & \dots & a_{mn}\\
+    \end{bmatrix}
+\end{equation}
+
+In which now $(i,j)$ is limited in the range $(m,n)$ of the index. Even though we write this, normally, there are no restriction toward the absolute filling of the array. There, we have the definition of the \textit{uneven array}, which is specified to have different row counts and hence, different subsequently column counts, if we are to treat array just like a table. However, for generality, we can assume all of those uneven array are actually even, well-shaped array with null values. 
+
+Even though we say dimension, the notation orientation does not care much of your general ideas. 
+
+Here, the term \textit{dimensional} or then \textit{dimension} refers to the total index set specified to describe the positional ordering of elements inside an array structure. Before we continue, let's settle the convention. For each array, the index is written in the subscript of individual components. So, for one-dimensional, it's just $a_i$, for two, it is $a_{ij}$, three then $a_{ijk}$, and so on. All elements in an array $A$, in the abstract form will take similar element, the $a$s in the array notation. So with index and abstract form, we will just have $a_{i}$ and so on, not $a_i$, $b_{j}$ for $i\neq j$ everywhere. In the specified form (of values, for example), then the index is hidden, and the notation switch to their values. However, to specify or access certain elements, you will need to tell the index. Another thing to note is that simply speaking, geometrically, the dimension is simply the orthogonal axis, like in Cartesian coordinate system usually, that can be used to specify the index or positional order of particular element in the structure. 
+
+Coming back to the dimension, this implies we can get to $n$-dimensional array, and that is perhaps correct. In a more mainstream machine learning language, this is called a \textbf{tensor}\footnote{In case of ambiguity, this tensor is not the tensor in tensor calculus, or any rigorous manner of tensor analysis. It is only a name to talk of multidimensional array of data only. The structure itself is again, only data structure - there are no intrinsic operational meaning embedded.}. An example of a three-dimensional array can be represented as a cube of values, for index $I^{3}\subset \mathbb{N}^{3}$, of the 3-tuple $(i,j,k)$ for each element. Though, this kind of notation can be presented in a lot of... well troublesome way, even if they are the same in essence. Mostly come down to notation abuse and illustration, though. 
+\begin{center}
+    \begin{tikzpicture}[auto matrix/.style={matrix of nodes,
+        draw,thick,inner sep=0pt,
+        nodes in empty cells,column sep=-0.2pt,row sep=-0.2pt,
+        cells={nodes={minimum width=1.9em,minimum height=1.9em,
+         draw,very thin,anchor=center,fill=white,
+         execute at begin node={%
+         $\vphantom{x_|}\ifnum\the\pgfmatrixcurrentrow<4
+           \ifnum\the\pgfmatrixcurrentcolumn<4
+            {#1}^{\the\pgfmatrixcurrentrow}_{\the\pgfmatrixcurrentcolumn}
+           \else 
+            \ifnum\the\pgfmatrixcurrentcolumn=5
+             {#1}^{\the\pgfmatrixcurrentrow}_{N}
+            \fi
+           \fi
+          \else
+           \ifnum\the\pgfmatrixcurrentrow=5
+            \ifnum\the\pgfmatrixcurrentcolumn<4
+             {#1}^{T}_{\the\pgfmatrixcurrentcolumn}
+            \else
+             \ifnum\the\pgfmatrixcurrentcolumn=5
+              {#1}^{T}_{N}
+             \fi 
+            \fi
+           \fi
+          \fi  
+          \ifnum\the\pgfmatrixcurrentrow\the\pgfmatrixcurrentcolumn=14
+           \cdots
+          \fi
+          \ifnum\the\pgfmatrixcurrentrow\the\pgfmatrixcurrentcolumn=41
+           \vdots
+          \fi
+          \ifnum\the\pgfmatrixcurrentrow\the\pgfmatrixcurrentcolumn=44
+           \ddots
+          \fi$
+          }
+        }}}]
+       \matrix[auto matrix=z,xshift=3em,yshift=3em](matz){
+        & & & & \\
+        & & & & \\
+        & & & & \\
+        & & & & \\
+        & & & & \\
+       };
+       \matrix[auto matrix=y,xshift=1.5em,yshift=1.5em](maty){
+        & & & & \\
+        & & & & \\
+        & & & & \\
+        & & & & \\
+        & & & & \\
+       };
+       \matrix[auto matrix=x](matx){
+        & & & & \\
+        & & & & \\
+        & & & & \\
+        & & & & \\
+        & & & & \\
+       };
+       \draw[thick,-stealth] ([xshift=1ex]matx.south east) -- ([xshift=1ex]matz.south east)
+        node[midway,below] {$D$};
+       \draw[thick,-stealth] ([yshift=-1ex]matx.south west) -- 
+        ([yshift=-1ex]matx.south east) node[midway,below] {joints};
+       \draw[thick,-stealth] ([xshift=-1ex]matx.north west)
+         -- ([xshift=-1ex]matx.south west) node[midway,above,rotate=90] {time};
+      \end{tikzpicture}
+\end{center}
+For our special case, or a matrix, it is the two-dimension case. Most of the operations acting on matrix can be indeed generalized, though it is most of the time more effective to define it on such. And, without being said, matrix's operations and functions, as well as its uses, are more rigorous perhaps, than the others $n$-dimension, and from array analogue itself. 
+
+We will now jump to the more interpretable object that linear algebra will use. While array representation has its own meaning and usage, it is often poorly equipped to be used and utilized in a mathematical sense, simply because, as we said, it is a data structure only with no added purpose or interpretation of its structure. The next section, we will deal with two fundamental objects of linear algebra - the \textit{vector} and \textit{matrix} object.
+
+\subsection{Vectors}
+
+For a mathematical object, there are components to specify it details or particular structure. In the context of linear algebra, we deal with the variable spaces, where each mathematical object can take place. Usually, the structure that give rises to such space, which differs from case-to-case basis of different fields, is called a \textbf{mathematical structure}, in an informal sense. Linear algebra then, deals with the question of working on multi-descriptive objects, where its mathematical structure is considered of the \textbf{specification} that is needed to describe the mathematical object respectively. For example, by then, we can roughly get the mathematical object of real number, in the structure $\mathbb{R}$, to be a zeroth-order object by linear algebraical means. That is, it can be specified using a singular "point" - its own quantification value. Then, for complex number of the form $x= a+ bi$, then it can be then considered a first-order object in such sense, simply because its parameter can be, informally, listed as one row or one column, and each contains the previous zeroth-order component. Such zeroth-order object, if they are of a specific field, for example, the field of real number $\mathbb{R}$, then we have a special name for it: a \textbf{scalar}\index{scalar} on the field $\mathbb{R}$. Then, for a first-order complex number space $\mathbb{C}$, we can then call it to be the two-dimensional space on the field $\mathbb{R}$. By such, we have considered the singular complex space $\mathbb{C}$ to contains \textbf{vectors}\index{vector} of which takes zeroth-order component over $\mathbb{R}$ - two of them, that is. 
+
+The more nominal example that one can think of, and will be implied throughout the chapter, is the description of a \textit{directed object}, or a \textit{directed path}. For example, the direction of the displacement in space of a plane, the acceleration accompanied by a car, the direction of rotation of a geometrical shape, or the direction in which the gradient is, for the landscape of a function. Such cannot be described, usually, by one singular value. It needs to be of something with magnitude; and some expression of direction. This is fulfilled by vector itself. 
+
+If we think only vectors and scalar as mathematical object but on the side of data representation, it is rather easy to see the intuitive necessity of such. Many things require more than just one value, or numerical representation to defines its mathematical form. Such can be said of many physical notions, from forces - if your world is not one-dimensional, that is; or velocities, accelerations, positions, directions, et cetera. Any such entity will require more than one specification, and often, it can be reached with the simple composition of many single values together. This, form the notion of vector as we have above. Additionally, we also note that again, we would be dealing with analytical, numerical objects. So, vectors and the like will be plenty of operations and actions on it, as well as the nuance accompanied. 
+
+It is then, rather more detail for once, to talk of the more reduced notion of a vector. The more physical, deliberate definition hence specifies the vector by its apparent properties - an object of both \textit{magnitude} and \textit{direction}. Do note that this definition can be extended for the other interpretations, as we see below: 
+\begin{definition}[Vector]
+    A vector $\vec{v}$, or $\mathbf{v}$, is a quantity or object with both \textit{magnitude} and \textit{direction}. It is also expressed by its \textit{vector components}, of which we denote as $\vec{v}=(v_1, v_2,\dots,v_n)$, for all $v_i$, $i=1,\dots,n$ as the $i$th component of $\vec{v}$. The requirements that a vector and operations on it must satisfy, and the space to specify such vector constitute a \textbf{vector space}. 
+\end{definition}
+
+We will leave the vector space and structure to later section on the mathematical structure of linear algebra itself. For now, we would consider the vector in its sense of a data structure, somewhat. Our notation of a vector is then pretty similar to the first-order array, or one-dimensional array in previous section. A vector $\mathbf{v}$ is hence presented as: 
+\begin{equation}
+    \mathbf{v} = \begin{pmatrix}
+        v_{1} & v_{2} & v_{3} & \dots & v_{n}
+    \end{pmatrix}
+\end{equation}
+
+or, in a vertical form, 
+
+\begin{equation}
+    \mathbf{v} = \begin{pmatrix}
+        v_{1} \\
+        v_{2} \\ 
+        v_{3} \\
+        \vdots \\
+        v_{n} 
+    \end{pmatrix}
+\end{equation}
+
+Notationally, they are called the \textbf{row vector} and the \textbf{column vector}. For now the differences are irrelevant - they specify the same object, and the same vector. The subtleties only comes when we consider certain interpretation and structure with the 'row' and the 'column' - which hints at matrix. 
+
+Under such context, the \textit{dimension} is the length of the component description, or the number of component that a vector has. If a vector is in the special case where its value (we work on maths, and it is numerical), then we say that it is t\textit{he $i$th-flatten vector over $n$-space}, where $n$ is its dimension. 
+
+It is then more or less easier for the brain to process this whole ordeal by restricting ourselves to the realization or illustration in two or three dimension. Of course, for now, we will informally guarantee the generality of our discussion to more than four dimensions above. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/vector1.png}
+    \caption{An illustration of a vector in two-dimensional vector form in endpoints representation, and directional-magnitude representation.}
+\end{figure}
+
+There is a subtle detail in considering the notation for vector. One can see that the notation we used to represent vector is oddly similar to the notation used for $n$-dimensional points in an $n$-space, for example, the Euclidean space $\mathbb{R}^{3}$, which each point can be specified to be $(x,y,z)$ along each axis. Indeed, this is troublesome: if they are mixed up together, it would be difficult to distinguish the notation for coordinate system and one for the vector representation, especially in case of complex manipulation. We can offer certain solutions to this problem. The first one, is to re-interpret coordinate in a space just as similar as vectors - every point is actually a vector starting from the origin, travelling to the point itself. In such sense, a vector is considered like a path composition with respect to each axis, representing the total component path taken to specify the location of such point. Another way to think about a vector is that it is a \textit{compressed form}\index{compressed form} of two point specification - the \textit{starting point} $A_{s}$ and the \textit{endpoint} $B_{e}$, though often we would call them all together as endpoints. Then, a vector is the reduced representation for all pairs of endpoint such that, the vector is defined to be the final absolute path - or in terms of \textit{calculus of variations} sense, the shortest path - a straight line - toward the two endpoints. Any straight line, with direction that satisfies the component path from one endpoint to another is indeed, that one vector; or simply speaking. The direction is characterized by indeed, the order of the path, either from $A$ to $B$ or $B$ to $A$, and also based off their intrinsic location. In such representation, we separate the endpoints from the vectors - an endpoint has no direction and is dimensionless, stationary, while a vector specifies a path from two endpoints together, of the total difference between the two endpoints. In the end, though it is based in the interpretation of the case study, and what structures are considered. In a more advanced situation, one can also specify a point scalar as an element of a manifold, and a vector as an element of the tangent space to such manifold. 
+
+Settle aside the expression of component for a vector, usually, we can get a lot of the properties and actions on vector using only their intrinsic, geometrical interpretation, that is, the magnitude-direction expression for a vector. Previously, we have said that anything of certain magnitude and direction, or path, between two endpoints, is the same vector. As we are concerned of here, it is true that only the magnitude and direction of the vector are significant; hence consequently, we regard vectors with the same magnitude and direction as being equal irrespective of their position. This is true for the geometry of a vector, as we guarantee. What is the properties for the vector object itself? We first have the operation of adding vectors together. For two vectors $x$ and $y$, their sum can be defined as followed. 
+\begin{definition}[Parallelogram law]
+    The sum of two vectors $x$ and $y$ that acts at the same point $P$ is the vector beginning at $P$ that is represented by the diagonal of parallelogram having $x$ and $y$ as adjacent sides. 
+\end{definition}
+
+This can be illustrated in Figure~\ref{fig:vector_sum_parallel}. Do note that it is more or less, a not so trivial point. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/vector_sum-001.png}
+    \caption{The \textbf{parallelogram law} for vector addition of two vectors $x$ and $y$ on adjacent side.}
+    \label{fig:vector_sum_parallel}
+\end{figure}
+From such operation, we also recall one of the more important feature that we have mentioned of vectors. A vector can be considered to be a \textit{free object} in the geometrical space. That is, it is not bounded by coordinates likes points, or geometrical structure embedded within the space by specification. Rather, it is free in the sense that the vector is similar to itself, by means of linear translation throughout the geometrical space, for example, moving the vector left or right, up or down. Analytically, it means that a vector description refers to its designed specification, and not positional descriptions. What does this mean? I would want to say it in terms of some rigours, but certainly, it depends on the interpretation, at the foremost aspect, but that would be pretty much useless. For my own understanding, one can regard the description of a coordinate $(x,y,z)$ and a vector $x(x_1, x_2, x_3)$ by some subtleties, independent or dependent on the coordinate basis or not. A coordinate is dependent of the coordinate system, or the space specification, or the descriptors, because its component depends on each of the component space. Or, rather, it depends on the origin where everything is referenced from. Vector, on the other hand, use the notation a bit differently. Sure, it is still the path, or rather, if we are to treat it similarly to the indexing of an array, then it is similar to the array index to recognize an object's position. However, the descriptor is not taking positions or index, it is taking the relatively speaking, \textit{path, length} instead. Or rather, it is the compression of two values, just as we spoke up there. So each vector is actually representing: 
+\begin{equation}
+    \mathbf{x} = (x_{1},x_{2},x_{3},\dots,x_{n}) = (x_{1e}- x_{1b}, x_{2e}- x_{2b},\dots, x_{ne}- x_{nb}) 
+\end{equation}
+where the subscript $ie, ib$ is the $i$th component's end point and begin point. Now, I have to admit I don't know how to get this to be further than it is. Then, we would have the coordinate system using the pretty much special case of this system, 
+\begin{equation}
+    x = (x_{1},x_{2},x_{3},\dots,x_{n}) = (x_{1e}- 0, x_{2e}- 0,\dots, x_{ne}- 0) 
+\end{equation}
+So, yeah, same notation, different interpretation. Especially when you consider that you can, and indeed would likely want to write them down together. Though, because of this, most of the time, we would consider them to be relatively the same, because as we said, we can translate them down to anywhere, as long as the descriptor, which specifies the direction, magnitude, et cetera, stays the same - which includes the origin point. 
+
+Now with that being fairly obscured, we continue on with the previous topic. 
+\subsection{Matrix}
+
+Matrix is the special type of array that is used in construction of linear algebra. Specifically, it is array, in special consideration, and added structures. Mathematically, it is defined as followed. 
+\begin{definition}[Matrix]
+    A matrix $A$ is a two-dimensional array, with dimensions' size of $m\times n$ for $m$ is the horizontal dimension (the column) and $n$ the vertical dimension (the column). \footnote{This is just a normal convention.}. For each element $a\in A$ of matrix $A$, it is indexed by $a_{ij}$ for $1\leq i \leq m$ and $1\leq j \leq n$. It is represented as: 
+    \begin{equation}
+        A =  = \begin{pmatrix}
+            a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
+            a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
+            \vdots & \vdots & \vdots & \ddots & \vdots \\
+            a_{m1} & a_{m2} & a_{m3} & \dots & a_{mn}\\
+        \end{pmatrix}
+    \end{equation}
+\end{definition}
+
+The bracket is pretty much cosmetic, though, to distinguish from the use of array and matrix, we will use $[\cdot]$ for array and $(\cdot)$ for matrices. 

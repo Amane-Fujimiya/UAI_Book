@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Database file #1: reference_1.bib
+Warning--to sort, need author or key in unified_bias_composition
+Warning--empty year in unified_bias_composition
+Warning--empty year in achlioptas_stochastic_nodate
+Warning--empty year in achlioptas_stochastic_nodate
+Warning--empty booktitle in Cristianini2000AnIT
+Warning--empty publisher in STL_Hajek_Maxim_2021
+Warning--empty year in GRP_Hamilton
+Warning--empty year in GRP_Hamilton
+You've used 62 entries,
+            2773 wiz_defined-function locations,
+            959 strings with 17416 characters,
+and the built_in function-call counts, 25846 in all, are:
+= -- 2252
+> -- 1558
+< -- 43
++ -- 534
+- -- 471
+* -- 1951
+:= -- 4010
+add.period$ -- 238
+call.type$ -- 62
+change.case$ -- 332
+chr.to.int$ -- 61
+cite$ -- 133
+duplicate$ -- 1159
+empty$ -- 2132
+format.name$ -- 568
+if$ -- 5445
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 41
+newline$ -- 367
+num.names$ -- 244
+pop$ -- 805
+preamble$ -- 1
+purify$ -- 281
+quote$ -- 0
+skip$ -- 980
+stack$ -- 0
+substring$ -- 345
+swap$ -- 125
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 627
+warning$ -- 8
+while$ -- 197
+width$ -- 0
+write$ -- 867
+(There were 8 warnings)

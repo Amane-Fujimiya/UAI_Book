@@ -1,0 +1,858 @@
+\chapter[Double Descent]{Double Descent}
+\section{Note}
+This is one of my first research - well, yeah, it started in early 2024, up until now. While there are many things to talk, overall, it is a fairly nice research topic. I wonder where would I go after this research, though, so that is definitely a problem, but for now, I think I will stick to this. When I first encountered this problem, I thought it would be plenty easy. I guess I was wrong, and it might take me more than two years to figure it out on my own at this rate, which is fairly troublesome after all. 
+
+This part of the manuscript contains two parts. The first part is concerned of the \textbf{draft and development notes} during research, and the second part (the one begin with the section abstract), is the \textbf{paper manuscript}. 
+
+\section{Developing analysis}
+Okay, before running into the paper itself, uh, what the heck are we talking about? Based off our idea, we are targeting, well, \textbf{statistical learning theory} and the weird problem named \textbf{double descent}. Double descent has its notion from the dilemma of bias-variance tradeoff, a somewhat empirical hack to the problem of model selection. So, what is it? 
+
+\subsection{Statistical learning theory}
+Roughly speaking, with machine learning being developed, there are petitions and pushes for the development of a further, more formal ground to explain and interpret the action of learning, and aside from heuristic, empirical design, a somewhat theoretical guarantee net for whatever we will be trying to do. This is where \textbf{learning theory} comes in, with specifically two disciplines - or rather two approaches: \textit{Computational Learning Theory (CoLT)} which applies computational aspect to the learning problem, and the \textit{Statistical Learning Theory (SLT)} which focus on the statistical interpretation of the learning problem. Albeit seems pretty different, they are actually very, well, interconnected, to the point that certain important notions can be almost the same. 
+
+Well, enough speaking by then, we will have the general idea and outward look of a more \textbf{formal system} of analysis. Let's hope we can deal with it. 
+
+\subsection{Double descent} 
+
+Double descent is tricky, in the sense that it is one of those phenomena that you perhaps would say to "break the theory", just like how lights and the Stern-Gerlach experiment broke classical physics' absolute view on determinism. Indeed, the thing that double descent broke is perhaps very important, in our opinion: \textit{the bias-variance tradeoff}. What it means, and how it perhaps is important, we might be able to say. \sidepar{\footnotesize While this sounds perhaps too good, it is indeed, one of the thing that I have to say about it as important.}
+
+Informally, bias-variance is an observation and perhaps analytical derivation of the behaviour of a learning system, within one consideration of the dynamic - complexity versus errors. With machine learning, for correctness reason of the \textit{training session} conducted, error is a requirement. Bias-variance tradeoff connects this with the complexity of the model, by using the two proxies from statistical analysis, called bias and variance (statistical). Their result is pretty much as the following. 
+
+\begin{theorem}[Bias-variance tradeoff]
+    For the expected loss of any given hypothesis $h$, the bias $\mathcal{B}(f,y)$ and variance $\mathcal{V}(f,y)$ is inversely proportional, that is, $\mathcal{B}(f,y)\propto \lambda^{-1} \mathcal{V}(f,y)$ for some proportionality $\lambda$ that may or may not be constant. In the most general case possible, $\lambda = -1$ on the entire error range. 
+\end{theorem}
+
+We will have to define the notion of the bias $\mathcal{B}$ and the variance $\mathcal{V}$. In the classical derivation of \cite{6797087}, it is defined in a pretty derived way. One can define the bias $\mathcal{B}$ as: 
+
+\begin{equation}
+    \mathcal{B}(f,y) = \underbrace{\left\{ \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})] - \mathbb{E}[y\mid x] \right\}^{2}}_{\text{bias }}
+\end{equation}
+
+and the variance: 
+\begin{equation}
+    \mathcal{V}(f,y) =\underbrace{\mathbb{E}_{\mathcal{D}} \left\{(f(x;\mathcal{D})- \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})])^{2}\right\}}_{\text{variance}}
+\end{equation}
+Of which both of them are derived from decomposing the supposed test error. 
+
+This results in the ultimate form of the bias-variance curve, which is usually portraited as the following famous inverse graph - there, you can also see the valley of optimality that is the ideal complexity - error ratio that is often wanted. 
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+      \centering
+      \includegraphics[width=0.8\textwidth]{img/bias-variance_1.png}
+      \caption*{(a)}
+    \end{subfigure}
+    \hspace{5mm}
+    \begin{subfigure}{0.4\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{img/biasvariance_2.png}
+      \caption*{(b)}
+    \end{subfigure}
+    \caption{(a) A typical example of bias-variance tradeoff in a statistical dataset. (b) When graphed into a continuous notion, we gain the complexity-error graph. Notice that it specifically goes for the \textit{test error}, which fits - the representative problem of prediction.}
+  \end{figure}
+So yes, it is indeed a problem. A very specific one. Especially since it is concerned with one of the main topic of machine learning - model selection. So, what can be said to solve the problem? Historically, not so much. But we will have to eventually take this pill and analyse it historically for now. 
+
+The first identification of the double descent phenomena dated back to the paper of Belkin - \cite{belkin_reconciling_2019}, in which the title is literally "reconciling" modern machine learning practice and the bias-variance tradeoff. What is happening here? In modern machine learning practice, or state-of-the-art developments, models are now bigger than ever. If to notice, we will see that currently models are inherently large, for example, a normal large language model will have from 900 millions (900M) to a few billions, for example 10 billions (10B) parameters. That is not taking into account the overall dynamics and structure of the model, which dictates the operating range and efficiency of the model itself. These model, based on the neural network architecture are somewhat trained to exactly fit (or interpolate) the data, almost certainly so that it turn from a prediction setting to an estimation setting. By statistical learning theory, this would be considered overfitting, and yet, they often obtain very high accuracy on test data. Is the test wrong, or it's just that we are missing something? No one knows for sure. 
+
+\begin{figure}[h!]
+    \centering
+    \begin{tabular}{cc}
+    \includegraphics[height=0.15\textheight]{pdf/u-shaped.pdf} &
+    \includegraphics[height=0.15\textheight]{pdf/doubledescent.pdf} \\
+    {\bf (a)} & {\bf (b)}
+    \end{tabular}
+    \caption{{\bf Curves for training risk (dashed line) and test risk (solid line).}
+      ({\bf a}) The classical \emph{U-shaped risk curve} arising from the bias-variance trade-off.
+      ({\bf b}) The \emph{double descent risk curve}, which incorporates the U-shaped risk curve (i.e., the ``classical'' regime) together with the observed behaviour from using high capacity function classes (i.e., the ``modern'' interpolating regime), separated by the interpolation threshold.
+      The predictors to the right of the interpolation threshold have zero training risk. Reproduced from \cite{belkin_reconciling_2019}.}
+    \label{fig:double-descent}
+  \end{figure}
+The main finding that Belkin found is a pattern for how the apparent performance on unseen data depends on model capacity and the mechanism underlying the emergence of double descent. When function class capacity is below the "interpolation threshold", learned predictors exhibit the classical U-shaped curve from Figure~\ref{fig:double-descent}. 
+\blockquote[\cite{belkin_reconciling_2019}]{The bottom of the $U$ is achieved at the sweet spot which balances the fit to the training data and the susceptibility to over-fitting:
+to the left of the sweet spot, predictors are under-fit, and immediately to the right, predictors are over-fit.
+When we increase the function class capacity high enough (e.g., by increasing the number of features or the size of the neural network architecture), the learned predictors achieve (near) perfect fits to the training data---i.e., interpolation.
+Although the learned predictors obtained at the interpolation threshold typically have high risk, we show that increasing the function class capacity beyond this point leads to decreasing risk, typically going below the risk achieved at the sweet spot in the ``classical'' regime.}
+
+Belkin tested on several contexts. The first one is with Random Fourier features, in which it is defined as followed. 
+
+\begin{definition}[Random Fourier features]
+    The RFF model family $\cHN$ with $N$ (complex-valued) parameters consists of functions $h \colon \R^d \to \mathbb{C}$ of the form
+\[
+  h(x) = \sum_{k=1}^N a_k \phi(x; v_k)
+  \quad\text{where}\quad
+  \phi(x; v) := e^{\sqrt{-1} \langle v,x \rangle} ,
+\]
+and the vectors $v_1,\dotsc,v_N$ are sampled independently of the standard normal distribution in $\R^d$.
+(We consider $\cHN$ as a class of real-valued functions with $2N$ real-valued parameters by taking real and imaginary parts separately.)
+\end{definition}
+
+This model is evaluated using the formulation of the classical statistical learning theory (refers to the respective chapter, if able), and is tested on the MNIST dataset. Their result? Pretty much the emergence property you observed of the figure above there, in which there exists double descent for both either zero-one loss or squared loss. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/RFFDD.png}
+\end{figure}
+Another models that they tested is the vanilla neural network, and decision trees and ensemble methods, in which gives you the following shape, similar to their double descent on RFF curve. Notice how a lot of the setting substitute the complexity to be the number of parameters or weight, in which case for decision tree, it is \begin{equation*}
+    \mathcal{C}(h_{DT}) = (d+1)\cdot H + (H+1)\cdot K
+\end{equation*} 
+Which is still quite a lot, for $H$ hidden units, dataset of $K$ classes, and $d$ is the dimension of the MNIST pool channel. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/decisionDD.png}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/DSDD.png}
+\end{figure}
+
+For now, perhaps we can see the apparent shape and identification of double descent. Empirically, double descent gives an interpolation point where then the test error `goes downhill' very fast, almost better than the optimal point of the saddle in bias-variance tradeoff. Perhaps this is what happening inside large model, where absolute almost interpolation occurs and then the entire model is, well, so accurate that the test literally imploded. Or is it? 
+
+The second representative paper that analysed double descent, specifically in the setting of deep learning architecture, is \cite{nakkiran_deep_2019}. Here, again, there is the issue with defining the model complexity of the model, and they offered us an understanding using the notion of the \textit{effective model complexity}, $\mathrm{EMC}_{\mathcal{D},\epsilon}(\mathcal{T})$ for a procedure $\mathcal{T}$ with parameters $\epsilon > 0$ and distribution $\mathcal{D}$. 
+
+Another prominent result to look at is \cite{nakkiran_deep_2019}, on the double descent of deep learning models. This is the first step toward identifying double descent to be perhaps, universal. 
+
+But first, we will have to see their beautiful illustration about deep learning's double descent. While being more complex and harder to analyse, they exhibit the same phenomena. Here, we call the region of changing dynamics from bias-variance to double descent relatively to \textit{critical regime}, and the place where the shift happens, is the \textit{interpolation threshold}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.05\textwidth]{img/errorvscomplexity.png}
+    \caption{{\bf Left:} Train and test error as a function of model size,
+    for ResNet18s of varying width 
+    on CIFAR-10 with 15\% label noise.
+    %In the under-parameterized regime, test error follows
+    %the behavior predicted by classical statistical learning theory, but in the overparameterized regime (once training error is approximately zero),  the test error undergoes a ``second descent'' and decreases as model size increases. The shaded region represents the critically parameterized regime where the transition from under- to over-parameterization occurs. 
+    {\bf Right:}
+    Test error, shown for varying train epochs.
+    %The dashed red line shows that with optimal early stopping double descent is not observed.
+    % All models are ResNet18s of varying width,
+    % trained on CIFAR10 with 15\% label noise
+    All models trained using Adam for 4K epochs.
+    %, and plotting means and standard-deviations from 5 trials with random network initialization.
+    The largest model (width $64$) corresponds to standard ResNet18. Reproduced from \cite{nakkiran_deep_2019}.
+    %    \ptodo{point out that interpolation point for second plot is plotted in the ocean plot}
+    }
+    \label{fig:errorvscomplexity}
+\end{figure}
+
+\begin{figure}[t!]
+\centering
+\begin{minipage}{.512\textwidth}
+  \centering
+  \includegraphics[width=1\textwidth]{img/Intro-ocean-test.png}
+\end{minipage}%
+\begin{minipage}{.488\textwidth}
+  \centering
+  \includegraphics[width=1\textwidth]{img/Rn-cifar10-p15-adam-aug-train.png}
+\end{minipage}
+\caption{{\bf Left:} Test error as a function of model size and train epochs. The horizontal line corresponds to model-wise double descent--varying model size while training for as long as possible.
+The vertical line corresponds to epoch-wise double descent,
+with test error undergoing double-descent as train time increases.
+{\bf Right} Train error of the corresponding models.
+All models are Resnet18s trained on CIFAR-10 with 15\% label noise,
+data-augmentation, and Adam for up to 4K epochs.}
+\label{fig:unified}
+\end{figure}
+
+In such sense, we cannot seems to filter those figures or data received from the model by itself. Rather, because of such, the team above developed a hypothesis, of which relies on empirical observations at best. 
+
+They define \emph{effective model complexity} of $\mathcal{T}$ (w.r.t. distribution $\mathcal D$) to be the maximum number of samples $n$ on which $\mathcal{T}$ achieves on average $\approx 0$ \emph{training error}. 
+
+\newcommand{\EMC}{\mathrm{EMC}}
+\begin{definition}[Effective Model Complexity]
+The \emph{Effective Model Complexity} (EMC) of a training procedure $\cT$, with respect to distribution $\cD$ and parameter $\epsilon>0$,
+is defined as:
+\begin{align*}
+    \EMC_{\cD,\eps}(\cT)
+    :=  \max \left\{n ~|~ \E_{S \sim \cD^n}[ \mathrm{Error}_S( \cT( S )  ) ] \leq \eps \right\}
+    \end{align*}
+    where $\mathrm{Error}_S(M)$ is the mean error of model $M$ on train samples $S$.
+\end{definition}
+
+Their main hypothesis can be informally stated as follows:
+
+\begin{hypothesis}[Generalized Double Descent hypothesis, informal] \label{hyp:informaldd}
+For any natural data distribution $\cD$, neural-network-based training procedure $\cT$, and small $\epsilon>0$,
+if we consider the task of predicting labels based on  $n$ samples from $\cD$ then:
+\begin{description}
+    \item[Under-parameterized regime.]  If~$\EMC_{\cD,\epsilon}(\cT)$ is sufficiently smaller than $n$, any perturbation of $\cT$ that increases its effective complexity will decrease the test error.
+    \item[Over-parameterized regime.] If $\EMC_{\cD,\epsilon}(\cT)$ is sufficiently larger than $n$,
+    any perturbation of $\cT$ that increases its effective complexity will decrease the test error.
+    
+    \item[Critically parameterized regime.] If $\EMC_{\cD,\epsilon}(\cT) \approx n$, then
+    a perturbation of $\cT$ that increases its effective complexity
+    might decrease {\bf or increase} the test error.
+\end{description}
+\end{hypothesis}
+
+As it turns out, even they themselves do not fully understand such open question, regardless of whatever was stated. 
+\begin{quote}
+    Hypothesis~\ref{hyp:informaldd} is stated informally
+as we are yet to fully understand the behaviour at the critically parameterized regime.
+For example, it is an open question what determines the width of the \emph{critical interval}---the interval around the point  in which $\EMC_{\cD,\epsilon}(\cT) = n$, where increasing complexity might hurt performance. Specifically, we lack a formal definition for ``sufficiently smaller'' and ``sufficiently larger''. Another parameter that lacks principled understanding is the choice of $\epsilon$. In our experiments, we use $\epsilon=0.1$ heuristically.
+
+While in both the under-parameterized and over-parameterized regimes increasing complexity helps performance, the dynamics of the learning process seem very different in these two regimes.
+For example, in the over-parameterized regime, the gain comes not from classifying more training samples correctly but rather from increasing the confidence for the training samples that have already been correctly classified. 
+\end{quote}
+So overall, while actually pretty much reproducing results, they did not have a great step forward to the problem.
+
+\section{Issues}
+
+There are plenty issues with the above analysis. 
+\subsection{The messiness of analysis}
+
+Truth to be told, the analysis is pretty much \textit{kind of useless}. What I mean by that is despite all the research into it, not much progress has been made in understanding or trying to fix the problem that is there. Instead, it is the same fancy-styled interpretation and re-visualization of the concept by itself, while not asking the underlying question. 
+
+Even more so, it is the issue that \textit{modern practices far outran theory, even classical one}. Furthermore, because of its clearly nature of being a multidisciplinary field, a lot of ideas are poured in from many fields out wide, such that it is very confusing, furthermore, very ambiguous and very informal when working with any of the formal system that analyze the learning system. This gives us the kind of disconnect that we perceived in the theoretical analysis, and the practical aspect of empirical designs and implementations. 
+
+\subsection{The ambiguity of analysis}
+Analysis is often, very, very ambiguous. This also includes in the general setting of the experiment itself. Sometimes, even when the issue is with an unknown event like double descent, even the Gaussian white noise is not considered to be a potential factor in the fluctuation. Somehow, it is treated as trivial. Dissecting the system out, ideally there must exist a list of factors and their importance weight according to how the influence the model, yet there seems to be no such insight about that. 
+
+Furthermore, a lot of terms, definitions are often hand-waived in papers or in discussions. This also led to the point that in \cite{nakkiran_deep_2019}, they have to somehow 'reinvent' another type of model complexity itself, albeit unsatisfying of a definition, is still a new kind of definition per insufficiently of such. 
+
+\subsection{Stepping in the wrong direction}
+
+Perhaps we stepped in the wrong direction in most of the analysis and approaches to the problem? For example, are we taking the test error in a wrong way, or the dilemma is actually misunderstood? For example, while it is true that we are taking the test error, with the assumption of unseen data, what happens if the model is actually too flexible to the point that, it can capture almost perfectly the many cases that it is configured, with that substantially big amount of dataset getting in, guarantee it, because of the dataset, an absolute \textit{concept capture} - that is, the true concept space and the observed space is very, very close together that there is simply not a \textit{true unseen data} anymore? 
+
+Perhaps we should review all of it. From statistical learning theory to the interpretation of that itself. We might want to focus on such. 
+\subsection{Main problems}
+For now, we can identify plenty problems what will have to be resolved during our works on bias-variance tradeoff. 
+\begin{itemize}[topsep=1pt,itemsep=0.5pt]
+    \item We need to make clear of the phenomena: bias-variance, double descent, the descent action. 
+    \item We need a discussion framework that is clear of context for previously arbitrary notion: inductive bias, model complexity, model flexibility, all kind of biases. 
+    \item Not only that, but we need also a framework to discuss the disconnect between empirical, practical approach, and a more formal technical ground of studies. 
+    \item Experimental setting and understanding. This will require us to develop a scheme to make sense of the complex system in practice, and to explain the empirical observation. Furthermore, we will also have to test the hypothesis that the test error is indeed, wrong of all accord in understanding of the statistical learning theory. 
+\end{itemize}
+One of the typical problems observed when trying to solve double descent is exactly that - there are too many ambiguities, even in the sense and configuration of the experimental setting, as it adopts scientific research, yet is not well-rounded in their adoption. 
+\subsection{Hypothesis}
+While it is not perfect, we have several hypothesizes for what to look out for, as well as the formulation needed to interpret certain phenomena and observations. This ranges from topics of re-evaluating the statistical learning theory, estimation and refactor of assumptions (or \textit{inductive bias} when designing models), to different interpretations and representations that can better explain, model, or gives certain insights.  
+
+\begin{enumerate}[label=\arabic*., leftmargin=1.5em, labelsep=0.5em]
+    \item Stability of bias-variance measure is questionable, as it is in certain literature, loosely defined by defining a 3-dimensional vector $\lambda=(\lambda_{1},\lambda_{2},\lambda_{3})$ for such: 
+    \noindent 
+    \begin{equation*}
+        \begin{split}
+            \mathbb{E}_{\mathcal{D}} \left[d((f,\mathbb{E}[y\mid x])\right] & = \lambda_{1} \mathrm{Bias}(f,y) + \lambda_{2}\mathrm{Var}(f,y)+ \lambda_{3}\epsilon(\mathcal{D})\\ 
+            & = \lambda_{1}\underbrace{\left\{ \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})] , \mathbb{E}[y\mid x] \right\}}_{\text{bias term}} +\lambda_{2} \underbrace{\mathbb{E}_{\mathcal{D}} \left\{(f(x;\mathcal{D}), \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})])\right\}}_{\text{variance term}} +\underbrace{\lambda_{3}\epsilon}_{\text{irreducible error}}
+        \end{split}
+        \end{equation*}
+    where $\epsilon(\mathcal{D})$ is the irreducible error of the system, depends (theoretically) on the intrinsic imperfection of the dataset $\mathcal{D}$. Assessment on stability of such decomposition is recommended. 
+    \item We believe that the bias-variance decomposition is a poor estimation and measure for controlling, validating and choosing model from. Specifically, bias and variance term, as well as their supposed expression of decomposition in the standard loss measure of model effectiveness is not representative, nor expressive of the actual, underlying notion of \textit{model complexity} $C(f)$ and its effectiveness. Furthermore, bias-variance decomposition is not straight-forward of others type of loss functions, except only for some classes of loss function (loss on Bregman divergences and exponential class). 
+    \item Inductive bias obviously plays a role, as mentioned by some literature \footnote{Need to include some in here.}, though we don't know exactly how the inductive bias can be formed to play any role in the central dynamic of the model operating process. Certain assumption, for example, the \textit{convexity of the loss function} might actually affect the model as it is, and introduce unwanted patterns in the following process. 
+    \item Random initialization of parameters, as well as the initial conditions of the model initialization process might also be taken into account. Obviously, this is not a new insight, and is rather a very old one, however, this approach still have varied potential for interpreting double descent. Scaling up/down this effect might result in new insight, as well as inspecting the uncertainty and diffusion patterns in large-scale model deployment, in which from an end-to-end perspective requires several space transformation operations in successions.
+    \item The PAC-learning framework, and its generaliy to \textit{agnostic PAC-learning}, seperate the concept class $c$ into two individual parts - either the assumption $c\in \mathcal{C}$ is true, or $\mathcal{C}$ is absent in the hypothesis, and therefore the inductive bias (assumption priori) is reduced of the underlying concept. However, most of the assumption and sepration comes around in the generalization is by assuming $\mathcal{X}$ is also random, and therefore unpredictable by the most random scenario. The most common justification of the generality of agnostic case, is by considering a non-unique nature of the input space's labels. However, usually, there is no assumption or any justification that species that the label, or the target class (of painter) must be \textit{unique}. In fact, of the measure in binary classification, for $\mathcal{Y}=\{0,1\}$, used in \cite{10.5555/2371238} for PAC-learning class, it is indeed a case of repeating label. The reason for this separation then is ambiguous and not totally founded. Though, it is reasonable to assume $\mathcal{X}$ is embedded with random probability, by separating the concept similar to what is illustrated in \ref{fig:PhaseDiagram}, there exists a distinct \textit{internal relation}, for example, the probabilistic constraint of the input space $\mathcal{X}, p(X)$ unaccounted for $c$. However, grouping $c$ by justifying properties of $\mathcal{X}$ is not so good. For example, consider $c$ to be an automaton, either finite state automaton, or infinite state automaton (pushdown machine, Turing machine). Either $c$ can be considered \textit{deterministic} or, \textit{non-deterministic} - for example, Probabilistic Turing machine (PTM), where state transition is justified of certain propabilistic measure embedded. Assuming so, we can see that probability, if exists in such automaton, will only be defined upon the pair $(c,\mathcal{Y})$, and not $(\mathcal{X},c)$ - the \textit{ground space} (input) has no justification on $c$ if specifically so.  
+    \item The very ambiguous idea or treatment of statistical learning, as well as machine learning, is the idea of masked. Or, paraphrased, \textit{hidden information} regarding the underlying process of estimation. Specifically, for example, we tend to assume things to not be able to grasp - either the probability $p_{X}(c)$ of the concept class, the distribution $\mathcal{D}$ specified to such input distribution, or the concept class $\mathcal{C}$, Markov properties, etc. We would like to formalize this notion as soon and as such in the most direct way. 
+    \item The most outlandish one is that the test error is actually, to be seen as falsely interpreted by statistical learning theorists. 
+\end{enumerate}
+
+We cannot answer nor verify every single bit of the above hypothesis. However, by listing so gives us certain insight in which can be potentially refuted or agreed upon, it will base our understanding of the system in a more clear sight. 
+
+We have one more hypothesis on implementation. 
+
+\begin{itemize}[noitemsep,topsep=0.5pt]
+    \item As we have seen with the disparity between SVM and other parameter-wise complexity measure, it is then to see that the measure of complexity is extremely lacking. It is also observed that many attempts has been made to categorize different types of complexity for a given model. It is then suggested, would there exists an algorithm or at least a behavioural control method that find the optimal, weighted complexity measure analysis? That is, assuming we have all the currently available complexity measure that we can find, then because we don't know what to consider "better" than the others, if we just simply weight them on, then tune the parameters of such tuning, then will we have a figuratively confident results that is applicable to a wide range of model selection procedure in such sense? 
+\end{itemize}
+
+\subsection{A rather simple solution}
+
+It can perhaps, be observed, that our entire description of the machine learning problem is informal and often not well-organized. Of course, in the face of progress little can be spared toward making things clean. After all, it is the pioneers who plunder and conquer distant lands. However, in the case of our machine learning research, it leaves a wide gap in the analysis and any potential solution at present, to some of the more meticulously difficult and obscure problems of the consequences of such rapid development, for example, our double descent. One of which is the consideration of the \textit{system transparency problem}. 
+
+We may want to expand our notion of the mathematical modelling statements. A \textbf{mathematical modelling setting} consists of, consequently, three simplified components $(S,Q,M)$. $S$ contains the system and its object of interest, $Q$ set up the problem aims, and $M$ acts as information, assumptions, and constraints of the setting. Usually, even under such consideration, the problem setting is treated as an external source - an isolated system $S$ of which contains the subject of interest \textit{only}, and the model, on either extreme of being phenomenological or mechanistic. However, unknowingly, the aspect in which machine learning and subsequently deep learning, or any form of automating correlation known as \textbf{learning}, is doing things differently. 
+
+It is then theorized of a simple configuration. We extend $S$ to encompass the entire hypothesis by itself. Though it is rather strange to do it in a formal sense, less of the cumbersome task for which it seems that we have already conducted. However, even if such line of argument is right, we have indeed, not configured our system accordingly. This is presentable in even the book \cite{VeltenetalMathematicalModelling}, in which we treat the phenomenological model (neural network at foremost) only as an outer method. This is then recognized, for the time being of the hypothesis, to be an insufficient conduct. 
+
+It turns out, however, we can think of our models to be subsequently realizing the internal mechanics by its own representation. As for the rather arbitrary definition of phenomenological and mechanistic model, it can be clearly seen: overall, those models differ only in their configurations of being either totally blind, or are given any sense of the underlying internal structure's interpretation of the events - factors and degree of freedoms, parameters and constants setting. Under multiple extreme assumptions, the notion of \textbf{transparency}, for if it is said that the problem is entirely exposed of its mechanics, or is totally unknown, is considered. Machine learning, and the learning action generally, would play as to mimic the mechanics by itself, regardless of internal mechanics transparency, by its own \textit{representation} as we have been speaking of, with the condition that the acting space remains the same. This is partially guaranteed by the reduction of the observation space into an input-output channel observations. It is then, to be seen, if we can conjecture that any problem setting in transition to mathematical formalism, that is, including the act of observing, recording, and else that gives the dataset by itself, can be reduced nominally to various unknown, arbitrary, primitive parameters and of-no-knowledge models. With such, even differential equations can be somewhat observed, given the right representation space and enough encoding. 
+
+Why is this not so prominent then, in a more classical machine learning setting. It partially has something to do with the relative way both classical machine learning and deep learning are constructed, or rather, the structural constraints between the two. While indeed, such problems would be encountered in classical ML, the design of such models are rather intrinsically different, in the sense that they are restricted and of not so fluid form. Furthermore, they are also specialized, for example, in the original text of \cite{Vapnik1999-VAPTNO}, to works on pattern recognitions, regression problems or density estimation. Such tasks are fairly limited and constrained of their setting and requirements, hence, nominally, the class of "pretty good and extraordinarily useful" model structures are also constrained small enough for the representation to be in classical form; and, given that the learning setting is often not so rigorous as many aspects were not linked together, it puts a fair strain onto such interpretation. 
+
+This is where we would theorize our idea. Rather than just as classical machine learning indicted, from certain observations of \textit{neural network}, it can be said that the following conjecture will be stated. 
+
+\begin{conjecture}
+    The learning problem can be considered a one-way description-representation learning problem between the concept structure $\mathcal{C}$ and the hypothesis $\mathcal{H}$. \footnote{The structure and the underlying observations, plus information exchanges, are typically formed into input-output interpretation.}
+\end{conjecture}
+\begin{conjecture}
+    Under deep learning structure, one assumes that every possible configuration and representation of certain concept $c\in \mathcal{C}$ can be decomposed to the standard representation components. 
+\end{conjecture}
+It is then to see if such conjecture can be observed, or at least proved heuristically. Aside from this conceptual perspective, we also note that in most of its conception, the testing and theoretical working of the theory indeed also is based on the notion of transparency - for example, Agnostic PAC-learning where we assume no knowledge is possible about the class $\mathcal{C}$ of all concept class conceivable of the problem. Such assumption is the transparency window that we are talking about. Rather than doing experiments without considering such, it is then wised to perhaps analyze, how, we can reconstruct the setting, using an end-to-end (only the supervisor or the designer - we - know) phenomenological$\to$ mechanistic learning behaviours occurs. This also perhaps will outline a controlled environment in testing out information theory and interpretation of KL-divergence. 
+
+\section{The perspective of modelling theory}
+
+A normal configuration of a mathematical modelling system, in which the language of mathematic is applied, often consists of three components: The system $S$ in which all the objects, the landscape, the resources, the parts that is considered lives in; The question, or the \textbf{objective} that is of interest, this is also called the setting, or the scenario in which the system is placed in, of a specific notion; and the statements $M$ of which assumptions, statements, condition, restrictions are put on for the system, though not necessary so for the objective. Then, for every model and the construct that we want to make, we have to then specify those first, in the most rigorous manner possible, to disparage the ambiguity. This starts by, as the name of the section called, specifying and constructing the system $S$. 
+
+Before we continue, it is to note that these are some of the more \textbf{informal treatment} of the research direction. Later on, we will have to find something, or some mathematics to tackle the problem laid down here. 
+
+In a typical system $S$ of machine learning, we assume there exists the following objects: 
+
+\begin{itemize}[topsep=1pt,itemsep=0.5pt]
+    \item The \textbf{concept object}, which is implicitly the object of study. This object has its own mathematical construct. 
+    \item The \textbf{hypothesis object}, which implicitly is the object in which objective is to study the concept object. Similarly, it has its own mathematical construct. 
+    \item The \textbf{evolutionary object}, which it aims to correct the hypothesis object to align with the concept object. 
+\end{itemize}
+Those two first objects have their own mathematical construct, and live in a space in which we call the ground space, of which all their operation and behaviours will be observed. Here, we have the consideration of their \textit{transparency}, that is, the amount of information we know about the object. Or rather, it is called the relative \textit{priori knowledge} about each of them. Using this, we have \textbf{absolute black-box} - where the object is believed to only be an input-output process, without any priori about what is the underlying structure, ever. On the other hand, we have \textbf{total transparency}, in which the internal mechanics of the system is totally clear with respect to the object participated in the dynamic of the object. Before that, let's look at the structures of the two first important object. 
+\subsection{Structures of object}
+
+
+Each object in this system would then have to have a very important component: its \textbf{representation}. This is trivial of interest, because as we said, mathematical modelling convert something into the mathematical formalism and language. In the case of learning a mathematical object by itself, there are also multiple interpretations, definitions, and representation of different objects in different cases, however, most of the time, we will observe a lot of object with very explicit representation of a class of itself. This relies on, for the reason to specify representation, the notion of \textbf{operable object} by itself. An object is \textit{operable} if its internal structure and its nested substructures is arranged, organized, and represented such that there exists operators on which is specified as the action of the object. For example, a function is operable since its substructure includes sub-objects that are the blobs of parameters and the free-variable parameter $b$ (as people always call it such), of which the operations and relations between them constructs to be an operable object by virtue of its observable being produced. For a graph, however, it is inherently static - its structure does not provide us with any actionable quality or operation. Only by either a walk or a trail (which essentially the same thing). To provide or extract the object's structure in an effective sense, which can be said of to not just copy the entire graph, we need to have actions and operations that defines on the graph, to extract meaningful data from it. This is perhaps relevant of the neighbourhood aggregation in a GNN (graph neural network), as it too, needs to extract data by using neighbourhood properties. The graph itself is not equipped of any operable structure. So there is it. 
+
+The next component about an object in our consideration, is the utilization of the representation scheme to then make the class of all descriptions by itself. For example, a representation scheme consists of multiple neuron components - the parameters of each neuron, the path given, et cetera, will only be effective and useful if it is constructed in a structure by itself, that is, in a neural network architecture where neurons are composed of some of those parameters or resources given, with their value based on the field specified in the notation of a numerically-realized representation scheme. This will mostly be the more important notion of the description of the object, since it is where certain criteria, conditions, restrictions and overall description of the object is specified, using the restricted language of the representation scheme. We will see how this is done. 
+
+\subsubsection{Representation}
+Then, what can be said about the representation of the hypothesis and the concept objects? Okay, this is harder than I thought. There are many ways to represent a structure or a concept of interest, yet, we will stick to this one, maybe. We will stick to the one that is most familiar: remember in mathematics where we have \textit{sets} embedded with structures? Yeah, about that\dots we will do the same thing. The representation that is used to represent our structure will be called the \textbf{representation scheme}. 
+
+First, we have the following assumption, which will fall to the set of statements $M$, that is as followed. 
+
+\begin{assume}
+    The hypothesis and the concept are both represented in the same representation scheme. 
+\end{assume}
+If the concept is not of the same representation scheme as the hypothesis, then there must be a \textbf{representation encoder} to handle such task. Depends on the restriction of the representation, we can figure out the total loss of information, generality of information in-between such encoding. We define the concept of the representation scheme as followed. 
+\begin{definition}[Representation scheme]
+    For a system and its object, an object's \textbf{representation scheme} $\bm{\mathcal{R}}$ is a function $\bm{\mathcal{R}}: (\Sigma\cup \mathcal{G})^{*}\to \mathcal{O}$, where $\Sigma$ is the operator alphabet, or relational structure, $\mathcal{G}$ are the components, and $\mathcal{O}$ is the object. $(\Sigma \cup \mathcal{O})^{*}$ is the coupling of \textbf{all} configuration of the components and the operators. 
+\end{definition}
+
+In case where scalar numbers are presented, for example, in the axis-aligned rectangle case, we will have: $\bm{\mathcal{R}}^{2}_{\square}:(\Sigma\cup \mathcal{G}\cup\mathbb{F})^{*}\to \mathsf{Rec}$ of all rectangle using this representation scheme, so 
+    \begin{equation}
+        \bm{\mathcal{R}}_{\square} = \begin{cases}
+            \Sigma = \{\leq, \land \}\\
+            \mathcal{G} = \{l_{c}, p_{c}, a\}\\
+            \mathbb{F} = \mathbb{R}
+        \end{cases}
+    \end{equation}
+    For the formula of all concepts $c$ being axis-aligned rectangle as: 
+    \begin{equation}
+        \sigma = \{c\} = \bm{\mathcal{R}}^{2} = \{a(x_{a},y_{a}) \mid l_{c}^{(1)} \leq x_{a}\leq p_{c}^{(1)}\land l_{c}^{(2} \leq x_{y}\leq p_{c}^{(2)}\}
+    \end{equation}
+    Generally, this is called the \textit{numerical representation scheme}, in which it is supported by a field (we do not care much about the dimension of the field, as long as we can decompose it to discrete scalar taking values), that is, $\bm{\mathcal{R}}:(\Sigma \cup \mathcal{G}\cup \mathcal{F})\to \mathcal{O}$. Any representation specification $\sigma\in (\Sigma \cup \mathcal{G}\cup \mathcal{F})$ such that $\bcal{R}(\sigma) = c$ is a representation of $c$ on $\bcal{R}$, denoted $\sigma_{c}$, and the set of all such specification $R_{c}=\{\sigma_{c}\}$ is called the \textbf{representation space} of $c$ on $\bcal{R}$.
+    
+    The set of all hypotheses $h$ that is specified by certain representation scheme $\bm{\mathcal{R}}_{h}$ is called the \textbf{hypothesis class} $\mathcal{H}$, and $\bm{\mathcal{R}}_{h}$ is the \textbf{hypothesis class representation}. Similarly, for a concept $c$ the set of all concepts that are represented by $\bm{\mathcal{R}}_{c}$ is called the \textbf{concept class} $\mathcal{C}$ for the \textbf{concept representation scheme} $\bm{\mathcal{R}}_{c}$. 
+
+The necessity of the description of a field is rather natural, especially since we are working on a numerical encoding. Generally speaking, the computer at large represents a very complex binary encoding of numerical logical operations, though via abstractions, most of them are 'cancelled out' of the fundamental details. We can almost make a \textit{representation space} just similar to how we define vector space, though, it is more or less not so effective as it can. 
+
+Using this, we can specify \textbf{a lot} of object class. The first one though, we can specify the representation scheme of an input-output model. Now, for this type of definition, then the class of all \textbf{linear function representation} can be designed as 
+\begin{equation}
+    \bm{\mathcal{R}}_{L}^{n} = \left\{ \{x_{1},\dots,x_{n}\}, y \Bigg| \sum_{i=1}^{n}w_{i}x_{i} + b \land w_{i}, x_{i}, b \in \mathbb{R} \right\}
+\end{equation}
+From this, we can notice that there exists the notion of \textit{size} for the object class. In one way or another, we have abstracted of the class of all objects that can be specified in such a way that their representation falls into the range of such representation class. Then, we might want to consider the concept of a \textbf{representation complexity}, and the size of the class, denoted $size(\bm{\mathcal{R}})$. Do note that this is not defining the operational complexity, but simply the structure by itself. Which is why we might want to have the definition of an object in such system that we are considering.
+
+Two representations $\bcal{R}_{A}$ and $\mathcal{R}_{B}$, they are said to be \textbf{equivalent} if one can convert objects from the first representation to the second one, and vice versa. Then two representations are said to be \textbf{equal} if their size is the same, assume that the representation scheme is equivalent. This prompts us to define the notion of the size of the representation, but before that, a general insight will be the follow through - you have to be able to reduce one to the others, and reverse. By then, essentially, \textit{you cannot compare apple to orange}, that is. Generally, the size of a representation class is defined the smallest representation of the object in the underlying representation. So, for your example of the linear function, then 
+\begin{equation}
+    size(c)=\min_{\sigma \in R_{c}}\{size(\sigma)\}
+\end{equation}
+which again, prompt us \textit{again}, to figure out the notion for $size(\sigma)$. Before then, and defining the object's descriptions, let's try to construct a few more 'mathematical construct' of the same type. A subtle remark can be made here, that the representation only, again, specify the parameters used to represent it, and the string accompanied by such representation. The overall total repetition, for example, of a certain variable, and operation succeedingly, is totally irrelevant. I just get the formula as a shorthand for that scheme up there, as it is. Which again, means that to specify it, you need both the components and how it is connected. Abstractly speaking, and generally speaking. 
+
+\begin{note}
+    It is sufficient to note here that the representation scheme has its complexity more than just the count of all its subsequent operations. for example, if the class of the multiplication operation is included, it will, of course, drastically change the dynamic and presentation of the encoding possible for the description. If so, then, we have a very hard time in the future to try "ranking" these type of operators together. Furthermore, while not of the representation complexity itself, the combination of the components in the description also decides another type of complexity, which for now maybe we will call as \textit{expression complexity}. 
+\end{note}
+
+Do note that even though the representation scheme is inherently denoted similar to an end-to-end formula would look like, it is not the case, usually. The representation scheme is not a fully mathematical-defined object, for such case then the object itself would have no meaning at all. In such sense, one can define a representation scheme that contains intricate operating structures instead, for example, a self-loop network with various potential-like mechanism and affectants. 
+
+
+Overall, the role of the representation is to specify the arbitrary language of working. While we are not taking the more diluted problem between the translation from physical, real setting to the mathematical world, and restrict ourselves to the part of which arbitrary mathematical settings take place, it is still of importance of the \textit{language of mechanism} that underlies the structure of certain system pertaining to actions and modelling  \footnote{This way of doing things are particularly similar to a philosophical mathematics's way of defining mathematics through axiomatizations: first they also have to define the symbols and the symbolism expression, as well as the descriptions of mathematical objects through such axiomatization and symbol conventions. This is why some branches of mathematics, where they pertain on a general notion like \textit{set} and \textit{logic} formalism, is used far wider than their own - the language of something like \textit{set theory}, \textit{category theory}, and \textit{logic} are much more useful in other fields or others mathematical objects in which its general framework can be applied to express distinct and more specialized, descriptive objects.}. By doing so, it encompasses a variety of mathematical descriptions in which expresses a very similar aspect of the mathematical language, the configuration and largely operative nature of an object-dependent setting. While doing so, it also makes way for the more in-focus notion of \textit{descriptions} to be defined, and such way encompass a lot of structures, for example, the binary class descriptions of a typical computer, for example. We shall examine this later, for its implications large.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/representation_description_scheme.png}
+    \caption{The representative order of representation and description. As of the name implied, in transition to a mathematical formalism and language, there must then exist a representation to each and every element of certain subject. The process of doing is this called \textit{external encoding}, and is true also between portion of mathematical-encoded system to each other, if they are distinct. The reverse act is called again, \textit{decoding}, and between mathematical subjects to each other might as well be called \textit{internal encoding}, with respect to the mathematical language.}
+\end{figure}
+
+Hence, from the definition and consideration of the representation space, we can at least organize and capture the: 
+
+\begin{enumerate}[topsep=1pt,itemsep=0.5pt]
+    \item Representation language: What type of language are considered and how to specify its component, at least in the operational sense of what we are dealing with. 
+    \item Representation complexity: While the notion of \textit{complexity} is inherently complex, it is still applicable of current knowledge to then approach the problem of \textit{representation complexity}. This can be done by \textit{representation infimum} and \textit{representation supremum}, both of which will bounds the representation size as much as it could, except for representation anomalies. 
+    \item The relative dynamic between \textit{representation complexity} and \textit{representation computational complexity}: In the subject of efficiency in working with representation, it also between computational cost and the richness of the representation space that is of interest. In which, we should encounter, and try to process. 
+\end{enumerate}
+
+We would likely want to give a pretty much different interpretation thereof, on one of the more primitive notion in mathematical analysis, which also looks just as similar in idea as the representation of subject to be: the \textbf{Stone-Weierstrass Approximation Theorem}, which states that for $f\in C([a,b],\mathbb{R})$, then there is a sequence of polynomials $p_{n}(x)$ that conveys uniformly to $f(x)$ to $[a,b]$, essentially represents the complex subject. We would ultimately, in actuality, assume this to be true in our connection to practical problems and more complex subjects non-mathematically, and if this is not particularly true, then we are in plenty of trouble. 
+
+\subsubsection{Description}
+
+While the representation space is helpful, it does not capture the entirety of the analysis as a whole. More specifically, it only specify at most the structure of the bricks laying the object, not the object itself. 
+
+Using such alphabet, we then can construct various structures of interest. 
+
+\section{The perspective of modified learning setting}
+
+
+
+\clearpage
+
+\section{Bias-variance: A history}
+While a lot is known about bias-variance tradeoff, its history is pretty much indeterminate in the lens of a contriving analysis. Rather, controversies and theoretical development that have led to the appearance of double descent, and other phenomena like grokking and else, is of particular chaotic picture in the wider scene of the learning theory, especially of modern time learning. The original definition of bias-variance tradeoff by \cite{6797087} is first constructed using the means-square error, which is regarded as a normal measure in the real encoding space. Their approach is to justify bias-variance via decomposition of the loss function $\ell$, for such to find an alternative reasonable form of such loss landscape. We will eventually notice a lot of the assumptions, and the breakdown of the nominal setting hidden inside this portion of subject matter.
+
+Suppose of a regression problem to construct a hypothesis function $f(x)$ from $(x_{1},y_{1},\dots,x_{N},y_{N})$ for the purpose of generalization - that is, predicting unseen variational values for different pair $(x_{j}, \mathord{?})$ such that $\mathord{?}=y_{j}+\epsilon$ for a conceivable implicit error. To be explicit about the relation of this problem, or $f$ on the given data $\mathcal{D}=\{(x_i, y_i)\mid i \leq N\}$, denote $f(x;\mathcal{D})$ instead of $f$, the natural mean-square measure as a predictor is: 
+\begin{equation}
+    \mathcal{M}(f,y) = \mathbb{E} \left[((y-f(x;\mathcal{D})))^{2}\mid x, \mathcal{D}\right] 
+\end{equation} for $\mathbb{E}[\cdot]$ the expectation wrt to a distribution $P$. Decomposing the right-hand side, we have: 
+\begin{equation}
+    \mathcal{M}(f,y) = \mathbb{E} \left[((y-f(x;\mathcal{D})))^{2}\mid x, \mathcal{D}\right] = \mathbb{E}\left[(y-\mathbb{E}[y\mid x])^{2}\mid x,\mathcal{D}\right] + (f(x;\mathcal{D})-\mathbb{E}[y\mid x])^{2}
+\end{equation}
+Here, $\mathbb{E}\left[(y-\mathbb{E}[y\mid x])^{2}\mid x,\mathcal{D}\right]$ does not depend on $\mathcal{D}$, but simply the statistical variance of $y$ given $x$. The term $(f(x;\mathcal{D})-\mathbb{E}[y\mid x])^{2}$ is considered a natural measure of effectiveness on $\mathbb{R}^{n}$ as a singular predictor of $y$. Now, for $\mathbb{E}_{\mathcal{D}}\left[(f(x;\mathcal{D})-\mathbb{E}[y\mid x])^{2}\right]$ which depends on the training set $\mathcal{D}$ in its computation, is decomposed into the form of \textit{bias-variance decomposition} terms, by derivation: 
+\begin{equation}
+    \begin{split}
+        \mathbb{E}_{\mathcal{D}} \left[(f(x;\mathcal{D})-\mathbb{E}[y\mid x])^{2}\right] & = \underbrace{\left\{ \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})] - \mathbb{E}[y\mid x] \right\}}_{\text{bias term}} + \underbrace{\mathbb{E}_{\mathcal{D}} \left\{(f(x;\mathcal{D})- \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})])^{2}\right\}}_{\text{variance term}}
+    \end{split}
+\end{equation}
+
+We summarize this in the following statement. 
+
+\begin{theorem}[Bias-variance tradeoff]
+    Suppsoe the model $f(x;\mathcal{D})$ for the data $\mathcal{D}=(x_i, y_i)$ and its parameter $x$ is defined. For $y_{i}$ of the target concept's responses $y$, and consider a regression problem with the loss measure $\mathcal{M}(f,y)$ of mean squared risk, the following statement is true: \begin{equation}
+        \mathbb{E}\big[\mathcal{M}(f,y)\big] = \mathcal{B}(f,y) + \mathcal{V}(f,y) + \mathbb{E}\Big[\mathbb{E} \left[((y-f(x;\mathcal{D})))^{2}\mid x, \mathcal{D}\right]\Big]
+    \end{equation}
+    for $\mathbb{E}[\:\cdot\mid x, \mathcal{D}]$ any expression with dependencies on $x$ and $\mathcal{D}$. The bias and variance term is subsequently expressed by 
+    \begin{align}
+        \mathcal{B}(f,y) = \underbrace{\left\{ \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})] - \mathbb{E}[y\mid x] \right\}}_{\text{bias }}, \quad \mathcal{V}(f,y) =\underbrace{\mathbb{E}_{\mathcal{D}} \left\{(f(x;\mathcal{D})- \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})])^{2}\right\}}_{\text{variance}}
+    \end{align}
+\end{theorem}
+
+\begin{proof}
+    We present the original derivation of bias-variance tradeoff and its analysis from \cite{6797087}. Geman's paper is, by his own word, concerned of \textit{parametric models}, i.e. hypothesis class without strong assumption of parameters defined, though the definition of bias-variance tradeoff afterward and its justification is made in the sense of parametric model. We partially clarify\footnote{Generally, there is no definite definition on what would be considered non-parametric. Though, an example might be drawn from the (vanilla) neural network and Gaussian Process Regression (GPR)} this with the following definition as customary. 
+
+    \begin{definition}[Parameterization]
+        A \textbf{parametric model} is one that can be parameterized by a fintie number of parameters. In general, for a hypothesis class $\mathcal{H}$of all parametric hypothesis is then expressed as:
+        \begin{equation}
+            \mathcal{H} = \{f(x;\theta): \theta \in \Theta \subset \mathbb{R}^{d}\}
+        \end{equation} where $\Theta$ is called the \textit{parameter space}. A \textbf{nonparametric model} is one which cannot be parameterized by a fix number of parameters.   
+    \end{definition}
+    Suppose of a training dataset $\mathcal{D}$ of $N$ 2-tuples $(\mathbf{x}_{i},y_{i})$, that is: \begin{equation}
+        \mathcal{D} = \{(\mathbf{x}_{1},y_{1}),\dots,(\mathbf{x}_{N},y_{N})\} \quad \lvert \mathcal{D} \rvert = N, \mathbf{x}\in \mathbb{R}^{d}, y \in \mathbb{R}
+    \end{equation}
+    The regression problem is to construct a function $f(\mathbf{x})\to y$ based on $\mathcal{D}$, which is denoted $f(\mathbf{x};\mathcal{D})$ to show this dependency. Then, 
+    \begin{equation}
+        \begin{split}
+            \mathbb{E}\left[ (y-f(\mathbf{x};\mathcal{D}))^{2}\mid \mathbf{x},\mathcal{D}\right] & = \mathbb{E}\Big[\big( (y-\mathbb{E}[y\mid \mathbf{x}]+ (\mathbb{E}[y\mid \mathbf{x}]-f(\mathbf{x};\mathcal{D}))) \big)^{2}\mid \mathbf{x},\mathcal{D}\Big]\\
+            & = \begin{multlined}
+                \mathbb{E} \Big[ (y- \mathbb{E}[y\mid \mathbf{x}])^{2}\mid \mathbf{x},\mathcal{D} \Big] + \Big(\mathbb{E}[y\mid \mathbf{x}-f(\mathbf{x};\mathcal{D})]\Big)^{2} \\ + 2\mathbb{E} \big[(y-\mathbb{E}[y\mid \mathbf{x}])\mid \mathbf{x},\mathcal{D}\big]\cdot \big(\mathbb{E}[y\mid \mathbf{x}]-f(\mathbf{x;\mathcal{D}})\big)^{2} 
+            \end{multlined} \\
+            & = \mathbb{E} \Big[(y-\mathbb{E}[y\mid \mathbf{x}])\mid \mathbf{x},\mathcal{D}\Big] + \big(\mathbb{E}[y\mid \mathbf{x}]-f(\mathbf{x};\mathcal{D})\big)^{2}\\
+            & \geq \mathbb{E} \big[(y-\mathbb{E}[y\mid \mathbf{x}])^{2}\mid \mathbf{x},\mathcal{D}\big]
+        \end{split}
+    \end{equation}
+    Hence, we decompose it to: 
+    \begin{equation}
+        \mathbb{E} \left[((y-f(\mathbf{x};\mathcal{D})))^{2}\mid \mathbf{x}, \mathcal{D}\right] = \mathbb{E}\left[(y-\mathbb{E}[y\mid \mathbf{x}])^{2}\mid \mathbf{x},\mathcal{D}\right] + (f(\mathbf{x};\mathcal{D})-\mathbb{E}[y\mid \mathbf{x}])^{2}
+    \end{equation}
+    Where $\mathbb{E}\left[(y-\mathbb{E}[y\mid \mathbf{x}])^{2}\mid \mathbf{x},\mathcal{D}\right]$ is regarded to be a relative constant of variance on $y$ given $\mathbf{x}$. Taking the expectation on $\mathcal{D}$, we gain: 
+    \begin{equation}
+        \begin{split}
+            \mathbb{E}_{\mathcal{D}} \Big\{ \mathbb{E} \left[((y-f(\mathbf{x};\mathcal{D})))^{2}\mid \mathbf{x}, \mathcal{D}\right]\Big\} & = \mathbb{E}_{\mathcal{D}} \Big\{\mathbb{E}\left[(y-\mathbb{E}[y\mid \mathbf{x}])^{2}\mid \mathbf{x},\mathcal{D}\right] + (f(\mathbf{x};\mathcal{D})-\mathbb{E}[y\mid \mathbf{x}])^{2}\Big\}\\
+            & = \begin{multlined}
+                \mathbb{E}_{\mathcal{D}} \Big\{ \mathbb{E}\left[(y-\mathbb{E}[y\mid \mathbf{x}])^{2}\mid \mathbf{x},\mathcal{D}\right]\Big\} \: + \\ \mathbb{E}_{\mathcal{D}} \Big\{ (f(\mathbf{x};\mathcal{D})-\mathbb{E}[y\mid \mathbf{x}])^{2}\Big\}
+            \end{multlined}
+        \end{split}
+    \end{equation}
+    The second term is of importance, and is further decomposed to: 
+    \begin{equation}
+        \begin{split}
+            & \mathbb{E}_{\mathcal{D}} \Big\{ (f(\mathbf{x};\mathcal{D})-\mathbb{E}[y\mid \mathbf{x}])^{2}\Big\} \\ 
+            & = \mathbb{E}_{\mathcal{D}} \Big\{ (f(\mathbf{x};\mathcal{D})- \mathbb{E}_{\mathcal{D}}[f(\mathbf{x};\mathcal{D})] + \mathbb{E}_{\mathcal{D}}[f(\mathbf{x};\mathcal{D})] -\mathbb{E}[y\mid \mathbf{x}])^{2}\Big\} \\
+            & = \begin{multlined}
+                \mathbb{E}_{\mathcal{D}} \Big[(f(\mathbf{x};\mathcal{D})-\mathbb{E}_{\mathcal{D}}[f(\mathbf{x};\mathcal{D})])^{2}\Big] + \mathbb{E}_{\mathcal{D}} \Big[ (\mathbb{E}_{\mathcal{D}} [f(\mathbf{x};\mathcal{D})] - \mathbb{E}[y\mid \mathbf{x}])^{2} \Big] + \\2\mathbb{E}_{\mathcal{D}}\Big[f(\mathbf{x};\mathcal{D})-\mathbb{E}_{\mathcal{D}}[f(\mathbf{x};\mathcal{D})]\Big]\cdot (\mathbb{E}_{\mathcal{D}}[f(\mathbf{x};\mathcal{D})]-\mathbb{E}[y\mid \mathbf{x}])
+            \end{multlined} \\
+            & = \underbrace{\left\{ \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})] - \mathbb{E}[y\mid x] \right\}}_{\text{bias term}} + \underbrace{\mathbb{E}_{\mathcal{D}} \left\{(f(x;\mathcal{D})- \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})])^{2}\right\}}_{\text{variance term}}
+        \end{split}
+    \end{equation}
+    which yields the desired bias-variance tradeoff. 
+\end{proof}
+Empirically, this expression assesses the concern of \cite{6797087} on the scenario where the optimal training pattern, either SRM or ERM, cannot approximate well depends on the particuliarity of the training set $\mathcal{D}$ - that is, the near-optimal predictor of $y$ can be achieved in certain dataset, while some varies substantially with $\mathcal{D}$, or that the Bayes's optimizer is not near the optimal bound of $f,y$ for the regression $\mathbb{E}[y\mid x]$. 
+
+\subsection{Another approach - No-free-lunch}
+
+Even though bias-variance tradeoff is considered to be the standard rule of thumb in encounters of the dichotomy between \textit{complexity} and \textit{performance}, its form and analytical expression is not uniform throughout different literature of interest. Specifically, it is sometime considered to be equal to the estimation-approximation tradeoff, though in some case it is not. Hence, for an approach for the formal treatment, our consideration should start with the question of the existence of a universal approximator. The goal of the standard learning problem, aside from microscopic and specific details, deals with the construction of the solution to the problem of approximating a given observation set, providing that there exists a hidden relation or concept $c$ that governs the observation itself. Then, the question is to ask if there exists a universal approximator that can approximate any concept $c$ of the entire concept space $\mathcal{C}$, given sufficient time, complexity, and expression. 
+
+\begin{conjecture}[General insight]
+    Bias-variance can be identified, under several contexts, to mean the following: \begin{itemize}
+        \item For any model $h$ and measure of its complexity $\mathcal{M}(h)\:\mathcal{H}\to \mathbb{F}^{k}$, There exists a point $\psi$ such that when
+    \end{itemize}
+\end{conjecture}
+
+This is expressed by the No-Free-Lunch theorem. We would then see why this leads to the tradeoff we are familiar. We state the No-Free-Lunch theorem as followed.
+
+\begin{theorem}[No-Free-Lunch]
+    Let $A$ be any learning algorithm for the task of binary classification with respect to the $0-1$ loss over a domain $\mathcal{X}$. Let $m$ be any number smaller than $|\mathcal{X}|/2$, representing the training set size. Thn, there exists a distribution $\mathcal{D}$ over $\mathcal{X}\times \{0,1\}$, such that: 
+    \begin{enumerate}
+        \item There exists a function $f:\mathcal{X}\to \{0,1\}$ with $L_{\mathcal{D}}(f)= 0$. 
+        \item With probability of at least $1/7$ over the choice of $S\sim \mathcal{D}^{m}$ we have that $R_{\mathcal{D}}(A(S))\geq 1/8$. 
+    \end{enumerate}
+\end{theorem}
+
+This theorem states that there exists no universal learner, for every learner there exists a task on which it fails, even though success can be achieved by another learner. In certain way or another, this theorem is in the profession of \textit{impossibility theorem}, where one choose to forbid the model at present theory from being universal, that is, capable of doing everything. In particular, any algorithm that choooses its output from hypothesis in $\mathcal{H}$ will fail on some learning tasks. 
+
+\begin{col}
+    Let $\mathcal{X}$ be an infinite domain, and let $\mathcal{H}$ be all functions from $\mathcal{X}\to \mathcal{Y}$. Then $\mathcal{H}$ is not PAC learnable. 
+\end{col}
+
+\begin{proof}[Draft proof for binary case]
+    We first prove this for some class of binary classification functions $f: \mathcal{X}\to \{0,1\}$. Assume $\mathcal{H}$ is learnable. Choose for $\epsilon < 1/8, \delta < 1/7$. There, $\mathcal{H}$ is fixed. Then, by PAC learning, for some number $m=m(\epsilon, \delta)$, there must be some algorithm $\mathcal{A}$ and an integer $m = m(\epsilon, \delta)$, such that for any data-generating distribution over $\mathcal{X} \times \{0,1\}$, if for some function $f: \mathcal{X} \to \{0,1\}$, $R(f) = 0$, then with probability greater than $1 - \delta$ when $A$ is applied to samples $S$ of size $m$, generated i.i.d. by $\mathcal{D}$, $R(A(S)) \leq \epsilon$. However, applying the No-Free-Lunch theorem, since $|\mathcal{X}| > 2m$, for every learning algorithm (and in particular for the algorithm $A$), there exists a distribution $\mathcal{D}$ such that with probability greater than $1/7 > \delta$, $R(A(S)) > 1/8 > \epsilon$, which leads to the desired contradiction.
+\end{proof}
+
+\clearpage
+
+\begin{center}
+    {\Large \bfseries Main paper, draft 1}
+\end{center}
+
+\section{Abstract}
+The analysis of learning action, machine learning and related practices in the field theoretically has been made by utilizing Computational Learning Theory (CoLT) \cite{10.1145/1968.1972} and Statistical Learning Theory (SLT) \cite{Vapnik1999-VAPTNO}. These two theories, while overlapped, provides a general framework in analysing and justifying learning actions and learning model constructions, aiding in the formation of modern practices. One of the famous insight using such framework is the \textit{bias-variance tradeoff} \cite{6797087}, which states that model complexity and generality inversely affect each other, thus guarantee the need for a safe bracket between them. However, recent literatures, \cite{belkin_reconciling_2019} has indicated the fallout of such dilemma by the new phenomenon called \textit{double descent}, where there exists an interpolation threshold that renders the current statistical justification for bias-variance inconsequential to a given region. Various `anomaly' has also been detected similarly, with varying degree of sophistication and potential. In this paper, we analyse the classical learning framework, investigating aspects and concepts related to the formation of the insight of bias-variance dilemma, double descent, and give a separated interpretation and explanation of the learning theory as well as double descent. Furthermore, we also interject with one of the particular experimental result on GNN - a special case where the observed double descent does not occur at all, yet.
+
+\section{Introduction}
+
+Machine learning and its modern practice has been developed and researched, of a substantial portion by empirical and heuristic approach, either by advancing new practices, architectures or by try-and-test modification. From its early onset of a regression estimator $\theta(x,y)$ on the linear regression problem, machine learning has developed substantially. Certain model concept with great successes includes regression-classification model, Bayesian modelling, generative learning model, support vector machine, Gaussian processes, and more. Of all such, the more formal and complex model architecture created, is the concept of a \textit{neural network}. With increasingly sophisticated architecture, heuristic approach become popular, the fast-paced advancement of the field comes with new method, new results, new observations, and its far-reaching application which led to even bigger, larger scale deployment, there has been questions about the formation and status of a theoretical ground, a rigorous matter on the side of \textbf{theoretical machine learning}.
+
+While rigorous and well-formulated in a sense, classical and theoretical machine learning was dwarfed by the modern advancement of machine learning as a whole, leading to several anecdotal problems regarding the interpretation of phenomena, the reevaluation of the theory to fit the more updated analysis, and explanation to more sophisticatedly designed system. This and many more, plus as present, many of such advancements and improvements are heuristic, and the general theory and conceptual understanding remain limited, led to the choice to often opt for analogies and empirical workaround.
+
+\subsection{Statistical Learning and Double Descent}
+
+Statistical learning theory (SLT) and computational learning theory (CLT) \cite{Vapnik1999-VAPTNO,10.5555/2371238,10.5555/2621980,STL_Hajek_Maxim_2021,bousquet2020theoryuniversallearning} has been prominent in constructing a well-rounded formal theory surrounding learning problems, models, and machine learners analysis. Valuable insights have been dissected from treatment of statistical theory and mathematical modelling on models, including the \textit{bias-variance tradeoff} \cite{6797087,Domingos2000AUB}, which serves as a bound for efficient learning and model configuration (or complexity). However, recently there has been observations of \textit{double descent} \cite{belkin_reconciling_2019,schaeffer_double_2023,nakkiran_deep_2019,lafon_understanding_2024} which refute the famous tradeoff assumption, and hence brings question to the establishment of the theory, as well as several assumptions and insight in the framework. Further events and phenomena observed also includes grokking and triple, to $n$-descent \cite{davies_unifying_2023,d_ascoli_triple_2020}. Furthermore, many problems of defining and formalizing notions used in designing and implementing machine learning models are inconclusive, such as, for example, \textit{model complexity} and others. 
+
+The phenomena \textit{double descent} itself has been investigated somewhat thoroughly, firstly introduced by \cite{belkin_reconciling_2019}. Further analysis was made by several literatures, particularly conjectured the existence of double descent to the concept of model complexity and inductive bias. \cite{nakkiran_deep_2019} expanded the phenomena into deep neural network models. Their conclusion is reached by considering the perturbation of a learning procedure $\mathcal{T}$ on the effective model complexity $\mathrm{EMC}_{\mathcal{D},\epsilon}(\mathcal{T})$ defined in the paper, separating the eventual phenomena into regions of observations, thereby in one way or another, predicting the tendency of double descent. This is also the first, arguably, "concise" definition of double descent, even though its nature is an empirical definition, including the notion of model complexity. Preliminary works are done by \cite{lafon_understanding_2024}, \cite{schaeffer_double_2023}, and \cite{liu2023understandingroleoptimizationdouble} on the role of optimization in double descent. \cite{davies_unifying_2023} attempted to unifying grokking with double descent, theorized a possibility of similarity during the generalization phase transition of the inference period, and \cite{olmin2024understandingepochwisedoubledescent} attempted to explain epoch-wise double descent within the model of two-layer linear network. However, it is mentioned that it can also be expanded into deep nonlinear networks. 
+
+\subsection{Relation to Graph Neural Network}
+Graph Neural Network (GNN), first introduced in 1996 by P. Baldi and Y. Chauvin [BA96], subsequently introduced in more attention by Scarselli et al. (2008b), Bruna et al. (2014), Gilmer et al. (2017), Kip \& Welling (2017),  Velickovic et al. (2017) is a type of specialized neural network, designed for graph and relational data processing. They are built upon the MLP architecture, inserting additional \textit{Message Passing} (MP) operations amid FF layers (Kipf \& Welling, 2017), puts up forth in recent years gains traction, specifically in the concern of solving graph-like data. 
+
+GNN from those that have emerged as a transformative paradigm in machine learning and artificial intelligence, with applications toward graph and connected data, clusters, social network analysis, and recommendation systems, marked the rapid evolution, remarkable capabilities in complex analysis of complex data structure (Bharti et al., 2024). Unlike self-supervised learning, the graph neural network is utilized for interpretation data and complex relational structure, resulting in the learning of \textit{ graph representation} (Cui et al., 2018a; Hamilton et al., 2017b; Zhang et al., 2018a; Cai et al., 2018) that learns to represent the edges or subgraphs of graph nodes by low-dimensional vectors. It is also good for non-Euclidean data, of which can generalize some architecture, such as CNNs on graphs, and extend deep neural models to non-Euclidean domains, by the work on geometric deep learning (Bronstein et al., 2017), which receives enormous attention. Furthermore, several hints also indicate the \textit{`generalization'} power of GNN to generalize the current architecture of deep learning and neuro-topological structures in present models. 
+
+\begin{center}
+    \rule{0.5\textwidth}{.4pt}
+\end{center}
+Investigating this phenomenon, and other observations that contradict the theoretical notion of learning theory is important, as the theory is born to interpret conceived notion of machine learning model in practice, and to understand a free-guided, random process such as a learning model. 
+
+Hence, in this work, we investigated the theoretical machine learning formulation, its theoretical notions, rigours, and setting. This is coupled with the review on neural network-style architecture, the question of performance and large-scale organization of a GNN network, mostly focuses on a network of graph convolutional network (GCN) and graph attentions networks (GAN), and their hybrid forms. In effect, we study and identify the existence of the \textbf{double descent} phenomena within GNN, and provides reasonable analysis of it. However, since it is apparently from recent literature that there are no reports of double descent as of date, the question can also be inferred as investigating \textbf{why} the phenomena does not occur. 
+
+\section{Outline}
+To address the proposed problems, and laying out the methodology and analysis given, the paper is structure in detail as the following outline. The order is relative.
+
+\begin{enumerate}[leftmargin=0cm,label={[\arabic*]}]
+    \item We wish to establish, and reaffirming the setting of the \textit{learning theory}, and the construction of the \textit{mathematical, computational modelling} that founded neural networks and other classical models. This includes the follow-up treatment of two inherent problems in the (machine) learning theory: \textbf{computational learning theory (CoLT)} and the problem of \textbf{statistical learning theory (SLT)}. Rigorous introduction and related text are also available. 
+    \item We focus on the example of \textit{bias-variance tradeoff}, its establishments and the general dilemma surrounding it, as well as its weakness and particular anomaly such as \textit{double descent} (Belkin, 2019), and a brief consideration of the generalization of double descent, $n$-descent. Overall, the establishment, the definition, usages and interpretation of the bias-variance tradeoff will be analysed, summarized, and given insights to the problem. To do this, conjunction with theory we also wish to use exclusively the \textit{neural network formalism} to procure \textbf{test models}, such as polynomial regression, SVM, and RNN for analysis. 
+    \item We wish to pinpoint our problems and weakness in the above section when dealing with \textit{bias-variance tradeoff} and subsequently, other phenomena occurred but without effective solution in solving the objective required. From there, we also outline the sufficient next-section development of theories and our own results, which both reflects recent modern theoretical works from various manuscripts, but also our own insight and treatments of the problem. 
+    \item Section four will bring in a particular abnormality in between the phenomena of study, the graph neural network (GNN). Particularly, GNN does not exhibit any trace of double descent, which is a very interesting point of study. We provide rigorous experiments and testing on GNN network. 
+\end{enumerate}
+
+
+\section{Background}
+
+We discuss and summarize aspects of theoretical machine learning \cite{STL_Hajek_Maxim_2021,10.5555/2371238,10.5555/2621980} used throughout the standard treatment of bias-variance tradeoff and double descent in literatures.
+
+We are given the observations, or dataset of the form $\mathcal{S}=(\mathcal{X},\mathcal{Y})\subset \mathbb{R}^{n}\times \mathbb{R}^{m}$, of all 2-tuple pairs, assumed to be sampled or observed and governed by a distribution $\mathcal{D}$. 
+
+\begin{equation*}
+    \mathcal{S} = \{ (x_1,y_1), (x_2, y_2),\dots(x_n,y_n) \} \subset \mathcal{X}\times \mathcal{Y}
+\end{equation*}
+The dataset is assumed to be i.i.d. sampling according to $\mathcal{D}$, which is unknown by priori. 
+
+The learning problem is then formulated as followed. Given the machine learning model expressed a hypothesis $h$ of the hypothesis class $\mathcal{H}$, the learning theory aims for creating a procedure to learn either elements of the concept class $\mathcal{C}$ of all concepts $c: \mathcal{X}\to \mathcal{X}$, or the function class $\mathcal{F}$ of all functions $f: \mathcal{X}\to \mathcal{Y}$, which is usually set to $\{0,1\}$ or $[0,1]$. This distinction is trivial, hence, if it is clear, we will talk about the concept class $\mathcal{C}$ only as representative form. The learner $\mathcal{L}(h)$ consider the set of possible hypothesis $\mathcal{H}$, in which might not coincide with $\mathcal{C}$. It receives a partial image of sample $S=(x_{1},\dots,x_{2},\dots,x_n)$ drawn i.i.d. according to $\mathcal{D}$ as well as the label $(c(x_1),\dots,c(x_n))$. This constitutes the dataset $\mathcal{S}$, which are based on specific concept $c\in \mathcal{C}$ for the hypothesis to learn. The task is then to use (or \textit{extract}) meaningful information to select a hypothesis $h_{S}\in \mathcal{H}$ that accurately mimic $c$, with marginal error $\Theta$. The notation $h_{S}$ stands for all hypothesis that can be inferred from the range of the dataset (the first argument, $\mathcal{X}$). 
+
+The marginal error $\Theta$ is considered of two parameters, the empirical error $\hat{R}(h)$ and the generalization error $R(h)$. We give the following definition of them. 
+
+\begin{definition}[Empirical risk]
+    Given a hypothesis $h\in \mathcal{H}$, a target concept $c\in \mathcal{C}$, and a sample $S=(x_{1},\dots,x_{m})$. For some particular $\epsilon>0$, the \textbf{empirical error} or \textit{empirical risk} of $h$ is defined by\begin{equation}
+        \hat{R}_{S}(h) = \underset{x\in S\sim\mathcal{D}}{\mathbb{P}} [\ell\{h(x),c(x)\}\leq \epsilon] =\frac{1}{m} \sum_{i=1}^{m} \ell\{h(x_i),c(x_i)\}
+    \end{equation}
+\end{definition}
+
+\begin{definition}[Generalization risk]
+    Given a hypothesis $h\in\mathcal{H}$, a target concept $c\in\mathcal{C}$, and an underlying distribution $\mathcal{D}$ on $\mathcal{X}$. For some particular $\epsilon>0$, the generalization error or \textit{risk} of $h$ is defined by
+    \begin{equation}
+        R(h) = \underset{x\sim\mathcal{D}}{\mathbb{P}} [\ell\{h(x),c(x)\}\leq \epsilon] = \underset{x\sim\mathcal{D}}{\mathbb{E}}[\ell\{h(x),c(x)\}] = \int_{x\in \mathcal{D}} \ell\{h(x),c(x)\} \: dP(x)
+    \end{equation}
+\end{definition}
+For fixed $\mathcal{H}$, for fixed and sufficiently large $\mathcal{S}$, and no observation (data) errors, the empirical risk is the generalization risk. These two measures between $h$ and $c$ constitute the learning problem, which can also be separated into both cases - either empirical learning or generalization learning, one to minimize $\hat{R}(h)$, and one to minimize $R(h)$. 
+
+\begin{definition}[Empirical learning problem]
+    We present the formal form of the empirical learning. Suppose we have a \textit{target}, $c\in\mathcal{C}$, where $\mathcal{C}$ is an arbitrary concept class that captures targets of the same type. Suppose we are provided a set of observations $\mathcal{S}$. The problem is to use certain algorithm $\mathcal{A}$ using $\mathfrak{D}$, to obtain a hypothesis $h^{*}$ for a fixed $\mathcal{H}$ such that: 
+    \begin{equation}\label{eq:lp12}
+        R(h^{*}) = \min_{h\in\mathcal{H}} \hat{R}(h) = \min_{h\in\mathcal{H}} \underset{x\sim\mathcal{D}, x\in \mathfrak{D}}{\mathbb{E}}\:\ell\{h(x),c(x)\}
+    \end{equation} 
+\end{definition}
+
+The hypothesis $h^{*}$ is often called the \textit{empirical best}, for it being the minimal, finite hypothesis of the lowest loss evaluation on the entire observation space $\mathcal{S}$. There exists no certified assumption regarding whether $h^{*}$ aligns with the minimal generalization error.
+
+\begin{definition}[Generalization learning problem]
+    We present the formal form of the generalization learning problem. Suppose we have a \textit{target}, $c\in\mathcal{C}$, where $\mathcal{C}$ is an arbitrary concept class that captures targets of the same type. Suppose we are provided a set of observations $\mathfrak{D}$. Supposed we have an algorithm $\mathcal{A}$ that for fixed hypothesis space $\mathcal{H}$, \eqref{eq:lp1} holds true. The problem is to use certain algorithm $\mathcal{A}'$ such that, under limited availability, to obtain $\bm{h}$, satisfies: \begin{equation}
+        R(\bm{h}) = \min_{h\in \mathcal{H}} R(\bm{h}) \leq \{\epsilon\}, \quad \epsilon > 0 
+    \end{equation}
+    For a set of risk bounds $\epsilon$. If the setting is deterministic, then there exists $\epsilon=0$. 
+\end{definition}
+
+The way of solving separately in essence, two learning problems is inherently to interpret statistical learning theory in its elementary focus of \textit{prediction analysis}, which underlies the essence of generality such that the learnt concept is general, works for unseen observations and situations. 
+
+Solving this problem requires developing algorithms and learning procedures that can solve the smaller problem within the empirical dataset, and prepare for generalization for unseen data. This is conducted mostly by using \textbf{empirical risk minimization} (ERM) or structural risk minimization (SRM), which targets mostly the empirical data, and adding some criteria for ensuring generality. More heuristic approach (with the guarantee of convergence for the loss function and the overall objective) includes regularization of parameterized weighted model, or by analysis of trivial model complexity and reduction of said measure. Under such umbrella of choosing and optimizing model, there is the question between the generalization capability, overall accuracy, and the complexity of the hypothesis. This is formulated in classical and modern literature as the \textbf{bias-variance tradeoff}. 
+
+Before the next section, we would also want to discuss the classical notion or at least controlled confirmation between the \textit{correlation} of $c$, for distribution $\mathcal{D}$, and $c'$, for distribution $\mathcal{D}_{c'}$. 
+
+\begin{theorem}
+    For fixed $\mathcal{H}$, for fixed and sufficiently large $\mathcal{S}$, and no observation errors, the empirical risk is the generalization risk: 
+    \begin{equation}
+        \underset{\mathcal{S}\sim \mathcal{D}^{m}}{\mathbb{E}}[\hat{R}_{\mathcal{S}(h)}]  = R(h)
+    \end{equation} 
+\end{theorem}
+which effectively guarantee that the two concept between empirical and generalization setting converges to the same point. However, this might not be the case in general. 
+\section{Bias-variance tradeoff}
+
+To understand bias-variance tradeoff, we first review the phenomena, which has been studied extensively by historical literature, and modern understanding which has become a rule of thumb in many cases. For more detailed analysis, we refer to \cite{noauthor_bias-variance_nodate,hellstrom_bias_2020,6797087,Scott_Fortmann_Bias}. Here we are only interested in the main aspect of the problem, and follow a historical, more and more rigorous formation of the quoted term. 
+
+\subsection{Defining the bias and variances}
+
+Since the subject of the bias-variance tradeoff is the statistical interpretation of the statistical learning system, and by its name, requested the formulation of both terms \textit{bias} and \textit{variance}, it is imperative that we define them in our learning setting. 
+
+In terms of statistical bias of a specific model $h\in \mathcal{H}$, it is a measure of the model as a whole, throughout its operation. 
+
+In a loosely defined fashion, the \textbf{bias} of any estimator/hypothesis model measures the \textbf{central tendency} of such model, to the true function of $f$. Of such, we have the first definition: 
+\begin{definition}[Bias, I]
+  Given a model $M[h,S]$, where $h\in\mathcal{H}$ and $S$ is the associated data, the \textbf{bias} of $h$ to the true concept $c\supset \{S\}$ is defined as the measure of estimation of the central tendency of the hypothesis to the true concept: \begin{equation}
+    \mathrm{Bias}(h_S) = \underset{x\sim \mathcal{P}}{\delta}\{ \mathbb{E}[h_S (x)] ,\mathbb{E} [c(x)\mid x]  \}
+  \end{equation} 
+  where $\delta(\cdot, \cdot)$ is the difference measure, of certain measure space associated with the hypothesis and concept, and $\mathbb{E}[c(x)\mid x]$ is the function (deterministic) of $x$ that gives the mean value of $y=c(x)$ conditioned on $x$. 
+\end{definition}
+
+In a somewhat acceptable and identical manner, variance can be defined in the same way. Although the spirit of the variance term is quite different, in simple term, often interpreted as followed. Informally, it is a measure of fluctuation of a learner around its central tendency (again, expectation value), where, the fluctuations result from different sampling of the training set [B. Neal, 2019]. So how much of this is true? We first go for the formal definition of such: 
+
+\begin{definition}[Variance, I]
+  Given a model $M[h,S]$, where $h\in\mathcal{H}$ and $S$ is the associated data, the \textbf{variance} of $h$ to the true concept $c\supset \{S\}$ is defined as the measure of \textbf{fluctuations} of the hypothesis (learner) around the central tendency to the true concept: 
+  \begin{equation}
+    \mathrm{Var}(h_S) = \underset{x\sim \mathcal{P}}{\mathbb{E}} \left[ (h_S(x) - \mathbb{E} [h_S (x)])^{2} \right] 
+  \end{equation}
+  A more generalized definition gives the term \textit{variance} as \begin{equation}
+    \mathrm{Var}(h_S) = \underset{x\sim \mathcal{P}}{\mathbb{E}} d_{M} (h_S, \langle h_S \rangle) 
+  \end{equation}
+\end{definition}
+Bias and variance seems to be two distinct concepts. However, historically, in general statistic, they are very much interconnected together by their behaviours between two polar opposite of the estimation theory. This resulted in the \textit{bias-variance tradeoff} in classical statistics. The first derivation of this in terms of machine learning theory is made by Geman in 1992 \cite{6797087}.
+\subsection{Precursor (Geman, 1992)}
+
+The original definition of bias-variance tradeoff by \cite{6797087} is first constructed using the means-square error, which is regarded as a normal measure in the real encoding space. Their approach is to justify bias-variance via decomposition of the loss function $\ell$, for such to find an alternative reasonable form of such loss landscape. Suppose of a regression problem to construct a hypothesis function $f(x)$ from $(x_{1},y_{1},\dots,x_{N},y_{N})$ for the purpose of generalization - that is, predicting unseen variational values for different pair $(x_{j}, \mathord{?})$ such that $\mathord{?}=y_{j}+\epsilon$ for a conceivable implicit error. To be explicit about the relation of this problem, or $f$ on the given data $\mathcal{D}=\{(x_i, y_i)\mid i \leq N\}$, denote $f(x;\mathcal{D})$ instead of $f$, the natural mean-square measure as a predictor is: 
+\begin{equation}
+    \mathcal{M}(f,y) = \mathbb{E} \left[((y-f(x;\mathcal{D})))^{2}\mid x, \mathcal{D}\right] 
+\end{equation} for $\mathbb{E}[\cdot]$ the expectation wrt to a distribution $P$. Decomposing the right-hand side, we have: 
+\begin{equation}
+    \mathcal{M}(f,y) = \mathbb{E} \left[((y-f(x;\mathcal{D})))^{2}\mid x, \mathcal{D}\right] = \mathbb{E}\left[(y-\mathbb{E}[y\mid x])^{2}\mid x,\mathcal{D}\right] + (f(x;\mathcal{D})-\mathbb{E}[y\mid x])^{2}
+\end{equation}
+Here, $\mathbb{E}\left[(y-\mathbb{E}[y\mid x])^{2}\mid x,\mathcal{D}\right]$ does not depend on $\mathcal{D}$, but simply the statistical variance of $y$ given $x$. The term $(f(x;\mathcal{D})-\mathbb{E}[y\mid x])^{2}$ is considered a natural measure of effectiveness on $\mathbb{R}^{n}$ as a singular predictor of $y$. Now, for $\mathbb{E}_{\mathcal{D}}\left[(f(x;\mathcal{D})-\mathbb{E}[y\mid x])^{2}\right]$ which depends on the training set $\mathcal{D}$ in its computation, is decomposed into the form of \textit{bias-variance decomposition} terms, by derivation: 
+\begin{equation}
+    \begin{split}
+        \mathbb{E}_{\mathcal{D}} \left[(f(x;\mathcal{D})-\mathbb{E}[y\mid x])^{2}\right] & = \underbrace{\left\{ \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})] - \mathbb{E}[y\mid x] \right\}^{2}}_{\text{bias term}} + \underbrace{\mathbb{E}_{\mathcal{D}} \left\{(f(x;\mathcal{D})- \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})])^{2}\right\}}_{\text{variance term}}
+    \end{split}
+\end{equation}
+
+We summarize this in the following statement. 
+
+\begin{theorem}[Bias-variance decomposition]
+    Suppose the model $f(x;\mathcal{D})$ for the data $\mathcal{D}=(x_i, y_i)$ and its parameter $x$ is defined. For $y_{i}$ of the target concept's responses $y$, and consider a regression problem with the loss measure $\mathcal{M}(f,y)$ of mean squared risk, the following statement is true: \begin{equation}
+        \mathbb{E}\big[\mathcal{M}(f,y)\big] = \mathcal{B}(f,y) + \mathcal{V}(f,y) + \mathbb{E}\Big[\mathbb{E} \left[((y-f(x;\mathcal{D})))^{2}\mid x, \mathcal{D}\right]\Big]
+    \end{equation}
+    for $\mathbb{E}[\:\cdot\mid x, \mathcal{D}]$ any expression with dependencies on $x$ and $\mathcal{D}$. The bias and variance term is subsequently expressed by 
+    \begin{align}
+        \mathcal{B}(f,y) = \underbrace{\left\{ \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})] - \mathbb{E}[y\mid x] \right\}^{2}}_{\text{bias }}, \quad \mathcal{V}(f,y) =\underbrace{\mathbb{E}_{\mathcal{D}} \left\{(f(x;\mathcal{D})- \mathbb{E}_{\mathcal{D}}[f(x;\mathcal{D})])^{2}\right\}}_{\text{variance}}
+    \end{align}
+\end{theorem}
+
+The above decomposition principle is often expressed into a form where there exists the intrinsic noise \cite{brown2024biasvariance}: 
+\begin{equation}
+    \begin{split}
+        \mathbb{E}_D \left[ \mathbb{E}_{xy} \left( y - \hat{f}(x) \right)^2 \right]
+        &= 
+         \mathbb{E}_x \left[ \left( y^* - \mathbb{E}_D[\hat{f}(x)] \right)^2 \right]
+        + \mathbb{E}_x \left[ \mathbb{E}_D \left( \hat{f}(x) - \mathbb{E}_D[\hat{f}(x)] \right)^2 \right] \\
+        &+ \mathbb{E}_{xy} \left[ \left( y - y^* \right)^2 \right]
+    \end{split}
+    \end{equation}
+A main common theme of criticism toward bias-variance tradeoff is the fact that the decomposition is much more general, and intrinsic for the class of \textit{mean squared loss}. However, it can also be shown \cite{brown2024biasvariance,PfauBregmanDivergence} that it also holds for the class of Bregman divergence measure. 
+
+In general, bias-variance is typically presented. In fact, one of the reason that it became the rule-of-thumb for ML practitioner, as well as generally statistical learning (\cite{lafon_understanding_2024} provides a quite rigorous treatment of bias-variance tradeoff in the section on statistical learning theory) solidify the trade-off as a particular model selection principle. 
+
+Generally this tradeoff can be summarized as followed: 
+\begin{theorem}[Bias-variance tradeoff]
+    For the expected loss of any given hypothesis $h$, the bias $\mathcal{B}(f,y)$ and variance $\mathcal{V}(f,y)$ is inversely proportional, that is, $\mathcal{B}(f,y)\propto \lambda^{-1} \mathcal{V}(f,y)$ for some proportionality $\lambda$ that may or may not be constant. In the most general case possible, $\lambda = -1$ on the entire error range. 
+\end{theorem}
+
+The tradeoff is then of inverse proportionality. Indeed, statistically, we have such tradeoff on a statistical framework in a more concrete sense. For the bias to increase, variance will increase, of which the criterion is inverse - we would like to have more bias but lower variance, according to such theory. 
+
+\subsection{Formalism issues and uncertainty}
+
+While the formulation of bias-variance is quite intuitive, the above bias-variance relationship leaves a lot of room for ambiguous interpretation. Understanding this, and find a way to formalize this relationship is crucial for further analysis into the subject matter. The concept that we now know as bias-variance tradeoff has a long history, which is based in statistic. As of classical statistics, the bias-variance tradeoff is already presented with the oldest account dates back to \cite{Grenander1952OnES}. 
+
+Being a relatively simple insight from decomposing the general expected error of the system, bias-variance trade-off is often interpreted as the relationship between the proxy for model complexity, and the proxy of model stability. The term model stability is more ambiguous, and as definition for variance, it can be thought as the \textit{measure of fluctuation} of the result of the hypothesis learner. While bias calculate the total amount of error to the given dataset, variance calculate the overall fluctuation of the result to the mean. This in turn, led to the application of bias-variance trade-off to be applied onto the notion of \textit{underfitting and overfitting}, which is two observable phenomena occurred in practice. 
+
+Formulation and interpretations of the concept of bias-variance has been conducted, particularly for example, in \cite{10.5555/2621980}, the bias-variance tradeoff is connected to the No-free-lunch theorem, and its somewhat argued in the sense of approximation-estimation error tradeoff \footnote{We find this observation helpful. \cite{brown2024biasvariance} indeed raised a very good point on the misleading nature of the approximation-estimation tradeoff in conjunction with its misunderstood usage with bias-variance tradeoff.}. In Geman's work, it is formulated using a treatment of statistical learning on fixed-size parametric system. 
+
+\begin{theorem}[No-Free-Lunch]
+    Let $A$ be any learning algorithm for the task of binary classification with respect to the $0-1$ loss over a domain $\mathcal{X}$. Let $m$ be any number smaller than $|\mathcal{X}|/2$, representing the training set size. Thn, there exists a distribution $\mathcal{D}$ over $\mathcal{X}\times \{0,1\}$, such that: 
+    \begin{enumerate}
+        \item There exists a function $f:\mathcal{X}\to \{0,1\}$ with $L_{\mathcal{D}}(f)= 0$. 
+        \item With probability of at least $1/7$ over the choice of $S\sim \mathcal{D}^{m}$ we have that $R_{\mathcal{D}}(A(S))\geq 1/8$. 
+    \end{enumerate}
+\end{theorem}
+
+This theorem states that there exists no universal learner, for every learner there exists a task on which it fails, even though success can be achieved by another learner. In certain way or another, this theorem is in the profession of \textit{impossibility theorem}, where one choose to forbid the model at present theory from being universal, that is, capable of doing everything. In particular, any algorithm that chooses its output from hypothesis in $\mathcal{H}$ will fail on some learning tasks. 
+
+In famous books and articles, bias-variance is often implicitly recognized, and is often not dealt with. Statistical learning theory on the other hand opted for more complex and often different approach to said model selection principle, for example, by using approximation-estimation metric. Works has also been done to expand bias-variance tradeoff to more robust and rich family of loss functions, for example, the bias-variance decomposition for general setting \cite{PfauBregmanDivergence,buschjager_generalized_2020,unified_bias_composition}. Nevertheless, the issue remains: there are no exact treatment of the bias-variance tradeoff, especially the correction of such theory when abnormality in their behaviours are spotted, for instance, grokking and double descent. 
+
+In fact, this goes even further in history. By accounts of \cite{neal2019biasvariancetradeofftextbooksneed}, experiments and evidences shown that even in Geman's analysis, there are inconclusive evidences of the cracks of the bias-variance formalism. We quote their explanation of the inconclusive result. 
+\begin{quote}
+    The basic trend is what we expect: bias falls and variance increases with the number of hidden units. The effects are not perfectly demonstrated (notice, for example, the dip in variance in the experiments with the largest numbers of hidden units), presumably because the phenomenon of overfitting is complicated by convergence issues and perhaps also by our decision to stop the training prematurely. (Geman et al., 1998)
+\end{quote}
+
+Overall, there are many contradictions and edge cases for bias-variance tradeoff, as well as observations and formulation being misrepresented and misunderstood, particularly with other measures in machine learning theory. It is, however, noted that bias-variance is not entirely wrong - it is a very useful measure and indicator for machine learning models, historically, despite its weakness and flaws that we now observe. 
+\subsection{Approximation-Estimation tradeoff}
+
+Another closely related notion to bias-variance is the concept of approximation-estimation tradeoff. We refer to \cite{10.5555/2371238,lafon_understanding_2024} for some analysis and mentions. 
+
+Let $\mathcal{H}$ be a family of functions mapping $\mathcal{X}\to\{1,-1\}$. This is the particular case of \textbf{binary classification}, in which can be straightforwardly extended to different tasks and loss functions. The \textit{excess error} of a hypothesis $h\in\mathcal{H}$, is the difference between its error $R(h)$ and the Bayes error $R^{*}$. This can be decomposed to be the following: 
+
+\begin{equation}
+    R(h) - R^{*} = \Big( R(h) - \inf_{h\in \mathcal{H}} R(h) \Big) + \Big( \inf_{h\in \mathcal{H}} R(h) - R^{*} \Big)
+\end{equation}
+
+The first bracket contains the \textbf{estimation error}, and the second bracket contains what is called the \textbf{approximation error}. The estimation error depends on the hypothesis $h$ selected. It measures the error of $h$ with respect to the infimum of the error achieved by hypotheses in $\mathcal{H}$, or that of the best-in-class hypothesis $h^{*}$ when that infimum is reached. The approximation error measures how well the Bayes error can be approximated using $\mathcal{H}$. It is a property of the hypothesis set $\mathcal{H}$, a measure of its richness. 
+
+Model selection consists of choosing $\mathcal{H}$ with a favourable trade-off between the approximation and the estimation error. However, in the most general case, this will be done, but not in practice, as it requires the underlying distribution $\mathcal{D}$ to be known to determine $R^{*}$, which is not possible. In contrast, the estimation error can be bounded, or can be analysed, using particular metric and analysis. 
+
+Is however, worth to note that bias-variance and approximation-estimation have a very complicated relationship, for example, in \cite{brown2024biasvariance} shown that they are indeed not the same, and is in fact two different decomposition, where one is the others' component.
+
+\section{Double descent}
+
+Double descent, as mentioned, refuses the dichotomy of bias-variance tradeoff as the standard statistical rule of thumb for optimality of the statistical efficiency of the model, which is based on the nevertheless true to certain amount empirical observations. To do any analysis further down, we need clarification, definition of double descent. \cite{10.5555/2621980,10.5555/2371238} provides most of the formal literature regarding this situation, though we would utilize a range of empirical evidence in such analysis.
+
+The first paper to report it is Belkin et al.'s paper \cite{belkin_reconciling_2019} on reconciling the practice of bias-variance tradeoff, with new empirical evidences. 
+
+\section{The break-off between theoretical and modern practice}
+
+While analysing statistical learning theory, modelling theory, the theory and implementation of double descent and bias-variance tradeoff, theoretical conjectures, and overall theme of previous analysis on similar topic, we perhaps have seen a pretty observable disconnect and break-off, or lacking in and between machine learning theory and modern application and heuristic practice. 
+
+Analysing statistical learning theory and overall landscape of statistical learning theory, and the learning theory as a whole, encountering new problems like double descent revealed its weakness, and ultimately, perhaps one of the reason why it is ineffective against such problem. First, there are simply too many assumptions made, too many formulations made during said process. Furthermore, there are also unclear notions and concepts, of which make it even harder to analyse or fully formalize. Secondly, there are inherent conflicts and uncertainty within those theories, formulations and notions by itself. For example, in one sense, the No-free-lunch theorem is considered to be representative and true, whilst also simultaneously being considered the opposite of such. And amidst abnormality behaviours of the old bias-variance formulation, we also find distinctive weakness in our theory, for example, the concerning difficulty in defining the notion of \textit{model complexity} in various contextual ways. To analyse double descent, perhaps we also need a new theory or formulation to support it. 
+
+Furthermore, most of the general solution and bounds created by statistical learning theory is often in a very simplistic system. For example, if we are to utilize the Rademacher complexity measure, most of the time we will have to compute it through the growth function $\Pi_{\mathcal{H}}(m)$ for $m$ points, on the standard finite hypothesis class $\mathcal{H}$ such that 
+\begin{equation}
+    \Pi_{\mathcal{H}}(m) = \max_{x_1, \dots, x_m \in \mathcal{X}} \left| \left\{ (h(x_1), \dots, h(x_m)) \mid h \in \mathcal{H} \right\} \right|
+\end{equation}
+Most of our problems resolve to binary classification, or rather, the problem of pattern recognizing discrete, reduced classification form. It is not so sure for now if all problems can be reduced to such way, so we cannot draw conclusive analysis that is not diluted of mathematical formulation for complex systems. That is not to count the computationally intensive operation required to calculate the supposedly classical measure, while not entirely of itself holds any substantial reasonable information about the internal dynamics of the model itself. 
+
+It is then suggested to instead revitalize a particular portion of the theory, or transition to another new theory on itself. 
+
+\clearpage
+\section{Preliminary experiments}
+
+For understanding and analysing double descent and bias-variance trade-off, and furthermore in later section on identifying double descent, we would like to use several test models specifically for exhibiting bias-variance, as well as testing hypothesis and forming theoretical conjectures. Specifically, we would like to use \textit{polynomial regression model}, the standard architectural description of \textit{support vector machine} (SVM), the vanilla \textit{neural network}, and \textit{recurrent neural network}. Our goal is pretty conclusive. 
+
+\subsection{Polynomial model}
+Most of the examples often seen with bias-variance tradeoff is with the famous example of polynomial regression. Indeed, in the range of interpretable, observable model results, polynomial regression with expressive capacity increased is one of the more famous problem setting, which also lies in the regression learning task. \cite{goodfellow2016deep} also used polynomial regression in his book to illustrate the problem of bias-variance tradeoff, and several textbooks, such as ISLR \cite{gareth_james_introduction_2013}. 
+
+Informally, polynomial regression considers the set of all hypotheses $h$ of the polynomial hypothesis class $\mathcal{H}_{p}$. In the single, univariate case of the hypothesis representation, the polynomial $p_{n}(x)\in \mathcal{H}_{p}$ is expressed by: 
+
+\begin{equation*}
+    p_{n}(x)=\sum^{n}_{i=0}c_{i}x^{i}
+\end{equation*}
+where $c_{i}$ is the associated constant for each term. The bias term here is controllable, and is part of the polynomial as the mathematical formulation holds. As always, since it is a model, $x$ argument cannot be controlled. The only degree of freedoms provided is the set $\{ c_{i} \}$ of all constants. Hence, we can conceptualize this as always, as a bunch of unit processing embedded each unit, with a scaling factor by $i$, and control them by the weight. The form $p_{n}(x)$ in a polynomial regressor will often be $$M[p(n,x)]=\mathbf{W}f(\mathbf{x})^{\top}$$
+where $f:\mathbb{R}^{n+1}\to \mathbb{R}^{n+1}$ function which scales by applying power per argument. As standard, we will use the typical stochastic gradient descent \footnote{As for why it is not pure vanilla gradient descent, we notice that for a gradient descent algorithm in an informal setting, it is wise to notice that for any given configuration dataset space, the path itself is deterministic based on all the description of the dynamical system (hyperparameters like learning rates, the algorithm itself, the hypothesis's parameters and representation, and the data assumptions - for example, without white noise or not). Removing determinism can be done using stochastic gradient descent, even though for now a formal treatment of this 'stripping off deterministic behaviour' is not fully formulated. }, though it is important to note why we have to use it. 
+
+Experimentally, we would likely have to present certain interpretation and configuration to the setting, depends on particular subject of interest. So far, this is most presentable using diagram. So I will have to make one. 
+
+\subsection{Support Vector Machine (SVM)}
+
+Support vector machine, first formally originated from \cite{Vapnik1999-VAPTNO}, is a model inherently, specifically defined for pattern recognition task, and binary classification via an \textit{optimal separating hyperplane}. There are two variants for SVM, namely, for linear and nonlinear hyperplane. 
+
+The SV machine implements the following two precursor ideas: It maps the input vectors $x$, supposed of the setting, into a high-dimensional feature space $Z$ through some nonlinear mapping, chosen a priori. In this space, an optimal separating hyperplane is constructed. By statistical learning theory, Vapnik restricted the function class (as for infinite hypothesis it is impossible to learn) to the class of hyperplanes by 
+\begin{equation}
+    \langle \mathbf{w}\cdot \mathbf{x} \rangle + b = 0 ; \quad \mathbf{w}\in \mathbb{R}^{n} , b\in \mathbb{R}
+\end{equation}
+which $\mathbf{w}$ is the controlling weight, $\mathbf{x}$ is the input space to the space of all binary $\{-1,+1\}$ category. Hence, this basically divide the input space into two: one part containing vectors of the class $-1$ and the others being $+1$. If there exists such a thing, then it is said to be \textit{linearly separable}. To find the class of a particular vector $\mathbf{x}$, we use the following decision function 
+\begin{equation}
+    f(\mathbf{x}) = \mathrm{sgn}[\langle \mathbf{w}\cdot \mathbf{x}\rangle+ b]
+\end{equation}
+This is called the \textbf{hyperplane classifier} class. As can be understood simply from such, there exists many hyperplanes that can correctly classifies the classes. It has been then shown that the hyperplane that guarantees the best generalization problem performances is the one with the maximal margin of separation between two classes \cite{Cristianini2000AnIT}. The above form of finding final classification can then be presented in dual form, which then depends only on dot products between vectors, as 
+\begin{equation}
+    f(\mathbf{x}) = \mathrm{sgn}\left(\sum^{\ell}_{i=1} y_{i}\alpha_{i} \langle \mathbf{x}\cdot \mathbf{x}_{i} \rangle+ b\right)
+\end{equation} where $\alpha_{i}\in \mathbb{R}$ is a real-valued variable that can be viewed as a \textit{measure} of how much informational value $\mathbf{x}_{i}$ has (for $x_{i}$ the support vectors we get from training)\footnote{The \textit{support vector} of a particular hyperplane $\mathbf{y}$ is the collections of all points that lies closest to the hyperplane, which is specified as condition for maximization on both side of maximal margin vector machine.}
+
+The second idea is of the \textit{kernel method}. This particular method, useful and well-known of the time SVM was created, gain a more prominent position among other techniques, including neural network. Specifically, this method is characterized by the mapping of the input vectors into a richer (usually high-dimensional) feature space where they satisfy \textit{linear separable} criteria. This prompted the possibility to solve nonlinear problem through such mapping, and indeed yields a nonlinear decision surface in the input space, which is linear in the feature space. A \textbf{kernel} (function) is then a function $k(\mathbf{x},\mathbf{y})$ that given two vectors in input space, return the dot product of their images in feature space such that $k(\mathbf{x},\mathbf{y})=\langle \phi(x), \phi(y) \rangle$ for the nonlinear mapping $\phi$. The general form of SVM is then 
+\begin{equation}
+    f(\mathbf{x}) = \mathrm{sgn} \left(\sum^{\ell}_{i=1} y_{i}\alpha_{i}k\langle \mathbf{x}\cdot \mathbf{x}_{i} \rangle\right)
+\end{equation}
+for any particular final categorization. One of the major problem for analysing SVM, is in the properties of it potentially having infinitely many parameters, depends on the size of the dataset. This makes the curve of both bias-variance and double descent not applicable in such regard - infinitely many parameters complexity, yet still finite complexity class. 
+
+From such observation, it would seem imperative that the notion of complexity based solely on the 
+
+\clearpage
+
+\section{Experiments}
+
+To confirm and observe particular insights on the problem, experimentally, we focus more on the results given by the analysis on a particular type of neural network, the graph neural network (GNN). However, preliminary experiments are also needed, for example, with various complexity and function class, though most of them are algorithm based on ERM, which typically can be called derivation of gradient descent. 
+
+According to major literature, for example, \cite{shi2024homophilymodulatesdoubledescent}, double descent is absent usually in GNN, for example, GCN networks. However, in fact, it is relatively unstable, as for certain papers and researches point out its existence and variation of it being ubiquitous to the network, some reports none of such occurrence in their experiments. Thereby, our first strategy would be to encounter this absence, and the way to force it to exhibit itself, if the phenomenon is perceived non-existent. In experiments by \cite{shi2024homophilymodulatesdoubledescent,buschjager_generalized_2020}, we know that graph network are inherently sensitive to data configuration. The graph MPNN in \cite{GRP_Hamilton}, for example, depends heavily on the configuration of data to present its neighbourhood aggregation for each layer. However, we would like to first claim the dichotomy of bias-variance holds for it to be presented as the first interpolation point.
+
+We would use, and utilizes a hybrid setting between MPNN, GCN and GAN (attention network), to configure out network in itself. However, heterogeneous network - either consists of only MPNN or GCN layers, is somewhat preferred for ease of analysis, and potency of experimental learning control. Because double descent lies between the concept of test error and training error, either supervised or semi-supervised would be used. According to \cite{shi2024homophilymodulatesdoubledescent}, semi-supervised setting gives better flexibility and overall 'range' of operation. Other than GNN, certain more abstract, 'vanilla' neural network formalism as specified in the above section treatment will also be conducted, in a supplementary manner. 
+
+\subsection{Main result}
+
+Because of the irregularity in the statement that GNN does not exhibit any phenomena that is related to double descent \cite{shi2024homophilymodulatesdoubledescent}, we would be investigating this phenomena the most. This particularly means that a lot of our focus will be to analyze the GNN network by itself. 
+
+\subsubsection{Quick introduction to graph theory}
+
+A \textbf{graph} $G$ is a 2-tuple $(V,E)$ where $V$ is the set of \textbf{vertices}(or nodes) and $E$ is the set of \textbf{edges}. The set $ne[n]$ stands for the neighbour of vertex $n$, while $co[n]$ is the set of edges that have $n$ as vertex. Edge is often denoted by $(u,v)$ for vertices $u$ and $v$. We said that $(u,v)$ \textbf{joins} $u$ and $v$, and it can be directed or undirected. A graph is called a \textit{directed graph} if all edges are direct or \textit{undirected graph} if all edges are \textit{undirected}. The \textbf{degree} of vertices $v$, denoted by $d(v)$, is $t$ number of edges connected with $v$.
+The graph data can be loosely (not specifically in cases) as followed. Let $\mathcal{G}=(\mathcal{V},\mathcal{E},\mathcal{W})$ be a graph, where $\mathcal{V}=\{1,\dots,n\}$ is the set of nodes, $\mathcal{E}=\{1,\dots,M\}\subseteq \mathcal{N}\times \mathcal{N}$ is the set of edges, and $\mathcal{W}: \mathcal{E}\to \mathbb{R}$ is the edge's weight function. There is also the optional weight $\mathcal{W}': \mathcal{V}\to \mathbb{R}$ for each vertex. In this case, it is for certain problem like TVP, where all cities have certain properties for the path. We say that a data sample $\mathbf{x}$ is a graph data, if its entries are related through the graph $\mathcal{G}$. 
+
+Our 2-tuple $(V,E)$ and the collection of all such tuple forms a group of \textit{simple graph} (undirected) and \textit{directed graph}, where the only change is that $(u,v)\neq (v,u)$ for any given edge on a graph. From such, a typical setting, if we are to apply a machine learning setting on graph-theoretical problems, can be described as the following
+
+\begin{definition}[Graph-theoretical edge learning]
+    Given a graph $G(V,E,\psi_{E})$ for $\psi_{E}$ the edge proprietary classification, there exists an encoding space $\mathsf{ENC}(G)$ that the graph lives in, and a function $\phi: (E,\psi_{E})\to (E',\psi_{E}')$ such that to change the configuration of the connector space. The \textbf{learning problem} is for a learner $\mathcal{L}$ to learn a function $\phi$ that is appropriate of the intended use case, such that for any given data $D(V^{*},\odot)$, either:
+    \begin{enumerate}
+        \item Assign $E^{*}$ and transform to $\psi_{E}^{*}$. 
+        \item For existing $E^{*}$, transform to $\psi^{*}_{E}$. 
+    \end{enumerate}
+    All within the marginal error evaluation of $L$. 
+\end{definition}
+
+The reason for choosing an encoding can be justified as followed. Typically, graphs can be classified and categorized into a specific type of data representation, called \textit{non-Euclidean data}. More specifically, there exists a topological space encapsulating the graph, but exists no fundamental measure on such topological space housing it. For example, there exists no notion of a \textit{discrete distance} on a graph, but only the induced notion of \textit{graph distance} by counting the shortest path from one node to another in a specific graph. Because machine learning works on the assumption that the space of the system gives \textit{measurable space}, a natural response is to encode the system into an encoding space of arbitrary meaning. One, for example, simple encoding is the degree map, where nodes are mapped into a $n\times n$ matrix of nodes and valued by the number of neighbour they have.  
+
+\subsubsection{Graph Neural Network}
+
+We target the graph neural network structure (GNN), specifically a neural network implementation for solving graph data problems. A more detailed description can follow from \cite{GRP_Hamilton,Scar04}. Typically, graph neural network (\cite{Scar04,Veli_kovi__2023,tanis2024introductiongraphneuralnetworks,lopushanskyy2024graphneuralnetworksgraph}) follows the instruction flow of the \textit{encoder-decoder} architecture. A GNN is formulated and structured by analysing a graph data system by conceptually apply a \textit{neighbour-dependent} neural input arrangement on top of the data. That is, in principle, 
+
+Structurally, the description of a GNN is defined by the overall \textit{message-passing neural network} (MPNN), defined by: 
+
+\begin{equation}
+    \mathbf{x}_i^{(k)} = \gamma^{(k)} \left( \mathbf{x}_i^{(k-1)}, \bigoplus_{j \in \mathcal{N}(i)} \, \phi^{(k)}\left(\mathbf{x}_i^{(k-1)}, \mathbf{x}_j^{(k-1)},\mathbf{e}_{j,i}\right) \right),
+\end{equation}
+
+for $\bigoplus$ the differentiable, permutation invariant function, usually called the aggregator, $\mathbf{x}^{(k-1)}_i \in \mathbb{R}^F$ the node features of node $i$ in passing layer $k-1$, $\mathbf{e}_{j,i} \in \mathbb{R}^D$ the optional edge features from node $j$ to node $i$. Additionally, $\gamma$ denotes the nonlinearity differentiable function (usually ReLU, or sigmoid), and $\psi$ denote the MLP layer accompanied. A simplified example of this structure in \cite{Scar04,GRP_Hamilton} as 
+\begin{equation}
+    \mathbf{x}_i^{(k)} = \sigma \left( \mathbf{W}_{\mathrm{self}}^{(k)} \mathbf{x}_i^{(k-1)} +  \mathbf{W}_{\mathrm{neigh}}^{(k)} \sum_{v\in \mathcal{N}(i)} \mathbf{x}_v^{(k-1)} + \mathbf{b}^{(k)} \right)
+\end{equation}
+
+where $\mathbf{W}_{\mathrm{self}}^{(k)}, \mathbf{W}_{\mathrm{neigh}}^{(k)}$ are trainable parameter matrices, and $\sigma$ denotes an elementwise nonlinearity, and an optional bias term $\mathbf{b}^{(k)}$. Different flavours of the differentiable aggregator create the \textit{graph convolutional networks} (GCNs), defined by: 
+\begin{equation}
+    \mathbf{x}_i^{(k)} = \sigma \left( \mathbf{W}^{(k)} \sum_{v\in \mathcal{N}(i)\cup \{i\}} \frac{\mathbf{x}_{v}}{\sqrt{\lvert \mathcal{N}(i)\rvert \lvert \mathcal{N}(v)\rvert }} \right)
+\end{equation}
+
+A somewhat popular approach is to apply attentional layer and weights to facilitate neighbourhood attention, which is called graph attention network.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/What.png}
+    \caption{A conceptual illustration on the running flow of an $n$-layer GNN on particular structure of interest. Note that the data section itself has particular embedding structure on its own.}
+\end{figure}
+
+A GNN is, when fitting into the framework of learning system and modeling, is a feature mask generation and adaptation mechanism of the modelling pipeline. What this means is that GNN \textit{assumes} every data point has its own feature-embedded space, and according relationships. By this, we further mean that it creates an embedding space of the aggregator, or the GNN-embedding space within such. While input embedding space captures and represents the best possible interpretation of the input space, GNN-embedding space captures what is required of the aggregation properties that the GNN layers specify. Hence, we can assume relative fallacy in such embedded space. Those $n$-embedded space of data aggregated at the $n$th final layer, would then be fed into another straightforward - task-based and structured network, such as a pass to a single-layer sigmoid network, Hamming network, or generally an FCN. 
+
+In the supervised learning domain, there are a few direct scenarios and learning problems as accordance to its nature - both can be divided to the \textit{node} $V$ problem, \textit{edge} $E$ problem, or aggregation-specific problem like embedding space-related tasks, for example. 
+
+\subsection{Analysis of GNN}
+
+
+
+\subsection{Experiment 1: Identifying bias-variance in GNN}
+Experiment 1 is the preliminary confirmation of bias-variance tradeoff in graph neural network, before jumping in empirical analysis or forcing appearance of double descent. 
+
+
+
+\clearpage
+\section{Conclusion}
+
+
+\section{Related works}
+\begin{description}[style=unboxed,leftmargin=0cm]
+    \item[Performance and Evaluation] The question of performance and broad evaluation of GNN on supervised or semi-supervised tasks has been investigated in some recent papers \cite{Oono2020Graph}, \cite{shi2024homophilymodulatesdoubledescent}. However, at of date, there are no sufficient evidence that double descent appears on GNN from any recent literature \cite{Oono2020Graph}. The task considered here is \textit{node classification}, due to its sufficient large scale compare to graph classification, with the majority of similar literature focus on the analysis of Graph Convolutional Layer in such task.  
+    \item[Double descent] The phenomena \textit{double descent} itself has been investigated somewhat thoroughly, firstly introduced by \cite{belkin_reconciling_2019}. Further analysis was made by several literatures, particularly conjectured the existence of double descent to the concept of model complexity and inductive bias. \cite{nakkiran_deep_2019} expanded the phenomena into deep neural network models. Their conclusion is reached by considering the perturbation of a learning procedure $\mathcal{T}$ on the effective model complexity $\mathrm{EMC}_{\mathcal{D},\epsilon}(\mathcal{T})$ defined in the paper, separating the eventual phenomena into regions of observations, thereby in one way or another, predicting the tendency of double descent. This is also the first, arguably, "concise" definition of double descent, even though its nature is an empirical definition, including the notion of model complexity. Preliminary works are done by \cite{lafon_understanding_2024}, \cite{schaeffer_double_2023}, and \cite{liu2023understandingroleoptimizationdouble} on the role of optimization in double descent. \cite{davies_unifying_2023} attempted to unifying grokking with double descent, theorized a possibility of similarity during the generalization phase transition of the inference period, and \cite{olmin2024understandingepochwisedoubledescent} attempted to explain epoch-wise double descent within the model of two-layer linear network. However, it is mentioned that it can also be expanded into deep nonlinear networks. 
+    \item[Graph Analysis] The graph analytical problems and overall setting lies in the framework of \textit{geometric deep learning}, covered and described in \cite{bronstein2021geometricdeeplearninggrids,Bronstein_2017}. It is also related to the problem of learning on \textit{non-Euclidean} data as opposed to the normally Euclidean-embedded numerical data. 
+    \item[GNN] Graph Neural Network has been extensively studied - first formulated by \cite{Scar04} on the principle of subjects on which a graph can be studied, and the message passing principle. A more recent, fairly comprehensive resource on the treatment of graph neural network is \cite{GRP_Hamilton}. 
+\end{description}

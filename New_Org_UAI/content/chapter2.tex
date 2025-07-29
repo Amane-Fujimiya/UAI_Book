@@ -1,0 +1,398 @@
+\chapter{Classical mathematical modelling}
+Often time when we refer to modelling, we consider it to be \textit{mathematical modelling} instead. Because our interest aligns with such, we will talk all about modelling, and its principle, in this section. 
+
+We begin this section to mathematical modelling and simulation with an explanation of basic concepts and ideas. Generally, this includes exactly defining the terms \textbf{system, model, simulation, mathematical model}, and related notions or subcontext.  
+
+We also discuss and analyse on the reflections of the objective of mathematical modelling, and simulation, on characteristics of "good" models, and classification of mathematical models. Though it is strongly advised to take the following section in a \textit{classical sense}, as we would eventually find out, that the notions and concepts presented here will be vastly outdated - and hence needs quite a bit of update to stay up with the current state-of-the-art theory. 
+
+Our starting point is the complexity of the problems treated in science and engineering, because from here, is the first case we even need to create a \textbf{model}. There exists a lot of \textbf{non-mathematical models} in the past, however, and we shall see how the language of mathematics will help in this role. \cite{VeltenetalMathematicalModelling} will be the main text of this section. 
+
+\section{The supposed goal of modelling}
+
+In science, a \textit{system} refers to the object of interests, which can be a part of nature (atoms, etc), or an artificial technological system. Principally, we do this all days, with similar approach to isolate the problem into its respective system. 
+
+The more \textbf{complex} a system is, the harder it is for dealing with the objects in that system, and the more intricate relationships and factors contributes to specific observations and problem that dilute the solution. It is the genuine task of \textbf{scientist} and \textbf{engineers} then, to deal with complex systems, and be effective at it, to deal with the extended complexity requires to solve the problems inferred in the system itself. 
+
+For a very complex system, the first step would be simple - be simple. That is, we use \textbf{simplification} of such system to start solving it. Usually, to solve specific problems given a system, a simplified view can pinpoint exactly the ergonomic of the problem - what is important, what to discard, and what to consider. 
+
+Take an example of a car. Suddenly, it does not start. 90\% of the time, trying to look into its tank, or battery, will solve the problem. While doing this consciously, what we have done is the simplification of the concept of a car. A car, by itself, is a very complex system full of mechanical moving parts and intricate connections. However, under the question of \textit{why it cannot run}, a simplified picture focuses on \textit{what enables it to run} in the first place, result in pinpointing the first two choices - which equates to the fact that 'a car need fuels to run, similarly needs energy to work'. 
+
+This simplified picture is appropriate, \textit{most of the time}. If this does not work, our focus shifts to the next simplification - the wheel differential is not working. And that continue. The ergonomic here works similar to deduction and elimination. Once factors are eliminated, the one remaining will be the root of the problem. Instead of solving the system immediately as a whole, we targeted it by analysing the components it brings. 
+
+In another different way, simplification does help with understanding complex system, is the effect of \textbf{scale}. If one want to study photosynthesis, they would go for a single cell instead of millions. By certain assumptions and pervious conjectures, we then can analyse the single cell, and generalize it for the entire millions by uniformity. If one wishes to learn how the brain works, they would focus on the smallest component that makes up the brain first. 
+
+To break up the complexity of a system under consideration, we need to use simplified descriptions of that system - or \textbf{models}. This can be done either by elimination, abstractions, or else. But first, we need the definition of a model. 
+
+\section{Models, systems, and questions}
+For the beginning of the discussion, we would like to examine the concept of a model, from a given perspective. The following definition follows from Marvin Minsky (1965): \index{model} 
+
+\begin{definition}[Model]
+    To an observer $B$, an object $A^{*}$ is a \textbf{model} of an object $A$ to the extent that $B$ can use $A^{*}$ to answer question that interest him about $A$. 
+\end{definition}
+
+The definition is pretty much very "purposeful" definition, one can clearly see the dependency of the existence of a model $A^{*}$ onto an object $A$. Note, that in the definition it implies that \textit{no model is perfect} - by the priori, there exists the observer $B$, hence their interpretation might, or perhaps will be subjective. For example, the model of probability that it will be raining in Detroit being 80\% in the first two days, and 20\% for the remaining 5 days of the week, can be interpreted differently as 100\% percent raining for the first two, and 0\% otherwise, assume the record is correct. But under the consideration and the problem setting, the model is indeed perfect by itself. The definition is hence a \textit{formal definition}, in the sense that it operates with terms such as \textit{objects} or \textit{observer} that are not defined in a strict, axiomatic sense in mathematics. In fact, it is not so effective to think of defining axiomatically, since we can have both informal and formal axiomatization.\footnote{The issue here might be more nitpicking than not. But, under specified circumstances, we can say that \textit{formalism} works by describing and structure the system in a strict sense, without relying on meaning, and pure specification. While *axiomatization* focus on the structuring itself - will it is the way that everything is built upon the set of \textit{axioms}, no further question, held as truth, in which all other results follow? Hence, in such sense, formalism looks into the description and the abstraction of objects living in such space, while axiom determine the logic and dependency that follows. }
+
+An important aspect of the above definition is the fact that it includes the purpose of the model, which helps us to solve the question and bring solution to problems. This is the reason for the principle often used as the best model, and in machine learning, associated with Lord of Occam's principle - the best explanation is the \textit{simplest} one on the tray. But this point comes with doubts. 
+
+It turns out, that simplicity is not always the good one. On the contrary, it is the bad one, depends on the situation arises, and so is the complex one. There are inquiries taken in care of the word \textit{simple} and \textit{complex} in such scenario. Often time, sometime is called \textbf{simple} if its descriptions are minimal, along with assumptions that go aside with it. These assumptions is a lot of time the failure of the simple system. A system is called \textbf{complex}, if it contains rigorous descriptions, with what was assumed to be constrained, often in a precise and affective manner. Specification of such aspect, which brings more consideration in, is what makes a system complex. As per our example of the car, the simplified notion only comes, when we assume all others components are negligible, and focus on the assumption that what matters is the battery and the fuel cell. 
+
+The issue here then lies, with the notion of the \textit{question} and \textit{problems} instead with the simple and complex dilemma. Sometimes, simple question requires complex models. Sometimes, complex problems require simple models. Sometimes, complex problems require gradually increased complexity of a model. The principle on the focus of the teleological nature of the problem the model pertains to, only applies in the \textit{ergonomic sense} of \textit{reasonable explanation} - often time, this reasonable explanation can be 30\% correct, but still, they are correct 30 out of 100. Teleological means purpose - or at least is interpreted as - and if we only constrain ourselves to the purpose, \textit{only the purpose}. Taken the example of linear regression to a particular problem that is not linear. Sure, we have satisfied the purpose, but the accuracy will inherently very low because it is trying to do what it cannot do - trying to figure out the nonlinear relationship, while constrained to be linear. 
+
+Under such term, we might as well think this principle of \textit{best model} as pretty misleading. Rather, we say, we have the principle of \textit{effective model}. An effective model is a model that serves its purpose, specified correctly, given that the \textit{relative complexity} falls into the range of what can be considered \textit{relatively simplification} of the space of all possible solutions. That is, it can be simple, but not the simplest.  This, still, does not guarantee that the effective model will be better than the more complex model. In fact, it only establishes the lower bound. We ought to remember that. \textbf{Oversimplification} is a bad thing, while \textbf{overcomplication} also retains in the spectrum.
+
+Returning to the issues we raised it is also true that the non-exact notion of simplicity and complexity is rather, \textbf{complex}. To do this though, we need to know what the 'purpose', or the question is required. A question is based on the system that it is in. In a complex system, a simple question is a hard one, and a complex question is a simple one, which is why it needs complex model to constrain it first to specifiable case. Hence, each question carries with it the *scope and freedom* of the question. In a simple space, a complex question is the harder one - unnecessary even - while the simple question fits with what the system is intended for. If the question is iterative, or expanding, this notion also follows. Overall, it is perhaps subjective to the frame of reference. 
+
+\subsection{The modelling scheme}
+Conceptually, the investigation of complex systems using models can be divided into the following steps: 
+
+\begin{proposition}[Modelling and simulation scheme]
+    The modelling and simulation scheme can be attained as followed: 
+    \begin{enumerate}[noitemsep]
+        \item \textbf{Definitions}: Definition of a problem that is to be solved, or of a question that is to be answered; and of a system, that is, a part of reality that pertains to this problem or question.
+        \item \textbf{System analysis}: Identification of parts of the system that are relevant for the problem or question. 
+        \item \textbf{Modelling}: Development of a model of the system based on the results of the system analysis step. 
+        \item \textbf{Simulation}: Application of the model to the problem or question and derivation of a strategy to solve the problem or answer the question. 
+        \item \textbf{Validation}: Does the strategy derived in the simulation step solve the problem or answer the question for real system?
+    \end{enumerate}
+\end{proposition}
+In real modelling and simulation project, the \textit{system analysis} step can be very time-consuming. It will usually involve a thorough evaluation of the literature. In such step, experimental program is also a typical part. 
+
+The modelling and simulation scheme focuses on the essential steps of modelling and simulation, giving a rather simplified picture of what happens in a concrete project. Though, as we spoke in the last section, start with the simplest possible model, and then generate a sequence of increasingly complex formulation, until the criteria is sufficed. 
+
+\subsection{Simulation}
+So far, we have given a definition of the term \textit{model} only. The above modelling and simulation schemes involve other terms, such as system and simulation, which might be viewed as implicitly defined. However, we shall make this to be more precise in meaning. In general, it can be as the following. \index{simulation}
+
+\begin{definition}[Simulation]
+    \textit{Simulation} is the application of a model with the objective to derive strategies that help solving a problem or answering a question pertaining to a system. 
+\end{definition}
+This definition, explicitly, also is defined to emphasize the purpose. Though, this purpose again, can be replication itself. So, the argument against replication as "l'art pour l'art" really does not help here that much. 
+
+On the side note, as always, there is also the question of what kind of simulation we are talking about. If we follow the narrative of simplification, there can exist the physical simulation of a simplified system - by itself is also just a simulation in which physical realization of objects are needed. On the other hand, there is also the non-physical, in a sense, simulation, which makes use of particular information-encoded representation - or rather, a \textit{warped representation} using another physical system to interpret and simplify the physical realization that is done or used by the 'real thing', and go on with said representation or language. That is where we use computers or any representative system with computational power. This distinction might be detrimental in the process of solving the problem itself. 
+\subsection{System}
+Our view of systems is similar to a definition by certain someone who like being stuck in a roundabout: "A system is whatever is distinguished as a system". And then, the teleological principle-based definition is as follows: \index{system}
+
+\begin{definition}[System]
+    A \textit{system} is a collection or a collection of objects whose properties we want to study. 
+\end{definition}
+
+It is wise to notice in such, that a system can be deceiving. Taking an example, or rather, a typical scene often seen in the field of thermodynamic, there is the saying that "whoever breaks the second law, ultimately wields the power of infinite." - or rather, defying the second law of thermodynamic to gain infinite power, without putting in any work $W$. 
+
+This prompted people to set up their own system, and try to make amend of the law. Many attempts tried to break the status quo (which might never be broken), and yet none works, more so being called crackpot, that guarantee the saying "the only issue of perpetual motion machines (the one that defies the second law) is to find where they hid the battery.". It's not always the battery every time, but the one that claims that the second law has been broken, always \textit{messes up their system}. By one way or another, their system is inconclusive - there are external influences, influx, or resources pouring in, that does not exist in the considered system. Hence, by extension, the 'infinite energy' comes from outer sources - undoubtedly infinite energy within the flaw system. 
+
+So, long story short, perhaps, in the classical sense of the use of defining a system, please define it carefully. Or then someone will claim that you can create something out of nothing, that would be troublesome. 
+
+\subsection{Conceptual and physical model}
+As we have been saying on section about simulation, the same notion of realization in physical sense also manifests in the sense of conceptual or physical model. We will see about it. 
+
+There are two types of model. There exists the \textit{conceptual (theoretical) model} \index{theoretical model}, which lives in a theoretical world without physical realization. This is where we have what is considered as \textit{thought experiment}, where certainly, with physical realization removed, the representative power of shooting reality up in the sky for unsurmountable scenario to be possible within theories - is allowed. 
+
+Against it, such an experimental setting, that simplifies the problem of the engine to its smaller replica, and solve the problem directly on such replica is call the \textit{physical models} \index{physical model}. In contrast, as transparently presented, it is not only an idea in our mind, but also a real part of a physical world.  Any conclusion drawn from such physical model corresponds to the simulation step of the above scheme, and the conclusion need to be validated by the real system, that is, from the real plant, or the real car instead of its smaller simpler replica. 
+
+\section{Mathematical models}
+By the old principle (which are being discussed), any system that is investigated must be observable in the sense, that it produces some kind of output that can be measured (a system that would not satisfy this requirement, would have to be treated by theologians rather than any practical purposes). Overall, if we are to put our perspective in, then \textit{scientist or engineers} investigate "input-output systems", which transform given input parameters into output parameters. This simplification of the entire dynamic often helps in constructing reasonable and manageable system of interest. 
+
+Note that, however, that the picture is not always so bland of only the input-output system treatment. For example, when a botanist just wants to describe and classify the anatomy of a new discovered plant, we don't make it output things, but generally, it is the most basic example conceivable if we are to study how they function as the result of the examination of the system itself. 
+
+The experimental procedure described above is used very generally in engineering and in empirical sciences. It is useful to think of them as exploring \textit{black boxes}. This term suggests the uncertainty about the processes that happen inside the system, when the input is transformed into output. In an extreme case, the experimenter may know only that “something” happens inside, but nothing. However, typically, the experimenter will have some hypotheses about the internal process, which can be proved or disproved. 
+
+Depending on the hypothesis, the experimenter will have his hypothesis of appropriate input, to be disproved or not, using the system's outputs. This is similar to a question-and-answer game - the experimenter poses questions to the system, which is the input, and the system answers to these questions in terms of measurable output quantities. This is typically similar to the questioning of an \textit{oracle} --- we know there is some information about the system, but it depends on the application of ideas and methods if one wants to uncover the information content. 
+
+\subsubsection{The role of experimental data}
+Now, we ask the question of: what is an appropriate method for the analysis of experimental datasets? 
+
+To answer this question, it is important to note that in most cases experimental data are numbers and can be quantified. The input-output data will typically a table, and it is natural to think of it as a mathematical system, for example, think of it as mathematical function. 
+
+This means that if one wants to understand the processes inside the real system that transform input into output, a natural thing to do is to translate all these processes into mathematical operations. If this is done, one arrives at a simplified representation of the real system in mathematical terms. This simple idea, mapping of internal mechanics of real systems into mathematical operations, has proved to be extremely fruitful to the analysis of system. 
+
+Though, what should be hold accountable of certain success, for a scientist, must be the appropriate use of mathematical models itself. 
+\subsection{Definitions}
+To understand mathematical models, let us start with a general definition. An attempt will lead us to the following: 
+\begin{definition}[Mathematical model, naive form]
+    A \textit{mathematical model} is a set of mathematical statements $M$ of the form $M=\{ \Sigma_{1},\Sigma_{2},\dots,\Sigma_{n} \}$. 
+\end{definition}
+Certainly, this definition covers all kinds of mathematical models used in science and engineering. But, there is a problem, because under such definition, even $f(x)=\exp{(x)}$ is some kind of mathematical model, which it is not. Following the philosophy of the teleological definitions, we gain the more sophisticated definition, in which one have to mention all the parameters, all the objects, the criteria, question, problems, and the system. \index{mathematical model}
+\begin{definition}[Mathematical model]\label{def:mathematical_modelling}
+    A \textit{mathematical model} is a triple $(S,Q,M)$ where $S$ is a system, $Q$ is the question query relating to $S$, and $M$ is a set of mathematical statements $M=\{ \Sigma_{1},\dots,\Sigma_{n} \}$ used to answer $Q$. 
+\end{definition} 
+
+Note that this is again a formal definition in the sense of the previous construction. Again, it is justified by the mere fact that it helps us to understand the nature of mathematical model, and that it allows us to talk about mathematical models concisely. 
+
+The notation $(S,Q,M)$ defined above emphasizes the chronological order in which the constituents of a mathematical model usually appear. Typically, a system is given first, then there is a question regarding that system, and only then a mathematical model is developed. Without $S$, no questions can be asked of $Q$, and without $Q$, we cannot do anything to the model. 
+
+The system and the question relating to the system are indispensable parts of a mathematical model. It is a genuine property of mathematical models to be more than mathematical "l'art pour l'art". 
+\begin{example}[The importance of asking $Q$]
+    Suppose that we want to \textit{predict} the behaviour of some \textit{mechanical system} $S$. Then, the appropriate mathematical model depends on the problem we want to solve, that is, on the question $Q$. If $Q$ is asking for the behaviour of $S$ at \textit{moderate velocities}, classical (Newtonian) mechanics can be used, that is, $M=\{ \Sigma_{i} \}$ of all $\Sigma$ formulas on Newtonian mechanics. If on the other hand, $Q$ is asking for the behaviour of $S$ at velocities close to the \textit{speed of light}, then we have to set $M=\{ \Sigma'_{j} \}$ of relativistic equations instead. 
+\end{example}
+\subsection{State variables and system parameters}
+The main benefit of the modelling procedure lies in the fact that the complexity of the original system is reduced. For example, taken a real world problem the entire system parameterized can be expressed to be infinitely many dimensions - that is, there are too many factors of concern, that a lot of them are irrelevant of the problem in consideration. By specifying the mathematical model, or the general modelling scheme, we reduce the infinite system to a small \textit{reduced system} in which our problem is perhaps concerned of. 
+
+As a result, it is imperative for us to define formally the reduced system, for any possible conceivable system that one might encounter. To do this, one need the definition of \textit{state variable}. Later on, we would also have the notion of a more reserved \textit{system parameter}. \index{system parameter}
+\begin{definition}[State variables]
+    Let $(S,Q,M)$ be a mathematical model. Mathematical quantities $s_1,\dots,s_n$ which describe the state of the system $S$ in terms of $M$ and which are required to answer $Q$ are called \textit{state variable} of $(S,Q,M)$. 
+\end{definition}
+
+Using this, we can then define the notion of a reduced system. \index{reduced system}
+\begin{definition}[Reduced system and system parameters] \label{def:reduced_system}
+    Let $s_{1},\dots,s_{n}$ be the state variables of a mathematical model $(S,Q,M)$. Let $p_{1},\dots,p_{m}$ be mathematical quantities (numbers, variables, functions) that describe properties of the system $S$ in terms of $M$, and which are needed to compute the state variables. Then $S_{t}=\{p_{1},\dots,p_{m}\}$ is the \textit{reduced system} and $p_{1},\dots,p_{m}$ are there \textit{system parameters} of $(S,Q,M)$. 
+\end{definition}
+
+This means that state variables describe the system properties we are interested in, while the system parameters describe the system properties needed to obtain the state variables mathematically. Sounds pretty ambiguous, but we can think of this separation as a kind of subjective intrinsic property expression - there are intrinsic system properties altogether, plus there are intrinsic system properties that answer $Q$, and there are indirect system parameters that can be used to acquire those, in the reduced system, in a much smaller parameter set. 
+
+We can have some examples on this. For example, give someone a bunch of sheets of metal, and a sample tin filled with water. Make one similar, with minimal material. What can be done about this problem? To solve this problem, we have to see through the surface area of all the tin used in each configuration. That is, you can make a bunch of tin, no doubt. But to satisfy the condition of minimality, you need to figure out the dimension measure of the tin, in which case, here, it is the surface area of every piece of tin used. Hence, we have the state variable $s_{1}=A$, for $n=1$. The tin is cylindrical, so you have to specify its radius, and its height. Hence, the reduced system specifically for this problem is $S_{t}=\{r,h\}$. Notice how we disregard $m$, because they are of all similar material. We also disregard the thickness $d$, because apparently, all the sheets are the same, and we have no tools to thin them out. 
+
+A question might come off pretty natural from those questions. IF you present this to certain someone in a conference, or just discussion, you will have to prepare to hear "Why does your model disregard\dots". Countering this question can be simple as to answer: we know that according to \ref{def:reduced_system}, a mathematical model of triplet $(S,Q,M)$ will only have the details that is sufficient to answer (so depends on it) $Q$, formulated by $S$, and represented (connected) in $M$. In such case, certain set that have been introduced can sufficiently answer $Q$, and that is our model and parameters, per our assumption about the problem setting itself. Generally, one can say that the reduced system of a well-formulated mathematical model will consist of no more than exactly those properties of the original system that are important to answer the question $Q$ that is being investigated. 
+\vspace{2mm}
+
+However, that is normally, in typical situation, too ideal of a process. Indeed, one might have to also prepare for the answer "To be honest, you are right, we disregarded something that we thought is irrelevant, but certainly not", or "We don't know about that factor.". One simply in reality often have no full picture of the underlying problem, and only after many experiments, testing, hypothesis cancellation, and modification that one can find their exact satisfactory result. And even then, specialities might require the model to extend those parameters to fit the more specific situation. Furthermore, we recite our opinion that \textit{no model is perfect, but only useful}. Hence, subjective being natural, we might have cases where the reduced model cannot capture all the system parameter as required. 
+
+\begin{remark}
+    Typically, the properties (parameters) of the reduced system are those, which need experimental characterization. In this way, the modeling procedure guides the experiments, and instead of making the experimenter superfluous, it helps to avoid superfluous experiments. 
+\end{remark}
+\subsection{The Problem-Solving Scheme}
+In many practical applications and case-to-case situations, one can clearly distinguish between the formulation of a mathematical model on the one hand, and the solution of the resulting mathematical problem on the other hand, which can be done with appropriate software. A number of examples will show this below. This means that it is not necessary to be a professional mathematician if one wants to work with a mathematical model, though it is recommended so, or at least of certain rigours to define and integrate the mathematical model itself. 
+
+Though, the story is a bit more complicated. Mathematical expertises will be required, however, and is particularly important if one wants to solve more advanced problems, more complex problems, or if one wants to make sure that their results obtained with mathematical software are really solutions of the original problem and not numerical artifacts. Though, even when we are quite sure of the mathematical expertises, we can still be wrong in our own hypothesis. 
+
+\begin{note}[The abstraction and role of software]
+    In general, because people working with mathematical models has now switched to computational system, typically, formulation of a mathematical model is clearly separated from the solution of the mathematical problems implied by the model. Not sure what this exactly means of the abstraction though. The latter hard work can be done by software, as a result. And even software can be abstracted because they are not worried of the underlying hardware. So, one can go off without others. 
+\end{note}
+
+Many problems in science can be solved using mathematical modelling, as a matter of fact. From certain perspective, the abstract world view coupled with mathematics provide them with the organized and quantized abstraction, to the point that they can utilize those abstract structures, mathematics methods and instrument to solve the problem. The mathematical universe standing alongside the real world problem can be represented as be separated in transition from the mathematical model $(S,Q,M)$ acting as the transit hub - transferring the problem into the mathematical terms. Of course, this is not always the case, however, usually, we can do it, with a very simplified view. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{img/problemsolvingdiagram.drawio.png}
+    \caption{The problem-solving scheme from the mathematical modelling perspective}
+    \label{fig:problemsolving_mm}
+\end{figure}
+
+As the figure shows, the mathematical model virtually controls the `problem-solving traffic' between the real and mathematical worlds, and hence, its natural position is located exactly at the borderline between these worlds. A more realistic approach to drawing Figure~\ref{fig:problemsolving_mm} would be to extend the distance between $(S,Q)$ to $A$ in the real world to an abnormally large distance, such that somehow, under the mathematical lens, it is smaller, more organized, and easier to approach it. That is when you know the mathematical modelling is helpful. 
+
+Setting up a mathematical model is also easy. Usually, the guideline for this transition can go as followed:
+\begin{enumerate}[noitemsep, topsep=2pt]
+    \item Determine the number of unknowns, that is, the number of quantities that must be determined in the problem. Well, read them all and read until the end, that is. 
+    \item Give \textit{precise} definition of the unknowns and the relating components. This should not be lumped with step 1, just as with concise implementation and conceptual modelling are not the same. 
+    \item Read the problem formulation, translate it to mathematical statements to gives $M=\{\Sigma_{1},\dots,\Sigma_{n}\}$. 
+\end{enumerate}
+
+In step 1, if we are taking in a physical problem, it is also an issue to tackle its \textbf{units}, or \textbf{dimension} in case of dimensional analysis. By the standard rule, both side of the statement or a mathematical relation that captures the target of the model must have same dimension throughout the transformation and statements by itself, so you will have to be careful in that case. Statements about the mathematical models are then called the \textbf{restriction} on the mathematical model in specific. 
+
+Also, in some cases, the translation of a problem into mathematics may require the introduction of \textit{auxiliary variables}. These variables are "auxiliary in the sense that they help us to determine the unknowns. Usually, the problem formulation will provide enough information such that the auxiliary variables and the unknowns can be determined. 
+
+\subsection{The black-box interpretation}
+We have been introduced, or rather, quite accustomed to the notion of black-box interpretation and its polar opposite of white-box interpretation. However, what shall be made of their uses? Let's have a look at it. While doing so, it will perhaps also reveal the reason there exists phenomenological and mechanistic model. 
+
+In previous section, it was mentioned that the system investigated by scientists and engineers typically are "input-output" system. This means they transform the given input parameter into output parameters. Note that the previous examples were indeed referring to such "input-output program". In the tin (cylinder cutting) problem, the radius and height of the tin are input parameters and the surface area of the tin is the output parameter. In the plant growth example, the growth rate of the plant and its initial biomass are the input, and the resulting time-biomass curve is the output. Similarly, all systems in the examples and practical cases that will follow, can be interpreted as input-output systems. 
+
+The exploration of such input-output system will eventually give us the details on a more importance concept, and more definitions. 
+
+A system is called a \textbf{black-box} if there exists no internal information beforehand about the system. Given the input-output treatment, then it means there exists no information of $x$ and $y$, except that they exist. Then, one of the main thing to do of such black-box situation, is to use \textbf{statistical method}. 
+
+Given such system, we indeed see nothing. In the testing and observation phase, we will only be given their result - of the model, and its behaviours without having anything to double-check such. Hence, we will have to learn the pattern of the data by itself. That is what meant of by statistical method. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/blackboxstatistics.png}
+    \caption{There exists an unbreakable wall in the black-box condition - throwing a dart in blind, except perhaps it can be right.}
+\end{figure}
+
+\section{Flavours of modelling definitions}\label{sec:flavor_model}
+
+In our investigation, we have outlined a mathematical model of the description $(S,Q,M)$. With such description, one can ask depends on how the three factors and macro-component is constructed or defined, can we define, relatively, mathematical models into several types, of which their intrinsic properties to be constructed of, are restricted instead of being generalized. The answer is yes, and as we have seen with the consideration of black-box modelling and white-box one, there are plenty to say about it. 
+
+\subsection{Phenomenology and Mechanistic}
+The black-box interpretation gives us many formulations. That includes the categorization of mathematical models to be phenomenological and mechanical. Roughly speaking, a model is called \textit{phenomenological model} \index{phenomenological model} if it is based on observations only, treating the system as an entire black box, without any priori of the internal process. On the other hand, if you use some sort of priori knowledge of the internal process in the design of the (mathematical) model, then it is called a \textit{mechanistic model}\index{mechanistic model}. The difference can be either substantial or trivial, but they are indeed can be said or thought as the two polar opposite - mechanistic being absolutely based off prior information, and phenomenological is entirely priori-ly blind. We give the following formal definition, because I hate informal notions: 
+\begin{definition}[Phenomenological and mechanistic models]
+    A (mathematical) model $(S,Q,M)$ is said to be: 
+    \begin{itemize}
+        \item \textbf{phenomenological} if it was constructed based on no priori information, or bias about the internal process. That it, it only uses experimental observations only, and nothing about $S$. 
+        \item \textbf{mechanistic} if some of the statements in $M$ are based on a priori information about $S$. In the maximal case, all of them or the substantial amount of core statement in $M$ is dependent of such information. 
+    \end{itemize}
+\end{definition}
+
+Usually, phenomenological also has the name \textit{empirical models, data-driven models, descriptive models, statistical model}, or \textit{black box models} for obvious reason. The act of automating the process of creating phenomenological model, and `correcting it' to a course, is called \textbf{machine learning}, in a rough sense. Normally, any give model would be located somewhere between the extreme black and white box cases - one such example is between solving an established system by giving it all the laws, for example, a pendulum by Newtonian physics - and the black box cases, for example, use the minimal information about the function of the observed object. Such models are sometimes called \textit{gray box} models, or \textit{semi-empirical models} \index{gray model}. 
+
+To understand it better, let us begin with an observation on the system of a pendulum. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/expreise.png}
+    \caption{A typical pendulum with degree 1, for parameter $\theta$ as angle, and a rod of length $\ell$ connecting the origin to the mass $m$.}
+    \label{fig:double_pendulum_modelling_example}
+\end{figure}
+
+We can treat this system entirely as a black box model, in which system 1 only transform inputs $x$ from the external setting, to the output $y$ observed. If we know assume that we know the detail, that is, the input $x$ gives us the angle $\theta$ of the pendulum, we know that the length is fixed $\ell = const$, and $y$ gives the kinetic energy of the pendulum at any given angle, then we have given the model a \textbf{priori information} about the system 1 and how they can probably influence the system. Then, using that, we can restrict the modelling system to something that is more optimize to mimic this type of behaviour from the system. This is different from a black box system, where you have to consider the infinite hypothesis space that might contain yours. 
+
+Now, what can be made of the system and its relation? Of course, if we reside in the topic of Lagrangian mechanics, we will see that the kinetic energy is calculated, from the angle $\theta$, by the following formula:
+\begin{equation}
+    T = \frac{1}{2}mv^{2} = \frac{m\ell^{2}\dot{\theta}^{2}}{2} 
+    \label{eq:examplemodelling1}
+\end{equation}
+Where $\dot{\theta}$ is the time derivative for such measure, that is, $\theta$ is parameterized to $\theta(t)$. Based on this relation, we then obtain the $(S,Q,M)$ model: 
+\begin{itemize}[topsep=1pt, itemsep=1pt]
+    \item $S$: System 1. 
+    \item $Q$: Which system input $x$ generates a desired output of $y=T=25.4$? 
+    \item $M$: Equation \ref{eq:examplemodelling1}. 
+\end{itemize}
+Based on this, the question $Q$ can be answered by setting only $T=25.4$ into the equation: 
+\begin{equation}
+    25.4 =\frac{m\ell^{2}\dot{\theta}^{2}}{2} 
+\end{equation}
+
+That is, we can answer the question $Q$ by simply specifying the dependent variable, like how long is $\ell$, and how heavy is the mass $m$, and we are practically done. This is one of the main advantage of the mechanistic model, in comparison to their phenomenological counterpart. Firstly, mechanistic model are generally better for predicting system behaviours, and is also generally far more stable in this role. The phenomenological model might only work for the variety in which our experiment are conducted. That is, for example, in the range of $\theta \in [90^{\circ},147^{\circ}]$. Other than that, we are not so sure. On the other hand, mechanistic model is based on the well-understood nature of physics. This bears the consequence that we know that it will work, at much of this system, for any given range of situations. This will come in handy, especially when we discuss about machine learning, since in machine learning, one of the very much conditional assumption, is the fact that the dataset must be somewhat representative, or, reflects the entire population. 
+
+Mechanistic models also allow \textit{better predictions of modified systems}. This is a given, since the system's behaviours are spelt out, so there are not much you can do about it. Even for extended system, you will only increase the total number of objects in the system, and the law of the specific system setting will not change, as much as the factors are concerned. Assume, for example, that system 1 is replaced by a system 2 that consists of, instead, a different type of rod, like two rods connected together by some angle $\psi$. Then, in the phenomenological approach, the model developed for system 1 would be of no use, since we would not know about the similarity of these two systems. This means that a new phenomenological approach would have to be developed. Instead, in our mechanistic system, we conveniently use a coordinate-based system that interpret the change in the configuration of the rods as coordinate, so that the system kind of, remains the same, just with different $\ell$ - the laws do not change. 
+
+The third advantage of mechanistic models is the fact that they usually involve the interpretation - the relation by itself, and what the parameters mean to the system and realizable objects. For example, using the relation established to perhaps optimize the system performance, assuming particular objective for the system. For example, if we do this with phenomenological approach, we will have to do this problem by the trial-and-test method. Typically, this is done by randomization and point test method, which might take a long time, and perhaps pretty inefficient. Monte Carlo-like method, but going blindfold, if you insist. By then, you have to rely on statistical and probabilistic features to guarantee the gain from such method. 
+
+All being said, mechanistic models are pretty comprehensively better than phenomenological model. Indeed, it is more stable, more interpretable - in the sense that you know the internal mechanics, you know what does what, and which is affected by whom - in so far also the fact that it is generalizable for special parameters, for example, if we are to examine a spring system, then now adding two spring will break the previous one spring phenomenological model. But if so, then why even use phenomenological model? Well, two main things. An essential prerequisite of forming mechanistic model is that you need a \textit{priori knowledge requirement} to feed the model, about the system. If nothing is known about the system, then we are just having a black-box system, and phenomenological models. Furthermore, in some cases, our knowledge may be not enough as it is, and our relations are ambiguous to be applicable. For example, suppose we are tasked with understanding why some roses wilt earlier than others. Suppose we have some preliminary knowledge that it depends on the concentrations of certain carbohydrates that can be measured. We then have the formula of $M: \{C_{12}\} \to \text{roses}$. However, we do not have the explicit parameters or their connection forms involved in such relation. A drawback of a purely mechanistic model is that the underlying internal mechanism must be known explicitly, because the entire model depends on the structure of the internal mechanics. By then, unless these processes are known, all we can do is produce some data and analyse them using phenomenological models. A mix of both, however, is possible, using some obscure knowledge about the system of itself. On the other hand, even if we know the system and its internal mechanics, sometimes it would be too complex, too cumbersome to set up a mechanistic model. Because of the explicit nature of the mechanistic system, and half-baked, detail-lacking mechanistic model will fail, perhaps without surprises. In such way, phenomenological model certainly helps, as it practically requires little to no priori knowledge. However, it is also to be noted on \textit{how limited is phenomenological model}. While it is said to be, seemingly universal, which it is, the kind of black-box investigation is purely limited in its scope, its again, interpretation, and its utility. Mechanistic models then, allows for the depth of the system to be discovered, yet require plenty support and more time and resources. Coincidentally, we can somewhat do it of making phenomenological model to be the width, and mechanistic to be the depth, so to speak. 
+
+\subsection{Stationary and unstationary models}
+
+It is already mentioned that the question $Q$ is an important factor that determines the appropriate model $(S,Q,M)$. Hence, depends on the way the question is constructed, we will be able to find certain characteristic of the model by itself. Specifically, consider our question of the pendulum. We have noted of the question to find specific relation between kinetic energy and the angle $\theta$, that gives us the expression we perhaps are familiar with. Now, we might change the question to be: 
+
+\blockquote{What is the resulting kinetic energy change from the position $t=0$ to $t>0$, for the angle $\theta(t)$ depends on time $t$?}
+
+For such question, our type of models as above is unable to process this type of question. This is because experiments and observations considered of such models are \textbf{stationary} in nature - it involves no changing dynamics, and is rather a collective snapshot collection to be studied from, all of which might fortunately turns out to be of similar rules or patterns, as in the phenomenological case. On the other hand, the above question requires consideration about the time-evolution of the system by an independent variable $t$, or time. To even solve this question, we need another expression in $M$ for specifically this time-dependency. This gives us the definition between \textbf{stationary} and \textbf{unstationary} model. 
+
+\begin{definition}[Stationary/Unstationary models]
+    A mathematical model $(S,Q,M)$ is called: 
+    \begin{itemize}[topsep=1pt, itemsep=1pt]
+        \item \textit{Unstationary} if at least one of its system parameters or state variables depends on time. 
+        \item \textit{Stationary} otherwise. 
+    \end{itemize}
+\end{definition}
+While this definition might lack rigours if one wants it to have, it is good enough for our definitions by the question $Q$ it considers. 
+
+\subsection{Classification of models}
+
+Certainly, one can already observe that we only take on the role, and the analysis of mathematical models and form definitions about it, based solely on the foremost consideration of the question that was asked, $Q$. Naturally, this can be done for the variety as it is, for other 'axis' of mathematical modelling - categorization based on $S$, categorization based on $M$, and so on for some macroscopic and designing-based axis of interest. With this, many attempts have been made trying to organize those specific iterations of modelling, and their criteria. Though the list is indeed long and complex, plus the potentially obscure nature by attempting something inconclusive in which we will not discuss, we can however, ponder on how the axis is typically considered in the criteria provided. 
+
+The "space of mathematical models" evolves naturally from Definition~\ref{def:mathematical_modelling}, where we have defined a mathematical model to be a triple $(S,Q,M)$ consisting of a system $S$, a question $Q$, and a set of mathematical statements $M$. Based on this definition, it is natural to approach the classification problem using the $SQM$ space. For each of the axis, many criteria can be settled upon which the axis might represent. For example, a particular example that has been used throughout this chapter is the black-and-white box axis for the system $S$. This is similar for $Q$ as well, for example, instead, $Q$-criteria can be configured to categorize increasingly complex and difficult problems and their subsequent modelling type between the transition from black-box to white-box model. In another way, you can, well,... even clarify with this: 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{img/purityxkcd.png}
+    \caption{With the question $Q$, you can ask everything, including the... not so pure one.}
+\end{figure}
+I hope no one use it though. Definitely. With that said, at least in \cite{VeltenetalMathematicalModelling}, we can somewhat use their list of $SQM$-axis space classification of the modelling variations. Axis of course, then refers to a mathematical modelling living somewhere with respect to particular criteria for each direction on the scale in which each $S$, $Q$ and $M$ is classified of. 
+\subsubsection{The $S$-Axis}
+The $S$ axis contains the following model criteria: 
+\begin{description}[leftmargin=2pt,font=\normalfont\itshape\space]
+    \item[Physical-conceptual] Physical system are part of the real world, for example, a fish or a car. Conceptual systems are made up of thoughts and ideas, for example, a set of mathematical axioms. 
+    \item[Natural-technical] Naturally, a natural system is a part of nature, such as a fish or a flower, which a technical system is a car, a machine, and so on. 
+    \item[Stochastic-deterministic] Stochastic systems involve random effects, such as rolling dice, share prices, and so on. Deterministic systems involve no or very little random effects, for example, mechanical systems such as planetary system, a pendulum, and so on. A system is deterministic if its evolution is specified discretely by a single path, and stochastic is when there exists more than one possible evolutionary state. 
+    \item[Continuous-discrete] Continuous systems involve quantities that change continuously with time, such as sugar and ethanol concentrations in a wine fermentation. Discrete system, on the other hand, involve quantities that change at discrete time only. Note that for enough division of discrete time, sometimes continuous can be just as discrete as discrete is continuous. In really, continuity is often improbable of analysis, and almost all things that are continuous are actually microscopically discrete.
+    \item[Dimension] Depending on their spatial symmetries, physical systems can be described using 1, 2, or 3 space variables. The number of space variables used to describe a physical system is called its \textbf{dimension}, though this notion only applies to systems in which the shape and geometric features of the object is important.  
+    \item[Field of application] We can distinguish between chemical systems, physical systems, biological systems, and so on. Systems from these and more fields of application will be considered, though not as much as we might hope.  
+\end{description}
+\subsubsection{The $Q$-Axis}
+On the $Q$-Axis, we have the following categories, which mostly stem from our above sections about definitions of model depends on the question asked. 
+\begin{description}[leftmargin=2pt,font=\normalfont\itshape\space]
+    \item[Phenomenological-Mechanistic] Again, see section~\ref{sec:flavor_model} for details. 
+    \item[Stationary-unstationary]  see section~\ref{sec:flavor_model} for details.
+    \item[Lumped-distributed] This one is pretty weird, though it connects to the spatial and space parameter usage. A mathematical model $(S,Q,M)$ is called \textit{distributed} if at least one of its system parameters or state variables depends on a space variable. By then, information is regarded spatially, that is, distributed over a physical space - for example, an imperfect spring of which the end tail and the beginning have different $k$ coefficient. While a system is called \textit{lumped} otherwise, that is, when everything is reduced to $k$, for example, by calculating the effective average spring constant $\bar{k}=k$ in such scenario.  
+    \item[Direct-inverse] Consider an I-O system. If $Q$ assumes given input and system parameters and ask for the output, the model solves a so-called \textit{direct problem}. Most of the model below refer to the direct problems. If, on the other hand, $Q$ asks for the input or parameters of $S$, the model solves a so-called \textit{inverse problem}. If $Q$ ask for input parameters, then it is a \textit{control problem}, and for parameters of $S$, it is called the \textit{parameter identification problem}.
+    \item[Research-management] Research models are used if $Q$ aims at the understanding of $S$, management models, o the other hand, are used if the focus is on the solution of practical problems related to $S$. As pointed out, research models tend to be more complex and less manageable from a practical point of view. Depending on $Q$, the same mathematical equations can be a part of a research or a management model. 
+    \item[Scale] Depending on $Q$, the model will describe the system on an appropriate scale. For example, depending on $Q$ it can be appropriate to virtually follow a fluid particle on its way through complex channels, or just to compute the pressure based on certain parameters.   
+\end{description}
+\subsubsection{The $M$-Axis}
+
+For the $M$ axis, containing mostly mathematical statements, we have the following:
+\begin{description}[leftmargin=2pt,font=\normalfont\itshape\space]
+    \item[Linear-nonlinear] In linear model, the unknowns are combined using linear mathematical operations only, such as addition/subtraction or multiplication with parameters. Nonlinear models, on the other hand, may involve the multiplication of parameters, unknowns, the application of transcendental functions, and so on. 
+    \item[Analytical-numerical] In analytic models, the system behaviours can be expressed in terms of mathematical formulas involving the system parameters.  Based on these models, qualitative effects of parameters and the entire system behaviours can be studied theoretically, without using concrete values for the parameters. Numerical models, o the other hand, can be used to obtain the system behaviours for specific parameter values. 
+    \item[Autonomous-nonautonomous] This is a mathematical classification of unstationary models. If an equation does not depend explicitly on time, it is called autonomous, otherwise nonautonomous. 
+    \item[Continuous-discrete] Somehow, this one makes it to this place, again. In a continuous model, the independent variables may assume arbitrary values within some interval. For example, many of the ODE model uses time as the independent variables. In discrete models, on the other hand, the independent variables may assume some discrete values only. This is for example, the discrete event simulation technique, or the Nicholson-Bailey host-parasite interaction. Do note though, in reality, a good deal of continuity is actually just microscopic discreteness. 
+    \item[Mathematical statement types] There are many types of mathematical statement one can use to describe, or restrict the system behaviours in. This includes from the \textit{difference equation}, where quantity of interest is obtained as a sequence of discrete values, each term depends on the previous terms; \textit{differential equation}, equations involving derivatives of an unknown function, and their \textit{integral function} counterpart; or the normal \textit{algebraic equations}, and more. 
+\end{description}
+Again, note that we have a lot of overlaps between all three categories. And, one then also can notice that this on its own, is also a conceptual modelling to categorize models into classes and axis, which then, we should not take it as totally right. However, it is a perhaps particularly useful compass. 
+
+\section[The don'ts of mathematical modelling]{The don'ts of mathematical modelling {\small When everything looks like nails}}
+To some extent, mathematical modelling is superbly useful. It can help you to utilize the language of mathematics, the language of which quantisation is the basis, where perhaps explicitness is considered the most important, the language of the abstract space, and the language of nonphysical binding. Granted, one can argue that it still uses physical binding; just instead, it's a representation; however, that is perhaps beside the point. Nevertheless, as someone said in the past, "all models are false, but some are useful", just as we have to shift our model and find the correct hypothesis for the observable that we consider being, we cannot fully trust our model. Just as we cannot trust other people's words about the totality, our model might be false and might be only the reflection of a small portion of reality. That is why it is important to recall that the modelling and simulation scheme above is just an idealistic theory of how modelling should work so that it sticks with the real world, or any object of interest, that is. 
+
+This then recall me of the olde story of Pluto, or rather, his record of dialogues, called \textit{Allegory of the cave}. In the following dialogue in Plato's famous book \textbf{Republic}, he discussed of the notion of learning, and the perception of reality, and the blindness of personal perception - which is oddly similar to how we see (mathematical) model in describing the innate complex structure that we often find in practice: 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{img/Platon_Cave_Sanraedam_1604.jpg}
+    \caption{Plato's allegory of the cave by Jan Saenredam, according to Cornelis van Haarlem, 1604, Albertina, Vienna}
+    \label{fig:PlatoAllegory}
+\end{figure}
+
+\begin{description}
+    \item[Socrates] And now allow me to draw a comparison in order to understand the effect of learning (or the lack thereof) upon our nature. Imagine that there are people living in a cave deep underground. The cavern has a mouth that opens to the light above, and a passage exists from this all the way down to the people. They have lived here from infancy, with their legs and necks bound in chains. They cannot move. All they can do is stare directly forward, as the chains stop them from turning their heads around. Imagine that far above and behind them blazes a great fire. Between this fire and the captives, a low partition is erected along a path, something like puppy.
+    \item[Glaukon] I can picture it.
+    \item[Socrates] Look and you will also see other people carrying objects back and forth along the partition, things of every kind: images of people and animals, carved in stone and wood and other materials. Some of these other people speak, while others remain silent.
+    \item[Glaukon] A bizarre situation for some unusual captives.
+    \item[Socrates]  So we are! Now, tell me if you suppose it's possible that these captives ever saw anything of themselves or one another, other than the shadows flitting across the cavern wall before them?
+    \item[Glaukon] Certainly not, for they are restrained, all their lives, with their heads facing forward only. 
+    \item[Socrates] And that would be just as true for the objects moving to and fro behind them?
+    \item[Glaukon] Certainly.
+    \item[Socrates]  Now, if they could speak, would you say that these captives would imagine that the names they gave to the things they were able to see applied to real things?
+    \item[Glaukon] It would have to be so.
+    \item[Socrates] And if a sound reverberated through their cavern from one of those others passing behind the partition, do you suppose that the captives would think anything but the passing shadow was what really made the sound? 
+    \item[Glaukon] No, by Zeus. 
+    \item[Socrates] Then, undoubtedly, such captives would consider the truth to be nothing but the shadows of the carved objects.
+    \item[Glaukon] Most certainly.  
+\end{description}
+
+
+What is the moral of this example, of which dated thousands of years before this line is written? Surprisingly, in the not so much of endless, permanent story that is always relevant, Plato's cave outlines one of the fundamental rule in mathematical modelling: \textit{don't believe the model is the reality}. Just as the man in the cave sees the shadows as his world, we are the modeller will eventually hit the point where what we need to understand, is further away from the shadow that is conceived as the present knowledge. Modelling offers, again, the simplified view on specific problems. This is perhaps one of the more important point that we get from working with modelling, in which we are always "chained" in some way or another, as long as we think about reality in such language, for it being arbitrary is not reality, and henceforth. With this, also comes with the assumptions we make on the modelling itself. 
+
+There are a lot of lessons to learn and to beware of when working with modelling, coming off as wisdom of the ancient times, of which the olds have left us. Aside from refuse to constrain yourself to the warped reality you constructed, we have a few more 'don'ts' that is worth considering. They can be reinterpreted in the following way:
+\begin{axiom}[The don'ts of mathematical modelling]\hfill\break
+    \begin{enumerate}[topsep=0pt,itemsep=1pt]
+        \item Don't believe that the model is the reality. 
+        \item Don't extrapolate beyond the region of fit. 
+        \item Don't distort reality to fit the model. 
+        \item Don't retain a discredited model. 
+        \item Don't fall in love with your model. 
+    \end{enumerate}
+\end{axiom}
+Hopefully, this is enough to shy people away from going down the wrong path. That is, if they realize it soon enough to back their track. One of the major mishap that can happen often time is indeed when the model somehow replaces what can be realized of the object itself, rather than the model of the object (let's just say, that is string theory in a nutshell). 
+
+\section{Conclusion}
+
+Overall, this particular chapter introduced the concept and notion of classical model, their formulation, components, how to construct such, and roles of individual component that makes up the entire model. Obtaining knowledge and hypothesis forming is also discussed, however in a very short manner as to leave it in later chapters separately (for example, dynamic hypothesis formation is nowadays called \textit{machine learning}, which is rigorous enough to require an entire part on itself rather than a single section). We have also discussed the do and the don't of using mathematical modelling, which is a kind of modelling that uses the language of mathematics to describes the system and the environment. With such, at least a very comprehensive view has been achieved (hopefully) of the classical theory of mathematical modelling. 
+
+There is, though, a reason why this chapter is called `classical' rather than simply mathematical modelling theory. Most of what we have been discussed stopped to around the 1990s in their contents. Hence, newer development, mistake corrections, formulation of different kind of modelling and their organization was added in such time and is not presented of the classical theoretical categorization, and choices. Nevertheless, it is important to note that classical theory by such stance, is more stable, more well-defined and complete, and is thus very \textit{static}, which is something desperately needed in a field or topic that is moving constantly for the lack of comprehension plus well-grounded standard. Thereby, we will encapsulate the classical theory in one, to allow for more advanced discussion further onward. 
+
+\section{Appendix}
+\subsection{Linear programming}
+All mathematical models considered so far were formulated in terms of equations only. Remember that according to our definition of a mathematical model, a mathematical model may involve any kind of mathematical statement. For example, it may involve inequalities. One of the simplest classes of problems involving inequalities is linear programming problems that are frequently used e.g. in operations research.
+
+Because the subject is far more too complex for us to cover here (it literally guarantees me to read two entire whole books to cover the minimum), we will roughly give you the general definition, and then its perhaps miraculous performance and mechanism. 
+
+\begin{definition}[Linear programming]
+    The \textit{standard form} of the linear programming problem is to determine a solution of a set of equations:
+    \begin{equation}
+        \begin{matrix}
+            a_{11}x_1 + a_{12}x_{2} + \dots + a_{1n}x_{n} & = & b_{1}\\
+            a_{21}x_1 + a_{22}x_{2} + \dots + a_{2n}x_{n} & = & b_{2}\\
+            \vdots & \vdots & \\
+            a_{m1}x_1 + a_{m2}x_{2} + \dots + a_{mn}x_{n} & = & b_{m}
+        \end{matrix}
+    \end{equation}
+    with $x_{j}\leq 0$, for $j=1,\dots,n$ that minimizes the function 
+    \begin{equation}
+        z = c_{1}x_{1} + c_{2}x_{2} + \dots + c_{n}x_{n} - z_{0}
+    \end{equation}
+\end{definition}
+
+It is this standard form of the linear programming problem, a minimization problem involving only equalities, that we will solve in practice. The first task of the people working with linear programming will then be to show that any linear programming problem can be formulated as a problem in the standard form, where the number of equalities, $m$, and the number of variables $n$ are determined by the problem. This is where you would see the formulation and writing of linear programming problem as the following: 
+\begin{quote}
+    Consider the problem of diet. Suppose a particular diet problem reduces to the mathematical problem of minimizing $3x_{1}+2x_{2}+4x_{3}$ by 3 equations for $(x_{1},x_{2},x_{3})$. The problem setting can be said as: 
+    \vspace{2mm}
+
+    \textbf{Minimize} $3x_{1}+2x_{2}+4x_{3}$ subjected to: 
+    \begin{equation*}
+        \begin{matrix}
+            30x_{1} + 100x_{2} + 85x_{3} + x_{4} & = & 2500\\
+            6x_{1} + 2x_{2} + 3x_{3} - x_{5} & = & 90 \\
+            x_{1}, x_{2}, x_{3},x_{4},x_{5} & \geq & 0
+        \end{matrix}
+    \end{equation*}
+\end{quote}
+There are also the problem or approach of \textbf{nonlinear programming}, although for the time currently, we would not burden ourselves of such task. 
+
+
