@@ -1,0 +1,13 @@
+{"rule":"WHITESPACE_RULE","sentence":"^\\Qwidth height 1pt width height 1pt\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qwidth height 1pt width height 1pt\\E$"}
+{"rule":"ENGLISH_WRONG_WORD_IN_CONTEXT_NEURON_NEUTRON","sentence":"^\\QFrom such, we can conclude that, we have to have some classification that requires the smallest component neuron to be the atoms that everything else is formed upon.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qin the first place.\\E$"}
+{"rule":"NUMBERS_IN_WORDS","sentence":"^\\QFormally, this is written for a statement \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-)[0-9]+\\Q as: \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-)[0-9]+\\Qor \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-)[0-9]+$"}
+{"rule":"PCT_PLURAL_NOUN_SINGULAR_VERB_AGREEMENT","sentence":"^\\QThe way of solving separately in essence, two learning problems is inherently to interpret statistical learning theory\\E$"}
+{"rule":"LARGE_NUMBER_OF","sentence":"^\\QProminent in this portion of research can be attributed to Winograd and Cowan (1963) for demonstrating how a large number of elements could collectively represent an individual concept, with a corresponding increase in robustness and parallelism (which, undoubtedly, later on became known as the technique of encoding representation)\\E$"}
+{"rule":"INCORRECT_CONTRACTIONS","sentence":"^\\QThe don'ts of mathematical modelling When everything looks like nails.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe don'ts of mathematical modelling When everything looks like nails.\\E$"}
+{"rule":"TAKE_A_LOOK","sentence":"^\\QAlright, let's take a look at this:\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qas a reduced form.\\E$"}
+{"rule":"IN_A_X_MANNER","sentence":"^\\QWithout loss of generality, we assume that \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-)[0-9]+\\Q (the other possibilities are handled in a similar manner).\\E$"}
+{"rule":"THE_SUPERLATIVE","sentence":"^\\QSince this is a least square result, preliminary run is conducted using one-shot error-risk measure on least square closed-form approximation.\\E$"}

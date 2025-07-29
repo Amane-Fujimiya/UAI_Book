@@ -1,0 +1,91 @@
+\documentclass[10pt,oldfontcommands,twoside,titles,dvipsnames,a4paper,openright]{memoir}
+%------------------------------------------------------------------------------------%
+%-------PREAMBLE-------%
+\input{setting/preamble.tex}
+\input{setting/toc.tex}
+\input{setting/mathcommand.tex}
+\includeonly{
+    content/introduction,
+    content/chapter1,
+    content/math/mathc1,
+    content/math/mathc2,
+    content/math/mathc3,
+    content/math/mathc4,
+    content/math/mathc5,
+    content/chapter2,
+    content/chapter4,
+    content/chapter5,
+    content/theory_main/chaptert1,
+    content/theory_main/chaptert2,
+    content/draft/c1_research,
+    content/draft/c2_research,
+}
+\begin{document}
+%\crop[mycross]%%% Cross options, do not use if is not printed. USE IN CONJUNCTION WITH PACKAGES 
+%------------------------------------------- TITLE SECTION -------------------------------------------%
+% Begin 
+\clearpage
+\newgeometry{left=4cm, right=4cm}
+\maketitle
+\thispagestyle{empty}
+\restoregeometry
+\clearpage
+\begingroup
+\let\MakeUppercase\relax
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\renewcommand{\numberline}[1]{#1\hspace{1em}}
+%\listoftheorems
+\endgroup
+%------------------------------------------- INTRODUCTION SECTION -------------------------------------------%
+\frontmatter
+\include{content/introduction}
+\mainmatter
+\include{content/chapter1}
+%------------------------------------------- MATH SECTION -------------------------------------------%
+\clearpage
+\partepigraph{Everything to note of the foundation language of science. Every prerequisite of entering a gate. Including its keys, for more than one might be needed.}{}
+\part{Preliminary}
+\include{content/math/mathc1}
+\include{content/math/mathc2}
+\include{content/math/mathc3}
+\include{content/math/mathc4}
+\include{content/math/mathc5}
+%------------------------------------------- PART A. CLASSICAL -------------------------------------------%
+\clearpage 
+\partepigraph{The classic of the old, the foundation of the past. What is of their uses? Theory and theory. All those conjecture and ideas, in one single place.}{P. Q. Doyle}
+\part{Theory}
+\include{content/chapter2}
+\include{content/chapter4}
+\include{content/chapter5}
+%------------------------------------------- PART B. MODERN -------------------------------------------%
+\clearpage
+\include{content/theory_main/chaptert1}
+\include{content/theory_main/chaptert2}
+%------------------------------------------- PART C. DRAFT -------------------------------------------%
+\clearpage
+\partepigraph{A man who thinks all the time, has nothing to think except thoughts. Theoretical and philosophical, let the arm raises from the chair and dwindle up the reality that unfolds, for thoughts have no meaning if they are not manifested.}{}
+\part{Drafts}
+\include{content/draft/c1_research}
+\include{content/draft/c2_research}
+%------------------------------------------- APPENDIX SECTION -------------------------------------------%
+\clearpage
+\partepigraph{Supplementary sections, containing further experimental results, more quantitative result handling, further discussion, additional details, analysis, unpublished opinion, and additional foundational comprehension.}{}
+\part{Appendix}
+\backmatter
+\printindex
+\input{appendix/appendix2.tex}
+%\input{content/physics/physicsc2.1.tex}
+{
+\small
+\nocite{*}
+\bibliography{reference1}
+% modification to natbib citations
+\setcitestyle{authoryear,open={[},close={]}}
+\bibliographystyle{plainnat}
+%\setcitestyle{authoryear,round,citesep={;},aysep={,},yysep={;}}
+}
+%--------------------------------------- END ---------------------------------------------%
+\end{document}

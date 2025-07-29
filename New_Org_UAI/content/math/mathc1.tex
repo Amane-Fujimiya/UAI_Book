@@ -1,0 +1,600 @@
+\chapter{Foundational mathematics}
+%\counterwithout{section}{chapter}
+We present preliminary knowledges before jumping in further section. Most of the knowledge falls in the range of mathematics, or treatment by mathematical concepts, physical interpretation, computer science, and neuroscience. However, there do exist several knowledges that is more outlier than such, typically fall into the range of philosophy and other treatment of \textit{conceptual models}. 
+\section{Elementary logics}
+By definition, let's define an informal view on \index{proofs} proof and \index{logics} logics. 
+
+\begin{definition}[Proof, I]
+    A \textbf{proof} is a sequence of true statements, without logical gaps, that is a logical argument establishing some conclusion. 
+\end{definition}
+
+This definition captures the notion of proofs, but however, lacks the actionable components. 
+
+\begin{definition}[Proof, II]
+    A proof is a sequence of logical statements, one implying another, which gives an explanation of why a given statement is true. Mathematical proof is absolute.
+\end{definition}
+
+To prove things, we need to start from assumptions, or axioms. By non-rigorous manner, axioms can be taken as the formal ground for which the work can be done on the above layer. The axiom can be reasonable or not, so is the truth assumption for that axiom. It is like saying "If the axiom is true, then this is what I told you". Others axiom might still yield different results, as per mathematicians like. The key thing is to define, and at least draw out a general assumption that your axiom takes form, that is on first hand, actionable. Then the rigorous system will be built upon that. 
+
+Per attention, we also care about the little "statement" in our definition, too. \index{statement}
+\begin{definition}[Statements, I]
+    A statement is a sentence that can have a true value. That is, it is a logical unit with truth value being assigned to its truth. 
+\end{definition}
+
+Therefore, we can also say statements declare or assert truths of certain subject. 
+
+Those statements can be either false or true. Often, we will want to concern about statements with truth value, not as the statement of there are infinitely many primes of the form $n^{2}+1$, because it is not probably true, but none has a clue. So it might be call (?) a conjecture instead. There are also times when statements can have no justifiable truth value, of which then we will need to put on such convention on the statement specific properties. 
+
+\begin{definition}[Statements, II]
+    A statement is a declarative sentence, otherwise called a declaration that is discrete in its properties of true or false, but not both. Formally, this is written for a statement $P(n)$ as: 
+    \begin{equation}
+        P(n)=\{P: P=T \: \text{or}\: P = F\}
+    \end{equation}
+\end{definition}
+
+In some cases, it is not immediately clear if a statement is true or false. So even with the indication slightly contradictory to the above notion, for a sentence to be a statement, its capacity of assigning truth is a requirement, but we do not need to know its exact propensity, or its actual truth.   
+\footnote{In some texts (Advanced Calculus, Sternberg, 1990), open sentence is called as a \textbf{statement frame}, of which then statement is obtained from such frame. This is accordance to the coverage of each open sentence (frame), since it applies the rules onto different elements of the domain.}
+
+A sentence that satisfies or not the condition to be a statement, but contains in its description of the declarative part of variables or elements of prescribed sets, which is called the domain of such variable, then is called \textbf{open sentence}. If the \index{open sentence} open sentence $P(x)$ with \(x \in S\), then we say \(P(x)\) is an \textbf{open sentence on the domain $S$}. Then, $P(x)$ would be a statement for each $x\in S$. 
+
+Thereby, from observations of the elementary system, the foundational blocks for proofs are from those sentences, and its characteristic sentence of open sentences. In interest and necessity of creation of statement, (open) sentences must be converted to statements. Only then the higher properties of statement, which would be discussed later, shall be applied onto the process of making proofs. To do this, we might want to have a look at the logical system of which enables the elementary form of logical argument, leading to the proof of requirements. 
+
+\subsection{The Propositional logics}
+
+Working with logic, traditionally, is to deal with absolute truth. There's the notion between true, and false. So, rationality and statements in logics is figured in terms of discrete truth. We denote true as $T$, false as $F$ for convenience. 
+
+What constitutes to our consideration of what is true or false? Specifically, what do we mean by truth? We use the above notion of a statement for such. Statements is the foremost piece of 'equipment' we have in logic, aside from (open) sentences. Informally, they carry truth value, of which meaning their description is realized, and not vague in terms of such realization. Simply speak, if a statement is false, then it is indeed, false, under any consideration of inspection, given the system of formalism that it is based off. 
+
+
+\subsubsection{Logical connectives}
+Logical operations use statements and act on them, producing new logical statements. Their truth value (either true or false) is presented by using truth table, essentially a table-based organization for the combination of truth value. So in essence, they are the tool for statements to acts of each other, based of the properties of relations, and what is connected to each others. 
+
+In a perspective, we can say that \index{logical system} logical system is constructed using \index{logical operation} logical operation, as a mean to connect logical statements, or transforming them. Because of this, they are sometimes referred to as \textbf{logical connectives}. Formally speaking, for a statement $P(x)$, logical operation is of the form $\mathrm{LO}: S^{n}\to T^m$, where $n$ and $m$ indicate the domain involvement of the operation, and the domain resultant of such operation. A \textbf{unary} operation takes the form of $n,m=1$, since they take one and produce (transforms) one. Binary operation would be $n=2, m =1$ since they took two argument, and produce one. All of this would be reflected in the truth table, as per configuration of the mathematicians. 
+
+Let $P$ and $Q$ be statements. Then $P\land Q$ is the "and" operator, and $P\lor Q$ is the "or" operator. Formally, they are called \index{conjunctions} conjunction and \index{disjunction} disjunction, respectively. Their role is to combine specific statements (2 statements) under the landscape of some rules: Either of them is correct yields correct statements, or a bit more lax, only one of them need to be such, at bare minimum. So for the conjunction operation, combining two statements, $A,B$, will have the following truth table 
+$$\begin{array}{|c|c|c|}
+    A & B & A\land B \\
+    T & T  & T \\
+    T  & F  & F \\
+    F  & T  & F \\
+    F  & F & F 
+\end{array}$$
+Here we can see how truth table is presented: Statements with their truth in specific columns, and the operation's results of logical realization on the other side. Sometimes, because for every operation, even nested or so, complex or such, must then come out to be a single truth value at the end of its chain of logical actions, it is convenient to list out the possible truth value as a table of such. 
+
+Of course, increasing the amount of statements increases the possible permutation that such complex operations can bring, but that is of the concern later on, and still will result in one single truth value. 
+
+The truth table of the disjunction operation is presented as
+$$\begin{array}{|c|c|c|}
+A & B & A\lor B \\
+T  & T & T \\
+T & F & T \\
+F  & T & T \\
+F & F & F
+\end{array}$$
+
+Similarly, $P \implies Q$ is implication operation. The only case for which implication is false is when $P$ is true, but $Q$ is false. Why is this the case? Suppose that $P$ is false and $Q$ is true. In this scenario, for example, the student in a test did not get an $A$ on his exam, but when he receives his final grades he learned that his final grade was an $A$. How could this happen? The only argument about this is that the whole ordeal is a mistake, and need to check back, why? Because the instructor did not lie, so do the grade. So there must be a mistake somewhere, hence, it is indeed false. 
+
+$P \iff Q$ is the second binary operation aside from the standard operations above. It stands for "if and only if", and is called a \textbf{biconditional} logical operator. It is much stricter than the implication operation: similar to and, it requires for the truth to be evaluated as $T$, if only the two-way implication is true. Specifically, 
+\begin{equation*}
+    (P \implies Q) \land (Q \implies P) = T 
+\end{equation*}
+
+This would also be the time when you are introduced to what exactly are we doing, that we are using notations and formal language of such form we are now. Such form is called as \textbf{atomic}, of which statements and operations can be constructed from other components, such as the \textbf{and} operator and the implication operator, as you saw. In case of biconditional operator, formally, we often state it as: 
+\begin{equation*}
+    P \: \text{is equivalent to}\: Q
+\end{equation*}
+or as 
+\begin{equation*}
+    P\: \text{is necessary and sufficient for}\: Q
+\end{equation*}
+Their truth table is as followed:
+$$\begin{array}{|c|c|c|c|c|}
+P & Q & P \implies Q & P \iff Q  \\
+T & T & T & T  \\
+T & F & F & F    \\
+F & T & T & F \\
+F & F & T & T 
+\end{array}$$
+
+
+So far, we have only seen binary operation, taking two arguments (statements) and combine them. An example of logical operation, specifically unary, is the operation of negation $\neg$. For a statement $A$, negation has its truth table as such:
+$$
+\begin{array}{{|c |c|}} 
+A & \neg A  \\
+\hline & \\
+T & F \\
+F & T
+\end{array}
+$$
+Negation specifically means "not", of which negates the original statement. 
+
+Overall, the truth table is as followed for two statement $A$ and $B$. 
+$$
+\begin{array}{|c|c|c|c|c|c|c|}
+A & B & A \lor B  & \neg A & \neg B & \neg(A \lor B) & \neg A \land \neg B \\
+T & T & T & F & F & F & F \\
+T & F & T & F & T & F & F \\
+F & T & T & T & F & F & F \\
+F & F & F & T & T & T & T
+\end{array}
+$$
+
+\subsubsection{Tautology and Contradiction}
+
+We have seen single use of operation, up to this point. However, we can use the logical connectives above to form more intricate statements, which can be nested, sequential of many statements and connectives. More generally, a \textbf{compound statement} is a statement composed of one or more given statements (also called \textbf{component statements} in this context), and at least one logical connectives. 
+
+The compound statement below, which is combined of the logical \textit{or}, and logical \textit{or}, is expressed as
+$$\begin{array}{|c|c|c|}
+    A & \neg A & A \lor \neg A \\
+    T & F & T \\
+    F & T & T
+\end{array}$$
+This is the statement $A \lor \neg A$ for any given statement $A$. The resultant is always true as we have observed. When such case happens, we call the statement a \textbf{tautology}. The concept of \index{tautology} tautology is pretty important, even in this elementary stage of treatment on logic, specifically because it is static that it can be utilized in several proofs as a "constant" form. Specifically, tautology means that the compound statement $S$ being classified as such, would always be true for all possible combination of truth values of the component statements that comprise $S$. Hence, $A \lor (\lnot A)$ is a tautology. 
+
+An example shall be given. For statement $P$ and $Q$, the compound statement $(\lnot Q) \lor (P \implies Q)$ is a tautology, based of its truth value. (You can check it yourself - or just me). Still this statement, if we let $P$ being '3 is odd', and '57 is prime', we just get
+\begin{quote}
+    57 is not a prime, or 57 is prime if 4 is odd
+\end{quote}
+This is true regardless of which statement $P$ or $Q$ is considered. 
+
+On the other hand, a compound statement $S$ is called a \index{contradiction} contradiction if it is false for all possible combinations of truth values of the component statements that are used to form $S$. The statement $P \land (\lnot P)$ is a contradiction, as being shown of its truth table:
+
+\begin{equation*}
+    \begin{array}{|c|c|c|}
+        P  & \lnot P & P \land (\lnot P) \\
+        \hline & & \\
+        T & F & \mathbf{F} \\
+        F & T & \mathbf{F}
+    \end{array}
+\end{equation*}
+
+\subsubsection{Logical equivalence}
+
+Certain logical proposition are equivalent, which we denote $\equiv$. Two logical statements are called logically equivalent if the truth tables (all possible assignments of truth value for the logical variables) are the same. Formally, this is defined as \index{logical equivalence} logical equivalence.
+
+Specifically, let $R$ and $S$ be two compound statements involving the same component statements. Then $R$ and $S$ are called \textbf{logically equivalent} if $R$ and $S$ have the same truth values for all combinations of truth values of their component statements.
+
+We have the following definition. 
+
+\begin{definition}[Logical equivalence]
+    Let $A$ and $B$ being any (compound) statements or open sentences with domain specified. Then $A$ and $B$ is logically equivalent if for any configuration of truth in $A$, $B$ matches its truth value to $A$, and reverse. 
+\end{definition}
+
+Logical equivalence is especially useful, in case we want to compare certain complex compound statements and its truth value as consequences. This includes also, confirming for example, if we somewhat want to 'shorten' down certain compound statement to be a logical operation itself, for example, bidirectional, we can pretty much confirming them both. This works for tautology, per purpose of what we want to do. The key thing, simple down, is that it offers us a way to look at multiple interpretation of a single logical system, of which then the equivalence notion is defined. 
+
+There are several things to note from this. Firstly, is that for two logical statements to be compared, then every compartment of their component logical truth must be told. Second, there will be time when one statement uses certain component, that the other compound statements have none. In such case, it is hard to tell aside from testing if the behaviours result from such statement can be equivalent or not, since there is 'external' factor to the truth evaluation. However, it is a minor concern, as after testing of truth value then comparing it is still a better choice. 
+
+Setting that aside, there are some theorems we need to know of this elementary section. 
+
+\begin{theorem}[Equivalencing]
+    Let $P$ and $Q$ be two statements. Then 
+    \begin{equation*}
+        P \implies Q \equiv (\lnot P) \lor Q
+    \end{equation*}
+\end{theorem}
+
+\begin{theorem}[Equivalent Law]
+    Let $P$, $Q$ and $R$ be statements. Then, 
+    \begin{enumerate}
+        \item $P \lor Q \equiv Q \lor P$, and $P \land Q \equiv Q \land P$ (Commutativity)
+        \item Associativity: \[P \lor (Q \lor R) \equiv (P \lor Q) \lor R\] similarly, \[P \land (Q \land R) \equiv (P \land Q) \land R\]
+        \item Distributivity: \[P \lor (Q \land R) \equiv (P \lor Q)\land (P \lor R)\] similarly, \[P \land (Q \lor R) \equiv (P\land Q) \lor (P\land R)\]
+    \end{enumerate}
+\end{theorem}
+
+Finally, we have De Morgan's Laws, in logical form. Later on, we would see that this is also apparent in set theory for conjunctions of multiple sets.  
+\begin{theorem}[De Morgan]
+    Let $P$ and $Q$ be two statements. Then
+    \begin{align}
+        & \lnot (P \lor Q) \equiv (\lnot P) \land (\lnot Q) \\
+        & \lnot (P \land Q) \equiv (\lnot P) \lor (\lnot Q)
+    \end{align}
+\end{theorem}
+
+All the above theorem can be deduced and verify by means of truth tables. 
+
+\subsubsection{Quantifiers}
+
+In logic, there are certain lexical components we call as quantifiers, which is to 'quantify' the scope of application, for logical arguments. $\forall x,P(x)$ means $P(x)$ is true for all $x$, and $\exists x,P(x)$ there exists such $x$ that $P(x)$ is true. These two notions can be understood intuitively: One guarantee \textit{universal correctness}, while the other guarantee \textit{existential correctness} - there will always exist such fact, at the minimal counting unit we can find. The quantifiers are usually bounded, as per their definition in the logical unit. Formally, $\forall$ is the universal quantifier, and $\exists$ is called the existential quantifier. These quantifiers are used to assert certain open sentence, of which then produce statements. We will discuss this in the next section. 
+
+Negations of quantifiers are as the following table:
+\begin{align}
+    \lnot(\forall x)P(x)\equiv (\exists x)(\lnot P(x)) \\
+    \lnot (\exists x)P(x) \equiv (\forall x)(\lnot P(x))
+\end{align}
+\subsection{From frames to statements}
+
+We have mentioned that if $P(x)$ is an open sentence over a domain $S$, then $P(x)$ is a statement of each $x\in S$. This implies the need for the domain of $S$ to be specified for the open sentence $P(x)$. Or rather, we can break down a statement as it is formed by: 
+\begin{equation}
+    \text{Statements} = P(x) + \mathrm{Dom}(x)
+\end{equation}
+of which $\mathrm{Dom(x)}=S$, is the domain of the variable $x$. There are a few ways to convert open sentences into statements, of which we will make use of the above logical system for such task. 
+\subsubsection{Quantified(-cation of) statements}
+One of such way to convert an open sentence into a statement, is by the mean of \index{logical quantification} quantification. If $P(x)$ is a statement frame over some domain $S$, obtaining statements from this frame can be done by attaching quantifiers onto it. This asserts the frame $P(x)$, for specific $x$ compartment. Such statement is then called as \index{quantified statement} \textbf{quantified statement}. Formally, for a statement $P(x)$, then the quantified form of such statement is taken in the form of $(\forall x) P(x)$ or $(\exists x)P(x)$. One frequently presents sentences containing (multiple) variables as being always true without explicitly writing the universal quantifier, however. So instead of 
+\begin{equation*}
+    (\forall x) (\forall y) (\forall z) [x+(y+z)=(x+y)+z]
+\end{equation*}
+we can just write
+\begin{equation*}
+    x+(y+z)=(x+y)+z
+\end{equation*}
+for the ease of writing the quantifiers. Note that the shortened form of this quantified statement is of the form $(\forall x)(\forall y)(\forall z)P(x,y,z)$. 
+
+For existential quantifier, an existentially quantified statement only guarantee 'sometimes' true quantification to such frame, hence it must not be absent from the formal writing. 
+
+The statement $(\forall x) (x< 4)$ still contains the variable '$x$', but it is no longer allowed to take on any values, and is called a bound variable. Roughly speaking, quantified statements contains quantified variables, which are bound, while unquantified variables are free. The notation $P(x)$ is hence very specific - it is only used when the variable $x$ is free in the sentence being discussed. 
+
+\subsubsection{Order of quantifiers}
+One of the simple fact for quantifiers and bounds has their order, is that they are not commutative, if the quantifiers' types are different. So $(\forall x)(\exists y)P(x,y)$ is inherently different from $(\forall y)(\exists x)P(x,y)$. Why would this happen? 
+
+First, we revise what the \textit{quantifiers} actually means. Quantifier, is analogous to the domain, for specific statement frame (we use this word for better representation than open sentence). It enforces the operational scope of finding the statement - for example, $\forall x \exists y$ means exactly that, there exists a $y$ in the scope of the domain of $x$, such that it becomes the minimal existential guarantee. Thereby, only one exists would give the statement generated off the statement frame, to be true. However, if we reverse it, then the scope changes: $\exists x \forall y$ means any $y$ will have at least one $x$ of such property as in $P(x,y)$. The scope has changed - now it must be correct for every element possible of $y$, and each of them need at least 1 example. If we can interpret it differently, it's the extreme value of minimal bound, and the minimal of the extremal bound, so to speak. 
+
+On the other hand, if they are of the same types, then it is fine. Among a group of quantifiers of the same type, the order does not affect the meaning. Thus, $(\forall x)(\forall y)$ and $(\forall y)(\forall x)$ has the same meaning. This also mean we can sometime abbreviate it as $(\forall x, y)$, if we wish to reduce the amount of notation needed. 
+
+\begin{lemma}
+    If quantifiers of both types are used, the order of which they are written affects the meaning of the statement, and hence they are not commutative. Quantifiers of the same types do not have such effects. 
+\end{lemma}
+
+\begin{example}[A test version of justifying quantifiers]
+    Denoting truth as numbers, $\{0,1\}$. We have the logical statement as a function $L: \prod_{\times, i \in I} (B_i) \to \{0,1\}$, of which $\{B_i\}_{i=1}$ is the set of all 'bounds' that each variable constitute in such. Then, we can interpret the two existential and universal as bound such that: 
+    \begin{align}
+        & B_{\forall} = \{x_i\}_{i=1}^{m>1}\\
+        & B_{\exists} = \{y_1\} 
+    \end{align}
+    Thus, existential order can be thought as, for binary case, 
+    \begin{equation}
+        L_B: B_{\forall} \times B_{\exists} \to \{0,1\} 
+    \end{equation}
+    to relies on its truth value for the domain region of $B_{\forall}$ as a stronger bound to guarantee that the statement is then true. 
+
+    Similarly, the statement 
+    \begin{equation}
+        L_B: B_{\exists} \times B_{\forall} \to \{0,1\} 
+    \end{equation}
+    relies on the domain $B_{\exists}$ to dominate the strong bound of true evaluation. 
+\end{example}
+
+The above example only offer a "naive" but systematic way of justifying the relationship between two quantifiers, under an elementary setting of propositional logic. 
+
+Of all, when using quantifiers, we need to keep track of our order, regarding all the quantifiers being used. If not, mathematicians' career would be in shamble since they used them all wrong, if ever, until they realize it right now. Because it is a very convenient tool, that is why we must be careful on how to use it. Additionally, there are several times we should reduce the amount we use, and instead work on it with an actionable bound, instead of an absolute minimal/maximal bound of such. 
+
+On a side note, the idea of strong bound truth validation is a very interesting idea, and might meet its analogue somewhere else in the mathematical system. 
+
+\subsection{Characterization}
+Suppose that some concept (or object) is expressed in a statement frame $P(x)$ over a domain $S$, and $Q(x)$ is another frame over the domain $S$ concerning this concept. We say this concept is characterized by $Q(x)$ if $\forall x\in S, P(x)\iff Q(x)$, i.e. they maintain a bidirectional relationship, is a true statement. The statement above is then called a characterization \index{characterization} of this concept.
+
+Let's take an example. 
+
+\begin{example}
+    Suppose that 
+    \[P(x): x= -3 \text{ and } Q(x): | x| = 3\] where $x\in \mathbb{R}$. Then the biconditional $P(x)\iff Q(x)$ can be expressed as "$x=-3$ is necessary and sufficient for $|x|=3$", or perhaps better, $x=-3$ is a necessary and sufficient condition for $|x|=3$. 
+
+    Now, consider the quantified statement $\forall x\in \mathbb{R}, P(x)\iff Q(x)$. This statement is false because $P(3)\iff Q(3)$ is false. 
+\end{example}
+
+Note that sometimes, we arguably misuse characterization, and definition. Supposedly, Let $A$ being a triangle. Then, $A$ is equilateral if it has three equal sides. This is the definition. For the notion introduced in this section, we have the following characterization: 
+\begin{equation*}
+    A \: \text{is equilateral} \: \iff A \: \text{has three equal angles}
+\end{equation*}
+Notice that the definition is of three sides, and the characteristic of such concept, is that it must then, consequentially, have three equal angles. So the definition is indeed true, but not a characterization, because that is what a definition is, even though the bidirectional relationship is true. 
+
+This sounds like more of a rehearsal, but in fact, there are many definitions that use bidirectional conditions to sustain itself of a concrete definition. That is because it offers something that is analogous to equality in general mathematics, but stronger - a binding between the concept and what is its representation. That is why we must define and differentiate between two 'objects' that is created from such bidirectional statement, definition, and the latter of this section's name. Otherwise, our foundation of definitions, for at least the starter point of mathematics, would be in troubles. 
+
+\subsection{Restricted variables}
+
+Usually, in mathematics, a variable is not allowed to take all objects as values, it can only take as values the member of a certain set, which we already called the \textit{domain} of the variable (independent, not dependent variable like $y$ in a typical function). The domain is sometimes explicitly indicated (like what we have seen when ambiguity is presented), but is often only implied. In a logical sense, the letter $n$ is customarily used to specify an integer, so that $(\forall n)P(n)$ would automatically be read "for every integer $n$, $P(n)$". However, sometimes $n$ is taken only as positive integer. In case of possible ambiguity or doubt, we would indicate the restriction explicitly and write $(\forall n \in \mathbb{Z})P(n)$. The quantifier is read, literally, "for all $n$ in $\mathbb{Z}$". The above quantifier are called \textit{(logical) restricted quantifier}. 
+
+In the same way, we have restricted set formation, both implicit and explicit, as in $\{n: P(n)\}$ and $\{n\in\mathbb{Z}: P(n)\}$ which both reads as "the set of all integers $n$ such that $p(n)$".
+
+In a sense, restricted variables can be defined as abbreviation of unrestricted variables by 
+
+\begin{align*}
+    & (\forall x\in A)P(x) \Leftrightarrow (\forall x)(x\in A \Rightarrow P(x)) \\
+    & (\exists x \in A)P(x) \Leftrightarrow (\exists x)( x\in A \land P(x))\\
+    & \{x\in A: P(x)\} = \{x: x\in A \land P(x)\}
+\end{align*}
+
+Although there is never any ambiguity in sentences containing explicitly restricted variables, it sometimes helps the eye to see the structure of the sentence if the restricting phrases are written in superscript position, as in $(\forall \epsilon^{>0})$, which might looks weird, but is pretty much more verbose. 
+
+
+\section{Naive set theory}
+
+Almost everything is set. Most of mathematical concept can be either constructed and interpreted by set, or by logical system, in which both of them interchange each other at work. This section will provide a thorough overview of the formal concept for set theory. Of course, may we even approach ZFC. 
+
+Set theory historically began with the concept of the naive set, and operations on set. It is the first attempt to create the formal theory on categorization (setting things in to boxes of similar properties, or something else). Per our separation to be historical, I think it is nice to review the definitions naively of set theory, and where the fallacy might rise.
+\begin{definition}[Set]
+    A \textbf{set} $A$ is an unordered collection of distinct objects. For $x$ in the set $A$, we say that $x$ is an element of $A$, $x\in A$. Conversely, $x\notin A$. The set $A$ then can be defined by its members, or their \textbf{set comprehension} using \textbf{formulas}. 
+\end{definition}
+
+To describe a set, we use some way of listing the set: Either by listing, or identification. Standard (plus trivial) sets include the \textit{empty set} $\varnothing = \{\}$, the \textit{natural number} set $\mathbb{N}$ and its positive (non-zero) subset $\mathbb{N}_{+}$, \textit{integer} set $\mathbb{Z}$, \textit{rational numbers} $\mathbb{Q}= \{n/d\mid n\in \mathbb{z}, d\in \mathbb{N}_{+}\}$, and the \textit{real number} $\mathbb{R}$.  
+
+To operate on set theory, we have this axiom: 
+\begin{axiom}[Principle of Extensionality]
+    If two sets have exactly the same members, then they are equal. That is, for $A,B$ are sets, such that $t\in A \iff t\in B$, then $A=B$.
+\end{axiom}
+For such a set, the set $A$ is called a \textbf{subset} of $B$, $A\subseteq B$ if all members of $A$ are also members of $B$, which also contains the case $A=B$. This changes to $A\subset B$, the \textit{proper subset}, if $A\neq B$ by the principle of extensionality. We said that $A$ is \textbf{contained} in $B$. Conversely, the notation $A\supset B$ and $A\supseteq B$ takes as $A$ is the \textbf{proper superset} of $B$, and subset of $B$. For $\bar{A}=\{x\mid x\not\in A\}$, we call it the \textit{complement} of $A$. 
+
+Any set will have one or more subset. For $|A|=n$, it has $2^n$ subsets. The set of all subsets of a given set $A$, denoted $\mathcal{P}(A)$, is called the \textit{power set} of $A$. 
+
+\subsubsection{Operation on set}
+Under naive set theory, we have the following operations: 
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item $A\cup B = \{x\mid x\in A \lor x\in B\}$. (union)
+    \item  $A\cap B = \{x\mid x\in A \land x\in B\}$. (intersection)
+    \item $A\setminus B = \{x\mid x\in A \land x \not\in B\}$. (set difference) 
+    \item $A\triangle B = \{x\mid x\in A \oplus x\in B\}$. (symmetric difference)
+\end{itemize}
+
+\begin{theorem}[operations]
+    For $A,B,C$ are sets, we have: 
+
+    \begin{enumerate}
+        \item $(A\cap B)\cap C=A\cap(B\cap C)$
+        \item $(A\cup B)\cup C=A\cup(B\cup C)$
+        \item $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$
+    \end{enumerate}
+\end{theorem}
+\subsection{De Morgan's theorem}
+One of the elementary result often used in set theory is the De Morgan's theorem. We state it as followed. 
+\begin{theorem}[De Morgan]
+    Given a set $X$ and a collection of set, denoted by $\{A_i\}_{i\in I}$, we have: 
+    \begin{equation}
+        X\setminus \left(\bigcup_{i \in I} A_{i}  \right)=\bigcap_{i \in I} (X \setminus A)
+    \end{equation}
+    and 
+    \begin{equation}
+        X\setminus\left(\bigcap_{i \in I} A_{i}\right)= \bigcup_{i \in I} (X \setminus A_{i})
+    \end{equation}
+\end{theorem}
+Under $n$ sets operations, it is better to not write them all down like above, and so similarly to summation $\sum$, and product $\prod$, we have ourselves a set general notation. If $A_{\alpha}$ are sets for all $\alpha\in I$, then $$\bigcap_{\alpha\in I}A_{\alpha}=\{ x: (\forall \alpha\in I)\: x\in A_{\alpha} \}$$
+and $$\bigcup_{\alpha\in I}A_{\alpha}=\{ x: (\exists \alpha\in I)\: x\in A_{\alpha} \}$$
+\section{Formal set theory}
+We have said earlier that we can construct sets by the subject of comprehension, or \textit{set abstraction}. However, be wary of the noninformal treatment of abstraction for sets and subsets. For certain bizarre choices of the entrance requirement, it may happen that there is no set containing exactly those objects meeting the entrance requirement (Enderton, 1977). Either by defining non-"definable" construction, or by mishandling the concept of membership - Russell paradox, for $\{x\mid x\not\in x\}$ being the famous example. 
+
+In set theory, there's the notion of container. This would come in handy later, and I think it's just at the right time for this discussion, after we at least have an idea of how set operate in mundane sense. 
+
+A container is different from its element, but as we have said above, there can even be the collection of collections. A famous example is the empty set. When we say that $A=\varnothing$, we did not say that it has nothing, because, $A$ in this case, is the collection. We instead can write it as: $A= \{\varnothing\}$, specifically refers to the fact that it's a set, without any member. $\varnothing$ hence can be interpreted, and defined as a state of set - the state of being empty for any set. So, then, we have $\{\varnothing\}\neq \varnothing$, simply because one is a state of objects, while the other one refers to a collection, with that state of object. Intuitively, it's between a man with nothing, and a man with an empty bottle of water - at least he has an empty bottle. 
+
+So, thinking about it, $\infty$ and $\varnothing$ is weird. It can be a thing of it own, i.e. an object being analogous to $\varnothing$ might mean that it is void; on the other hand, an 'infinite' object might refer to its domain, or else. But when you package it into a collection, it becomes 'representative properties' of the collection itself (or the set itself). $\{\infty\}$ can be understood as the infinite collection, or a collection of infinite membership, for being distinct. So there's quite a thing about collection, and just plain resort of objects. 
+
+This problem is actually the reason why we begin with Russell's paradox \footnote{Also called Russell-Zermelo paradox} in the first place. We would like to take a detour, and confront Russell's paradox for the moment (Gerstein). We start with a property $P$ and assume that the property can be used to define a set, $\{x\mid P(x)\}$. Consider the set \index{Russell's paradox}
+\begin{equation*}
+    S=\{A\mid A \text{ is a set and } A\not\in A\}
+\end{equation*}
+Notice that some sets are not elements of themselves. The set of integers $\mathbb{Z}$ does not include the set itself. We obtain the paradox when we consider 'the set of all sets which are not member of themselves', or 
+\begin{equation*}
+    R= \{\text{Sets } A \mid A \not\in A\}
+\end{equation*}
+The question is, is $R$ a member of itself? $R$ cannot be a member of itself, but it must be, since it contains everything. This is a contradiction, hence $R$ cannot be a set. But this explanation is lacklustre. 
+
+The argument of Russell's paradox is concerned of the set $\{x\mid x\not\in x\}$. Is it a member of itself? We think the answer is no. What do you mean by $x\not\in x$? What is $x$ in this case? It seems that such thing does not even exist. Why? Because an apple cannot be justified so that it is not itself. Even when we regard that we can have collection of collections, the narrow view when you look at a collection, instead of later scale, is that now the collections inside the collection, is now called element instead. You cannot have an element to not belong to itself, simply because the statement does not make sense - you need to have a collection at the far side of the operation. This means that the whole statement is simply false, hence even $S$ does not exist. Instead, we say we have two things, $x$ and $\{x\}$. Inherently, $x\not\in \{x\}$. The notation change - now $\{x\}$ is the collection of $x$, not just $x$ itself. Then the formula $x\not\in x$ is simply rejected, because it is false in interpretation. This indeed, surprisingly, leads to the theory of types, of which Russell himself postulated such. This creates slicing, of which divides things into set of elements, set of sets of elements, and more. In other word, an orderly fashion of types abstraction. The statement $x\not\in \{x\}$ though, is wrong, since we now reduce the 'typing' down to element, and its container. One is a set, one is the container of such set. It is obviously wrong, because it's similar to asking if your apple in the bag, is not in the bad that contain such apple. 
+
+On the other hand, if we still accept the notion of the statement, then for $S=\{x\mid x\not\in x\}$ is indeed true, and exists, because of the law of scaling and typing. This holds for the next case, $S\in S$?, and the answer is no, since it cannot contain itself, validly, within the typing of scale. So there is no universal set. 
+
+What we have done is to reject the existence of even $S$, thus invalidating the question itself; also, to prove that there is no universal set available. But there are several ways to do this, instead. One example is the treatment of such, so that we cannot create such arbitrary set. New sets can only be created via the above operations on old sets, plus replacement, which says that you can replace an element of a set with another element. This is an example of the treatment of set theory, following ZFC (Zermelo-Fraenkel) set theory, which was formed to counter the existence of Russell's paradox. Another argument, \textit{The von Neumann-Bernays alternative}, also proved to be effective against such paradox, but retains the ability to have a universal set - in this case, is called as a 'proper' class. \footnote{For more information on this debate, see the relevant information in \textit{Herbert B. Enderton, Elements of Set Theory}, Gerstein's argument of the paradox, \href{https://plato.stanford.edu/entries/russell-paradox/}{Plato Stanford's articles} on this topic, as well as several introductory literature regarding the same problems.}
+
+\subsection{An informal view on sets}
+The following informal treatment on the method of obtaining sets. Note that this is informal, and this is just a description, hence motivate certain understanding of sets. 
+
+First,we gather objects that are not themselves sets, but we want to have as members of a set, called \textit{atoms}. Let $A$ be the set of all atoms.  We proceed to build up a hierarchy: \begin{equation*}
+    V_{0} \subseteq V_{1} \subseteq V_{2} \subseteq \dots
+\end{equation*}
+of sets. We take $V_{0}=A$, and construct upward, $V_{1}=V_{0}\cup \mathcal{P}(V_{0})=A\cup \mathcal{P}(A)$, of all sets of atoms. The third level is hence also constructed the same way, for $V_{3}$ as $V_{1}\cup \mathcal{P}(V_{1})$. Hence, we have a recursive relation: \begin{equation}
+    V_{n+1}= V_{n} \cup \mathcal{P}(V_{n}), \quad n \in \mathbb{N}
+\end{equation}
+However, for this series of $\{V_{0},V_{1},\dots\}$, there is not enough sets included. For example, we do not have the infinite set $\{\varnothing, \{\varnothing\},\dots\}$. To remedy this, we take the infinite union, \begin{equation*}
+    V_{\omega} = V_{0} \cup V_{1}\cup \dots
+\end{equation*}
+and let $V_{\omega+1}=V_{\omega}\cup \mathcal{P}(V_{\omega})$. In general, for any $\alpha$, $V_{\alpha+1}= V_{\alpha}\cup \mathcal{P}(V_{\alpha})$. This goes on `forever', for the definition of forever is implicit. A \textit{fundamental principle} is the following: Every set appears somewhere in this hierarchy. That is, for every set $a$, there is some set $\alpha$ for $\alpha \in V_{\alpha+1}$. If, we aim for simplification, restrict the definition to \textbf{pure sets}, then the construction would be resulted in $V_{\alpha+1}=\mathcal{P}(V_{\alpha})$, without the atoms. 
+\subsection{Classes}
+
+In the previous discussion on the mishandling of abstraction, and by our informal image of the hierarchical way sets are constructed, there is no "set of all sets". This nonexistence of a set of all sets will become a theorem, provable of axioms. However, we can go without it and accept it as a conjecture, or fact. 
+
+Nonetheless, there is some mild inconvenience if we are to forbid the notion of the collection of all sets. What is the replacement, or at least what can we call it? There are two alternatives: 
+\begin{enumerate}
+    \item The \textit{Zermelo-Fraenkel alternative } The collection of all sets need have no ontological status at all, and we need never speak of it. If tempted to do so, avoids it. 
+    \item The \textit{Von Neumann-Bernays alternative } The collection of all sets can be called a \textit{class}. Similarly, any other collection of sets can be called a class. In particular, any set is a class, but some classes are too large to be sets. Informally, a class $A$ is a class, if it is included in some level $V_{\alpha}$ of the hierarchy, hence is also a member of $V_{\alpha +1}$. 
+\end{enumerate}
+In advanced work in set theory, Zermelo-Fraenkel works better, profits from the simplicity of dealing with only set, instead of classes and sets. In usual literature, or at least in Enderton's \textit{Elements of set theory}, the proceeding resources and axioms will follow Z-F alternative, and hence mentions none of the classes that are not sets.
+\subsection{Axiomatizations}
+For the most part of this book, we would just have a thorough justification of set theory as a whole, aside from the application, operation side of combining and acting on sets. As noted above, axiomatic set theory works fine for the purpose of axiomatization we might want to consider, such that Russell's paradox is not again reiterated. It is then obvious that we would like to take axiomatic set theory as our main focus, and hence write about it. 
+
+Axiomatization of set theory requires satisfying several principles, and also assurance of the existence of some basic sets. 
+
+The first one is the reiteration of the informal axiom used above. 
+\begin{axiom}[Extensionality axiom]
+    If two sets have exactly the same members, then they are equal: \begin{equation}
+        \forall A \forall B \: [\forall x\:(x \in A \Leftrightarrow x\in B)\Rightarrow A = B]
+    \end{equation}
+\end{axiom}
+Next, we have some axioms of basic sets encountered. 
+\begin{axiom}[Empty set axiom]
+    There is a set having no members: \begin{equation}
+        \exists B \forall x \: x \not\in B
+    \end{equation}   
+\end{axiom}
+\begin{axiom}[Pairing axiom]
+    For any set $u$ and $v$, there is a set having as members just $u$ and $v$: \begin{equation}
+        \forall u \:\forall v \:\exists B\: \forall x (x\in B \Leftrightarrow x= u \lor x = v)
+    \end{equation}
+\end{axiom}
+\begin{axiom}[Union axiom, preliminary form]
+    For any set $a$ and $b$, there is a set whose members are those sets belonging either to $a$ or to $b$ (or both): \begin{equation}
+        \forall a \: \forall b\: \exists B \: \forall x (x\in B \Leftrightarrow x\in a \lor x \in b)
+    \end{equation}
+\end{axiom}
+\begin{axiom}[Power set axiom]
+    For any set $a$, there is a set whose members are exactly the subsets of $a$: \begin{equation}
+        \forall a \: \exists B \: \forall x (x\in B \Leftrightarrow x\subseteq a)
+    \end{equation}
+\end{axiom}
+For now, the union axiom can then be further strengthen. Later we will also mention the subset axioms, replacement axioms, infinity axiom, regularity axiom, and the axiom of choice. The set existence axioms can now be used to justify the definition of the symbol $\varnothing$. 
+
+\begin{definition}
+    $\varnothing$ is the set having no members.
+\end{definition}
+The definition bestow the name "$\varnothing$" on certain set. We, however, must know by then that there exists a set having no members, and there cannot be more than one of them by the time we use the naming. The logical difficulties arise from introducing symbols when either there is no object for the symbol to name. The other set existence axioms justify the definition of the following symbols: 
+\begin{definition}
+    For sets $uv,a,b$ and their power set $\mathcal{P}(\cdot)$, we have the following: 
+    \begin{enumerate}[label=\roman*.,noitemsep,topsep=0pt]
+        \item For any sets $u$ and $v$, the pair set $\{u,v\}$ is the set whose only members are $u$ and $v$. 
+        \item For any sets $a$ and $b$, the union $a\cup b$ is the set whose members are those sets belonging either to $a$ or to $b$ (or both).
+        \item For any set $a$, the power set $\mathcal{P}(a)$ is the set whose members are exactly the subsets of $a$.
+    \end{enumerate}
+\end{definition}
+
+As with the empty set, the existence axioms assure that the sets being named exists, and extensionality assures that the sets being named are unique. We can use pairing and union together to from other finite sets. 
+
+The set recently defined can be named by use of the abstraction notation: 
+\begin{align}
+    \varnothing = \{x\mid x \not\in x\}\\
+    \{u,v\} = \{x\mid x = u \lor x = v\}\\
+    a \cup b = \{x\mid x\in a \lor x\in b\}\\
+    \mathcal{P}(a) = \{x\mid x\subseteq a\}
+\end{align}
+From this, one might suggest the form \begin{equation}
+    \forall t_{1}\dots\forall t_{k} \exists B \forall x (x\in B \Leftrightarrow \_ \_ \_)
+\end{equation}
+should be true. However, as we have seen, some sentences of this form are false in the informal view. For example, $\exists B \forall x (x\in B \Leftrightarrow x = x)$ is wrong, since we know that there is no universal set. For a class $\mathsf{A}$, we can at most said of whose members are those sets $x$ such that $\mathsf{A}=\{x\mid \_ \_ \_\}$. In order for $\mathsf{A}$ to be a set, it must be included in $V_{\alpha}$. In fact, it is enough for $\mathsf{A}$ to be included in any set $c$, for then of $c\subseteq V_{\alpha}$, the above follows and $\mathsf{A}\in V_{\alpha+1}$. This motivates the \textit{subset axioms}:
+\begin{axiom}[Subset axioms]
+    For each formula $\_\_\_$ not containing $B$, the following is an axiom:\footnote{The expression follows, as $t_{1},\dots, t_{k}$ is list of sets involved in the formula, in conjunction with $x$.} \begin{equation}
+        \forall t_{1}\dots\forall t_{k}\: \forall c\:\exists B\: \forall x(x\in B \Leftrightarrow x\in c \land \_\_\_)
+    \end{equation}
+\end{axiom}
+In plain word, this axiom asserts that for any $t_{1},\dots,t_{k}$ and $c$, the existence of a set $B$ whose members are exactly those sets $x$ in $c$ such that the formula $\_\_\_$ is true, then it follows automatically that $B$ is a subset of $c$. 
+
+\section{Ordered pairs and relations}
+
+Ordered pair are pretty popular. After all, its first appearance is from analytical geometry, which guarantees its role as the basic tool that one can find in their mathematical arsenal. According to the general principle of restricted variable, the ordered pair $(x,y)$ is taken to be a certain set, but we don't particularly care about the detail of such set, except for the property that: \begin{equation*}
+    (x,y) = (a,b) \Leftrightarrow x = a \land y = b
+\end{equation*}
+Thus, we have $(1,3)\neq (3,1)$, or \textit{order matters}, which is the definition to the name. 
+
+The notion of a correspondence or \textit{relation}, and the special case of a mapping, or function, is fundamental to mathematics. A correspondence is a pairing of objects such that, given any two objects $x$ and $y$, the pair $(x,y)$ either corresponds or not. A particular correspondence (relation) is generally presented by the statement frame $P(x,y)$ having two free variables, with $x$ and $y$ corresponding if and only if $P(x,y)$ is true. Given any relation, the set of all ordered pairs $(x,y)$ of corresponding elements is called its graph. There are no restriction for $(x,y)$ to be strictly two elements, either - it can be two sets of elements, for what it takes. Similarly, it is not also restricted to ordered pair. The concept can be generalized to $n$-pair of $(x_1, x_2, \dots, x_n)$, and their respective operation. One example that is fair standard is the \textit{ternary relation}, where there is the 3-pair $(a,b,c)$ satisfying certain condition or the relation. Another name of ordered pair and more is $n$-\textit{tuple}. 
+
+Now a relation is a mathematical object, it is current practice to regard it as a set of some sort or other. Since the graph of a relation is a set of ordered pair, it is customary to take the graph to be the relation, in some sort of ways. Thus, roughly speaking \textit{a relation (correspondence) is simply a set of ordered pairs (or more)}. If $R$ is a relation, we say that $x$ is related to $y$ by $R$, denoted by $xRy$ if and only if $(x,y)\in R$. We also say that $x$ correspond to $y$ under $R$. The set of all first element or the ordered pair is then called the relational \textit{domain} of $R$, and is designated $\mathfrak{D}(R)$ or $\mathrm{dom}(R)$. The set of second elements is called the \textit{range} of $R$. Thus, 
+\begin{equation*}
+    \mathrm{dom}\: R = \{x: (\exists y)(x,y)\in R\} \quad \mathrm{range}\: R = \{y: (\exists x) (x,y)\in R\}
+\end{equation*}
+
+The \textit{inverse}, $R^{-1}$ of a relation $R$ is the set of ordered pairs obtained by reversing those in $R$, then: 
+\begin{equation*}
+    R^{-1} = \{(x,y): (y,x)\in R\}
+\end{equation*}
+A statement frame $P(x,y)$ having two free variables actually determines a \textit{pair of mutual inverse relation} $R\& S$, called the \textit{graph} of $P$, as \begin{equation*}
+    R = \{(x,y): P(x,y)\} \quad S = \{(y,x): P(x,y)\}
+\end{equation*}
+A two-variable together with a choice of which variable is considered to be first might be called a \textit{directed frame}. Then a directed frame would have a uniquely determined relation for its graph. The relation of strict inequality on the real number system $\mathbb{R}$ would be considered the set $\{(x,y): x < y\}$, since the variables in $x<y$ has a natural order. 
+
+Additionally, we can loosely represent this ordered pairs and their set by using the notion of a \textit{Cartesian product}. More specifically, the set $A\times B  = \{(x,y): x\in A \land y \in B\}$ of all ordered pairs with first element in $A$, and second element in $B$ is the Cartesian product of the sets $A$ and $B$. A relation is always a subset of $\mathrm{dom}\: R \times \mathrm{range}\: R$. If the fwo "factor spaces" are the same, we can use the exponential notation $A^{2}=A\times A$. 
+\subsection{Equivalence relations}
+Usually, every relation is best categorized by specifying their properties in choosing the graph. One of example where it satisfies reflexivity, symmetry, and transitivity to be elements of the ordered pair $(x,y)$ is \textit{equivalence relation}. 
+\begin{definition}[Equivalence relation]
+    An \textbf{equivalence relation} on a set $A$ is a relation $C$ on $A$ having the following properties: 
+    \begin{itemize}[topsep=0pt,noitemsep]
+        \item (Reflexivity) $xCx$ for every $x\in A$. 
+        \item (Symmetry) If $xCy$ then $yCx$. 
+        \item If $xCy$ and $yCz$ then $xCz$. 
+    \end{itemize}
+\end{definition}
+The relation letter $C$ is often omitted and replaced by the symbol $\sim$ for equivalence relation. Given an equivalence relation $\sim$ on a set $A$ and $x\in A$, we define certain subset $E$ of $A$, called \textit{equivalence class} determined by $x$ of the equation \begin{equation*}
+    E=\{y\mid y \sim x\}
+\end{equation*}
+Note that the equivalence class $E$ determined by $x$ contains $x$, since $x\sim x$. Equivalent classes have the following property: 
+\begin{lemma}
+    Two equivalence classes $E$ and $E'$ are either disjoint or equal. 
+\end{lemma}
+\begin{proof}
+    Let $E$ be the equivalence class determined by $x$, and $E'$ determined by $x'$. Suppose that $E\cap E'\neq \varnothing$, let $y$ be a point of $E\cap E'$. We then have to show that $E=E'$. 
+
+    By definition, we have $y\sim x$ and $y\sim x'$. Symmetry allows us to conclude that $x\sim y$ and $y\sim x'$. From transitivity $x\sim x'$. If now $w$ is any point of $E$, we have $w\sim x$ by definition, and so is $w\sim x'$. We conclude that $E\subset E'$. The symmetry allows us to also conclude that $E'\subset E$ as well, so that $E=E'$. 
+\end{proof}
+
+\section{Functions}
+The concept of function is perhaps one of the most fundamental, and easy to come by. Many times have I or someone else thought of something in a functional sense, converting their descriptions into somewhat of a function style. So, what shall we make of it in the context of mathematics? 
+
+For mathematicians, we \textit{think} of function as being the assignment, given certain rules available, between the 'stuff'. To do this the mathematical way, we first have to define the rule. 
+\begin{definition}
+    A \textbf{rule of assignment} is a subset $r$ of the Cartesian product $C\times D$ of two sets, having the property that each element of $C$ appears as the first coordinate of \textit{at most one} ordered pair belonging to $r$. 
+\end{definition}
+
+This definition is perhaps, quite restrictive. It requires you to have a 'one-way requirement' of the first set, for elements $c\in C$ to have no more than one connection to $d\in D$. That is not to say that there can't be two $c_1, c_2$ for one $d\in D$, so, a bit tricky (in high school, this is where the function vertical test is taken from). Thus, a subset $r$ of $C\times D$ is a rule assignment if the following holds
+\begin{equation}
+    [(c,d)\in r \land (c,d')\in r]\implies [d=d']\quad c,c'\in C, d\in D 
+\end{equation}
+
+We then think of $r$ as assigning to the element $c\in C$ the element $d\in D$ in the way that $(c,d)\in r$. 
+
+Now, we also think of the spaces contained all $c$, and the space contain all $d$ that satisfies said assignment. I mentioned the fact that there is no stopping the assignment from having two $c$ for one $d$, or even more. Hence, the set of all $c$ might be drastically different given the chance (for example, remember the domain of $\sin{(x)}$ - that is not going anywhere). Hence, we have the notion of \textbf{domain} for subset of $C$ consisting all $c$ of $r$, and \textbf{image set} for the respective $d$. Formally: 
+\begin{align*}
+    &\mathrm{domain}\: r = \{c\mid \exists d\in D : (c,d)\in r\} \\ 
+    & \mathrm{image}\: r = \{d\mid \exists c\in C : (c,d)\in r\}
+\end{align*}
+Given a rule of assignment $r$, this notion of domain and image gives absolute determinism for an assignment. Now we can finally define a function. \index{function}
+\begin{definition}
+    A \textbf{function} is a rule of assignment $r$, together with a set $B$ that contains the image set of $r$. The domain $A$ of the rule $r$ is also called the \textbf{domain} of the function $f$: the image set of $r$ is also called the \textbf{image set} of $f$; and the set $B$ is called the \textbf{range} of $f$. If $f$ is a function having domain $A$ and range $B$, we express this fact by writing \begin{equation*}
+        f: A\longrightarrow B
+    \end{equation*}
+    which reads as \textit{$f$ is a function from $A$ to $B$}. 
+\end{definition}
+
+It is also customary to visualizes $f$ as a geometric transformation physically carrying points of $A$ to points of $B$. If $f:A\to B$ and if $a$ is an element of $A$, we denote by $f(a)$ the unique element of $B$ that the rule determining \(f\) assigns to \(a\), it is called the \textbf{value} of $f$ at $a$, or sometimes the image of $a$ under $f$. For completion purpose, we also give the definition of the image set. \index{image (function)}
+\begin{definition}[Image]
+    If $f: A\to B$ and $U\subseteq A$, then $f(U)=\{ f(u): u \in U \}$. Then $f(A)$ is the image of $A$. We denote this by $Imf=f(X)$, of which the set $Imf$ is called image of mapping $f$. 
+\end{definition}
+Using this, we can specify functions with more rigours, and more. Though, if it is totally clear, we can often opt for the removal of the specification of the domain and range - that is, telling $f(x)=x^3 +1$ without having to specify that it is a function $f: \mathbb{R}\to \mathbb{R}$. Though, this kind of \textit{restriction} on domain and domain specification is what will adequately describe a function. In the same way, we can construct new function, or partition them and stick them together, by restricting their domain, and subsequently, their image set. 
+\begin{definition}[Restrictions]
+    If $f: A\to B$ and if $A_0$ is a subset of $A$, we define the \textbf{restriction} of $f$ to $A_0$ to be the function mapping into $B$ whose rule is: 
+    \begin{equation*}
+        \{(a,f(a))\mid a\in A_0\} 
+    \end{equation*}
+    This is denoted by $f\mid A_0$, reads as $f$ restricted to $A_0$. 
+\end{definition}
+Restricting the domain of a function and changing its range are two ways of forming new function from an old one. Another way is to form the composite of two functions. \index{composition}
+\begin{definition}[Composition]
+    Given function $f: A\to B$ and $g: B \to C$, we define the \textbf{composite} $g\circ f$ as the function $g\circ f: A\to C$ defined by the equation $(g\circ f)(a)=g(f(a))$. Formally, $g\circ f: A\to C$ is the function whose rule is \begin{equation}
+        \{(a,c)\mid \forall b\in B \: \text{s.t }f(a)=b\land g(b)=c\}
+    \end{equation}
+\end{definition}
+We often picture this as a two-step physical movement - first from $a$ to $f(a)$, then from $f(a)$ to $g(f(a))$. This will ultimately also work with various chains, 4-chain or $n$-chain of continuous function composition. Note that, however, we have the \textbf{\textit{tail restriction}} for composition, that is, the range of $f$ must be equals to the domain of $g$ for the composition to happens. In matrix theory (or linear algebra in simplicity), this is also quite the case, even though it is written in a more compact matrix form (matrix is just the notation, unfortunately). 
+
+With that said, there are many characteristic one can use to further categorize functions into classes of their respective transformation. Given that we are only restricted to \textit{one $y$ for one $x$}, there are many forms of mapping one can consider. So, how many can there be? 
+\begin{definition}[Types]
+    There are three types of function, which is injective, bijective and surjective. We define those as followed. 
+    \begin{enumerate}
+        \item Injective: $f: X\to Y$ is said to be injective if it "hits" everything at most, once: $$(\forall x,y\in X)f(x)=f(y)\implies x=y$$
+        \item Surjective: $f:X\to Y$ is said to be surjective if it "hits" everything at least once: $$(\forall y\in Y)(\exists x\in X)f(x)=y$$ If we can call it with the later notation, it is analogous to $Imf=Y$. 
+        \item Bijective: A function is bijective if it is both injective and surjective (hits everything exactly once). Generally, $$\displaystyle \forall y\in Y,\exists !x\in X{\text{ s.t. }}y=f(x)$$
+    \end{enumerate}
+\end{definition}
+Composition of injective mappings are an injective mapping, so do surjective, thus we also have bijection mappings to have bijective compositions. And by definition, $f$ is surjective iff $f(A)=B$, meaning exactly that "it hits all the domain". 
+
+Aside from typical separated set function, $f: X\to Y$, we would also be interested in the function that acts on the set, and go to the set itself. By some intuitive thought, the one that can be responsible for this one-to-self mapping, is called the \textit{identity function}, and is characterized only by mapping the element to itself. \footnote{By extension, any given chain of composition $g_1 \circ g_2 \circ \dots g_{n}$ can be called identity if it satisfies the mapping of $g_{1}\dots g_n : A\to A$ for the domain and image is both $A$.}
+\begin{definition}[Identity]
+    The identity map $id_{A}: A \to A$ is defined as the map $a\mapsto a$. 
+\end{definition}
+
+Suppose $f: X \longrightarrow Y$ is a bijective mapping from $X$ to $Y$. Then for each $y \in Y$, there exists one and only $x\in X$ so that $f(x)=y$. Then we have a mapping $g: Y \longrightarrow X$ defined as $$\forall y \in Y, x \in X: g(y) = x, f(x) = y \Longrightarrow g \circ f= i_{X}, f \circ g = i_{Y}$$
+
+This notion is generalized to be called \textbf{inverse mapping/function}, of which we will break down even, into left and right inverse. Generally, if $B_0$ is a subset of $B$, we denote by $f^{-1}(B_0)$ the set of all elements of $A$ whose images under $f$ lie in $B_0$, which is called the \textit{preimage} of $B_0$ under $f$ - or the inverse image of $B_0$. \index{preimage} Formally, we get the formula \begin{equation*}
+    f^{-1}(B_0) = \{a\mid f(a)\in B_0\}
+\end{equation*}
+There may be, clearly, no points $a\in A$ whose images lie in $B_0$. In that case, we say that $f^{-1}(B_0)$ is empty. 
+
+\begin{definition}[Right and left inverse]
+    Given $f: A\to B$, a left inverse of $f$ is a function $g: B \to A$ such that $g\circ f=id_{A}$. A right inverse of $f$ is then a function $g: B \to A$ such that $f\circ g=id_{B}$. 
+\end{definition}
+
+\begin{theorem}
+    The left inverse of $f$ exists iff $f$ is injective. 
+\end{theorem}
+\begin{proof}
+    If the left inverse $g$ exists, then $\forall a,a'\in A$, we have $f(a)=f(a')$ implies that $g(f(a))=g(f(a'))\implies a=a'$ therefore $f$ is injective. 
+
+if $f$ is injective, we then construct $g$ as $$g:\begin{cases}
+g(b)=a& \text{if} \: b\in f(A), f(a)=b \\
+g(b)=\text{anything} & \text{otherwise}
+\end{cases}$$
+Then $g$ is a left inverse of $f$. 
+\end{proof}
+\section{Product sets, index notation}

@@ -1,0 +1,1073 @@
+\chapter{List of problems in theoretical mechanics}
+
+\section{Introduction}
+There are not a lot of things to say about this section others than it being served to record a lot of the problems I encountered in the course of theoretical mechanics. It being here is not just cosmetic, somehow, but certainly for logging before the final test (perhaps). 
+\section{Lagrangian mechanics}
+\subsection{Single pendulum}
+The single pendulum has one single generalized coordinate $\phi$. This is illustrated as the following figures:
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.4\textwidth]{img/expreise.png}
+  \caption{Diagram of a single pendulum with a single mass $m$ and a rod of length $\ell$ connecting it.}
+  \label{fig:pendulum1a}
+\end{figure}
+Then, the kinetic energy is as usual,
+\begin{equation}
+    T = \sum_{a} \frac{m_{a}v_{a}^{2}}{2} = \frac{m}{2} (\dot{x}^{2}+ \dot{y}^{2}+ \dot{z}^{2})
+\end{equation}
+We have for the object $m$ in the coordinate: 
+\begin{equation}
+    x_{m} = \ell sin{(\phi)}, \quad y_{m} = \ell \cos{(\phi)} , \quad z= 0
+\end{equation}
+Hence, substitute into $T$ we gain: 
+\begin{equation}
+    \begin{split}
+        T & = \frac{m}{2} \left[  (\ell \sin{\phi})'^{2} + (\ell \cos{\phi})'^{2} \right]\\
+        & = \frac{m}{2} \left[ \ell^{2} \dot{\phi}^{2}\cos^{2}{\phi} + \ell^{2} \dot{\phi}^{2}\sin^{2}{\phi}  \right]\\
+        & = \frac{m \ell^{2}\dot{\phi}^{2}}{2}
+    \end{split}
+\end{equation}
+Choose the origin at the surface $A$ downward from the top, then, $U=mgh=-mg\ell \cos{\phi}$. The Lagrangian is then: 
+\begin{equation}
+    \mathcal{L} = T-U = \frac{m \ell^{2}\dot{\phi}^{2}}{2} + mg\ell \cos{\phi}
+\end{equation}
+To derive this for the Euler-Lagrange equation, we first give two arguments: 
+\begin{equation}
+    \frac{\partial \mathcal{L}}{\partial \phi} = -mg\ell\sin{\phi}, \quad \frac{\partial \mathcal{L}}{\partial \dot{\phi}} = m\ell^{2}\dot{\phi}
+\end{equation}
+Then, the Euler-Lagrange reads:
+\begin{align}
+    \frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{\phi}} \right) - \frac{\partial \mathcal{L}}{\partial \phi} &= 0 \\
+    \frac{d}{dt} (m\ell^{2}\dot{\phi}) + mgl\sin{\phi} & = 0\\ 
+    m\ell^{2} \ddot{\phi} + mg\ell \sin{\phi} & = 0
+\end{align}
+\subsection{Double pendulum}
+For the double pendulum, there are two generalized coordinates $\phi_{1},\phi_{2}$. 
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.4\textwidth]{img/doublependulum.png}
+  \caption{Diagram of a double pendulum with two masses: $m_{1}$ and $m_2$, with their respective $\ell_{1}$ connecting the origin to $m_1$, and $\ell_{2}$ connecting $m_1$ to $m_2$.}
+  \label{fig:pendulum2a}
+\end{figure}
+Thus the function would then be counted by the generalized velocity $\dot{\phi}_{1}, \dot{\phi}_{2}$. For two masses $m_{1},m_{2}$, we have:
+\begin{equation}
+    \begin{cases}
+        x_{1} = l_{1} \sin{\phi}_{1}\\
+        y_{1} = l_{1} \cos{\phi}_{1}
+    \end{cases}, \quad 
+    \begin{cases}
+        x_{1} = x_{1} + l_{2} \sin{\phi}_{2}\\
+        y_{1} = y_{1} +  l_{2} \cos{\phi}_{2}
+    \end{cases},
+\end{equation}
+Which gives: 
+\begin{equation}
+    \begin{cases}
+        \dot{x}_{1} = l_{1}\dot{\phi}_{1}\cos{\phi_{1}}\\ 
+        \dot{y}_{1} = -l_{1}\dot{\phi}_{1} \sin{\phi_{1}} 
+    \end{cases}, \quad
+    \begin{cases}
+        \dot{x}_{2} = l_{1}\dot{\phi}_{1}\cos{\phi_{1}} + l_{2}\dot{\phi}_{2}\cos{\phi_{2}} \\ 
+        \dot{y}_{2} = -l_{1}\dot{\phi}_{1} \sin{\phi_{1}} -l_{2}\dot{\phi}_{2} \sin{\phi_{2}} 
+    \end{cases}
+\end{equation}
+
+The kinetic energy is formulated such that: 
+  \begin{align}
+    T
+    &= \frac{m_{1}v_{1}^{2}}{2} + \frac{m_{2}v_{2}^{2}}{2}\\
+    &= \frac{m_{1}}{2} (\dot{x}^{2}_{1} + \dot{y}^{2}_{1}) + \frac{m_{2}}{2} (\dot{x}^{2}_{2} + \dot{y}^{2}_{2})\\
+    &= \frac{m_{1}}{2} \left(l_{1}^{2}\dot{\phi}_{1}^{2}\cos^{2}\phi_{1} + l_{2}^{2}\dot{\phi}_{2}^{2}\cos^{2}\phi_{2}\right)
+       + \frac{m_{2}}{2} \left[\left(l_{1}\dot{\phi}_{1}\cos\phi_{1} + l_{2}\dot{\phi}_{2}\cos\phi_{2}\right)^{2}\right]\\
+       & \quad+ \frac{m_{1}}{2}\left[\left(l_{1}\dot{\phi}_{1}\sin\phi_{1} + l_{2}\dot{\phi}_{2}\sin\phi_{2}\right)^{2}\right]\\
+    &= \frac{m_{1}}{2} l_{1}^{2} \dot{\phi}_{1}^{2}
+       + \frac{m_{2}}{2}\left[
+         l_{1}^{2} \dot{\phi}_{1}^{2}\cos^{2}\phi_{1}
+         + 2\,l_{1}l_{2}\,\dot{\phi}_{1}\dot{\phi}_{2}\,\cos\phi_{1}\cos\phi_{2}
+         + l_{2}^{2} \dot{\phi}_{2}^{2}\cos^{2}\phi_{2}
+       \right]\\
+    &\quad + \frac{m_{2}}{2}\left[
+         l_{1}^{2} \dot{\phi}_{1}^{2}\sin^{2}\phi_{1}
+         + 2\,l_{1}l_{2}\,\dot{\phi}_{1}\dot{\phi}_{2}\,\sin\phi_{1}\sin\phi_{2}
+         + l_{2}^{2} \dot{\phi}_{2}^{2}\sin^{2}\phi_{2}
+       \right]\\[6pt]
+    &= \frac{m_{1}}{2} l_{1}^{2} \dot{\phi}_{1}^{2}
+       + \frac{m_{2}}{2}\left(
+         l_{1}^{2}\dot{\phi}_{1}^{2}
+         + 2\,l_{1}l_{2}\,\dot{\phi}_{1}\dot{\phi}_{2}\,\cos(\phi_{1}-\phi_{2})
+         + l_{2}^{2}\dot{\phi}_{2}^{2}
+       \right)\\[6pt]
+    &= \frac{1}{2}(m_{1} + m_{2})\,l_{1}^{2}\,\dot{\phi}_{1}^{2}
+       + m_{2}\,l_{1}\,l_{2}\,\dot{\phi}_{1}\,\dot{\phi}_{2}\,\cos(\phi_{1}-\phi_{2})
+       + \frac{1}{2}m_{2}\,l_{2}^{2}\,\dot{\phi}_{2}^{2}\,.
+  \end{align}
+The above derivation uses specifically two elementary trigonometric relations:
+\begin{equation}
+    \cos{a-b} = \cos{a}\cos{b} + \sin{a}\sin{b}, \quad \sin^{2}{a} + \cos^{2}{a} =1 
+\end{equation}
+Choose the origin at $A$ of the hanging point such that $mgy=0$. The potential energy is then: 
+\begin{equation}
+    U = - m_{1}gl_{1} \cos{\phi_{1}} - m_{2} g[l_{1}\cos{\phi_{1}}+ l_{2}\cos{\phi_{2}}] 
+\end{equation}
+The Lagrangian is then expressed as: 
+\begin{equation}
+    \begin{split}
+            L 
+            &= T-V \\
+            &= \frac{1}{2}(m_{1} + m_{2})\,l_{1}^{2}\,\dot{\phi}_{1}^{2}
+       + m_{2}\,l_{1}\,l_{2}\,\dot{\phi}_{1}\,\dot{\phi}_{2}\,\cos(\phi_{1}-\phi_{2})
+       + \frac{1}{2}m_{2}\,l_{2}^{2}\,\dot{\phi}_{2}^{2} \\ 
+       & \quad \quad\quad  + m_{1}gl_{1} \cos{\phi_{1}} + m_{2} g[l_{1}\cos{\phi_{1}}+ l_{2}\cos{\phi_{2}}] 
+    \end{split}
+\end{equation}
+Now, to obtain the Euler-Lagrange form, we then have to derive $\partial\mathcal{L}/\partial \phi_{1}$, $\partial\mathcal{L}/\partial \phi_{2}$ and their respective generalized velocity. This gives the following: 
+\begin{align}
+\frac{\partial L}{\partial \dot\phi_1}
+&= (m_1 + m_2)\,l_1^2\,\dot\phi_1
+   + m_2\,l_1\,l_2\,\dot\phi_2\,\cos(\phi_1-\phi_2), \\[6pt]
+\frac{\partial L}{\partial \dot\phi_2}
+&= m_2\,l_2^2\,\dot\phi_2
+   + m_2\,l_1\,l_2\,\dot\phi_1\,\cos(\phi_1-\phi_2), \\[6pt]
+\frac{\partial L}{\partial \phi_1}
+&= -\,m_2\,l_1\,l_2\,\dot\phi_1\,\dot\phi_2\,\sin(\phi_1-\phi_2)
+   \;-\;(m_1 + m_2)\,g\,l_1\,\sin\phi_1, \\[6pt]
+\frac{\partial L}{\partial \phi_2}
+&= +\,m_2\,l_1\,l_2\,\dot\phi_1\,\dot\phi_2\,\sin(\phi_1-\phi_2)
+   \;-\;m_2\,g\,l_2\,\sin\phi_2.
+\end{align}
+We can then substitute this back to the Euler-Lagrange equation to give the following set of two equations' solutions: 
+\begin{equation}
+    \frac{d}{dt} \left(\frac{\partial \mathcal{L}}{\partial \dot{\phi}_{1}}\right) - \frac{\partial \mathcal{L}}{\partial \phi_{1}} = 0, \quad \frac{d}{dt} \left(\frac{\partial \mathcal{L}}{\partial \dot{\phi}_{2}}\right) - \frac{\partial \mathcal{L}}{\partial \phi_{2}} = 0
+\end{equation}
+That is, 
+\begin{gather}
+        (m_{1}+ m_{2})l_{1}^{2}\phi_{1} + m_{2}l_{1}l_{2} (\ddot{\phi}\cos{(\phi_{1}-\phi_{2})}) + \phi_{2}[-\sin{(\phi_{1}-\phi_{2})(\dot{\phi}_{1}-\dot{\phi_{2}})}] = 0 \\
+        -m_{2}gl_{2} \sin{\phi_{2}} + m_{2} \dot{\phi}_{2}\dot{\phi}_{1} l_{2}l_{1} \sin{(\phi_{1}-\phi_{2})} = 0
+\end{gather}
+\subsection{Single pendulum with moving support}
+The setting looks kind of like this, with one single mass $m_{1}$ and a moving support point on the horizontal side: 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/pendulumsupport.png}
+    \caption{
+        A pendulum system with moving horizontal support. 
+    }
+\end{figure}
+
+The number of degree of freedom is hence 2, for $x,\phi$ as the angle (obviously) thus their generalized velocity $\dot{x},\dot{\phi}$. Then, we have: 
+\begin{equation}
+    \begin{cases}
+        x_{m} = x + l\sin{\phi}\\
+        y_{m} = l\cos{\phi}
+    \end{cases}
+\end{equation}
+Standard $xyz$ indicts the following generalized system: 
+\begin{equation}
+    \begin{cases}
+        x_{m} = x + l\sin{\phi}\\
+        y_{m} = l\cos{\phi}\\
+        z_{m} = 0
+    \end{cases}
+    \Rightarrow \begin{cases}
+        \dot{x}_{m} = \dot{x} + l \dot{\phi} \cos{\phi}\\
+        \dot{y}_{m} = -l \dot{\phi}\sin{\phi}\\
+        \dot{z}_{m} = 0
+    \end{cases}
+\end{equation}
+The kinetic energy $T$ of the Lagrangian is then as: 
+\begin{equation}
+    \begin{split}
+        T 
+        & = \frac{m}{2} \left[ (x'+l \dot{\phi}\cos{\phi})^{2} + (l\dot{\phi}\sin{\phi})^{2} \right]\\
+        & = \frac{m}{2} \left[ \dot{x}^{2} + 2x l\dot{\phi}\cos{\phi} + l^{2}\dot{\phi}^{2}\cos^{2}{\phi} + l^{2}\dot{\phi}^{2}\sin^{2}{\phi} \right]\\
+        & = \frac{m}{2} \left( \dot{x}^{2} + 2xl \dot{\phi}\cos{\phi} + l^{2} \dot{\phi}^{2} \right)
+    \end{split}
+\end{equation}
+Choose the origin (as for potential energy) at $y=0$, then $U=-mgl \cos{\phi}$. The Lagrangian then can be written as: 
+\begin{equation}
+    \mathcal{L} = T - U = \frac{m}{2} \left( \dot{x}^{2} + 2xl \dot{\phi}\cos{\phi} + l^{2} \dot{\phi}^{2} \right) + mgl \cos{\phi}
+\end{equation}
+The Euler-Lagrange equation then consists of again, four terms: 
+\begin{align}
+    \frac{\partial \mathcal{L}}{\partial \phi} & = \frac{m}{2}2\dot{x}l \cos{\phi} + l^{2}\\
+    \frac{\partial \mathcal{L}}{\partial \dot{\phi}} & = -2\dot{x}l \dot{\phi}^{2}\sin{\phi}- mgl \dot{\phi}\sin{\phi}\\
+    \frac{\partial \mathcal{L}}{\partial \dot{x}} & = m \ddot{x} + 2l \dot{\phi}\cos{\phi} \\
+    \frac{\partial \mathcal{L}}{\partial x} & = ml \dot{\phi} \cos{\phi} 
+\end{align}
+The two Euler-Lagrange equations can be derived naturally. The first one for $\phi$: 
+\begin{align}
+    \frac{d}{dt} \left( \frac{m}{2} 2\dot{x}l \cos{\phi} + l^{2} \right) -2\dot{x}l \dot{\phi}^{2}\sin{\phi}- mgl \dot{\phi}\sin{\phi} &= 0\\
+    ml \left( \ddot{x}\cos{\phi} - \dot{x}\dot{\phi}\sin{\phi} \right) - 2\dot{x}l \dot{\phi}^{2}\sin{\phi}- mgl \dot{\phi}\sin{\phi} & = 0
+\end{align}
+And the second one for $x$ (which is much simpler): 
+\begin{align}
+    \frac{d}{dt} \left(\ddot{x}+ 2l \dot{\phi}\cos{\phi}\right) + mlg \cos{\phi} & = 0 \\
+    m\dddot{x} + 2l \left( \ddot{\phi} - \dot{\phi}^{2}\sin{\phi} \right) + mlg\cos{\phi} & = 0
+\end{align}
+\subsection{Pendulum with rotating support}
+It is better illustrated of an illustration. This time, we have a single pendulum of mass $m$ and rod length $l$, and a uniform circular motion of a ring with origin $O$ fixed. with this kind of problem, usually there are two configurations:
+\begin{enumerate}[noitemsep,topsep=1pt]
+    \item The point of potential energy is perpendicular, that is, $t=0, A= Oy$ for particular point of connection $A$ between the rotating support and the pendulum. 
+    \item The point of potential energy is horizontal, that is, $t=0, A=Ox$. 
+\end{enumerate} 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/pendulumcirsupport.png}
+    \caption{Illustration of a pendulum of mass $m$ and length $l$, with support moving uniformly on a circular ring of radius $r$.}
+\end{figure}
+We will resolve the first case first. The other case will follow shortly, after all. The generalized coordinate is just one, since $A$ is fixed of radius $r$ and time evolution $t$. Then, we have $\phi, \dot{\phi}$ as the coordinate and its velocity. Then, 
+\begin{equation}
+    \begin{cases}
+        x_{A} = R\cos{\omega t - \dfrac{\pi}{2}}\\
+        y_{A} = -R\sin{\omega t - \dfrac{\pi}{2}}
+    \end{cases} \Leftrightarrow 
+    \begin{cases}
+        x_{A} = R\sin{\omega t}\\
+        y_{A} = R\cos{\omega t}
+    \end{cases}
+\end{equation}
+Hence, we have: 
+\begin{equation}
+    \begin{cases}
+        x_{m} = R\sin{(\omega t)} + l \sin{\phi}\\
+        y_{m} = R\cos{(\omega t)} + l \cos{\phi}
+    \end{cases}
+\end{equation}
+and hence the velocity is: 
+\begin{equation}
+    \dot{x}_{m} = R\omega \cos{\omega t} + l \dot{\phi}\cos{\phi}\\
+    \dot{y}_{m} = - R\omega \sin{\omega t} - l \dot{\phi}\sin{\phi}
+\end{equation}
+The kinetic energy $T$ is hence: 
+\begin{equation}
+    \begin{split}
+        T 
+        & = \frac{m}{2} (\dot{x}^{2} + \dot{y}^{2})\\
+        T & = \frac{m}{2}\left( \left[ R\omega \cos{\omega t} + l \dot{\phi}\cos{\phi}  \right]^{2} - \left[ - R\omega \sin{\omega t} - l \dot{\phi}\sin{\phi} \right]^{2}\right)\\
+        \frac{2}{m}T& = \left[R\omega \cos{\omega t}\right]^{2} + 2l \dot{\phi} \sin{\phi} R\omega \cos{\omega t} + \left[ l\dot{\phi}\sin{\phi} \right]^{2}  \\
+        & \quad \quad \quad -\left[ \left(-R\omega \sin{\omega t}\right)^{2} + 2R\omega \sin{(\omega t)} l \dot{\phi}\sin{\phi} + \left(l \dot{\phi}\sin{\phi}\right)^{2} \right]\\
+        & = (R\omega)^{2} + (l \dot{\phi})^{2} + 2R\omega l\dot{\phi} (\cos{\omega t}\cos{\phi} + \sin{\omega t}sin{\phi})\\
+        & = R^{2}\omega^{2} + l^{2}\dot{\phi}^{2} + 2R \omega l\dot{\phi}\cos{(\omega t - \phi)} 
+    \end{split}
+\end{equation}
+The potential energy at $Oy$ is hence $U=mgh  =mg\left[R\cos{\omega t}+ l \cos{\omega t}\right]$. Hence, the Lagrangian is thus: 
+\begin{equation}
+    \mathcal{L} = T- U = R^{2}\omega^{2} + l^{2}\dot{\phi}^{2} + 2R \omega l\dot{\phi}\cos{(\omega t - \phi)} + mg\left[R\cos{\omega t}+ l \cos{\omega t}\right] 
+\end{equation}
+The Euler-Lagrange equation is calculated accordingly, and the second case is also derived in the same way, albeit without $\pi/2$. For such case, we have: 
+\begin{equation}
+    \begin{pmatrix}
+        x_{A} \\
+        y_{A}
+    \end{pmatrix}
+    = \begin{pmatrix}
+        R\cos{(\omega t)} \\
+        - R\sin{(\omega t)}
+    \end{pmatrix} = 
+    \begin{pmatrix}
+        R\cos{(\omega t)}\\
+        R\sin{(-\omega t)}
+    \end{pmatrix}
+\end{equation}
+That is, for the pendulum, 
+\begin{equation}
+    \begin{pmatrix}
+        x_{m} \\
+        y_{m}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        R\cos{(\omega t)}\\
+        R\sin{(-\omega t)}
+    \end{pmatrix}
+    + \begin{pmatrix}
+        l\sin{\phi}\\
+        l\cos{\phi}
+    \end{pmatrix}
+\end{equation}
+At this point, we somewhat remark a small point in this derivation. Here, even though we choose $-R\sin{(\omega t)}$, why we do not have $l\sin{\phi}$ and the cosine one do the same? The reason is fairly simple - we kinda flipped the whole thing downward. Now, this is perhaps troublesome, since $l\sin{\phi}$ is alright, but $\sin{\omega t}$ is negative in the third and fourth quadrant, to reflect the negative sections. And if you question more about the angle reversion and clockwise rotation, well, just like me, look up quadrant and even-odd properties of them. Now, this means: 
+\begin{equation}
+    \begin{pmatrix}
+        \dot{x}_{m}\\
+        \dot{y}_{m}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        - R \sin{(\omega t)} + l \dot{\phi} \cos{\phi}\\
+        R\cos{(\omega t)} - l \dot{\phi}\sin{\phi}
+    \end{pmatrix}
+\end{equation}
+The kinetic energy is hence: 
+\begin{equation}
+    \begin{split}
+        T 
+        &= \frac{m}{2}\left(\dot{x}^{2} + \dot{y}^{2}\right) \\[1ex]
+        &= \frac{m}{2}\left[\left(-\,R\,\sin(\omega t) + l\,\dot{\phi}\,\cos\phi\right)^{2}
+            + \left(R\,\cos(\omega t) - l\,\dot{\phi}\,\sin\phi\right)^{2}\right] \\[1ex]
+        &= \frac{m}{2}\left[R^{2}\,\sin^{2}(\omega t)
+            +\,l^{2}\,\dot{\phi}^{2}\,\cos^{2}\phi
+            -\,2\,R\,l\,\dot{\phi}\,\sin(\omega t)\,\cos\phi \right. \\[-0.2ex]
+        &\qquad\qquad\left.
+            +\,R^{2}\,\cos^{2}(\omega t)
+            +\,l^{2}\,\dot{\phi}^{2}\,\sin^{2}\phi
+            -\,2\,R\,l\,\dot{\phi}\,\cos(\omega t)\,\sin\phi
+        \right] \\[1ex]
+        &= \frac{m}{2}\left[
+            R^{2}\left(\sin^{2}(\omega t) + \cos^{2}(\omega t)\right)
+            +\,l^{2}\,\dot{\phi}^{2}\left(\cos^{2}\phi + \sin^{2}\phi\right) \right. \\[-0.2ex]
+        &\qquad\qquad\left.
+            -\,2\,R\,l\,\dot{\phi}\,\left(\sin(\omega t)\,\cos\phi + \cos(\omega t)\,\sin\phi\right)
+        \right] \\[1ex]
+        &= \frac{m}{2}\left[R^{2} + l^{2}\,\dot{\phi}^{2}
+            - 2\,R\,l\,\dot{\phi}\,\sin\left(\omega t + \phi\right)\right].
+    \end{split}
+\end{equation}
+Now, the potential energy is simply $U=-mgh = -[R\sin{(-\omega t)}+l\cos{\phi}]$. The obtained Lagrangian is hence: 
+\begin{equation}
+    \mathcal{L} = T- U = \frac{m}{2}\left[R^{2} + l^{2}\,\dot{\phi}^{2} - 2\,R\,l\,\dot{\phi}\,\sin\left(\omega t + \phi\right)\right] + [R\sin{(-\omega t)}+l\cos{\phi}]
+\end{equation}
+The Euler-Lagrange proceed as always. 
+\subsection{Pendulum with oscillating support}
+Now, we remember the horizontal support case, yeah? Now, we also put a constraint named $x=a\cos{\omega t}$ on it. Then, the generalized coordinate count reduces by 1, since $x$ is now prescribed; so $\phi, \dot{\phi}$ is the only pair. We then have: 
+\begin{equation}
+    \begin{pmatrix}
+        x_{m} \\
+        y_{m}
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        x + l \sin{\phi}\\
+        l\cos{\phi}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        a\cos{\omega t} + l \sin{\phi}\\
+        l\cos{\phi}
+    \end{pmatrix}
+\end{equation}
+and hence, 
+\begin{equation}
+    \begin{pmatrix}
+        \dot{x}_{m}\\
+        \dot{y}_{m}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        -a\omega\sin{\omega t} + l\dot{\phi}\cos{\phi}\\
+        -l\dot{\phi} \sin{\phi}
+    \end{pmatrix}
+\end{equation}
+The kinetic energy $T$ is then: 
+
+\begin{equation}
+    \begin{split}
+        T 
+        &= \frac{m}{2}\left(\dot{x}^{2} + \dot{y}^{2}\right) \\[1ex]
+        &= \frac{m}{2}\left[
+            \left(\dot{x} + l\,\dot{\phi}\,\cos\phi\right)^{2}
+            + \left(-\,l\,\dot{\phi}\,\sin\phi\right)^{2}
+        \right] \\[1ex]
+        &= \frac{m}{2}\left[
+            \left(-\,a\,\omega\,\sin(\omega t) + l\,\dot{\phi}\,\cos\phi\right)^{2}
+            + \left(-\,l\,\dot{\phi}\,\sin\phi\right)^{2}
+        \right] \\[1ex]
+        &= \frac{m}{2}\left[
+            a^{2}\,\omega^{2}\,\sin^{2}(\omega t)
+            - 2\,a\,\omega\,l\,\dot{\phi}\,\sin(\omega t)\,\cos\phi
+            + l^{2}\,\dot{\phi}^{2}\,\cos^{2}\phi
+            + l^{2}\,\dot{\phi}^{2}\,\sin^{2}\phi
+        \right] \\[1ex]
+        &= \frac{m}{2}\left[
+            a^{2}\,\omega^{2}\,\sin^{2}(\omega t)
+            - 2\,a\,\omega\,l\,\dot{\phi}\,\sin(\omega t)\,\cos\phi
+            + l^{2}\,\dot{\phi}^{2}\bigl(\cos^{2}\phi + \sin^{2}\phi\bigr)
+        \right] \\[1ex]
+        &= \frac{m}{2}\left[
+            a^{2}\,\omega^{2}\,\sin^{2}(\omega t)
+            + l^{2}\,\dot{\phi}^{2}
+            - 2\,a\,\omega\,l\,\dot{\phi}\,\sin(\omega t)\,\cos\phi
+        \right].
+    \end{split}
+\end{equation}
+ 
+The kinetic energy for potential origin at $y=0$ is thus $U=-mgh = -mgl \cos{\phi}$. The Lagrangian is hence: 
+\begin{equation}
+    \mathcal{L} = T - U = \frac{m}{2}\left[
+            a^{2}\,\omega^{2}\,\sin^{2}(\omega t)
+            + l^{2}\,\dot{\phi}^{2}
+            - 2\,a\,\omega\,l\,\dot{\phi}\,\sin(\omega t)\,\cos\phi
+        \right] + mgl \cos{\phi}
+\end{equation}
+The Euler-Lagrange equation would be 
+\begin{align}
+    \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{\phi}}\right) - \frac{\partial \mathcal{L}}{\partial \phi} &= 0\\
+    ml^{2}\dot{\phi} - ml a\omega^{2} \cos{\omega t}\cos{\phi}& = -mgl \sin{\phi}
+\end{align}
+Now, in the case where the oscillation is in the \textbf{vertical $y$ direction}, we have the similar case. Slightly different, nevertheless. 
+\begin{equation}
+    \begin{pmatrix}
+        x_{m}\\
+        y_{m}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        l\sin{\phi}\\
+        l\cos{\phi} + a\cos{\omega t}
+    \end{pmatrix}
+\end{equation}
+The derivative is then:
+\begin{equation}
+    \begin{pmatrix}
+        \dot{x}_{m} \\
+        \dot{y}_{m}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        l\dot{\phi} \cos{\phi}\\
+        - l \dot{\phi} \sin{\phi} - a\omega\sin{\omega t}
+    \end{pmatrix}
+\end{equation}
+The kinetic energy is then: 
+\begin{equation}
+    \begin{split}
+        T 
+        & = \frac{m}{2} \left[ \left(l \dot{\phi}\cos{\phi}\right)^{2} + \left(- l \dot{\phi} \sin{\phi} - a\omega\sin{\omega t}\right)^{2} \right]\\
+        & = \frac{m}{2} \left[ l^{2} \dot{\phi}^{2} \cos^{2}{\phi}+ l^{2}\dot{\phi}^{2}\sin^{2}{\phi}+ 2l\dot{\phi}\sin{\phi}a\omega\sin{\omega t}+ a^{2}\omega^{2}\sin^{2}{\omega t} \right]\\
+        &= \frac{m}{2} \left[ l^{2}\dot{\phi}^{2} + 2 a l \omega \dot{\phi} \sin\phi \sin\left(\omega t\right) + a^{2} \omega^{2} \sin^{2}\left(\omega t\right) \right].
+    \end{split}
+\end{equation}
+Set the potential origin at $y=0$, then $U=-mgh = -mg(l\cos{\phi} + a\cos{\omega t})$. The Lagrangian is then
+\begin{equation}
+    \mathcal{L} = T - U = \frac{m}{2} \left[ l^{2}\dot{\phi}^{2} + 2 a l \omega \dot{\phi} \sin\phi \sin\left(\omega t\right) + a^{2} \omega^{2} \sin^{2}\left(\omega t\right) \right] + mg(l\cos{\phi} + a\cos{\omega t})
+\end{equation}
+The derivation of single generalized coordinate Euler-Lagrange equation follows as usual. 
+\subsection{Constrained 1D grapple motion}
+The situation is more easily presented with an illustration. Partially because I don't know what is this called as, so pretty lame. 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/peakengineering.jpg}
+    \caption{Constrained 1D grapple motion of the isosceles triangle of $l$ on both side, mass $m$ movement restricted to the $Ox$ plane.}
+\end{figure}
+There is only one generalized coordinate $\phi$. The positional equation is then
+\begin{equation}
+    \begin{pmatrix}
+        x_{m}\\
+        y_{m}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        2l \cos{\phi}\\
+        0
+    \end{pmatrix}
+\end{equation}
+Hence, the velocity differential is as:
+\begin{equation}
+    \begin{pmatrix}
+        \dot{x}_{m}\\
+        \dot{y}_{m}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        -2l \dot{\phi}\sin{\phi}\\
+        0
+    \end{pmatrix}
+\end{equation}
+The kinetic energy is simple,
+\begin{equation}
+    T= \frac{m}{2} \left( 4l^{2}\dot{\phi}^{2}\sin^{2}{\phi} \right)  = 2ml^{2}\dot{\phi}^{2}\sin^{2}{\phi}
+\end{equation}
+Choose the potential origin at the plane $y=0$, then $U=mgy=0$. The Lagrangian is simple: 
+\begin{equation}
+    \mathcal{L} = T- U = 2ml^{2}\dot{\phi}^{2}\sin^{2}{\phi}
+\end{equation}
+The Lagrangian is simpler
+
+\begin{align}
+    \frac{d}{dt} \left(\frac{\partial \mathcal{L}}{\partial \dot{\phi}}\right)
+    - \frac{\partial \mathcal{L}}{\partial \phi}
+    &= 0 \\
+    \frac{d}{dt} \left(4\,m\,l^{2}\,\dot{\phi}\,\sin^{2}\phi\right)
+    - 4\,m\,l^{2}\,\dot{\phi}^{2}\,\sin\phi\,\cos\phi
+    &= 0 \\
+    4\,m\,l^{2} \left(\ddot{\phi}\,\sin^{2}\phi 
+    + \dot{\phi}\,\frac{d}{dt}\!\bigl(\sin^{2}\phi\bigr)\right)
+    - 4\,m\,l^{2}\,\dot{\phi}^{2}\,\sin\phi\,\cos\phi
+    &= 0 \\
+    4\,m\,l^{2} \left(\ddot{\phi}\,\sin^{2}\phi 
+    + \dot{\phi}\,\left(2\,\sin\phi\,\cos\phi\,\dot{\phi}\right)\right)
+    - 4\,m\,l^{2}\,\dot{\phi}^{2}\,\sin\phi\,\cos\phi
+    &= 0 \\
+    4\,m\,l^{2} \left(\ddot{\phi}\,\sin^{2}\phi 
+    + 2\,\dot{\phi}^{2}\,\sin\phi\,\cos\phi\right)
+    - 4\,m\,l^{2}\,\dot{\phi}^{2}\,\sin\phi\,\cos\phi
+    &= 0 \\
+    4\,m\,l^{2} \left(\ddot{\phi}\,\sin^{2}\phi 
+    + \dot{\phi}^{2}\,\sin\phi\,\cos\phi\right)
+    &= 0 \\
+    \ddot{\phi}\,\sin^{2}\phi 
+    + \dot{\phi}^{2}\,\sin\phi\,\cos\phi 
+    &= 0
+\end{align}
+\subsection{Connected 3-mass springs}
+The situation is described by the following illustration. Here, note that the notation $\Delta x$ is there for completeness and customary, though usually we would just refer to such distance as the stretch distance calculated of the potential energy from the restoring forces. 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/peakspring.jpg}
+    \caption{Constrained one-dimensional motion of three masses $m_{1},m_{2},m_{3}$ connected to each others of three springs $l_{1},l_{2},l_{3}$ (connected to also the origin) for spring constant $k_{1},k_{2},k_{3}$, and equilibrium points $O_{1},O_{2},O_{3}$.}
+\end{figure}
+Then, the degree of freedom is 3, $x_{1},x_{2},x_{3}$ and $\dot{x}_{1},\dot{x}_{2},\dot{x}_{3}$ as their generalized coordinate. As such, the kinetic energy is: 
+\begin{equation}
+        T 
+        = \frac{1}{2}m_{1}\dot{x}_{1}^{2} + \frac{1}{2}m_{2}\dot{x}_{2}^{2}+\frac{1}{2}m_{3}\dot{x}_{3}^{2}
+\end{equation}
+Because there exists no gravitational potential, hence the potential energy is in the spring itself, that is, 
+\begin{equation}
+    U = \frac{1}{2}k_{1}x_{1}^{2} + \frac{1}{2} k_{2}(x_{2}-x_{1})^{2} + \frac{1}{2}k_{3} (x_{3}-x_{2})^{2}
+\end{equation}
+The Lagrangian is then:
+\begin{equation}
+    \mathcal{L} = T - U = \frac{1}{2}m_{1}\dot{x}_{1}^{2} + \frac{1}{2}m_{2}\dot{x}_{2}^{2}+\frac{1}{2}m_{3}\dot{x}_{3}^{2} - \left(\frac{1}{2}k_{1}x_{1}^{2} + \frac{1}{2} k_{2}(x_{2}-x_{1})^{2} + \frac{1}{2}k_{3} (x_{3}-x_{2})^{2}\right)
+\end{equation}
+Solving this for the Euler-Lagrange equation gives six component equations: 
+\begin{align}
+\frac{\partial \mathcal{L}}{\partial \dot{x}_{1}} 
+&= m_{1}\,\dot{x}_{1}, \\[6pt]
+\frac{\partial \mathcal{L}}{\partial \dot{x}_{2}} 
+&= m_{2}\,\dot{x}_{2}, \\[6pt]
+\frac{\partial \mathcal{L}}{\partial \dot{x}_{3}} 
+&= m_{3}\,\dot{x}_{3}, \\[6pt]
+\frac{\partial \mathcal{L}}{\partial x_{1}} 
+&= -\,k_{1}\,x_{1} \;+\; k_{2}\,\bigl(x_{2}-x_{1}\bigr), \\[6pt]
+\frac{\partial \mathcal{L}}{\partial x_{2}} 
+&= -\,k_{2}\,\bigl(x_{2}-x_{1}\bigr) \;+\; k_{3}\,\bigl(x_{3}-x_{2}\bigr), \\[6pt]
+\frac{\partial \mathcal{L}}{\partial x_{3}} 
+&= -\,k_{3}\,\bigl(x_{3}-x_{2}\bigr).
+\end{align}
+Applying this to all Euler-Lagrange equations:
+\begin{align}
+\frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{x}_{1}}\right)
+\;-\;\frac{\partial \mathcal{L}}{\partial x_{1}}
+&= 0 \\[6pt]
+m_{1}\,\ddot{x}_{1}
+\;-\;\bigl(-\,k_{1}\,x_{1} \;+\; k_{2}\,(x_{2} - x_{1})\bigr)
+&= 0 \\[6pt]
+m_{1}\,\ddot{x}_{1} \;+\; k_{1}\,x_{1} \;-\; k_{2}\,(x_{2} - x_{1})
+&= 0 \\[6pt]
+m_{1}\,\ddot{x}_{1} \;+\; (\,k_{1} + k_{2}\,)\,x_{1} \;-\; k_{2}\,x_{2}
+&= 0
+\end{align}
+
+\begin{align}
+\frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{x}_{2}}\right)
+\;-\;\frac{\partial \mathcal{L}}{\partial x_{2}}
+&= 0 \\[6pt]
+m_{2}\,\ddot{x}_{2}
+\;-\;\bigl(-\,k_{2}\,(x_{2} - x_{1}) \;+\; k_{3}\,(x_{3} - x_{2})\bigr)
+&= 0 \\[6pt]
+m_{2}\,\ddot{x}_{2} \;+\; k_{2}\,(x_{2} - x_{1}) \;-\; k_{3}\,(x_{3} - x_{2})
+&= 0 \\[6pt]
+m_{2}\,\ddot{x}_{2} \;+\; (\,k_{2} + k_{3}\,)\,x_{2} \;-\; k_{2}\,x_{1} \;-\; k_{3}\,x_{3}
+&= 0
+\end{align}
+
+\begin{align}
+\frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{x}_{3}}\right)
+\;-\;\frac{\partial \mathcal{L}}{\partial x_{3}}
+&= 0 \\[6pt]
+m_{3}\,\ddot{x}_{3}
+\;-\;\bigl(-\,k_{3}\,(x_{3} - x_{2})\bigr)
+&= 0 \\[6pt]
+m_{3}\,\ddot{x}_{3} \;+\; k_{3}\,(x_{3} - x_{2})
+&= 0 \\[6pt]
+m_{3}\,\ddot{x}_{3} \;+\; k_{3}\,x_{3} \;-\; k_{3}\,x_{2}
+&= 0
+\end{align}
+\section{Conservation laws in Lagrangian terms}
+In this section, there is only two exercises of interest. However, to solve them quicker, we have some tricks. Or rather one but very effective one. The momentum $M$ in a Lagrangian system, aside from its conservation law (not of our interest) is taken in the form: 
+\begin{equation}
+    M = \begin{bmatrix}
+        \vec{r} \times \vec{P} 
+    \end{bmatrix}
+    = m\begin{bmatrix}
+       \vec{r} \times \vec{v} 
+    \end{bmatrix}
+\end{equation}
+The product is calculated in a rather easy fashion as: 
+\begin{equation}
+    \begin{split}
+        \vec{r}\times \vec{v} &= \det \begin{bmatrix}
+            \hat{x} & \hat{y} & \hat{z}\\
+            x & y & z\\
+            \dot{x} & \dot{y} & \dot{z}
+        \end{bmatrix}\\
+        & = \hat{x} \left(y\dot{z}- z\dot{y}\right) + \hat{y} \left(\dot{x}z - \dot{z}x\right) + \hat{z}\left(x\dot{y}-y\dot{x}\right)
+    \end{split}
+\end{equation}
+Then, the momentum is thus as followed: 
+\begin{equation}
+    \begin{pmatrix}
+        M_{x}\\
+        M_{y}\\
+        M_{z}
+    \end{pmatrix}
+    =\begin{pmatrix}
+        m\left(y\dot{z}- z\dot{y}\right)\\
+        m\left(\dot{x}z - \dot{z}x\right)\\
+        m\left(x\dot{y}-y\dot{x}\right)
+    \end{pmatrix}
+\end{equation}
+such that we have $M^{2} = M_{x}^{2}+ M_{y}^{2}+ M_{z}^{2}$. We then can further use this in analysing and solving momenta for spherical and cylindrical coordinates. 
+\subsection{Cylindrical coordinates}
+For cylindrical coordinates $(r,\phi,z)$, we can do it as followed: 
+\begin{equation}
+    \begin{pmatrix}
+        x \\
+        y \\
+        z
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        r\cos{\phi}\\
+        r\sin{\phi}\\
+        z
+    \end{pmatrix}
+    , \quad \quad 
+    \begin{pmatrix}
+        \dot{x} \\
+        \dot{y} \\
+        \dot{z} \\
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        -r\dot{\phi}\sin{\phi} \\
+        r\dot{\phi}\cos{\phi} \\
+        \dot{z}
+    \end{pmatrix}
+\end{equation}
+Hence, the Descartes components of the momenta is: 
+\begin{equation}
+    \begin{pmatrix}
+        M_{x} \\
+        M_{y} \\
+        M_{z} 
+    \end{pmatrix}
+    = 
+    m\begin{pmatrix}
+         \dot{z}r\sin{\phi} - zr\dot{\phi}\cos{\phi} \\
+         -r\dot{\phi}\sin{\phi}z - \dot{z}r\cos{\phi} \\
+         r\cos{\phi} r\dot{\phi}\cos{\phi} + r\sin{\phi}r\dot{\phi}\sin{\phi}
+    \end{pmatrix}
+\end{equation}
+\subsection{Spherical coordinates}
+For spherical coordinate $(r,\theta,\phi)$, we have that: 
+\begin{equation}
+    \begin{pmatrix}
+        x \\
+        y \\
+        z
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        r \sin\theta \cos\phi \\
+        r \sin\theta \sin\phi \\
+        r \cos\theta
+    \end{pmatrix}
+    , 
+    \quad 
+    \begin{pmatrix}
+        \dot{x} \\
+        \dot{y} \\
+        \dot{z}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        \dot{r}\,\sin\theta \cos\phi 
+        +\,r\,\dot{\theta}\,\cos\theta \cos\phi 
+        -\,r\,\dot{\phi}\,\sin\theta \sin\phi
+        \\
+        \dot{r}\,\sin\theta \sin\phi 
+        +\,r\,\dot{\theta}\,\cos\theta \sin\phi 
+        +\,r\,\dot{\phi}\,\sin\theta \cos\phi
+        \\
+        \dot{r}\,\cos\theta 
+        -\,r\,\dot{\theta}\,\sin\theta
+    \end{pmatrix}.
+\end{equation}
+Hence we finally gain the expression, 
+\begin{equation}
+    \begin{pmatrix}
+        M_{x} \\
+        M_{y} \\
+        M_{z}
+    \end{pmatrix}
+    =
+    m
+    \begin{pmatrix}
+        r^{2}\bigl(-\dot{\theta}\,\sin\phi - \dot{\phi}\,\sin\theta\,\cos\theta\,\cos\phi\bigr) \\
+        r^{2}\bigl(\dot{\theta}\,\cos\phi - \dot{\phi}\,\sin\theta\,\cos\theta\,\sin\phi\bigr) \\
+        r^{2}\,\dot{\phi}\,\sin^{2}\theta
+    \end{pmatrix}.
+\end{equation}
+as a reduced form. 
+\section{Small oscillations}
+In this occasion, for the fourth section, the main focus is quite simple. Recall that to solve for small oscillations, means to fix and analyse the following equation: 
+\begin{equation}
+    \ddot{x} + \omega x = \frac{F(t)}{m}
+    \label{eq:differentiallagrange}
+\end{equation}
+The general solution of this equation is of the form $x=x_{0}+x_{1}$, where $x_{0}$ is the solution for the homogeneous equation
+\begin{equation}
+    \ddot{x} + \omega^{2} x = 0
+\end{equation}
+and $x_{1}$ is the special solution for equation~\ref{eq:differentiallagrange}. If we try to solve for $x_{0}$, we should have $x_{0}$ of the general form as 
+\begin{equation}
+    x_{0} = C_{1}\cos{\omega t} + C_{2}\sin{\omega t} = a\cos{\omega t + \phi}
+\end{equation}
+for 
+\begin{equation}
+    a = \sqrt{C_{1}^{2} + C_{2}^{2}}, \quad \phi = \arctan{C_{2}/C_{1}}
+\end{equation}
+Now, for $x_{1}$, the situation is a bit more convoluted. Here, we have that if the force $F(t)$ is of the form: 
+\begin{equation}
+    F(t) = a_{n}t^{n} + a_{n-1}t^{n-1}+\dots+ a_{0}t^{0}
+\end{equation}
+then $x_{1}$ would be equal to $b_{n}t^{n}+\dots+b_{0}t^{0}$. To find the coefficient, simply substitute them in, and find each of the coefficient. The process can be tedious, however. The second case is if the force for $F(t)$ is of the form $Ae^{\pm\alpha t}$, then $x_{1}=Be^{\pm\alpha t}$ and is solved for $B$ accordingly. Let's take an example for $2t^{2}+5$. For this, then 
+\begin{equation}
+    \ddot{x} + \omega^{2}x = \frac{2t^2+5}{m}
+\end{equation}
+The standard solution is $x=x_{0}+x_{1}$. Then, $x_{1}=at^{2}+bt+c$ since $F(t)$ is second order polynomial. Solving this for $x$: 
+\begin{align}
+    \frac{d^{2}}{dt^{2}} (at^{2}+bt+c) + \omega^{2}(at^{2}+bt+c) &= \frac{2t^{2}+5}{m}\\
+    a + \omega^{2}(at^{2}+bt+c) & = \frac{2t^{2}+5}{m}\\
+    \omega^{2}a t^{2} + \omega^{2}bt + \omega^{2}ac & = \frac{2}{m}t^{2}+\frac{5}{m}\\ 
+\end{align}
+This gives
+\begin{equation}
+    a = \frac{2}{m\omega^{2}}, \quad b = 0 , \quad c= \frac{5}{m\omega^{2}}
+\end{equation}
+The solution for the standard solution would then be 
+\begin{equation}
+    x = C_{1}\cos{\omega t} + C_{2}\sin{\omega t} + \frac{2}{m\omega^{2}} t^{2} + \frac{5}{m\omega^{2}}
+\end{equation}
+If we want to solve for $C_{1},C_{2}$, first we can get the derivative of $x$, that is
+\begin{equation}
+    \dot{x} = -C_{1}\omega\sin{\omega t} + C_{2}\omega\cos{\omega t} + \frac{4t}{m\omega^{2}}
+\end{equation}
+Then, use the case $t=0$. Then, either $x=0$ or $x'=0$. Substitute this into both equations for $t=0$, then: 
+\begin{equation}
+    C_{1} = -\frac{5}{m\omega^{2}}, C_{2} = -\frac{4t}{m\omega^{2}}
+\end{equation}
+The solution is then: 
+\begin{equation}
+    x = -\frac{5}{m\omega^{2}}\cos{\omega t} -\frac{4t}{m\omega^{2}}\sin{\omega t}+ \frac{2}{m\omega^{2}} t^{2} + \frac{5}{m\omega^{2}}
+\end{equation}
+The same thing can be done with $Ae^{\pm\alpha t}$. 
+\section{Rigid body motions}
+For this section, the main focus would be on rigid objects' rotational motions, kind of. One of the major preliminary knowledge that should be recalled is the inertia $I$ of certain mass objects. Here, we recite them a bit. For 
+\begin{equation}
+    I = \sum_{i} m_{i}r_{i}^{2}, \quad I = \int r^{2}\:dm
+\end{equation}
+we have the following amount:
+\begin{align}
+    I & = \frac{ml^{2}}{12}\quad \text{(Long rod with midpoint rotating axis)}\\
+    I & = \frac{mR^{2}}{2} \text{(Disk)}\\
+    I & = mR^{2}\quad \text{(Thin ring)}\\
+    I & = \frac{2}{5} mR^{2}\quad \text{(Solid sphere)}\\
+    I & = \frac{2}{3} mR^{2} \text{(Surface sphere)}
+\end{align}
+From this, we can then proceed to solve our particular problem of interest in this chapter: formulating the kinetic energy of such object. Let's have a look. Though first, let us know that we have the following formula for kinetic energy of rigid bodies: 
+\begin{equation}
+    T = \frac{1}{2}m \vec{v}^{2} + \frac{1}{2} I \vec{\Omega}^{2}
+\end{equation}
+Here, $\vec{\Omega}=d\vec{\phi}/dt$ in a rotational manner. 
+\subsection{Swinging rod}
+Alright, so it is formulated as below. Or rather, let's look at the diagram for such case: 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/c5_rod.jpg}
+    \caption{Illustration of a rotating rod around the origin, with center of gravity at $G$.}
+\end{figure}
+There, we have the coordinate at $G$ as: 
+\begin{equation}
+    \begin{pmatrix}
+        x_{G}\\
+        y_{G}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        (l/2)\sin{\phi}\\
+        (l/2)\cos{\phi}
+    \end{pmatrix} \quad ,\quad 
+    \begin{pmatrix}
+        \dot{x}_{G} \\
+        \dot{y}_{G}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        (l/2)\dot{\phi}\cos{\phi}\\
+        _(l/2)\dot{\phi}\sin{\phi}
+    \end{pmatrix}
+\end{equation}
+The kinetic energy translational component is then: 
+\begin{equation}
+    \begin{split}
+        T_{TT} 
+        & = \frac{1}{2}m (\dot{x}_{G}^{2}+\dot{y}_{G}^{2})\\
+        & = \frac{1}{2}m \left[ \left( \frac{l}{2}\dot{\phi}\cos{\phi} \right)^{2} + \left(- \frac{l}{2}\dot{\phi}\sin{\phi} \right)^{2} \right]\\
+        & = \frac{m\dot{\phi}^{2}l^{2}}{8}
+    \end{split}
+\end{equation}
+The rotational kinetic energy is accordingly the following:
+\begin{equation}
+    \begin{split}
+        T_{Q} 
+        & = \frac{1}{2} I \Omega^{2}\\
+        & = \frac{1}{2} I \dot{\phi}^{2}\\
+        & = \frac{1}{2} \frac{ml^{2}}{12} \dot{\phi}^{2}\\
+        & = \frac{1}{24} ml^{2}\dot{\phi}^{2}
+    \end{split}
+\end{equation}
+The kinetic energy in total is hence: 
+\begin{equation}
+    T = T_{TT} + T_{Q} = \frac{m\dot{\phi}^{2}l^{2}}{8} + \frac{1}{24} ml^{2}\dot{\phi}^{2} = \frac{1}{6} ml^{2}\dot{\phi}^{2}
+\end{equation}
+which is fairly nice, and you can simplify it pretty easily. 
+\subsection{Rod attached of a thin disc}
+The next case we would be considering, is the case of the rod attached to a thin disc of no mass at the end. 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/c5_rod_and_disk.jpg}
+    \caption{Illustration of a rotating rod around the origin, attached to a thin disc of radius $R$ and of mass $M$. the rod has mass $m$ and length $l$.}
+\end{figure}
+Here, we have two cases: either $m\approx 0$ or $m$ is substantial energy to include its term into the equation. Nevertheless, we solve the first case, for $m=0$. Thence, the kinetic energy of the rod is zero, and we proceed with coordinate decomposition for the disc. Here, it is: 
+\begin{equation}
+    \begin{pmatrix}
+        x_{D} \\
+        y_{D}
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        (l+R)\sin{\phi}\\
+        (l+R)\cos{\phi}
+    \end{pmatrix}
+    \quad , \quad 
+    \begin{pmatrix}
+        \dot{x}_{D} \\
+        \dot{y}_{D}
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        (l+R)\dot{\phi}\cos{\phi}\\
+        -(l+R)\dot{\phi}\sin{\phi}
+    \end{pmatrix}
+\end{equation}
+The translational kinetic energy is then:
+\begin{equation}
+    \begin{split}
+        T_{TT} 
+        & = \frac{1}{2}M\vec{v}^{2}\\
+        & = \frac{1}{2}M (\dot{x}^{2}+\dot{y}^{2})\\
+        & = \frac{1}{2}M \left[ \left((l+R)\dot{\phi}\cos{\phi}\right)^{2} + \left(-(l+R)\dot{\phi}\sin{\phi}\right)^{2} \right]\\
+        & = M \frac{\left[\dot{\phi}(l+R)\right]^{2}}{2}
+    \end{split}
+\end{equation}
+The rotational energy is:
+\begin{equation}
+    \begin{split}
+        T_{Q} 
+        & = \frac{1}{2} I \Omega^{2} \\
+        & = \frac{1}{2} \frac{MR^{2}}{2} \dot{\phi}^{2}\\
+        & = \frac{1}{4} MR{2}\dot{\phi}^{2} 
+    \end{split}
+\end{equation}
+Hence, the kinetic energy is
+\begin{equation}
+    T = T_{TT} + T_{Q} = M \frac{\left[\dot{\phi}(l+R)\right]^{2}}{2} + \frac{1}{4} MR{2}\dot{\phi}^{2} 
+\end{equation}
+Now, if $m$ of the rod is substantial, then we only have to add them in. In such case, we use the previous result already.
+Hence, we have:
+\begin{equation}
+    \Sigma T = T_{R} + T_{D} =  \frac{1}{6} ml^{2}\dot{\phi}^{2} +  M \frac{\left[\dot{\phi}(l+R)\right]^{2}}{2} + \frac{1}{4} MR{2}\dot{\phi}^{2} 
+\end{equation}
+\section{Somewhat a pendulum}
+Alright, let's take a look at this:
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/c5_pendulum.png}
+    \caption{Illustration of a rotating rod around the origin, attached to a thin disc of radius $R$ and of mass $M$. the rod has mass $m$ and length $l$.}
+\end{figure}
+Here, the rod mass is literally zero, so the entire system will again only have the quantification for the hanging dense sphere of mass $m$ uniformly distributed. Hence, we have:
+\begin{equation}
+    \begin{pmatrix}
+        x_{D} \\
+        y_{D}
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        (l+R)\sin{\phi}\\
+        (l+R)\cos{\phi}
+    \end{pmatrix}
+    \quad , \quad 
+    \begin{pmatrix}
+        \dot{x}_{D} \\
+        \dot{y}_{D}
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        (l+R)\dot{\phi}\cos{\phi}\\
+        -(l+R)\dot{\phi}\sin{\phi}
+    \end{pmatrix}
+\end{equation}
+Then, 
+\begin{equation}
+    T_{G} = \frac{1}{2}M \left[\dot{\phi}(l+R)\right]^{2}
+\end{equation}
+Now, for the translational kinetic energy, we gain:
+\begin{equation}
+    \begin{split}
+        T_{Q} 
+        & = \frac{1}{2} I \Omega^{2}\\
+        & = \frac{1}{2} I \dot{\phi}^{2}\\
+        & = \frac{1}{2} \frac{2}{5} MR^{2} \dot{\phi}^{2}\\
+        & = \frac{1}{5} mR^{2}\dot{\phi}^{2}
+    \end{split}
+\end{equation}
+The total kinetic energy is hence
+\begin{equation}
+    T = T_{TT} + T_{Q} = \frac{1}{2}M \left[\dot{\phi}(l+R)\right]^{2} +\frac{1}{5} mR^{2}\dot{\phi}^{2}
+\end{equation}
+
+If it is instead for $(l-R)$, that is, the rotating `pendulum' is with rod/line connected to the center of the sphere instead, then we have the following coordinates. 
+\begin{equation}
+\begin{pmatrix}
+x_{D} \\ 
+y_{D}
+\end{pmatrix}
+=
+\begin{pmatrix}
+(l - R)\,\sin\phi \\ 
+(l - R)\,\cos\phi
+\end{pmatrix}
+\quad,\quad
+\begin{pmatrix}
+\dot{x}_{D} \\ 
+\dot{y}_{D}
+\end{pmatrix}
+=
+\begin{pmatrix}
+(l - R)\,\dot{\phi}\,\cos\phi \\ 
+-\, (l - R)\,\dot{\phi}\,\sin\phi
+\end{pmatrix}
+\end{equation}
+Hence, the kinetic energy is:
+\begin{equation}
+T_{\text{trans}}
+= \frac{1}{2}\,M\bigl[\dot{x}_{D}^{2} + \dot{y}_{D}^{2}\bigr]
+= \frac{1}{2}\,M\,\bigl((l - R)^{2}\,\dot{\phi}^{2}\bigr)
+= \frac{1}{2}\,M\,(l - R)^{2}\,\dot{\phi}^{2}
+\end{equation}
+and, 
+\begin{equation}
+T_{\text{rot}}
+= \frac{1}{2}\,I\,\dot{\phi}^{2}
+= \frac{1}{2}\;\frac{2}{5}M\,R^{2}\,\dot{\phi}^{2}
+= \tfrac{1}{5}\,M\,R^{2}\,\dot{\phi}^{2}
+\end{equation}
+The total kinetic energy is:
+\begin{equation}
+T
+= T_{\text{trans}} + T_{\text{rot}}
+= \frac{1}{2}\,M\,(l - R)^{2}\,\dot{\phi}^{2}
++ \frac{1}{5}\,M\,R^{2}\,\dot{\phi}^{2}
+\end{equation}
+\subsection{Grapple}
+The grapple situation is pretty crazy. For now though, we have the following situation to deal with: 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/c5_wiggle.jpg}
+    \caption{The isosceles triangle linkage system with length $l$, mass $m$ on both side, and has two center of mass $G_{1}$ and $G_{2}$ on both rigid rods. In reduced notation, we use $G,G'$.}
+\end{figure}
+The linkage system forms a "V" shape, has two motions: $B$ translational on $Ox$, and $OA$ rotates around $O$. The coordinate components are then:
+\begin{equation}
+    \begin{pmatrix}
+        x_{G} \\
+        y_{G}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        \frac{l}{2}\cos{\phi}\\
+        \frac{l}{2}\sin{\phi}
+    \end{pmatrix}
+    \quad , \quad 
+    \begin{pmatrix}
+        \dot{x}_{G}\\
+        \dot{y}_{g}\\
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        -\frac{l}{2} \dot{\phi} \sin{\phi}\\
+        \frac{l}{2} \dot{\phi}\cos{\phi}
+    \end{pmatrix}
+\end{equation}
+and 
+\begin{equation}
+    \begin{pmatrix}
+        x_{G'} \\
+        y_{G'}
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        \frac{3}{2}l\cos{\phi}\\
+        \frac{l}{2}\sin{\phi}
+    \end{pmatrix}
+    \quad , \quad 
+    \begin{pmatrix}
+        \dot{x}_{G'}\\
+        \dot{y}_{G'}\\
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        -\frac{3}{2}l \dot{\phi} \sin{\phi}\\
+        \frac{l}{2} \dot{\phi}\cos{\phi}
+    \end{pmatrix}
+\end{equation}
+Translational and rotational motions both are hence:
+\begin{equation}
+\begin{split}
+T
+&= \frac12 m\left(\dot x_G^2 + \dot y_G^2\right)
++ \frac12 I_G\,\dot\phi^2
++ \frac12 m\left(\dot x_{G'}^2 + \dot y_{G'}^2\right)
++ \frac12 I_{G'}\,\dot\phi^2 \\ 
+&= \frac12 m\!\left(\left(\tfrac{l}{2}\dot\phi\right)^2\right)
++ \frac12\!\left(\frac{m\,l^2}{12}\right)\dot\phi^2
++ \frac12 m\!\left(\left(\tfrac{3l}{2}\dot\phi\right)^2\right)
++ \frac12\!\left(\frac{m\,l^2}{12}\right)\dot\phi^2 \\ 
+&= \frac12 m\,\frac{l^2}{4}\dot\phi^2
++ \frac{m\,l^2}{24}\dot\phi^2
++ \frac12 m\,\frac{9l^2}{4}\dot\phi^2
++ \frac{m\,l^2}{24}\dot\phi^2 \\ 
+&= \left(\frac{1}{8} + \frac{1}{24} + \frac{9}{8} + \frac{1}{24}\right)m\,l^2\,\dot\phi^2
+= \frac{4}{3}\,m\,l^2\,\dot\phi^2.
+\end{split}
+\end{equation}
+\subsection{Rolling wheel of thunder}
+A bit cringe, but here we go:
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/c5_rolling.jpg}
+    \caption{Illustration of a cylinder on the top cross-section of radius $R$ rolling on the surface. The mass is not uniformly distributed, and hence is distributed such that there is an inertial axis that is of distance $a$ from the center axis of the cylinder.}
+\end{figure}
+Here, again we have the old $T_{T}+T_{D}$ of rotational and translational kinetic energy. However, the velocity in the translational case this time depends on the angular velocity $\dot{\phi}$, plus the distance from the center since it is indeed rolling around. Hence, of the law of Cosine, then:
+\begin{equation}
+    d^{2} = a^{2} + R^{2} - 2aR \cos{\phi} \Rightarrow d = \sqrt{a^{2} + R^{2} - 2aR \cos{\phi}} 
+\end{equation}
+So, 
+\begin{equation}
+    v = \dot{\phi}a^{2} + R^{2} - 2aR \cos{\phi}
+\end{equation}
+The kinetic energy in total is hence:
+\begin{equation}
+    T = \frac{1}{2}m \left[\dot{\phi}a^{2} + R^{2} - 2aR \cos{\phi}\right]^{2} + \frac{I}{2}\dot{\phi}^{2}
+\end{equation}
+Notice that we do not have the explicit form of $I$. This is because there exists no such inertia calculation since the mass is not uniformly distributed, and can be distributed based on the condition only - as seen with the arbitrary distance $a$. However, this is usually enough. 

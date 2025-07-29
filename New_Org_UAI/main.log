@@ -1,0 +1,4280 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.17)  30 JUL 2025 01:10
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"e:/Code Repository/Archive I/UAI_Rev_1/New_Org_UAI/main.tex"
+(e:/Code Repository/Archive I/UAI_Rev_1/New_Org_UAI/main.tex
+LaTeX2e <2025-06-01>
+L3 programming layer <2025-05-26>
+(D:\MikTek\tex/latex/memoir\memoir.cls
+Document Class: memoir 2025/03/10 v3.8.3b configurable book, report, article document class
+(D:\MikTek\tex/latex/xpatch\xpatch.sty (D:\MikTek\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-05-26 L3 programming layer (loader) 
+ (D:\MikTek\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count275
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+ (D:\MikTek\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+) (D:\MikTek\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count276
+))
+\onelineskip=\skip49
+\lxvchars=\skip50
+\xlvchars=\skip51
+\@memcnta=\count277
+\c@@memmarkcntra=\count278
+ (D:\MikTek\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+\trimtop=\skip52
+\trimedge=\skip53
+ (D:\MikTek\tex/latex/memoir\mem10.clo
+File: mem10.clo 2022/07/29 v0.5 memoir class 10pt size option
+)
+\binding=\skip54
+\spinemargin=\skip55
+\foremargin=\skip56
+\uppermargin=\skip57
+\lowermargin=\skip58
+\headdrop=\skip59
+\normalrulethickness=\skip60
+\mem@maxheadheight=\skip61
+\mem@maxfootheight=\skip62
+\headwidth=\skip63
+\c@storedpagenumber=\count279
+\memPD=\dimen148
+\m@mabparskip=\skip64
+\thanksmarkwidth=\skip65
+\thanksmarksep=\skip66
+\droptitle=\skip67
+\c@book=\count280
+\c@part=\count281
+\c@chapter=\count282
+\c@section=\count283
+\c@subsection=\count284
+\c@subsubsection=\count285
+\c@paragraph=\count286
+\c@subparagraph=\count287
+\beforechapskip=\skip68
+\midchapskip=\skip69
+\afterchapskip=\skip70
+\chapindent=\skip71
+\bottomsectionskip=\skip72
+\secindent=\skip73
+\beforesecskip=\skip74
+\aftersecskip=\skip75
+\subsecindent=\skip76
+\beforesubsecskip=\skip77
+\aftersubsecskip=\skip78
+\subsubsecindent=\skip79
+\beforesubsubsecskip=\skip80
+\aftersubsubsecskip=\skip81
+\paraindent=\skip82
+\beforeparaskip=\skip83
+\afterparaskip=\skip84
+\subparaindent=\skip85
+\beforesubparaskip=\skip86
+\aftersubparaskip=\skip87
+\pfbreakskip=\skip88
+\c@@ppsavesec=\count288
+\c@@ppsaveapp=\count289
+\ragrparindent=\dimen149
+\everylistparindent=\dimen150
+\parsepi=\skip89
+\topsepi=\skip90
+\itemsepi=\skip91
+\parsepii=\skip92
+\topsepii=\skip93
+\topsepiii=\skip94
+\itemsepii=\skip95
+\itemsepiii=\skip96
+\partopsepii=\skip97
+\partopsepiii=\skip98
+\m@msavetopsep=\skip99
+\m@msavepartopsep=\skip100
+\@enLab=\toks17
+\abstitleskip=\skip101
+\absleftindent=\skip102
+\abs@leftindent=\dimen151
+\absrightindent=\skip103
+\absparindent=\skip104
+\absparsep=\skip105
+\c@vslineno=\count290
+\c@poemline=\count291
+\c@modulo@vs=\count292
+\c@memfvsline=\count293
+\vleftskip=\skip106
+\vrightskip=\skip107
+\stanzaskip=\skip108
+\versewidth=\skip109
+\vgap=\skip110
+\vindent=\skip111
+\vleftmargin=\dimen152
+\c@verse=\count294
+\c@chrsinstr=\count295
+\beforepoemtitleskip=\skip112
+\afterpoemtitleskip=\skip113
+\c@poem=\count296
+\beforePoemTitleskip=\skip114
+\midPoemTitleskip=\skip115
+\afterPoemTitleskip=\skip116
+ (D:\MikTek\tex/latex/tools\array.sty
+Package: array 2025/05/19 v2.6i Tabular extension package (FMi)
+\col@sep=\dimen153
+\ar@mcellbox=\box53
+\extrarowheight=\dimen154
+\NC@list=\toks18
+\extratabsurround=\skip117
+\backup@length=\skip118
+\ar@cellbox=\box54
+) (D:\MikTek\tex/latex/tools\dcolumn.sty
+Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
+) (D:\MikTek\tex/latex/tools\delarray.sty
+Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
+) (D:\MikTek\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen155
+\TX@old@table=\dimen156
+\TX@old@col=\dimen157
+\TX@target=\dimen158
+\TX@delta=\dimen159
+\TX@cols=\count297
+\TX@ftn=\toks19
+) (D:\MikTek\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen160
+\lightrulewidth=\dimen161
+\cmidrulewidth=\dimen162
+\belowrulesep=\dimen163
+\belowbottomsep=\dimen164
+\aboverulesep=\dimen165
+\abovetopsep=\dimen166
+\cmidrulesep=\dimen167
+\cmidrulekern=\dimen168
+\defaultaddspace=\dimen169
+\@cmidla=\count298
+\@cmidlb=\count299
+\@aboverulesep=\dimen170
+\@belowrulesep=\dimen171
+\@thisruleclass=\count300
+\@lastruleclass=\count301
+\@thisrulewidth=\dimen172
+)
+\ctableftskip=\skip119
+\ctabrightskip=\skip120
+\abovecolumnspenalty=\count302
+\@linestogo=\count303
+\@cellstogo=\count304
+\@cellsincolumn=\count305
+\crtok=\toks20
+\@mincolumnwidth=\dimen173
+\c@newflo@tctr=\count306
+\mem@margin@floatbox=\box55
+\@contcwidth=\skip121
+\@contindw=\skip122
+\abovecaptionskip=\skip123
+\belowcaptionskip=\skip124
+\subfloattopskip=\skip125
+\subfloatcapskip=\skip126
+\subfloatcaptopadj=\skip127
+\subfloatbottomskip=\skip128
+\subfloatlabelskip=\skip129
+\subfloatcapmargin=\dimen174
+\c@@contsubnum=\count307
+\m@mscap@capbox=\box56
+\m@mscap@fbox=\box57
+\sidecapsep=\dimen175
+\sidecapwidth=\dimen176
+\m@m@tempdima=\dimen177
+\m@mscapraise=\dimen178
+\sidecapraise=\dimen179
+\m@mscapmainwidth=\dimen180
+\m@mscaplkern=\dimen181
+\beforeepigraphskip=\skip130
+\afterepigraphskip=\skip131
+\epigraphwidth=\skip132
+\epigraphrule=\skip133
+LaTeX Info: Redefining \em on input line 7017.
+LaTeX Info: Redefining \emph on input line 7025.
+ (D:\MikTek\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+ (D:\MikTek\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+ (D:\MikTek\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (D:\MikTek\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)) (D:\MikTek\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (D:\MikTek\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (D:\MikTek\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+) (D:\MikTek\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)))
+\c@section@level=\count308
+)
+\tocentryskip=\skip134
+\tocbaseline=\skip135
+\cftparskip=\skip136
+\cftbeforebookskip=\skip137
+\cftbookindent=\dimen182
+\cftbooknumwidth=\dimen183
+\cftbeforepartskip=\skip138
+\cftpartindent=\skip139
+\cftpartnumwidth=\skip140
+\cftbeforechapterskip=\skip141
+\cftchapterindent=\skip142
+\cftchapternumwidth=\skip143
+\cftbeforesectionskip=\skip144
+\cftsectionindent=\skip145
+\cftsectionnumwidth=\skip146
+\cftbeforesubsectionskip=\skip147
+\cftsubsectionindent=\skip148
+\cftsubsectionnumwidth=\skip149
+\cftbeforesubsubsectionskip=\skip150
+\cftsubsubsectionindent=\skip151
+\cftsubsubsectionnumwidth=\skip152
+\cftbeforeparagraphskip=\skip153
+\cftparagraphindent=\skip154
+\cftparagraphnumwidth=\skip155
+\cftbeforesubparagraphskip=\skip156
+\cftsubparagraphindent=\skip157
+\cftsubparagraphnumwidth=\skip158
+\prechapterprecisshift=\dimen184
+\c@maxsecnumdepth=\count309
+\bibindent=\dimen185
+\bibitemsep=\skip159
+\indexcolsep=\skip160
+\indexrule=\skip161
+\indexmarkstyle=\toks22
+\@indexbox=\insert252
+LaTeX Info: Redefining \raggedbottom on input line 8108.
+LaTeX Info: Redefining \flushbottom on input line 8112.
+\glossarycolsep=\dimen186
+\glossaryrule=\dimen187
+\sideparvshift=\skip162
+\sideins=\insert251
+\sidebartopsep=\skip163
+\sidebarhsep=\skip164
+\sidebarvsep=\skip165
+\sidebarwidth=\skip166
+\footmarkwidth=\skip167
+\footmarksep=\skip168
+\footparindent=\skip169
+\footinsdim=\skip170
+\footinsv@r=\insert250
+\@mpfootinsv@r=\insert249
+\m@m@k=\count310
+\m@m@h=\dimen188
+\m@mipn@skip=\skip171
+\sidefootins=\insert248
+\sidefootadjust=\skip172
+\sidefootheight=\skip173
+\sidefoothsep=\skip174
+\sidefootvsep=\skip175
+\sidefootwidth=\skip176
+\m@mdownsf=\skip177
+\c@sidefootnote=\count311
+\sidefootmarkwidth=\skip178
+\sidefootmarksep=\skip179
+\sidefootparindent=\skip180
+\c@pagenote=\count312
+
+patch 2 for \immediateaddtocontents failed
+\c@pagenoteshadow=\count313
+\mem@pn@lastkern=\skip181
+(D:\MikTek\tex/latex/tools\verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks23
+\verbatim@line=\toks24
+\verbatim@in@stream=\read2
+)
+\verbatimindent=\skip182
+\verbatim@out=\write3
+ (D:\MikTek\tex/latex/base\shortvrb.sty
+Package: shortvrb 2024/12/25 v3.0q Standard LaTeX documentation package V3 (FMi)
+)
+\bvboxsep=\skip183
+\c@memfbvline=\count314
+\c@bvlinectr=\count315
+\bvnumlength=\skip184
+\fb@frw=\dimen189
+\fb@frh=\dimen190
+\FrameRule=\dimen191
+\FrameSep=\dimen192
+\c@cp@cntr=\count316
+\c@ism@mctr=\count317
+\c@xsm@mctr=\count318
+\c@csm@mctr=\count319
+\c@ksm@mctr=\count320
+\c@xksm@mctr=\count321
+\c@cksm@mctr=\count322
+\c@msm@mctr=\count323
+\c@xmsm@mctr=\count324
+\c@cmsm@mctr=\count325
+\c@bsm@mctr=\count326
+\c@workm@mctr=\count327
+\c@sheetsequence=\count328
+\c@lastsheet=\count329
+\c@lastpage=\count330
+ (D:\MikTek\tex/latex/textcase\textcase.sty
+Package: textcase 2025/02/16 v1.05 Text only upper/lower case changing (DPC)
+Package textcase Info: Defining Legacy names on input line 20.
+)
+\c@figure=\count331
+\c@lofdepth=\count332
+\cftbeforefigureskip=\skip185
+\cftfigureindent=\skip186
+\cftfigurenumwidth=\skip187
+\c@table=\count333
+\c@lotdepth=\count334
+\cftbeforetableskip=\skip188
+\cfttableindent=\skip189
+\cfttablenumwidth=\skip190
+Package abstract [2008/07/23] emulated by memoir.
+Package appendix [2008/07/23] emulated by memoir.
+Package ccaption [2008/07/23] emulated by memoir.
+Package changepage [2008/07/23] emulated by memoir.
+Package chngcntr [2008/07/23] emulated by memoir.
+Package chngpage [2008/07/23] emulated by memoir.
+Package crop emulated by memoir.
+Package enumerate [2008/07/23] emulated by memoir.
+Package epigraph [2008/07/23] emulated by memoir.
+Package ifmtarg [2008/07/23] emulated by memoir.
+Package index [2008/07/23] emulated by memoir.
+Package makeidx [2008/07/23] emulated by memoir.
+Package moreverb [2008/07/23] emulated by memoir.
+Package needspace [2008/07/23] emulated by memoir.
+Package newfile [2008/07/23] emulated by memoir.
+Package nextpage [2008/07/23] emulated by memoir.
+Package pagenote [2008/07/23] emulated by memoir.
+Package parskip [2008/07/23] emulated by memoir.
+Package patchcmd [2008/07/23] emulated by memoir.
+Package setspace [2008/07/23] emulated by memoir.
+Package showidx [2008/07/23] emulated by memoir.
+Package titleref [2008/07/23] emulated by memoir.
+Package titling [2008/07/23] emulated by memoir.
+Package tocbibind [2008/07/23] emulated by memoir.
+Package tocloft [2008/07/23] emulated by memoir.
+Package tocvsec2 [2008/07/23] emulated by memoir.
+Package verse [2008/07/23] emulated by memoir.
+) (setting/preamble.tex (D:\MikTek\tex/latex/etbb\ETbb.sty
+Package: ETbb 2022/02/01 v1.052. Style file for ETbb.
+ (D:\MikTek\tex/latex/base\fontenc.sty
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+ (D:\MikTek\tex/latex/ly1\ly1enc.def
+File: ly1enc.def 2022/06/11 v0.8 TeX 'n ANSI encoding (DPC/KB)
+Now handling font encoding LY1 ...
+... processing UTF-8 mapping file for font encoding LY1
+ (D:\MikTek\tex/latex/base\ly1enc.dfu
+File: ly1enc.dfu 2022/06/07 v1.3c UTF-8 support
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+))) (D:\MikTek\tex/latex/base\textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+LaTeX Font Info:    Changing ? sub-encoding to TS1/0 on input line 75.
+) (D:\MikTek\tex/generic/iftex\ifetex.sty
+Package: ifetex 2019/10/25 v1.3 ifetex legacy package. Use iftex instead.
+) (D:\MikTek\tex/latex/xstring\xstring.sty (D:\MikTek\tex/generic/xstring\xstring.tex
+\xs_counta=\count335
+\xs_countb=\count336
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+) (D:\MikTek\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (D:\MikTek\tex/latex/carlisle\scalefnt.sty) (D:\MikTek\tex/latex/fontaxes\fontaxes.sty
+Package: fontaxes 2025-05-24 v2.0.1 Font selection axes (deprecated)
+ (D:\MikTek\tex/latex/figureversions\figureversions.sty
+Package: figureversions 2025-04-29 v1.0.1 Figure versions
+))
+LaTeX Info: Redefining \swshape on input line 47.
+
+
+Package fontaxes Warning: Axis `shape` not supported for command
+(fontaxes)                \fa@naming@exception on line 47
+
+
+Package fontaxes Warning: Axis `shape` not supported for command
+(fontaxes)                \fa@naming@exception on line 47
+
+(D:\MikTek\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (D:\MikTek\tex/generic/xkeyval\xkeyval.tex (D:\MikTek\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count337
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+LaTeX Encoding Info:    Redeclaring text command \textcircled (encoding TS1) on input line 126.
+)
+
+Class memoir Warning: The titlesec package is not recommended with memoir.
+(memoir)              With it we loose some of the features provides by the
+(memoir)              class. We provide our own interface to adjust how 
+(memoir)              sections and chapters should look like.
+(memoir)              See the manual sections 6.4 through 6.6 for details.  on input line 6.
+
+(D:\MikTek\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box58
+\beforetitleunit=\skip191
+\aftertitleunit=\skip192
+\ttl@plus=\dimen193
+\ttl@minus=\dimen194
+\ttl@toksa=\toks27
+\titlewidth=\dimen195
+\titlewidthlast=\dimen196
+\titlewidthfirst=\dimen197
+) (D:\MikTek\tex/latex/crop\crop.sty
+Package: crop 2017/11/19 1.10 crop marks (mf)
+ (D:\MikTek\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+\CROP@index=\count338
+ (D:\MikTek\tex/latex/graphics\color.sty
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+ (D:\MikTek\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+ (D:\MikTek\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+) (D:\MikTek\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (D:\MikTek\tex/latex/graphics\mathcolor.ltx)) (D:\MikTek\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (D:\MikTek\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (D:\MikTek\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\CROP@offset=\count339
+Package crop Info: Local config file crop.cfg used on input line 622.
+ (D:\MikTek\tex/xelatex/xetexconfig\crop.cfg))
+==> First Aid for crop.sty applied!
+(D:\MikTek\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+ (D:\MikTek\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks28
+\ex@=\dimen198
+)
+\pmbraise@=\dimen199
+) (D:\MikTek\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (D:\MikTek\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (D:\MikTek\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/05/18 v2.17x AMS math features
+\@mathmargin=\skip193
+
+For additional information on amsmath, use the `?' option.
+(D:\MikTek\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+) (D:\MikTek\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count340
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count341
+\leftroot@=\count342
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count343
+\DOTSCASE@=\count344
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen256
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count345
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count346
+\dotsspace@=\muskip17
+\c@parentequation=\count347
+\dspbrk@lvl=\count348
+\tag@help=\toks29
+\row@=\count349
+\column@=\count350
+\maxfields@=\count351
+\andhelp@=\toks30
+\eqnshift@=\dimen257
+\alignsep@=\dimen258
+\tagshift@=\dimen259
+\tagwidth@=\dimen260
+\totwidth@=\dimen261
+\lineht@=\dimen262
+\@envbody=\toks31
+\multlinegap=\skip194
+\multlinetaggap=\skip195
+\mathdisplay@stack=\toks32
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
+) (D:\MikTek\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks33
+\thm@bodyfont=\toks34
+\thm@headfont=\toks35
+\thm@notefont=\toks36
+\thm@headpunct=\toks37
+\thm@preskip=\skip196
+\thm@postskip=\skip197
+\thm@headsep=\skip198
+\dth@everypar=\toks38
+) (D:\MikTek\tex/latex/tikz-cd\tikz-cd.sty
+Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
+ (D:\MikTek\tex/latex/pgf/frontendlayer\tikz.sty (D:\MikTek\tex/latex/pgf/basiclayer\pgf.sty (D:\MikTek\tex/latex/pgf/utilities\pgfrcs.sty (D:\MikTek\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks39
+\pgfutil@tempdima=\dimen263
+\pgfutil@tempdimb=\dimen264
+) (D:\MikTek\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box61
+) (D:\MikTek\tex/generic/pgf/utilities\pgfrcs.code.tex (D:\MikTek\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (D:\MikTek\tex/latex/pgf/basiclayer\pgfcore.sty (D:\MikTek\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen265
+\Gin@req@width=\dimen266
+) (D:\MikTek\tex/latex/pgf/systemlayer\pgfsys.sty (D:\MikTek\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (D:\MikTek\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks40
+\pgfkeys@temptoks=\toks41
+ (D:\MikTek\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks42
+))
+\pgf@x=\dimen267
+\pgf@y=\dimen268
+\pgf@xa=\dimen269
+\pgf@ya=\dimen270
+\pgf@xb=\dimen271
+\pgf@yb=\dimen272
+\pgf@xc=\dimen273
+\pgf@yc=\dimen274
+\pgf@xd=\dimen275
+\pgf@yd=\dimen276
+\w@pgf@writea=\write4
+\r@pgf@reada=\read3
+\c@pgf@counta=\count352
+\c@pgf@countb=\count353
+\c@pgf@countc=\count354
+\c@pgf@countd=\count355
+\t@pgf@toka=\toks43
+\t@pgf@tokb=\toks44
+\t@pgf@tokc=\toks45
+\pgf@sys@id@count=\count356
+ (D:\MikTek\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (D:\MikTek\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (D:\MikTek\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (D:\MikTek\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count357
+\pgfsyssoftpath@bigbuffer@items=\count358
+) (D:\MikTek\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (D:\MikTek\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (D:\MikTek\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 762.
+ (D:\MikTek\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (D:\MikTek\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (D:\MikTek\tex/generic/pgf/math\pgfmath.code.tex (D:\MikTek\tex/generic/pgf/math\pgfmathutil.code.tex) (D:\MikTek\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen277
+\pgfmath@count=\count359
+\pgfmath@box=\box62
+\pgfmath@toks=\toks46
+\pgfmath@stack@operand=\toks47
+\pgfmath@stack@operation=\toks48
+) (D:\MikTek\tex/generic/pgf/math\pgfmathfunctions.code.tex) (D:\MikTek\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (D:\MikTek\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (D:\MikTek\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (D:\MikTek\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (D:\MikTek\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (D:\MikTek\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (D:\MikTek\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (D:\MikTek\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (D:\MikTek\tex/generic/pgf/math\pgfmathcalc.code.tex) (D:\MikTek\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count360
+)) (D:\MikTek\tex/generic/pgf/math\pgfint.code.tex) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen278
+\pgf@picmaxx=\dimen279
+\pgf@picminy=\dimen280
+\pgf@picmaxy=\dimen281
+\pgf@pathminx=\dimen282
+\pgf@pathmaxx=\dimen283
+\pgf@pathminy=\dimen284
+\pgf@pathmaxy=\dimen285
+\pgf@xx=\dimen286
+\pgf@xy=\dimen287
+\pgf@yx=\dimen288
+\pgf@yy=\dimen289
+\pgf@zx=\dimen290
+\pgf@zy=\dimen291
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen292
+\pgf@path@lasty=\dimen293
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen294
+\pgf@shorten@start@additional=\dimen295
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box63
+\pgf@hbox=\box64
+\pgf@layerbox@main=\box65
+\pgf@picture@serial@count=\count361
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen296
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen297
+\pgf@pt@y=\dimen298
+\pgf@pt@temp=\dimen299
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen300
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen301
+\pgf@sys@shading@range@num=\count362
+\pgf@shadingcount=\count363
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box66
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (D:\MikTek\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box67
+) (D:\MikTek\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen302
+\pgf@nodesepend=\dimen303
+) (D:\MikTek\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (D:\MikTek\tex/latex/pgf/utilities\pgffor.sty (D:\MikTek\tex/latex/pgf/utilities\pgfkeys.sty (D:\MikTek\tex/generic/pgf/utilities\pgfkeys.code.tex)) (D:\MikTek\tex/latex/pgf/math\pgfmath.sty (D:\MikTek\tex/generic/pgf/math\pgfmath.code.tex)) (D:\MikTek\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen304
+\pgffor@skip=\dimen305
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
+)) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (D:\MikTek\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count364
+\pgfplotmarksize=\dimen306
+)
+\tikz@lastx=\dimen307
+\tikz@lasty=\dimen308
+\tikz@lastxsaved=\dimen309
+\tikz@lastysaved=\dimen310
+\tikz@lastmovetox=\dimen311
+\tikz@lastmovetoy=\dimen312
+\tikzleveldistance=\dimen313
+\tikzsiblingdistance=\dimen314
+\tikz@figbox=\box68
+\tikz@figbox@bg=\box69
+\tikz@tempbox=\box70
+\tikz@tempbox@bg=\box71
+\tikztreelevel=\count365
+\tikznumberofchildren=\count366
+\tikznumberofcurrentchild=\count367
+\tikz@fig@count=\count368
+ (D:\MikTek\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count369
+\pgfmatrixcurrentcolumn=\count370
+\pgf@matrix@numberofcolumns=\count371
+)
+\tikz@expandcount=\count372
+ (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (D:\MikTek\tex/latex/tikz-cd\tikzlibrarycd.code.tex (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen315
+\pgfarrowlength=\dimen316
+\pgfarrowwidth=\dimen317
+\pgfarrowlinewidth=\dimen318
+))) (D:\MikTek\tex/latex/tikz-3dplot\tikz-3dplot.sty (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrary3d.code.tex
+File: tikzlibrary3d.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (D:\MikTek\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen319
+))) (D:\MikTek\tex/latex/circuitikz\circuitikz.sty
+Package: circuitikz 2025/05/25{} The CircuiTikz circuit drawing package version 1.8.0
+ (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (D:\MikTek\tex/generic/pgf/modules\pgfmodulebending.code.tex
+File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (D:\MikTek\tex/generic/pgf/modules\pgfmodulenonlineartransformations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgftransformnonlinearflatness=\dimen320
+) (D:\MikTek\tex/generic/pgf/libraries\pgflibrarycurvilinear.code.tex
+File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@curvilinear@time@a=\dimen321
+\pgf@curvilinear@length@a=\dimen322
+\pgf@curvilinear@length@b=\dimen323
+\pgf@curvilinear@length@c=\dimen324
+\pgf@curvilinear@length@d=\dimen325
+)
+\pgf@arrows@the@rigidity=\dimen326
+)) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfpu.code.tex (D:\MikTek\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)) (D:\MikTek\tex/generic/circuitikz\pgfcirc.defines.tex
+\pgf@circ@count@a=\count373
+\pgf@circ@count@b=\count374
+\pgf@circ@count@c=\count375
+\pgf@circ@res@up=\dimen327
+\pgf@circ@res@down=\dimen328
+\pgf@circ@res@zero=\dimen329
+\pgf@circ@res@left=\dimen330
+\pgf@circ@res@right=\dimen331
+\pgf@circ@res@other=\dimen332
+\pgf@circ@res@step=\dimen333
+\pgf@circ@res@temp=\dimen334
+\pgf@circ@Rlen=\dimen335
+\pgf@circ@scaled@Rlen=\dimen336
+\pgfstartlinewidth=\dimen337
+) (D:\MikTek\tex/generic/circuitikz\pgfcircutils.tex
+\ctikz@scratchbox=\box72
+) (D:\MikTek\tex/generic/circuitikz\pgfcircpath.tex) (D:\MikTek\tex/generic/circuitikz\pgfcircshapes.tex) (D:\MikTek\tex/generic/circuitikz\pgfcircmonopoles.tex) (D:\MikTek\tex/generic/circuitikz\pgfcircbipoles.tex) (D:\MikTek\tex/generic/circuitikz\pgfcirctripoles.tex
+\pgf@circ@res@count=\count376
+) (D:\MikTek\tex/generic/circuitikz\pgfcircquadpoles.tex) (D:\MikTek\tex/generic/circuitikz\pgfcircmultipoles.tex) (D:\MikTek\tex/generic/circuitikz\pgfcirclabel.tex) (D:\MikTek\tex/generic/circuitikz\pgfcircvoltage.tex
+\pgfcirc@labelshift=\dimen338
+) (D:\MikTek\tex/generic/circuitikz\pgfcirccurrent.tex) (D:\MikTek\tex/generic/circuitikz\pgfcircflow.tex)) (D:\MikTek\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (D:\MikTek\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count377
+\Gm@cntv=\count378
+\c@Gm@tempcnt=\count379
+\Gm@bindingoffset=\dimen339
+\Gm@wd@mp=\dimen340
+\Gm@odd@mp=\dimen341
+\Gm@even@mp=\dimen342
+\Gm@layoutwidth=\dimen343
+\Gm@layoutheight=\dimen344
+\Gm@layouthoffset=\dimen345
+\Gm@layoutvoffset=\dimen346
+\Gm@dimlist=\toks51
+ (D:\MikTek\tex/latex/geometry\geometry.cfg)) (D:\MikTek\tex/latex/bbm\bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+) (D:\MikTek\tex/latex/tools\bm.sty
+Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+) (D:\MikTek\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip199
+\enit@outerparindent=\dimen347
+\enit@toks=\toks52
+\enit@inbox=\box73
+\enit@count@id=\count380
+\enitdp@description=\count381
+)
+
+Class memoir Warning: The fancyhdr package is not recommended with memoir.
+(memoir)              We have our own well integrated interface to handle
+(memoir)              headers and footers. See the manual section 7.3
+(memoir)              onwards for details. on input line 32.
+
+(D:\MikTek\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip256
+\f@nch@offset@elh=\skip257
+\f@nch@offset@erh=\skip258
+\f@nch@offset@olh=\skip259
+\f@nch@offset@orh=\skip260
+\f@nch@offset@elf=\skip261
+\f@nch@offset@erf=\skip262
+\f@nch@offset@olf=\skip263
+\f@nch@offset@orf=\skip264
+\f@nch@height=\skip265
+\f@nch@footalignment=\skip266
+\f@nch@widthL=\skip267
+\f@nch@widthC=\skip268
+\f@nch@widthR=\skip269
+\@temptokenb=\toks53
+) (D:\MikTek\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
+ (D:\MikTek\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (D:\MikTek\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+ (D:\MikTek\tex/latex/collectbox\collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box74
+)
+\tc@llx=\dimen348
+\tc@lly=\dimen349
+\tc@urx=\dimen350
+\tc@ury=\dimen351
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (D:\MikTek\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen352
+\adjbox@Height=\dimen353
+\adjbox@Depth=\dimen354
+\adjbox@Totalheight=\dimen355
+\adjbox@pwidth=\dimen356
+\adjbox@pheight=\dimen357
+\adjbox@pdepth=\dimen358
+\adjbox@ptotalheight=\dimen359
+ (D:\MikTek\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count382
+LaTeX Info: Redefining \checkoddpage on input line 45.
+) (D:\MikTek\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box75
+\sift@deathcycles=\count383
+\@vwid@loff=\dimen360
+\@vwid@roff=\dimen361
+)
+==> First Aid for varwidth.sty applied!
+) (D:\MikTek\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (D:\MikTek\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen362
+\captionmargin=\dimen363
+\caption@leftmargin=\dimen364
+\caption@rightmargin=\dimen365
+\caption@width=\dimen366
+\caption@indent=\dimen367
+\caption@parindent=\dimen368
+\caption@hangindent=\dimen369
+Package caption Info: memoir document class detected.
+ (D:\MikTek\tex/latex/caption\caption-memoir.sto
+File: caption-memoir.sto 2023/09/08 v2.2c Adaption of the caption package to the memoir document class (AR)
+))
+\c@caption@flags=\count384
+\c@continuedfloat=\count385
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen370
+\caption@adjustwidth@linewidth=\dimen371
+) (D:\MikTek\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+ (D:\MikTek\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count386
+\calc@Bcount=\count387
+\calc@Adimen=\dimen372
+\calc@Bdimen=\dimen373
+\calc@Askip=\skip270
+\calc@Bskip=\skip271
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count388
+\calc@Cskip=\skip272
+) (D:\MikTek\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count389
+\l_MT_multwidth_dim=\dimen374
+\origjot=\skip273
+\l_MT_shortvdotswithinadjustabove_dim=\dimen375
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen376
+\l_MT_above_intertext_sep=\dimen377
+\l_MT_below_intertext_sep=\dimen378
+\l_MT_above_shortintertext_sep=\dimen379
+\l_MT_below_shortintertext_sep=\dimen380
+\xmathstrut@box=\box76
+\xmathstrut@dim=\dimen381
+) (D:\MikTek\tex/latex/parnotes\parnotes.sty
+Package: parnotes 2024/06/12 rev. 3c Notes after every paragraph, or elsewhere
+\c@parnotemark=\count390
+) (D:\MikTek\tex/latex/braket\braket.sty) (D:\MikTek\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count391
+\float@exts=\toks54
+\float@box=\box77
+\@float@everytoks=\toks55
+\@floatcapt=\box78
+) (D:\MikTek\tex/latex/xcolor\svgnam.def
+File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
+) (D:\MikTek\tex/latex/xcolor\x11nam.def
+File: x11nam.def 2024/09/29 v3.02 Predefined colors according to Unix/X11 (UK)
+) (D:\MikTek\tex/latex/thmtools\thmtools.sty
+Package: thmtools 2023/05/04 v0.76
+\thmt@toks=\toks56
+\c@thmt@dummyctr=\count392
+ (D:\MikTek\tex/latex/thmtools\thm-patch.sty
+Package: thm-patch 2023/05/04 v0.76
+ (D:\MikTek\tex/latex/thmtools\parseargs.sty
+Package: parseargs 2023/05/04 v0.76
+\@parsespec=\toks57
+)) (D:\MikTek\tex/latex/thmtools\thm-kv.sty
+Package: thm-kv 2023/05/04 v0.76
+Package thm-kv Info: Theorem names will be uppercased on input line 42.
+Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 158.
+) (D:\MikTek\tex/latex/thmtools\thm-autoref.sty
+Package: thm-autoref 2023/05/04 v0.76
+ (D:\MikTek\tex/latex/thmtools\aliasctr.sty
+Package: aliasctr 2023/05/04 v0.76
+)) (D:\MikTek\tex/latex/thmtools\thm-listof.sty
+Package: thm-listof 2023/05/04 v0.76
+) (D:\MikTek\tex/latex/thmtools\thm-restate.sty
+Package: thm-restate 2023/05/04 v0.76
+) (D:\MikTek\tex/latex/thmtools\thm-amsthm.sty
+Package: thm-amsthm 2023/05/04 v0.76
+\thmt@style@headstyle=\toks58
+)) (D:\MikTek\tex/latex/esvect\esvect.sty
+Package: esvect 
+\symesvector=\mathgroup9
+) (D:\MikTek\tex/latex/nicematrix\nicematrix.sty
+Package: nicematrix 2025/04/28 v7.1c Enhanced arrays with the help of PGF/TikZ
+\l__nicematrix_tmpc_dim=\dimen382
+\l__nicematrix_tmpd_dim=\dimen383
+\l__nicematrix_tmpe_dim=\dimen384
+\l__nicematrix_tmpf_dim=\dimen385
+\l__nicematrix_tmpc_int=\count393
+\g__nicematrix_env_int=\count394
+\g__nicematrix_NiceMatrixBlock_int=\count395
+\g__nicematrix_notes_caption_int=\count396
+\l__nicematrix_columns_width_dim=\dimen386
+\l__nicematrix_col_width_dim=\dimen387
+\g__nicematrix_row_total_int=\count397
+\g__nicematrix_col_total_int=\count398
+\g__nicematrix_last_row_node_int=\count399
+\l__nicematrix_key_nb_rows_int=\count400
+\g__nicematrix_blocks_wd_dim=\dimen388
+\g__nicematrix_blocks_ht_dim=\dimen389
+\g__nicematrix_blocks_dp_dim=\dimen390
+\l__nicematrix_width_dim=\dimen391
+\l__nicematrix_tabular_width_dim=\dimen392
+\l__nicematrix_rule_width_dim=\dimen393
+\l__nicematrix_old_iRow_int=\count401
+\l__nicematrix_old_jCol_int=\count402
+\l__nicematrix_X_columns_dim=\dimen394
+\l__nicematrix_x_initial_dim=\dimen395
+\l__nicematrix_y_initial_dim=\dimen396
+\l__nicematrix_x_final_dim=\dimen397
+\l__nicematrix_y_final_dim=\dimen398
+\g__nicematrix_dp_row_zero_dim=\dimen399
+\g__nicematrix_ht_row_zero_dim=\dimen400
+\g__nicematrix_ht_row_one_dim=\dimen401
+\g__nicematrix_dp_ante_last_row_dim=\dimen402
+\g__nicematrix_ht_last_row_dim=\dimen403
+\g__nicematrix_dp_last_row_dim=\dimen404
+\g__nicematrix_width_last_col_dim=\dimen405
+\g__nicematrix_width_first_col_dim=\dimen406
+\g__nicematrix_ddots_int=\count403
+\g__nicematrix_iddots_int=\count404
+\g__nicematrix_delta_x_one_dim=\dimen407
+\g__nicematrix_delta_y_one_dim=\dimen408
+\g__nicematrix_delta_x_two_dim=\dimen409
+\g__nicematrix_delta_y_two_dim=\dimen410
+\l__nicematrix_row_min_int=\count405
+\l__nicematrix_row_max_int=\count406
+\l__nicematrix_col_min_int=\count407
+\l__nicematrix_col_max_int=\count408
+\l__nicematrix_initial_i_int=\count409
+\l__nicematrix_initial_j_int=\count410
+\l__nicematrix_final_i_int=\count411
+\l__nicematrix_final_j_int=\count412
+\l__nicematrix_start_int=\count413
+\l__nicematrix_end_int=\count414
+\l__nicematrix_local_start_int=\count415
+\l__nicematrix_local_end_int=\count416
+\g__nicematrix_static_num_of_col_int=\count417
+\l__nicematrix_rounded_corners_dim=\dimen411
+\l__nicematrix_tab_rounded_corners_dim=\dimen412
+\l__nicematrix_offset_dim=\dimen413
+\l__nicematrix_line_width_dim=\dimen414
+\g__nicematrix_block_box_int=\count418
+\l__nicematrix_submatrix_extra_height_dim=\dimen415
+\l__nicematrix_submatrix_left_xshift_dim=\dimen416
+\l__nicematrix_submatrix_right_xshift_dim=\dimen417
+\l__nicematrix_first_row_int=\count419
+\l__nicematrix_first_col_int=\count420
+\l__nicematrix_last_row_int=\count421
+\l__nicematrix_last_col_int=\count422
+\c@tabularnote=\count423
+\g__nicematrix_tabularnote_int=\count424
+\c@nicematrix_draft=\count425
+\l__nicematrix_cell_space_top_limit_dim=\dimen418
+\l__nicematrix_cell_space_bottom_limit_dim=\dimen419
+\l__nicematrix_xdots_inter_dim=\dimen420
+\l__nicematrix_xdots_shorten_start_dim=\dimen421
+\l__nicematrix_xdots_shorten_end_dim=\dimen422
+\l__nicematrix_xdots_radius_dim=\dimen423
+\l__nicematrix_left_margin_dim=\dimen424
+\l__nicematrix_right_margin_dim=\dimen425
+\l__nicematrix_extra_left_margin_dim=\dimen426
+\l__nicematrix_extra_right_margin_dim=\dimen427
+\c__nicematrix_max_l_dim=\dimen428
+\l__nicematrix_position_int=\count426
+\l__nicematrix_multiplicity_int=\count427
+\l__nicematrix_brace_yshift_dim=\dimen429
+) (D:\MikTek\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count428
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count429
+) (D:\MikTek\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip274
+\bibsep=\skip275
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count430
+) (D:\MikTek\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2025-05-20 v7.01m Hypertext links for LaTeX
+ (D:\MikTek\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (D:\MikTek\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (D:\MikTek\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (D:\MikTek\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (D:\MikTek\tex/generic/stringenc\stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\@linkdim=\dimen430
+\Hy@linkcounter=\count431
+\Hy@pagecounter=\count432
+ (D:\MikTek\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2025-05-20 v7.01m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (D:\MikTek\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count433
+ (D:\MikTek\tex/latex/hyperref\puenc.def
+File: puenc.def 2025-05-20 v7.01m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count434
+ (D:\MikTek\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen431
+ (D:\MikTek\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (D:\MikTek\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count435
+\Field@Width=\dimen432
+\Fld@charsize=\dimen433
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+ (D:\MikTek\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count436
+\c@Item=\count437
+\c@Hfootnote=\count438
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (D:\MikTek\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2025-05-20 v7.01m Hyperref driver for pdfTeX
+\Fld@listcount=\count439
+\c@bookmark@seq@number=\count440
+ (D:\MikTek\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (D:\MikTek\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+) (D:\MikTek\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip276
+) (D:\MikTek\tex/latex/memoir\memhfixc.sty
+Package: memhfixc 2025/03/06 v1.23 hyperref package fixes for memoir class
+\c@memhycontfloat=\count441
+\c@mem@Hpagenote=\count442
+)
+\main@idxfile=\write5
+\openout5 = `main.idx'.
+
+
+Writing index file main.idx 
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 598pt by 389pt
+Spine and edge margins: 136.5733pt and 71.13188pt
+Upper and lower margins: 125.33748pt and 121.70937pt
+Headheight and headsep: 12pt and 18.06749pt
+Footskip: 25.29494pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7pt and 57.13188pt
+Sidecapsep and sidecapwidth: 7pt and 117pt
+Sidebarhsep and sidebarwidth: 7pt and 117pt
+Sidebarvsep and sidebartopsep: 12pt and 0pt
+Sidebarheight: 596.39996pt
+Sidefoothsep and sidefootwidth: 7pt and 117pt
+Sidefootvsep and sidefootheight: 12pt and 596.39996pt
+******************************************************
+
+\c@definition=\count443
+\c@theorem=\count444
+\c@col=\count445
+\c@conjecture=\count446
+\c@setting=\count447
+\c@assume=\count448
+\c@hypothesis=\count449
+\c@axiom=\count450
+\c@question=\count451
+\c@example=\count452
+\c@note=\count453
+(D:\MikTek\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2025/06/04 version 6.6.0 text color boxes
+ (D:\MikTek\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (D:\MikTek\tex/latex/trimspaces\trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box79
+\tcb@upperbox=\box80
+\tcb@lowerbox=\box81
+\tcb@phantombox=\box82
+\c@tcbbreakpart=\count454
+\c@tcblayer=\count455
+\c@tcolorbox@number=\count456
+\l__tcobox_tmpa_box=\box83
+\l__tcobox_tmpa_dim=\dimen434
+\tcb@temp=\box84
+\tcb@temp=\box85
+\tcb@temp=\box86
+\tcb@temp=\box87
+ (D:\MikTek\tex/latex/tcolorbox\tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.6.0'
+(D:\MikTek\tex/latex/pdfcol\pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box88
+\tcb@totalupperbox=\box89
+\tcb@totallowerbox=\box90
+) (D:\MikTek\tex/latex/tcolorbox\tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.6.0'
+) (D:\MikTek\tex/latex/tcolorbox\tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.6.0'
+(D:\MikTek\tex/latex/tikzfill\tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+ (D:\MikTek\tex/latex/tikzfill\tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+) (D:\MikTek\tex/latex/tikzfill\tikzlibraryfill.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box91
+)) (D:\MikTek\tex/latex/tcolorbox\tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.6.0'
+))) (D:\MikTek\tex/latex/pgfplots\pgfplots.sty (D:\MikTek\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (D:\MikTek\tex/generic/pgfplots\pgfplots.code.tex (D:\MikTek\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks59
+\t@pgfplots@tokb=\toks60
+\t@pgfplots@tokc=\toks61
+\pgfplots@tmpa=\dimen435
+\c@pgfplots@coordindex=\count457
+\c@pgfplots@scanlineindex=\count458
+ (D:\MikTek\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (D:\MikTek\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (D:\MikTek\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks62
+\t@pgf@tokb=\toks63
+\t@pgf@tokc=\toks64
+(D:\MikTek\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (D:\MikTek\tex/generic/pgfplots/util\pgfplotsutil.code.tex (D:\MikTek\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (D:\MikTek\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (D:\MikTek\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count459
+) (D:\MikTek\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (D:\MikTek\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count460
+\t@pgfplotstable@a=\toks65
+) (D:\MikTek\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (D:\MikTek\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (D:\MikTek\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (D:\MikTek\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (D:\MikTek\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count461
+ (D:\MikTek\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (D:\MikTek\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (D:\MikTek\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (D:\MikTek\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (D:\MikTek\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (D:\MikTek\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (D:\MikTek\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (D:\MikTek\tex/generic/pgfplots\pgfplots.scaling.code.tex) (D:\MikTek\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (D:\MikTek\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (D:\MikTek\tex/generic/pgfplots\pgfplots.markers.code.tex) (D:\MikTek\tex/generic/pgfplots\pgfplotsticks.code.tex) (D:\MikTek\tex/generic/pgfplots\pgfplots.paths.code.tex) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (D:\MikTek\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen436
+\pgfdecoratedremainingdistance=\dimen437
+\pgfdecoratedinputsegmentcompleteddistance=\dimen438
+\pgfdecoratedinputsegmentremainingdistance=\dimen439
+\pgf@decorate@distancetomove=\dimen440
+\pgf@decorate@repeatstate=\count462
+\pgfdecorationsegmentamplitude=\dimen441
+\pgfdecorationsegmentlength=\dimen442
+)
+\tikz@lib@dec@box=\box92
+) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (D:\MikTek\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (D:\MikTek\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (D:\MikTek\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count463
+\pgfplots@xmin@reg=\dimen443
+\pgfplots@xmax@reg=\dimen444
+\pgfplots@ymin@reg=\dimen445
+\pgfplots@ymax@reg=\dimen446
+\pgfplots@zmin@reg=\dimen447
+\pgfplots@zmax@reg=\dimen448
+) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (D:\MikTek\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (D:\MikTek\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshadings.code.tex
+File: tikzlibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (D:\MikTek\tex/generic/pgf/libraries\pgflibraryshadings.code.tex
+File: pgflibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (D:\MikTek\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\MikTek\tex/latex/csquotes\csquotes.sty
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
+\csq@reset=\count464
+\csq@gtype=\count465
+\csq@glevel=\count466
+\csq@qlevel=\count467
+\csq@maxlvl=\count468
+\csq@tshold=\count469
+\csq@ltx@everypar=\toks66
+ (D:\MikTek\tex/latex/csquotes\csquotes.def
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (D:\MikTek\tex/latex/csquotes\csquotes.cfg
+File: csquotes.cfg 
+)) (quiver.sty
+Package: quiver 2021/01/11 quiver
+)
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 477.
+
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 477.
+
+Package hyperref Info: Option `colorlinks' set `true' on input line 477.
+Package hyperref Info: Option `breaklinks' set `true' on input line 477.
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 477.
+
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 477.
+) (setting/toc.tex) (setting/mathcommand.tex
+LaTeX Font Info:    Overwriting math alphabet `\mathsfit' in version `bold'
+(Font)                  T1/cmss/m/sl --> T1/cmss/bx/n on input line 314.
+)
+LaTeX Font Info:    Trying to load font information for T1+ETbb-TLF on input line 23.
+ (D:\MikTek\tex/latex/etbb\t1etbb-tlf.fd
+File: T1ETbb-TLF.fd 2020/02/15 Font definitions for T1/ETbb-TLF.
+)
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/m/n' aliased to
+(Font)              `T1/ETbb-TLF/regular/n' on input line 23.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 23.
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+
+
+LaTeX Warning: Unused global option(s):
+    [titles].
+
+(main.aux (content/introduction.aux) (content/chapter1.aux) (content/math/mathc1.aux) (content/math/mathc2.aux) (content/math/mathc3.aux) (content/math/mathc4.aux) (content/math/mathc5.aux) (content/chapter2.aux) (content/chapter4.aux) (content/chapter5.aux) (content/theory_main/chaptert1.aux) (content/theory_main/chaptert2.aux) (content/draft/c1_research.aux) (content/draft/c2_research.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 23.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 23.
+ (D:\MikTek\tex/latex/ly1\ly1ptm.fd
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+)
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+
+
+Class memoir Warning: \addtodef is marked deprecated and will be
+(memoir)              removed in 2026, use instead \patchcmd,
+(memoir)              \pretocmd or \apptocmd from the etoolbox package
+(memoir)              (which is autoloaded by the class) on input line 23.
+
+\c@mv@tabular=\count470
+\c@mv@boldtabular=\count471
+(D:\MikTek\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count472
+\scratchdimen=\dimen449
+\scratchbox=\box93
+\nofMPsegments=\count473
+\nofMParguments=\count474
+\everyMPshowfont=\toks67
+\MPscratchCnt=\count475
+\MPscratchDim=\dimen450
+\MPnumerator=\count476
+\makeMPintoPDFobject=\count477
+\everyMPtoPDFconversion=\toks68
+) (D:\MikTek\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (D:\MikTek\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package crop Info: requested driver: `' on input line 23.
+Package crop Info: detected driver: `pdftex' on input line 23.
+Package crop Info: using `pdftex' graphics driver on input line 23.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=389.0pt
+* \textheight=598.0pt
+* \oddsidemargin=64.0pt
+* \evensidemargin=-1.0pt
+* \topmargin=23.0pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=57.13188pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c__nicematrix_shift_Ldots_last_row_dim=\dimen451
+\c__nicematrix_shift_exterior_Vdots_dim=\dimen452
+\c__nicematrix_innersep_middle_dim=\dimen453
+\c@tabularnotesi=\count478
+\enitdp@tabularnotes=\count479
+\c@tabularnotes*i=\count480
+\enitdp@tabularnotes*=\count481
+Package hyperref Info: Link coloring ON on input line 23.
+(main.out) (main.out)
+\@outlinefile=\write6
+\openout6 = `main.out'.
+
+
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
+ on input line 23.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(113.81102pt, 369.88583pt, 113.81102pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=369.88583pt
+* \textheight=591.5302pt
+* \oddsidemargin=41.54103pt
+* \evensidemargin=41.54103pt
+* \topmargin=-0.93083pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=57.13188pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 30.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/sc' will be
+(Font)              scaled to size 10.0pt on input line 30.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 17.28pt on input line 30.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 10.95pt on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+(D:\MikTek\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+ (D:\MikTek\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 30.
+ (D:\MikTek\tex/latex/esvect\uesvect.fd
+File: uesvect.fd 
+)
+
+[1
+
+
+
+{C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{D:/MikTek/fonts/enc/dvips/etbb/etbb_6bhqsy.enc}{D:/MikTek/fonts/enc/dvips/cm-super/cm-super-t1.enc}{D:/MikTek/fonts/enc/dvips/etbb/etbb_pvrda3.enc}]
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 20.74pt on input line 36.
+ (main.toc
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/bold/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/bold/n' will be
+(Font)              scaled to size 10.95pt on input line 35.
+
+
+[2
+
+
+]
+
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/sl' in size <10> not available
+(Font)              Font shape `T1/ETbb-TLF/regular/it' tried instead on input line 111.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
+(Font)              scaled to size 10.0pt on input line 111.
+[3]
+Overfull \hbox (0.81998pt too wide) detected at line 141
+ \T1/cmss/m/n/10.95 109
+ []
+
+
+
+[4]
+Overfull \hbox (0.81998pt too wide) detected at line 176
+ \T1/cmss/m/n/10.95 155
+ []
+
+
+Overfull \hbox (0.81998pt too wide) detected at line 189
+ \T1/cmss/m/n/10.95 179
+ []
+
+
+Overfull \hbox (0.81998pt too wide) detected at line 194
+ \T1/cmss/m/n/10.95 183
+ []
+
+
+Overfull \hbox (0.81998pt too wide) detected at line 199
+ \T1/cmss/m/n/10.95 191
+ []
+
+
+
+[5]
+Overfull \hbox (0.81998pt too wide) detected at line 242
+ \T1/cmss/m/n/10.95 227
+ []
+
+
+Overfull \hbox (0.81998pt too wide) detected at line 249
+ \T1/cmss/m/n/10.95 233
+ []
+
+
+Overfull \hbox (0.81998pt too wide) detected at line 250
+ \T1/cmss/m/n/10.95 235
+ []
+
+
+Overfull \hbox (0.81998pt too wide) detected at line 257
+ \T1/cmss/m/n/10.95 241
+ []
+
+)
+
+[6]
+
+[7] (main.lof
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[8
+
+]
+
+[9]
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 7.0pt on input line 48.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 5.0pt on input line 48.
+
+
+Class memoir Warning: The \bf font command is deprecated. 
+(memoir)              Use \textbf{...} or {\bfseries... } instead on input line 56.
+
+
+
+[10])
+
+[11]
+
+[12
+
+
+]
+\openout2 = `content/introduction.aux'.
+
+ (content/introduction.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[1
+
+
+]
+
+[2]
+\openout2 = `content/chapter1.aux'.
+
+ (content/chapter1.tex
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 ...entists work on it together for a summer.}
+                                                   [1
+
+
+
+
+
+]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.28 
+      [2]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 ...alist philosophy into a research program.}
+                                                   [3]
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 9.0pt on input line 53.
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[] \T1/ETbb-TLF/regular/n/9 Heb-bian
+ []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56 
+      [4]
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[] \T1/ETbb-TLF/regular/n/9 com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+\T1/ETbb-TLF/regular/n/9 pu-ta-tional
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.65 
+      [5]
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[] \T1/ETbb-TLF/regular/n/9 in-tel-li-gent
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ETbb-TLF on input line 75.
+(D:\MikTek\tex/latex/etbb\ts1etbb-tlf.fd
+File: TS1ETbb-TLF.fd 2020/07/01 (autoinst) Font definitions for TS1/ETbb-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 75.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77         \item \textbf
+                          {Thinking Rationally}: This approach, can be fairl... [6{D:/MikTek/fonts/enc/dvips/etbb/etbb_6z6nrw.enc}]
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 78.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 6.0pt on input line 78.
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+[] \T1/ETbb-TLF/regular/n/9 con-nec-tion-
+ []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 
+      [7]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.96 I
+       am not going to get into the details of such story, but they have the... [8]
+<img/image.png, id=1443, 290.08376pt x 174.6525pt>
+File: img/image.png Graphic file (type png)
+<use img/image.png>
+Package pdftex.def Info: img/image.png  used on input line 103.
+(pdftex.def)             Requested size: 290.08304pt x 174.65207pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+[] \T1/ETbb-TLF/regular/n/9 ex-pert
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.110 
+       [9 <./img/image.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[] \T1/ETbb-TLF/regular/n/9 knowl-edge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[] \T1/ETbb-TLF/regular/n/9 in-fer-ence
+ []
+
+
+LaTeX Warning: Marginpar on page 10 moved by 10.74504pt.
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.126 T
+       his, by itself is pretty much intractable even for moderate-sized mol... [10]
+<img/expertsystem1.png, id=1457, 853.1875pt x 498.86375pt>
+File: img/expertsystem1.png Graphic file (type png)
+<use img/expertsystem1.png>
+Package pdftex.def Info: img/expertsystem1.png  used on input line 132.
+(pdftex.def)             Requested size: 233.40237pt x 136.46861pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+[] \T1/ETbb-TLF/regular/n/9 cer-tainty
+ []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.142 \end{quote}
+                  [11 <./img/expertsystem1.png (PNG copy)>]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.153 
+       [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[13]
+
+[14]
+
+[15]
+
+[16]
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
+(Font)              scaled to size 8.0pt on input line 223.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 227.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/bold/it' will be
+(Font)              scaled to size 10.0pt on input line 228.
+
+
+[17]
+
+[18]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.280     W
+           e say an object is artificial only if it is not natural, or rathe...
+Package hyperref Info: bookmark level for unknown hypothesis defaults to 0 on input line 286.
+
+
+[19]
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
+(Font)              scaled to size 7.0pt on input line 290.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
+(Font)              scaled to size 6.0pt on input line 290.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/bold/n' will be
+(Font)              scaled to size 8.0pt on input line 290.
+Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on input line 300.
+
+
+[20]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.324     A
+            \textbf{construct} is a conceptual encapsulation of two componen...
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 331.
+LaTeX Font Info:    Font shape `TS1/ETbb-TLF/regular/it' will be
+(Font)              scaled to size 10.0pt on input line 334.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
+(Font)              scaled to size 5.0pt on input line 343.
+
+
+[21{D:/MikTek/fonts/enc/dvips/etbb/etbb_65swoa.enc}]
+
+[22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[23]
+
+[24]
+
+[25]
+
+[26]
+
+[27])
+
+[28]
+
+[29
+
+
+
+
+]
+
+[30]
+\openout2 = `content/math/mathc1.aux'.
+
+ (content/math/mathc1.tex
+
+LaTeX Warning: Marginpar on page 31 moved by 14.16649pt.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8     A
+          \textbf{proof} is a sequence of true statements, without logical g...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14     A
+           proof is a sequence of logical statements, one implying another, ...
+
+[31
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[] \T1/ETbb-TLF/regular/n/9 open sen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[] \T1/ETbb-TLF/regular/n/9 log-i-cal
+ []
+
+
+LaTeX Warning: Marginpar on page 32 moved by 25.04498pt.
+
+
+LaTeX Warning: Marginpar on page 32 moved by 14.04048pt.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[32]
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+[] \T1/ETbb-TLF/regular/n/9 con-tra-dic-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
+[] \T1/ETbb-TLF/regular/n/9 log-i-cal
+ []
+
+
+
+[34]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.170     L
+           et $P$ and $Q$ be two statements. Then
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+[] \T1/ETbb-TLF/regular/n/9 quan-ti-fied
+ []
+
+
+
+[36]
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 235.
+Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 238.
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
+[] \T1/ETbb-TLF/regular/n/9 char-ac-ter-i-
+ []
+
+
+
+[37]
+
+[38]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.306     A
+            \textbf{set} $A$ is an unordered collection of distinct objects....
+Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input line 312.
+
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.329     F
+           or $A,B,C$ are sets, we have:
+
+[39]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.340     G
+           iven a set $X$ and a collection of set, denoted by $\{A_i\}_{i\in...
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
+[] \T1/ETbb-TLF/regular/n/9 Rus-sell's
+ []
+
+
+
+[41]
+
+[42]
+pdfTeX warning (ext4): destination with the same identifier (name{axiom.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.406     I
+           f two sets have exactly the same members, then they are equal: \b...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.434     $
+           \varnothing$ is the set having no members.
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.438     F
+           or sets $uv,a,b$ and their power set $\mathcal{P}(\cdot)$, we hav...
+
+[43]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 475.
+ (D:\MikTek\tex/latex/amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+
+[44]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.493     A
+           n \textbf{equivalence relation} on a set $A$ is a relation $C$ on...
+
+[45]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.518     A
+            \textbf{rule of assignment} is a subset $r$ of the Cartesian pro...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.535     A
+            \textbf{function} is a rule of assignment $r$, together with a s...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.543     I
+           f $f: A\to B$ and $U\subseteq A$, then $f(U)=\{ f(u): u \in U \}$...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.547     I
+           f $f: A\to B$ and if $A_0$ is a subset of $A$, we define the \tex...
+
+[46]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.555     G
+           iven function $f: A\to B$ and $g: B \to C$, we define the \textbf...
+
+[47]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.589     T
+           he left inverse of $f$ exists iff $f$ is injective.)
+
+[48]
+\openout2 = `content/math/mathc2.aux'.
+
+ (content/math/mathc2.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[49
+
+
+
+
+]
+
+[50]
+
+[51]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.127     A
+            (nonzero) \textbf{vector} $\vec{v}$, or $\mathbf{v}$, is a quant...
+
+[52]
+<img/vector1.png, id=1831, 1003.75pt x 393.47pt>
+File: img/vector1.png Graphic file (type png)
+<use img/vector1.png>
+Package pdftex.def Info: img/vector1.png  used on input line 159.
+(pdftex.def)             Requested size: 233.40237pt x 91.49283pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+[] \T1/ETbb-TLF/regular/n/9 com-pressed
+ []
+
+
+
+[53 <./img/vector1.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.168     T
+           wo nonzero vectors are \textbf{equal} if they have the same magni...
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.179     F
+           or a vector $\mathbf{v}=(a,b,c)$ in $\mathbb{R}^3$, the magnitude...
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.192     T
+           he \textbf{sum} of vectors $\mathbf{v},\mathbf{w}$, denoted by $\...
+
+[54]
+Package hyperref Info: bookmark level for unknown question defaults to 0 on input line 226.
+<img/vector_sum-001.png, id=1856, 1716.4125pt x 629.35126pt>
+File: img/vector_sum-001.png Graphic file (type png)
+<use img/vector_sum-001.png>
+Package pdftex.def Info: img/vector_sum-001.png  used on input line 231.
+(pdftex.def)             Requested size: 311.20119pt x 114.1042pt.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/bold/n' will be
+(Font)              scaled to size 9.0pt on input line 232.
+
+
+[55 <./img/vector_sum-001.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.254     W
+           e define a \textbf{scalar} as a quantity equal to a single compon...
+
+[56]
+
+[57]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.311     A
+            matrix $A$ is a two-dimensional array, with dimensions' size of ...
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 352.
+
+
+[58]
+<img/jjgh.jpg, id=1920, 230.2407pt x 202.73973pt>
+File: img/jjgh.jpg Graphic file (type jpg)
+<use img/jjgh.jpg>
+Package pdftex.def Info: img/jjgh.jpg  used on input line 384.
+(pdftex.def)             Requested size: 155.59763pt x 137.01355pt.
+<img/matmulss.png, id=1925, 1027.84pt x 905.3825pt>
+File: img/matmulss.png Graphic file (type png)
+<use img/matmulss.png>
+Package pdftex.def Info: img/matmulss.png  used on input line 390.
+(pdftex.def)             Requested size: 155.59763pt x 137.05867pt.
+
+
+[59 <./img/jjgh.jpg>]
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on input line 416.
+
+
+[60 <./img/matmulss.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.477     A
+            \textit{square matrix} $\mathbf{A}\in\mathbb{R}^{n\times n}$ is ...
+
+[61])
+
+[62]
+\openout2 = `content/math/mathc3.aux'.
+
+ (content/math/mathc3.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[63
+
+
+
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37     T
+          he set of all possible outcomes of an experiment is known as the \...
+
+[64]
+pdfTeX warning (ext4): destination with the same identifier (name{example.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45     S
+          uppose $r$ digits are chosen from a table of random numbers, so th...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.62     S
+          uppose that two experiments are to be performed. Then if experimen...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.71     S
+          uppose $r$ multiple choices are to be made in sequence, there are ...
+
+[65]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 99.
+
+
+
+[66]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.141     D
+           efine the probability of event $E$ as the following expression: $...
+
+[67]
+pdfTeX warning (ext4): destination with the same identifier (name{axiom.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.151     F
+           or event $E$ and probability $P(E)$, sample space $S$:
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.161     A
+           xioms I-III imply the following further properties:
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.188     F
+           or 2 events $E$ and $F$, the following construction is true:
+
+[68]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.198     T
+           wo events $E$ and $F$ are said to be \textit{independent} if $P(E...
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.231     L
+           et $\Omega$ be the sample space of an experiment, $X,Y: \Omega\to...
+
+[69]
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.240     I
+           f $X$ is a \textit{discrete random variable} that takes on one of...
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.258     I
+           f $X$ is a continuous r.v. with pmf $f(x)$, then for any $g$ on $...
+pdfTeX warning (ext4): destination with the same identifier (name{lemma.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.265         F
+               or $Y>0$ random variable,
+
+[70]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.292     T
+           he following is true for random variables $X,Y$ and expectation $E$:
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.302     I
+           f $X$ is a random variable with mean $\mu$, then the variance of ...
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.305     F
+           or variance $\mathrm{Var}(\cdot)$ of some random variable $X$, we...
+
+[71]
+
+[72]
+
+[73]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.380     I
+           f $S_{n}$ denotes the number of successes that occur when $n$ ind...
+
+[74]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.403     L
+           et $X$ be a continuous random variable having probability density...)
+
+[75]
+\openout2 = `content/math/mathc4.aux'.
+
+ (content/math/mathc4.tex
+
+[76
+
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[] \T1/ETbb-TLF/regular/n/9 pseu-do-met-
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22     S
+          uppose $X$ is a set. A function $\rho:X\times X\to \mathbb{R}_{+}$...
+
+[77]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41     A
+           \textbf{metric space} is a pair $(M,d)$ where $M$ is a set and $d...
+pdfTeX warning (ext4): destination with the same identifier (name{example.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53     T
+          he usual metric on $\mathbb{R}$ is $d(x,y)=\lvert x-y\rvert$. Clea...
+
+[78]
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+[] \T1/ETbb-TLF/regular/n/9 sigma-
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.69     L
+          et $X$ be a set. A \textbf{$\sigma$-algebra} over $X$ is a collect...
+
+[79]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105     A
+            \textbf{measure} on $\mathcal{X}$ is a map $\mu: \mathcal{X}\to ...
+pdfTeX warning (ext4): destination with the same identifier (name{example.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.110     T
+           he \textbf{counting measure} assigns, to any set, the \textbf{car...
+pdfTeX warning (ext4): destination with the same identifier (name{example.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115     S
+           uppose $X$ is a finite set, and $\mathcal{X}=\mathcal{P}(X)$. The...
+
+[80]
+
+[81])
+
+[82]
+\openout2 = `content/math/mathc5.aux'.
+
+ (content/math/mathc5.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[] \T1/ETbb-TLF/regular/n/9 con-cen-tra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+\T1/ETbb-TLF/regular/n/9 tion in-equal-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[] \T1/ETbb-TLF/regular/n/9 mar-tin-gale
+ []
+
+Package hyperref Info: bookmark level for unknown note defaults to 0 on input line 16.
+
+Overfull \hbox (0.21556pt too wide) in paragraph at lines 14--23
+\T1/ETbb-TLF/regular/n/10 vari-ables, then $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[]; [] ; X[]\OT1/cmr/m/n/10 )$ \T1/ETbb-TLF/regular/n/10 does not de-vi-ate much from its mean pro-vided that $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; [] ; x[]\OT1/cmr/m/n/10 )$
+ []
+
+
+
+[83
+
+
+
+
+]
+<img/markovbound.png, id=2177, 949.29657pt x 450.18187pt>
+File: img/markovbound.png Graphic file (type png)
+<use img/markovbound.png>
+Package pdftex.def Info: img/markovbound.png  used on input line 35.
+(pdftex.def)             Requested size: 272.29881pt x 129.12747pt.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 44.
+ (D:\MikTek\tex/latex/bbm\ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+)
+
+[84 <./img/markovbound.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.60     L
+          et $X_{1},\dots,X_{n}$ be independent random variables, where $X_{...)
+
+[85]
+
+[86
+
+
+
+
+]
+
+[87]
+
+[88]
+\openout2 = `content/chapter2.aux'.
+
+ (content/chapter2.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[89
+
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.30     T
+          o an observer $B$, an object $A^{*}$ is a \textbf{model} of an obj...
+
+[90]
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49     T
+          he modelling and simulation scheme can be attained as followed:
+Overfull \hbox (1.45932pt too wide) in paragraph at lines 58--59
+[]\T1/ETbb-TLF/regular/n/10 In real mod-elling and sim-u-la-tion project, the []\T1/ETbb-TLF/regular/it/10 sys-tem anal-y-sis[] \T1/ETbb-TLF/regular/n/10 step can be very time-consuming.
+ []
+
+
+
+[91]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.66     \textit{Simulation}
+                             is the application of a model with the objectiv...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75     A
+           \textit{system} is a collection or a collection of objects whose ...
+
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[] \T1/ETbb-TLF/regular/n/9 the-o-ret-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[] \T1/ETbb-TLF/regular/n/9 phys-i-cal
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[93]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111     A
+            \textit{mathematical model} is a set of mathematical statements ...
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
+[] \T1/ETbb-TLF/regular/n/9 math-e-mat-i-
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115     A
+            \textit{mathematical model} is a triple $(S,Q,M)$ where $S$ is a...
+pdfTeX warning (ext4): destination with the same identifier (name{example.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124     S
+           uppose that we want to \textit{predict} the behaviour of some \te...
+
+[94]
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[] \T1/ETbb-TLF/regular/n/9 sys-tem
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.131     L
+           et $(S,Q,M)$ be a mathematical model. Mathematical quantities $s_...
+Underfull \hbox (badness 1033) in paragraph at lines 134--134
+[] \T1/ETbb-TLF/regular/n/9 re-duced sys-
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.136     L
+           et $s_{1},\dots,s_{n}$ be the state variables of a mathematical m...
+
+[95]
+pdfTeX warning (ext4): destination with the same identifier (name{remark.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.149     T
+           ypically, the properties (parameters) of the reduced system are t...
+pdfTeX warning (ext4): destination with the same identifier (name{note.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.157     I
+           n general, because people working with mathematical models has no...
+<img/problemsolvingdiagram.drawio.png, id=2259, 932.48375pt x 300.12125pt>
+File: img/problemsolvingdiagram.drawio.png Graphic file (type png)
+<use img/problemsolvingdiagram.drawio.png>
+Package pdftex.def Info: img/problemsolvingdiagram.drawio.png  used on input line 164.
+(pdftex.def)             Requested size: 350.09763pt x 112.678pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[96]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[97 <./img/problemsolvingdiagram.drawio.png>]
+<img/blackboxstatistics.png, id=2275, 805.0075pt x 746.79pt>
+File: img/blackboxstatistics.png Graphic file (type png)
+<use img/blackboxstatistics.png>
+Package pdftex.def Info: img/blackboxstatistics.png  used on input line 195.
+(pdftex.def)             Requested size: 194.5pt x 180.42973pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+[] \T1/ETbb-TLF/regular/n/9 phe-nomeno-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+[] \T1/ETbb-TLF/regular/n/9 mech-a-nis-tic
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.206     A
+            (mathematical) model $(S,Q,M)$ is said to be:
+
+[98 <./img/blackboxstatistics.png>]
+<img/expreise.png, id=2282, 420.06938pt x 425.33907pt>
+File: img/expreise.png Graphic file (type png)
+<use img/expreise.png>
+Package pdftex.def Info: img/expreise.png  used on input line 218.
+(pdftex.def)             Requested size: 155.59763pt x 157.54822pt.
+
+
+[99 <./img/expreise.png>]
+
+[100]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.258     A
+            mathematical model $(S,Q,M)$ is called:
+
+[101]
+<img/purityxkcd.png, id=2302, 742.775pt x 309.155pt>
+File: img/purityxkcd.png Graphic file (type png)
+<use img/purityxkcd.png>
+Package pdftex.def Info: img/purityxkcd.png  used on input line 274.
+(pdftex.def)             Requested size: 389.0pt x 161.91254pt.
+
+
+[102 <./img/purityxkcd.png (PNG copy)>]
+
+[103]
+
+[104]
+<img/Platon_Cave_Sanraedam_1604.jpg, id=2322, 1606.0pt x 1170.3725pt>
+File: img/Platon_Cave_Sanraedam_1604.jpg Graphic file (type jpg)
+<use img/Platon_Cave_Sanraedam_1604.jpg>
+Package pdftex.def Info: img/Platon_Cave_Sanraedam_1604.jpg  used on input line 317.
+(pdftex.def)             Requested size: 350.09763pt x 255.12543pt.
+
+
+[105 <./img/Platon_Cave_Sanraedam_1604.jpg>]
+pdfTeX warning (ext4): destination with the same identifier (name{axiom.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.343 ...e don'ts of mathematical modelling]\hfill
+                                                  \break
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+
+ []
+
+
+
+[106]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.367     T
+           he \textit{standard form} of the linear programming problem is to...
+
+[107]
+Overfull \hbox (0.5836pt too wide) in paragraph at lines 384--386
+\T1/ETbb-TLF/regular/n/10 math-e-mat-i-cal prob-lem of min-i-miz-ing $\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + 2\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + 4\OML/cmm/m/it/10 x[]$ \T1/ETbb-TLF/regular/n/10 by 3 equa-tions for $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]; x[]\OT1/cmr/m/n/10 )$\T1/ETbb-TLF/regular/n/10 .
+ []
+
+)
+
+[108]
+\openout2 = `content/chapter4.aux'.
+
+ (content/chapter4.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[109
+
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[110]
+
+[111]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[112]
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[] \T1/ETbb-TLF/regular/n/9 em-pir-i-cal
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75     G
+          iven a hypothesis $h\in \mathcal{H}$, a target concept $c\in \math...
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+[] \T1/ETbb-TLF/regular/n/9 gen-er-al-iza-
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.81     G
+          iven a hypothesis $h\in\mathcal{H}$, a target concept $c\in\mathca...
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90     F
+          or fixed $\mathcal{H}$, for fixed and sufficiently large $\mathcal...
+
+[113]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121     W
+           e present the formal form of the empirical learning. Suppose we h...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.129     W
+           e present the formal form of the generalization learning problem....
+
+[114]
+<pdf/figfig-crop.pdf, id=2388, 191.71625pt x 135.50626pt>
+File: pdf/figfig-crop.pdf Graphic file (type pdf)
+<use pdf/figfig-crop.pdf>
+Package pdftex.def Info: pdf/figfig-crop.pdf  used on input line 139.
+(pdftex.def)             Requested size: 233.40237pt x 164.98033pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.146     G
+           iven a distribution $\mathcal{D}$, the Bayes error $R^{*}$ is def...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.152     A
+            hypothesis $h$ with $R(h)=R^{*}$ is called a \textit{Bayes hypot...
+
+[115 <./pdf/figfig-crop.pdf>]
+Package hyperref Info: bookmark level for unknown setting defaults to 0 on input line 162.
+
+pdfTeX warning (ext4): destination with the same identifier (name{question.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174     U
+           nder the probabilistic interpretation, what can be said about the...
+
+[116]
+
+[117]
+Underfull \vbox (badness 7558) has occurred while \output is active []
+
+
+
+[118]
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/m/it' aliased to
+(Font)              `T1/ETbb-TLF/regular/it' on input line 248.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
+(Font)              scaled to size 10.0pt on input line 248.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.249     A
+            \textbf{deterministic model} $h_{d}$ assumes its internal space ...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.254     A
+            \textbf{probabilistic model} $h_{p}$ assumes its internal space ...
+Overfull \hbox (19.42487pt too wide) in paragraph at lines 263--264
+[]\T1/ETbb-TLF/regular/n/10 There ex-ists an eval-u-a-tor (or []\T1/ETbb-TLF/regular/it/10 su-per-vi-sor[]\T1/ETbb-TLF/regular/n/10 ) $\OMS/cmsy/m/n/10 r\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 h; c\OT1/cmr/m/n/10 )$ \T1/ETbb-TLF/regular/n/10 that eval-u-ates spe-cific []\T1/ETbb-TLF/regular/it/10 loss frame-work[] $\OML/cmm/m/it/10 `\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 h\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; c\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g$
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.267     A
+            loss function is a non-negative function $\ell :\mathcal{Y}\time...
+pdfTeX warning (ext4): destination with the same identifier (name{conjecture.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.272     F
+           or any supervisor $\nabla$ of a learner framework $\mathcal{L}(\m...
+
+[119]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.283     G
+           iven $h\in \mathcal{H}$, for $c\in \mathcal{C}$ of some concept c...
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.289     F
+           or any sample $S$, the following inequality holds for the hypothe...
+
+[120]
+<img/optimization_train_loss_data.png, id=2477, 653.3208pt x 604.8999pt>
+File: img/optimization_train_loss_data.png Graphic file (type png)
+<use img/optimization_train_loss_data.png>
+Package pdftex.def Info: img/optimization_train_loss_data.png  used on input line 312.
+(pdftex.def)             Requested size: 311.20119pt x 288.13345pt.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
+(Font)              scaled to size 9.0pt on input line 313.
+
+Overfull \hbox (0.71931pt too wide) in paragraph at lines 319--320
+[]\T1/ETbb-TLF/regular/n/10 Based on the above con-clu-sion, the em-pir-i-cal er-ror and gen-er-al-ized er-ror can be re-calculated
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[121]
+<img/mamamia.png, id=2484, 600.5637pt x 315.8199pt>
+File: img/mamamia.png Graphic file (type png)
+<use img/mamamia.png>
+Package pdftex.def Info: img/mamamia.png  used on input line 342.
+(pdftex.def)             Requested size: 311.20119pt x 163.65865pt.
+
+
+[122 <./img/optimization_train_loss_data.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
+[] \T1/ETbb-TLF/regular/n/9 PAC learn-
+ []
+
+
+
+[123 <./img/mamamia.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.368     A
+            learning scenario is called \textit{model-specific} learning if,...
+
+[124]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.376     A
+            learning scenario is called \textit{model-free} learning if, for...
+Overfull \hbox (0.1483pt too wide) in paragraph at lines 397--398
+[]\T1/ETbb-TLF/regular/n/10 The al-go-rithm out-puts a hy-poth-e-sis $\OML/cmm/m/it/10 h$ \T1/ETbb-TLF/regular/n/10 such that $\OT1/cmr/m/n/10 ^^B$ \T1/ETbb-TLF/regular/n/10 is small. Re-call that $\OT1/cmr/m/n/10 ^^B[] = ([](\OML/cmm/m/it/10 h\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 h\OT1/cmr/m/n/10 ))$\T1/ETbb-TLF/regular/n/10 ,
+ []
+
+
+
+[125]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.403     L
+           et $\mathcal{C}$ be a concept class over $X$. We say that $\mathc...
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+[] \T1/ETbb-TLF/regular/n/9 rep-re-sen-ta-
+ []
+
+
+
+[126]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.429     F
+           or a given concept class $\mathcal{C}$, a \textbf{representation ...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.439     G
+           iven a concept $c\in\mathcal{C}$, the \textbf{representation comp...
+
+[127]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.450     A
+            concept class $\mathcal{C}$ is said to be \textbf{PAC-learnable}...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.464     W
+           e say that an algorithm is a consistent learner for a concept cla...
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 474.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 474.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.479     L
+           et $H$ be a finite set of functions mapping from $\mathcal{X}\to ...
+
+[128]
+
+[129]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 523.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 523.
+
+Package hyperref Info: bookmark level for unknown col defaults to 0 on input line 529.
+
+
+[130]
+
+[131]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.589     L
+           et $\mathcal{H}$ be a finite hypothesis set. Then, for any $\delt...
+
+[132]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.626     A
+            concept class $\mathcal{C}$ is said to be \textbf{PAC-learnable}...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.640     G
+           iven a distribution $\mathcal{D}$ over $\mathcal{X}\times \mathca...
+
+[133]
+
+[134]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.665     L
+           et $\alpha \geq 0$ and $0\leq \beta < 1$ be constant. $L$ is an $...
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.676     F
+           ix $n$. Then $\mathcal{O}(n\cdot size(c))^{\alpha} m^{\beta}$ is ...
+
+[135]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.689     L
+           et $L$ be an efficient $(\alpha,\beta)$-Occam algorithm for $\mat...
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.700     L
+           et $\mathcal{C}$ be a concept class and $\mathcal{H}$ a represent...
+
+[136]
+Underfull \hbox (badness 10000) in paragraph at lines 721--721
+[] \T1/ETbb-TLF/regular/n/9 Rademacher
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 727--727
+[] \T1/ETbb-TLF/regular/n/9 Rademacher
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.729     L
+           et $\mathcal{D}$ denote the distribution according to which sampl...
+
+[137]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.738     L
+           et $\mathcal{G}$ be a family of functions mapping from $\mathcal{...
+
+[138]
+pdfTeX warning (ext4): destination with the same identifier (name{col.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.805     S
+           uppose that a sample $S$ of size $m$ is drawn according to distri...
+
+[139]
+
+[140]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.849     L
+           et $\mathcal{H}$ be a family of functions taking values in $\{-1,...
+pdfTeX warning (ext4): destination with the same identifier (name{example.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.863 L
+       et $\Pi=\{A_1, \dots,A_k\}$ be a fixed partition of $\mathcal{X}$, su...
+
+[141]
+Underfull \hbox (badness 10000) in paragraph at lines 900--900
+[] \T1/ETbb-TLF/regular/n/9 growth
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.902     G
+           iven a binary class of functions $\mathcal{H}$, we define the \te...
+pdfTeX warning (ext4): destination with the same identifier (name{lemma.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.911     L
+           et $A$ be a finite subset of $\mathbb{R}^{m}$, and let $$\max_{\v...
+pdfTeX warning (ext4): destination with the same identifier (name{col.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.919     L
+           et $\mathcal{G}$ be a family of functions taking values in $\{-1,...
+
+[142]
+Overfull \hbox (25.27069pt too wide) in paragraph at lines 925--926
+[]\T1/ETbb-TLF/regular/n/10 For a fixed sam-ple $\OML/cmm/m/it/10 S$\T1/ETbb-TLF/regular/n/10 , we de-note by $\OMS/cmsy/m/n/10 G[]$ \T1/ETbb-TLF/regular/n/10 the set of vec-tors of func-tion val-ues $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; [] ; g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ))[]$
+ []
+
+
+
+[143]
+<img/hyperplane.png, id=2689, 1423.3175pt x 602.25pt>
+File: img/hyperplane.png Graphic file (type png)
+<use img/hyperplane.png>
+Package pdftex.def Info: img/hyperplane.png  used on input line 989.
+(pdftex.def)             Requested size: 272.29881pt x 115.2098pt.
+<img/halfspace_illustration_c4.png, id=2692, 1204.5pt x 1361.085pt>
+File: img/halfspace_illustration_c4.png Graphic file (type png)
+<use img/halfspace_illustration_c4.png>
+Package pdftex.def Info: img/halfspace_illustration_c4.png  used on input line 994.
+(pdftex.def)             Requested size: 155.59763pt x 175.82576pt.
+
+
+[144]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1002     W
+            e say that a finite set $S\subset \mathcal{X}$ is \textbf{shatte...
+
+[145 <./img/hyperplane.png (PNG copy)> <./img/halfspace_illustration_c4.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1007     T
+            he \textbf{VC}-dimension of a hypothesis set $\mathcal{H}$ is th...
+pdfTeX warning (ext4): destination with the same identifier (name{example.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1019     O
+            ur first example involves the hypothesis class of intervals on r...
+<img/vc_dim_ex1.png, id=2708, 587.94656pt x 148.30406pt>
+File: img/vc_dim_ex1.png Graphic file (type png)
+<use img/vc_dim_ex1.png>
+Package pdftex.def Info: img/vc_dim_ex1.png  used on input line 1026.
+(pdftex.def)             Requested size: 311.20119pt x 78.49667pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1030     C
+            onsider the set of all hyperplanes in $\mathbb{R}^{2}$. We obser...
+
+[146 <./img/vc_dim_ex1.png>]
+<img/vc_dim_ex2.png, id=2723, 316.93407pt x 181.42781pt>
+File: img/vc_dim_ex2.png Graphic file (type png)
+<use img/vc_dim_ex2.png>
+Package pdftex.def Info: img/vc_dim_ex2.png  used on input line 1044.
+(pdftex.def)             Requested size: 194.5pt x 111.3435pt.
+
+
+[147 <./img/vc_dim_ex2.png>]
+<img/convex_set.png, id=2739, 486.81876pt x 227.85126pt>
+File: img/convex_set.png Graphic file (type png)
+<use img/convex_set.png>
+Package pdftex.def Info: img/convex_set.png  used on input line 1068.
+(pdftex.def)             Requested size: 194.5pt x 91.03458pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{lemma.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1077     I
+            f $C$ is a convex subset of $\mathbb{R}^{d}$ and $a_{1},\dots,a_...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1081     G
+            iven a set $A$, the convex hull of a set $A$, denoted by $\mathr...
+pdfTeX warning (ext4): destination with the same identifier (name{lemma.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1096     L
+            et $P=\{p_{1},\dots,p_{n}\}\subset \mathbb{R}^{d}$ be a finite s...
+
+[148 <./img/convex_set.png (PNG copy)>]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1117     L
+            et $\mathcal{A}$ be a subset in $\mathbb{R}^{d}$. Suppose that $...
+
+[149]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1176     A
+            ny set of $\mathcal{X}$ of $d+2$ points in $\mathbb{R}^{d}$ can ...
+
+[150]
+<img/partition_radon.png, id=2780, 556.32843pt x 170.13562pt>
+File: img/partition_radon.png Graphic file (type png)
+<use img/partition_radon.png>
+Package pdftex.def Info: img/partition_radon.png  used on input line 1180.
+(pdftex.def)             Requested size: 272.29881pt x 83.27371pt.
+
+
+[151 <./img/partition_radon.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1225     L
+            et $\mathcal{H}$ be a hypothesis set with $\mathrm{VCdim}(\mathc...
+
+[152])
+
+[153]
+\openout2 = `content/chapter5.aux'.
+
+ (content/chapter5.tex
+
+[154
+
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[155]
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[] \T1/ETbb-TLF/regular/n/9 neu-ral
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{note.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18     I
+          n the brain, a nerve bundle connects two regions and allows signal...
+<img/brainneuron1.png, id=2834, 517.935pt x 248.93pt>
+File: img/brainneuron1.png Graphic file (type png)
+<use img/brainneuron1.png>
+Package pdftex.def Info: img/brainneuron1.png  used on input line 31.
+(pdftex.def)             Requested size: 272.29881pt x 130.87631pt.
+
+
+LaTeX Warning: Marginpar on page 156 moved by 9.30153pt.
+
+
+
+[156 <./img/brainneuron1.png (PNG copy)>]
+<img/SantiagoRam贸nyCajalNetwork.png, id=2842, 1373.13pt x 1887.05pt>
+File: img/SantiagoRam贸nyCajalNetwork.png Graphic file (type png)
+<use img/SantiagoRam贸nyCajalNetwork.png>
+Package pdftex.def Info: img/SantiagoRam贸nyCajalNetwork.png  used on input line 42.
+(pdftex.def)             Requested size: 272.29881pt x 374.20718pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/overwhelminglycomplexshit.png, id=2843, 918.43124pt x 777.65532pt>
+File: img/overwhelminglycomplexshit.png Graphic file (type png)
+<use img/overwhelminglycomplexshit.png>
+Package pdftex.def Info: img/overwhelminglycomplexshit.png  used on input line 51.
+(pdftex.def)             Requested size: 311.20119pt x 263.4975pt.
+
+
+[157]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+[] \T1/ETbb-TLF/regular/n/9 Retic-u-lar
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[158 <./img/SantiagoRam贸nyCajalNetwork.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[159 <./img/overwhelminglycomplexshit.png>]
+
+[160]
+<img/abstractionpps.png, id=2872, 983.675pt x 698.61pt>
+File: img/abstractionpps.png Graphic file (type png)
+<use img/abstractionpps.png>
+Package pdftex.def Info: img/abstractionpps.png  used on input line 82.
+(pdftex.def)             Requested size: 311.20119pt x 221.01204pt.
+
+
+[161 <./img/abstractionpps.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.95     T
+          he neuron model conceptually can be encapsulated into the categori...
+Underfull \hbox (badness 10000) in paragraph at lines 104--104
+[] \T1/ETbb-TLF/regular/n/9 he-lio-cen-tric
+ []
+
+
+Underfull \vbox (badness 2269) has occurred while \output is active []
+
+
+
+[162]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.119     T
+           he neuron model conceptually can be encapsulated into the categor...
+
+[163]
+pdfTeX warning (ext4): destination with the same identifier (name{question.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.125     H
+           ow is information, or \textbf{resources per matters} are preserve...
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133     G
+           iven two neuron class, $\mathcal{N}_{n-1}$ and $\mathcal{N}_{n}$ ...
+
+[164]
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[] \T1/ETbb-TLF/regular/n/9 me-chan-i-cal
+ []
+
+
+
+[165]
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
+[] \T1/ETbb-TLF/regular/n/9 min-i-mized
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.157     L
+           et $x$ be a neuron of arbitrary neuronal classification $\mathcal...
+<img/nn1.png, id=2915, 662.475pt x 82.3075pt>
+File: img/nn1.png Graphic file (type png)
+<use img/nn1.png>
+Package pdftex.def Info: img/nn1.png  used on input line 166.
+(pdftex.def)             Requested size: 233.40237pt x 28.99768pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 174.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 174.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 174.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[] $\U/msb/m/n/9 R$ \T1/ETbb-TLF/regular/n/9 stan-dard
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.177     A
+            neuron unit $x\in \mathcal{N}$ belongs to class $\mathcal{N}_{0}...
+
+[166 <./img/nn1.png>]
+<img/standard_n0_class.png, id=2932, 268.1217pt x 145.9854pt>
+File: img/standard_n0_class.png Graphic file (type png)
+<use img/standard_n0_class.png>
+Package pdftex.def Info: img/standard_n0_class.png  used on input line 215.
+(pdftex.def)             Requested size: 233.40237pt x 127.08644pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[] \T1/ETbb-TLF/regular/n/9 stan-dard
+ []
+
+
+
+[167 <./img/standard_n0_class.png>]
+<img/generalized_sn_1.png, id=2944, 3116.64375pt x 808.01875pt>
+File: img/generalized_sn_1.png Graphic file (type png)
+<use img/generalized_sn_1.png>
+Package pdftex.def Info: img/generalized_sn_1.png  used on input line 227.
+(pdftex.def)             Requested size: 291.75pt x 75.62827pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232     A
+            \textbf{standard neuron} is a 3-field $\mathcal{N}_{0}$ correspo...
+
+[168 <./img/generalized_sn_1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
+[] \T1/ETbb-TLF/regular/n/9 neu-ron
+ []
+
+<img/chaining1.png, id=2951, 1297.84875pt x 183.68625pt>
+File: img/chaining1.png Graphic file (type png)
+<use img/chaining1.png>
+Package pdftex.def Info: img/chaining1.png  used on input line 248.
+(pdftex.def)             Requested size: 311.20119pt x 44.04355pt.
+
+LaTeX Warning: Marginpar on page 169 moved by 25.12599pt.
+
+<img/function.png, id=2952, 1753.30031pt x 440.39531pt>
+File: img/function.png Graphic file (type png)
+<use img/function.png>
+Package pdftex.def Info: img/function.png  used on input line 260.
+(pdftex.def)             Requested size: 389.0pt x 97.70709pt.
+
+
+[169 <./img/chaining1.png>]
+<img/sigmoid_illus_x1.png, id=2961, 406.1574pt x 325.215pt>
+File: img/sigmoid_illus_x1.png Graphic file (type png)
+<use img/sigmoid_illus_x1.png>
+Package pdftex.def Info: img/sigmoid_illus_x1.png  used on input line 292.
+(pdftex.def)             Requested size: 124.48285pt x 99.67426pt.
+<img/sigmoid_illus_x2.png, id=2962, 411.2163pt x 325.215pt>
+File: img/sigmoid_illus_x2.png Graphic file (type png)
+<use img/sigmoid_illus_x2.png>
+Package pdftex.def Info: img/sigmoid_illus_x2.png  used on input line 299.
+(pdftex.def)             Requested size: 124.48285pt x 98.44855pt.
+<img/sigmoid_illus_x3.png, id=2963, 411.2163pt x 325.215pt>
+File: img/sigmoid_illus_x3.png Graphic file (type png)
+<use img/sigmoid_illus_x3.png>
+Package pdftex.def Info: img/sigmoid_illus_x3.png  used on input line 306.
+(pdftex.def)             Requested size: 124.48285pt x 98.44855pt.
+
+
+[170 <./img/function.png> <./img/sigmoid_illus_x1.png> <./img/sigmoid_illus_x2.png> <./img/sigmoid_illus_x3.png>]
+<img/sigmoid_illus_x1_2.png, id=2976, 406.1574pt x 325.215pt>
+File: img/sigmoid_illus_x1_2.png Graphic file (type png)
+<use img/sigmoid_illus_x1_2.png>
+Package pdftex.def Info: img/sigmoid_illus_x1_2.png  used on input line 324.
+(pdftex.def)             Requested size: 124.48285pt x 99.67426pt.
+<img/sigmoid_illus_x2_2.png, id=2977, 411.2163pt x 325.215pt>
+File: img/sigmoid_illus_x2_2.png Graphic file (type png)
+<use img/sigmoid_illus_x2_2.png>
+Package pdftex.def Info: img/sigmoid_illus_x2_2.png  used on input line 331.
+(pdftex.def)             Requested size: 124.48285pt x 98.44855pt.
+<img/sigmoid_illus_x3_2.png, id=2978, 411.2163pt x 325.215pt>
+File: img/sigmoid_illus_x3_2.png Graphic file (type png)
+<use img/sigmoid_illus_x3_2.png>
+Package pdftex.def Info: img/sigmoid_illus_x3_2.png  used on input line 338.
+(pdftex.def)             Requested size: 124.48285pt x 98.44855pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 360.
+
+
+
+[171 <./img/sigmoid_illus_x1_2.png> <./img/sigmoid_illus_x2_2.png> <./img/sigmoid_illus_x3_2.png>]
+
+[172]
+<img/logic_unit_v1.png, id=2993, 3449.88875pt x 1475.5125pt>
+File: img/logic_unit_v1.png Graphic file (type png)
+<use img/logic_unit_v1.png>
+Package pdftex.def Info: img/logic_unit_v1.png  used on input line 420.
+(pdftex.def)             Requested size: 252.84763pt x 108.13704pt.
+<img/logic_unit_v2.png, id=2994, 920.43875pt x 1433.355pt>
+File: img/logic_unit_v2.png Graphic file (type png)
+<use img/logic_unit_v2.png>
+Package pdftex.def Info: img/logic_unit_v2.png  used on input line 426.
+(pdftex.def)             Requested size: 58.34763pt x 90.853pt.
+
+
+[173 <./img/logic_unit_v1.png> <./img/logic_unit_v2.png>]
+<img/logic_unit_v3.png, id=3005, 6077.70625pt x 1637.11626pt>
+File: img/logic_unit_v3.png Graphic file (type png)
+<use img/logic_unit_v3.png>
+Package pdftex.def Info: img/logic_unit_v3.png  used on input line 445.
+(pdftex.def)             Requested size: 389.0pt x 104.76758pt.
+
+
+[174 <./img/logic_unit_v3.png>]
+<img/minsky_perceptron_predicate_1.png, id=3016, 578.16pt x 158.09062pt>
+File: img/minsky_perceptron_predicate_1.png Graphic file (type png)
+<use img/minsky_perceptron_predicate_1.png>
+Package pdftex.def Info: img/minsky_perceptron_predicate_1.png  used on input line 468.
+(pdftex.def)             Requested size: 311.20119pt x 85.09265pt.
+<img/minsky_perceptron_predicate_2.png, id=3021, 658.71094pt x 173.89969pt>
+File: img/minsky_perceptron_predicate_2.png Graphic file (type png)
+<use img/minsky_perceptron_predicate_2.png>
+Package pdftex.def Info: img/minsky_perceptron_predicate_2.png  used on input line 481.
+(pdftex.def)             Requested size: 311.20119pt x 82.15741pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.504     A
+            set $X$ fails to be convex if and only if there exists three poi...
+
+[175 <./img/minsky_perceptron_predicate_1.png> <./img/minsky_perceptron_predicate_2.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.515     A
+            predicate $\psi$ is \textbf{conjunctively local} of order $k$ if...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.532     L
+           et $\Phi = \{\varphi_{1},\dots,\varphi_{n}\}$ be a family of pred...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.539     A
+            \textbf{perceptron} is then a device capable of computing all pr...
+
+[176])
+
+[177]
+\openout2 = `content/theory_main/chaptert1.aux'.
+
+ (content/theory_main/chaptert1.tex
+
+[178
+
+
+
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22     W
+          e say an object $A$ is artificial only if it is not natural, or ra...
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[179
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26     A
+           \textbf{construct} $U$, subjected to a system $S$ is called \text...
+
+[180]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[181])
+
+[182]
+\openout2 = `content/theory_main/chaptert2.aux'.
+
+ (content/theory_main/chaptert2.tex
+pdfTeX warning (ext4): destination with the same identifier (name{note.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 F
+      rom such, we can conclude that, we have to have some classification th...
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20     I
+          n the construction of an automated, artificial intelligence constr...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26     G
+          iven the neural network formalism. Define a construct $x$. Then $x...
+
+[183
+
+
+
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32     G
+          iven the neural network formalism. Then, for $x\in \mathcal{N}$, w...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40     G
+          iven the \textit{neural network formalism}. Then, we define a \tex...
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 60.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68     A
+          n abstract neuron $A$  can be dissected into three most important ...
+
+[184] (content/c2fig1.tex)
+
+[185]
+
+[186])
+
+[187]
+
+[188
+
+
+
+
+]
+
+[189]
+
+[190]
+\openout2 = `content/draft/c1_research.aux'.
+
+ (content/draft/c1_research.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[191
+
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22     F
+          or the expected loss of any given hypothesis $h$, the bias $\mathc...
+<img/bias-variance_1.png, id=3140, 396.7322pt x 391.4625pt>
+File: img/bias-variance_1.png Graphic file (type png)
+<use img/bias-variance_1.png>
+Package pdftex.def Info: img/bias-variance_1.png  used on input line 43.
+(pdftex.def)             Requested size: 124.47856pt x 122.82153pt.
+<img/biasvariance_2.png, id=3141, 507.95486pt x 319.02043pt>
+File: img/biasvariance_2.png Graphic file (type png)
+<use img/biasvariance_2.png>
+Package pdftex.def Info: img/biasvariance_2.png  used on input line 49.
+(pdftex.def)             Requested size: 155.59763pt x 97.72215pt.
+
+
+[192 <./img/bias-variance_1.png> <./img/biasvariance_2.png>]
+<pdf/u-shaped.pdf, id=3154, 114.32813pt x 75.23106pt>
+File: pdf/u-shaped.pdf Graphic file (type pdf)
+<use pdf/u-shaped.pdf>
+Package pdftex.def Info: pdf/u-shaped.pdf  used on input line 61.
+(pdftex.def)             Requested size: 136.3173pt x 89.69635pt.
+<pdf/doubledescent.pdf, id=3155, 203.12387pt x 75.23106pt>
+File: pdf/doubledescent.pdf Graphic file (type pdf)
+<use pdf/doubledescent.pdf>
+Package pdftex.def Info: pdf/doubledescent.pdf  used on input line 62.
+(pdftex.def)             Requested size: 242.19151pt x 89.69635pt.
+
+Overfull \hbox (13.50885pt too wide) in paragraph at lines 60--68
+ [][] 
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.80     T
+          he RFF model family $\cHN$ with $N$ (complex-valued) parameters co...
+
+[193 <./pdf/u-shaped.pdf> <./pdf/doubledescent.pdf>]
+<img/RFFDD.png, id=3214, 626.34pt x 526.21594pt>
+File: img/RFFDD.png Graphic file (type png)
+<use img/RFFDD.png>
+Package pdftex.def Info: img/RFFDD.png  used on input line 94.
+(pdftex.def)             Requested size: 311.20119pt x 261.46129pt.
+<img/decisionDD.png, id=3215, 632.3625pt x 532.99126pt>
+File: img/decisionDD.png Graphic file (type png)
+<use img/decisionDD.png>
+Package pdftex.def Info: img/decisionDD.png  used on input line 102.
+(pdftex.def)             Requested size: 311.20119pt x 262.29846pt.
+<img/DSDD.png, id=3216, 608.2725pt x 482.55281pt>
+File: img/DSDD.png Graphic file (type png)
+<use img/DSDD.png>
+Package pdftex.def Info: img/DSDD.png  used on input line 106.
+(pdftex.def)             Requested size: 311.20119pt x 246.88652pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[194 <./img/RFFDD.png>]
+<img/errorvscomplexity.png, id=3227, 986.7264pt x 263.5446pt>
+File: img/errorvscomplexity.png Graphic file (type png)
+<use img/errorvscomplexity.png>
+Package pdftex.def Info: img/errorvscomplexity.png  used on input line 119.
+(pdftex.def)             Requested size: 408.45119pt x 109.09149pt.
+
+Overfull \hbox (19.45119pt too wide) in paragraph at lines 119--134
+ [][] 
+ []
+
+
+
+[195 <./img/decisionDD.png> <./img/DSDD.png>]
+<img/Intro-ocean-test.png, id=3240, 885.0666pt x 493.3632pt>
+File: img/Intro-ocean-test.png Graphic file (type png)
+<use img/Intro-ocean-test.png>
+Package pdftex.def Info: img/Intro-ocean-test.png  used on input line 142.
+(pdftex.def)             Requested size: 199.16544pt x 111.01698pt.
+<img/Rn-cifar10-p15-adam-aug-train.png, id=3241, 869.1672pt x 493.3632pt>
+File: img/Rn-cifar10-p15-adam-aug-train.png Graphic file (type png)
+<use img/Rn-cifar10-p15-adam-aug-train.png>
+Package pdftex.def Info: img/Rn-cifar10-p15-adam-aug-train.png  used on input line 146.
+(pdftex.def)             Requested size: 189.83456pt x 107.74979pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.163 T
+       he \emph{Effective Model Complexity} (EMC) of a training procedure $\...
+pdfTeX warning (ext4): destination with the same identifier (name{hypothesis.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.175 F
+       or any natural data distribution $\cD$, neural-network-based training...
+
+[196 <./img/Intro-ocean-test.png> <./img/Rn-cifar10-p15-adam-aug-train.png> <./img/errorvscomplexity.png>]
+
+[197]
+Overfull \hbox (28.35559pt too wide) detected at line 238
+[]
+ []
+
+
+Overfull \hbox (15.0pt too wide) detected at line 238
+[]
+ []
+
+
+Underfull \vbox (badness 5008) has occurred while \output is active []
+
+
+
+[198]
+
+[199]
+
+[200]
+pdfTeX warning (ext4): destination with the same identifier (name{conjecture.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.271     T
+           he learning problem can be considered a one-way description-repre...
+pdfTeX warning (ext4): destination with the same identifier (name{conjecture.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.274     U
+           nder deep learning structure, one assumes that every possible con...
+
+[201]
+
+[202]
+Package hyperref Info: bookmark level for unknown assume defaults to 0 on input line 305.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.309     F
+           or a system and its object, an object's \textbf{representation sc...
+
+[203]
+pdfTeX warning (ext4): destination with the same identifier (name{note.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.343     I
+           t is sufficient to note here that the representation scheme has i...
+
+[204]
+<img/representation_description_scheme.png, id=3319, 726.715pt x 582.175pt>
+File: img/representation_description_scheme.png Graphic file (type png)
+<use img/representation_description_scheme.png>
+Package pdftex.def Info: img/representation_description_scheme.png  used on input line 353.
+(pdftex.def)             Requested size: 233.40237pt x 186.97493pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[205]
+
+[206 <./img/representation_description_scheme.png>]
+Overfull \hbox (23.37573pt too wide) in paragraph at lines 382--383
+[]\T1/ETbb-TLF/regular/n/10 Suppose of a re-gres-sion prob-lem to con-struct a hy-poth-e-sis func-tion $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T1/ETbb-TLF/regular/n/10 from $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]; [] ; x[]; y[]\OT1/cmr/m/n/10 )$
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.399     S
+           uppsoe the model $f(x;\mathcal{D})$ for the data $\mathcal{D}=(x_...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.412         A
+                \textbf{parametric model} is one that can be parameterized b...
+
+[207
+
+]
+
+[208]
+pdfTeX warning (ext4): destination with the same identifier (name{conjecture.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.464     B
+           ias-variance can be identified, under several contexts, to mean t...
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.472     L
+           et $A$ be any learning algorithm for the task of binary classific...
+pdfTeX warning (ext4): destination with the same identifier (name{col.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.482     L
+           et $\mathcal{X}$ be an infinite domain, and let $\mathcal{H}$ be ...
+
+[209]
+
+[210]
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 492.
+
+
+[211
+
+]
+
+[212]
+
+[213]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.549     G
+           iven a hypothesis $h\in \mathcal{H}$, a target concept $c\in \mat...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.555     G
+           iven a hypothesis $h\in\mathcal{H}$, a target concept $c\in\mathc...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.563     W
+           e present the formal form of the empirical learning. Suppose we h...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.572     W
+           e present the formal form of the generalization learning problem....
+
+[214]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.585     F
+           or fixed $\mathcal{H}$, for fixed and sufficiently large $\mathca...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.603   G
+         iven a model $M[h,S]$, where $h\in\mathcal{H}$ and $S$ is the assoc...
+
+[215]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.612   G
+         iven a model $M[h,S]$, where $h\in\mathcal{H}$ and $S$ is the assoc...
+
+[216]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.640     S
+           uppose the model $f(x;\mathcal{D})$ for the data $\mathcal{D}=(x_...
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.665     F
+           or the expected loss of any given hypothesis $h$, the bias $\math...
+
+[217]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.679     L
+           et $A$ be any learning algorithm for the task of binary classific...
+
+[218]
+
+[219]
+
+[220]
+
+[221
+
+]
+
+[222]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.797     G
+           iven a graph $G(V,E,\psi_{E})$ for $\psi_{E}$ the edge proprietar...
+Underfull \vbox (badness 3735) has occurred while \output is active []
+
+
+
+[223
+
+]
+
+[224]
+<img/What.png, id=3654, 738.3585pt x 351.714pt>
+File: img/What.png Graphic file (type png)
+<use img/What.png>
+Package pdftex.def Info: img/What.png  used on input line 831.
+(pdftex.def)             Requested size: 311.20119pt x 148.23944pt.
+
+
+[225 <./img/What.png>])
+
+[226
+
+]
+\openout2 = `content/draft/c2_research.aux'.
+
+ (content/draft/c2_research.tex
+
+[227
+
+
+
+
+]
+<img/0925_rosenblatt4.jpg, id=3702, 903.375pt x 538.26094pt>
+File: img/0925_rosenblatt4.jpg Graphic file (type jpg)
+<use img/0925_rosenblatt4.jpg>
+Package pdftex.def Info: img/0925_rosenblatt4.jpg  used on input line 32.
+(pdftex.def)             Requested size: 155.59763pt x 92.71048pt.
+<img/A_unit_receptors.png, id=3703, 792.71156pt x 282.30469pt>
+File: img/A_unit_receptors.png Graphic file (type png)
+<use img/A_unit_receptors.png>
+Package pdftex.def Info: img/A_unit_receptors.png  used on input line 38.
+(pdftex.def)             Requested size: 171.15833pt x 60.95277pt.
+
+Overfull \hbox (15.5607pt too wide) in paragraph at lines 38--39
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53   A
+         \textit{perceptron} (or linear classifier) is a function \begin{equ...
+
+[228]
+
+[229 <./img/0925_rosenblatt4.jpg> <./img/A_unit_receptors.png>])
+
+[230]
+
+[231
+
+
+
+
+]
+
+[232] (main.ind
+
+
+
+[233
+
+
+
+]
+
+
+
+[234
+
+]) (appendix/appendix2.tex
+<img/hardlim1.png, id=3831, 568.1225pt x 430.60875pt>
+File: img/hardlim1.png Graphic file (type png)
+<use img/hardlim1.png>
+Package pdftex.def Info: img/hardlim1.png  used on input line 16.
+(pdftex.def)             Requested size: 194.5pt x 147.42346pt.
+<img/hardlim3.png, id=3832, 568.1225pt x 430.60875pt>
+File: img/hardlim3.png Graphic file (type png)
+<use img/hardlim3.png>
+Package pdftex.def Info: img/hardlim3.png  used on input line 29.
+(pdftex.def)             Requested size: 194.5pt x 147.42346pt.
+
+
+[235
+
+
+ <./img/hardlim1.png>]
+<img/symhardlim.png, id=3840, 585.18625pt x 430.60875pt>
+File: img/symhardlim.png Graphic file (type png)
+<use img/symhardlim.png>
+Package pdftex.def Info: img/symhardlim.png  used on input line 42.
+(pdftex.def)             Requested size: 194.5pt x 143.11975pt.
+
+
+[236 <./img/hardlim3.png>]
+<img/saturatinglin.png, id=3849, 568.1225pt x 430.60875pt>
+File: img/saturatinglin.png Graphic file (type png)
+<use img/saturatinglin.png>
+Package pdftex.def Info: img/saturatinglin.png  used on input line 77.
+(pdftex.def)             Requested size: 194.5pt x 147.42346pt.
+<img/symsatlins.png, id=3850, 591.20876pt x 430.60875pt>
+File: img/symsatlins.png Graphic file (type png)
+<use img/symsatlins.png>
+Package pdftex.def Info: img/symsatlins.png  used on input line 82.
+(pdftex.def)             Requested size: 194.5pt x 141.66109pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/sigmoid.png, id=3851, 568.1225pt x 430.60875pt>
+File: img/sigmoid.png Graphic file (type png)
+<use img/sigmoid.png>
+Package pdftex.def Info: img/sigmoid.png  used on input line 92.
+(pdftex.def)             Requested size: 194.5pt x 147.42346pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/logsigmoid.png, id=3852, 564.1075pt x 435.6275pt>
+File: img/logsigmoid.png Graphic file (type png)
+<use img/logsigmoid.png>
+Package pdftex.def Info: img/logsigmoid.png  used on input line 102.
+(pdftex.def)             Requested size: 194.5pt x 150.19858pt.
+
+
+[237 <./img/symhardlim.png> <./img/saturatinglin.png>]
+Underfull \vbox (badness 1009) has occurred while \output is active []
+
+
+
+[238 <./img/symsatlins.png> <./img/sigmoid.png> <./img/logsigmoid.png>]
+<img/tansig.png, id=3865, 582.175pt x 430.60875pt>
+File: img/tansig.png Graphic file (type png)
+<use img/tansig.png>
+Package pdftex.def Info: img/tansig.png  used on input line 116.
+(pdftex.def)             Requested size: 194.5pt x 143.86223pt.
+) (main.bbl
+
+[239 <./img/tansig.png>]
+
+[240
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+[]\T1/ETbb-TLF/regular/n/9 [PDF] A Unifeid Bias-Variance De-com-po-si-tion and its Ap-pli-ca-tions | Se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+\T1/ETbb-TLF/regular/n/9 man-tic Scholar, c.  URL [][]$\T1/cmtt/m/n/9 https : / / www . semanticscholar . org /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+\T1/cmtt/m/n/9 paper / A-[]Unifeid-[]Bias-[]Variance-[]Decomposition-[]and-[]its-[]Domingos /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--30
+[]\T1/ETbb-TLF/regular/n/9 [PDF] A Unifeid Bias-Variance De-com-po-si-tion and its Ap-pli-ca-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--30
+\T1/ETbb-TLF/regular/n/9 | Se-man-tic Scholar.  URL [][]$\T1/cmtt/m/n/9 https : / / www . semanticscholar . org /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--30
+\T1/cmtt/m/n/9 paper / A-[]Unifeid-[]Bias-[]Variance-[]Decomposition-[]and-[]its-[]Domingos /
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 44--53
+\T1/ETbb-TLF/regular/n/9 David Hecker, ed-i-tors, \T1/ETbb-TLF/regular/it/9 El-e-men-tary Lin-ear Al-ge-bra (Fourth Edi-tion)\T1/ETbb-TLF/regular/n/9 , pages 1--77. Aca-demic Press,
+ []
+
+
+
+[241]
+Underfull \hbox (badness 10000) in paragraph at lines 184--189
+[]\T1/ETbb-TLF/regular/n/9 Pedro M. Domin-gos.  A Unifeid Bias-Variance De-com-po-si-tion and its Ap-pli-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--189
+\T1/ETbb-TLF/regular/n/9 tions.  In \T1/ETbb-TLF/regular/it/9 Se-man-tic Scholar\T1/ETbb-TLF/regular/n/9 , June 2000b.  URL [][]$\T1/cmtt/m/n/9 https : / / www . semanticscholar .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--189
+\T1/cmtt/m/n/9 org / paper / A-[]Unifeid-[]Bias-[]Variance-[]Decomposition-[]and-[]its-[]Domingos /
+ []
+
+
+Underfull \hbox (badness 3579) in paragraph at lines 208--211
+[]\T1/ETbb-TLF/regular/n/9 Scott Fort-mann.  Un-der-stand-ing the Bias-Variance Trade-off, 2012.  URL [][]$\T1/cmtt/m/n/9 https : / / scott .
+ []
+
+
+
+[242]
+Underfull \hbox (badness 4967) in paragraph at lines 219--227
+[]\T1/ETbb-TLF/regular/n/9 Joseph von Ger-lach.  Ue-ber die struc-tur der grauen sub-stanz des men-schlichen grosshirns.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--227
+\T1/ETbb-TLF/regular/n/9 vor-l鋟-fige mitheilung.  \T1/ETbb-TLF/regular/it/9 Cen-tral-blatt f黵 die medi-zinis-chen Wis-senschaften\T1/ETbb-TLF/regular/n/9 , 10:273--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--227
+\T1/ETbb-TLF/regular/n/9 288, 1872.  URL [][]$\T1/cmtt/m/n/9 https : / / www . booklooker . de / B % C3 % BCcher / Joseph-[]Gerlach %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--227
+\T1/cmtt/m/n/9 2BUeber-[]die-[]Structur-[]der-[]grauen-[]Substanz-[]des-[]menschlichen-[]Grosshirns-[]Vorl %
+ []
+
+LaTeX Font Info:    Font shape `TS1/ETbb-TLF/regular/n' will be
+(Font)              scaled to size 9.0pt on input line 284.
+
+
+[243]
+
+[244]
+
+[245])
+
+[246]
+\tf@toc=\write7
+\openout7 = `main.toc'.
+
+\tf@lof=\write8
+\openout8 = `main.lof'.
+
+ (main.aux (content/introduction.aux) (content/chapter1.aux) (content/math/mathc1.aux) (content/math/mathc2.aux) (content/math/mathc3.aux) (content/math/mathc4.aux) (content/math/mathc5.aux) (content/chapter2.aux) (content/chapter4.aux) (content/chapter5.aux) (content/theory_main/chaptert1.aux) (content/theory_main/chaptert2.aux) (content/draft/c1_research.aux) (content/draft/c2_research.aux))
+ ***********
+LaTeX2e <2025-06-01>
+L3 programming layer <2020/03/25>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 631A237D2B5E9F8A05403DDD6289688A;38456.
+ ) 
+Here is how much of TeX's memory you used:
+ 73390 strings out of 468187
+ 1786910 string characters out of 5448667
+ 2662191 words of memory out of 5000000
+ 99496 multiletter control sequences out of 15000+600000
+ 879435 words of font info for 194 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 112i,25n,130p,2760b,1106s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/dpi600\bbm10.pk><D:/MikTek/fonts/type1/public/etbb/ETbb-Bold.pfb><D:/MikTek/fonts/type1/public/etbb/ETbb-BoldItalic.pfb><D:/MikTek/fonts/type1/public/etbb/ETbb-Italic.pfb><D:/MikTek/fonts/type1/public/etbb/ETbb-Regular.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmib10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmss9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy9.pfb><D:/MikTek/fonts/type1/public/amsfonts/euler/eufm10.pfb><D:/MikTek/fonts/type1/public/amsfonts/euler/eufm7.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msam7.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msbm7.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss0900.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss1000.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss1095.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss1200.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss1728.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss2074.pfb><D:/MikTek/fonts/type1/public/cm-super/sftt0800.pfb><D:/MikTek/fonts/type1/public/cm-super/sftt0900.pfb><D:/MikTek/fonts/type1/public/cm-super/sftt1000.pfb><D:/MikTek/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on main.pdf (260 pages, 14469868 bytes).
+PDF statistics:
+ 4533 PDF objects out of 5155 (max. 8388607)
+ 1334 named destinations out of 1440 (max. 500000)
+ 2040 words of extra memory for PDF output out of 10000 (max. 10000000)
+

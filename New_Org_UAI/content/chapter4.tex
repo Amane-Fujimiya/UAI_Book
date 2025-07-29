@@ -1,0 +1,1256 @@
+\chapter{Classical learning theory}
+What we have done, what we have been investigated, including mathematical modelling, can be said to be the \textit{static construction}. What this means is that, albeit intrinsic of collecting and transforming resources, information, or any given kind of input - given the black box, in-out system treatment. This comes as a cost - the model requires human touches to even conform to certain structures, knowledge, tasks, and utilities. Mitigate this issue requires we to come up with a notion that automates the acquisition and relative understanding (butchering the word understanding, since our model currently does not understand \textit{anything}, strictly speaking), and it is called (and found) as the \textit{learning theory} of machines. 
+
+\section{Before the learning theory}
+
+Before the introduction of learning theory as a practical and theoretical process, functional models, usually mathematical models, mostly relies on acute, specific solution, correct formulation of given form, or rather being done solely in a static sense. What this means must be followed through by historic development to understand why it is called static, and subsequently what is then considered dynamic. 
+
+Mainly mathematics (but not restricted to such, sometimes usual construction is alright) has been used to formalize, simplify, express, and encapsulate the fraction of reality through the language of quantification, to make \textbf{models} that befit the knowledge and the respective fraction observed. Simply said, considering mathematics as the foremost language of abstraction (removing physical realization), quantification (give us the notion of quantity), and the build up of structures within said language, it is fundamentally useful in decoding and expressing reality in the way that makes it understandable, interpretable, logical (the word logical brings around the roundabout), easy to quantify components, actions, factors, objects, and perhaps many further benefits of using such language. Thus, one of the most fundamental example of using the language of mathematics to formalize and quantize reality to be a functional construct, is physics. And its development throughout history also says plenty bit on what is static. 
+
+A theory is often considered a static construct, by virtue of how it is formed. It begins by setting up axioms, assumptions, simplification, the target of the theory, and development on which it is built on upon. Further development will follow through the main foundation upward, without many changes to the theory. If one is to modify the foundation, it would mean usually to create new theory on said basis. This process of transition is typically thought in philosophy as the \textit{negation of the negation}, or in propositional logic, double negation. Fortunately, the transition is perhaps, if not totally very natural of natural science and overall interpretation of the world that we often use. We can attribute this to the fact that we do not understand the world in its entirety, Furthermore, mathematical modelling on itself is not perfect, and cannot capture intrinsically every given thing available, for specific methods - basically, our hands are tied, and is not perfect either way. That is why there must be, and would be this type of changes throughout the theory itself. 
+
+Building a structure is the same, and so much for a system. 
+
+Most of the general model construction and the way that artificial intelligence was created (under the umbrella term of automated thinking machine, artificial is one, and machine learner later on was subjected to be the equivalent, more \textit{advanced} development) belongs to either the specific type of inference parameterized model, or symbolic model (AI) - which utilizes the propositional logic $\phi$ of the truth functionality $\mathcal{V}^{n}\to \mathcal{V}$. Under said notion, precursor AI, for even specialized task, was conducted in the way that it is designed by experts, for particular problem of knowledge implementation, and then use logic to deduce from said logic pool reasonable course of action, or rationalization. This is partially because of the computational limit of the time - at the time of 1950s to 1970s, there is no Moore's law that gives you 50,000,000,000 transistors counts, like if that is ever possible at that time. 
+
+One major theme of the disadvantage of the phenomenological approach as we have been investigating in the classical mathematical modelling chapter, is the fact that it is sensitive to changes. That is, given the holding parameters $k$ for the Boole's coefficient of a spring under stress, if you somehow increase it, by for example, $2k$, then the entire phenomenological model is rendered useless. Of course, one can then simply expand the system to accommodate the various setting of $k$, but that seems pretty troublesome at the time and of the setting, in comparison to the mechanistic modelling approach. Without a somewhat dynamic process, and a fairly primitive notion of learning, a phenomenological sometimes might be astronomically difficult to handle, based on the immense dimensionality requirement of the parameters used in relation to the system.
+
+Afterward, it is perceived that expert inputs and traditional knowledge acquisition and their form as logical proposition is not adequate - in fact, it is unable to be scaled up. Yes, it is good - even by today's standard - but given a larger, more comprehensive and more complex problem, the system break down to be unsustainable and unattainable. Thereby, we need something else. Something of the quality that makes the model \textit{learn for itself}, rather than waiting for developer's implementation and expert input. That comes of as, eventually not so surprising, an ability that human possesses: \textit{learning}. 
+
+In another sense, learning can also be conjured to be the action of \textit{computational reasoning with uncertainty}, as opposed to the general notion of artificial agent, a type of model which makes use of, as previously mentioned, logics and relational discrete spaces. We would look into this aspect later, however, it is also suggested to note that, learning can also still happen, within the logical region of a model. By that, we think of the internal space and external space - the classical definition for learning theory and its distinction in such case is typically the classification between \textit{external-dependent reasoning} and \textit{internal-dependent reasoning} (which depends only on the propositional space). 
+
+\section{Classical theory}
+
+The learning theory started from the early 1970s. By the sense of classical, we do not mean by, as currently called, of non-deep learning theory, but rather the old treatment of theoretical boundaries and rigorous formalization of the concept itself. We will begin by introducing the formal setup of learning, and then, go about developing it until we can even reach the \textit{Probably Approximately Correct} learning (PAC) and Vapnik-Chervonenkis theory of maximal dimension. 
+
+The nature of the learning theory can also be brought back from certain proposition or argument, most probably, the fact that it is mostly from the black-box interpretation - hence making almost all model being phenomenological by default. An interesting aspect of such, though, is the learning process itself, or we call it so. 
+\subsection{Principles}
+
+Classical learning theory studies the process of learning. What we are studying the learning action for? Before we even consider the learning action of artificial intelligence, we need to have a simplified idea about the problem setting. Generally speaking, from the chapter of mathematical modelling, there exists the description of a scientist changing his hypothesis to match the perhaps underlying system which exhibits certain kind of behaviour. This process is conducted by first laying out possible hypothesis, then testing it, then going back to change the hypothesis as according to experimental verification. This proceeds until the hypothesis's structure reaches its limit, and either reaches the target goal, or not, hence guaranteeing a change in structural hypothesis set. Our learning model is tasked to \textit{automatically resolve the hypothesize dynamics}, by itself, up to certain restriction. To do this, most of the definition will be of concern of the black-box, mathematical model of one-directional, functional relationship in the observation set (dataset in which the underlying target lies). 
+
+It is notable to remind that \textit{learning} is perhaps a quantitative action that can be added to the structure of the artificial construct (which have been previously defined in previous chapters), hence additional structure embedded on it. Thereby, our theory if a simplification of such concept, to the most foundational interpretation of the process of learning, even though at this point the notion of learning through this theory might still not be able to be considered as learning. However, we will justify it as the process of which enables a specific \textbf{action} to be conducted, based on the observations or samples possible. In such sense, learning is adapting the internal structure to target structures outside its own. 
+%\begin{itemize}[noitemsep,topsep=1pt]
+%    \item A set $X$. 
+%    \item A $\sigma$-algebra $\mathcal{S}$ on $X$. 
+%    \item A family $\mathcal{P}$ of probability measure on $(X,\mathcal{S})$ (which is quite optional, give it or take). 
+%    \item A subset $\mathcal{C}\subseteq \mathcal{S}$ called the \textit{concept class}, or else a family $\mathcal{F}$ of measurable %mapping $X\to [a,b]$ of closed set on the Borel $\sigma$-algebra, called the \textit{function class}. Usually, $[a,b]=[0,1]$. 
+%\end{itemize}
+%
+%\begin{note}[The apparent role of the ingredients]
+%    Perhaps it is wise to include, or at least explain the concept and requirement for all the ingredient listed of the learning theory. %The first ingredient, the set $X$ is simple enough. As we will later see, it is the \textit{setting space} where our static %conditional system is recognized, all for the purpose of specifying what things can happen, and how many factors we are considering %(this is discussed in the mathematical modelling chapter, so maybe it is recommended to check it out before). 
+%
+%    A set by itself is perhaps nothing. Indeed, usually, in mathematics, it is customary to specify a structure on which the set itself %is usable for any given metric. Generally, this falls off to a specific interpretation we take on of the system itself. And in %machine learning, we usually want a probabilistic measure accompanies it, for the probabilistic interpretation to make sense. This %is reflected in the requirement of the $\sigma$-algebra $\mathcal{S}$ on the set $X$. This embedded a $\sigma$-algebra for the %notion of size to the set $X$. Why specifying on $X$ the concept of size and probability? Usually, the answer for this question is %pretty mundane. In the realizable case, where there exists the priori knowledge that the target concept (for example, the pattern of %the exam question for given year-by-year basis) is restricted, or at least partially known to be in certain space. 
+%    
+%    Then, the uncertainty happens in the factor half of the observations - in which $x\in X$ lies. It also effectively captures the %relative distribution in which observations are captured. For example, if an observation space is representative, then the %population itself will have outliers, edge cases, and dense region where most of the occurrence is observed. Formulating this %requires the notion of probabilistic size on $X$. This is for the probability measure $\mathcal{P}(X,\mathcal{S})$. Additionally, %because of the shape, or nature of $c\in\mathcal{C}$, each resultant target concept will be realized to belong to $\mathbb{E}[\mathbb%{P}[y\mid x]]$, that is, the expected value (weighted average) for the probability that certain $y$ occurs, given $x$. Hence, we see %the necessity of this happening. 
+%\end{note}
+
+\subsection{Concept and hypothesis}
+
+In simplicity, within the principle of working, our model is called the \textbf{hypothesis} $h\in \mathcal{H}$ of certain \textbf{hypothesis class} $\mathcal{H}$. The other ingredient of the learning theory includes: 
+
+The concept class versus function class can be fully incorporated into one as $\mathcal{C}$, if one is to assume the form of any given concept as $c: X\to Y$ for another set $Y$ which can lies in the sigma-algebra $\mathcal{S}$, or the measurable mapping as $f$. 
+
+The task for the hypothesis, and the designer (us) is to figure out how to best approximate $c$, assuming arbitrary notion of knowledge, prior information, such that $h$ correctly \textit{mimic} the behaviour and phenomenon observed by $c$. We call this loosely as the \textbf{learning problem}. Naturally, learning problem is a statistical problem, since their setting is fully observational. 
+
+We are given our information of the system by the form of a dataset $\mathcal{S}$, called \textit{observation}. We first define the \textbf{observations}. The set of observation $\mathcal{S}$ is presentable in the space of 2-tuple $(\mathcal{X},\mathcal{Y})\subset(\mathbb{R}^{d},\mathbb{R}^{p})$. Usually, hence, our data will be realized in the Borel $\sigma$-algebra $\mathcal{B}$. The full dataset is \textit{discrete}, contain of $n$ instances of observations, and is denoted by \begin{equation}
+    \mathcal{S} = \{ (x_1,y_1),\dots(x_n,y_n) \} \subset (\mathcal{X}\times \mathcal{Y})^n 
+\end{equation}
+Here, $\mathcal{X}$ is called the \textit{ground} or input space, and $\mathcal{Y}$ is called the \textit{target} or output space. By default, in general, the input space $\mathcal{X}$ is supposed to follow some special distribution $\mathcal{D}$. This treatment branches from the ambiguity of the origin of $x\in\mathcal{X}$ for elements of the input space, that is, $x\sim \mathcal{D}$ by a random sampling process. This assumption also ensures relative population representability. By this, we mean that the observation captured fully describe what was happening with the entire concept - even including the pathological and outlier. We also assume that this sample of observation is \textbf{identically and independently sampled} of a given sampling process. 
+
+The \textbf{learning problem} divides the act, with respect to configuration the chain of component into two parts. The first one is for any measurable space of the model, after defining the system, the dependency, and the question, we have to gain the \textit{accuracy measure}, or \textit{phenomenological aberration} of a given model, and for the respective problem. Depends on the specific requirement of the problem, the measure can change, but, they have the same landscape. The second one requires the development of a \textit{scheme} to dynamically move the given hypothesis, under fixed description, into a supposed optimal point in which under specific threshold, our model is 'perfect' for the concept. That is, \textit{mimic $c$ by $h$ in a perfect way}. It is perceived, though, that the objective of learning the concept perfectly is impossible. Hence, we will often opt for the latter half of approximating it to a given threshold $\theta$. we will eventually prove this later on (Seriously). 
+
+Setting in the second part, most of our problem is concerned with the issue of predicting the unseen states of being, or rather, the \textit{generalization problem}. This then perhaps, classify the problem of statistical learning theory to \textit{mostly} predictive, or rather, we are concerned of prediction model. This is subsidized by the inner \textit{estimation problem} for an estimation model. What is the difference between the two? First, the distinction comes from the trivial on-sight fact that estimation problems and their models, comes of as a closed-form working space. That is, they work on a closed space of what is observed, and extract properties, determine statistically the behaviours, characteristic of that system alone and only. In other word, an estimator \textit{uses data} to guess and learn about the true state, and properties of the setting (usually also said to be the \textit{true state of nature}). However, we notice a discrepancy - not always will we get the entirety of the problem that we are interested at. For some reason, for example, our data is only quite a portion, lacking a bit valley, a bit of patterns here and there by the blank spaces where observations left behind. Then, what if we can generalize pass that? What if we also want to somewhat estimate correctly for unseen portion of our concept spaces? This is called the predicting problem we have said earlier, in which we use the estimation already established, and add some flavours into what can possibly constitute a larger view - a more entire view of the learning concept. From a statistical perspective, the model itself in statistical learning theory, would have to both estimate the intrinsic empirical distribution and concept $(c_{\mathcal{S}},\mathcal{D}_{\mathcal{S}})$, and then somehow, leaves room for generalization to the actual distribution and concept $(c,\mathcal{D})$, which is particularly of more interest than not. Secondly,\dots well I don't know (really\dots). Guess I have to wait until I gather more stuff, I guess. 
+
+If we recall the previous discussion on the informal section on machine learning, you will see that this is typically what's called the \textbf{supervised learning setting}. This is perhaps true for the classical learning theory, and the establishment of the theory as a whole. Consider unsupervised learning. Under the scope of unsupervised learning, the model essentially goes into a free-mode, where there exists no metric that is non-context enough for evaluating the theoretical form of the model. For a given density estimation model $\psi$, there can be many ways to 'think of evaluating it' on how well it groups objects together. This means there are not so much meaningful information can be extracted from examining the behaviour of the model, including its performance. Furthermore, since it is random as much as a random process, no conclusive bounds or theoretical theorem can be made on the maximal-minimal problem of a given model. Hence, most of the learning theory is concerned of supervised learning setting, because it is a controlled, closed, well-defined system of interest. 
+
+\subsection{Phenomenological aberration}
+
+The learning problem - which is most importantly described by the phase of \textit{phenomenological aberration} (or data-based replication) - is then formulated as followed. Given the machine learning model expressed a hypothesis $h$ of the hypothesis class $\mathcal{H}$, the learning theory aims for creating a procedure to learn either elements of the concept class $\mathcal{C}$ of all concepts $c: \mathcal{X}\to \mathcal{X}$, or the function class $\mathcal{F}$ of all functions $f: \mathcal{X}\to \mathcal{Y}$, which is usually set to $\{0,1\}$ or $[0,1]$. This distinction is trivial, hence, if it is clear, we will talk about the concept class $\mathcal{C}$ only as representative form. The learner $\mathcal{L}(h)$ consider the set of possible hypothesis $\mathcal{H}$, in which might not coincide with $\mathcal{C}$. It receives a partial image of sample $S=(x_{1},\dots,x_{2},\dots,x_n)$ drawn i.i.d. according to $\mathcal{D}$ as well as the label $(c(x_1),\dots,c(x_n))$. This constitutes the dataset $\mathcal{S}$, which are based on specific concept $c\in \mathcal{C}$ for the hypothesis to learn. The task is then to use (or \textit{extract}) meaningful information to select a hypothesis $h_{S}\in \mathcal{H}$ that accurately mimic $c$, with marginal error $\Theta$. The notation $h_{S}$ stands for all hypothesis that can be inferred from the range of the dataset (the first argument, $\mathcal{X}$). 
+
+The marginal error $\Theta$ is considered of two parameters, the empirical error $\hat{R}(h)$ and the generalization error $R(h)$. This can be justified as following. 
+
+To compare between $h$ and $c$, we use the metric provided by $\mathcal{Y}$. Then, define certain type of function called \textit{loss function}, also called objective, error function, denoted by $\ell\{h,c\}$ such that it measures the difference between $h$ and $c$. This measure is arbitrary, and we assume no form of it, aside from the fact that it also acts and return values on certain real subset of values. The following definitions provide us with the notion of \textit{empirical error} and \textit{generalization error}. Notice that one is empirical - indeed, since we only can work on certain fixture of $c$, i.e. the dataset provided, and the other one is generalized - meaning the true error toward the actual target concept $c\in\mathcal{C}$. 
+\index{empirical risk} 
+\begin{definition}[Empirical risk]
+    Given a hypothesis $h\in \mathcal{H}$, a target concept $c\in \mathcal{C}$, and a sample $S=(x_{1},\dots,x_{m})$. For some particular $\epsilon>0$, the \textbf{empirical error} or \textit{empirical risk} of $h$ is defined by\begin{equation}
+        \hat{R}_{S}(h) = \underset{x\in S\sim\mathcal{D}}{\mathbb{P}} [\ell\{h(x),c(x)\}\leq \epsilon] =\frac{1}{m} \sum_{i=1}^{m} \ell\{h(x_i),c(x_i)\}
+    \end{equation} 
+\end{definition}
+\index{generalization risk} Similarly, the generalization risk defined in the same fashion, but extending beyond the dataset $\mathcal{S}$. 
+\begin{definition}[Generalization risk]
+    Given a hypothesis $h\in\mathcal{H}$, a target concept $c\in\mathcal{C}$, and an underlying distribution $\mathcal{D}$ on $\mathcal{X}$. For some particular $\epsilon>0$, the generalization error or \textit{risk} of $h$ is defined by
+    \begin{equation}
+        R(h) = \underset{x\sim\mathcal{D}}{\mathbb{P}} [\ell\{h(x),c(x)\}\leq \epsilon] = \underset{x\sim\mathcal{D}}{\mathbb{E}}[\ell\{h(x),c(x)\}] = \int_{x\in \mathcal{D}} \ell\{h(x),c(x)\} \: dP(x)
+    \end{equation} 
+\end{definition}
+
+The notion of empirical and generalization error clearly indicates the issue of two concepts - one observable `component' concept $c'$ presented by the dataset, and the actual concept $c$ itself. Hence, we assume, of the universal $\mathcal{X}$ set belongs to $c$, there exists $\mathcal{X}_{c}$ and $\mathcal{X}_{c'}$, hence we have two distributions, for example, denoted by $\mathcal{D}_{c}$ and $\mathcal{D}_{c'}$. We have the following theorem:
+
+\begin{theorem}\label{thm:minimalNeu}
+    For fixed $\mathcal{H}$, for fixed and sufficiently large $\mathcal{S}$, and no observation errors, the empirical risk is the generalization risk: \begin{equation}
+        \underset{\mathcal{S}\sim \mathcal{D}^{m}}{\mathbb{E}}[\hat{R}_{\mathcal{S}}(h)]  = R(h)
+    \end{equation} 
+\end{theorem}
+\begin{proof}
+    By linearity of the expectation, and the fact that we assume the sample is given i.i.d., we can write: 
+\[
+\underset{S \sim \mathcal{D}^m}{\mathbb{E}}[\hat{R}_S(h)] 
+= \frac{1}{m} \sum_{i=1}^m 
+\underset{S \sim \mathcal{D}^m}{\mathbb{E}} 
+\left[ \mathbbm{1}_{h(x_i) \ne c(x_i)} \right] 
+= \frac{1}{m} \sum_{i=1}^m 
+\underset{S \sim \mathcal{D}^m}{\mathbb{E}} 
+\left[ \mathbbm{1}_{h(x) \ne c(x)} \right],
+\]
+for any \( x \) in sample \( S \). Thus,
+\[
+\underset{S \sim \mathcal{D}^m}{\mathbb{E}}[\hat{R}_S(h)] 
+= \underset{S \sim \mathcal{D}^m}{\mathbb{E}} 
+\left[ \mathbbm{1}_{h(x) \ne c(x)} \right] 
+= \underset{x \sim \mathcal{D}}{\mathbb{E}} 
+\left[ \mathbbm{1}_{h(x) \ne c(x)} \right] 
+= R(h).
+\]
+which yields the desired result. 
+\end{proof}
+
+This theorem specifies a problem in the underlying theory of data-based statistical learning. The question is as simple. In the statistical learning setting, one gain the dataset $(\mathcal{X},\mathcal{Y})$. Because we are using the \textit{black-box interpretation}, the concept that is supposed to be in $c: \mathcal{X}\to \mathcal{Y}$ is said to be governed by a probability distribution $\mathcal{P}$ on said data. Now, depends on the type that you want, it can either be \textbf{dense}, that is, there are infinitely many $x\in \mathcal{X}$ as the phase space, and the probability is on $y$, that is, $\mathcal{P}(Y)$. Or, you can remove the strictly dense assumption and get the probability $P(\mathcal{X},\mathcal{Y})$ of joint probability between the two instead. We know from the start that the dataset is not always representative, neither captures the entirety of the concept $c$. Hence, there must exist a particular $\mathcal{D}$ of true probability distribution that describes $c$. In a perfect world, we would not need to see $c$ as probability distribution - since in said perfect world, everything might as well be deterministic, but the best one can do is to be able to get close to the presumptions probability distribution of the event. Then, the question is, what is the \textit{inherent correlation} between $\mathcal{P}$ and $\mathcal{D}$? To answer this question, we might as well need some divergence metric to see their diverging property. This will eventually be the $\mathrm{KL}$-divergence measure, which we will discuss later. A disadvantage of $\mathrm{KL}$-divergence, however, is its inability to take into account the structural problem of the system, as well as its model. We might as well address this in our later section. 
+
+Using the above notion of generalization we can separate the learning problem into two goals - one to minimize $\hat{R}(h)$, and one to minimize $R(h)$. As we have been saying, and for Theorem \ref{thm:minimalNeu}, one of our main assumption, as well as a guarantee under uniform convergence, is the fact that we must have $\hat{R}(h)\approx R(h)$ for larger and larger dataset size, or the empirical space. Generally, this branches off to be two problems. 
+\begin{definition}[Empirical learning problem]
+    We present the formal form of the empirical learning. Suppose we have a \textit{target}, $c\in\mathcal{C}$, where $\mathcal{C}$ is an arbitrary concept class that captures targets of the same type. Suppose we are provided a set of observations $\mathcal{S}$. The problem is to use certain algorithm $\mathcal{A}$ using $\mathcal{S}$, to obtain a hypothesis $h^{*}$ for a fixed $\mathcal{H}$ such that: 
+    \begin{equation}\label{eq:lp1}
+        R(h^{*}) = \min_{h\in\mathcal{H}} \hat{R}(h) = \min_{h\in\mathcal{H}} \underset{x\sim\mathcal{D}, x\in \mathcal{S}}{\mathbb{E}}\:\ell\{h(x),c(x)\}
+    \end{equation} 
+\end{definition}
+
+The hypothesis $h^{*}$ is often called the \textit{empirical best}, for it being the minimal, finite hypothesis of the lowest loss evaluation on the entire observation space $\mathcal{S}$. There exists no certified assumption regarding whether $h^{*}$ aligns with the minimal generalization error.
+\begin{definition}[Generalization learning problem]
+    We present the formal form of the generalization learning problem. Suppose we have a \textit{target}, $c\in\mathcal{C}$, where $\mathcal{C}$ is an arbitrary concept class that captures targets of the same type. Suppose we are provided a set of observations $\mathcal{S}$. Supposed we have an algorithm $\mathcal{A}$ that for fixed hypothesis space $\mathcal{H}$, \ref{eq:lp1} holds true. The problem is to use certain algorithm $\mathcal{A}'$ such that, under limited availability, to obtain $\bm{h}$, satisfies: \begin{equation}
+        R(\bm{h}) = \min_{h\in \mathcal{H}} R(\bm{h}) \leq \{\epsilon\}, \quad \epsilon > 0 
+    \end{equation}
+    For a set of risk bounds $\epsilon$. If the setting is deterministic, then there exists $\epsilon=0$. 
+\end{definition}
+
+We can show that normally, the problem of empirical learning and generalization learning is not the same. That is, if one tries to solve the empirical learning problem to certain measure, then they will fail the generalization problem. This can be illustrated by figure \ref{fig:genvsemp_fig}. This problem between the disparity of the empirical and generalization target is what we often called as the \textit{Allegory of the cave}, as seen in previous chapter. Here, we risk being dependent ourselves on false hypothesis obtained by empirical data acquisition, but also have to aim for the general form of the target by itself, which is often assumed unobtainable or impossible to know of prior belief. Hence, either that we take a skewed representation of reality through empirical data, or we diverge from such in a manner that gets closer to the ground truth's concept. At least in this setting, it is then observed as above that empirical learning problem is a subproblem toward generalization problem - one have to solve the empirical learning problem before attempting the generalization one. We also want to introduce the term \textbf{data shape} and \textbf{concept shape} for data $\mathcal{S}\in c$ and the shape of $c$ by itself, to reflect this difference. 
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.6\textwidth]{pdf/figfig-crop.pdf}
+    \caption{An illustration of statistical learning theory on the evaluation of the risks and errors, during learning process. $c'$ is presented in the `orbital' vicinity around $c$, with its distance of certain metric define how 'accurate' the reconstruction from distribution can be. Of the hypothesis set $\mathcal{H}$, there exists the Bayes hypothesis $h_{B}$ and an arbitrary `random' hypothesis $h$, and their respective measure.}
+    \label{fig:genvsemp_fig}
+\end{figure}
+
+For the generalization problem's best model in a fixed $\mathcal{H}$, we have the notion of a \textbf{Bayes model}. %\index{Bayes model}
+\begin{definition}[Bayes risk]
+    Given a distribution $\mathcal{D}$, the Bayes error $R^{*}$ is defined as the infimum of the errors achieved by measurable functions $h:\mathcal{X}\to \mathcal{Y}$: 
+    \begin{equation}
+        R^{*}=\underset{h\in \mathcal{H}}{\mathrm{inf}}R(h)
+    \end{equation}
+\end{definition}
+\begin{definition}[Bayes model]
+    A hypothesis $h$ with $R(h)=R^{*}$ is called a \textit{Bayes hypothesis} or Bayes classifier, and is taken by \begin{equation}
+        \forall x\in \mathcal{X}, \quad h_{\mathrm{B}}=\underset{y\in \mathcal{Y}}{\mathrm{argmax}}\:\mathbb{P}[y\mid x]
+    \end{equation} 
+\end{definition}
+
+The Bayes model is understood to be the minimal of $R(h)$. And, by our observations (which will be proved later on), $\hat{R}(h)\neq R(h)$ in circumstances. We will later show a more generalized version of \ref{thm:minimalNeu}. 
+
+Overall, in the classical learning setting, we can dissect the problem into what constitute the following cleaner version of the setting, includes both the generalization learning and empirical learning problem. Again, under ideal condition, and ideal setup, the learning setting will have empirical learning and generalization learning to be on the same track. Later on, we would formalise what exactly on the same track means. 
+
+\begin{setting}
+    Given an op-space $\mathcal{X}\times\mathcal{Y}$, define the concept class $\mathcal{C}$ of all $c: \mathcal{P}(\mathcal{X})\to \mathcal{P}(\mathcal{Y})$ of all power set for both, where $\mathcal{X}\sim \mathcal{D}$ for some distribution $\mathcal{D}$ of the probabilistic assumption. The learning problem consists of defining a hypothesis class $\mathcal{H}$, for $h$ being an arbitrary hypothesis, either with specific architecture or not, and a learning algorithm $\mathcal{A}$, of a \textbf{learner} such that the following is acquired: 
+    \begin{itemize}
+        \item Set $\epsilon,\delta> 0$ be the error bound and the confidence measure (that is - the probability of failure) of $h$, for $\ell$ the evaluative measure of $\{h(x),c(x)\}$, define $\hat{R}(h)$ being the empirical risk of $h$ on the observation set $\mathcal{S}$ available. Then, the \textit{empirical learning problem} is tasked to find the hypothesis such that $\hat{R}(h) = \min_{h_{0}\in \mathcal{H}}\hat{R}(h_{0})\leq \epsilon$ for some arbitrary $h_{0}$, with confidence $1-\delta$. This $h$ is called the \textit{empirical best}. 
+        \item Similarly, define $R(h)$ the generalization error, assumed outside $\mathcal{S}$. Then, the \textit{generalization learning problem} is tasked to find the hypothesis such that $\hat{R}(h) = \min_{h_{0}\in \mathcal{H}}R(h_{0})\leq \epsilon$ for some arbitrary $h_{0}$, with confidence $1-\delta$. This $h$ is called the Bayes model. 
+        \item The generalization setting requires choosing the optimal point for both $h^{*}$ of the empirical best, and $h_{B}$ for Bayes hypothesis. 
+    \end{itemize} 
+\end{setting}
+To choose and to compare between the empirical best, and the Bayes hypothesis (generalization best), we need certain notions to compare the two, algorithm to choose and evaluate, and metric to determine how comparison should be performed, with both measurable. At best, we need to find the correlation between the subconcept and the actual target concept itself. 
+
+If we choose to interpret the learning model as it is, for a \textit{statistical interpretation}, then it is fair to say that what we are trying to do, is to guess the correlation between the distribution $\mathcal{D}$ of the dataset, and the distribution $\mathcal{P}$ of the entire concept, outside the dataset itself. By default, we can reasonably have that $\mathcal{D}\subset \mathcal{P}$. But, even for that assumption, there is still the question about the stretch and range of $\mathcal{D}$. As we have said, we do not know if they are the same, hence the representative feature we have on both space can be uncertain. So traditionally, we typically assume, as similar to theorem \ref{thm:minimalNeu}, that they are indeed, of the same kind. But, let's say, can we measure the difference between the distribution, given the probability interpretation? 
+
+\begin{question}
+    Under the probabilistic interpretation, what can be said about the correlation $\mathcal{D}\propto \mathcal{P}$, by a specific feature $\lambda$?
+\end{question}
+
+If we can answer this question, it will be particularly helpful to see where it will lead us to, and what can be said more of the empirical and generalization. Coincidentally, in modern and practical practice, the dilemma between empirical and generalization is featured, or presented, in a much smaller context, where the dataset itself is expressed into the \textit{training partition} and \textit{testing partition}, or even more partition to facilitate the uncertainty or non-observable portion of the concept itself. 
+
+Although we are not considering the learning process itself, the next section will set up some classical theoretical boundary on which model applied on statistical learning theory might use. 
+\subsubsection{About $\mathcal{X}$ and $\mathcal{Y}$}
+While $\mathcal{X}$ is particularly "free", it is imperative to be mentioned that $\mathcal{Y}$ is important in deriving preliminary results on theoretical bounds and theorems. For example, for most cases mentioned below, $f: \mathcal{X}\to \{0,1\}$ is often the optimal choice for setting as to prove theorems and results, which is binary classification. Overall, the assumption of the structure of $c(x)$ dictates how the application and derivation of theorems, as well as learning settings are. 
+
+It is also noticed that particularly, the dataset and it embedding space (or expressive space - how the concept is expressed using our data or understanding) also affects what kind of loss function will be more effective than not. Then, it is almost dependent on the expression of the metric space applied for each loss function. 
+
+\subsection{Estimation and approximation error}
+Aside from the empirical error and generalization error, there are two more particular error measure that target the specifically crafted question. How should the hypothesis set $\mathcal{H}$ be chosen so that the learning algorithm can efficiently work? This is known as the \textit{model selection problem}. By designing $\mathcal{H}$, we can particularly guide the model to a given course and path, such that the learning model can learn the problem setting, at least up to the empirical best and closer to the Bayes model. A rich or complex hypothesis set then, could contain the ideal Bayes classifier. On the other hand, it is perceived that learning with such complex family becomes a very difficult task. How difficult this is, and how to contain the Bayes classifier (or at least inching to it), is ultimately, and generally perceived to be subjected to a trade-off, and can be analysed in terms of \textit{estimation error} and \textit{approximation errors}. 
+
+Let $\mathcal{H}$ be a family of functions mapping $\mathcal{X}\to\{1,-1\}$. This is the particular case of \textbf{binary classification}, in which can be straightforwardly extended to different tasks and loss functions. The \textit{excess error} of a hypothesis $h\in\mathcal{H}$, is the difference between its error $R(h)$ and the Bayes error $R^{*}$. This can be decomposed to be the following: 
+
+\begin{equation}
+    R(h) - R^{*} = \Big( R(h) - \inf_{h\in \mathcal{H}} R(h) \Big) + \Big( \inf_{h\in \mathcal{H}} R(h) - R^{*} \Big)
+\end{equation}
+
+The first bracket contains the \textbf{estimation error}, and the second bracket contains what is called the \textbf{approximation error}. The estimation error depends on the hypothesis $h$ selected. It measures the error of $h$ with respect to the infimum of the error achieved by hypotheses in $\mathcal{H}$, or that of the best-in-class hypothesis $h^{*}$ when that infimum is reached. The approximation error measures how well the Bayes error can be approximated using $\mathcal{H}$. It is a property of the hypothesis set $\mathcal{H}$, a measure of its richness. 
+
+Model selection consists of choosing $\mathcal{H}$ with a favourable trade-off between the approximation and the estimation error. However, in the most general case, this will be done, but not in practice, as it requires the underlying distribution $\mathcal{D}$ to be known to determine $R{*}$, which is not possible. In contrast, the estimation error can be bounded, or can be analysed, using particular metric and analysis. 
+
+Also, contrary to what is believed, the approximation and estimation error is still lacking - it can be thought as a particular \textit{proxy} to the entirety problem of model selection, a typically very high generalization of the view, with too many factors influencing it. We would be keen on to find better alternatives, even though, in some sense, a pseudo-generalized setting might be a good choice already exists. 
+
+\section{Structural example of learning setting}
+
+While the descriptions of the learning theory setting remains general and well-defined, its operations and specific state-wise understanding is implicit, that is, there exists the very severe distinction between the actual conceptual modelling, and its theoretical interpretation. We will illustrate the practical, well-known system analysis typically accompanied what has been discussed. 
+
+The learning dynamics can be then divided into three \textbf{phases} - each focus on one particular aspect of the learning problem and its interpretation, and the moving parts. This is illustrated by figure \ref{fig:PhaseDiagram}.
+\begin{figure}[htb]
+    \centering
+    \captionsetup{font=small}
+    \resizebox{0.7\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\normalsize]
+    \draw  (6.25,20.5) rectangle  node {\normalsize $\mathbf{X}$} (7.5,15.5);
+    \draw [->, >=Stealth, dashed] (7.5,19.25) -- (10,19.25)node[pos=0.5, fill=white]{$x\in\mathbf{X}$};
+    \draw  (10,17.25) rectangle  node {\normalsize $h\in\mathcal{H}$} (13.75,16.25);
+    \draw  (10,19.75) rectangle  node {\normalsize $c\in\mathcal{C}$} (13.75,18.75);
+    \draw  (16.25,20.5) rectangle  node {\normalsize $\nabla(\cdot)$} (17.5,15.5);
+    \draw [->, >=Stealth] (13.75,19.25) -- (16.25,19.25)node[pos=0.5, fill=white]{$c(X)$};
+    \draw [->, >=Stealth] (13.75,16.75) -- (16.25,16.75)node[pos=0.5, fill=white]{$h(X)$};
+    \draw [->, >=Stealth, dashed] (16.25,16.75) .. controls (14.75,15.25) and (12.25,15.25) .. (12,16.25)node[pos=0.5, fill=white]{$\mathsf{Update}$};
+    \draw [->, >=Stealth, dashed] (7.5,16.75) -- (10,16.75)node[pos=0.5, fill=white]{$x$$\in$$\mathbf{X}$};
+    %\draw [dashed] (5.5,21) rectangle  (9,15) node[below=2pt, pos=0.5] {\normalsize $I$};
+    %\draw [dashed] (9.5,21) rectangle  (14.25,15) node[below=2pt, pos=0.5] {\normalsize $II$};
+    %\draw [dashed] (14.75,21) rectangle  (18.5,15) node[below=2pt, pos=0.5] {\normalsize $III$};
+    \draw [dashed] (5.5,21) rectangle (9,15);
+    \node at ($(5.5,15)!0.5!(9,15) + (0,-7pt)$) {\normalsize $\mathrm{I}$};
+    
+    \draw [dashed] (9.5,21) rectangle (14.25,15);
+    \node at ($(9.5,15)!0.5!(14.25,15) + (0,-7pt)$) {\normalsize $\mathrm{II}$};
+    
+    \draw [dashed] (14.75,21) rectangle (18.5,15);
+    \node at ($(14.75,15)!0.5!(18.5,15) + (0,-7pt)$) {\normalsize $\mathrm{III}$};
+    \end{circuitikz}
+    }%
+    \caption{An illustration of the (supervised) statistical process. Phase III contains two parts: First is the evaluation $\nabla(h,c)$ according to the data $\mathcal{D}$, and second is the $\mathsf{Update}$ process to re-align $c$ to the actual target.}
+    \label{fig:PhaseDiagram}
+\end{figure}
+\subsection{First section}
+Begin with the construction and initialization of the feature space $\mathcal{X}^{\infty}$. By the assumption of a probabilistic process, $\mathcal{X}_{m}$ or simply $\mathcal{X}$ representing the dataset is assumed to be sampled, or appeared from the distribution $\mathcal{D}(p,\cdot)$ for $p$ an arbitrary probabilistic system. 
+    
+The \textit{ground space}, or in literature generally called \textbf{feature space}, is created. This results in the first component of the tuple $D$, being $\mathcal{X}\subseteq \mathbb{R}^{m\times k}$, where $\lvert \mathcal{X} \rvert=m$, but $size(x)=k$, for $x\in\mathcal{X}$. We assume there exists the random variable $x$ of a given distribution $\mathcal{D}$, such that the set $\mathcal{X}\sim \mathcal{D}$ of all observation is given by an underlying distribution. A well-known assumption in this case is that $x\in\mathcal{X}$ has no dependent components. That is, for example, there does not exist any function $\psi_{x}: \{ x_{i} \}\to \{ x_{j} \}$, for $i\neq j$. (Thought, this only helps in Bayesian priori analysis). Furthermore, by specifying that $\mathcal{X}$ belongs to a specific distribution, we argue of the assumption that $x\in\mathcal{X}$ is \textit{independently and identically distributed} (i.i.d.), that is, for a given random sampling interpretation $S\subset\mathcal{X}\sim \mathcal{D}$, all data is sampled with the events space governed by the distribution $\mathcal{D}$ for every instance, and the existence of $x_{i}$ to $x_{j}$ for $i\neq j$ is none. 
+
+The \textbf{role} of the distribution configuration is important. If $\mathcal{D}$ is uniform, that is, $D\sim \mathcal{U}(a,b)$, then we can disregard the aspect of $\mathcal{X}$ with random variables. For $[a,b]$ to be $(-\infty,+\infty)$, the problem changed to a \textit{regression problem}. If $\mathcal{D}$ is some other distribution function, then the problem of \textit{representative data} and \textit{population size} becomes apparent, which requires statistical analysis to be taken into consideration. 
+
+\subsection{Second section}
+For the constructed feature space $\mathcal{X}$, let $EX(c,\mathcal{D})$ be a procedure (or \textit{orcale}) acting on $\mathcal{C}$ and $\mathcal{X}$ to output $\langle x,c(x)\rangle$. The hypothesis then contains a similar procedure $EX_{\mathcal{H}}(h,\mathcal{D})$, such that to output $\langle x,h(x)\rangle$. We call this the \textit{inference phase}. 
+    
+    The feature space $\mathcal{X}$ is provided to $h$. We assume $c$ is processed of the same process, resulted in $\mathcal{Y}_{c}$. Then, $h(\mathcal{X})$ outputs the set of hypothesis' target $\mathcal{Y}_{h}$. Thereby, we are approximating the \textit{process} $c$ itself. We can approach this in two main ways\footnote{Note that, in some aspect, this is similar to the usage of mathematical simulation of certain dynamical system, or \textit{any} system that has certain patterns or relations observable.}: either \textit{deterministic} or \textit{probabilistic}\footnote{The model itself can be entirely deterministic, while the learning process is not. in fact, one of the very first assumption and axiomatic view of the learning problem is that learning occurs in a \textit{probabilistic setting}.}. We define such as followed. 
+
+\begin{definition}[Deterministic - \textit{discriminative modelling}]
+    A \textbf{deterministic model} $h_{d}$ assumes its internal space as followed. For any $h\in\mathcal{H}_{d}$ of deterministic model, $h$ is characterized by the mapping $h_{d}:\mathcal{X}\to \mathcal{Y}_{h}$, such that $h\in C^{n}$ of $n$-differential space. 
+\end{definition}
+
+Similarly, if the interpretation of the model is \textit{probabilistic}, we have the following definition of probabilistic-based model. 
+\begin{definition}[Probabilistic - \textit{generative modelling}]
+    A \textbf{probabilistic model} $h_{p}$ assumes its internal space as followed. For any $h\in\mathcal{H}_{p}$ of all probabilistic hypothesis, $h$ is characterized by the probability distribution $\Gamma(p_{X}(X))$, where $\Gamma$ is the discrete decision process outside the probabilistic interpretation.
+\end{definition}
+
+The discrete decision process $\Gamma$ is very simple to argue. For example, given a Naive Bayes model with $p(C_{k}\mid D[i])$ of the dataset, the probability distribution is regarded as the argument $$Y^{*}=\underset{c_{k}\in C}{\mathrm{arg\:max}}\:P_{\theta}(c_{k}\mid x)=\underset{c_{k}\in C}{\mathrm{arg\:max}}P_{\theta}(x\mid c_{k})\cdot P(c_{k})$$
+
+Notice that the process and the learning setting is probabilistic, however, the interpretation of the hypothesis $h$ can be either deterministic or probabilistic, or anything else. This puts the flexibility into the setting of the model, and permits us to consider various representation of the model structure. Furthermore, the hypothesis for the learning process is evaluated relative to the same probabilistic setting, in which the training takes place, and we allow hypotheses that are only approximation of the target concept.
+
+\subsection{Third section}
+
+There exists an evaluator (or \textit{supervisor}) $\nabla (h,c)$ that evaluates specific \textit{loss framework} $\ell\{h(x),c(x)\}$ based on available information, and a \textit{update modifier} $U(\ell,\mathcal{A})$ of certain objective to algorithm $\mathcal{A}$. 
+    
+In this step of the procedural setting, the \textit{supervisor} includes a loss function, $\ell$, which takes discrete arguments, and binary evaluate the discrete result between $h$ and $c$. This loss function is supposed to have a global minimum, or at least a certain region of minimal approximation. We have the following definition. 
+\begin{definition}[Loss function]
+    A loss function is a non-negative function $\ell :\mathcal{Y}\times\mathcal{Y}\to [0,+\infty)$. 
+\end{definition}
+
+In general, the following is supposed of the loss function: 
+\begin{conjecture}[Loss function convexity]
+    For any supervisor $\nabla$ of a learner framework $\mathcal{L}(\mathcal{H},\mathcal{A})$, the loss function $\ell$ is assumed to be a $p$-converging function, or as a convex function. That is, for $\ell: \mathbb{R}^{n}\to \mathbb{R}$, then $\ell$ is convex on its domain, or is locally convex on $[a,b]\subset \mathbb{R}^{n}$, if, for $x,y\in\mathbb{R}^{n}$ of such interval, and for $\lambda \in [0,1]$, it satisfies 
+    \begin{equation}
+        f(\lambda x + (1-\lambda)y) \leq \lambda f(x) + (1-\lambda) f(y)
+    \end{equation}
+\end{conjecture}
+
+Under a single structure, that is, for example, a class of mapping $\mathbb{R}^{n}\to\mathbb{R}$, there can exist many loss functions to be considered. Take for example the setting of regression analysis. Then, $\ell$ can be either the absolute error, $\lvert h(x)-c(x)\rvert$, or the $L^{2}$ norm, $\lvert\lvert h(x), c(x)\rvert\rvert_{2}$. Different loss function provides different path and landscape, though they still share somewhat similar interpolation patterns, or either some might be subjected to, under the consideration of a loss landscape, local minima than others. Furthermore, the form and representation of loss functions is not discrete - but rather based of its interpretation and the supposition of the underlying notion required for the loss function to operate in. For example, if the setting is \textit{generative}, the loss function would take the form of a \textit{divergence measure} between two probability distribution. Notice however, that the action potential provided by the model in their operation disappears, or rather, is not considered, when using the loss function. 
+
+Using such loss function, for the case of no noises or interference uncertainty, if the goal is to minimize the empirical risk on such dataset, then we call this the method of \textit{empirical risk minimization}, or ERM. This is born out of the consideration that in practice, the oracle $EX(c,\mathcal{D})$, and the actual generalization error $R(h)$ is not obtainable. 
+
+\begin{definition}[Empirical risk minimization]
+    Given $h\in \mathcal{H}$, for $c\in \mathcal{C}$ of some concept class, empirical risk minimization seeks to find $h'\in\mathcal{H}$ such that \begin{equation}
+        h' = \argmin_{h\in \mathcal{H}} \hat{R}(h)
+    \end{equation}
+\end{definition}
+This strategy focus on dealing specifically with the empirical error only, hence, we gain ourselves the empirical best in this situation. 
+\begin{proposition}
+    For any sample $S$, the following inequality holds for the hypothesis returned by ERM: 
+    \begin{equation}
+        \mathbb{P}\Big[R(h_{S}')- \inf_{h\in \mathcal{H}}R(h) > \epsilon\Big] \leq \mathbb{P}\Big[ \sup_{h\in \mathcal{H}} \lvert R(h)- \hat{R}_{S}(h) \rvert > \frac{\epsilon}{2} \Big]
+    \end{equation}
+\end{proposition}
+We will prove this proposition in later section. For now, this proposition bounds the error of ERM, with respect to the probability of the generalization distance $\lvert R(h)- \hat{R}_{S}(h)$ between the two errors. As we might have suspected, the performance of ERM is typically very poor. This is because the algorithm disregards the complexity of the hypothesis set $\mathcal{H}$: in practice, either it is not complex enough, in which case the error can be large, or $\mathcal{H}$ is so rich, that the complexity makes the model shoot out of the complexity range. Additionally, in many cases, determining the ERM solution is computationally intractable. 
+
+Another alternative idea of optimization or model selection can be \textit{Structural Risk Minimization}, or SRM, though we have to develop our theory more to reach the conclusions and results specified by SRM. 
+
+\section{The problems within classical learning theory}\label{sec:LearningProblems}
+As we have settled on a particular setting of the statistical learning theory in the classical sense, it's time for us to figure out the problems, and what is intended of the theory to deal with. 
+
+Machine learning, the concern with the action of \textit{learning}, and the general setting of the model contains the processes, procedures itself. In such sense, most of the problem will be cut out into different processes. We can identify this into a few parts, as in our example has shown. 
+
+\subsection{Data and the general setting}
+While we have been talking in the learning setting pretty loosely on the side of the data itself, it is the data that gives us the problem setting. For example, if the data is a pair $(X,Y)$ of input output representation, then we know that our working space would be $\mathbb{R}^n \times \mathbb{R}^m$ or any of its subset, given the fact that data must be encoded into numerical representations, even in discrete or logical case (in such case, typically, $0-1$ pair is enough). In more complex and complicated setting, for example, on the structure of a graph and its embedded representation, it is much more difficult to see the \textit{form of dataset} to be, hence, also the working space. 
+
+Another thing with data is the \textit{availability of the data} and the \textit{distribution of the data} also matters. In some cases, our data consists of only skewed or partitioned sections of the actual concept range, at least up to the observable criterion of the concept (some concept does not exist in certain range, at least in a numerical example, and some other reasons). In the other case, the availability of data, meaning the density of data, as well as added \textit{observational effect} also alters the learning setting, simply because learning theory relies on, at least from our glance, simple statistical, observational learning from observation space, without the added structures. An actual, practical concern however, lies in the range of \textbf{practical empirical-generalization} setting. 
+\subsection{Observational partitioning}
+
+Previously, we established that at least in said formal setting, generalization errors cannot be known beforehand. Thereby, all of our operations, procedures, processes has to be conducted using the observed data, or the sample space $\mathcal{S}$. A solution to utilize that is to consider the generalization region as the region of \textit{new, unseen observations} that while still is of the same concept $c$, but it is indeed, unseen if the model is never provided of such instances. Hence, it prompts the utilization of limited resources by then to partition the sample space into various subspaces, that would be then fed into the learning process as observational space. This is simply called \textbf{sample set partitioning}. Denoted the number of partition (discrete) as $k$, then for $k=2$, then this is called the \textbf{train-test partition} (or dataset). This contains a dataset $\mathbf{x}_{1}$ and $\mathbf{x}_{2}$ of the same original sample set, such that $\mathbf{x}_{1}/\mathbf{x}_{2}\geq 1$ (one is bigger than another, usually). The ratio does indeed affect the overall running procedure, accordingly.
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/optimization_train_loss_data.png}
+    \caption{\textbf{Conceptual representation of the sample set partitions and its effect on iterative process}. (1), for $S_{1}$, and of the specified ordering, $h$ is able to make it to the optimal point compared to the actual concept $c$. The bubble around $c$ is what we call irreducible error, intrinsic of the observational space. (2) for $S_{2}$, of the changing dataset, while of the same partition but also changing order, gives different volatile path, and perhaps suboptimal performance compared to the first dataset case. Note that they are the supposed \textit{optimal path} of both $S_{1},S_{2}$. If randomization is introduced, may suboptimal path will occur, and the result will differ.}
+    \label{fig:randomwalk_descent}
+\end{figure}
+
+If $k>3$ and above, we call it the $n$th partitioning. If we further consider the choice of observational spaces being provided, then if $k>3$, and subspaces are chosen randomly, it is called \textbf{cross-validating partition}. The effect of them are fairly well-understood, and we might as well refer to authoritative sources on such issue. 
+
+Based on the above conclusion, the empirical error and generalized error can be re-calculated to fit the general scheme. For $\lvert \mathcal{S}\rvert = m$ and partition $k+p=m$ for train and test partition respectively, 
+\begin{equation}
+    \hat{R}_{k}(h) = \frac{1}{k} \sum^{k}_{i=1} \ell\{h(x_{i}),c(x_{i})\},\quad \hat{R}_{p}(h_{\mathcal{A}}) = \frac{1}{k} \sum^{p}_{i=1} \ell\{h_{\mathcal{A}}(x_{i}),c(x_{i})\}
+\end{equation}
+where $h_{\mathcal{A}}$ is the result from the learning algorithm (procedure), for $h^{*}\neq h_{\mathcal{A}}$. Then, the empirical learning seeks to optimize the first term, that is, for the objective 
+\begin{equation}
+    \underset{h\in \mathcal{H}}{\argmin}\: \hat{R}_{k}(h) = \underset{h\in \mathcal{H}}{\argmin}\:\frac{1}{k} \sum^{k}_{i=1} \ell\{h(x_{i}),c(x_{i})\}
+\end{equation}
+and the generalization learning as: 
+\begin{equation}
+    \begin{split}
+        \underset{h\in \mathcal{H}}{\argmin}\: \hat{R}_{p}(h_{\mathcal{A}}) 
+        & = \hat{R}_{k}(h_{\mathcal{A}}) + \underset{h\in \mathcal{H}}{\argmin}\:\hat{R}_{p}(h_{\mathcal{A}})\\
+        & =  \underset{h\in \mathcal{H}}{\argmin}\: \left[\frac{1}{k} \sum^{k}_{i=1} \ell\{h_{\mathcal{A}}(x_{i}),c(x_{i})\} + \frac{1}{k} \sum^{p}_{i=1} \ell\{h_{\mathcal{A}}(x_{i}),c(x_{i})\}\right]\\
+        & = \underset{h\in \mathcal{H}}{\argmin}\: \left[\epsilon + \frac{1}{k} \sum^{p}_{i=1} \ell\{h_{\mathcal{A}}(x_{i}),c(x_{i})\}\right]
+    \end{split}
+\end{equation}
+By the definition order, the generalization error can only be calculated post-$\mathcal{A}$. Hence, we often called the empirical, or $\mathsf{ERM}$-generalizer case to be dynamic, and the solution for $\mathsf{ERM}$ is tested statically on generalization set. This partition of order of computation though, brings up the problem of updating factors and others contributing potential that will damage or diffuse the measure. 
+
+For cross-validation and other randomize partition, the formulation requires more care in the notion by itself. The structural risk minimization scheme dilemma can be understood from the above consideration naturally. We have effectively defined the two proxies, \textbf{heuristic empirical risk} and \textbf{heuristic generalization risk}. 
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/mamamia.png}
+    \caption{Partitioning process and its error potential consideration. We assume each partition includes the irreducible error $\epsilon$ accompanied by the $n$ partition, belongs to the furthest partitioning set. Within every increasing partition, for supposed distributed data (unordered data), the generalization risk is further decomposed.}
+\end{figure}
+
+While they are effective as a pair, just as Figure~\ref{fig:randomwalk_descent} illustrated, overly optimizing the path can lead to it in general, be fairly ineffective. On the flip side, not sufficiently optimizing the path will lead to sub-average result, leading to adverse relation. Furthermore, since $\mathcal{S}$ might not, in general, be representative of the population that depicts $c$, the form $c'$ created from observations of $c$-generated space (we call this the \textbf{observed concept} to the true concept) might be skewed, leading to adverse effect. From there, we gain the notion of \textbf{overfitting} and \textbf{underfitting} under the constraints of limited knowledge and reduced concept space to the observation space, relative to the true concept itself. It is also from here that the proxy concepts of \textbf{bias} and \textbf{variance} are introduced to construct the bias-variance tradeoff, and subsequently, the phenomena of double descent. 
+
+Another point to note is also the way of partitioning and location of the data. As we have suggested, data comes in a variety of range, of which we can directly infer from using the supremum set and the infimum element, given particular structure and encoding space. Denoted by $\mathbf{r}_{\mathcal{S}}$, it is responsible for the partitioning strength of the dataset on its own. Then, partitioning must also take the randomization chance, or the distribution and distinctive ordering of the dataset. That is, the metadata related to the dataset must also be configured, as suggestibly, there would be some observable behaviours typically available with, for example in permutation or linear ordering of data by magnitude and expression range. If that is the case, and the data is discretely fragmented, but not diffused in the manner that spread out the missing information all around the dataset, the result would be entirely different, and it would influence the generalization error, heuristically, far more than what is realized. Thereby, there then exists two fundamental polarity: either it is the \textit{totally ordered set}, or it is \textit{randomized uniform aberration}, for any given observation space. 
+
+\section{Learning criteria on time - PAC theory}
+
+From our problems of the section \ref{sec:LearningProblems}, one of the most familiar and easier to analyse problem, is the related problem of \textit{learning with time efficiency}. This has been bugging a lot of people (those scientist and researchers all along) and many things has been tried. One of the most popular, and kind of the best, is the \textit{Probably Approximately Correct} (PAC) learning rule, which takes into account the time that it would take a model to learning efficiently, by the arbitrary meaning of efficiency. \index{PAC learning} 
+
+Why would we want to take on the computational complexity aspect? Well, it has to do with the nature of computer and time itself. Often, in practice, we have the probabilistic learning phase, and the deterministic (static) inference and test phase. That is, the only time that the dynamic is active, is when it is learning - otherwise, in usage, most of the time the system is static. Hence, the learning portion takes up almost 90\% of the entire procedure. Many factors hence can be taken into account for the learning time to be calculated, often an approximation only, but some obviously stands out, like the relation between learning difficulties and the size of the sample space $\mathcal{S}$, or the complexity between the choice of the hypothesis set structure $\mathcal{H}$. To answer those questions on computational complexity is to reduce the time waiting, and more time on getting it work. Also, it will eventually help in the analysis of the efficiency of $\mathcal{H}$ on the time-axis. After all, who wants to wait?
+
+\subsection{Classical PAC-learning}
+For now, we assume no structure of $h$ and $c$. They can be functions, partial functions, relations, complex algorithms, or others. In a typically learning setting, we also have the argument of \textit{preliminary knowledge}, presented in literatures of the term \textit{inductive bias}. For example, if the concept class $\mathcal{C}$ is assumed, then we say the setting is \textbf{model-specific}. If there exists no hard assumption on $\mathcal{C}$, then the learning setting is said to be \textbf{model-free}. For clarification, we also use in the examples the 0-1 loss function, $\ell= \delta(h,c)$ for the Kronecker delta, such that \begin{equation}
+    \hat{R}(h)=\frac{1}{n}\sum^n_{i=1}\delta_{h(\mathbf{x}_i)\ne y_i}, \mbox{ where }\delta_{h(\mathbf{x}_i)\ne y_i}=\begin{cases}
+        1,&\mbox{ if $h(\mathbf{x}_i)\ne y_i$}\\
+        0,&\mbox{ o.w.}
+        \end{cases}
+\end{equation} 
+We can later on replace $\delta$ and the binary setting with others, albeit the complexity will increase on the formal derivation for others loss functions. One of the main reason why we often choose $0-1$ loss error in our analysis, comes from a variety of reasons. But, from what can be seen, it reduces the complexity of the problem, as well as raises the absoluteness of the loss measure. Indeed, naturally, from a soft point of view, the mean square loss measure is more natural of $\mathcal{L}_{2}$ norm on a representation space. As we have been saying, the loss function is chosen can influence the problem setting that one might expect the model to act on. $1-0$ measure effectively reduces the problem to the absolute \textit{binary classification problem}, where it is either correct or not. 
+
+The \textit{learning algorithm} $\mathcal{A}$ can be interpreted to belong to a specific set of algorithm $\mathsf{A}$ such that it gives a sequence $\{ A_{i} \}$. If there exists such that $\lvert\{A_i\}\rvert=n$ for a fixed $n$, and can be explicitly defined and expressed, then the algorithm is \textit{deterministic}. Otherwise for arbitrary $m>1$ varying in magnitude, and with added uncertainty - that is, no sequence $\{A_i\}$ is the same, the algorithm is said to be \textit{probabilistic}, and by extension, a \textit{stochastic process}. We will give the definition of the stochastic process later on. Then, the algorithm is denoted by  $$\mathcal{A}=[h]\{ A_{1},\dots,A_{n} \}=\{ A_{i} \}_{i=1}^{n}$$
+Under this line, we separate the classification of $c$ into two types: model-specific means that $c$ is deterministic - it is supposed to belong to certain class $\mathcal{C}$, or rather, its description can be contained into certain concept class (which ultimately is some priori). Model-free means that $c$ is not apparent to be able to separated to a concept class, which adds uncertainty, though all of them are still supposed to be at least a transformation $c:V\to U$ of arbitrary space $V,U$, by the setting of mathematical functional relationship. 
+\begin{definition}[Model-specific learning]
+    A learning scenario is called \textit{model-specific} learning if, for $R(h)$ being a measure-theoretic metric on the hypothesis $h$, we are given the dataset $D=\{ (\mathcal{X},\mathcal{Y}) \}$ with distribution $x\sim \mathcal{D}$, problem is to find a hypothesis $h\in\mathcal{H}$ that satisfies: \begin{equation}
+        R(h) = \underset{x\sim \mathcal{D}}{\mathbb{P}} [h(x)\neq c(x)] = \underset{x\sim \mathcal{D}}{\mathbb{E}} [1_{h(x)\neq c(x)}]
+    \end{equation}
+\end{definition}
+
+In the same way, we define the model-free learning, where the distribution is extended to $\mathcal{Y}$. This is to facilitate the uncertainty of the concept class. If the concept class $\mathcal{C}$ is deterministic, then there would be no ambiguity of the concept $c\in \mathcal{C}$ - we would only have to learn $\mathbb{P}(y\mid x)$, to predict or reconstruct accordingly. In such case, the only factor in consideration is the ground space $\mathcal{X}$, or rather, the relationship between $x$ and $y$ itself. 
+
+\begin{definition}[Model-free learning]
+    A learning scenario is called \textit{model-free} learning if, for $R(h)$ being a measure-theoretic metric on the hypothesis $h$, we are given the dataset $D=\{ (\mathcal{X},\mathcal{Y}) \}$ with distribution $(x,y)\sim \mathcal{D}$. Problem is to find a hypothesis $h\in\mathcal{H}$ that satisfies \begin{equation}
+        R(h) = \underset{(x,y)\sim D}{\mathbb{P}} [h(x)\neq y] = \underset{(x,y)\sim D}{\mathbb{E}} [1_{h(x)\neq y}]
+    \end{equation}
+\end{definition}
+In both setting, we take the stance of absoluteness, using measure $\neq$, similar to a type of discrete decision process called \textit{classification}, for a finite class counts of the target class. This notion can be aggravated to be generalized to other classes, simply by replacing $h(x)\neq y$ by a valued-function, or by considering specific measure (for example, \textit{Bregman measure} for strictly convex functions). In the context of $n$-dimensional Euclidean space, and with the isomorphism $\mathbf{E}\simeq \mathbb{R}^{n}$ of suitable basis, the measure is simply the finite-accuracy Euclidean distance $d(h(x),c(x))$. 
+
+Before analysing this problem in a PAC-like fashion, let us recall the setting in which we are operating upon. 
+\begin{itemize}[topsep=0pt]
+    \item The goal of the learning game is to learn an unknown target set, but the target set is not arbitrary. Instead, there is a known and rather strong constraint on the target set --- it is a rectangle in the plane whose sides are parallel to the axes. Under certain analysis, we can call this as having indeed a strong \textit{priori} to the concept $c\in \mathcal{C}$ possible. 
+  
+    \item Learning occurs in a probabilistic setting. Examples of the target rectangle are drawn randomly in the plane according to a fixed probability distribution which is unknown and unconstrained.
+  
+    \item The hypothesis of the learner is evaluated relative to the \textit{same} probabilistic setting in which the training takes place, and we allow hypotheses that are only approximations to the target. The tightest-fit strategy might not find the target rectangle exactly, but will find one with only a small probability of disagreement with the target. 
+  
+    \item We are interested in a solution that is efficient: not many examples are required to obtain small error with high confidence, and we can process those examples rapidly - that is, for time efficiency $t$. For it to be controllable, it is in our interest to know if we can run the learning process in polynomial time, that is, with $\mathrm{P}$-complexity class. 
+  \end{itemize}
+
+Ideally, we would want our model to be able to do the following: 
+\begin{itemize}
+    \item The number of calls to the concept $c$, or by extension, the oracle process $EX(c,\mathcal{D})$, is small, in the sense that it is bounded polynomially by some parameters. 
+    \item The amount of computation performed is small. 
+    \item The algorithm outputs a hypothesis $h$ such that $\Theta$ is small. Recall that $\Theta_{h} = (\hat{R}(h),R(h))$, but generally, the ideal goal would be to reduce to the infimum of $R(h)$. 
+\end{itemize}
+
+We are now ready to specify the definition of Probably Approximately Correct learning. For now, we designate this as a preliminary definition, because we will add more features into it. 
+
+\begin{definition}[PAC Learning, Preliminary Definition]
+    Let $\mathcal{C}$ be a concept class over $X$. We say that $\mathcal{C}$ is \textbf{PAC-learnable} if there exists an algorithm $\mathcal{L}$ that for every concept $c\in \mathcal{C}$, for every distribution $\mathcal{D}$ on $X$, and for all $0<\epsilon < 1/2$ and $0< \delta < 1/2$, if $\mathcal{L}$ is given access to $EX(c,\mathcal{D})$ for its output, and inputs $\epsilon, \delta$, then with probability at least $1-\delta$, outputs a hypothesis $h\in \mathcal{H}$ satisfying $R(h)\leq \epsilon$. This probability is taken over the random examples drawn by calls to $EX(c,\mathcal{D})$, and any internal randomization of $\mathcal{L}$. 
+
+    If $\mathcal{L}$ further run in time polynomial in $1/\epsilon$ and $1/\delta$, we say that $\mathcal{C}$ is \textit{efficiently PAC learnable}. We will sometimes refer to the input $\epsilon$ as the \textbf{error parameter}, and the input $\delta$ as the \textbf{confidence parameter}.
+\end{definition}
+
+The hypothesis $h\in \mathcal{H}$ of the PAC-learning algorithm is thus approximately correct, with high probability, hence we got the name. Usually, $\mathcal{H}$ can not coincide with $\mathcal{C}$. However, a stronger form of the preliminary PAC-learning can set $h\in\mathcal{C}$, which guarantee the existence of a near-perfect hypothesis class. 
+
+For the preliminary PAC learning model, there are two important problems with it, or rather, remarks on how it is constructed. 
+
+First, the parameter pair $\epsilon, \delta$ control two types of failure to which a learning algorithm in the PAC model is inevitably susceptible. The error parameter $\epsilon$ is necessary since there may be only a negligible probability that a small random sample will distinguish between two competing hypotheses that differ on only one improbable point in the instance space. The confidence on only one improbable point in the instance (ground) space. The confidence parameter $\delta$ is necessary since the learning algorithm may occasionally be extremely unlucky, and draw a terribly "unrepresentative" sample of the target concept - for example, a sample consisting only of repeated draws of the same instances. The best we can hope for is that the probability of both types of failure can be made arbitrarily small at a modest cost. 
+
+Second, we notice that we demand a PAC learning algorithm perform well with respect any distribution $\mathcal{D}$. This is a very strong requirement, which is moderated by the fact that we only evaluate the hypothesis of the learning algorithm with respect to the same distribution $\mathcal{D}$. 
+
+\subsubsection{Representation size and PAC-configuration}
+
+An important issue that has not been mentioned in our previous formation of PAC learning, is the fundamental distinction between a concept and its representation. 
+
+Consider a class of concepts defined by the satisfying assignments of certain formulae. A concept from this class that satisfies such formulae, can be represented by a formula $f$, a truth table, or any given formulae that is tautologically equivalent formulae $f'$ to $f$. An example can be shown in high-dimensional Euclidean space $\mathbb{R}^n$, we may choose to represent a convex polytope (the hell is this?), we can specify the problem by either specifying its vertices, or specifying linear equations for its faces, and these two representation scheme, while being of the same problem, can differ in size. 
+
+In each of these examples, we are fixing some representation scheme - that is, a precise method for encoding concepts \index{representation scheme}- and then examining the size of the encoding for various concepts. Other natural representation schemes that we are familiar it could be the vanilla neural network, or decision trees, though we cannot say exactly that the representation of neural network is indeed of the 'vanilla' representation. Taken example of the boolean formulae, for example, the boolean parity function $f(x_1,\dots,x_n)=x_1\oplus \dots\oplus x_n$ which can be computed by a circuit of $\land,\lor$ and $\lnot$ gates whose size is bounded by a fixed polynomial in $n$, but to represent this same function as a disjunctive normal form (DNF), requires size exponential in $n$. In these representation schemes, there is an obvious mapping from the representation (can be decision tree, or neural network) to the set or boolean function that is being represented. There is also a natural measure of the size of given representation in the scheme (for example, the number of weights, or neuron in a neural network). 
+
+Since our PAC-learning algorithm for its model, follows the phenomenological interpretation, hence it is experimental data-only, it has absolutely no information about which, if any, of teh many possible representations is actually being used to represent the target concept in reality. However, it matters greatly which representation the algorithm chooses for its hypothesis, since the time to write this representation down is obviously a lower bound on the running time of the algorithm. At the end though, note that this is purely a computational concern at a glance, yet, further analysis into the problem might stem out certain consideration that previously unseen, for example, that fact that the representation scheme actually matters more in sense of a system analysis and its dynamic. 
+
+Formally, a \textit{representation scheme} for a concept class $\mathcal{C}$ is defined as followed to capture this notion of representation size, and can be defined as below. 
+
+\begin{definition}[Representation scheme]
+    For a given concept class $\mathcal{C}$, a \textbf{representation scheme} for such concept class is a function $\bm{\mathcal{R}}: \Sigma^{*}\to \mathcal{C}$, where $\Sigma$ is the finite alphabet of symbols. We call any configuration $\sigma \in \Sigma^{*}$ such that $\bm{\mathcal{R}}(\sigma)=c$ a \textbf{representation} of $c$, under $\bm{\mathcal{R}}$. For any given $c$, the representation scheme might not be unique. \footnote{Perhaps representation scheme can be further realized by applying a Borel $\sigma$-algebra on top, and put on it a perspective measure to handle the notion of representation size. For example, in the traditional example of axis-aligned rectangle, one such representation scheme could be the real number schema $\bm{R}:(\Sigma \cup \mathbb{R})^{*}\to \mathcal{C}$, which then can utilize the extended notion of a Lebesgue measure over $\mathbb{R}$ and its spaces.}
+\end{definition} 
+
+To capture the notion of representation size, we assume that associated with $\bm{\mathcal{R}}$, there is a mapping size: $\Sigma^{*}\to N$ that assigns a natural number $size(h)$ to each representation $h\in \Sigma^{*}$. Note that we allow $size(\cdot)$ to be any such mapping results obtained under a particular definition for $size(\cdot)$ will be meaningful only if this definition is natural. In a more simple case, and arguably realistic setting, we can take $\Sigma=\{0,1\}$, thus, we have a binary encoding of concepts, and define $size(h)$ to be the length of $h$ in bits. Although we will use other definitions of size when binary representations are inconvenient, our definition of $size(\cdot)$ will always be within a polynomial factor of the binary string length definition.
+
+So far, this definition is applicable only to representations, that is, to strings $h\in \Sigma^{*}$. We would like to extend this to $c\in \mathcal{C}$. Since the learning algorithm has access only to the input-output behaviour of $c$, in the worst case, it must assume that the simplest possible mechanism is generating this behaviour. Thus, we define $size(c)$ to be the infimum, that is: \begin{equation*}
+    size(c) = \min_{\bm{\mathcal{R}(\sigma)}=c}\{size(\sigma)\}
+\end{equation*}
+In other words, $size(c)$ is the size of the smallest representation of the concept $c$ in the underlying representation scheme $\bm{\mathcal{R}}$. 
+\begin{definition}[Representation complexity]
+    Given a concept $c\in\mathcal{C}$, the \textbf{representation complexity} of $c$ is defined to be the size of the smallest representation of the concept $c$ in the underlying representation scheme $\bm{\mathcal{R}}$, that is, 
+    \begin{equation*}
+    size(c) = \min_{\bm{\mathcal{R}(\sigma)}=c}\{size(\sigma)\}
+\end{equation*}
+for any string $\sigma$ of the representation scheme $\bm{\mathcal{R}}$ that still represents $c$.
+\end{definition}
+Under such definition, the more "complex" the concept $c$ is with the respective chosen representation scheme, the larger $size(c)$ is. This is also where the concept of the concept class $\mathcal{C}$ comes from - it comes from the \textit{representation class indiction} that we have in mind some fixed concept classes we study by their representation scheme. 
+
+From this consideration of the representation size for the language in which the problem setting is expressed in, we gain the complete definition of PAC-learning for a fixed representation priori of the concept class. 
+
+\begin{definition}[PAC-learning]
+    A concept class $\mathcal{C}$ is said to be \textbf{PAC-learnable} if there exists an algorithm $\mathcal{A}$ and a polynomial function $poly(\cdot,\cdot,\cdot,\cdot)$ of 4-argument such that for any $\epsilon>0$, $\delta>0$, for all distribution $\mathcal{D}$ on $\mathcal{X}$ and for any target concept $c\in\mathcal{C}$, the following holds for any sample size $m\geq poly(1/\epsilon,1/\delta,n,size(c))$: $$\underset{S\sim \mathcal{D}^{m}}{\mathrm{Pr}}\left[ R(h(S))\leq \epsilon \right]\geq 1-\delta$$
+    for a given error measure $R(h_{S})$. If $\mathcal{A}$ further runs in $poly(1/\epsilon,1/\delta,n,size(c))$, then $\mathcal{C}$ is said to be \textit{efficiently PAC-learnable}. When such algorithm exists, we call $\mathcal{A}$ a PAC-learning algorithm. 
+\end{definition}
+
+
+
+\section{Generalization bound for PAC-learning}
+
+To understand generalization bound, we first need to introduce the categorization of the hypothesis based of one criterion: consistency. 
+
+\subsection{Consistent Learning}
+
+We'll define the notion of a consistent learning algorithm, or consistent learner, for a concept class $C$ and hypothesis $h$. 
+\begin{definition}[Consistent Learner]
+    We say that an algorithm is a consistent learner for a concept class $C$ using hypothesis class $\mathcal{H}$, if for all $n$, for all $c\in C_n$ and for all $m$, given 
+    \begin{equation*}
+        S = \{ (x_1, c(x_1)) , (x_2, c(x_2)) ,\dots, (x_m, c(x_m))  \} 
+    \end{equation*}
+    as input, $x_i \in X_n$ outputs, then the algorithm $L$ outputs a hypothesis $h\in \mathcal{H}_n$ such that $$h(x_i) = c(x_i) , i = 1,\dots,m$$ 
+\end{definition}
+
+Then, a consistent hypothesis is the hypothesis that is consistent with all the training data provided to it from the concept $c$. The following section contains the debate between consistent hypothesis (i.e., for example, admitting no error on training data, almost perfect - maybe even so), and inconsistent hypothesis, of which have general defects from the actual concept, or even different by a margin.  
+
+
+\subsection{Finite $H$, consistent hypothesis}
+
+We will consider the general sample complexity bound, or equivalently, a generalization bound for consistent hypothesis in the case where the cardinality $|\mathcal{H}|$ is finite. We will assume, as such, that the target concept $c$ is in $\mathcal{H}$. 
+
+\begin{theorem}[Learning bound - finite $\mathcal{H}$, consistent case]
+    Let $H$ be a finite set of functions mapping from $\mathcal{X}\to \mathcal{Y}$. Let $\mathcal{A}$ be an algorithm that for any target concept $c\in H$ and i.i.d. samples $S$ returns a consistent hypothesis $H_{S}$, such that $\hat{R}(h_{S}) = 0$. Then for any  $\epsilon,\delta>0$, the inequality $\mathrm{Pr}_{S\sim D^{m}}[R(h_{S})\leq \epsilon]\geq 1-\delta$ holds if $$m\geq \frac{1}{\epsilon}\left( \log{\lvert H \rvert }+\log{\frac{1}{\delta}} \right)$$
+This sample complexity result admits the following equivalent statement as a generation bound: for any $\epsilon,\delta>0$, with probability at least $1-\delta$, 
+
+\begin{equation}
+    R(h_S) \leq \frac{1}{m} \left( \log{|\mathcal{H}|} + \log{\frac{1}{\delta}} \right)
+\end{equation}
+\end{theorem}
+
+
+\begin{proof}
+    Fix $\epsilon>0$. We do not know which consistent hypothesis $h_{S}\in H$ is selected by the algorithm $\mathcal{A}$. This depends on $S$. Therefore, we need to give a uniform convergence bounds, that is, a bound that holds for the set of all consistent hypothesis. Thus, we will bound the probability that some $h\in H$ would be consistent and have error more than $\epsilon$, denoted by: $$\mathrm{Pr}[\exists h\in H: \hat{R}(h)=0 \land R(h) > \epsilon]$$
+This is equal to: 
+\begin{multline*}
+    \mathrm{Pr}(Q)=\mathrm{Pr}[(h_{1}\in H, \hat{R}(h_{1}) = 0 \land R(h_{1}) > \epsilon) \lor (h_{2}\in H, \hat{R}(h_{2}) = 0 \land R(h_{2}) > \epsilon)\lor\dots]
+\end{multline*}
+For shorthand notation, we set $\mathcal{H}_{\epsilon}=\{ h\in \mathcal{H} : R(h) > \epsilon \}$. Hence, 
+\begin{equation*}
+    \mathrm{Pr}(Q)=\mathbb{P}[\exists h\in \mathcal{H}_{\epsilon}: \hat{R}_{S}(h) = 0]
+\end{equation*}
+We can see that $$\mathrm{Pr}(Q)\leq \sum_{h\in H} \mathrm{Pr}[\hat{R}(h) = 0 \land R(h) > \epsilon]$$
+by union bound, and by conditional probability, $$\mathrm{Pr}(Q)\leq \sum_{h\in H} \mathrm{Pr}[\hat{R}(h) = 0 \mid R(h) > \epsilon]$$
+Now, consider any $h\in H$ with $R(h)>\epsilon$. Then the probability that $h$ is consistent on training sample $S$ without error, can be bounded as: $$\mathrm{Pr}[\hat{R}(h)=0 \mid R(h) > \epsilon] \leq (1-\epsilon)^{m}$$
+with $m$ the number of samples. This implies that: $$\mathrm{Pr}[\exists h\in H: \hat{R}(h)=0 \land R(h) > \epsilon]\leq \lvert H \rvert (1-\epsilon)^{m}\leq \lvert H \rvert e^{-m\epsilon}$$
+Setting the right-hand side to equal to $\delta$, we gain the above statement. Hence, proved. 
+\end{proof}
+
+
+The theorem shows that when the hypothesis set $\mathcal{H}$ is finite, a consistent algorithm $\mathcal{A}$ is a PAC-learning algorithm, since the sample complexity is dominated by a polynomial in $1/\epsilon$ and $1/\delta$. The generalization error of consistent hypothesis is upper bounded by a term that decrease w.r.t $m$. The decreases rate of $O(1/m)$ is guaranteed by this theorem. 
+
+\subsection{Examples}
+\subsubsection{Boolean Conjunction}
+Consider the concept class $\mathcal{C}_{n}$ of conjunction of at most $n$ Boolean literals $x_{1},\dots,x_{n}$. 
+
+A Boolean literal is either a variable $x_{i}, i\in [n]$ or its negation $\bar{x}_{i}$. For $n=4$, this might be $x_{1}\land  \bar{x}_{2}\land x_{4}$. 
+
+A simple algorithm for finding a consistent hypothesis is thus based on positive examples and consists of the following: For each positive example $(b_{1},..,b_{n}),i\in [n]$, if $b_{i}=1$ then $\bar{x}_{i}$ is ruled out as a possible literal in the concept class and if $b_{i}=0$, hen $x_{i}$ is ruled out. The conjunction of all of the literal not ruled out is a hypothesis consistent with the target. 
+
+We have $\lvert \mathcal{H} \rvert=\lvert \mathcal{C}_{n} \rvert=3^{n}$ since each literal can be either 1,0 or not chosen. Plugging this into the complexity bound for $\epsilon>0$ and $\delta>0$, $$m\geq \frac{1}{\epsilon}\left( n\log{(3)+\log{\left( \frac{1}{\delta} \right)}} \right)$$
+Thus, the class of conjunction of at most $n$ Boolean literals is PAC-learnable. 
+\subsubsection{Universal Concept Classes}
+Consider the set $\mathcal{X}=\{ 0,1 \}^{n}$ of all Boolean vectors with $n$ components, and let $\mathcal{U}_{n}$ be the concept class formed by all subsets of $\mathcal{X}$. Is this concept PAC-learnable? To guarantee a consistent hypothesis, the hypothesis class must include the concept class, thus $\lvert \mathcal{H} \rvert\geq \lvert \mathcal{U}_{n} \rvert=2^{(2^{n})}$. We are given then $$m\geq \frac{1}{\epsilon}\left( 2^{n}\log{2}+\log{\frac{1}{\delta}} \right)\geq O\left( \log{\lvert \mathcal{H} \rvert +\log{\frac{1}{\delta}}} \right)$$
+Hence, it is not guaranteed by the theorem that it is PAC-learnable. In fact, recalling the definition of PAC-learning, recall that for a concept class $\mathcal{U}_{n}$ to be PAC-learnable, it needs that $$\underset{S\sim D^{m}}{\mathrm{Pr}}[R(\mathcal{U}_{n})\leq \epsilon]\geq 1-\delta,\quad m \geq \frac{1}{\epsilon} \left( \log{\lvert \mathcal{C} \rvert }+\log{\frac{1}{\delta}} \right),\mathcal{U}_{n}\in\mathcal{C}$$
+But here, assuming that the error is set for $\epsilon>0$ and $\delta>0$, the polynomial exceeds the bound, hence it is not PAC-learnable. 
+
+\subsection{Finite hypothesis sets $H$ - inconsistent case}
+
+In the most general case, there may be no hypothesis in $\mathcal{H}$ consistent with the labelled training sample. This, in fact is the typical case in practice, where the learning problems may be somewhat difficult or the concept classes more complex than the hypothesis set used by the learning algorithm. 
+
+To derive the learning guarantees in the more general setting, we would use the following corollary, of which relates the generalization error and empirical error of a single hypothesis. 
+\begin{col}
+    Fix $\epsilon > 0$. Then, for any hypothesis $h: X \to \{0,1\}$, the following inequalities hold: 
+    \begin{equation}
+        \underset{S\sim \mathcal{D}^m}{\mathbb{P}} \left[\hat{R}_S (h) - R(h) \geq \epsilon\right] \leq \exp{(-2m\epsilon^2)}
+    \end{equation}
+    \begin{equation}
+        \underset{S\sim \mathcal{D}^m}{\mathbb{P}} \left[\hat{R}_S (h) - R(h) \leq -\epsilon\right] \leq -\exp{(-2m\epsilon^2)}
+    \end{equation}
+    By the union bound, this implies the following two-sided inequality: 
+    \begin{equation}
+        \underset{S\sim \mathcal{D}^m}{\mathbb{P}} \left[|\hat{R}_S (h) - R(h)| \leq \epsilon\right] \leq 2\exp{(-2m\epsilon^2)}
+    \end{equation}
+\end{col}
+
+\begin{proof}
+    This can be proved using Hoeffding inequality. Recall that the inequality is stated for $Z_{1},\dots,Z_{n}$ independent random variable, for range $z_{i}\in [a_{i},b_{i}]$ with probability one, $S_{n}=\sum_{i=1}^{n}Z_{i}$ then for all $t>0$:
+    \begin{equation*}
+        \mathbb{P}(S_{n} - \mathbb{E}(S_n)\leq -t) \leq \exp{\left(\frac{-2t^2}{\sum (b_{i} - a_{i})^{2}}\right)}
+    \end{equation*}
+    and 
+    \begin{equation*}
+        \mathbb{P}(S_{n} - \mathbb{E}(S_n)\geq t) \leq \exp{\left(\frac{-2t^2}{\sum (b_{i} - a_{i})^{2}}\right)}
+    \end{equation*}
+    We can derive this for our case of the two empirical and generalization risk. Remember from \ref{thm:minimalNeu} that we have $R(h)=\mathbb{E}[\hat{R}_{S}(h)]$, we can transform the phrase to be: \begin{equation*}
+        \underset{S\sim \mathcal{D}^{m}}{\mathbb{P}} \Big[ \hat{R}_{S}(h) - R(h) \geq \epsilon \Big] = \underset{S\sim \mathcal{D}^{m}}{\mathbb{P}} \Big[ \hat{R}_{S}(h) - \mathbb{E}[\hat{R}_{S}(h)] \geq \epsilon \Big]
+    \end{equation*}
+    with respect to $\mathcal{D}^{m}$. The form of $\hat{R}_{S}(h)$ has an additional $1/m$, hence, for simplification, we will take the form \begin{equation*}
+        \underset{S\sim \mathcal{D}^{m}}{\mathbb{P}} \Big[ \hat{R}_{S}(h)/m - \mathbb{E}[\hat{R}_{S}(h)]/m \geq \epsilon m \Big]
+    \end{equation*}
+    By Hoeffding inequality, we have: 
+    \begin{equation}
+        \underset{S\sim \mathcal{D}^{m}}{\mathbb{P}} \Big[ \hat{R}_{S}(h)/m - \mathbb{E}[\hat{R}_{S}(h)]/m \geq \epsilon m \Big] \leq \exp{\left(\frac{-2m^{2}\epsilon^{2}}{\sum (b_{i} - a_{i})^{2}}\right)} 
+    \end{equation}
+    which is 
+    \begin{equation*}
+        \underset{S\sim \mathcal{D}^{m}}{\mathbb{P}} \Big[ \hat{R}_{S}(h)/m - \mathbb{E}[\hat{R}_{S}(h)]/m \geq \epsilon m \Big] \leq \exp{\left(\frac{-2m\epsilon^{2}}{(b-a)^{2}}\right)}
+    \end{equation*}
+    Here, our $\sum (b_{i} - a_{i})^{2}$ was replaced by a more general bound which contains only the sufficient amount of $m$ samples. This is because the sum follows from $m$ samples, which are taken as random variable of choice, then, for $a\leq Z_i \leq b$ \begin{equation*}
+        \frac{m^{2}}{\sum (b_{i} - a_{i})^{2}} = \frac{m^{2}}{m(b-a)^{2}} = \frac{m}{(b-a)^{2}}
+    \end{equation*}
+    Since our hypothesis is mapping to $\{0,1\}$, hence our result space is discretely bounded in the normal range, the inequality reduces to 
+    \begin{equation}
+        \underset{S\sim \mathcal{D}^{m}}{\mathbb{P}} \Big[ \hat{R}_{S}(h)/m - \mathbb{E}[\hat{R}_{S}(h)]/m \geq \epsilon m \Big] \leq \exp{\left(-2m\epsilon^{2}\right)}
+    \end{equation}
+    Rearranging the left-hand-side to the original yields the inequality. Doing the same for the second case, and using the union bound, we get the two-sided inequality for $\lvert \hat{R}_{S}(h) - R(h)\rvert$. 
+\end{proof}
+
+Setting the right-hand side of (5) to be equal to $\delta$ and solving this for $\epsilon$ yields immediately the following bound for a single hypothesis. 
+
+\begin{col}[Generalization bound - single hypothesis]
+    Fix a hypothesis $h: \mathcal{X}\to \{0,1\}$. Then, for any $\delta > 0$, the following inequality holds with probability at least $1-\delta$: 
+    \begin{equation}
+        R(h) \leq \hat{R}_S(h) + \sqrt{\frac{\log{2/\delta}}{2m}}
+    \end{equation}
+\end{col}
+
+Can we use this corollary to bound the generalization error of the hypothesis $h_S$ returned by a learning algorithm when training on a sample $S$? No, since $h_S$ is a random variable depends on the training set $S$, rather than being fixed. Unlike the case of a fixed hypothesis for which the expectation $\mathbb{E}[\hat{R}_S(h_S)]$ is the generalization error, the generalization error $R(h_S)$ is a random variable and in general distinct from the expectation, which is a constant. 
+
+Thus, as in the proof for the consistent case, we need a uniform convergence bound, that holds with high probability for all hypotheses $h\in \mathcal{H}$. 
+
+\begin{theorem}[Learning bound - finite $\mathcal{H}$, inconsistent case]
+    Let $\mathcal{H}$ be a finite hypothesis set. Then, for any $\delta > 0$, with probability at least $1-\delta$, the following inequality holds: 
+    \begin{equation}
+        \forall h \in \mathcal{H}, \quad R(h) \leq \hat{R}_S (h) + \sqrt{\frac{\log{|\mathcal{H}|}+ \log{2/\delta}}{2m}}
+    \end{equation}
+\end{theorem}
+Thus, for a finite hypothesis set $\mathcal{H}$, 
+
+\begin{equation*}
+    R(h) \leq \hat{R}_S (h) + O \left( \sqrt{\frac{\log_{2}{|\mathcal{H}|}}{m}} \right)
+\end{equation*}
+
+The term $\log{|\mathcal{H}|}$ can be interpreted as the number of bit needed to represent $\mathcal{H}$. A larger sample size $m$ guarantees better generalization, and the bound increases with $|\mathcal{H}|$, but only logarithmically. 
+
+Note that the bound suggests seeking a trade-off between reducing the empirical error versus controlling the size of the hypothesis set: a larger hypothesis set is penalized by the second term but could help reduce the empirical error, that is the first term. But for a similar empirical error, it suggests using a smaller hypothesis set. This can be viewed as an instance of the so-called \textit{Occam's Razor}, of which can be said as: \textit{Plurality should not be posited without necessity}, or, the simplest explanation is best.
+
+\section{(Agnostic) General PAC-learning}
+
+For the definition of PAC-learning in the above setting, for model-specific notion, there are some issues with it, more specifically, with the type of \textit{strong assumptions} that it holds. 
+\begin{enumerate}[noitemsep,topsep=1pt]
+    \item The \textit{representation size} and boundary only works for priori given of the concept class $\mathcal{C}$. In case that we cannot determine this, and there are a large potential for that to fail in capturing the minimal representation scope of the concept, the bound simply fails to a certain extent - given that our definition includes the polynomial bound of the concept class itself. 
+    \item The assumption that the target concept $c$ belongs to $\mathcal{C}$ means that we are trying to fit a hypothesis to data, which are a priori known to have been generated by some member of the model class defined by $\mathcal{C}$. However, in general, we may not want to assume much about the data generation process, and instead would like to find the best fit to the data at hand using an element of some model class of our choice. 
+    \item The assumption that the training features are labelled noiselessly rules out the possibility of noisy measurements or observations. 
+    \item Even if the above assumptions were somehow true, we would not necessarily have a priori knowledge of the concept class $\mathcal{C}$, containing the priori knowledge of the concept class $\mathcal{C}$ containing the target concept or function. In that case, the best we could hope for is to pick our own model class and seek the best approximation to the unknown target concept among the elements of that class. 
+\end{enumerate}
+
+Agnostic case is considered the most general scenario of supervised learning, where the distribution $\mathcal{D}$ is defined over $\mathcal{X}\times \mathcal{Y}$, and the training data is a labelled sample $S$ drawn i.i.d. according to $\mathcal{D}$: 
+$$S=\{ (x_{1},y_{1}),\dots,(x_{m},y_{m}) \}$$
+The learning problem is to find a hypothesis $h\in \mathcal{H}$ with small generalization error
+\begin{equation}
+    R(h)=\underset{(x,y)\sim \mathcal{D}}{\mathbb{P}}[h(x)\neq y]=\underset{(x,y)\sim \mathcal{D}}{\mathbb{E}}[1_{h(x)\neq y}]
+\end{equation}
+This more general scenario is referred to as the stochastic scenario. Within this setting, the output target is a probabilistic function of the input. The stochastic scenario captures many real-world problems where the label of an input point is not unique. \footnote{
+    Considering two set $X$ and $Y$. A probabilistic function from $X$ to $Y$ assign to each $x\in X$ a relevant sub-distribution of elements of $Y$, rather than a single value $y\in Y$. Such a sub-distribution is a function $\delta: Y \to [0,1]$ such that $$\sum_{y\in Y}\delta(y)\leq 1$$In other words, a probabilistic function $X\to Y$ is a function $f: X\to (Y\to[0,1])$, interpreted as $f: X \times Y\to[0,1]$ such that for all $x\in X$, $$\sum_{y\in Y}f(x,y)\leq 1$$
+}
+
+The \textit{agnostic PAC-learning} format is then modified by considering $\mathcal{Y}$ as also a random variability. 
+\begin{definition}[Agnostic PAC-learning]
+    A concept class $\mathcal{C}$ is said to be \textbf{PAC-learnable} if there exists an algorithm $\mathcal{A}$ and a polynomial function $poly(\cdot,\cdot,\cdot,\cdot)$ of 4-argument such that for any $\epsilon>0$, $\delta>0$, for all distribution $\mathcal{D}$  on $\mathcal{X}\times \mathcal{Y}$ and for any target concept $c\in\mathcal{C}$, the following holds for any sample size $m\geq poly(1/\epsilon,1/\delta,n)$:
+    \begin{equation}
+        \underset{S\sim \mathcal{D}^{m}}{\mathrm{Pr}}\left[ R(h(S))- \min_{h\in\mathcal{H}}R(h)\leq \epsilon \right]\geq 1-\delta
+    \end{equation}
+    If $\mathcal{A}$ further runs in $poly(1/\epsilon,1/\delta,n)$, then $\mathcal{C}$ is said to be \textit{efficiently agnostic PAC-learnable}. When such algorithm exists, we call $\mathcal{A}$ an agnostic PAC-learning algorithm.
+\end{definition}
+
+
+PAC-learning bound argues in the sense of \textit{computational complexities}, and \textit{space complexities}. Specifically, the term $poly(1/\epsilon,1/\delta,n,size(c))$ hopes to bound the required learning process to polynomial time, specified by 4 parameters. Here, $n$ is the \textit{input dimension}, $size(c)$ is the encoding complexity of the target concept, $\epsilon>0$ is the \textit{accuracy bound}, and $\delta$ is the confidence bound - the probability that $h$ fails.
+
+\subsection{Noise}
+
+Using the notion of the Bayes classifier and Bayes error, one can define the \textit{noise} \index{noise} of a given learning setting under PAC-learning consideration, as followed. 
+\begin{definition}[Noise]
+    Given a distribution $\mathcal{D}$ over $\mathcal{X}\times \mathcal{Y}$, the \textit{noise} at point $x\in \mathcal{X}$ is defined by \begin{equation*}
+        noise(x) = \min_{x\in \mathcal{X}} \{\mathbb{P}[1\mid x], \mathbb{P}[0\mid x]\}
+    \end{equation*}
+    The average noise or the noise associated to $\mathcal{D}$ is then the minimum possible error aside from intrinsic model error, and is calculated by $\mathbb{E}[noise(x)]$
+\end{definition}
+Thus, the average noise is precisely the Bayes error, that is, $noise = \mathbb{E}[noise(x)]=R^{*}$. The noise is a characteristic of the learning task indicative of its level of difficulty. A point $x\in \mathcal{X}$, for which noise is close to $1/2$, is sometimes referred to as \textit{noisy} and is of course a challenge for accurate prediction. 
+
+\section{Occam's Razor}
+
+The PAC model that we introduced defined learning directly in terms of the predictive power of the hypothesis output by the learning algorithm. That is, given a hypothesis $h\in \mathcal{H}$ and the learning algorithm $\mathcal{L}$, the learning involves switching this dynamic of the predictive power of the hypothesis, over certain setting and problem. We can, as it is possible to apply this measure, to a learning algorithm because we made the assumption that the instances are drawn, from a probabilistic perspective, from a fixed distribution $\mathcal{D}$ then measured the predictive power with respect to the same distribution. 
+
+Our new notion, dubbed as \textit{Occam learning}, would let us consider a different definition of learning that makes no assumptions about how the instances in a labelled sample are chosen, though we will assume that the labels are generated by a target concept chosen from a known class. Instead of measuring the predictive power of a hypothesis, the new definition judges the hypothesis by how succinctly it explains the observed data (or a labelled example). The crucial difference between PAC learning and Occam learning, is then that in PAC learning, the random sample drawn by the learning algorithm is intended only as an aid for reaching an accurate model of some external process, while in the new definition, we are concerned only with the fixed sample before us, and not any external process. By that, we simply reduce it to somewhat similar of the statistical estimation problem setting, though not exactly the same. 
+
+This also contains the substance of which we often call the \textit{Occam's razor}, telling that overly complex scientific theories should be subjected to a simplifying knife. If we equate "simplicity" with representational succinctness, then another way to interpret Occam's razor would be to say learning is the act of finding a pattern in the observed data that facilitates a compact representation or compression of this data. In our simple concept learning setting, succinctness is measured by the size of the representation of the hypothesis concept. Equivalently, we can measure succinctness by the cardinality of the hypothesis class used by the algorithm, for if this class is small then a typical hypothesis from the class can be represented by a short binary string, and if this class is large then a typical hypothesis must be represented by a long string. Thus, an algorithm is an \textit{Occam algorithm} if it finds a short hypothesis consistent with the observed data. 
+
+Additionally so, it would be plenty interesting to see that Occam's razor somehow falls into the range of what would be expected of the \textit{bias-variance tradeoff}. This perhaps, will prompt us to push further into the inquiry of double descent, which somehow in a fantastic way, breaks the principle of the Lord William Occam. 
+\subsection{Occam Learning and Succinctness}
+
+Let $X= \cup_{n\geq 1} X_n$ be the instance space, let $\mathcal{C}=\cup_{n\geq 1}\mathcal{C}_{n}$ be the target concept class, and let $\mathcal{H}= \cup_{n\geq 1}\mathcal{H}_{n}$ be the class of hypothesis representation. The notation is preferably clarified: $X_{n}$ is under the binary representation typically concerned $\{0,1\}^{n}$, or a boolean string of length $n$. Hence, $\mathcal{H}_{n}$ and $\mathcal{C}_{n}$ are subsequently concept and hypothesis class specified for such string space. In this part, we will assume, unless explicitly stated otherwise, that the hypothesis representation scheme of $\mathcal{H}$ uses a binary alphabet, and we define $size(h)$ to be the length of the bit string $h$. Also, recall that for a concept $c\in \mathcal{C}$, $size(c)$ denotes the size of the smallest representation of $c$ in $\mathcal{H}$. Let $c\in \mathcal{C}_{n}$ denote the target concept. A labelled sample $S$ of cardinality $m$ is a set of pairs: \sidepar{\footnotesize This section is taken, and studied, from a pretty old book. It would be then observed that a lot of the concept, including the representation, is taken in a rather computer science fashion such as for the hypothesis $\mathcal{H}$ to be binary representation.}
+\begin{equation*}
+    S = \{(x_1, c(x_1)),\dots,(x_m, c(x_m))\}
+\end{equation*}
+An \textbf{Occam algorithm} $L$ takes as input a labelled sample $S$, and outputs a short hypothesis $h$, "relatively so", that is consistent with $S$. By consistent, we mean as one definition above, $h(x_{i})= c(x_{i})$ for each $i$, and for short we mean that $size(h)$ is a sufficiently slowly growing function of $n$, $size(c)$ and $m$. This is formalised in the following definition. 
+
+\begin{definition}[Occam algorithm]
+    Let $\alpha \geq 0$ and $0\leq \beta < 1$ be constant. $L$ is an $(\alpha, \beta)$-\textbf{Occam algorithm} for $\mathcal{C}$ using $\mathcal{H}$ if on input a sample $S$ of cardinality $m$ labelled according to $c\in \mathcal{C}_{n}$, $L$ outputs a hypothesis $h\in \mathcal{H}$ such that: 
+    \begin{itemize}
+        \item $h$ is consistent with $S$, or $h(x_{i})=c(x_i)$ for all $x_{i}\in S_{x}$. 
+        \item $size(h)\leq (n\cdot size(c))^{\alpha}m^{\beta}$
+    \end{itemize}
+    We say that $L$ is an \textbf{efficient} $(\alpha,\beta)$-Occam algorithm if its running time is bounded by a polynomial in $n,m$ and $size(c)$.  
+\end{definition}
+
+The growth complexity $\mathcal{O}(n\cdot size(c))^{\alpha} m^{\beta}$ is somewhat difficult to scale down. However, we can somewhat try to prove if it is convergence or not. 
+
+\begin{theorem}
+    Fix $n$. Then $\mathcal{O}(n\cdot size(c))^{\alpha} m^{\beta}$ is convergence or divergence depends on the ratio of $\alpha$ and $\beta$. 
+\end{theorem}
+\begin{proof}
+    Fixed $n$, then we have the class $\mathcal{C}_{n}$ to be finitely restricted of $n$ representation class. Then, $size(c)$ for $c\in \mathcal{C}$ is also constant. We then reduce the first complexity measure to be $\mathcal{O}(\lambda^{\alpha} m^{\beta})$. Since $0\geq\beta < 1$, it follows that as $\beta$ increase, $size(h)$ monotonically decrease. This is also the case for $\alpha$ in range $[0,1)$. Hence, it converges to at least $n$, and diverges accordingly for arbitrary $\alpha>1$, though the trend will not as strong if $m> n$, or $m\gg n$. 
+\end{proof}
+
+Now, in what sense can we say that the output $h$ of an Occam algorithm succinct? First, let us assume that $m\gg n$, so that the above bound can be effectively simplified to $size(h)< m^{\beta}$, for some $\beta < 1$. Since the hypothesis $h$ is consistent with the sample $S$, $H$ allows us to reconstruct the $m$ labels $c(x_1) = h(x_1),\dots,c(x_m)=h(x_m)$, and is given only the unlabelled sequence of instance $x_{1},\dots,x_{m}$. Thus the $m$ bits $c(x_1),\dots,c(x_m)$ have been effectively \textit{compressed} into a much shorter string $h$ of length at most $m^{\beta}$. Note that the requirement $\beta<1$ is quite weak, since a consistent hypothesis of length $O(mn)$ can always be achieved by simply storing the sample $S$ in a table (at a cost of $n+1$ bits per labelled example) and giving an arbitrary answer for instances that are not in the table. We would be certainly not expecting such a hypothesis to have any predictive power. 
+
+By sheer observation of the definition we have been constructing, the $(1,0)$-Occam algorithm is the largest deviation, with the bound $size(h)\leq n \cdot size(c)$. This means it can at most, have the representation size equal to \textit{all} representation partition of $c\in \mathcal{C}$. It is also good to note the misconception, or rather the misinterpretation: $size(c)$ is different from $n$, even though they are particularly the same from first glance. It is because $n$ is actually the representation size of the instance string, and not the concept representation string, which utilizes another alphabet entirely. Though, suppose they are of the same alphabet, then $X= \{\Sigma\}_{n}$, then again, there exists a number $q$ such that $q \geq n$. In the case where $q=n$, it is most likely that the representation is constrained of the linear transformation order, of which does not change the string length. 
+
+Let us observe that even in the case $m\ll n$, the shortest consistent hypothesis in $\mathcal{H}$ may in fact be the target concept, and so we must allow $size(h)$ to depend at least linearly on $size(c)$. We will see cases where this makes it easier to efficiently find a consistent hypothesis --- by contrast, computing the shortest hypothesis consistent with the data is often a computationally hard problem. 
+
+\begin{theorem}[Occam's Razor]\label{eq:Occam1}
+    Let $L$ be an efficient $(\alpha,\beta)$-Occam algorithm for $\mathcal{C}$ using $\mathcal{H}$. Let $\mathcal{D}$ be the target distribution over the instance space $X$, let $c\in \mathcal{C}_{n}$ be the target concept, and $0< \epsilon, \delta \leq 1$. Then there is a constant $a>0$ such that if $L$ is given as input a random sample $S$ of $m$ examples drawn from $EX(c,\mathcal{D})$, where $m$ satisfies: 
+    \begin{equation}
+        m \geq a \left( \frac{1}{\epsilon} \log{\frac{1}{\delta}} + \left(\frac{(n\cdot \mathrm{size}(c)^{\alpha})}{\epsilon}\right)^{1/1-\beta} \right)
+    \end{equation}
+    then with probability at least $1-\delta$ the output $h$ of $L$ satisfies $error(h)\leq \epsilon$. Moreover, $L$ runs in time polynomial in $n$, $size(c)$, $1/\epsilon$ and $1/\delta$.  
+\end{theorem}
+Notice that as $\beta$ tends to 1, the exponent in the bound for $m$ tends to infinity. This corresponds with the assumption of intuition that the length of the hypothesis approaches that of the data itself, then the predictive power of the hypothesis is diminishing. 
+
+To apply this theorem into variational setting, we turn to the arguably more general definition, measuring representational succinctness by the cardinality of the hypothesis class rather than the representationally supposed bit length $size(h)$. Then, theorem~\ref{eq:Occam1} will be the special case of such theorem. To make this precise, let $\mathcal{H}_{n}= \cup_{m\geq 1}\mathcal{H}_{n,m}$ 
+
+\begin{theorem}[Occam's Razor, Cardinality Version]
+    Let $\mathcal{C}$ be a concept class and $\mathcal{H}$ a representation space. Let $L$ be an algorithm such that for any $n$ and any $c\in \mathcal{C}_{n}$, if $L$ is given as input a sample $S$ of $m$ labelled examples of $c$, then $L$ runs in time polynomial in $n$, $m$, and $size(c)$, and output an $h\in \mathcal{H}_{n,m}$ that is consistent with $S$. Then there is a constant $b>0$ such that for any $n$, any distribution $\mathcal{D}$ over $X_{n}$, and any target concept $c\in \mathcal{C}_{n}$, if $L$ is given as input a random sample from $EX(c,\mathcal{D})$ of $m$ examples, where $|\mathcal{H}_{n,m}|$ satisfies: 
+    \begin{equation}
+        \log{|\mathcal{H}_{n,m}|} \leq b \epsilon m - \log{\frac{1}{\delta}}
+    \end{equation} 
+    or equivalently, where $m$ satisfies $m\geq (1/b\epsilon)(\log{|\mathcal{H}_{n,m|}}+ \log{(1/\delta)})$ then $L$ is guaranteed to find a hypothesis $h\in \mathcal{H}_{n}$ that with probability at least $1-\delta$ obeys $error(h)\leq \epsilon$. 
+\end{theorem}
+We do not mention, or necessarily claim that $L$ is an efficient PAC learning algorithm. In order for the theorem to apply, we must pick $m$ large enough so that $b\epsilon m$ dominates $\log{|\mathcal{H}_{n,m}|}$. 
+\section{Rademacher Complexity}
+The hypothesis sets typically used in machine learning are infinite (this is,\dots quite a problem). But the sample complexity bounds are uninformative when dealing with infinite hypothesis sets - for whatever this means. One could ask whether efficient learning from a finite sample is even possible when the hypothesis set $\mathcal{H}$ is infinite. Our goal with the Rademacher complexity is this exact question, for the first complexity treatment. The general idea for doing so consists of reducing the infinite case to the analysis of finite sets of hypotheses, and then proceed as previous sections. 
+\subsection{Rademacher descriptions}
+We will continue to use $\mathcal{H}$ to denote a hypothesis set as in the previous chapters. Many of the result of this section are general and hold for arbitrary loss function, or $L: \mathcal{Y}\times \mathcal{Y}\to \mathbb{R}$. In what follows, $\mathcal{G}$ will generally be interpreted as the \textit{family of loss functions associated to $\mathcal{H}$}, mapping from $\mathcal{Z}=\mathcal{X}\times\mathcal{Y}$ to $\mathbb{R}$. That is, \begin{equation*}
+    \mathcal{G} = \{g: (x,y)\mapsto L(h(x),y): h\in \mathcal{H}\}
+\end{equation*}
+However, the definitions are given in the general case of a family of arbitrary functions $\mathcal{G}$, mapping from an arbitrary input space $\mathbb{Z}$ to $\mathbb{R}$. Thus, we can say that we endowed upon the landscape a measure set $\mathcal{G}$ of all singular mapping. 
+
+The \textbf{Rademacher complexity} captures the richness of a family of functions by measuring the degree to which a hypothesis set can fit random noise. This is perhaps one of the very \textit{empirical complexity notion} that would be seen, as for the random noise idea, that is. \index{ERC}
+
+Let $G$ be a family of functions mapping from $Z\to [a,b]$, $S=(z_1,\dots, z_m)$ a fixed sample of size $m$ with elements in $Z$. Then, the \textbf{empirical Rademacher complexity} of $G$ with respect to the sample $S$ is defined as:
+\begin{equation*}
+    \hat{\mathfrak{R}}_S (\mathcal{G}) = \mathbb{E} \left[ \sup_{g\in G} \frac{1}{m} \sum^{m}_{i=1} \sigma_i g(z_i) \right]
+\end{equation*}
+where $\bm{\sigma}=\{\sigma_1,\dots,\sigma_m\}^{\top}$ with $\sigma_i$s independent uniform random variables taking values in $\{-1,+1\}$. The random variable $\sigma_i$ are called \textbf{Rademacher variables}.\index{Rademacher variables} 
+
+The empirical Rademacher complexity can be rewritten as:
+$$\hat{\mathfrak{R}}_S (\mathcal{G}) = \underset{\mathbf{\sigma}}{\mathbb{E}} \left[\sup_{g \in G} \frac{\bm{\sigma}\cdot \mathbf{g}_S}{m}\right]$$
+for $\mathbf{g}_S$ denoting the vector of values taken by $g$ over the sample $S$: $\mathbf{g}_{S} = (g(z_1),\dots,g(z_{m}))^{\top}$. The inner product measures the correlation of $\mathbf{g}_{S}$ with the vector of random noise $\bm{\sigma}$. The supremum $\sup_{g\in \mathcal{G}} (\bm{\sigma}\cdot \mathbf{g}_{S}/m)$ is a measure of how well the function class $\mathcal{G}$ correlates with $\bm{\sigma}$ over the sample $S$. Thus, the empirical Rademacher complexity measures on average how well the function class correlates with random noise on the dataset. What will the random noise be like? Well, not much. For a fixed sample size, it captures how \textbf{random} the loss function distribution is. A random noise system is inherently chaotic by default, even if we restrict its value in $\{-1,+1\}$ \footnote{Actually, this is indeed a problem. What will happen if the value is totally synchronous for a specific configuration that is, though statistically impossible, yet is the solution to the finite space?}. Hence, if the model is good enough on certain dataset, that the noisy, useless data configuration performs "somewhat pretty well", then from that, we can know the complexity of the model by its flexibility in such noisy fitting. That is, in the topic of fitting, at least. So the richer or more complex families $\mathcal{G}$ can generate more vectors $\mathbf{g}_{S}$ and thus better correlate with random noise on average. 
+
+We come to the definition of \textit{the} Rademacher complexity. \index{Rademacher complexity}
+\begin{definition}[Rademacher complexity]
+    Let $\mathcal{D}$ denote the distribution according to which samples are drawn. For any integer $m\geq 1$, the \textbf{Rademacher complexity} of $\mathcal{G}$ is the expectation of the empirical Rademacher complexity over all samples of size $m$ drawn according to $\mathcal{D}$. 
+    \begin{equation}
+        \mathfrak{R}_{m} (\mathcal{G}) = \underset{S\sim \mathcal{D}^{m}}{\mathbb{E}} [\hat{\mathfrak{R}}_{S}(\mathcal{G})]
+    \end{equation}
+\end{definition}
+
+We are now ready to present our first generalization bound based on Rademacher complexity. 
+
+\begin{theorem}
+    Let $\mathcal{G}$ be a family of functions mapping from $\mathcal{Z}$ to $[0,1]$. Then, for any $\delta > 0$, with probability at least $1-\delta$ over the draw of an i.i.d. sample $S$ of size $m$, each of the following holds for all $g\in \mathcal{G}$: 
+    \begin{equation}\label{ref:3.x}
+        \mathbb{E}[g(z)] \leq \frac{1}{m} \sum^{m}_{i=1} g(z_{i}) + 2\mathfrak{R}_{m}(\mathcal{G}) + \sqrt{\frac{\log(1/\delta)}{2m}}
+    \end{equation}
+    and 
+    \begin{equation}\label{ref:3.x1}
+        \mathbb{E}[g(z)] \leq \frac{1}{m} \sum^{m}_{i=1} g(z_{i}) + 2\mathfrak{R}_{m}(\mathcal{G}) + 3\sqrt{\frac{\log(2/\delta)}{2m}}
+    \end{equation}
+\end{theorem}
+The final term in both equations is typically much smaller than the Rademacher complexity. Note that they are one-sided uniform deviation bounds, and that they are also \textit{data-dependent} bound, just like how Gaussian process regression is also functionally data-dependent. 
+\begin{proof}
+For any sample $S=(z_1,\dots,z_m)$, and any $g\in\mathcal{G}$, we denote $\hat{\mathbb{E}}_{S}[g]$ by the empirical average of $g$ over $S$. The proof then consists of applying McDiarmid's inequality to function $\Phi$ defined for any sample $S$ by: 
+\begin{equation}
+    \Phi(S) = \sup_{g\in\mathcal{G}} \Big(\mathbb{E}[g]- \hat{E}_{S}[g]\Big)
+\end{equation}
+This is the supremum of the different between the average and the empirical average for all $g\in \mathcal{G}$. If there is anything, this is similar to the following rational choice: just simply change the inequality to: 
+
+\begin{equation}
+    \begin{aligned}
+        \mathbb{E}[g(z)] - \frac{1}{m} \sum^{m}_{i=1} g(z_{i}) &\leq  2\mathfrak{R}_{m}(\mathcal{G}) + 3\sqrt{\frac{\log(2/\delta)}{2m}}\\
+        \mathbb{E}[g(z)] - \hat{\mathbb{E}}_{S'}[g(z)] &\leq  3\mathfrak{R}_{m}(\mathcal{G}) + a\sqrt{\frac{\log(2/\delta)}{2m}}
+    \end{aligned}
+\end{equation}
+in which we then take the supremum. The supremum is for the pretty trivial choice: for this equality to hold true then the largest element of the LHS $\mathbb{E}[g(z)] - \hat{\mathbb{E}}_{S'}[g(z)]$ to be less than the RHS, for any $\delta$ (for equation~\ref{ref:3.x}) and $\delta/2$ (for equation~\ref{ref:3.x1}). Note that the same thing is applicable. 
+
+Let $S$ and $S'$ be two samples differing by exactly one point, say $z_{m}$ in $S$ and $z'_{m}$ in $S'$. Then, since the difference of suprema does not exceed the supremum of the difference, we have: 
+\begin{equation}
+    \Phi(S')- \Phi(S) \leq \sup_{g\in \mathcal{G}} \Big ( \hat{\mathbb{E}}_{S}[g] - \hat{\mathbb{E}}_{S'}[g] \Big) = \sup_{g\in \mathcal{G}} \frac{g(z_m) - g(z'_m)}{m} \leq \frac{1}{m}
+\end{equation}
+
+Similarly, we can obtain 
+\begin{equation}
+    \Phi(S') - \Phi(S) \leq \frac{1}{m} \implies \left|\Phi(S) - \Phi(S')\right|\leq \frac{1}{m}
+\end{equation}
+By McDiarmid's inequality, for any $\delta > 0$, with probability at least $1-\delta /2$, the following holds. 
+\begin{equation}
+    \Phi(S) \leq \underset{S}{\mathbb{E}} [\Phi(S)] + \sqrt{\frac{log{2/\delta}}{2m}}
+\end{equation}
+We next bound the expectation of the right-hand side as follows: 
+
+\begin{align}
+\mathbb{E}_{S}[\Phi(S)] &= \mathbb{E}_{S} \left[ \sup_{g \in \mathcal{G}} \left( \mathbb{E}[g] - \hat{\mathbb{E}}_S(g) \right) \right] \\
+& = \mathbb{E}_{S} \left[ \sup_{g \in \mathcal{G}} \left( \mathbb{E}_{S'}[\hat{\mathbb{E}}_{S'}(g)] - \hat{\mathbb{E}}_S(g) \right) \right] \text{ from \ref{thm:minimalNeu}}\\
+&= \mathbb{E}_{S} \left[\sup_{g \in \mathcal{G}} \mathbb{E}_{S'} \left[ \hat{\mathbb{E}}_{S'}(g) - \hat{\mathbb{E}}_S(g) \right]\right] \\
+&\leq \mathbb{E}_{S,S'} \left[ \sup_{g \in \mathcal{G}} \left( \hat{\mathbb{E}}_{S'}(g) - \hat{\mathbb{E}}_S(g) \right) \right]  \\
+&= \mathbb{E}_{S,S'} \left[ \sup_{g \in \mathcal{G}} \frac{1}{m} \sum_{i=1}^{m} \left( g(z_i') - g(z_i) \right) \right] \\
+&= \mathbb{E}_{\sigma, S, S'} \left[ \sup_{g \in \mathcal{G}} \frac{1}{m} \sum_{i=1}^{m} \sigma_i \left( g(z_i') - g(z_i) \right) \right]  \\
+&\leq \mathbb{E}_{\sigma, S, S'} \left[ \sup_{g \in \mathcal{G}} \frac{1}{m} \sum_{i=1}^{m} \sigma_i g(z_i') \right] + \mathbb{E}_{\sigma, S} \left[ \sup_{g \in \mathcal{G}} \frac{1}{m} \sum_{i=1}^{m} -\sigma_i g(z_i) \right] \\
+&= 2 \, \mathbb{E}_{\sigma, S} \left[ \sup_{g \in \mathcal{G}} \frac{1}{m} \sum_{i=1}^{m} \sigma_i g(z_i) \right] = 2 \mathfrak{R}_m(\mathcal{S}). \label{eq:3.13}
+\end{align}
+We note that there are several implicit choices, especially for the properties of the subadditivity of the supremum, $\sup{A+B}=\sup{A}+\sup{B}$.
+
+The reduction to $\mathfrak{R}_{m}(\mathcal{G})$ in equation~\ref{eq:3.13} yields the bound in the previous equation (the first one), using $\delta$ instead of $\delta/2$. To derive a bound in terms of $\hat{\mathfrak{R}}_{S}(\mathcal{G})$, we observe that, by definition, changing one point in $S$ changes $\hat{\mathfrak{R}}_{S}(\mathcal{G})$ by at most $1/m$. Then, using again McDiarmid inequality, with probability $1-\delta/2$, the following holds: 
+\begin{equation}
+    \mathfrak{R}_{m}(\mathcal{G}) \leq \hat{\mathfrak{R}}_{S}(\mathcal{G}) + \sqrt{\frac{\log{2/\delta}}{2m}}
+\end{equation}
+
+Finally, we use the union bound to combine inequalities together, which yields 
+\begin{equation}
+    \Phi(S) \leq 2 \hat{\mathfrak{R}}_{S}(\mathcal{G}) + 3\sqrt{\frac{\log{2/\delta}}{2m}}
+\end{equation}
+which matches the inequality. 
+\end{proof}
+
+The above inequality can be somewhat extended to be formulated, using the empirical Rademacher complexity rather than the expected Rademacher complexity. 
+
+\begin{col}
+    Suppose that a sample $S$ of size $m$ is drawn according to distribution $\mathcal{D}$. Then for any $\delta > 0$, with probability at least $1-\delta$, the following holds for all $g\in \mathcal{G}$: 
+    \begin{equation}
+    \mathbb{E}[g(z)] = L(g) \leq \underbrace{L_{S}(g)}_{\hat{\mathbb{E}}_{S}[g]} + 2\mathfrak{R}_{S}(\mathcal{G}) + O\left(\sqrt{\frac{\log{1/\delta}}{m}}\right)
+\end{equation}
+\end{col}
+\begin{proof}
+    We may consider the empirical Rademacher complexity $R_{S}(G)$ as a function of the points $z_{1},\dots,z_{m}$ that comprise the sample $S$. Changing one of the $z_{i}$ to a new value $z'_{i}$ changes $R_{S}(G)$ by at most $1/m$. Applying McDiarmid's inequality with $c=1/m$, and $\epsilon = \sqrt{\log{2/\delta}/2m}$ we have that with probability at least $1-\delta/2$, \begin{equation}
+        R_{S}(G) \leq R_{m}(\mathcal{G}) + \sqrt{\frac{\log{2/\delta}}{2m}}
+    \end{equation}
+    By union bound, with probability at least $1-e\delta$, the inequality both holds. This implies that our corollary holds for all $g\in \mathcal{G}$ with probability at least $1-2\delta$. Replace $\delta$ by $\delta/2$ yields the required result. 
+\end{proof}
+
+
+
+The following result relates the empirical Rademacher complexities of a hypothesis set $\mathcal{H}$ and to the family of loss functions $\mathcal{G}$ associated to $\mathcal{H}$ in the case of binary loss (zero-one loss). 
+
+\begin{lemma}
+    Let $\mathcal{H}$ be a family of functions taking values in $\{-1,+1\}$, and let $\mathcal{G}$ be the family of loss functions associated to $\mathcal{H}$ for the zero-one loss: $$\mathcal{G}= \{(x,y)\mapsto 1_{h(x)\leq y}: h\in \mathcal{H}\}$$ For any sample $S=\{(x_i,y_i)\}_{m}$ of elements in $\mathcal{X}\times \{-1,1\}$, let $S_{\mathcal{X}}$ be the \textbf{projection} over $\mathcal{X}$: $S_{\mathcal{X}}=(x_1,\dots,x_m)$. Then, the following relation holds: 
+    \begin{equation}
+        \hat{\mathfrak{R}}_{S}(\mathcal{G}) = \frac{1}{2} \hat{\mathfrak{R}}_{S_{\mathcal{X}}}(\mathcal{H})
+    \end{equation}
+\end{lemma}
+
+\begin{proof}
+    For any sample $S = ((x_1, y_1), \dots, (x_m, y_m))$ of elements in $\mathcal{X} \times \{-1, +1\}$, by definition, the empirical Rademacher complexity of $\mathcal{G}$ can be written as:
+\begin{align*}
+\widehat{\mathfrak{R}}_S(\mathcal{G}) 
+&= \mathbb{E}_\sigma \left[ \sup_{h \in \mathcal{H}} \frac{1}{m} \sum_{i=1}^m \sigma_i \mathbbm{1}_{h(x_i) \ne y_i} \right] \\
+&= \mathbb{E}_\sigma \left[ \sup_{h \in \mathcal{H}} \frac{1}{m} \sum_{i=1}^m \sigma_i \frac{1 - y_i h(x_i)}{2} \right] \\
+&= \frac{1}{2} \mathbb{E}_\sigma \left[ \sup_{h \in \mathcal{H}} \frac{1}{m} \sum_{i=1}^m -\sigma_i y_i h(x_i) \right] \\
+&= \frac{1}{2} \mathbb{E}_\sigma \left[ \sup_{h \in \mathcal{H}} \frac{1}{m} \sum_{i=1}^m \sigma_i h(x_i) \right] \\
+&= \frac{1}{2} \widehat{\mathfrak{R}}_S(\mathcal{H}),
+\end{align*}
+where we used the fact that $\mathbbm{1}_{h(x_i) \ne y_i} = (1 - y_i h(x_i))/2$ and the fact that for a fixed $y_i \in \{-1, +1\}$, $\sigma_i$ and $-\sigma_i y_i$ are distributed in the same way.
+
+\end{proof}
+
+The lemma then implies by taking expectations, that for any $m\geq 1$, 
+\begin{equation}
+    \mathfrak{R}_{m}(\mathcal{G}) = \frac{1}{2} \mathfrak{R}_{m}(\mathcal{H})
+\end{equation}
+These connections between the empirical and average Rademacher complexities can be used to derive generalization bounds for binary classification in terms of the Rademacher complexity of the hypothesis set $\mathcal{H}$. This leads to the following result on the Rademacher complexity bounds on binary classification. 
+
+\begin{theorem}[Rademacher complexity bounds - binary classification]
+    Let $\mathcal{H}$ be a family of functions taking values in $\{-1,+1\}$ and let $\mathcal{D}$ be the distribution over the input space $\mathcal{X}$. Then, for any $\delta > 0$, with probability at least $1-\delta$ over a sample $S$ of size $m$ drawn according to $\mathcal{D}$, each of the following holds for any $h\in \mathcal{H}$. 
+    \begin{equation}
+        R(h) \leq \hat{R}_{S}(h) + \mathfrak{R}_{m}(\mathcal{H}) + \sqrt{\frac{\log{1/\delta}}{2m}}
+    \end{equation}
+    and 
+    \begin{equation}
+        R(h) \leq \hat{R}_{S}(h) + \mathfrak{R}_{m}(\mathcal{H}) + 3\sqrt{\frac{\log{2/\delta}}{2m}}
+    \end{equation}
+\end{theorem}
+\begin{proof}
+    This follows immediately from the above theorem and lemma. 
+\end{proof}
+
+\begin{example}
+Let $\Pi=\{A_1, \dots,A_k\}$ be a fixed partition of $\mathcal{X}$, such as a regular partition or a recursive dyadic partition. Let $\mathcal{H}$ be the classifiers that are constant on cells in $\Pi$, essentially means that the label applies for any $x\in A_{i}$, given binary tagging of $\{-1,+1\}$. Then, $\lvert\mathcal{H}\rvert=2^k$. We will obtain a bound on the empirical Rademacher complexity of $\mathcal{H}$. Let $\ell (A)$ denote the label assigned to $A\in \Pi$. 
+\begin{align*}
+    \widehat{\mathcal{R}}_S(\mathcal{H}) 
+    &= \mathbb{E}_\sigma \left[ \sup_{h \in \mathcal{H}} \frac{1}{n} \sum_{i=1}^n \sigma_i h(X_i) \right] \\
+    &= \frac{1}{n} \mathbb{E}_\sigma \left[ \sup_{h \in \mathcal{H}} \sum_{j=1}^k \sum_{i: X_i \in A_j} \sigma_i h(X_i) \right] \\
+    &= \frac{1}{n} \mathbb{E}_\sigma \left[ \sum_{A \in \Pi} \sup_{\ell(A)} \sum_{i: X_i \in A} \sigma_i \ell(A) \right] \\
+    &= \frac{1}{n} \sum_{A \in \Pi} \mathbb{E}_\sigma \left[ \sup_{\ell(A)} \sum_{i: X_i \in A} \sigma_i \ell(A) \right].
+\end{align*}
+Manipulating the terms inside the expectation gives
+\begin{align*}
+    \mathbb{E}_\sigma \left[ \sup_{\ell(A)} \sum_{i: X_i \in A} \sigma_i \ell(A) \right] 
+    &= \mathbb{E}_\sigma \left[ \sup_{\ell(A)} \ell(A) \sum_{i: X_i \in A} \sigma_i \right] \\
+    &= \mathbb{E}_\sigma \left[ \left| \sum_{i: X_i \in A} \sigma_i \right| \right] \quad (\ell(A) \in \{-1, 1\}) \\
+    &\le \mathbb{E}_\sigma \left[ \left( \sum_{i: X_i \in A} \sigma_i \right)^2 \right]^{1/2} \\
+    &= \left[ \mathbb{E}_\sigma \left( \sum_{i: X_i \in A} \sigma_i \right)^2 \right]^{1/2} \quad \text{(Jensen's inequality)} \\
+    &= \sqrt{\#\{i : X_i \in A\}},
+\end{align*}
+
+where the last line follows because 
+$$
+\mathbb{E}_\sigma (\sigma_i \sigma_j) = 
+\begin{cases}
+    0, & i \ne j, \\
+    1, & i = j.
+\end{cases}
+$$
+If $ n_j = \#\{i : X_i \in A_j\}$, then
+\begin{align*}
+    \widehat{\mathcal{R}}_S(\mathcal{H}) 
+    &= \frac{1}{n} \sum_{j=1}^k \sqrt{n_j} \\
+    &= \sum_{j=1}^k \frac{\sqrt{\widehat{P}(A_j)}}{n}.
+\end{align*}
+
+\end{example}
+
+\subsection{Growth function}
+
+Here, we will show how the Rademacher complexity can be bounded in terms of the \textit{growth function}. \index{growth function}
+\begin{definition}[Growth function]
+    Given a binary class of functions $\mathcal{H}$, we define the \textit{growth function} $\Pi_{\mathcal{H}}: \mathbb{N}\to \mathbb{N}$ as: 
+    \begin{equation}
+        \Pi_{\mathcal{H}} (m) = \max_{\{x_1, \dots, x_m\}\subseteq \mathcal{X}} \lvert \{h(x_1),\dots, h(x_m): h\in \mathcal{H}\}
+    \end{equation} 
+\end{definition}
+In other words, $\Pi_{\mathcal{H}}(m)$ is the maximum number of distinct ways in which $m$ points can be classified using hypotheses in $\mathcal{H}$. This growth function is then also a measurement of the richness of a class of function, and each one of these distinct classification is called a \textit{dichotomy}. The growth function then counts the number of dichotomies that are realized by the hypothesis. This differs from the Rademacher complexity, in the way that it is independent of the distribution of points sampled, hence is purely combinatorial. Also, the growth function is conducted for all $h\in \mathcal{H}$ of the finite hypothesis space. If it is the binary case, then there is at most $2^{m}$ categorization configuration. 
+
+To relate these two together, we use the Massart's lemma. 
+\begin{lemma}[Massart's lemma]
+    Let $A$ be a finite subset of $\mathbb{R}^{m}$, and let $$\max_{\vec{y}\in A} \lvert\lvert \vec{y}\rvert\rvert_{2} \leq r$$
+    Then 
+    \begin{equation}
+        \underset{\sigma_{1},\dots,\sigma_{m}}{\mathbb{E}} \left[\sup_{\vec{y}\in A} \sum^{m}_{i=1}\sigma_{i} y_{i} \right] \leq r \sqrt{2\log{\lvert A \rvert}}
+    \end{equation}
+\end{lemma}
+This lemma offers not much aside from an interesting bound. Using this result, we can now bound the Rademacher complexity in terms of the growth function. 
+\begin{col}
+    Let $\mathcal{G}$ be a family of functions taking values in $\{-1, + 1\}$. Then the following holds: 
+    \begin{equation}
+        \mathfrak{R}_{m}(\mathcal{H}) \leq \sqrt{\frac{2\log{\Pi_{\mathcal{H}}(m)}}{m}}
+    \end{equation}
+\end{col}
+\begin{proof}
+    For a fixed sample $S$, we denote by $\mathcal{G}_{|S}$ the set of vectors of function values $(g(x_1),\dots,g(x_m))^{\top}$ for $g\in \mathcal{G}$. Since $g\in \mathcal{G}$, $\lvert g'\in \mathcal{G}_{|S} \rvert \leq \sqrt{m}$. We can then apply Massart's lemma as: 
+
+    \begin{equation}
+        \begin{split}
+            \mathfrak{R}_{m}(\mathcal{G}) =& \underset{S}{\mathbb{E}} \left[ \underset{\bm{\sigma}}{\mathbb{E}} \left[ \sup_{u\in \mathcal{G}_{|S}} \frac{1}{m} \sum^{m}_{i=1} \sigma_{i} u_{i} \right] \right]\\
+            & \leq \underset{S}{\mathbb{E}} \left[\frac{\sqrt{m}\sqrt{2\log{|\mathcal{G}_{|S}|}}}{m}\right]
+        \end{split}
+    \end{equation}
+    By definition, $|\mathcal{G}_{|S}|$ is bounded by the growth function. Thus, 
+    \begin{equation}
+        \begin{split}
+            \mathfrak{R}_{m}(\mathcal{G}) &\leq \underset{S}{\mathbb{E}} \left[\frac{\sqrt{m}\sqrt{2\log{\Pi_{\mathcal{G}}(m) }}}{m}\right] \\
+            & = \sqrt{\frac{2\log{\Pi_{\mathcal{G}} (m)}}{m}}
+        \end{split}
+    \end{equation}
+    which concludes the proof. 
+\end{proof}
+From this and the generalization bound, we will also yield the following generalization bound in terms of the growth function. 
+\begin{col}[Growth function generalization bound]
+    Let $\mathcal{H}$ be a family of function taking values in $\{-1,+1\}$. Then, for any $\delta > 0$, with probability at least $1-\delta$, for any $h\in \mathcal{H}$: 
+    \begin{equation}
+        R(h) \leq \hat{R}_{S}(h) + \sqrt{\frac{2\log{\Pi_{\mathcal{H}}(m)}}{m}} + \sqrt{\frac{\log{(1/\delta)}}{2m}}
+    \end{equation}
+\end{col}
+This growth function bound can also be derived directly. The computation of the growth function is also, pretty weird, and is often not always convenient, especially because of its combinatorial nature. 
+
+\section{Vapnik-Chervonenkis Theory}
+
+VC, or Vapnik-Chervonenkis theory, base a lot of its results and theories on both the growth function, and the combinatorial nature of which it takes form. The problem of the formation of VC theory is simple. We have seen that a consistent learner can be used to design a PAC-learning algorithm, provided the output hypothesis comes from a class that is not too large, in particular, of any polynomial class $poly(\cdot,\cdot,\cdot,\cdot)$. However, one certain assumption and condition on the PAC-learning algorithm measure is that it only works on (the result, that is) finite hypothesis class or concept class. Concept classes that are uncountably infinite are often used, for example, linear halfspaces, or more familiar, the hypothesis on such space is the \textbf{linear classifier} or \textbf{perceptron}. In this section, we would particularly see how we can use a new capacity measure called VC dimension of a concept class to make a consistent learner to be PAC-learnable. All theories and practices using the VC-dimension as one of its main ingredient is then called the VC theory. 
+\subsection{Clarification {\small of the linear halfspaces}}
+
+We would like to clarify about such statement about linear halfspaces being infinite hypothesis class. The \textbf{halfspace} \index{halfspace} hypothesis space is the set of hypotheses that consist of a hyperplane in a $d$-dimensional coordinate space that classifies a feature vector $\phi(x)\in \mathbb{R}^{d+1}$ as either $-1,1$ based on which side the of the hyperplane it lies. Here, $d$ represents the number of features on item $x$. 
+
+Mathematically, to define the halfspace hypothesis space, consider the domain $\mathcal{X}=\mathbb{R}$ and concept set $\mathcal{Y}=\{-1,1\}$. The class $\mathcal{H}_{gl}$ of general linear classifiers, or linear halfspaces, is defined as 
+\begin{equation}
+    \mathcal{H}_{gl} = \{ h_{\bm{w},b} \mid \bm{w}\in \mathbb{R}^{d}, b\in \mathbb{R}\}
+\end{equation}
+where 
+\begin{equation}
+    h_{\mbox{w},b}(\bm{x}) = \mathrm{sgn}(\langle \bm{x}\cdot \bm{w}\rangle + b) = \mathrm{sgn}\left(\left( \sum^{d}_{i=1} x_{i} w_{i}  \right) +b\right)
+\end{equation}
+
+General linear halfspaces in $\mathbb{R}^{d}$ can be viewed as \textit{homogenous linear halfspaces} in $\mathbb{R}^{d+1}$ via a simple transformation. We define the class of homogenous linear halfspaces $\mathcal{H}_{l}$ as 
+\begin{equation*}
+    \mathcal{H}_{l} = \{ h_{\bm{w}} \mid \bm{w}\in \mathbb{R}^{d}, b\in \mathbb{R}\}
+\end{equation*}
+where 
+\begin{equation}
+    h_{\mbox{w}}(\bm{x}) = \mathrm{sgn}(\langle \bm{x}\cdot \bm{w}\rangle) = \mathrm{sgn}\left( \sum^{d}_{i=1} x_{i} w_{i} \right)
+\end{equation}
+Let $\bm{x}=h_{\bm{w},b}(\bm{x})\in \mathbb{R}^{d}$, for $\bm{w}=(w_1, w_2,\dots,w_{d})\in \mathbb{R}^{d}$ and $b\in \mathbb{R}$ be given, we then define 
+\begin{align}
+    \bm{x}' &= (1,x_1,\dots,x_{d}) \in \mathbb{R}^{d+1}\\
+    \bm{w}' = (1,w_1,\dots,w_d) \in \mathbb{R}^{d+1}
+\end{align}
+Then we get $\langle \bm{x}\cdot \bm{w}\rangle + b = \langle \bm{x}'\cdot \bm{w}'\rangle$ for all $x\in \mathbb{R}$, and thus 
+\begin{equation*}
+    h_{\bm{w},b}(\bm{x}) = h_{\bm{w}'}(\bm{x}')
+\end{equation*}
+In what sense could linear halfspaces be of an infinite hypothesis class? We say a hypothesis class, or concept class, is \textit{infinite}, when it does not have an enumerable and finite list of hypothesis. It can include an infinite number of variations of the description of the hypotheses. This, partially makes it impossible to be listed in the sense of a list, hence we would usually specify it using their variational expression, for example, linear equation and, linear halfspace. In such case, arguably, one of the previous illustrative example of a class of \textit{axis-aligned rectangle} is also an infinite hypothesis class, because it represents infinitely many rectangular concepts on $\mathbb{R}^{2}$. Though, what should you do if one is to justify that the infinity on $\mathbb{R}^{3}$ is bigger than the hypothesis class on $\mathbb{R}^{2}$? Probably it will work. 
+
+It is also wised to separate the notion between halfspace, hyperplane in mathematics and machine learning lingua franca. Specifically, in mathematics, it is recalled that a \textbf{hyperplane} is a $d-1$-dimensional space that 'carve out' regions of a $d$-dimensional space - just as plane in $\mathbb{R}^{3}$ or lines in $\mathbb{R}^[2]$. While, the mathematical \textbf{halfspace} is a $d$-dimensional partition of regions that is formed by removing that part lying on one side of an $(d-1)$-dimensional hyperplane --- thus making it somewhat of a product of a hyperplane. For example, half a Euclidean space is given by the three-dimensional region satisfying $x>0,-\infty< y< \infty, -\infty < z < \infty$. Thereby, the dimension topic would likely want to be of rest with this comparison. 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/hyperplane.png}
+    \caption{Illustration of the notion of hyperplane in two and three dimensions. This can be extended to $n>3$ dimension, but no figurative illustration can be found (or ever understood). Taken from \href{https://r4ds.github.io/bookclub-islr/hyperplane.html}{Introduction to Statistical Learning using R Book Club} by The R4DS Online Learning Community.}
+\end{figure}
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/halfspace_illustration_c4.png}
+    \caption{Illustration of a halfspace \textbf{region} created by a hyperplane on the side of the axis. If the halfspace is created of the unit frame hyperplane (aligning with the axis), then it is called a \textit{normal space partitioning halfspace}.}
+\end{figure}
+\subsection{VC-dimension}
+Then, we are ready to somewhat consider the notion of \textit{VC-dimension}. The VC-dimension is often regarded as a purely combinatorial notion, but it is often easier to compute than the growth function, or the Rademacher Complexity. As we shall see, the VC-dimension is a key quantity in learning, and is directly related to the growth function. 
+
+To define the VC-dimension, we will have to define the notion of \textit{shattering} \index{shattering}. As we recalled of the previous sections on the growth function, on the hypothesis set $\mathcal{H}$, a dichotomy on a set $S$ is one of many possible ways of labelling the points in $S$ using a hypothesis $\mathcal{H}$. A set $S$ of $m\geq 1$ points is said to be shattered by a hypothesis set $\mathcal{H}$ when $\mathcal{H}$ realizes all possible dichotomies of $S$, that is when $\Pi_{\mathcal{H}}(m)=2^{m}$. 
+\begin{definition}[Shattering]
+    We say that a finite set $S\subset \mathcal{X}$ is \textbf{shattered} by $C$, if $|\Pi_{C}(S)|=2^{|S|}$. $S$ is shattered by $C$ if all possible dichotomies over $S$ can be realized by $C$. 
+\end{definition}
+
+We know can define the notion of the \textit{dimension} for a concept class $\mathcal{C}$. 
+\begin{definition}[VC-dimension]
+    The \textbf{VC}-dimension of a hypothesis set $\mathcal{H}$ is the size of the largest set that can be shattered by $\mathcal{H}$, 
+    \begin{equation}
+        \mathrm{VCdim}(\mathcal{H}) = \max_{m\in S} \{m: \Pi_{\mathcal{H}}(m)=2^{m}\}
+    \end{equation}
+\end{definition}
+Note that, by definition, if $\mathrm{VCdim}(\mathcal{H}) =d$, then there exists a set of size $d$ that can be shattered. However, it does not mean that all sets of size $d$ or less are shattered, because this only get you the existential criteria. 
+
+Again, if we are to look at the definition of VC-dimension, we see the similar problem: it is very computationally heavy for experimental purposes. 
+
+To further illustrate this notion, we will examine a series of examples of hypothesis sets and will determine the VC-dimension in each case. To compute the VC-dimension, we will typically show a lower bound for its value and then a matching upper bound. 
+
+\begin{example}[Intervals on the real line]
+    Our first example involves the hypothesis class of intervals on real line. Because this is an inclusion criterion, then we are talking about if a point is \textit{in the interval} or not. Then, by such. the dichotomy $(\cdot,\cdot)$ can be understood as `does the first point and the second point lie in the interval?'. This question is an `or' question, meaning there exists dichotomies such as $(-,+)$ where the first point is not in the interval specified. 
+    
+    The VC-dimension is then at least two, since there exists four total dichotomies $$\Pi_{\mathcal{H}}=(+,+),(-,-),(+,-),(-,+)$$ that can be realized. In contrast, by the definition of intervals, no set of three points can be shattered since the $(+,-,+)$ labelling cannot be realized. Hence, we say that the VC-dimension is 2. 
+\end{example}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/vc_dim_ex1.png}
+    \caption{VC-dimension of intervals on the real line. (a) Any two points can be shattered. (b) No sample of three points can be shattered as the $(+,-,+)$ labelling cannot be realized. Taken from \cite{10.5555/2371238}.}
+\end{figure}
+\begin{example}[Hyperplane]
+    Consider the set of all hyperplanes in $\mathbb{R}^{2}$. We observe that any three non-collinear (collinear points mean they are on a straight line) points in $\mathbb{R}^{2}$ can be shattered. Let us remind ourselves of the definition of a hyperplane. A \textbf{hyperplane} is a generalization on high-dimension for lines and planes. Given $\mathbf{w}$ the vector normal to the hyperplane, and $b$ is the offset, then the hyperplane equation is $\mathbf{w}\cdot \mathbf{x}+b=0$. This equality satisfies the scalar multiplication rule, and multiply by $1/\lvert \lvert \mathbf{w}\rvert\rvert$, we get the unit normal vector and for $b'=b/\lvert \lvert \mathbf{w}\rvert\rvert$ the \textbf{origin distance} from the hyperplane to the origin. 
+
+    Given three points $x,y,z$, to obtain the first three dichotomies, we choose a hyperplane that has two points on one side, and the third point on the other side, that is, all the dichotomies of the type 
+    \begin{equation}
+        (x\mid y,z), (y\mid x, z), (z\mid x,y), \quad x,y,z\in \mathbb{R}^{2}
+    \end{equation}
+    Notice that the ordering does not matter. To obtain the fourth dichotomy, we have all three points on the same side. The remaining four dichotomies are realized by simply switching signs, that is, the hyperplane by default assumes two side classification of $(+,-)$ configuration for either side, so there would then be four more dichotomies simply by switching signs. So in total there are 
+    \begin{align}
+        (x\mid y,z), (y\mid x, z), (z\mid x,y), (0\mid x,y,z)\\
+        (y,z\mid x), (x,z\mid y), (x,y\mid z), (x,y,z\mid 0)
+    \end{align}
+    configurations. Next, we show that four points cannot be shattered by considering two cases: 
+    \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/vc_dim_ex2.png}
+    \caption{Unrealizable dichotomies for four points using hyperplanes in $\mathbb{R}^{2}$. (a) All four points lie on the convex hull. (b) Three points lie on the convex hull while the remaining point is interior. Taken from \cite{10.5555/2371238}.}
+\end{figure}
+    \begin{enumerate}[leftmargin=20pt, topsep=0.25pt,itemsep=0.1pt]
+        \item[(1)] The four points lie on the convex hull defined by the four points. \footnote{A \textbf{convex hull} is simply a polytope that is convex, that is, for a set $P\subseteq \mathbb{R}^{d}$ is convex if $\lvert pq\subseteq P$ for any $p,q\in P$, the \textbf{convex hull} $\mathrm{conv}(P)$ of a set $P$ is the intersection of all convex supersets of $P$.}
+        \item[(2)] Three of the four points lie on the convex hull and the remaining point is internal. 
+    \end{enumerate}
+    In the first case, a positive labelling for one diagonal pair and a negative labelling for the other diagonal pair cannot be realized. In the second case, a labelling which is positive for the points on the convex hull and negative for the interior point cannot be realized. Hence, we have $\mathrm{VCdim}(\mathbf{h})=3$. 
+\end{example}
+
+More generally, in our example of the hyperplane, in $\mathbb{R}^{d}$ we can derive a lower bound by starting with a set of $d+1$ points in $\mathbb{R}^{d}$, setting $x_{0}$ to be the origin and defining $\x_{i}$ for $i\in \{1,\dots,d\}$, as the point whose $i$th coordinate is 1 and all others are 0. Let $y_{0},y_{1},\dots,y_{d}\in \{-1,+1\}$ be an arbitrary set of labels for $\mathbf{x}_{0},\dots,\mathbf{x}_{d}$. Let $\mathbf{w}$ be the vector whose $i$th coordinate is $y_{i}$. Then we can say that classifier defined by the hyperplane $\mathbf{w}\cdot \mathbf{x}+ y_{0}/2=0$ shatters $\mathbf{x}_0,\dots,\mathbf{x}_{d}$ since for any $i\in \{0,\dots,d\}$, we have: 
+\begin{equation}
+    \mathrm{sgn}\left(\mathbf{w}\cdot \mathbf{x}_{i} + \frac{y_0}{2}\right) = \mathrm{sgn}\left(y_{i}+ \frac{y_{0}}{2}\right) = y_{i}
+\end{equation}
+
+To obtain an upper bound, it suffices to show that no set of $d+2$ points can be shattered by halfspaces. To prove this, we will use the following general theorem, called \textit{Radon's theorem}, taken from combinatorial analysis. Before attempting this, we first have to say a few preliminaries on the theory of \textbf{combinatorial convexity}. This will rather be very long, but worth it. 
+
+For two points $a,b\in \mathbb{R}^{d}$ of the $d$-dimensional Euclidean space, we define a \textit{segment} $[a,b]$ joining $a$ and $b$ as the set \begin{equation}
+    [a,b]=\{\alpha a + \beta b, \alpha,\beta \geq 0, \alpha + \beta = 1\}
+\end{equation}
+A set $C\in \mathbb{R}^{d}$ is called \textit{convex} if for every two points $a$ and $b$ in $C$, the segment $[a,b]$ is also contained in $C$. Plainly, an intersection of convex sets is a convex set. In other word, a set of points is convex if it contains every line segment between two points in the set. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/convex_set.png}
+    \caption{Illustration of convex and non-convex set. The segment $[x,y]$ must be fully contained in the region of the set, otherwise it is not convex.}
+\end{figure}
+
+Given $n$ points $a_{1},\dots,a_{n}\in \mathbb{R}^{d}$ and real coefficients $\alpha_{1},\dots,\alpha_{n}$, the point \begin{equation}
+    a= \alpha_{1}a_{1} + \alpha_{2}a_{2} + \dots + \alpha_{n} a_{n}
+\end{equation}
+is called their \textit{convex combination} (c.c. for short) if the $\alpha_{i}$ are nonnegative, and they add up to one, $\alpha_{1}+\dots\alpha_{n}=1$. We have the following observation: 
+\begin{lemma}
+    If $C$ is a convex subset of $\mathbb{R}^{d}$ and $a_{1},\dots,a_{n}\in C$, then all convex combinations of $a_{1},\dots,a_{n}$ belongs to $C$. 
+\end{lemma}
+For a subset $S$ in $\mathbb{R}^{d}$, we can then define the following as a \textbf{convex hull}:
+\begin{definition}[Convex hull]
+    Given a set $A$, the convex hull of a set $A$, denoted by $\mathrm{conv}(A)$, is the set of all convex combination of points in $A$. That is: 
+    \begin{equation}
+        \mathrm{conv}(A) = \left\{ x \mid \exists a_{1},\dots,a_{N}\in A, \alpha_{1},\dots,\alpha_{N}\geq 0\; ;\; \sum^{N}_{i=1}\alpha_{i} = 1\; ;\;  x= \sum^{N}_{i=1}\alpha_{i} a_{i} \right\}
+    \end{equation}
+    In other words, 
+    \begin{equation}
+        \mathrm{conv}(S) = \{\text{all convex combinations of elements of }S\}
+    \end{equation}
+    The convex hull is then the smallest convex set containing $S$. 
+\end{definition}
+
+Obviously, a segment in $\mathbb{R}^{d}$ is a convex set. Another canonical example of a convex set is a (closed) half-space, $\mathcal{H}= \{x\in \mathbb{R}^{d}, a\cdot x \geq \alpha\}$. The set of all positive semi-definite matrices of a fixed size is also convex. 
+
+Since we are dealing with the dichotomy of separating into half-space of binary classification, the following lemma will help to establish our requirement of Radon's theorem. 
+\begin{lemma}\label{lem:lemma_cathedory_radon}
+    Let $P=\{p_{1},\dots,p_{n}\}\subset \mathbb{R}^{d}$ be a finite set of points in $d$-dimensional space. If $n>d$ then we have, for some coefficients $\mu_{1},\dots,\mu_{n}$, 
+    \begin{equation}
+        \mathbf{0} = \sum^{n}_{i=1} \mu_{i}p_{i}, \quad \forall(\mu_{1},\dots,\mu_{n}) \exists \mu_{j} \neq 0 \label{eq:condition_radon1}
+    \end{equation}
+    and if $n>d+1$ we can have equation~\ref{eq:condition_radon1} under the addition condition that: 
+    \begin{equation}
+        \sum^{n}_{i=1} \mu_{i} = 0
+        \label{eq:condition_radon2}
+    \end{equation}
+    In the latter case, some of $\mu_{1},\dots,\mu_{n}$ are positive and some are negative. 
+\end{lemma}
+\begin{proof}
+    The first part of the lemma follows from the fact that every set of $d+1$ or more points in a $d$-dimensional vector space is linearly dependent. The second part follows from the observation that $\{p_{2}-p_{1},p_{3}-p_{1},\dots,p_{n}-p_{1}\}$ (since it is exactly $d-1$ in a $d$-dimensional space) is linearly dependent, thus 
+    \begin{equation}
+        \mathbf{0} = \sum^{n}_{i=2} \mu_{i}(p_{i}-p_{1}), \quad \forall(\mu_{1},\dots,\mu_{n}) \exists \mu_{j} \neq 0
+    \end{equation}
+    By defining $\mu_{1}=-\sum^{n}_{i=2}\mu_{i}$, both equation~\ref{eq:condition_radon1} and \ref{eq:condition_radon2} holds. The only way then that equation~\ref{eq:condition_radon2} can hold with all non-positive or non-negative terms would be if all terms are zero. 
+\end{proof}
+
+In a combinatorial way, we will then prove the following theorem called Caratheodory theorem:
+\begin{theorem}[Caratheodory]
+    Let $\mathcal{A}$ be a subset in $\mathbb{R}^{d}$. Suppose that $a\in \mathrm{conv}(A)$. Then there exists a subset $B$ of $\mathcal{A}$ with $\lvert B \rvert \leq d+1$ such that $a\in \mathrm{conv}(B)$.
+\end{theorem}
+
+\begin{proof}
+    For a vector $x$ in $\mathbb{R}^{d}$ and a real number $\alpha$ by ${x \choose \alpha}$ we mean a vector in $\mathbb{R}^{d+1}$ with the last coordinate $\alpha$. The fact that $a$ lies in the convex hull of $\mathcal{A}$ can be written shortly as: 
+    \begin{equation}
+        {a\choose 1} = \sum^{n}_{i=1}\alpha_{i} {a_{i}\choose 1}
+    \end{equation}
+    for some nonnegative real $\alpha_{i}$'s (the last coordinate takes care of condition that $\alpha_{1}$'s add up to $1$). Without loss of generality we can assume that all $\alpha_{i}$'s are positive. Moreover, let $n$ be the smallest possible for which the above holds. We want to show that $n\leq d+ 1$. Suppose not, then the vectors ${a_{i}\choose 1}$, for $i=1,\dots,n$ cannot be linearly independent as they lie in a $d+1$ dimensional space. Therefore, 
+\begin{equation}
+    {0 \choose 0} = \sum^{n}_{i=1} \beta_{i} {a_{i}\choose 1}
+\end{equation}
+for some $\beta_{i}$'s which are not all equal to zero. Hence, 
+\begin{equation}
+    {a\choose 1} = \sum^{n}_{i=1} (\alpha_{i}+ t\beta_{i}) {a_{i}\choose 1}
+\end{equation}
+for every $t\in \mathbb{R}$. Since for $t=0$ all the coefficients $\alpha_{i}+t\beta_{i}$'s are positive, they remain positive for small $t$ and there is a choice for $t$, say $t_{0}$  for which at least one of the coefficients becomes $0$ with the rest remaining positive. This contradicts the minimality of $n$, as 
+\begin{equation}
+    {a\choose 1} = \sum^{n}_{i=1} (\alpha_{i} + t_{0}\beta_{i}) {a_{i}\choose 1}
+\end{equation}
+shows that the vector ${a\choose 1}$ can be written as a positive combination of ${a_{i}\choose 1}$ with fewer than $n$ nonzero coefficients. 
+\end{proof}
+Another way to prove this is as followed.
+\begin{proof}[Caratheodory, second version]
+    Let $x$ be a point of $\mathrm{conv}(P)$, so that for some positive integer $n$, \begin{equation}
+        x=\sum^{n}_{i=1} \alpha_{i}p_{i}
+    \end{equation}
+    with for all $i\in \{1,\dots,n\}$, $p_{i}\in P, \alpha_{i}\geq 0$ and $\sum^{n}_{i=1}\alpha_{i}=1$. If $n\leq d+1$ there is nothing to prove. Otherwise, $n>d+1$, so by Lemma~\ref{lem:lemma_cathedory_radon}, we have for scalars $\mu_{1},\dots,\mu_{n}$ that $\mathbf{0}=\sum^{n}_{i=1}\mu_{i}p_{i}$ with $\sum^{}_{i=1}\mu_{i}=0$. Now, for any real number $\lambda$, we have: 
+    \begin{equation}
+        x=\sum^{n}_{i=1}\alpha_{i}p_{i} - \lambda \sum^{n}\mu_{i}p_{i} = \sum^{n}_{i=1} (\alpha_{i}-\lambda \mu_{i})p_{i} 
+    \end{equation}
+    We note that 
+    \begin{equation}
+        \sum^{n}_{i=1}(\alpha_{i}-\lambda \mu_{i}) = \sum^{n}_{i=1}\alpha_{i} - \lambda \sum^{n}_{i=1}\mu_{i} = \sum^{n}_{i=1}\alpha - \lambda \cdot 0 = 1
+    \end{equation}
+    That is, the coefficients in the linear combination sums to one. We will now select $\lambda$ so that one of these coefficients becomes zero, while the remaining coefficients are positive, making the sum a convex combination of $n-1$ points of $P$. 
+
+    Let $J=\{j\in \{1,\dots,n\}: \mu_{i}>0\}$, with $J$ non-empty. Choose $j^{*}\in J$ so that $\alpha_{j^{*}}/\mu_{j^{*}}$ for all $j\in J$, and let $\lambda = \alpha_{j^{*}}/\mu_{j^{*}}$. With this, we have: 
+    \begin{equation}
+        \alpha_{i} - \lambda \mu_{i} \geq 0
+    \end{equation}
+    for all $i\in \{1,\dots,n\}$. Indeed, if $i\in J$, then $\mu_{i}>0$ and 
+    \begin{equation}
+        \alpha_{i} - \lambda \mu_{i} = \mu_{i} (\alpha_{i}/\mu_{i}-\lambda)\geq 0,
+    \end{equation}
+    while if $i\not\in J$ then $\mu_{i}\leq 0$, and since $\lambda\geq 0$, we have: 
+    \begin{equation}
+        \alpha_{i}-\lambda\mu_{i} \geq \alpha_{i} \geq 0
+    \end{equation}
+    Finally, observe that $a_{j^{*}}-\lambda\mu_{j^{*}}=0$, we have: 
+    \begin{equation}
+        x=\sum^{j^{*}-1}_{i=1} (\alpha_{i}-\lambda\mu_{i})p_{i} + \sum^{n}_{i=j^{*}+1} (\alpha_{i}-\lambda \mu_{i})p_{i}
+    \end{equation}
+    which expresses $x$ as a convex combination of the $n-1$ elements of the set $\{p_{1},\dots,p_{n}\}\setminus \{p_{j^{*}}\}$. This process can be repeated as long as $n>d+1$ until $x$ is represented as a convex combination of $d+1$ elements of $P$. 
+\end{proof}
+Geometrically, Caratheodory's theorem says that a convex set $A$ in $\mathbb{R}^{d}$ can be covered by simplices of $A$, that is, a simplex in $\mathbb{R}^{d}$ is a convex hull of at most $d+1$ points. Radon's theorem then says that there are some good partition of sets having enough points. 
+
+Let's take an example. Suppose when $d=1$. Then the theorem is clear as considering three points on a line. There is always one, say $x$ between some two others, say, $y,z$, so it suffices to take $X=\{x\}$ and $Y=A\setminus \{X\}\supset \{y,z\}$, of which they will intersect at $x$. 
+\begin{theorem}[Radon's theorem]
+    Any set of $\mathcal{X}$ of $d+2$ points in $\mathbb{R}^{d}$ can be partitioned into two subsets $\mathcal{X}_{1}$ and $\mathcal{X}_{2}$ such that their convex hulls is non-zero and intact. That is, there exists a partition, $A= X\cup Y$ for $X\cap Y = \varnothing$, such that $\mathrm{conv}(X)\cap \mathrm{conv}(Y)=\varnothing$. 
+\end{theorem}
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/partition_radon.png}
+    \caption{Illustration of (left-hand side) $d=1$ Radon partition, and (middle and right-hand side) $d=2$ Radon partition. More options are available as $d$ increases.}
+\end{figure}
+When $d=2$, considering 4 points in the plane, there are two possibilities. Either certain three of them are the vertices of a triangle containing the fourth point, or the points are the vertices of a convex quadrilateral. In any case, it is clear what to take for the partition. Notice that if we scale it down to $\lvert \mathcal{A}\rvert = d+1$, however, then for a set of three points, any partition would allow the other point to be missed (one line and one singular point not passing through the line). The only convex hull that would make them to be in the same one is the full convex hull for three point. 
+
+We present two proofs of Radon's theorem. One for combinatorial geometry, and one for general analytical methods. 
+\begin{proof}[Radon's theorem, proof one.]
+    Since $\lvert A\rvert \geq d+2$, the set $\{{a\choose 1}, a\in \mathcal{A}\}$ of vectors in $\mathbb{R}^{d+1}$ is not linearly independent. Therefore there are $a_{i}\in \mathcal{A}$ and nonzero coefficients $\alpha_{i}$ such that 
+    \begin{equation}
+        {0 \choose 0} = \sum_{i} \alpha_{i} {a_{i}\choose 1}
+    \end{equation}
+    Because the sum of $\alpha_{i}$'s is $0$, some of them are positive, some are negative. Let $I$ be the set of all the indices $i$ for which $\alpha_{i}>0$ and $J$ for which $\alpha_{i}<0$ (for non-empty $I,J$). Breaking the sum into two pieces yields:
+    \begin{equation}
+        \sum_{i\in I} \alpha_{i} {a_{i}\choose 1} = \sum_{i\in J} (-\alpha_{i}) {a_{i}\choose 1}
+    \end{equation}
+    Dividing this through $t=\sum_{i\in I}=\sum_{i\in J}(-\alpha_{i})$, which is positive, shows that we can take $X=\{a_{i},i\in I\}$ and $Y=A\setminus X$, for then 
+    \begin{equation}
+        \mathrm{conv}(X) \ni \sum_{i\in I} \frac{1}{t} \alpha_{i} {a_{i}\choose 1} = \sum_{i\in J} \frac{1}{t} (-\alpha_{i})  \in \mathrm{conv}(Y)
+    \end{equation}
+    which concludes the proof. 
+\end{proof}
+\begin{proof}[Radon's theorem, proof two.]
+    Let $\mathcal{X}=\{\mathbf{x}_{1},\dots,\mathbf{x}_{d+2}\}\subset \mathbb{R}^{d}$. The following is a system of $d+1$ linear equations in $\alpha_{1},\dots,\alpha_{d+2}$: 
+    \begin{equation}
+        \sum^{d+2}_{i=1}\alpha_{1}\mathbf{x}_{i}=0, \quad \sum^{d+2}_{i=1} \alpha_{i} = 0
+        \label{eq:radon1}
+    \end{equation} 
+    since the first equality leads to $d$ equations, one for each component. The number of unknowns, $d+2$ is larger than the number of equations $d+1$, therefore the system admits a non-zero solution $\beta_{1},\dots,\beta_{d+2}$. Since $\sum^{d+2}_{i=1}\beta_{i}=0$, both 
+    \begin{equation}
+        \mathcal{J}_{1} = \{i\in [d+2]: \beta_{i}>0\}, \quad \mathcal{J}_{2} = \{i \in [d+2]: \beta_{i}\geq 0\}
+    \end{equation}
+    are non-empty sets and $\mathcal{X}_{1}=\{\mathbf{x}_{i}: i \in \mathcal{J}_{1}\}$ and $\mathcal{X}_{2}=\{\mathbf{x}_{i}:i\in \mathcal{J}_{2}\}$ form a partition of $\mathcal{X}$. By the last equation, 
+    \begin{equation}
+        \sum_{i\in \mathcal{J}_{1}}\beta_{i} = - \sum_{i\in \mathcal{J}_{2}} \beta_{i}
+    \end{equation}
+    Then, \ref{eq:radon1} implies that: 
+    \begin{equation}
+        \sum_{i\in \mathcal{J}_{1}} \frac{\beta_{i}}{\beta} \mathbf{x}_{i} = \sum_{i\in \mathcal{J}_{2}} - \frac{\beta_{i}}{\beta} \mathbf{x}_{i}, \quad \beta = \sum_{i\in \mathcal{J}_{1}} \beta_{i}
+    \end{equation}
+    with $\sum_{i\in \mathcal{J}_{1}} \frac{\beta_{i}}{\beta}  = \sum_{i\in \mathcal{J}_{2}} - \frac{\beta_{i}}{\beta} =1$, $\beta_{i}/\beta \geq 0$ for $i\in \mathcal{J}_{1}$, and $-\beta_{i}/\beta \geq 0$ for $i\in \mathcal{J}_{2}$. By the definition of convex hull, this implies that $\sum_{i\in \mathcal{J}_{1}} \frac{\beta_{i}}{\beta} \mathbf{x}_{i}$ belongs both to the convex hull of $\mathcal{X}_{1}$ and $\mathcal{X}_{2}$. 
+\end{proof}
+Now, let us return to our problem of halfspace partitioning. Let $\mathcal{X}$ be a set of $d+2$ points. By Radon's theorem, it can be partitioned into two sets $\mathcal{X}_{1}$ and $\mathcal{X}_{2}$ such that their convex hulls intersect. Observe that when two sets of points $\mathcal{X}_{1},\mathcal{X}_{2}$ are separated by a hyperplane, their convex hulls are also separated by that hyperplane. Thus, $\mathcal{X}_{1}$ and $\mathcal{X}_{2}$ cannot be separated by a hyperplane and $\mathcal{X}$ is not shattered. Combining our lower and upper bounds, we have proven that $\mathrm{VCdim}(\mathcal{H}\in \mathbb{R}^{d})$ is $d+1$. 
+
+The VC-dimension of many other hypothesis sets can be determined or upper-bounded in a similar way. In particular, the VC-dimension of any vector space of dimension $r<\infty$ can be shown to be at most $r$. The next result, known as \textit{Sauer's lemma}, clarifies the connection between the notions of growth function and VC-dimension. 
+\begin{theorem}[Sauer's lemma]
+    Let $\mathcal{H}$ be a hypothesis set with $\mathrm{VCdim}(\mathcal{H}) = d$. Then, for all $m\in \mathbb{N}$, the following inequality holds: 
+    \begin{equation}
+        \Pi_{\mathcal{H}} (m) \leq \sum^{d}_{i=0} {m\choose i}
+    \end{equation}
+\end{theorem}
+\begin{proof}
+    The proof is by induction on $m+d$. The statement clearly holds for $m=1$ and $d=0,1$. Assume that it holds for $(m-1,d-1)$ and $(m-1,d)$. Fix a set $\mathcal{S}=\{x_{1},\dots,x_{m}\}$ with $\Pi_{\mathcal{H}}(m)$ dichotomies and let $\mathcal{G}=\mathcal{H}_{|\mathcal{S}}$ be the set of concept $\mathcal{H}$ induced by restriction to $\mathcal{S}$. 
+
+    Now consider the following families over $\mathcal{S}'=\{x_{1},\dots,x_{m-1}\}$. We define $\mathcal{G}_{1}=\mathcal{G}_{|\mathcal{S}'}$ as the set of concepts $\mathcal{H}$ induced by restriction to $\mathcal{S}'$. Next, by identifying each concept as the set of points (in $\mathcal{S}'$ or $\mathcal{S}$) for which it is non-zero, we can define $\mathcal{G}_{2}$ as 
+    \begin{equation}
+        \mathcal{G}_{2} = \{g'\subseteq \mathcal{S}': (g'\in \mathcal{G})\land (g'\cup \{x_{m}\}\in \mathcal{G})\}
+    \end{equation}
+    Since $g'\subseteq \mathcal{S}'$, $g'\in \mathcal{G}$ means that without adding $x_m$ it is a concept of $\mathcal{G}$. Further, the constraint $g'\cup \{x_{m}\}\in \mathcal{S}$ means that adding $x_{m}$ to $g'$ also makes it a concept of $\mathcal{G}$. The construction of $\mathcal{G}_{1}$ and $\mathcal{G}_{2}$ can then be observed that $\lvert \mathcal{G}_{1}\rvert + \lvert \mathcal{G}_{2}\rvert = \lvert\mathcal{G}\rvert$. 
+
+    Since $\mathrm{VCdim}(\mathcal{G}_{1})\leq \mathrm{VCdim}(\mathcal{G})\leq d$, then by definition of the growth function and using the induction hypothesis, 
+    \begin{equation}
+        \lvert \mathcal{G}_{1} \leq \Pi_{\mathcal{G}_{1}}(m-1) \leq \sum^{d}_{i=0} {m-1 \choose i}
+    \end{equation}
+    Further, by definition of $\mathcal{G}_{2}$, if a set $\mathcal{Z}\in \mathcal{S}'$ is shattered by $\mathcal{G}_{2}$, then the set $\mathcal{Z}\cup\{x_m\}$ is shattered by $\mathcal{G}$. Hence, 
+    \begin{equation}
+        \mathrm{VCdim}(\mathcal{G}_{2}) \leq \mathrm{VCdim}(\mathcal{G}) -1 = d-1
+    \end{equation}
+    and by definition of the growth function and using the induction hypothesis, 
+    \begin{equation}
+        \lvert \mathcal{G}_{2} \rvert \leq \Pi_{\mathcal{S}_{2}} (m-1) \leq \sum^{d-1}_{i=0} {m-1 \choose i}
+    \end{equation}
+    Thus, 
+    \begin{equation}
+        \lvert\mathcal{G}\rvert = \lvert\mathcal{G}_{1}\rvert + \lvert\mathcal{G}_{2}\rvert \leq \sum^{d}_{i=0} {m-1\choose i} + \sum^{d-1}_{i=0} {m-1\choose i} = \sum^{d}_{i=0} {m-1\choose i-1} = \sum^{d}_{i=0} {m\choose i}
+    \end{equation}
+    which concludes the inductive proof. 
+\end{proof}

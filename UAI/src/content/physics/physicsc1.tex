@@ -1,0 +1,110 @@
+\chapter{Electromagnetism}
+
+This chapter is dedicated entirely to electromagnetism, the theory of moving charge. So, even though this section of introduction might seem a bit short, I think it is enough. Probably. 
+\section{Electrostatic}
+We introduce a few "introductory" concepts, which we call the theory of stationary charge, electrostatic. The more application-al, circuit implementation was reserved for the general physics chapter, so we would not touch on such subject. 
+\subsection{Electric charge}
+The basic, and the most fundamental quantity that gave rises to the field of electrodynamics and the study of electricity, is \textit{charge}. The two important aspects of charge are conservation and quantization, of which the electric force is as $$E\sim \frac{1}{r^{2}}$$
+with distance. 
+
+Classical electromagnetism deals with electric charges and currents and their interactions as if all the quantities involved could be measured independently, with unlimited precision. Here \textit{classical} means simply nonquantum. The quantum law and $\hbar$ is ignored here, just as in ordinary mechanics. 
+
+In this chapter, however, we shall focus on the physics of stationary electric charges - \textit{electrostatics}. 
+\subsubsection{Properties of electrical charges (1)}
+The first fundamental property of electric charge is its existence in the two varieties of \textbf{positive} and \textbf{negative}. This is an observed fact, that all charged particles can be divided into two classes, such that all members of one class repel each other, while attracting members of different class. 
+
+This is synonymous to the notion of symmetry, such that, for every kind of particle in nature, there can exist an \textit{antiparticle}, of the mirror image, of which carries the charge of the opposite sign. If any other intrinsic quality of the particle has an opposite, the antiparticle has that too. In such case, the basic charge carrying particle \textbf{electron} has its counterpart being the \textbf{positron}. However, as we shall see, there are \textit{abundant} of matters, rather than antimatters in the universe. The abundant carriers of negative charge are electron, while positive being protons, even though the mass comparability is around 
+$$m_{e}\approx \frac{1}{2000}m_{p}$$
+so, usually, we view the positive charge in quite a distinct way. 
+\subsubsection{Properties of electrical charges (2)}
+
+Two others properties of electric charge are essentially in the electrical structure of matter: charge is \textit{conserved}, and \textit{quantized}. These involve quantity of charges and thus imply a measurement of charge. Presently, we shall state precisely how charge can be measured in terms of the force between charges a certain distance apart and so on.
+
+\subsection{Conservation of charge}
+A quick review, we have the following conservation law: the \textbf{total charge} in an isolated system never changes. 
+\begin{theorem}[Conservation law, first version]
+    The total electric charge in an isolated system, that is, the algebraic sum of the positive and negative charge present at any time, never changes.
+\end{theorem}
+
+The creation of a positively charged particle hence \textbf{must} accompanied by the creation of a negatively charged particle. This is called as \textbf{pair-creation}. 
+
+\subsection{Quantization of charge}
+The electric charge we find in nature come in units of one magnitude, equal to the amount of charge carried by a single electron, denoted as $e$. By sign, we either write it $-e$ or $(+)e$ respectively. Within empirical observations, we note also, that apparently, there is the exact equality of the charges carried by all other charged particles. 
+
+Specifically, proton and electron do not differ in magnitude of charge by more than 1 part in $10^{20}$. 
+
+The equality that $e=p$ is more likely of the theory that very rarely, proton will decay into a positron and some uncharged particles. If such event is to occur, it will show for certain, the equality being a corollary of the more general conservation laws. For now, well, there's none (too bad). 
+
+We know, however, that the internal structure of all the strongly interacting particles - \textbf{hadrons} including protons and neutrons, involve basic units called quarks, whose electric charges come in multiples of $e/3$. The proton is of the double $$\left\{  \frac{2e}{3}, - \frac{e}{3}  \right\}$$
+
+in terms of charge, while neutron is $$\left\{  \frac{2e}{3}, -\frac{e}{3}, -\frac{e}{3}  \right\}$$
+which makes it effectively no charge as expected. 
+
+However, it is only to that point that our conclusion drew out yet. We did not observe any stray fractional charge yet, and the present quantum theory of \textit{quantum chromodynamic} tried to explain such as being impossible, too. The constitutions of the elementary particles are unknown, as it is for why the charge is fixed at certain value. But that is not too much of the concern for classical electromagnetism, as for now. Hence, we should treat the charged particle only as the \textit{carriers of charges}. 
+
+\subsection{Coulomb's law}
+The statement of the Coulomb's law is as followed. 
+\begin{definition}[Coulomb's law]
+    Given two stationary electric charges $q_{1}$ and $q_{2}$, \textbf{Coulomb's law} stated that they repel or attract one another with a force proportional to the product of the magnitude of the charges and inversely proportional to the square of the distance between them: 
+    \begin{equation}
+        \mathbf{F}_{2} = k \frac{q_{1}q_{2}\hat{r}_{21}}{r^{2}_{21}}
+    \end{equation}
+    where $\hat{r}_{21}$ is the unit vector in direction from $q_{1}\to q_{2}$, and $\mathbf{F}_{2}$ is the force acting from $q_{1}\to q_{2}$. 
+\end{definition}
+
+The unit vector $\mathbf{\hat{r}}_{21}$ shows that the force is parallel to the line joining the charge. This is not the case for the spin of the electron, which is very much smaller than the Coulomb's force, and the \textbf{electrodynamic force} when the electron moves (hence why the statement is about stationary particles). 
+
+We also assume that they are well localized, with a small region of occupation compared to $r_{21}$. The value of the constant $k$ depends on the way that $r, \mathbf{F}$ and $q$ are expressed. For this, we use the SI system with $q$ as Coulomb (C), and the unit $k$ is expressed as: 
+\begin{equation}
+    k = 8.988\cdot 10^{9} \: \frac{Nm^{2}}{C^{2}}
+\end{equation}
+
+for the following definition of Coulomb: 
+
+\begin{definition}[Coulomb (unit)]
+    Two like charges, each of 1 \textbf{coulomb}, would repel one another with a force of $8.998\cdot 10^{9}$ Newtons when they are of unit meter distance. 
+\end{definition}
+
+Usually, instead of $k$ it is customary to express it as $$k=\frac{1}{4\pi \epsilon_{0}}$$
+where $$\epsilon_{0}=\frac{1}{4\pi k}= 8.854\cdot 10^{-12} \: \frac{C^{2}}{Nm^{2}}$$
+The force is then expressed as: 
+$$
+\mathbf{F} = \frac{1}{4\pi \epsilon_{0}} \frac{q_{1}q_{2}\mathbf{\hat{r}}_{21}}{r^{2}_{21}}
+$$
+The $4\pi$ is the choice of simplicity in other quantities that use it. 
+
+One way to detect and measure electric charges is by observing the interaction of  charged bodies. We have a following observation (after the three charges test): 
+
+\begin{lemma}
+    The force with which two charges interact is not changed by the presence of a third charge. 
+\end{lemma}
+
+No matter \textit{how many charges} we have in our system, Coulomb's law can be used to calculate the interaction of every pair. This is the basis of the principle of \textbf{superposition}, means combining two sets of sources into one system by adding the second system "on top of" the first without altering the configuration of either one. This ensures that the force on a charged placed at any point in the combined system will be the vector sim, of the forces that each set of sources acting alone causes to act on a charge at that point. 
+
+This principle must not however, taken lightly for granted. Indeed, there are cases in quantum electrodynamical phenomena that indicates the case where \textit{superposition does not work}. 
+
+\subsection{Energy of a system of charges}
+
+Energy is a useful concept in electrostatic, because electrical forces are \textbf{conservative}. Similar things happen in mechanics, however, we should see that there is a bit of a difference. Every action in charge movements are reversible, as there are no conceivable energy loss (But \textit{why} so is not so much understood, I mean why? Why would there are no energy loss even if we apply certain amount of energy on it?). Consider moving two particles together. What is the work required to do such task? 
+
+It makes no difference if we bring $q_{1}$ or $q_{2}$ (the charges in question) in either way around, the work done is the integral of force and displacement, they being signed. The force that has to be applied to move one charge toward the other is equal and opposite to the Coulomb force: 
+$$W=-\int \mathbf{F} \: dr = \int^{r_{12}}_{\infty} \left( -\frac{1}{4\pi \epsilon_{0}} \frac{q_{1}q_{2}}{r^{2}} \right) \, dr = \frac{1}{4\pi \epsilon_{0}} \frac{q_{1}q_{2}}{r_{12}}  $$
+The sign here is consistent. We are now setting up such that it is from 1 to 2, hence the direction of the applied force would be, negative, since they must be pushed together, hence the minus sign. The displacement is from infinity to $r_{12}$, hence also the minus sign being valid. This overall results in the positive work being done on the system. With $q_{1},q_{2}$ in coulombs and $r_{12}$, they give the work in joules. 
+
+This work is the same whatever the path of approach, because the force is central (as we have expected) and radially outward. Returning to the charges, let us bring in some third charge $q_{3}$ and move it to a point $P_{3}$ whose distance from charge 1 is $r_{31}$, and $r_{32}$ for $q_{2}$, then $$W_{3}=-\int^{P_{3}}_{\infty} \mathbf{F}_{3} \, d\mathbf{s} = - \int \mathbf{F}_{31}  \, d\mathbf{s} - \int \mathbf{F}_{32} \, d\mathbf{s}   $$
+where $\mathbf{s}$ is the vectorized path. The total additive work is hence $$U= \frac{1}{4\pi \epsilon_{0}}\left( \frac{q_{1}q_{2}}{r_{12}} + \frac{q_{2}q_{3}}{r_{23}} + \frac{q_{1}q_{3}}{r_{13}} \right)$$
+denoted $U$. One way of writing the instruction for the sum over pairs is this: $$U=\frac{1}{2}\sum^{N}_{j=1}\sum_{k\neq j} \frac{1}{4\pi \epsilon_{0}} \frac{q_{j}q_{k}}{r_{jk}}$$The double sum includes every pair twice, and to correct for that we put in front the factor $1/2$. 
+
+\subsection{Electric field}
+
+Suppose we have some arrangement $q_{1},\dots,q_{N}$ fixed in space, and we are interested not in the forces they exert on one another, but only in their effect on some other charge $q_{0}$ that might be brought into their vicinity. The force on the charge $q_{0}$ in the coordinate field is $$\mathbf{F}= \frac{1}{4\pi \epsilon_{0}} \sum^{N}_{j=1} \frac{q_{0}q_{j}\mathbf{\hat{r}}_{0j}}{r^{2}_{0j}}$$
+The force is proportional to $q_{0}$ so we can obtain a vector quantity that depends only on the structure of our original system of charge, and the position of the point $(x,y,z)$ that the charge would occupy. We call this vector function of $x,y,z$ the electric field arising from $q_{1},\dots,q_{N}$ and use the symbol $\mathbf{E}$ for it. The charge $q_{1},\dots,q_{N}$ we call sources of the field. The definition would be taken as for a charge distribution at the point $(x,y,z)$: $$\mathbf{E}(x,y,z)= \frac{1}{4\pi \epsilon_{0}} \sum^{N}_{j=1} \frac{q_{j}\mathbf{\hat{r}}_{0j}}{r^{2}_{0j}}$$
+The force on other charge $q$ at $(x,y,z)$ is hence $$\mathbf{F}= q\mathbf{E}$$
+Unless the source charges are immovable, the electric field might shift because of the additional charge. 
+The role of the electric field is quite useful: 
+\begin{enumerate}[topsep=0.5pt]
+    \item It is another general interpretation. 
+    \item It attaches to every point in a system a local property, \textit{without further inquiry}, a charge's effective received influences in such neighbourhood. 
+\end{enumerate}
+
+In the neighbourhood of a true point charge, the electric field grows infinite like $1/r^{2}$ as we approach the point. It makes no sense to talk about the field \textit{at} that point charge, as that will leave us to the mathematical singularity of infinite charge that would be subsequently ignored because charges are \textbf{finite}. So long as $\rho$ remains finite, however, the field would remain finite everywhere, even in the interior or on the boundary of a charge distribution. 

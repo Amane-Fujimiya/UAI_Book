@@ -1,0 +1,110 @@
+\chapter{The principle neural architecture}
+
+\section{Neurons perspective}
+
+The formalization to be \textit{atoms} comes from the biological inspiration of exactly the biological neurons in human and species' brain. However, the mechanism and how they operate is a bit more interesting. 
+
+For the biological more advanced equivalent, the brain consists of a very large number of highly connected elements, called \textit{neurons}. The simplified structure of such neuron consists of three components: the \textit{dendrite}, which is tree-like receptive network that carry signals (electrical) to the cell body; the \textit{cell body} effectively processes these signals, usually as sums and threshold response; and the \textit{axon}, a single long fibre that carries signal from the cell body to other neurons. The point of contact between an axon and a dendrite of another cell is called a synapse. The neural network, hence, is established by the synapses and various arrangements of the neuron. 
+
+This configuration of biological neuron is particularly powerful. Not only that they can process information allowing someone to write this text, but also the fact that of billions or neuron, they parallelly work at the same time. Furthermore, the intricacy lies further ahead than the above formation - the entire structure is of too much complexity, for the brain itself. However, a principle can be seen - they are contained of \textit{building blocks} together, in which case is neuron. And \textbf{artificial networks} also take this approach. 
+
+\begin{note}
+From such, we can conclude that, we have to have some classification that requires the smallest component neuron to be the \textit{atoms} that everything else is formed upon.
+\end{note}
+
+One of the most fundamental thing of the structure of the \textit{neural network formalism}, hence, is the notion of a \textit{unit neuron}. Specifically, a neuron $x$ is defined, and designed to be a discrete operating unit on its own. The word \textit{operating} here means that it has all the facility requires for an input-output process - the most simple one includes the input receiver, the processing formulae, and the output transmitter. 
+
+The neural network formalism is best expressed by the following principle. 
+
+\begin{theorem}[The fundamental theorem of neural formalism]
+    In the construction of an automated, artificial intelligence construct, the smallest singleton workable component must have the same size and dimension specified as the \textit{minimally defined neural structure}, $\mathfrak{N}(\mathcal{N},\mathcal{C})$. %\index{fundamental theorem of neural formalism}
+\end{theorem}
+
+We begin by examining the model of a typical neuron. Note that, this is the simplest one, but also is the fundamental block. We have the following. 
+
+\begin{definition}[Neuron]
+    Given the neural network formalism. Define a construct $x$. Then $x$ is called a \textbf{neuron} if it belongs component-wise to the class $\mathcal{N}$ of all neurons, which is minimally expressed by $\mathcal{N}(n_{i},n_{o},M(\dots))$, where $n_{i}$ is the input handler, $n_{o}$ is the output handler, and $M(\dots)$ is the internal system. %\index{classical neuron}
+\end{definition}
+
+From this, we then come up with the definition of the minimally defined neuron - the single most iteration of the above definition. 
+
+\begin{definition}[Minimally defined neuron]
+    Given the neural network formalism. Then, for $x\in \mathcal{N}$, we call a neuron \textbf{minimally defined} if it belongs to the class $\mathcal{N}_{0}\subset \mathcal{N}$ of $\mathcal{N}_{0}(n_{i}[\mathbf{w}],n_{o}[\mathbf{w}'],M(f,b))$ for $f:n_{i}[\mathbf{w}]\times b \to \mathcal{O}$ is the internal function of $M$. $\mathcal{O}$ is the domain of $n_{o}$ in which it receives the value, and in cases, there exists no $\mathbf{w}'$ configured for the output channel. %\index{minimally defined classical neuron}
+\end{definition}
+
+The notation $n_{i}[\mathbf{w}], n_{o}[\mathbf{w}']$ inherently indicate the notion of \textit{control} of the neuron on the two gate of input and output. More specifically, a given neuron, aside from the upper-level expression of $\mathcal{N}(\dots)$, can also be realized by its \textit{parameters}, or rather, its configuration of the neuron itself. By that, for $x \in \mathcal{N}$, the \textit{configuration parameters} for the minimally defined neuron can be taken in the form $\mathcal{C}(\mathbf{w}_{i}, \mathbf{w}_{o}, \mathbf{w}_{M})$, here we use instead the pairing notation. The letter $\mathbf{w}$ used here is historical by certain accounts: the original idea comes from the term \textbf{weight}, in which the neuron can conceptually influence the input, for example, the signal received or information received, by certain amount, either \textit{downplay} it or \textit{signify} it.
+
+We clearly clarify the need for both $\mathcal{N}$ and $\mathcal{C}$ here. We know, that we want the neuron to be an \textit{operating unit}. This means that for it to be fully realized, it needs to also operate, and hence, to be 'observed'. Hence, you need both the description of the parameters which defines it - taken the interpretation where each parameter and configuration is one specific building block on its own, then the block of all those parameters form the shape of the neuron. Similarly, the \textit{operations} on such neuron assure the interaction and working mechanism of all those components together, inside the neuron, by itself. Hence, to fully, minimally express a minimalized neuron, you need to have both $\mathcal{N}$  and $\mathcal{C}$ as its minimality requirement. We then revise it to the following definition. 
+
+\begin{definition}[Classical neuron class] \label{def:neuclass}
+    Given the \textit{neural network formalism}. Then, we define a \textbf{neuron} $A$ to be \textit{minimally defined} if it is equivalent to any unit $x$ of the class $\mathfrak{N}_{m}(\mathcal{N}, \mathcal{C})$, called a \textit{neuron class}, where the 2-tuple expanded to $\mathcal{N}(n_{i}, n_{o}, M)$ and $\mathcal{C}(\mathbf{w}_{i}, \mathbf{w}_{o}, \mathbf{w}_{M})$. %\index{classical neuron class}
+\end{definition}
+
+\begin{figure}[!ht]
+    \centering
+    \resizebox{0.6\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\Large]
+    
+    % Manually place the label above the box
+    \node at (29,7) {\Large $x\in\mathfrak{N}_{m}(\mathcal{N}, \mathcal{C})$};
+    
+    % Outer dashed box
+    \draw[dashed] (21.75,6.25) rectangle (36.25,-1.25);
+    
+    % Inner boxes
+    \draw (22,6) rectangle node {\Large $n_{i}[\mathbf{w}]$} (23.75,-1);
+    \draw (36,6) rectangle node {\Large $n_{o}[\mathbf{w}']$} (34.25,-1);
+    \draw (24,6) rectangle node {\Large $M(\dots)$} (34,-1);
+    \end{circuitikz}
+    }%
+    \caption{Minimal neuron structure}
+    \label{fig:lable}
+\end{figure}
+
+With this, we formalize the abstract neuron into two descriptions. Note that, however, the \textit{minimally defined} neuron has a parameterized exposure protocol to the construction. In practice, for any neuron $a \in \mathfrak{N}$, the tuple $(\mathcal{N}, \mathcal{C})$ can be different, not to say complex. One of the strong points of this construction of the neural class is that it is \textit{recursive}. The following proposition might help aid in understanding why it is recursive.
+
+\begin{proposition}[Compound construction]
+    An abstract neuron $A$  can be dissected into three most important compartments $(\mathrm{I},\mathrm{O},M)$, where $\mathrm{I},\mathrm{O}$ is respectively the in-out interface. Hence, a cluster of neurons $\{A_{i}\}_{i \leq n}$ for such $\lvert \{ A_{i} \} \rvert \geq 3$ can be compartmentalized into a new neuron unit, that is, $\{ A_{i} \}\in \mathfrak{N}$, if and only if $\lvert \{ A_{i} \} \rvert \geq 3$. 
+\end{proposition}
+
+\begin{proof}
+    This mostly comes of as definition $(2.1)$. Notice that for any structure of a neuron to be minimally defined, the tuple $\mathcal{N}$ must minimally contain $(n_{i},n_{o},M)$. We want them to be discretely defined, then a cluster of neuron will have to have at least one neuron such that to satisfy the requirement of the 3-tuple component. If $n=\lvert \{ A_{i} \} \rvert=1$, it reduces to a singular neuron; for $n=2$, at least one compartment do not have any component, hence minimally we need 3 neurons to effectively be arranged as a neuron unit. This can be illustrated using \ref{fig:lalala}.
+\end{proof}
+
+\input{content/c2fig1.tex}
+
+Hence, we can recursively define neuron, either going up or down, if they satisfy such condition. However, usually, we will only go up, as we will have to define in detail the set $\{ A_{M,i} \}$ of all possible \textit{minimally defined} neuron. \footnote{At this point, I am considering using \textit{group theory} to aid such set compartment.}
+
+There are several assumptions and properties accompanied by this type of neuron structure that we would like to note.
+\begin{enumerate}
+    \item This neuron structure works \textit{sequentially}. A minimally defined neuron, such as in a practical setting, will have $\mathcal{C}$ to support sequential operation. What this means is present in the definition of the minimal neuron, such that $\mathcal{C} = (\mathbf{w}_{i}, \mathbf{w}_{o}, \mathbf{w}_{M})$, and the operation follows $i \to M \to o$ for an input-process-output session.
+    
+    \item By extension of the point above, the neuron order in a cluster will also be \textit{fixed}. Usually, this follows a single dimension, or, for example, if there exists a singular span directional vector $\vec{dr}$ that indicates the direction of operation in the cluster.
+    
+    \item We suppose the \textit{independence} of any components inside a neuron.
+    
+    \item The neuron is expressed in a \textit{parameterized manner}. That is, the behaviour of the neuron can be expressed, controlled, and designed by modifying and constructing a set of non-realized parameters. If this set of parameters is finite, we say that it is \textit{closed parameterization}. If not—i.e., there can be infinitely many parameters—we call it \textit{open parameterization}.
+    
+    \item This neuron structure is called the \textit{forgetful neuron}, simply because it works, in principle and in actuality, as a processing unit, in the minimally defined case. We will soon touch upon this definition for the detailed structure of the minimally defined neuron.
+\end{enumerate}
+
+When we structure our neuron in this way, it is natural to ask whether the neural unit can be expressed similarly to a \textit{finite automaton} or not. But aside from such an analogy, our minimal neuron is already very powerful. Certain clusters of such neurons, embedded with structure $\mathcal{L}$ of \textit{layer-order clustering} (which can be thought of as a more formal notion for a layered neural network), can approximate any continuous representation scheme $c: \mathcal{X} \to [\cdot, \Sigma]$, given an arbitrary closed interval and to an arbitrary degree of accuracy. We often refer to this as the \textit{universal approximation theorem} for the minimally defined neuron system, and it will serve as one of the focuses of the future analysis.
+
+\subsection{Analysis}
+The above construction of the fundamental neuron fundamental create the component model of the minimum processing unit which will be used in various collections of system of related mean. In mathematical modelling context, the neuron model is \textit{descriptive}, meaning that it aims specifically not only for the input-output protocol, but also the unit neuron itself. To do this, we recall any given concrete, functional structure under mathematical formalism is given of the basis, on which abstraction and quantification (without physical realization). Hence, our model here aligns well with such mathematical formalism, in the sense that they end up with abstraction without the impromptu need to signify the inner physical realization - or existence itself. And doing this leaves us with formalizing the \textit{minimally defined neuron} of the class $\mathfrak{N}(\mathcal{N},\mathcal{C})$ into specific requirement. 
+
+The inspiration for the concept of a neuron is a biological one: it stems from the study of the brain or any given processing organs of species with specialized region to be called brain. Considering such, we found out that the brain mostly consists of the fundamental component called biological neuron and its supporting structures - other resource matters of the inner brain that helps to make it function. Without physical realization depends on many things, but most of the time, it is expressed by the proposition that is to remove the physical attachment from any given object of interest, giving it a more quantified look. For a neuron, it can be treated in such way by formalize the neuron component without its supporting structure, replacing electrical signal and other innate signalling mechanism with abstract 'data flow' and 'operations', without much worry about the actual physical realization of chemical reaction and channel - as we do not need such. 
+
+Back there, we all said of the neuron class. What does this mean? For starter, this section on the neuron is the relatively minimal construction we can get it onto. Recall that we say mathematical formalism is to put objects in quantifiable notions, and abstractions of the given subject; also, to express them in a language (or framework, depends on your choice of lexical sense) that support such. Hence, one of the first thing we would like to do, is to formalize the neuron into specific \textit{description scheme}; that is, we would like to treat our objects - the neurons - specifically in certain descriptions that captures the essence of the neural unit, without much ambiguity, and an overhead view of the neuron. The tuple $(\mathcal{N},\mathcal{C})$ did exactly that - it tells us that the neuron is expressed by that separation of descriptions - in the language of mathematical quantification; for then, $\mathcal{N}$ stands for the quantitative \textit{parameters} that characterize the resources, component scale, or the \textbf{mass} of a given neuron, which $\mathcal{C}$ stands for the operations that governs the neuron's internal dynamics. One feasible assumption here is that the neuron does not exhibit any of its operation, that is, interfering with the macroscopic world outside itself, aside from the input-output formalism. Those two descriptions, one governs the mass, one govern the internal mechanics that confounds the subject's behaviours, is what the mathematical description do - and it works very well as it is. 
+\vspace{2mm}
+
+In such formalism, $\mathcal{N}$ is typically easier to specify than $\mathcal{C}$ - which is trivial since the internal mechanics is harder to define and construct, for there exists many relationship and connection between components in the same system. And, considering that for any working system, especially for an interactive one, which inherently dependent on the scale $t$, or given any reference point of operation to be referred upon, there can be either infinite configuration, or infinite type of ordering of the system itself. We may come to the analysis on \textit{invariant structure} of the space of configuration, but otherwise, it is uncommon to have invariant structure presented in the majority inside a typical system, except fitting of certain criteria.  
+
+Overall, the neuron formalism of capturing them into a neural class also helps to figure out the \textit{macroscopic configuration} and the \textit{microscopic configuration} of any given neuron. Under a certain instance of the neuron class $\mathfrak{N}$, iterations of individual neurons can be vastly different, depends on their representation scheme $\mathcal{R}$ for individual sub-description of subcomponent - for example, if there exist the component called the \textit{loss function}, then the macroscopic behaviour will only be configured up to certain accuracy, the rest is left for the detail microscopic setting. Hence, we can partition $\mathcal{N}$ into $$\mathcal{N}\supset \mathcal{N}_{\mathcal{H}}(\dots)\times \mathcal{N}_{\mathcal{P}}(\dots), \quad \mathcal{N}_{M}\supset \mathcal{N}_{\mathcal{H},M}(n_{i},n_{o},M)\times \mathcal{N}_{\mathcal{P},M}(n_{i},n_{o},M)$$
+of which here we use the word \textit{hyperparameter} for $\mathcal{H}$ a bit different from its usage of literature, and $\mathcal{P}$ for microscopic \textit{parameters}, under the proposition that the properties can be configured using parameters as abstraction. Similar notion goes for $\mathcal{C}$, though it is less apparent. 
+
+Overall, the minimally defined neuron, or what we can take as the \textbf{fundamental model of neural processing unit} works well, and provides us with the first iteration of the constructing brick for our larger, wider implementation. Though our aim is to advance this structure, first, we must take a look to the formalization and propositional-nation of the rudimentary concept of the neuron, even of the fundamental, minimal neuron. And this will happen at the end of this chapter. Until then, examining the maximal usage of the current structure will be more than enough as it aligns with historical literature's neuron and neural network formalism. Following sections will see how far we can go with this. 
+\subsection{Why we call it minimal}
+
+It seems a bit weird why we call our construction on its own a \textit{minimal construction}. To see this, though, we have to go back to the definition of a neuron, and the historical viewpoint on the constructing principle. 

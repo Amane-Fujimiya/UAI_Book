@@ -1,0 +1,792 @@
+\chapter{Quantum Well analysis - Expository}
+\section{Note}
+This one is an expository research that I did in 2024 and 2025 for the topic of semiconducting theoretical analysis, typically of quantum well structure. Hence, you would be seeing a very specific type of quantum well that we have here. 
+
+\section{What is quantum well?}
+
+All of the physics and devices in semiconductors, at most the basis of modern devices, are based on properties of direct gap semiconductors near the center of the Brillouin zone\footnote{The concept of a Brillouin zone was first developed by Léon Brillouin (1889-1969). Brillouin zones are polyhedra in reciprocal space in crystalline materials and are the geometrical equivalent of Wigner-Seitz cells in real space. Physically, Brillouin zone boundaries represent Bragg planes which reflect (diffract) waves having particular wave vectors so that they cause \textbf{constructive interference}.} being a Wigner-Seitz primitive cell in the reciprocal lattice\footnote{Every crystal structure has two lattices associated with it, the crystal lattice and the reciprocal lattice. A diffraction pattern of a crystal is the map of the reciprocal lattice of the crystal and a microscope structure is the map of the crystal structure. The meaning would be clarified later, as the footnote is too small}
+
+Quantum wells are thin layered semiconductor structures in which we can observe and control many quantum mechanical effects. They derive most of their special properties from the quantum confinement of charge carriers (electrons and "holes") in thin layers (e.g 40 atomic layers thick) of one semiconductor "well" material sandwiched between other semiconductor "barrier" layers. They can be made to a high degree of precision by modern epitaxial crystal growth techniques. Many of the physical effects in quantum well structures can be seen at room temperature and can be exploited in real devices. From a scientific point of view, they are also an interesting "laboratory" in which we can explore various quantum mechanical effects, many of which cannot easily be investigated in the usual laboratory setting. For example, we can work with "excitons" as a close quantum mechanical analog for atoms, confining them in distances smaller than their natural size, and applying effectively gigantic electric fields to them, both classes of experiments that are difficult to perform on atoms themselves. We can also carefully tailor "coupled" quantum wells to show quantum mechanical beating phenomena that we can measure and control to a degree that is difficult with molecules.
+
+A partial list of materials used for quantum well structures includes: III-V's - GaAs/GaAlAs on GaAs (Type I), GaSb/GaAlSb on GaSb (Type I), InGaAs/InAlAs on InP (Type I), InAs/GaSb (Type II), InGaAs/GaAs (Type I, strained); II-VI's - HgCdTe/CdTe, ZnSe/ZnMnSe (semimagnetic), CdZnTe/ZnTe (Type 1, strained); IV-VI's - PbTe/PbSnTe; IV - Si/SiGe (strained)\footnote{Heterostructures for quantum well devices are constructed in three forms : the single-junction structures, often referred as simply heterostructures, the double - junction structures, mostly referred as quantum wells and - multi-junction structures, called superlattices. Electron states in the structures are evaluated by assuming that the bulk band structures remain applicable for the constituents, even though the physical dimension in one or more directions may be comparable to the lattice constant. Electron states in the structures are obtained by solving the wave equation for the potential distributions in the structure by using the bulk physical constants and by applying the so-called effective mass approximation and suitable boundary conditions}. For those materials there are indeed, requirement of determining the exact analytical results of any particular behaviour that one might want to predict, or to determine the distribution of specific structural landscape. However, such as rare by itself, and most of the time, we resort to numerical results by approximating the differential quantum equation. In a few different, well-constructed and well-designed structure however, such solution can be attained. 
+
+\section{The dimensional Schrödinger equation}
+Given the wavefunction $\ket{\psi(x)}$, denoted more general as just $\psi(x)$ for time-independent case, we have the Schrödinger equation: 
+\begin{equation}
+  i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^{2}}{2m} \frac{\partial^{2}\psi}{\partial x^{2}}+V \psi
+\end{equation}
+
+The Schrödinger equation then can be solved separably, as: 
+\begin{equation}
+  -  \frac{h^{2}}{2m} \frac{d^{2}\psi}{dx^{2}} + V\psi = E\psi, \quad \frac{d\varphi}{dt}=-\frac{iE}{\hbar}\varphi
+\end{equation}
+This is the case for consideration to time-independent equation, of the stationary state, as we have taken the canonical \textit{separable solution}: 
+\begin{equation}
+  \Psi(x,t) = \psi(x)\varphi(t)
+\end{equation}
+
+In case of non-specified $V(x)$, we can only solve the differential equation which includes the time-dependent term: 
+\begin{equation}
+  \Psi(x,t) = \psi(x)\exp{(-iE/ \hbar)}
+\end{equation}
+
+As illustrated, we often have such assumption about the system that our solution are indeed \textit{separable}, which allows us to separate all the dimensional terms, and time-dependent to be multiplicative under the quantum formalism. We would be coming back to this later, but for now, let's see how we can then solve some potential of multiple dimension using the above method. 
+
+\section{The 3-dimensional case}
+Typically, the Schrödinger is stated in its one-dimensional form, concerning of only a single axis. This can be extended to the three-dimension space, with an added independent evolutionary variable $t$ of time. We would then see how the Schrödinger equation can change the interpretation of \textbf{particle in a box} to higher dimensions. Because we are operating in higher dimensional space, we would use the Laplace operator $\nabla^2\psi(\vec{r})$, for $\vec{r}=(x,y,z)$ instead, expressed by 
+\begin{equation}
+  \nabla^{2}\psi(\vec{r}) = \left( \frac{\partial^{2}\psi (\vec{r})}{\partial x} + \frac{\partial^{2}\psi (\vec{r})}{\partial x}+\frac{\partial^{2}\psi (\vec{r})}{\partial x} \right)
+\end{equation}
+Hence, the Schrödinger equation turns into 
+\begin{equation}
+  - \frac{h^{2}}{2m} \left( \frac{\partial^{2}\psi (\vec{r})}{\partial x} + \frac{\partial^{2}\psi (\vec{r})}{\partial x}+\frac{\partial^{2}\psi (\vec{r})}{\partial x} \right) + V\psi(\vec{r}) = E\psi(\vec{r})
+\end{equation}
+
+The easiest way to solve this, is having the wavefunction defined as the product of individual function for each independent variable (separable of variables technique). This is convenient, although there might be cases where this is not possible. Then, the wavefunction can be separated to: 
+\begin{equation}
+  \psi(x,y,z) = X(x)Y(y)Z(z)
+\end{equation}
+This is applicable, for example, between the equation of state for such case in which low-dimensional system is considered, for example, 1-dimensional restriction only, then we can effectively want to have the wavefunction in the form 
+\begin{equation*}
+  \psi(x,y,z)=\psi_{\perp}(x,y)R(z)
+\end{equation*}
+with restriction in the $z$ axis. We would first try to find the solution of equation 7. We have: 
+\begin{equation}
+  \frac{\partial^{2}\psi}{\partial x^{2}} = \frac{1}{X} \frac{\partial^{2}X}{\partial x^{2}} \quad
+  \frac{\partial^{2}\psi}{\partial y^{2}} = \frac{1}{Y} \frac{\partial^{2}Y}{\partial y^{2}} \quad
+  \frac{\partial^{2}\psi}{\partial z^{2}} = \frac{1}{Z} \frac{\partial^{2}Z}{\partial z^{2}}
+\end{equation}
+plugging this into (6), we gain: 
+\begin{equation*}
+  \left( -\frac{\hbar}{2mX} \frac{\partial^{2}X}{\partial x^{2}} \right) + \left( -\frac{\hbar}{2mX} \frac{\partial^{2}X}{\partial x^{2}} \right) + \left( -\frac{\hbar}{2mX} \frac{\partial^{2}X}{\partial x^{2}} \right) = E-V(r)
+\end{equation*}
+
+For $V(r)=0$, i.e. the free particle, this turns into only 
+\begin{equation}
+  \left( -\frac{\hbar}{2mX} \frac{\partial^{2}X}{\partial x^{2}} \right) + \left( -\frac{\hbar}{2mX} \frac{\partial^{2}X}{\partial x^{2}} \right) + \left( -\frac{\hbar}{2mX} \frac{\partial^{2}X}{\partial x^{2}} \right) = E
+\end{equation}
+
+Another way to obtain this relative result and make use of it for the next up potential well, is as the following. We regard the two-dimensional problem, that is, the potential lies only on one singular axis, and others are free, of which then for the three-dimensional case is: 
+$$-\frac{\hbar}{2m}\left( \frac{\partial^{2}\psi(x,y,z)}{\partial x^{2}} + \frac{\partial^{2}\psi(x,y,z)}{\partial y^{2}} + \frac{\partial^{2}\psi(x,y,z)}{\partial z^{2}} \right)+ U(x,y,z)\psi(x,y,z)= E\psi(x,y,z)$$
+For two-dimensional, $z$-constrained wave function system, we have the following separable exposition: 
+$$\psi(x,y,z)=\psi_{\perp}(\vec{r}_{\perp})\psi_{n}(\vec{r})\varphi(t)$$
+Where $\psi_{\perp}(\vec{r}_{\perp})$ is the wavefunction of the waveform along the non-restricted, free space of the $Oxy$ plane, while $\psi_{n}(\vec{r})$ is the restricted waveform along the $z$ axis. 
+Hence, we have: 
+$$
+-\frac{\hbar^{2}}{2m} \left(\frac{\partial^{2}\psi(x,y,z)}{\partial x^{2}}+\frac{\partial^{2}\psi(x,y,z)}{\partial y^{2}}\right) + U(x,y)\psi(x,y) = E\psi(x,y)\quad (1)
+$$
+and $$-\frac{\hbar^{2}}{2m}\left(\frac{\partial^{2}\psi(x,y,z)}{\partial z^{2}}\right)+U(z)\psi(z)=E\psi(z)\quad (2)$$
+Here, we substitute $U(z)$, and first received the equation for certain form of $$-\frac{\hbar^{2}}{2m}\left(\frac{\partial^{2}\psi(x,y,z)}{\partial z^{2}}\right)+\left( \frac{1}{2}m_{e}\omega_{z}^{2}x^{2} \right)\psi(z)=E\psi(z)$$
+Which brings us to the formulation of our well of interest. 
+\subsection{The infinite square cube}
+
+The most simple case of quantum physics, when extended to 3D, would be the elementary space of an \textbf{infinite square well}. Indeed the following potential configuration: 
+\begin{equation}
+  V(\vec{r}) = \begin{cases}
+    0 & 0 \leq x,y,z \leq L_{x},L_{y},L_{z} \\
+    \infty & \text{otherwise}
+    \end{cases}
+\end{equation}
+
+which would seems like to be the case, is indeed, called an \textit{infinite square cube} that restricts a space by a three-dimensional region cut. 
+
+Since energy is constant, we need a working constant to then figure out the solution of the system. That means that each dimension need to have a working constant on its own. for example, 
+\begin{equation*}
+  \begin{split}
+    -\frac{\hbar^{2}}{2mX} \frac{d^{2}X}{dx^{2}} & = \epsilon_{x}\\ 
+    \Leftrightarrow \: \:\frac{d^{2}X}{dx^{2}} & = -\frac{2m}{\hbar^{2}} \epsilon_{x}\\
+    0  & = \frac{d^{2}X}{dx^{2}}+ \frac{2m}{\hbar^{2}}\epsilon_{x}
+    \end{split}
+\end{equation*}
+
+Applying this for all term, we have: 
+\begin{equation}
+  \partial \vec{E}= \begin{bmatrix}
+    \displaystyle{\frac{\partial^{2}(X)}{\partial x^{2}}+ \frac{2m}{\hbar^{2}}\epsilon_{x} = 0} \\\\
+    \displaystyle{\frac{\partial^{2}(Y)}{\partial y^{2}}+ \frac{2m}{\hbar^{2}}\epsilon_{y} = 0} \\\\
+    \displaystyle{\frac{\partial^{2}(Z)}{\partial z^{2}}+ \frac{2m}{\hbar^{2}}\epsilon_{z} = 0} 
+    \end{bmatrix}
+\end{equation}
+Where the term $\epsilon_{x,y,z}$ is as: 
+\begin{equation}
+  \vec{E} = \begin{bmatrix}
+    \epsilon_x\\
+    \epsilon_y\\
+    \epsilon_z
+  \end{bmatrix} \longrightarrow \langle \vec{v}, \vec{1}\rangle = \epsilon_x + \epsilon_y + \epsilon_z = E
+\end{equation}
+
+This reduce everything into one variable, single dimension result: 
+\begin{equation*}
+  \frac{\partial^{2}X}{\partial x^{2}}=\frac{2m}{\hbar^{2}}E_{x}X=0 \approx \frac{\partial^{2}\psi}{\partial x^{2}}=-\frac{4\pi^{2}}{\hbar^{2}}\psi
+\end{equation*}
+of which $\lambda$ is the De Broglie wavelength. 
+
+The boundary condition now is easy to solve, and thus we have the ladder of changing linear combination, $n=1,\dots,\infty$.
+
+Using normalization constant
+\begin{equation}
+  A_{x,y,z} = \sqrt{\frac{2}{L_{x,y,z}}}
+\end{equation}
+we gain the form of the $x$-directive: 
+\begin{equation*}
+  \psi(x) = 
+\begin{cases} 
+\sqrt{\dfrac{2}{L_x}}\sin{\dfrac{n \pi x}{L_x}} & \mbox{if } 0 \leq x \leq L \\ 
+0 & \mbox{if } {L < x < 0} 
+\end{cases}
+\end{equation*}
+and apply this to all other axis, 
+\begin{align}
+  X(x) = \sqrt{\dfrac{2}{L_x}}\sin{\dfrac{n \pi x}{L_x}}\\
+  Y(y) = \sqrt{\dfrac{2}{L_y}}\sin{\dfrac{n \pi y}{L_y}}\\
+  Z(z) = \sqrt{\dfrac{2}{L_z}}\sin{\dfrac{n \pi z}{L_z}}
+\end{align}
+For each constant, we derive from the De Broglie's constant: 
+\begin{equation*}
+  \epsilon_{x} = \dfrac{n_{x}^{2}h^{2}}{8mL_x^{2}} , \: \: \epsilon_{y} = \dfrac{n_{y}^{2}h^{2}}{8mL_y^{2}} ,\:\: \epsilon_{z} = \dfrac{n_{z}^{2}h^{2}}{8mL_z^{2}}
+\end{equation*}
+which gives us the accurate representation, if possible, for those vaue inside the wavefunction form. Plugging everything (almost) into (7), we gain: 
+\begin{equation}
+  \begin{split}
+    \psi(r) & = \sqrt{\dfrac{8}{L_x L_y L_z}}\sin \left( \dfrac{n_{x} \pi x}{L_x} \right) \sin \left(\dfrac{n_{y} \pi y}{L_y}\right) \sin \left(\dfrac{ n_{z} \pi z}{L_z} \right) \\
+    & = \sqrt{\dfrac{8}{V}}\sin \left( \dfrac{n_{x} \pi x}{L_x} \right) \sin \left(\dfrac{n_{y} \pi y}{L_y}\right) \sin \left(\dfrac{ n_{z} \pi z}{L_z} \right) 
+  \end{split}
+\end{equation}
+with total energy
+\begin{equation}
+  E_{n_x,n_y,n_z} = \dfrac{h^{2}}{8m}\left(\dfrac{n_{x}^{2}}{L_x^{2}} + \dfrac{n_{y}^{2}}{L_y^{2}} + \dfrac{n_{z}^{2}}{L_z^{2}}\right) 
+\end{equation}
+
+\clearpage
+\section{The quantum well}
+
+We are taking on researches of solving the fundamental case of a low-dimensional semiconductor. By this, we mean that at the microscopic scale, we restrict its movement to be free only in sub-dimensions, less than 3. For example, our task on the half-parabolic, non-additive, antisymmetric quantum well which serves to facilitate this kind of restriction is: 
+
+\begin{equation}
+    U(z)=\begin{cases}
+S_{0} & z < a \\
+\displaystyle{\frac{1}{2}m_{e}\omega_{z}^{2}z^{2}} & a \leq z \leq b \\
+S_{0} & z > b
+\end{cases}
+\end{equation}
+
+Where $m_{e}$ is the mass of electron, $\omega_{z}$ is the angular momentum at $z$, for $z$ changing in $[a,b]$. A reduced form of this potential well is to treat its boundary as \textit{infinite bound}, that is, we can rewrite the thing as 
+
+\begin{equation}
+    U(z)=\begin{cases}
++\infty & z < a \\
+\displaystyle{\frac{1}{2}m_{e}\omega_{z}^{2}z^{2}} & a \leq z \leq b \\
++\infty& z > b
+\end{cases}
+\end{equation}
+
+which effectively makes the wavefunction to be restricted to only the portion of space $[a,b]$. This quantum well is often called the asymmetric, half-parabolic but \textit{non-additive} quantum well. The reason for the term non-additive is because of the complement term that would be later addressed. 
+
+For wavefunction in quantum mechanics, its evolution in time, or the dynamic, is governed by the Schrödinger equation. This equation links the Hamiltonian operator to the energy operator together. For now, the \textbf{Hamiltonian} is the operator that describes the energy of particles, for it is the sum of kinetic and potential energy operators, $H=-E_{k}+V(x)$. By letting both the Hamiltonian and the energy operator act on the wave function, we define the behaviour of the particle as $H\Psi(x,t)=E\Psi(x,t)$ In such, we gain the following expanded form of the Schrödinger equation: 
+
+$$-\frac{\hbar^{2}}{2m} \frac{d^{2}}{dx^{2}}\Psi(x,t)+V(x)\Psi(x,t)=i\hbar \frac{d}{dt}\Psi(x,t)$$
+
+Which is now the \textit{time-dependent Schrödinger wave equation}. To solve this quantum well, first reciting the Schrödinger equation with Laplacian operator: 
+\begin{equation}
+  -\frac{\hbar}{2m}\left( \frac{\partial^{2}\psi}{\partial x^{2}} + \frac{\partial^{2}\psi}{\partial y^{2}} + \frac{\partial^{2}\psi}{\partial z^{2}} \right)+ U(x,y,z)\psi(x,y,z)= E\psi(x,y,z)
+\end{equation}
+we can separate the wavefunction as: 
+\begin{equation}
+  \Psi(Oxyz, t)=\psi_{\perp}(\vec{r}_{\perp})\psi_{n}(\vec{r})\varphi(t)
+\end{equation}
+Where $\psi_{\perp}(\vec{r}_{\perp})$ is the wavefunction of the waveform along the non-restricted, free space of the $Oxy$ plane, while $\psi_{n}(\vec{r})$ is the restricted waveform along the $z$ axis. The result along the free space is easier, since it is just the free particle quantum system, which has elementary results. The $z$ axis though, is a problem, since its bound is pretty complex on the side of asymmetry. 
+
+The inner well can then be specified along the $z$ axis as.
+\begin{equation}
+    \mathcal{O}\left(S_{0},\displaystyle{\frac{1}{2}m_{e}\omega_{z}^{2}z^{2}}\right)
+\end{equation}
+
+It is realized from the fact that The well depends on the conductor band interface difference between the two, hence it must start somewhere from the boundary itself. The various forms can be 
+\begin{equation}
+    S_{0} \pm \frac{1}{2}m_{e}\omega_{z}^{2}z^{2}
+\end{equation}
+
+or \begin{equation}
+    S_{0}\cdot \left[\frac{1}{2}m_{e}\omega_{z}^{2}z^{2}\right], \quad n \in \{ -1, 1 \}
+\end{equation}
+
+For formality and causality, the second case is more likely to be the form inside the well structure of two conducting bands, hence we will go with the multiplicative case. 
+
+\subsection{Related formulation}
+When dealing with quantum well or other structures in quantum mechanics, typically specified by their potential, it is of best interest that we familiarize ourselves with the reduced, simple form of some of the potential often met. This includes in the following list of: 
+\begin{enumerate}[topsep=1pt,itemsep=0.5pt]
+	\item Symmetric potential. 
+	\item Asymmetric potential. 
+	\item Parabolic potential. 
+	\item Free parabolic/symmetric potential. 
+	\item (In)finite square well. 
+	\item (In)finite parabolic well. 
+	\item Semi-parabolic well. 
+	\item Semi-parabolic asymmetric well (A composition between parabolic and asymmetric)
+\end{enumerate}
+Note that this includes both the \textit{finite potential well} and the infinite one. Usually, infinite is often endowed upon the problem setting, especially if the formulation and scenario permits such. This is because if it is "borderline" infinite, or just infinite in general, then the wavefunction of the particle of interest will lie entirely in the potential region, with almost (not impossible) a hundred percent accuracy of inclusion. This is why, if able, we would generally consider the boundary to be infinite or acting as one. 
+\subsection{Symmetric infinite square potential}
+
+Of the first feature, of symmetric potential well, it is a box of length $L$ with its left-hand edge placed at $x$-coordinate - $L/2$. The wave function is set to 0 outside the box.
+
+For a particle in an infinite spare well of length $L$ centred at the origin, demonstrated above, the potential $V(x)$ is given by 
+\begin{equation}
+	V(x)=\begin{cases}
+	0 & -\frac{L}{2} \le x \le \frac{L}{2} \\ 
+	\infty& \text{otherwise}
+	\end{cases} 
+\end{equation}
+
+	Since the particle cannot be found outside the well, the wave function $\Psi(x)$ outside the well is set to zero with$$\Psi(x) =0 \text{ when }x < -\frac{L}{2} \text{ or } x > \frac{L}{2} $$
+	In order to have $\Psi(x)$ remain continuous, the Dirichlet boundary conditions are set as$$\Psi\left( -\frac{L}{2} \right)=\Psi \left( \frac{L}{2} \right) = 0 $$
+	After this, we can solve the potential by equation (1) as:
+
+  \begin{equation}
+    \Psi(x) = A\cos kx + B\sin kx \hspace{1cm}A,B \in R 
+  \end{equation}
+	with $$k = \sqrt{ \frac{2mE}{\hbar} } $$
+	Applying the boundary conditions from Eq (2) to Eq (3), we can have $$A\cos k\left( \frac{L}{2} \right) + B \sin k \left( \frac{L}{2} \right) = 0 $$
+	with $$k_{n} = \frac{n\pi}{L} $$
+	from Eq (4) and Eq (6), the energy E is quantized as$$E_{n}=\frac{n^2\pi^2\hbar^{2}}{2mL^{2}}\hspace{1cm}n=1,2,3,\ldots$$
+
+Normalizing this wavefunction is defined by using the boundary condition: 
+
+\begin{equation}
+    \int_{-L/2}^{L/2} | \psi_n (z) |^2 \: dz = 1
+\end{equation}
+
+For $n$ even, the cosine term takes in place, while for the odd case, the sine term takes place. Hence, 
+\begin{align}
+    A^{2} \int_{-L/2}^{L/2} \sin^{2}{\left(\frac{n\pi}{L} z\right)} \: dz = 1, \quad n\text{ is even} \\
+    B^{2} \int_{-L/2}^{L/2} \cos^{2}{\left(\frac{n\pi}{L} z\right)} \: dz = 1, \quad n\text{ is odd}
+\end{align}
+
+The normalization results in 
+
+$$\Psi_{n_{o}}(x)=\left( \frac{2}{L} \right)^{\frac{1}{2}}\cos\left( \frac{n\pi}{L}x \right) \hspace{1cm}n =1,3,5 \ldots$$
+
+and$$\Psi_{n_{e}}(x)= \left( \frac{2}{L} \right)^{\frac{1}{2}}\sin\left( \frac{n\pi}{L}x \right) \hspace{1cm} n = 2,4,6 \ldots$$
+
+Handling this in the case of 3-dimensional potential, restricted of the $z$ axis, and the form 
+\begin{equation}
+    \Psi(\vec{r}) = \varphi(t) e^{i k_{\perp} r_{\perp}} \psi_n(z)
+\end{equation}
+
+thereby turns into 
+\begin{equation}
+    \Psi(\vec{r},t) = \underbrace{e^{-iEt/\hbar}}_{\text{time}} \times \underbrace{\sqrt{\frac{2}{L}} \left[\sin{\left(\frac{n\pi}{L}z\right)} + \cos{\left(\frac{n\pi}{L}z\right)}\right]}_{\text{Restricted axis}} \times \underbrace{Ae^{ik_{\perp}x_{\perp}}}_{\text{Free plane}}
+\end{equation}
+
+The two normalization term $A$ and $\sqrt{2/L}$ can be realized by superposing them, but for the free particle, it is troublesome since we need to solve the equation \begin{equation}
+    \psi(x) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty} \vartheta(k) e^{ikx} \: dk
+\end{equation}
+such that the normalization condition $I(\psi_{\perp}(x))_{\mathbb{R}}= 1$ as always. 
+
+\subsection{Asymmetric Potential}
+
+To continue after covering up the symmetric potential well, here will be the figure that demonstrates the asymmetric potential well, which is a box length $L$ with its left-hand edge placed at the origin. The wave function is set to zero outside the infinite boundaries
+
+For a particle in an infinite square well with its left-hand edge at the origin, as seen from the figure above, the potential $V(x)$ is defined as 
+\begin{equation}
+  V(x)=\begin{cases}
+    0, \text{ if } 0\le x \le L \\ 
+    \infty, \text{ otherwise }
+    \end{cases}
+\end{equation}
+
+Once again, the wave function $\Psi(x)$ outside the well is set to zero with $$\Psi(x)=0 \text{ when } x<0 \text{ or } x >L$$
+In order to have $\Psi(x)$ remain continuous, the Dirichlet boundary conditions are set as $$\Psi(0)=\Psi(L)=0$$
+No restriction for continuity is made on $\frac{d\Psi(x)}{dx}$ at the boundary.
+  
+Using the same method to solve the case of time-independent Schrödinger equation for the potential on the symmetrical potential well, we have the result as 
+
+\begin{equation}
+  \Psi(x) = A\cos kx + B\sin kx \quad A,B \in \mathbb{R}
+\end{equation}
+with $$k = \sqrt{ \frac{2mE}{\hbar^2} }$$
+Applying the boundary condition $\Psi(0)=0$ eliminates the constant A which leaves$$\Psi(x) = B\sin kx$$
+In order for $\Psi(L)=0$, then $kL=n\pi$ thereby giving 
+\begin{equation}
+  k_{n} = \frac{n\pi}{L}, \text{ with }n=1,2,3, \ldots
+\end{equation}
+
+From the energy E is quantized as $$E_{n}= \frac{n^{2}\pi^{2}\hbar^{2}}{2mL^2}$$
+The constant $B$ is found by normalizing $\Psi(x)$ as$$\int^{L}_{0}|\Psi(x)|^{2} dx = 1$$
+which gives$$B = \sqrt{ \frac{2}{L} }$$
+Finally, the wave solution for the particle in the infinite square well is given by $$\Psi_{n}(x)=\sqrt{ \frac{2}{L} } \sin\left( \frac{n\pi}{L}x \right) \hspace{1cm} n =\pm 1, \pm 2, \pm 3, \ldots$$
+\subsection{Semi-parabolic potential, I}
+
+  In literature, we have the functional form of a semi-parabolic confining potential $V(z)$, due to the difference of conduction band edge (as for quantum well which is usually created in an electrical structure of such - molecular-beam-epitaxy and related deposition): 
+\begin{equation}
+  V(z) =
+  \begin{cases}
+    \displaystyle{V_{S} \left(\frac{z}{d}\right)^{2}} & 0 < z \leq d \\
+    \infty & z \leq 0
+  \end{cases}
+\end{equation}
+  
+Per description as above cases, we can also partially state it as \textbf{asymmetric} of the central axis as well. Here, $d$ is the quantum well width, $V_S$ is the conduction band offset at interface. 
+  
+The motion of an electron in the $xy$-plane is described in the weak-coupling approximation the coupling here likely refers to the \textbf{coupling constant}, the number that determines the strength of the force exerted in an interaction between static bodies to the charges of the bodies. In QFT, with a coupling $g$, if $g$ is much less than 1, the theory uis said to be \textit{weakly coupled}, the reverse is then \textit{strongly coupled}; whereas the motion of the electron along the $z$-axis is governed by the potential $V(z)$, therewithal the wavefunction and energy spectrum are determined from a solution of the Schrödinger equation: 
+  
+\begin{equation}
+  \frac{\mathrm{d}^2 \varphi(z)}{\mathrm{d}z^2} + \frac{2m}{\hbar^2} \left(\bar{\epsilon} - \frac{1}{2} m\omega_{s}^2 z^2  \right) \varphi(z) = 0
+\end{equation}
+  
+where 
+\begin{equation}
+  \omega_s = \frac{1}{d} \sqrt{\frac{2V_S}{m}}
+\end{equation}
+is the frequency of the semi-parabolic potential in the quantum well, $\bar{\epsilon}= \epsilon - \epsilon{\perp}$. 
+  
+  
+Under the effective mass approximation and the envelope wavefunction approach, the eigenfunctions and eigenenergies (defined with the true sub-band energies and wavefunctions) are the solution of the Schrödinger equation. 
+  
+From the boundary conditions for the wavefunction, such that
+\begin{equation}
+   \varphi(z) = \begin{cases}
+    0 & z = 0 \\
+    0 & z = d
+  \end{cases}
+\end{equation}
+such that the wavefunction vanishes after reaching the boundary. We obtains the condition from such, that 
+\begin{equation}
+  \frac{d}{2\hbar} \sqrt{2m V_S} \gg 1
+\end{equation}
+  
+under which the solution of the Schrödinger equation for a semi-parabolic quantum well, infinite on the left and finite on the right, is given as: 
+\begin{equation}
+  \epsilon = \hbar \omega_s \left(2n + \frac{3}{2}\right),\quad \varphi_{n}(z) = A_{n} \exp{\left(-\frac{\beta z^{2}}{2}\right)} \, I_{2n+1}\left(\beta z + 1\right)
+\end{equation}
+  
+and the form of the wavefunction is as such: 
+\begin{equation}
+  \varphi_n (z) = A_n \exp{\left(- \frac{\beta z^2}{2}\right)H_{2n+1}[(\beta z + 1)]}
+\end{equation}
+where \begin{equation}
+  \beta = \sqrt{\frac{m\omega}{\hbar}}
+\end{equation}
+and $H_{2n+1}[(\beta z +1)]$ is the Hermite polynomial, and $n$ is the quantum number. The explicit derivation needs to be taken into account, though we would not be concerned of such until further date (or at least in another exposition). 
+
+\section{Solution draft}
+
+Now, after some investigations of related well, we note the following of interest: 
+\begin{enumerate}
+  \item The Schrödinger equation can be written as the \textit{homogeneous, second order differential equation} in the case of mono-axis $z$: \begin{equation}
+    - \frac{\hbar}{2m} \psi''(z) + Q(z) \psi(z) = 0
+  \end{equation}
+  Here, the differential equation is figured as \textit{variable}, since the second factor $Q(z)$ corresponds to the variable potential well inside the region $[a,b]$. In this case, \begin{equation}
+    Q(z) = \frac{1}{2}m_e \omega_{z}^{2}z^{2} 
+  \end{equation}
+  which closely resemble the \textbf{harmonic quantum oscillator}. 
+  \item We remember the general form solution of the total solution to Schrödinger's equation is: \begin{equation}
+    \Psi(z,t) = \sum_{n=1}^{\infty} c_n \psi_n (x) e^{-iE_n t/ \hbar}
+  \end{equation}
+  now, for when $t= 0$, we gain the initial condition of the wavefunction: 
+  \begin{equation}
+    \Psi(z,0) = \sum^{\infty}_{n=1} c_n \psi_n(z)
+  \end{equation}
+  \item The form of the potential well is somewhat difficult. We notice that it is asymmetric, the question is, how that asymmetry would be. The most basic structure available to this, then must be the curvature of which one side is at the section where $Q'(z)=0$, i.e. the top maxima point of the potential curve. 
+  \item To solve this complex situation, we might want to find the solution to the one-dimensional, non-boundary applicable potential. This case would have the symmetric parabolic potential. We then restrict on one side, the side of which means that we set up the system $[a,\infty)$. Similarly, we do it for $(\infty, b]$. Then we might come about to find out the solution to the general potential well interpretation.
+\end{enumerate}
+This will be the partial guidance to solving the problem. Because we are recording the partial progress made, there will be a few attempts in obtaining such solution, as draft of getting closer to the answer. But first, thinking about it, it is the time to investigate its closer analogue, of the harmonic quantum oscillator. 
+
+\section{The quantum harmonic oscillator}
+
+Oscillations are found in nature, in such things as electromagnetic waves, vibrating molecules and your bell, the flow of water, and the gentle back-and-forth sway of a tree branch. Previously, we deal with oscillation in a macroscopic way, such as spring and simple plane pendulum. Reusing such notion to microscopic scale, is a problem entirely different. 
+
+\subsection{Classical harmonic oscillator}
+
+A simple harmonic oscillator is a particle or system that undergoes harmonic motion about an equilibrium position, such as an object with mass vibrating on a spring. Because quantum well exists within the restriction of a single dimensional figure, we would be considering the single-dimension variant only. 
+
+Suppose a mass moves back-and-forth along the $x$-dimension about the equilibrium position, $x=0$. In classical physics, the particle moves in response to a linear string $F_{x}=-kx$, where $x$ is the displacement of the particle from its equilibrium position. The motion takes place between two turning points, $x\pm A$, where $A$ denotes the amplitude of the motion. The position of the object varies periodically in time with angular frequency $\omega=\sqrt{k/m}$, which depends on the mass $m$ of the oscillator and on the constant force $k$ of the force, and be written as
+\begin{equation}
+  x(t) = A\cos{(\omega t+\phi)}
+\end{equation}
+The \textit{total energy} of an oscillator is the sum of its kinetic energy $K=mu^{2}/2$ and the elastic potential energy of the force $U(x)=kx^{2}/2$, which is 
+\begin{equation}
+  E = \frac{1}{2} mu^{2} + \frac{1}{2} kx^{2}
+\end{equation}
+At the turning points $x=\pm A$, the speed of the oscillator is zero, therefore, at these point, the energy of the oscillation is solely in the form of its potential energy $E=kA^{2}/2$. Physically, it means that a classical oscillator can never be found beyond its turning points, and its energy depends only on how far the turning points are from its equilibrium position. The energy of a classical oscillator changes in a continuous way. The lowest energy that a classical oscillator may have is zero, which corresponds to a situation where an object is at rest at its equilibrium position. The zero-energy state of a classical oscillator simply means no oscillations and no motion at all (a classical particle sitting at the bottom of the potential well). When an object oscillates, no matter how big or small its energy may be, it spends the longest time near the turning points, because this is where it slows down and reverses its direction of motion. Therefore, the probability of finding a classical oscillator between the turning points is highest near the turning points and lowest at the equilibrium position.
+
+\section{Solution}
+\subsection{Attempt 1}
+The form of the inner well potential: 
+
+\begin{equation}
+  \frac{S_0}{2} m_{e} \omega_{z}^{2} z^{2}
+\end{equation}
+contains the variations $\omega_{z}$, which is the potential \textbf{inner frequency}, formulated as
+\begin{equation}
+  \omega_{z} = \frac{1}{L} \sqrt{\frac{2S_0}{m_{e}}}
+\end{equation}
+
+The inner Schrödinger equation becomes \begin{equation}
+  -  \frac{h^{2}}{2m_e} \frac{d^{2}\psi(z)}{dz^{2}} + \left(\frac{S_0}{2} m_{e} \omega_{z}^{2} z^{2}\right)\psi = E\psi
+\end{equation}
+
+This can be simplified to 
+
+\begin{equation}
+  \frac{d^{2}\psi}{dz^{2}} = \frac{2m_e}{\hbar}\left( \frac{S_0 m_e \omega_{z}^{2}}{2} z^{2} - E  \right)\psi 
+\end{equation}
+
+that is 
+
+\begin{equation}
+  \frac{d^{2}\psi}{dz^{2}} = \left[
+    \frac{S_0}{\hbar} (m_e \omega_z z)^{2} - \frac{2Em_e}{\hbar}
+  \right]\psi
+\end{equation}
+
+Set $\mathcal{E}= (2E m_e)/\hbar$ and $\mathcal{Q}=(S_0 m_{e}^{2} \omega_{z}^{2})/\hbar$, we retract it to 
+
+\begin{equation}
+  \frac{d^{2}\psi}{dz^{2}} = \left[
+    \mathcal{Q} z^{2} - \mathcal{E}
+  \right]\psi
+\end{equation}
+
+We note that by asymptotic analysis, 
+\begin{equation}
+  \lim_{z \to \pm \infty} (Qz^2 - \mathcal{E}) \approx Qz^{2}
+\end{equation}
+
+Hence 
+
+\begin{equation}
+  \lim_{z \to \pm \infty} \frac{d^2 \psi}{dz^2 } \approx Qz^2 \psi 
+\end{equation}
+
+We can try then \begin{equation}
+  \psi(z) = \psi_{0} \exp{(\alpha z^2)/2}, \quad \alpha \equiv \sqrt{\frac{\hbar}{m\omega}}
+\end{equation}
+
+which leads to \begin{equation}
+  \frac{d\psi}{dz} = \alpha z \psi
+\end{equation}
+
+and \begin{equation}
+  \frac{d^2 \psi}{dz^2} = (\alpha + \alpha^2 z^2)\psi \approx \alpha^2 z^2 \psi 
+\end{equation}
+in the same limit. Compare this to the limit, we then have
+
+\begin{equation}
+  \alpha^2 z^2 \psi  = Qz^2 \psi
+\end{equation}
+
+\subsection{Attempt 2}
+
+Given that the potential depends only on $z$:
+
+\[
+\left( \frac{\partial^2 \Psi}{\partial x^2} + \frac{\partial^2 \Psi}{\partial y^2} \right) = 0, \quad \Rightarrow \quad V(x, y) = 0 \Rightarrow \Psi(x, y, z) = \psi(z)
+\]
+
+Using the method of separation of variables, we arrive at the one-dimensional Schrödinger equation along the $z$-direction:
+
+\[
+\left[ -\frac{\hbar^2}{2m} \frac{d^2}{dz^2} + V(z) \right] \Psi(z) = E \Psi(z)
+\]
+
+Where $\Psi(z)$ is the wavefunction and $E$ is the corresponding energy in the $z$-direction.
+
+\subsubsection{Case $0 < z < L$}
+
+The equation becomes:
+
+\[
+\left[ -\frac{\hbar^2}{2m} \frac{d^2}{dz^2} + \frac{1}{2} m_e \omega_z^2 z^2 \right] \Psi(z) = E \Psi(z)
+\]
+
+This is the equation of a one-dimensional harmonic oscillator.
+
+\subsubsection{Non-dimensionalization of the Equation}
+
+Multiply both sides of the equation by $\dfrac{2}{\hbar \omega_z}$:
+
+\[
+\left[ \frac{-\hbar}{m_e \omega_z} \frac{d^2}{dz^2} + \frac{m_e \omega_z z^2}{\hbar} \right] \Psi(z) = \frac{2E}{\hbar \omega_z} \Psi(z)
+\]
+
+Let:
+\[
+\alpha_z = \sqrt{\frac{\hbar}{m_e \omega_z}}, \quad \delta = \frac{z}{\alpha_z}
+\]
+
+Then the equation becomes:
+
+\[
+\left[ -\frac{d^2}{d\delta^2} + \delta^2 \right] \Psi(\delta) = \frac{2E}{\hbar \omega_z} \Psi(\delta)
+\]
+
+\[
+\Rightarrow \Psi''(\delta) + \left( \frac{2E}{\hbar \omega_z} - \delta^2 \right) \Psi(\delta) = 0
+\]
+
+Assume a solution of the form:
+
+\[
+\Psi(\delta) \sim u(\delta) e^{-\frac{\delta^2}{2}}
+\]
+
+Then:
+
+\[
+\left[ u''(\delta) - 2 \delta u'(\delta) + \left( \frac{2E}{\hbar \omega_z} - 1 \right) u(\delta) \right] e^{-\frac{\delta^2}{2}} = 0
+\]
+
+(This can be simplified into the Hermite differential equation depending on the analysis.)
+
+\bigskip
+
+This is the equation of the harmonic oscillator, and the solutions are Hermite polynomials multiplied by a Gaussian, with discrete energy levels:
+
+\[
+E_n = \hbar \omega_z \left(n + \frac{1}{2}\right)
+\]
+
+By normalizing and transforming the equation into the one-dimensional harmonic oscillator form, we determine the discrete energy spectrum and the asymptotic wavefunction shape in the parabolic region $0 < z < L$.
+
+\subsubsection{Analysis Using Hermite Polynomials}
+
+Continuing from:
+
+\[
+u''(\delta) - 2\delta u'(\delta) + \left( \delta^2 - 1 + \frac{2E}{\hbar \omega_z} \right) u(\delta) = 0
+\]
+
+Simplifying:
+
+\[
+u''(\delta) - 2\delta u'(\delta) + u(\delta) \left[ \frac{2E}{\hbar \omega_z} - 1 \right] = 0
+\]
+
+Let:
+
+\[
+\lambda = \frac{2E}{\hbar \omega_z} - 1
+\]
+
+Then the equation becomes:
+
+\[
+u''(\delta) - 2\delta u'(\delta) + \lambda u(\delta) = 0
+\]
+
+This is the Hermite differential equation with condition $\lambda = 2N$.
+
+Therefore:
+
+\[
+u(\delta) = H_N(\delta)
+\]
+
+And:
+
+\[
+\Psi(\delta) \sim u(\delta) e^{-\delta^2/2} = H_N(\delta) e^{-\delta^2/2}
+\]
+
+Thus:
+
+\[
+\Psi(\delta) = A e^{-\delta^2/2} H_N(\delta)
+\]
+
+With:
+
+\[
+\delta = \frac{z}{\alpha_z}, \quad \alpha_z = \sqrt{\frac{\hbar}{m_e \omega_z}}
+\]
+
+The wavefunction in terms of $z$ is:
+
+\[
+\Psi(z) = A \exp\left(-\frac{z^2}{2\alpha_z^2}\right) H_N\left(\frac{z}{\alpha_z}\right)
+\]
+
+\subsubsection{Boundary Condition at $z = 0$}
+
+At $z = 0$:
+
+\[
+\Psi(0) = A H_N(0)
+\]
+
+Depending on the boundary condition (e.g., infinite potential wall or symmetry/asymmetry), we choose appropriate $N$ values (even or odd).
+
+Since $H_N(0) = 0$ when $N$ is odd, we have:
+
+\[
+\text{Even solutions (N = 0, 2, ...): discarded} \quad \text{Odd solutions (N = 1, 3, ...): accepted}
+\]
+
+\subsubsection{Wavefunction Normalization}
+
+Normalization condition:
+
+\[
+\int_0^L |\Psi(z)|^2 \, dz = 1
+\]
+
+Substitute the wavefunction:
+
+\[
+\int_0^L A_N^2 \exp\left(-\frac{z^2}{\alpha_z^2}\right) H_{N+1}^2\left( \frac{z}{\alpha_z} \right) dz = 1
+\]
+
+\subsubsection{Case $N = 0$}
+
+\[
+A_0^2 \int_0^L \exp\left(-\frac{z^2}{\alpha_z^2}\right) dz = 1
+\]
+
+Therefore:
+
+\[
+A_0 = \left[ -2 e^{-\frac{L^2}{\alpha_z^2}} \cdot L + \alpha_z \sqrt{\pi} \, \text{Erf}\left( \frac{L}{\alpha_z} \right) \right]^{-\frac{1}{2}}
+\]
+
+\subsubsection{Case $N = 1$}
+\[
+A_1^2 \int_0^L \exp\left(-\frac{z^2}{\alpha_z^2}\right) H_3^2\left( \frac{z}{\alpha_z} \right) dz = 1
+\]
+
+Result:
+
+\[
+A_1^2 = \left[ \frac{16 e^{-\frac{L^2}{\alpha_z^2}} \cdot L \cdot ( -3 \alpha_z^4 + \alpha_z^2 L^2 - 2 L^4 )}{\alpha_z^4}
++ 24 \alpha_z \sqrt{\pi} \, \text{Erf}\left( \frac{L}{\alpha_z} \right) \right]^{-1}
+\]
+
+Therefore:
+
+\[
+A_1 = \left[ \frac{16 e^{-\frac{L^2}{\alpha_z^2}} \cdot L \cdot ( -3 \alpha_z^4 + \alpha_z^2 L^2 - 2 L^4 )}{\alpha_z^4}
++ 24 \alpha_z \sqrt{\pi} \, \text{Erf}\left( \frac{L}{\alpha_z} \right) \right]^{-\frac{1}{2}}
+\]
+
+Thus:
+
+\[
+\psi_0(z) = \left[ -2 e^{-\frac{z^2}{\alpha_z^2}} \cdot L + \alpha_z \sqrt{\pi} \, \mathrm{Erf}\left( \frac{L}{\alpha_z} \right) \right]^{-\frac{1}{2}} \cdot e^{-\frac{z^2}{2\alpha_z^2}} \cdot H_1\left( \frac{z}{\alpha_z} \right)
+\]
+
+This is the wavefunction for the case when the initial quantum number considered is $N = 0$.
+\subsection{Problem with attempt 2}
+There are a few problems with the way attempt 2 was made, albeit it progressed further than attempt 1, without much assumption on the form of the infinite limit terms: 
+\begin{enumerate}
+  \item We do not understand what is the \textit{error function} in this case, except from the fact that it is present in the integral table typically used for quantum mechanical system (basically a reference table). 
+  \item We did not indict the physical interpretation of the solution by itself. 
+  \item The Hermite polynomial and its terms are dubious, in the sense that we do not understand its nature in the fullest. 
+\end{enumerate}
+\section*{Appendix}
+
+\subsection{Derivation of Schrödinger equation}
+We do not have enough rigour for a full realization of the Schrödinger equation. However, we can attempt and summarize the way in which it can be derived from classical mechanics concepts. 
+
+We consider the one-dimensional classical wave equation: \begin{equation}
+    \frac{\partial^{2}E}{\partial^{2}x} - \frac{1}{c^{2}} \frac{\partial^{2}E}{\partial^{2}t} = 0
+\end{equation}
+This equation is satisfied by plane wave solution, \begin{equation}
+    E(x,t) = E_{0}e^{i(kx-\omega t)}
+\end{equation}
+where $k=2\pi/\lambda$ and $\omega = 2\pi \nu$ are the spatial and temporal frequencies, respectively. This then must satisfy the dispersion relation: 
+\begin{equation}
+    \left( \frac{\partial^2}{\partial x^2} - \frac{1}{c^2} \frac{\partial^2}{\partial t^2} \right) E_0 e^{i(kx - \omega t)} = 0,
+    \end{equation}
+    
+    \begin{equation}
+    \left( -k^2 + \frac{\omega^2}{c^2} \right) E_0 e^{i(kx - \omega t)} = 0.
+    \end{equation}
+
+Solving this for the wave vector, we arrive at the dispersion relation for light in free space: \begin{equation}
+    k=\frac{\omega}{c}
+\end{equation}
+or more familiarly, $\nu\lambda = c$, where $c$ is the wave propagation speed. We recall that $\mathcal{E}=h\nu=\hbar\omega$, and $p=h/\lambda=\hbar k$. Rewrite this gives: $$E(x,t)=E_{0}e^{i/h (px-\mathcal{E}t)}$$
+
+Substitute this to equation 2.5, we have: 
+\begin{equation}
+    \left( \frac{\partial^2}{\partial x^2} - \frac{1}{c^2} \frac{\partial^2}{\partial t^2} \right) E_0 e^{\frac{i}{\hbar} (px - \mathcal{E} t)} = 0,
+\end{equation}
+    
+\begin{equation}
+    -\frac{1}{\hbar^2} \left( p^2 - \frac{\mathcal{E}^2}{c^2} \right) E_0 e^{\frac{i}{\hbar} (px - \mathcal{E} t)} = 0.
+\end{equation}
+or $\mathcal{E}=p^{2}c^{2}$. This is the relativistic total energy: \begin{equation}
+    \mathcal{E}^{2} = p^{2}c^{2} + m^{2}c^{4}
+\end{equation}
+for a particle with zero rest mass. We know assume that frequency, energy and wavelength, and momentum are related in the same way for particles, as for photons (De Broglie). We consider a wave equation for non-zero rest mass particles. Call the wave equation $\Psi$. Since the above is heterogenous, we would then write: 
+\begin{equation}
+    \begin{split}
+        0& = \left( \frac{\partial^2}{\partial x^2} - \frac{1}{c^2} \frac{\partial^2}{\partial t^2} - \frac{m^2 c^2}{\hbar^2} \right) \Psi e^{\frac{i}{\hbar} (px - \mathcal{E} t)} \\
+        0 & = -\frac{1}{\hbar^2} \left( p^2 - \frac{\mathcal{E}^2}{c^2} + m^2 c^2 \right) \Psi e^{\frac{i}{\hbar} (px - \mathcal{E} t)}.
+    \end{split}\label{eq:heteroeq}
+\end{equation}
+Now, for the wavefunction $\Psi$, the energy density of the electrical field $\mathbf{E}$ is realized by $\lvert\mathbb{E}\rvert^{2}$. The energy of an individual photon depends only on the frequency of light, $\epsilon = hf$, so $\lvert\mathbb{E}\rvert^{2}$ is proportional to the number of photons. By analogy, we demand that \begin{equation}
+    \Psi(x,t) = \Psi_{0}(e^{i/h}(px-\mathcal{E}t))
+\end{equation}
+to be normalized to unit probability. Then, the probability that the particle is located somewhere in space, or \begin{equation}
+    \int_{-\infty}^{\infty} \Psi^{*}\Psi \: dx = 1
+\end{equation}
+
+
+The existence of the plane waves, that is \begin{equation}
+    \phi(r,t) \sim \exp{(ik\cdot r - i\omega t)}
+\end{equation}
+satisfying de Broglie and Einstein relations, implies the quantum interpretation of: \begin{equation}
+    \bm{p} \to -i\hbar \nabla, \quad E\to i\hbar \frac{\partial }{\partial t}
+\end{equation}
+For the relativistic energy-momentum equation, we get \begin{equation}
+    E^{2} = \bm{p}^{2}c^{2} + m^{2}c^{4}
+\end{equation}
+which implies the \textbf{Klein-Gordon equation} \index{Klein-Gordon equation}: 
+\begin{equation}
+    -\hbar^2 \frac{\partial^2 \phi}{\partial t^2} = -\hbar^2 c^2 \nabla^2 \phi + m^2 c^4 \phi
+\end{equation}
+
+Equation~\ref{eq:heteroeq}, removing the restriction on one dimension and rearranging them is similar to the Klein-Gordon equation for a free particle. Since it is relativistic, we ought to remove such aspect of it. We consider the approximate case of $\mathcal{E}^{2}= (pc)^2+ m^{2}c^{4}$ by \begin{equation}
+    \mathcal{E} \approx mc^{2} \sqrt{1+ \frac{p^{2}}{m^2 c^2}} \approx mc^{2}+ \frac{p^{2}}{2m} = mc^{2} + \mathcal{T}
+\end{equation}
+This is the classial kinetic energy, for $\mathcal{T}$. We then rewrite $\Psi$ as \begin{equation}
+    \Psi(x,t) = \exp{\left(-\frac{i}{\hbar}mc^2 t\right)}\Psi_{0}\exp{\left(\frac{i}{\hbar}(px-\mathcal{T}t)\right)}
+\end{equation}
+Assuming $mv \ll mc$, which means $p^{2}\ll m^{2}c^{2}$. This means that \begin{equation}
+    \exp{\left(\frac{i}{\hbar}(px-\mathcal{T}t)\right)}\in \mathcal{o}\left[\exp{\left(-\frac{i}{\hbar}mc^2 t\right)}\right]
+\end{equation}
+for little $o$ notation, and in terms of the oscillation speed, which means the LHS is much slower. We then can write $\Psi = \exp{-i/\hbar (mc^2 t)}\psi$, where $\psi = \Psi_{0}\exp{i/\hbar (px-\mathcal{T}t)}$. Solving this for $\partial \Psi/\partial t$, we have: 
+\begin{align}
+    \frac{\partial \Psi}{\partial t} &= -\frac{i}{\hbar} mc^2 e^{-\frac{i}{\hbar} mc^2 t} \phi + e^{-\frac{i}{\hbar} mc^2 t} \frac{\partial \phi}{\partial t} \\[10pt]
+    \frac{\partial^2 \Psi}{\partial t^2} &= \left( -\frac{m^2 c^4}{\hbar^2} e^{-\frac{i}{\hbar} mc^2 t} \phi - \frac{2i}{\hbar} mc^2 e^{-\frac{i}{\hbar} mc^2 t} \frac{\partial \phi}{\partial t} \right) + e^{-\frac{i}{\hbar} mc^2 t} \frac{\partial^2 \phi}{\partial t^2}.
+\end{align}
+We discard the small terms. Using this approximation, we find that: \begin{equation}
+    \frac{\partial^{2}\psi}{\partial x^{2}} + \frac{2im}{\hbar}\frac{\partial \psi}{\partial t} = 0
+\end{equation}
+which, rearranging a bit, will give the Schrödinger equation. 
+
+\subsection{Bloch's theorem}
+Bloch's theorem is a central result for analysing semiconducting structure. For band structure in problems with periodic potential, it is important in such analysis, as well as the concept of periodic potentials in lattices. 
+
+A \textbf{periodic potential} appears because the ions are arranged with a periodicity of their Bravais lattice, given by the lattice vectors $\mathbb{R}$ \begin{equation}
+    U(\mathbb{r}+\mathbb{R}) = U(\mathbb{r})
+\end{equation}
+This potential enters into the Schrödinger equation as: \begin{equation}
+    \hat{H} \psi = \left(-\frac{\hbar}{2m}\nabla^{2}+ U(\mathbf{r})\right)\psi = \epsilon \psi
+\end{equation}
+The potential there is assumed to be spatially periodic, or $V(x+a)=V(x)$. We assume the lattice goes on forever. The electrons are no longer free electrons, but are now called \textit{Bloch electrons}.
+
+From this, the Bloch's theorem states that: 
+\begin{theorem}[Bloch's theorem]
+    \textbf{Theorem:} The eigenstates $\psi$ of the Hamitonian $\hat{H}$ above can be chosen to have the form of a plane wave 
+times a function with the periodicity of the Bravais lattice:
+\[
+    \psi_{nk}(\mathbf{r}) = e^{i \mathbf{k} \cdot \mathbf{r}} u_{nk}(\mathbf{r})
+\]
+where
+\[
+    u_{nk}(\mathbf{r} + \mathbf{R}) = u_{nk}(\mathbf{r})
+\]
+The quantum number $n$ is called the \textit{band index} and takes numbers $n = 1, 2, 3, \dots$.
+\end{theorem}

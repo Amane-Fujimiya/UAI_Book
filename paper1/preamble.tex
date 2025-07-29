@@ -1,0 +1,173 @@
+\usepackage{ETbb}
+\usepackage{titlesec}
+% PACKAGE INCLUSION
+\usepackage{amsbsy,amssymb,amsmath,amsfonts,amsthm} % Math and related rendering
+\allowdisplaybreaks
+\usepackage{tikz-cd,tikz-3dplot,circuitikz} % For graphical drawing
+%\usepackage{natbib} % For citation, using numbering style. 
+\usepackage{graphicx}
+\usepackage{geometry} % configure the geometry page
+\usepackage{bbm} % Better bold (for example, \mathbb{1} does not work for font not alphabetical)
+\usepackage{bm} % Bold symbol 
+\usepackage{tikz} % for normal graphing
+\usepackage{enumitem} % for customizing options for lists, enumerations, and descriptions
+\usepackage{fancyhdr} % configuring header
+\usepackage{parskip} % For paragraph spacing
+\usepackage{caption} % captioning options
+\usepackage{mathtools} % using this to fix \multlined environment altogether
+\usepackage{parnotes}% take this one for marginnote substitute (or the reverse because this one looks so much better)
+\usepackage{tabularx} % better tabular
+\usepackage{braket} % For bra-ket notation
+%\usepackage{fontspec} % does fontspec works for memoir? 
+\usepackage{float} % more float control
+\usepackage[dvipsnames,svgnames,x11names]{xcolor} % color schema, definitely should have included this
+\usetikzlibrary{matrix}
+\usepackage{thmtools} % hooks and stuff for listoftheorem
+%\DisemulatePackage{showidx} %(2)
+%\usepackage{makeidx} % I HATE THIS
+%\usepackage{showidx} % I HATE THIS
+%\usepackage{subfigure}
+\usepackage{caption} % uh, caption
+\usepackage{nicematrix} % for drawing matrix
+\usepackage{subcaption} % This and the two right above it is required for multi-figure display, so yeah.
+%\setcounter{tocdepth}{2}
+\usepackage{stmaryrd} % double brackets for integer intervals]
+\usepackage{algorithm2e}
+\usepackage{algorithmicx}
+%-------------------------------%
+% CONFIGURING NATBIB
+\usepackage{natbib} 
+%-------------------------------%
+% NEXT IS INDEX CONFIG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\renewcommand{\index}[1]{%
+  \oldindex{#1}%
+  \if@reversemargin
+    \marginpar*{\raggedleft\small#1}%
+  \else
+    \marginpar*{\raggedright\small#1}%
+  \fi
+}
+\makeatother
+
+\input{mathcommand.tex}
+
+\newcommand{\x}{\times}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cT}{\mathcal{T}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% COLOR BOX CONFIG
+\theoremstyle{plain}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{col}{Corollary}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{setting}{Setting}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{assume}{Assumption}[subsection]
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{hypothesis}{Hypothesis}[section]
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{question}{Question}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{note}{Note}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\droptitle}{-2.5em} 
+
+\setlength{\itemindent}{-2em}
+%\titleformat{\chapter}{\huge\sffamily}{\chaptername~\thechapter.}{1em}{}{}
+%\titleformat{\section}{\large}{\thesection}{1em}{}{}
+%\titleformat{\subsection}{\normalsize}{\thesubsection}{1em}{}{}
+\setsecnumdepth{subsubsection} % set heading numbering level 
+
+\makeatletter
+\renewcommand*{\thesection}{\@arabic\c@section}
+\makeatother
+
+\setsecheadstyle{\sffamily\Large}
+\setsubsecheadstyle{\sffamily\large}
+\setsubsubsecheadstyle{\sffamily\normalsize}
+\setparaheadstyle{\sffamily\normalsize\itshape}
+% FOOTNOTE PENALTY
+\interfootnotelinepenalty=9000
+\titlespacing{\section}{0pt}{5pt}{3pt}
+\titlespacing{\subsection}{0pt}{3pt}{2pt}
+\titlespacing{\subsubsection}{0pt}{1pt}{1pt}
+
+\setlength{\textfloatsep}{10pt plus 1.0pt minus 2.0pt}
+
+%----------------------------------------------------------------------------------% 
+% SMALL SETTING
+\usepackage{pgfplots} % for something else
+\usetikzlibrary{patterns}       % For custom patterns
+\usetikzlibrary{shadings}       % For gradient fills
+\usetikzlibrary{shapes.geometric} % For geometric shapes
+\usetikzlibrary{calc}           % For coordinate calculations
+\usetikzlibrary{positioning}    % For node positioning
+\usetikzlibrary{decorations.pathreplacing} % For path decorations
+\usetikzlibrary{fit} % For fitting shapes around nodes
+\newcommand{\calx}[1]{\mathcal{#1}}
+\newcommand{\mynote}[1]{\medskip\par\textbf{\small Note}\quad\setlength{\extrarowheight}{2pt}\begin{tabularx}{\linegoal}{X}
+\Xhline{1pt}
+\rowcolor{WhiteSmoke!80!Lavender}#1 \\
+\Xhline{1pt}
+\end{tabularx}}
+
+\makeatletter
+\pgfutil@ifundefined{pgf@pattern@name@_xg1qse1zm}{
+  \pgfdeclarepatternformonly[\mcThickness,\mcSize]{_xg1qse1zm}
+  {\pgfqpoint{0pt}{-\mcThickness}}
+  {\pgfpoint{\mcSize}{\mcSize}}
+  {\pgfpoint{\mcSize}{\mcSize}}
+  {
+    \pgfsetcolor{\tikz@pattern@color}
+    \pgfsetlinewidth{\mcThickness}
+    \pgfpathmoveto{\pgfqpoint{0pt}{\mcSize}}
+    \pgfpathlineto{\pgfpoint{\mcSize+\mcThickness}{-\mcThickness}}
+    \pgfusepath{stroke}
+  }
+}
+\makeatother
+
+\makeatletter
+\pgfutil@ifundefined{pgf@pattern@name@_lbrsyyeax}{
+  \pgfdeclarepatternformonly[\mcThickness,\mcSize]{_lbrsyyeax}
+  {\pgfqpoint{0pt}{0pt}}
+  {\pgfpoint{\mcSize+\mcThickness}{\mcSize+\mcThickness}}
+  {\pgfpoint{\mcSize}{\mcSize}}
+  {
+    \pgfsetcolor{\tikz@pattern@color}
+    \pgfsetlinewidth{\mcThickness}
+    \pgfpathmoveto{\pgfqpoint{0pt}{0pt}}
+    \pgfpathlineto{\pgfpoint{\mcSize+\mcThickness}{\mcSize+\mcThickness}}
+    \pgfusepath{stroke}
+  }
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref} % For referencing
+\hypersetup{
+  colorlinks=true,
+  allcolors=blue
+}
+
+\newcommand{\Ap}{A_{\sim p}}
+\newcommand{\Aq}{A_{\sim q}}
+\newcommand{\Xp}{X_{\sim p}}
+\newcommand{\Xq}{X_{\sim q}}
+
+\newcommand{\xp}{x_{\sim p}}
+\newcommand{\xq}{x_{\sim q}}
+\newcommand{\yp}{y_{\sim p}}
+\newcommand{\yq}{y_{\sim q}}
+\renewcommand{\wp}{w_{\sim p}}
+\newcommand{\wq}{w_{\sim q}}

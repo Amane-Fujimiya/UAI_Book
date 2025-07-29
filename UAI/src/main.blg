@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Database file #1: reference1.bib
+Warning--I'm ignoring boucheron_concentration_2013's extra "doi" field
+--line 1455 of file reference1.bib
+Warning--to sort, need author or key in VeltenetalMathematicalModelling
+Warning--to sort, need author or key in noauthor_bias-variance_nodate
+Warning--to sort, need author or key in unified_bias_composition
+Warning--to sort, need author or key in noauthor_pdf_nodate-1
+Warning--to sort, need author or key in noauthor_neural_nodate
+Warning--empty year in noauthor_bias-variance_nodate
+Warning--empty year in noauthor_neural_nodate
+Warning--empty year in noauthor_pdf_nodate-1
+Warning--empty year in unified_bias_composition
+Warning--empty booktitle in Briggs2014MachineE
+Warning--empty booktitle in Cristianini2000AnIT
+Warning--empty journal in DreyfusImpasse1979
+Warning--empty year in modelcomplex_exp
+Warning--empty publisher in STL_Hajek_Maxim_2021
+Warning--empty year in GRP_Hamilton
+Warning--empty year in GRP_Hamilton
+Warning--empty title in 1180370208
+Warning--empty chapter and pages in 1180370208
+Warning--empty year in neurondoctrinemishqat
+You've used 79 entries,
+            2773 wiz_defined-function locations,
+            1088 strings with 20527 characters,
+and the built_in function-call counts, 33891 in all, are:
+= -- 3017
+> -- 1916
+< -- 50
++ -- 665
+- -- 580
+* -- 2681
+:= -- 5193
+add.period$ -- 319
+call.type$ -- 79
+change.case$ -- 419
+chr.to.int$ -- 73
+cite$ -- 182
+duplicate$ -- 1521
+empty$ -- 2853
+format.name$ -- 692
+if$ -- 7167
+int.to.chr$ -- 7
+int.to.str$ -- 1
+missing$ -- 60
+newline$ -- 481
+num.names$ -- 299
+pop$ -- 963
+preamble$ -- 1
+purify$ -- 351
+quote$ -- 0
+skip$ -- 1202
+stack$ -- 0
+substring$ -- 722
+swap$ -- 166
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 799
+warning$ -- 19
+while$ -- 259
+width$ -- 0
+write$ -- 1147
+(There were 20 warnings)
