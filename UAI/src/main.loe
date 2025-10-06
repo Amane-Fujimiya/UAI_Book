@@ -1,0 +1,199 @@
+\addvspace {10\p@ }
+\contentsline {definition}{\ifthmt@listswap Definition~1.2.1\else \numberline {1.2.1}Definition\fi \thmtformatoptarg {Intelligence}}{18}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~1.2.2\else \numberline {1.2.2}Definition\fi \thmtformatoptarg {Intelligent}}{18}{definition.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~1.3.1\else \numberline {1.3.1}Definition\fi \thmtformatoptarg {Artificial}}{20}{definition.1}%
+\contentsline {hypothesis}{\ifthmt@listswap Hypothesis~1.3.1\else \numberline {1.3.1}Hypothesis\fi }{20}{hypothesis.1}%
+\contentsline {hypothesis}{\ifthmt@listswap Hypothesis~1.3.2\else \numberline {1.3.2}Hypothesis\fi }{20}{hypothesis.2}%
+\contentsline {conjecture}{\ifthmt@listswap Conjecture~1.3.1\else \numberline {1.3.1}Conjecture\fi \thmtformatoptarg {Artificial intelligence}}{21}{conjecture.1}%
+\contentsline {conjecture}{\ifthmt@listswap Conjecture~1.3.2\else \numberline {1.3.2}Conjecture\fi }{21}{conjecture.2}%
+\contentsline {hypothesis}{\ifthmt@listswap Hypothesis~1.3.3\else \numberline {1.3.3}Hypothesis\fi }{21}{hypothesis.3}%
+\contentsline {definition}{\ifthmt@listswap Definition~1.3.2\else \numberline {1.3.2}Definition\fi \thmtformatoptarg {Construct}}{21}{definition.2}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~1.3.1\else \numberline {1.3.1}Theorem\fi \thmtformatoptarg {Artificial framework}}{22}{theorem.1}%
+\addvspace {10\p@ }
+\contentsline {definition}{\ifthmt@listswap Definition~2.1.1\else \numberline {2.1.1}Definition\fi \thmtformatoptarg {Proof, I}}{33}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.1.2\else \numberline {2.1.2}Definition\fi \thmtformatoptarg {Proof, II}}{33}{definition.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.1.3\else \numberline {2.1.3}Definition\fi \thmtformatoptarg {Statements, I}}{33}{definition.3}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.1.4\else \numberline {2.1.4}Definition\fi \thmtformatoptarg {Statements, II}}{33}{definition.4}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.1.5\else \numberline {2.1.5}Definition\fi \thmtformatoptarg {Logical equivalence}}{37}{definition.5}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~2.1.1\else \numberline {2.1.1}Theorem\fi \thmtformatoptarg {Equivalencing}}{37}{theorem.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~2.1.2\else \numberline {2.1.2}Theorem\fi \thmtformatoptarg {Equivalent Law}}{37}{theorem.2}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~2.1.3\else \numberline {2.1.3}Theorem\fi \thmtformatoptarg {De Morgan}}{38}{theorem.3}%
+\contentsline {lemma}{\ifthmt@listswap Lemma~2.1.4\else \numberline {2.1.4}Lemma\fi }{39}{lemma.4}%
+\contentsline {example}{\ifthmt@listswap Example~2.1.1\else \numberline {2.1.1}Example\fi \thmtformatoptarg {A test version of justifying quantifiers}}{39}{example.1}%
+\contentsline {example}{\ifthmt@listswap Example~2.1.2\else \numberline {2.1.2}Example\fi }{40}{example.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.2.1\else \numberline {2.2.1}Definition\fi \thmtformatoptarg {Set}}{41}{definition.1}%
+\contentsline {axiom}{\ifthmt@listswap Axiom~2.2.1\else \numberline {2.2.1}Axiom\fi \thmtformatoptarg {Principle of Extensionality}}{42}{axiom.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~2.2.1\else \numberline {2.2.1}Theorem\fi \thmtformatoptarg {operations}}{42}{theorem.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~2.2.2\else \numberline {2.2.2}Theorem\fi \thmtformatoptarg {De Morgan}}{42}{theorem.2}%
+\contentsline {axiom}{\ifthmt@listswap Axiom~2.3.1\else \numberline {2.3.1}Axiom\fi \thmtformatoptarg {Extensionality axiom}}{45}{axiom.1}%
+\contentsline {axiom}{\ifthmt@listswap Axiom~2.3.2\else \numberline {2.3.2}Axiom\fi \thmtformatoptarg {Empty set axiom}}{45}{axiom.2}%
+\contentsline {axiom}{\ifthmt@listswap Axiom~2.3.3\else \numberline {2.3.3}Axiom\fi \thmtformatoptarg {Pairing axiom}}{46}{axiom.3}%
+\contentsline {axiom}{\ifthmt@listswap Axiom~2.3.4\else \numberline {2.3.4}Axiom\fi \thmtformatoptarg {Union axiom, preliminary form}}{46}{axiom.4}%
+\contentsline {axiom}{\ifthmt@listswap Axiom~2.3.5\else \numberline {2.3.5}Axiom\fi \thmtformatoptarg {Power set axiom}}{46}{axiom.5}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.3.1\else \numberline {2.3.1}Definition\fi }{46}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.3.2\else \numberline {2.3.2}Definition\fi }{46}{definition.2}%
+\contentsline {axiom}{\ifthmt@listswap Axiom~2.3.6\else \numberline {2.3.6}Axiom\fi \thmtformatoptarg {Subset axioms}}{47}{axiom.6}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.4.1\else \numberline {2.4.1}Definition\fi \thmtformatoptarg {Equivalence relation}}{48}{definition.1}%
+\contentsline {lemma}{\ifthmt@listswap Lemma~2.4.1\else \numberline {2.4.1}Lemma\fi }{48}{lemma.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.5.1\else \numberline {2.5.1}Definition\fi }{48}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.5.2\else \numberline {2.5.2}Definition\fi }{49}{definition.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.5.3\else \numberline {2.5.3}Definition\fi \thmtformatoptarg {Image}}{49}{definition.3}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.5.4\else \numberline {2.5.4}Definition\fi \thmtformatoptarg {Restrictions}}{49}{definition.4}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.5.5\else \numberline {2.5.5}Definition\fi \thmtformatoptarg {Composition}}{50}{definition.5}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.5.6\else \numberline {2.5.6}Definition\fi \thmtformatoptarg {Types}}{50}{definition.6}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.5.7\else \numberline {2.5.7}Definition\fi \thmtformatoptarg {Identity}}{50}{definition.7}%
+\contentsline {definition}{\ifthmt@listswap Definition~2.5.8\else \numberline {2.5.8}Definition\fi \thmtformatoptarg {Right and left inverse}}{51}{definition.8}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~2.5.1\else \numberline {2.5.1}Theorem\fi }{51}{theorem.1}%
+\addvspace {10\p@ }
+\contentsline {definition}{\ifthmt@listswap Definition~3.1.1\else \numberline {3.1.1}Definition\fi \thmtformatoptarg {Vector}}{56}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~3.1.2\else \numberline {3.1.2}Definition\fi \thmtformatoptarg {Parallelogram law}}{58}{definition.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~3.1.3\else \numberline {3.1.3}Definition\fi \thmtformatoptarg {Matrix}}{59}{definition.3}%
+\addvspace {10\p@ }
+\contentsline {definition}{\ifthmt@listswap Definition~4.1.1\else \numberline {4.1.1}Definition\fi \thmtformatoptarg {Pseudometric space}}{62}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~4.1.2\else \numberline {4.1.2}Definition\fi \thmtformatoptarg {Metric space}}{62}{definition.2}%
+\contentsline {example}{\ifthmt@listswap Example~4.1.1\else \numberline {4.1.1}Example\fi }{62}{example.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~4.2.1\else \numberline {4.2.1}Definition\fi \thmtformatoptarg {Sigma algebra}}{63}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~4.2.2\else \numberline {4.2.2}Definition\fi \thmtformatoptarg {Measure}}{64}{definition.2}%
+\contentsline {example}{\ifthmt@listswap Example~4.2.1\else \numberline {4.2.1}Example\fi \thmtformatoptarg {The counting measure}}{65}{example.1}%
+\contentsline {example}{\ifthmt@listswap Example~4.2.2\else \numberline {4.2.2}Example\fi \thmtformatoptarg {Finite measure space}}{65}{example.2}%
+\contentsline {example}{\ifthmt@listswap Example~4.2.3\else \numberline {4.2.3}Example\fi \thmtformatoptarg {Discrete measure}}{65}{example.3}%
+\contentsline {example}{\ifthmt@listswap Example~4.2.4\else \numberline {4.2.4}Example\fi \thmtformatoptarg {Lebesgue measure}}{65}{example.4}%
+\contentsline {example}{\ifthmt@listswap Example~4.2.5\else \numberline {4.2.5}Example\fi \thmtformatoptarg {Haar measure}}{65}{example.5}%
+\contentsline {example}{\ifthmt@listswap Example~4.2.6\else \numberline {4.2.6}Example\fi \thmtformatoptarg {Haussdorff measure}}{66}{example.6}%
+\contentsline {example}{\ifthmt@listswap Example~4.2.7\else \numberline {4.2.7}Example\fi \thmtformatoptarg {An example of Hausdorff dimension}}{66}{example.7}%
+\addvspace {10\p@ }
+\contentsline {definition}{\ifthmt@listswap Definition~5.2.1\else \numberline {5.2.1}Definition\fi }{68}{definition.1}%
+\contentsline {example}{\ifthmt@listswap Example~5.2.1\else \numberline {5.2.1}Example\fi }{69}{example.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~5.3.1\else \numberline {5.3.1}Definition\fi \thmtformatoptarg {The basic principle of counting}}{69}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~5.3.2\else \numberline {5.3.2}Definition\fi \thmtformatoptarg {The basic principle of counting}}{70}{definition.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~5.4.1\else \numberline {5.4.1}Definition\fi }{71}{definition.1}%
+\contentsline {axiom}{\ifthmt@listswap Axiom~5.4.1\else \numberline {5.4.1}Axiom\fi \thmtformatoptarg {Axiom of probability}}{72}{axiom.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~5.4.1\else \numberline {5.4.1}Theorem\fi \thmtformatoptarg {Properties of $P$}}{72}{theorem.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~5.4.2\else \numberline {5.4.2}Definition\fi \thmtformatoptarg {Bayes's law}}{73}{definition.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~5.4.3\else \numberline {5.4.3}Definition\fi \thmtformatoptarg {Independent events}}{73}{definition.3}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~5.6.1\else \numberline {5.6.1}Theorem\fi \thmtformatoptarg {Linearity of expectation}}{74}{theorem.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition~5.6.2\else \numberline {5.6.2}Proposition\fi }{74}{proposition.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition~5.6.3\else \numberline {5.6.3}Proposition\fi }{74}{proposition.3}%
+\contentsline {lemma}{\ifthmt@listswap Lemma~5.6.4\else \numberline {5.6.4}Lemma\fi }{75}{lemma.4}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~5.6.5\else \numberline {5.6.5}Theorem\fi }{75}{theorem.5}%
+\contentsline {definition}{\ifthmt@listswap Definition~5.6.1\else \numberline {5.6.1}Definition\fi \thmtformatoptarg {Variance}}{75}{definition.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~5.6.6\else \numberline {5.6.6}Theorem\fi \thmtformatoptarg {Properties of variances}}{76}{theorem.6}%
+\contentsline {proposition}{\ifthmt@listswap Proposition~5.7.1\else \numberline {5.7.1}Proposition\fi }{76}{proposition.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~5.7.2\else \numberline {5.7.2}Theorem\fi \thmtformatoptarg {DeMoivre-Laplace limit theorem}}{79}{theorem.2}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~5.7.3\else \numberline {5.7.3}Theorem\fi }{80}{theorem.3}%
+\addvspace {10\p@ }
+\contentsline {note}{\ifthmt@listswap Note~6.1.1\else \numberline {6.1.1}Note\fi }{82}{note.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~6.2.1\else \numberline {6.2.1}Theorem\fi \thmtformatoptarg {McDiarmid's Inequality}}{83}{theorem.1}%
+\addvspace {10\p@ }
+\contentsline {definition}{\ifthmt@listswap Definition~7.2.1\else \numberline {7.2.1}Definition\fi \thmtformatoptarg {Model}}{88}{definition.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition~7.2.1\else \numberline {7.2.1}Proposition\fi \thmtformatoptarg {Modelling and simulation scheme}}{89}{proposition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~7.2.2\else \numberline {7.2.2}Definition\fi \thmtformatoptarg {Simulation}}{90}{definition.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~7.2.3\else \numberline {7.2.3}Definition\fi \thmtformatoptarg {System}}{90}{definition.3}%
+\contentsline {definition}{\ifthmt@listswap Definition~7.3.1\else \numberline {7.3.1}Definition\fi \thmtformatoptarg {Mathematical model, naive form}}{92}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~7.3.2\else \numberline {7.3.2}Definition\fi \thmtformatoptarg {Mathematical model}}{92}{definition.2}%
+\contentsline {example}{\ifthmt@listswap Example~7.3.1\else \numberline {7.3.1}Example\fi \thmtformatoptarg {The importance of asking $Q$}}{92}{example.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~7.3.3\else \numberline {7.3.3}Definition\fi \thmtformatoptarg {State variables}}{93}{definition.3}%
+\contentsline {definition}{\ifthmt@listswap Definition~7.3.4\else \numberline {7.3.4}Definition\fi \thmtformatoptarg {Reduced system and system parameters}}{93}{definition.4}%
+\contentsline {remark}{\ifthmt@listswap Remark~7.3.1\else \numberline {7.3.1}Remark\fi }{94}{remark.1}%
+\contentsline {note}{\ifthmt@listswap Note~7.3.1\else \numberline {7.3.1}Note\fi \thmtformatoptarg {The abstraction and role of software}}{94}{note.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~7.4.1\else \numberline {7.4.1}Definition\fi \thmtformatoptarg {Phenomenological and mechanistic models}}{97}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~7.4.2\else \numberline {7.4.2}Definition\fi \thmtformatoptarg {Stationary/Unstationary models}}{100}{definition.2}%
+\contentsline {axiom}{\ifthmt@listswap Axiom~7.5.1\else \numberline {7.5.1}Axiom\fi \thmtformatoptarg {The don'ts of mathematical modelling}}{105}{axiom.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~7.6.1\else \numberline {7.6.1}Definition\fi \thmtformatoptarg {Linear programming}}{105}{definition.1}%
+\addvspace {10\p@ }
+\contentsline {note}{\ifthmt@listswap Note~8.2.1\else \numberline {8.2.1}Note\fi \thmtformatoptarg {The apparent role of the ingredients}}{109}{note.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.2.1\else \numberline {8.2.1}Definition\fi \thmtformatoptarg {Empirical risk}}{111}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.2.2\else \numberline {8.2.2}Definition\fi \thmtformatoptarg {Generalization risk}}{111}{definition.2}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~8.2.1\else \numberline {8.2.1}Theorem\fi }{111}{theorem.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.2.3\else \numberline {8.2.3}Definition\fi \thmtformatoptarg {Empirical learning problem}}{112}{definition.3}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.2.4\else \numberline {8.2.4}Definition\fi \thmtformatoptarg {Generalization learning problem}}{112}{definition.4}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.2.5\else \numberline {8.2.5}Definition\fi \thmtformatoptarg {Bayes risk}}{113}{definition.5}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.2.6\else \numberline {8.2.6}Definition\fi \thmtformatoptarg {Bayes model}}{113}{definition.6}%
+\contentsline {setting}{\ifthmt@listswap Setting~8.2.1\else \numberline {8.2.1}Setting\fi }{114}{setting.1}%
+\contentsline {question}{\ifthmt@listswap Question~8.2.1\else \numberline {8.2.1}Question\fi }{114}{question.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.3.1\else \numberline {8.3.1}Definition\fi \thmtformatoptarg {Deterministic - \textit {\color {orange!70!black}discriminative modelling}}}{117}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.3.2\else \numberline {8.3.2}Definition\fi \thmtformatoptarg {Probabilistic - \textit {\color {orange!70!black}generative modelling}}}{117}{definition.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.3.3\else \numberline {8.3.3}Definition\fi \thmtformatoptarg {Loss function}}{117}{definition.3}%
+\contentsline {conjecture}{\ifthmt@listswap Conjecture~8.3.1\else \numberline {8.3.1}Conjecture\fi \thmtformatoptarg {Loss function convexity}}{117}{conjecture.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.3.4\else \numberline {8.3.4}Definition\fi \thmtformatoptarg {Empirical risk minimization}}{118}{definition.4}%
+\contentsline {proposition}{\ifthmt@listswap Proposition~8.3.1\else \numberline {8.3.1}Proposition\fi }{118}{proposition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.5.1\else \numberline {8.5.1}Definition\fi \thmtformatoptarg {Model-specific learning}}{120}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.5.2\else \numberline {8.5.2}Definition\fi \thmtformatoptarg {Model-free learning}}{120}{definition.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.5.3\else \numberline {8.5.3}Definition\fi \thmtformatoptarg {PAC Learning, Preliminary Definition}}{121}{definition.3}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.5.4\else \numberline {8.5.4}Definition\fi \thmtformatoptarg {Representation scheme}}{122}{definition.4}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.5.5\else \numberline {8.5.5}Definition\fi \thmtformatoptarg {PAC-learning}}{123}{definition.5}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.6.1\else \numberline {8.6.1}Definition\fi \thmtformatoptarg {Consistent Learner}}{123}{definition.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~8.6.1\else \numberline {8.6.1}Theorem\fi \thmtformatoptarg {Learning bound - finite $\mathcal {H}$, consistent case}}{124}{theorem.1}%
+\contentsline {col}{\ifthmt@listswap Corollary~8.6.1\else \numberline {8.6.1}Corollary\fi }{126}{col.1}%
+\contentsline {col}{\ifthmt@listswap Corollary~8.6.2\else \numberline {8.6.2}Corollary\fi \thmtformatoptarg {Generalization bound - single hypothesis}}{127}{col.2}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~8.6.2\else \numberline {8.6.2}Theorem\fi \thmtformatoptarg {Learning bound - finite $\mathcal {H}$, inconsistent case}}{127}{theorem.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.7.1\else \numberline {8.7.1}Definition\fi \thmtformatoptarg {Agnostic PAC-learning}}{128}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.7.2\else \numberline {8.7.2}Definition\fi \thmtformatoptarg {Noise}}{129}{definition.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.8.1\else \numberline {8.8.1}Definition\fi \thmtformatoptarg {Occam algorithm}}{130}{definition.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~8.8.1\else \numberline {8.8.1}Theorem\fi }{130}{theorem.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.9.1\else \numberline {8.9.1}Definition\fi \thmtformatoptarg {Rademacher complexity}}{132}{definition.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~8.9.1\else \numberline {8.9.1}Theorem\fi }{132}{theorem.1}%
+\contentsline {col}{\ifthmt@listswap Corollary~8.9.1\else \numberline {8.9.1}Corollary\fi }{134}{col.1}%
+\contentsline {lemma}{\ifthmt@listswap Lemma~8.9.2\else \numberline {8.9.2}Lemma\fi }{135}{lemma.2}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~8.9.3\else \numberline {8.9.3}Theorem\fi \thmtformatoptarg {Rademacher complexity bounds - binary classification}}{136}{theorem.3}%
+\contentsline {example}{\ifthmt@listswap Example~8.9.1\else \numberline {8.9.1}Example\fi }{136}{example.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.9.2\else \numberline {8.9.2}Definition\fi \thmtformatoptarg {Growth function}}{137}{definition.2}%
+\contentsline {lemma}{\ifthmt@listswap Lemma~8.9.4\else \numberline {8.9.4}Lemma\fi \thmtformatoptarg {Massart's lemma}}{137}{lemma.4}%
+\contentsline {col}{\ifthmt@listswap Corollary~8.9.2\else \numberline {8.9.2}Corollary\fi }{138}{col.2}%
+\contentsline {col}{\ifthmt@listswap Corollary~8.9.3\else \numberline {8.9.3}Corollary\fi \thmtformatoptarg {Growth function generalization bound}}{138}{col.3}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.10.1\else \numberline {8.10.1}Definition\fi \thmtformatoptarg {Shattering}}{140}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~8.10.2\else \numberline {8.10.2}Definition\fi \thmtformatoptarg {VC-dimension}}{140}{definition.2}%
+\contentsline {example}{\ifthmt@listswap Example~8.10.1\else \numberline {8.10.1}Example\fi \thmtformatoptarg {Intervals on the real line}}{140}{example.1}%
+\contentsline {example}{\ifthmt@listswap Example~8.10.2\else \numberline {8.10.2}Example\fi \thmtformatoptarg {Hyperplane}}{141}{example.2}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~8.10.1\else \numberline {8.10.1}Theorem\fi \thmtformatoptarg {Radon's theorem}}{142}{theorem.1}%
+\addvspace {10\p@ }
+\contentsline {note}{\ifthmt@listswap Note~9.1.1\else \numberline {9.1.1}Note\fi \thmtformatoptarg {A note on the direction flow of nerve bundles}}{144}{note.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~9.2.1\else \numberline {9.2.1}Definition\fi \thmtformatoptarg {Neuron model, Preliminary definition}}{150}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~9.2.2\else \numberline {9.2.2}Definition\fi \thmtformatoptarg {Neuron model, neuron class}}{152}{definition.2}%
+\contentsline {question}{\ifthmt@listswap Question~9.2.1\else \numberline {9.2.1}Question\fi }{152}{question.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~9.5.1\else \numberline {9.5.1}Definition\fi \thmtformatoptarg {Standard neuron}}{154}{definition.1}%
+\addvspace {10\p@ }
+\contentsline {theorem}{\ifthmt@listswap Theorem~10.1.1\else \numberline {10.1.1}Theorem\fi \thmtformatoptarg {Conservation law, first version}}{158}{theorem.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~10.1.1\else \numberline {10.1.1}Definition\fi \thmtformatoptarg {Coulomb's law}}{159}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~10.1.2\else \numberline {10.1.2}Definition\fi \thmtformatoptarg {Coulomb (unit)}}{159}{definition.2}%
+\contentsline {lemma}{\ifthmt@listswap Lemma~10.1.2\else \numberline {10.1.2}Lemma\fi }{159}{lemma.2}%
+\addvspace {10\p@ }
+\contentsline {definition}{\ifthmt@listswap Definition~13.1.1\else \numberline {13.1.1}Definition\fi \thmtformatoptarg {Artificial}}{188}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~13.1.2\else \numberline {13.1.2}Definition\fi \thmtformatoptarg {Artificial intelligence}}{188}{definition.2}%
+\addvspace {10\p@ }
+\contentsline {note}{\ifthmt@listswap Note~14.1.1\else \numberline {14.1.1}Note\fi }{189}{note.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~14.1.1\else \numberline {14.1.1}Theorem\fi \thmtformatoptarg {The fundamental theorem of neural formalism}}{189}{theorem.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~14.1.1\else \numberline {14.1.1}Definition\fi \thmtformatoptarg {Neuron}}{190}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~14.1.2\else \numberline {14.1.2}Definition\fi \thmtformatoptarg {Minimally defined neuron}}{190}{definition.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~14.1.3\else \numberline {14.1.3}Definition\fi \thmtformatoptarg {Classical neuron class}}{190}{definition.3}%
+\contentsline {proposition}{\ifthmt@listswap Proposition~14.1.2\else \numberline {14.1.2}Proposition\fi \thmtformatoptarg {Compound construction}}{191}{proposition.2}%
+\addvspace {10\p@ }
+\contentsline {theorem}{\ifthmt@listswap Theorem~15.2.1\else \numberline {15.2.1}Theorem\fi \thmtformatoptarg {Bias-variance tradeoff}}{198}{theorem.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~15.2.1\else \numberline {15.2.1}Definition\fi \thmtformatoptarg {Random Fourier features}}{199}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~15.2.2\else \numberline {15.2.2}Definition\fi \thmtformatoptarg {Effective Model Complexity}}{202}{definition.2}%
+\contentsline {hypothesis}{\ifthmt@listswap Hypothesis~15.2.1\else \numberline {15.2.1}Hypothesis\fi \thmtformatoptarg {Generalized Double Descent hypothesis, informal}}{203}{hypothesis.1}%
+\contentsline {conjecture}{\ifthmt@listswap Conjecture~15.3.1\else \numberline {15.3.1}Conjecture\fi }{208}{conjecture.1}%
+\contentsline {conjecture}{\ifthmt@listswap Conjecture~15.3.2\else \numberline {15.3.2}Conjecture\fi }{208}{conjecture.2}%
+\contentsline {assume}{\ifthmt@listswap Assumption~15.4.1.1\else \numberline {15.4.1.1}Assumption\fi }{210}{assume.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~15.4.1\else \numberline {15.4.1}Definition\fi \thmtformatoptarg {Representation scheme}}{210}{definition.1}%
+\contentsline {note}{\ifthmt@listswap Note~15.4.1\else \numberline {15.4.1}Note\fi }{211}{note.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~15.6.1\else \numberline {15.6.1}Theorem\fi \thmtformatoptarg {Bias-variance tradeoff}}{214}{theorem.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~15.6.1\else \numberline {15.6.1}Definition\fi \thmtformatoptarg {Parameterization}}{215}{definition.1}%
+\contentsline {conjecture}{\ifthmt@listswap Conjecture~15.6.1\else \numberline {15.6.1}Conjecture\fi \thmtformatoptarg {General insight}}{216}{conjecture.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~15.6.2\else \numberline {15.6.2}Theorem\fi \thmtformatoptarg {No-Free-Lunch}}{216}{theorem.2}%
+\contentsline {col}{\ifthmt@listswap Corollary~15.6.1\else \numberline {15.6.1}Corollary\fi }{217}{col.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~15.10.1\else \numberline {15.10.1}Definition\fi \thmtformatoptarg {Empirical risk}}{221}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~15.10.2\else \numberline {15.10.2}Definition\fi \thmtformatoptarg {Generalization risk}}{221}{definition.2}%
+\contentsline {definition}{\ifthmt@listswap Definition~15.10.3\else \numberline {15.10.3}Definition\fi \thmtformatoptarg {Empirical learning problem}}{221}{definition.3}%
+\contentsline {definition}{\ifthmt@listswap Definition~15.10.4\else \numberline {15.10.4}Definition\fi \thmtformatoptarg {Generalization learning problem}}{222}{definition.4}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~15.10.1\else \numberline {15.10.1}Theorem\fi }{222}{theorem.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~15.11.1\else \numberline {15.11.1}Definition\fi \thmtformatoptarg {Bias, I}}{223}{definition.1}%
+\contentsline {definition}{\ifthmt@listswap Definition~15.11.2\else \numberline {15.11.2}Definition\fi \thmtformatoptarg {Variance, I}}{223}{definition.2}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~15.11.1\else \numberline {15.11.1}Theorem\fi \thmtformatoptarg {Bias-variance decomposition}}{224}{theorem.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~15.11.2\else \numberline {15.11.2}Theorem\fi \thmtformatoptarg {Bias-variance tradeoff}}{224}{theorem.2}%
+\contentsline {theorem}{\ifthmt@listswap Theorem~15.11.3\else \numberline {15.11.3}Theorem\fi \thmtformatoptarg {No-Free-Lunch}}{225}{theorem.3}%
+\contentsline {definition}{\ifthmt@listswap Definition~15.15.1\else \numberline {15.15.1}Definition\fi \thmtformatoptarg {Graph-theoretical edge learning}}{231}{definition.1}%
+\addvspace {10\p@ }
+\contentsline {definition}{\ifthmt@listswap Definition~16.3.1\else \numberline {16.3.1}Definition\fi \thmtformatoptarg {Rosenblatt, 1957}}{237}{definition.1}%
+\addvspace {10\p@ }
+\contentsline {theorem}{\ifthmt@listswap Theorem~17.8.1\else \numberline {17.8.1}Theorem\fi \thmtformatoptarg {Bloch's theorem}}{260}{theorem.1}%

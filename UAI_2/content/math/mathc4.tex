@@ -1,0 +1,152 @@
+\chapter{Metric spaces, measure theory}
+
+A lot of times, when talking of spaces and their intrinsic properties, we come by the property of distance - for example, the distance $d(x,y)$ between two points $x$ or $y$, maybe from one's house to another. Formalizing this concept is done by inventing (yet again) a perhaps theory entangled with real analysis (or rather, a \textit{basis} on which real analysis might take its course), called \textbf{measure theory}. 
+
+To start, however, we first have to define the pseudometric of a set (more abstract notion for a space). Then we will see how that comes to become metric space. Although it might be later noted that metric comes off more naturally in system, it is also the case for pseudometric under pathological (or plentiful of weirdness) spaces. 
+
+\section{Metric theory}
+
+The study of metric spaces (or theory, depends on the choice of word) comes of as rather natural when considering its dependency on the field of \textit{analysis} in its introduction. By itself, it studies a pretty much intrinsic property of any spaces. The notion of \textit{distance}. 
+
+By itself, a set doesn't have any structure. For two arbitrary sets $A$ and $B$, you can ask questions like "Is $A=B$?" or "Is $A$ equivalent to a subset of $B$?" vice versa, or perhaps the cardinality of $A$ and $B$, perhaps interested in what kind of prime would they be (not so interesting, eh?) but not much more. All those questions are typically very general, and offer no good insight into the set itself. Though, if we add \textit{additional structure} to a set, it becomes more interesting. For example, if we define a "multiplication operation" $a\cdot b$ in $X$ that satisfies certain axioms, then $X$ becomes an algebraic structure called a group, and a whole area called group theory begins. 
+
+We are not interested in making a set $X$ an algebraic system. For our purposes, in analysis and its extension, topology view, we want additional structure on $X$ to talk about its \textit{neighbourhood}. This is what we need for topics like convergence, or continuity, or density, or closeness - roughly, in analysis, $f$ is continuous at $a$ means that if $x$ is near $a$, then $f(x)$ is near $f(a)$. The notion of the world "near" is what we are trying to achieve. 
+
+So far, as this section might have suggested it already, the simplest way to talk about nearness, is to equip the set with some additional distance metric, or function $d$ to tell us how far apart elements of the set actually is from each other. Of course, this distance metric does not need to be ordered - it just has to work every time (in not-so pathological case, that is).
+
+\subsection{Pseudometric spaces}
+
+The first thing to begin, is what we called a \textit{pseudometric space} \index{pseudometric space}. We have the following notion of a pseudometric space.
+
+\begin{definition}[Pseudometric space]
+    Suppose $X$ is a set. A function $\rho:X\times X\to \mathbb{R}_{+}$ is said to be a \textbf{pseudometric} if: 
+    \begin{enumerate}
+        \item $\rho(x,x)=0$ for all $x\in X$.
+        \item $\rho(x,y)=\rho(y,x)$ for all $x,y\in X$. 
+        \item $\rho(x,z)\leq \rho(x,y)+\rho(y,z)$, for all $x,y,z\in X$. 
+    \end{enumerate}
+    If, in addition, $\rho$ satisfies: $\rho(x,y)=0\implies x=y$ then $\rho$ is said to be a \textbf{metric}. 
+\end{definition}
+
+If $\rho$ is a pseudometric (metric) on $X$, we say that $(X,\rho)$ is a \textit{pseudometric space} (metric space). Supposed $(X,\rho)$ is a pseudometric space, and suppose a binary relation $\sim$ on $X$ defined by $x\sim y \leftrightarrow \rho(x,y)=0$. It is easy to verify that $\sim$ is an equivalent relation on $X$, by reflexivity, symmetry and transitivity of the above condition. Hence, $X$ can be partitioned into its equivalence classes under $\sim$. 
+
+The fundamental difference between pseudometric and metric space is the fact that the axiom on $\rho(x,y) = 0$ then $x=y$ is missing, that is, there exists particular $x,y$ such that their distance measure is the same, but they are not the same. Example of a particular pseudometric on $\mathbb{R}^{n}$ is for $\rho: \mathbb{R}\times \mathbb{R}$ to be \begin{equation*}
+    \rho((x_1, y_1), (x_2, y_2)) = \lvert x_{1} - y_{1} \rvert
+\end{equation*}  
+in which an entire dimension is missing from the metric measure. As for its usefulness in practical application and formal treatment of non-mathematical subject, it is still valid to ask what is the role that pseudometric space would play on. 
+
+As a result, we only need to add a single criterion for it to become metric space. 
+
+\begin{definition}[Metric space]
+    A \textbf{metric space} is a pair $(M,d)$ where $M$ is a set and $d$ is a function $d:M\times M\to \mathbb{R}$ satisfying: 
+    \begin{enumerate}
+        \item $d(x,y)\geq 0$ for all $x,y\in M$. 
+        \item $d(x,y)=0$ if and only if $x=y$. 
+        \item Symmetry: $d(x,y)=d(y,x)$ for all $x,y\in M$, and 
+        \item The \textbf{triangle inequality}: $d(x,z)\leq d(x,y)+d(y,z)$, for all $x,y,z\in M$. 
+    \end{enumerate}
+\end{definition}
+
+In one way or another, it is typically constructed that pseudometric space is a generalization of metric space in the notion and study of neighbourhood. Though, there are a lot of easy examples taken inside a metric space rather than pseudometric, intuitively. 
+
+\begin{example}
+    The usual metric on $\mathbb{R}$ is $d(x,y)=\lvert x-y\rvert$. Clearly, this satisfies all property of metric space. In fact, the properties are chosen so that a metric imitates the usual distance function.  
+\end{example}
+
+
+
+\section{Measure}
+
+After the notion of distance for a set, now we also want to formalize the notion of \textbf{size} of a set. This resulted in ultimately the theory of measure, or \textit{measure theory}. When I first learn about measure theory, it is very abstract. But trust it when I say after a while, you either land in the middle of not understanding it but also understanding it (the Schrödinger state), or you will be the one to understand it, and no on the other side. Except if you skip the class. 
+
+\subsection{Sigma-algebra}
+
+For subsets which are element of $X$, that is the power set $\mathcal{P}(X)$ are often impossible to fully define such notion of $\mu[U]$ on them. Instead, we must isolate a smaller domain, where the measure will be well-defined. This domain is called \textbf{measurable}, and those that are not are contained in the \textbf{non-measurable} domain. 
+
+Hence, before we can define a measure, we must describe a suitable domain for it. This is called a \textbf{sigma-algebra}\index{sigma-algebra}, and is a collection of subsets of $X$. 
+
+\begin{definition}[Sigma algebra]
+    Let $X$ be a set. A \textbf{$\sigma$-algebra} over $X$ is a collection $\mathcal{X}$ of subsets of $X$ with the following properties: 
+    \begin{enumerate}
+        \item > 1. $\mathcal{X}$ is closed under \textbf{countable unions}. That is, if $U_{1},U_{2},\dots,$ are in $X$, then their intersection $\displaystyle{\bigcap^{\infty}_{n=1}U_{n}}$ is also in $\mathcal{X}$. 
+        \item > 2. $\mathcal{X}$ is closed under \textbf{countable intersection}. If $U_{1},U_{2},\dots,$ are in $\mathcal{X}$, then their intersection $\displaystyle{\bigcap^{\infty}_{n=1}U_{n}}$ is also in $\mathcal{X}$. 
+        \item > 3. $\mathcal{X}$ is closed under \textbf{complementation}: If $U\in \mathcal{X}$, then $U^{c}=(X\setminus U)\in\mathcal{X}$. 
+    \end{enumerate}
+\end{definition}
+
+Intuitively sigma-algebra defines a particular space, which might be explained as a space in which aside from the singleton member, there is all the combination "and" - all the countable intersection, and all the addition possible - for countable unions. Or, so we say that includes all possible additive set that their size can be combined, merged together, well-defined in such space. Then it is called a sigma-algebra of any given set $\mathcal{X}$. Usually, there exists no sigma-algebra to the set itself, so, only a fraction of it is possible. 
+
+A \textbf{measurable space} is then an \textit{ordered pair} $(X,\mathcal{X})$ where $X$ is a set, and $\mathcal{X}$ is a sigma-algebra on $X$. Given $(X,\mathcal{S}),(Y,\mathcal{T})$ be measurable spaces, then a function $f:X\longrightarrow Y$ is called a \textbf{measurable function} if $f^{-1}(T)\in \mathcal{S}$ for all $T\in \mathcal{T}$. \footnote{It is also typical to review the $\sigma$-algebra of a measurable space, too. Not sure why would that be the case.}
+
+\subsection{A few sigma algebras}
+So, how many interesting or realistic sigma-algebra are there? We will review through a few interesting one, include the one that will find its way into the definition of Lebesgue measure. 
+
+\subsubsection{Trivial sigma algebras}
+For any set $X$, the collection $\{ \varnothing,X \}$ is a sigma-algebra. Similarly, the power set $\mathcal{P}(X)$ is a sigma-algebra. The first is \textit{too small} to do anything, while the latter is \textit{too big} to be manageable. 
+
+One way to create a manageable sigma-algebra is to start with some collection $\mathcal{M}$ of manageable sets, and then find the smallest sigma-algebra which contains all elements of $\mathcal{M}$. This is called the \textbf{sigma-algebra generated by $\mathcal{M}$}, or $\sigma(\mathcal{M})$. 
+
+\subsubsection{Partition algebras}
+Let $X$ be a set. The \textit{partition} of $X$ is a collection $\mathcal{P}=\{ P_{1},\dots,P_{N} \}$ of disjoint subsets, such that $$X=\bigsqcup_{n=1}^{N}P_{n}$$
+The sets $P_{1},\dots,P_{N}$ are called the \textbf{atoms} of the partition. The \textit{sigma-algebra generated by $\mathcal{P}$} is defined by: $$\sigma(\mathcal{P})=\{ P_{n_{1}}\sqcup P_{n_{2}}\sqcup\dots\sqcup P_{n_{k}}: n_{1},n_{2},\dots,n_{k}\in [1,N] \}$$
+If $\mathrm{card}[P]=N$, then $\mathrm{card}[\sigma(P)]=2^{N}$. If $\mathcal{Q}$ is another partition, we say that $\mathcal{Q}$ \textbf{refines} $\mathcal{P}$, if, for every $P\in\mathcal{P}$, there are the set of all $Q_{1},\dots,Q_{N}\in \mathcal{Q}$ such that $$P=\bigsqcup_{n=1}^{N}Q_{n}$$
+Refine here can be thought of as being more explicit, or rather, more details - for example, a collection of marbles now shattered into pieces of sand-like particles, then we say that the power set of those particles is more refined than the marble covering previously. We then write $\mathcal{P}\prec\mathcal{Q}$, or $\mathcal{Q}$ \textit{precedes} $\mathcal{P}$. It follows that: $$\Big( \mathcal{P}\prec\mathcal{Q} \Big)\iff\Big( \sigma(\mathcal{P})\subset \sigma(\mathcal{Q})   \Big)$$
+
+\subsubsection{Borel sigma-algebra}
+Let $X$ be any topological space, and let $\mathcal{M}$ be the set of all open subsets of $X$. The sigma algebra $\sigma(M)$ is the \textbf{Borel sigma algebra} of $X$, denoted $\mathcal{B}(X)$. It contains all open sets and closed subset of $X$, all countable intersection of open sets - called $D\delta$ sets, all countable unions of closed sets - called $F\sigma$ sets, etc. More specifically, suppose $(X,\rho)$ is a pseudometric space. Then the smallest $\sigma$-algebra of subsets of $X$ that contains every closed subset of $X$ is called the \textbf{Borel} $\sigma$-algebra of $(X,\rho)$. The Borel $\sigma$-algebra then contain also every open subset of $X$. 
+
+\subsubsection{Product algebras}
+Suppose $(X,\mathcal{X})$ and $(Y,\mathcal{Y})$ be two measurable spaces, and consider the \textit{Cartesian product} $X\times Y$. Let $$\mathcal{M}=\{ U\times V\mid U\in \mathcal{X},V\in \mathcal{Y} \}$$
+be the set of all rectangles in $X\times Y$. Then $\sigma(\mathcal{M})$ is the \textbf{product sigma-algebra}, denoted $\mathcal{X}\otimes \mathcal{Y}$. 
+
+\subsection{Measure}
+We now move to the notion of a \textbf{measure}. 
+\begin{definition}[Measure]
+    A \textbf{measure} on $\mathcal{X}$ is a map $\mu: \mathcal{X}\to [0,\infty]$ which is \textbf{countably additive}, in the sense that, if $Y_{1},Y_{2},\dots,$ are all elements of $\mathcal{X}$, and are disjoint, then $$\mu\left[ \bigsqcup^{\infty}_{n=1} Y_{n} \right]=\sum^{\infty}_{n=1}\mu[Y_{n}]$$
+\end{definition}
+
+Thus, we understand it as $\mu$ assigns a 'size' to the $\mathcal{X}$-measurable subsets of $X$. A measure $P:\mathcal{S}\to \mathbb{R}_{+}$ is said to be a \textbf{probability measure} if $P(X)=1$. We refer to $(X,\mathcal{S},P)$ as a \textbf{probability space}. For familiarity, it is perhaps better to get into some examples. 
+\begin{example}[The counting measure]
+    The \textbf{counting measure} assigns, to any set, the \textbf{cardinality} of that set, that is: $$\mu[S]=\mathrm{card}[S]$$
+this is only useful in finite measure spaces, so we would have not that much application to it. However, it is a pretty natural measure to think of. 
+\end{example}
+
+\begin{example}[Finite measure space]
+    Suppose $X$ is a finite set, and $\mathcal{X}=\mathcal{P}(X)$. Then, a measure $\mu$ on $X$ is entirely defined by some function $f:X\to[0,\infty]$, for any subset $\{ x_{1},\dots,x_{N} \}$. We then define $$\mu \{ x_{1},\dots,x_{N} \} = \sum^{N}_{n=1}f(x_{n})$$
+We might want to show that every measure on $X$ arises in this manner. 
+\end{example}
+\begin{example}[Discrete measure]
+    If $(X,\mathcal{X},\mu)$ is a measure space, then an \textbf{atom} of $\mu$ is a subset $A\in\mathcal{X}$ such that: 
+\begin{itemize}[noitemsep,topsep=2pt]
+    \item $\mu[A]=A>0$. 
+    \item For any $B\subset A$, either $\mu[B]=A$ or $\mu[B]=0$. 
+\end{itemize}
+For example, in the finite measure space above, the singleton set $\{ x_{n} \}$ is an atom if $f(x_{n})>0$. The measure space $(X,\mathcal{X},\mu)$ is called \textbf{discrete} if we can write: $$X=Z\sqcup \bigsqcup^{\infty}_{n=1}A_{n}$$
+where $\mu[Z]=0$ and where $\{ A_{n} \}$ is a collection of atoms. 
+\end{example}
+\begin{example}[Lebesgue measure]
+    The \textbf{Lebesgue measure} on $\mathbb{R}^{n}$ is the model of "length", "area", "volume" et cetera for real number system. 
+\end{example}
+\begin{example}[Haar measure]
+    The Lebesgue measure has the extremely important of \textbf{translation invariance}. That is, for any set $U\subset \mathbb{R}^{n}$, and any element $\vec{v}\in \mathbb{R}^{n}$, we have $$\mu[U]=\mu[U=\vec{v}]$$
+We can generalize this to any topological group, $G$. Let $G$ have Borel sigma-algebra $\mathcal{B}$, and suppose $\eta$ is a measure on $\mathcal{B}$ so that for any $B\in\mathcal{B}$, and let $g\in G$, $$\eta[B.g]=\eta[B]$$
+This is called \textbf{right translation invariance}. IF $G$ is \textit{locally compact and Hausdorff}, then there is a measure $\eta$ satisfying this property, and $\eta$ is unique (up to multiplication by scalar $\lambda$). We call this $\eta$ the \textbf{right Haar measure on $G$.} Again, there is a unique measure with this property, but on the left. Consider the \textit{left-translation invariance}. For any $g\in G$ and $B\in\mathcal{B}$, $$\eta[g.\mathcal{B}]=\eta[\mathcal{B}]$$
+This is called the \textit{left Haar measure} on $G$. If $G$ is abelian, then left-invariance and right-invariance are equivalent, hence the two measure agree. If $G$ is not abelian, however, then the two measures might disagree. A question is then focused to see their commutativity (how much) between the two measures. If the left- and right- Haar measures are equal, we call $G$ \textbf{unimodular}. 
+\end{example}
+
+\begin{example}[Haussdorff measure]
+    The Lebesgue measure is a special case of another kind of measure. Instead of treating $\mathbb{R}^{n}$ as a topological group, regard $\mathbb{R}^{n}$ as a \textit{metric space}. On any metric space, there is a natural measure called the \textbf{Hausdorff measure}. 
+
+Heuristically, the Hausdorff measure of a set $U$ is determined by counting the number of open balls of small radius needed to \textit{cover} $U$. The more balls we need, the larger $U$ must be. However, for any non-zero radius $R$, a covering with balls of size $R$ produces only an \textit{approximate measure} of the size of $U$, because any features of $U$ which are much smaller than $R$ are not detected by such covering. The Hausdorff measure is determined by looking at the \textit{limit} of the number of balls needed, as $R\to 0$. 
+\end{example}
+Still, what does this do and how is this natural is pretty weird. 
+
+It is possible to define Hausdorff $\mu_{d}$ for any dimension $d\in(0,\infty)$. The dimension parameter $d$ is allowed to take on \textit{noninteger values}. What does this mean, we do not know. The dimension $d$ describe how rapidly the measure of a ball of radius $\epsilon$ grows as the function of $\epsilon$. We expect that, for any point $x$ in our space, $$\mu[B(x,\epsilon)]\sim \epsilon^{d}$$
+For any metric space $X$, there is a unique choice of dimension $d_{0}$ that yields a nontrivial Hausdorff dimension. For any value $d>d_{0}$, the measure $\mu_{d}$ will assign every set measure \textit{zero}, and for any value of $d<d_{0}$, the measure $\mu_{d}$ will assign every open set \textit{infinite measure}. 
+
+The unique value $d_{0}$ is called the \textbf{Hausdorff dimension} of the space $X$, and carries important information about the geometry of the $X$. 
+\begin{example}[An example of Hausdorff dimension]
+    The Hausdorff measure of $\mathbb{R}^{n}$ is $n$. Hence, if we try to measure the 'volume' (recall from the notion of Lebesgue measure, that is $n=3$) of $\mathbb{R}^{2}$, it will yield 0. Conversely, if we try to measure the 'area' of the nontrivial subset of $\mathbb{R}^3$, the only sensible value to expect would be $\infty$. 
+\end{example}
+We can construct a Haar measure on any subset $U$ of $\mathbb{R}^{n}$, by treating $U$ as a metric space under the restriction of the natural metric on $\mathbb{R}^{n}$. For example, if $U$ is an embedded $k$-dimensional \textbf{manifold}, then the Hausdorff dimension of $U$ is $K$. However, there are also pathological subsets of $\mathbb{R}^{n}$ in which possess noninteger Hausdorff dimension. These objects are now called \textbf{fractal}, and the Hausdorff dimension is only one of many \textbf{fractal dimensions} which are used to characterize these objects. 
+

@@ -1,0 +1,548 @@
+\chapter{Introduction to classical connectionism}
+
+Previous sections have been devoted to the writing and formulation of the naive, classical structure of models at best, and a very general question of the theory of actions (specifically, learning) on a specific hypothesis $h$ of a hypothesis set $\mathcal{H}$. One may then forward to ask about the intrinsic representation of the hypothesis class $\mathcal{H}$ for what it will actually be, similar to how we treated the representation scheme $\bm{\mathcal{R}}(\mathcal{C})$ of the concept class $\mathcal{C}$. One of the fundamental constructs that we can get aside from classical machine learning, in which the hypothesis class is arbitrary since there exists no general class, is the idea of a neural network architectural hypothesis class, or simply the \textbf{neural network} architecture. 
+
+As it sounds, it is taken from the construction of the brain. Literature of this follows \cite{zhang2023divedeeplearning,10.5555/2721661} or any other literature sources that discuss the essence of the topic on itself. Do note that most of the time, they are more focused on the applicational side of it, often forgo the more strict, theoretical setting and general preset of the system itself, in a rather rough way. Also, personally, there exists no biological inspiration obligatory section either. 
+
+\section{Biological inspiration}
+
+Because it is a study of intelligence, we often find ourselves converging to the closet intelligent lifeform close by - which is us ourselves, and other species with developed brain region. For neuroscience, it has been widely received that the brain is constructed from many components, a lot of which comes around and connected together. \cite{mcculloch_logical_1943}, taking on this, devised the idea of meticulously replicate such operation of the brain, by defining the first ever logical neuron structure, called now the McCulloch-Pitts neuron. We would be giving a quick introduction to the brain itself, and some more important notes on how the neuron formalism is formed. For prerequisite, a bit about biology is required. Textbooks and resources that dive deeper into this problem is either \cite{1180370208} or \cite{purves_neuroscience_2004}, which will provide much more detail on the neuroscientifical development of the research on the brain. For now, let us see the structure of the brain by virtue of examplifying its representatives.
+
+Informally, the brain encased the 'brain' - the nervous system in which defines its operation. This includes the central nervous system (CNS), and the peripheral nervous system (PNS). This is generally the conventional separation of the nervous system, as CNS includes the brain and spinal cord, while the peripheral nervous system consists of everything else. The CNS's responsibilities include receiving, processing, and responding to sensory information, while the peripheral, as its name, is similar to \textit{control relay} and sensory influences. 
+
+The brain is divided into two \textit{hemispheres} (The reason is unknown for now, in terms of operational and evolutional accord), mainly for regional specialization. Between the two central hemispheres, they are connected by nerve bundles, in this case, is the thick band of fibers known as \textbf{corpus callosum}, consisting of about 200 million axons. The \textbf{axons} or \textbf{nerve fiber} is the long, slender projection of a nerve cell, or neuron, to different neurons and areas. So, think of it like a more extension cables from the transformer and generator. 
+
+The \textbf{direction} between the 2 hemispherical connection is unknown, and can be either one-way, or two-way. But generally, we might want to take it as two-way, since it makes sense for when simultaneous tasks which requires multiple system on both sides to operates, remains so. Or rather, we can take it as the idea of \textbf{neural vacancy path}, that is, empty pathway that is one-directional specific in usage cases. More so like a conditional diode, depends on which way it was triggered first. But rather, it helps us to classify between the \textbf{communication directive} subjects, and \textbf{processing directive} subject of the brain.\index{neural vacancy path} 
+
+\begin{note}[A note on the direction flow of nerve bundles]
+    In the brain, a nerve bundle connects two regions and allows signals to travel between them.
+ These connections can be one-way, where signals only travel in a single direction, or two-way, which allows communication both ways. Scientists discovered this a long time ago by dissecting the preserved brains of humans and other animals. Non-invasive MRI scans can tell us which brain regions have nerve bundles connecting them, but we can't know whether they are one or two-way connections.
+ \vspace{2mm}
+
+ Also, if they're one-way connections, we don't know the direction of movement. This is a limitation of current brain scan technology. Because scientists cannot tell the difference between a one or two-way connection in the brain, they usually assume all nerve bundles are two-way connections. This is a reasonable simplification in many cases, and \href{https://www.nature.com/articles/nrn3901}{has helped us understand a lot about the brain}.
+\end{note}
+
+During the process of constant communication, the left and right hemispheres are responsible for different behaviors, known as \textbf{brain lateralization}. This is the specialization we have talked about. However, we will not burden this section a description of the functions. \index{brain lateralization}
+
+The bigger picture mentioned the brain connected by various sections, we noted that the brain is thoroughly connected by millions, hundred of millions of axons. One then might ask where and what that those axons were connected to. Most of the time, we recognized that they are connected to the brain's components called \textbf{neuron} - the small central processing unit of the brain itself. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/brainneuron1.png}
+    \caption{The simplistic, schematic illustration of the structure of the biological neuron.}
+\end{figure}
+
+The brain consists of a large number (approximately $10^{11}$) of highly connected neurons. For our purpose, we simplify them to mostly three principal components, beside its life support: the \textbf{dendrites}\index{dendrites}, the cell body and the \textbf{axon}\index{axon}. The dendrites are tree-like receptive networks of nerve fibres that carry electrical signals into the cell body. The cell model effectively sums and thresholds these incoming signals. The axon is simply, as we have said, the cord connecting other neurons to it. The point of contact between an axon of one cell and a dendrite of another cell is then called a \textbf{synapse}\index{synapse}. It is the arrangement of neurons and the strengths of individual synapses, determined by a complex chemical process, that establishes the function of the biological neural network - though even by then, it is a gross simplification of the actual process - mostly based on empirical evidences. 
+
+Aside from neuron, of the \textbf{cellular neurology} point of view, there exists also the \textbf{glia}, or \textbf{neuroglia} \index{neuroglia}for the full name, which serves as the supporting cells for the operation of the main neurons' system. Specifically, the neuroglia should be emphasized to be rather inert - it does not align, or rather, can be classified as an operating unit in the brain, with respect to the well-known electrically excitable process that its brother neuron possesses. Indeed, because of such, there are many definitions in which neuroglia can take from, most of which are rather diluting, hence hitherto there are no agreed upon definition. In the above statement, we note that neuroglia as the supportive cells of neurons, but many exists to classify it by their process branching and delicate morphology, or, as mentioned, electrically inert components. As a result, 'neuroglia' has been come the generalized term that covers cells with different origins, morphology, physiological properties and functional specialization \textit{aside from} the nervous cells of the brain. Such can be said of the uncertain analysis of neuroglia to the operation process and the long, complex chain of thoughts and functioning scheme of the host that it resides in, for whether the neuroglia participate in any incumbant roles throughout its working space. This is perhaps one of the issues with neuroglia researches, though it is not to say many attempts has been made trying to understand it, but rather the underrated position of the neuroglia to the other part of the brain itself. So, this much remains as a mystery. 
+
+By itself, the brain's neuron and its neural structure is insanely complex. By time and birth, some of the neural structure is defined at birth. We don't know if this is encoded into itself by genes, but most likely so from biological evolutions itself. Other parts are developed through the dynamic action, often interpreted as learning (which is why we have the theory of learning), as new connections are made and others waste away. This development is most noticeable in the early stages of life. This is present in almost all developed neural structure of any given brain of any species. For example, it has been shown that if a young cat is denited use of one eye during a critical window of time, it will never develop normal vision in that eye. Linguists also have discovered that infants over six months of age can no longer discriminate certain speech sounds, unless they were exposed to them earlier in their life \cite{WERKER198449}. Somehow, it is also pretty vindicative to believe that the brain and all other functional components have a certain development timeframe deeply encoded in its biological encoding itself. Behaviourally, we can also interject that without pressure (like the fact that the cat must see, and must walk, so that it must move its legs and eyes), many functions would cease to be available. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/SantiagoRamónyCajalNetwork.png}
+    \caption{An illustration of Santiago Ramón y Cajal on the structure and design of a biological brain network. Many of these was made during his career.}
+\end{figure}
+
+Neural structures continue to change throughout life. These later changes tend to consist mainly of strengthning or weakening of synaptic junctions. For instance, it is belived, by 2000, that new memories are formed by modification of these synaptic strengths. However, this also posits the question of if the structure is static after a while - no more neurons constructed, then why would it be possible that, classical theory dictated, and our later on model will provide, that the neuron network of the same topology can give many memories at once? This questions, among others, require extensive studies and deep dive into the field of brain study. 
+
+Adding to the complexity, studying intensively in neuroscience will even separate the description of neuron further. When neuroscience was formed, and was developed, early in the nineteenth century the cell was recognized, only by then, as the fundamental unit of all living organisms. However, it was not until well into the twentieth century, that neuroscientists agreed that nervous tissue, like all other organs, is made up of these fundamental units. This would then bring out a surprising result by itself from the genetic side: of the 35,000 genes in human genome, a majority are expressed in the developing and adult brain; same is in other animals; and most of all, \textit{very few genes} are \textit{uniquely expressed} in neurons, indicating that there exists a very well general structure for the building blocks of human. One then can be more surprised: why didn't they discover it sooner? The major problem and problem was that the first generation of "modern" neurobiologists in the nineteenth century had difficulty resolving the unitary nature of nerve cells with the microscopes and cell staining techniques that were then available. By that, we mean that "it's all because of the experimental system itself.". This inadequacy of observing the structure of neuron, was further exacerbated because of the ostensively, extraordinarily complex shapes and extensive branches of individual nerve cells, which further obscured their resemblance to the geometrically simpler cells of other tissues. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/overwhelminglycomplexshit.png}
+    \caption{Examples of the rich variety of nerve cell morphologies found in the human nervous system. Tracings are from actual nerve cells stained by impregnation with silver salts (the socalled Golgi technique the method used in the classical studies of Golgi and Cajal). Asterisks indicate that the axon runs on much farther than shown. Note that some cells, like the retinal bipolar cell, have a very short axon, and that others, like the retinal amacrine cell, have no axon at all. The drawings are not all at the same scale. Some more details about the jargon is the \textit{retinal bipolar cells}, which are neurons that connect the outer retina to the inner retina, for processing layer (or projection neurons, where all information are relayed from this connection.); the \textit{retinal ganglion cell, amacrine cells} are the same visual processing unit; Cerebellar Purkinje cells (a type of GABAergic neurons) uniquely determined for cerebella cortex (for processing large data, and coordinating functions like cognition and emotions.). Reused from \cite{purves_neuroscience_2004}.}
+\end{figure}
+
+This then prompted, not surprisingly, the two rather classically famous approach to understanding the intricate structure that was observed. The first to arrive is the \textbf{Reticular Theory}\index{Reticular Theory} of neurons, by prominent of Golgi and others like Joseph von Gerlach. Such is said about Reticular Theory by Golgi in his Nobel Prize for Physiology or Medicine (1906) that the axons physically join one nerve cell to another. By analogy, that is like saying that the brain is coherently connected, joined together like an electricity distribution network. For Gerlach, he even wrote a two-page article titled "Ueber die Structur der grauen Substanz des menschlichen Grosshirns. Vorläufige Mitheilung" \cite{gerlach1872struktur} in which the sentences ended with `[these cells] are interconnected with each other as well as connected with the radial bundle, whereby a coarsely meshed network of medullated fibres is produced which can already be seen at 60 times magnification'. This theory eventually, though, fell from favor and was replaced by what came to be known as the "neuron doctrine", championed by Santiago Ramón y Cajal, a Spanish neuroanatomist, and Charles Sherrington, a British physiologist. This theory insists on the otherwise different interpretation - the brain is not continuous, and is rather composed of \textit{independent cells} and components. \index{Neural Doctrine} More than ever, it also gives us some very beautiful illustration of Cajal himself. 
+
+The contrasting views represented by Golgi and Cajal occasioned a spirited debate in the early twentieth century, that set the course of modern neuroscience. At the end of the day, however, it seems like the modern world of neuroscience has chosen Cajal because of the prominently accurate expression of Cajal, and supported by immense experimental result - particularly after the invention of electron microscopy in the 1950s. Out of this debate, and a lifelong endeavour, is the tuple of neuron-neuroglia as we have been discussing of. \footnote{It is, however, foolish to consider the idea of Golgi to be entirely false. What can be seen as a continuum by Golgi might actually be the continuous operation flow between the network of neurons together with each other, which then explains the weird fluctuation and continuous response behaviours in time, thus ruling out the falsification, but transfer the view to another point. }
+
+We would be wise to intercept this complexity with a specific modelling, and to use whatever knowledge attainable of the moment rather than waiting for neuroscientist to fully discover the brain - at that point, there is not much to be done anymore (others than copying and replicating, that is). Because it is so complex, artificial neural networks do not approach the complexity of the brain by itself. Rather, we restrict ourselves to a very simplified notion of the neuron. Nevertheless, two key similarities between biological and artificial neural networks can be founded. First, the building blocks of both networks are simple computational devices - note that this is a \textbf{serious, gross simplification from both side} of the equation - that are highly connected. Second, the connections determine the function of the network. Then, particular configuration of the network will be much better utilized in some tasks, and less of others. This is a dynamic of functions that is perhaps also presented in biological networks. Also, we will also remove the neuroglia of the equation in the subsequent model that will be presented. Such is to say, we are not replicating the neural system by everything, but rather, focusing on the not-so-inert part of it.
+
+With this, we are now ready to begin our model of neuron. We will do it step by step. Not wasting anything in between, that is. But first, we need to know what does our neuron do, in the most general way. 
+
+\section{The neuron model}
+
+Because, generally, we have discussed and formalize somewhat our mathematical modelling setting into the 3-tuple $(S,Q,M)$, it would be a loss of rigours if we are not to treat the neuron in a structural way. In such, we will also absolve certain ambiguity, if able.  
+
+The system $S$ in concerned of the neuron model is perhaps different from what we will be having in general. Normally, we will consider the system in which only the object of interest. In such sense, our structure will contain the following: The model object's components, or \textbf{atoms} $\{n\}$, and the larger construction that is our model, $N[\{n_{i}\mid k\}]$, for any $k$ configuration that is for now arbitrary. This will be good for the time being, however, later on, if we are to expand it into a larger, bigger system in which multiple 'models' are made, then we will have to find ourselves another interpretation. 
+
+In such case, there exist two approaches. One can approach the problem by extending the model into not just a neuron, but a bigger network of neurons, yet so forth being a single neuron in interpretation. That is, there now another configuration $k'$ that gives a comparatively \textit{recursive definition} of the neuron: a network of neuron acts like a neuron, containing inside it neurons of smaller size. This means then a "neural network" is essentially the model $N[\{n_{i}\mid k',k\}]$ such that each $n_{i}\to k'$ configuration is a neuron, and under them are the configurations $k$ of the neuron class. This interpretation is rather suffice, but again, it considers a fairly strict amount of construction, and there is also the problem with interpreting the recursion section, too. Instead, what we can do is to simply extend the system. Now, the object of the system will be bounded above. That is, the system $S$ now contains, for example, the following objects: 
+\begin{equation}
+    \begin{split}
+        S &=  \{n_{i}\} \\ 
+        &\cup  \{N_{k}\} = \{n_{i}\mid k \in \mathcal{K} = \mathcal{K}^{1}, r\in \mathcal{R}\}\\
+        &\cup \{\mathcal{N}\} = \{ N\mid k' \in \mathcal{K}' = \mathcal{K}^{(2)} \} 
+    \end{split}
+\end{equation}
+
+Note that this is not the current notation of choice, only for illustrative purpose, so we will be able to forgive some of the lack of coherent notation like $n,N,\mathcal{N}$. For each level of the neural network structure that will be eventually constructed, we will have each individual component set. Using a rather naive notion, we have then implicitly strict our model, in which we will discuss in more detail in a bit more time. It is also notably interesting of the implication of the $\mathcal{K}^{(i)}$ ordering model can be. In fact, it can provide us with an even more compact, and abstracting level of neural processing unit, though we will not discuss such for now. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/abstractionpps.png}
+    \caption{\textbf{An illustrative example of the abstraction and categorization by 'size' of different components and constructs in the neuron model.} By the order of abstraction $k$, we assign a notion of size on different neural structure, by increasing complexity, and backward compatibility (described to be composed of previously defined objects). The first two stage for $k=1,2$ includes the standard basis components $\{n_{0,i}\}$ and the standard neuron class $N_{0}$, respectively.}
+\end{figure}
+
+Now, for the question $Q$. What is it that the questions we have when we are constructing this model of neuron? Normally, the question would be rather on the extreme: we want to \textit{reconstruct the neuron}, or rather, making a unit that functions in the same way, or abiding its principles. In doing such definition, we will be able to rule out certain factors, and perhaps focus on the state variables system instead. 
+
+By this, we assume no physical realization. Hence, factors that rely on the physical interpretation and phenomena - for example, the delays in between signal transmission - we then assume our data is instantaneous. The forming of axons and synapses will also not be included, as we might as well work with a static wiring scenario instead. Simplify even more, and we get to the point where we will only extract the supposed fundamental unit of operating, that is, turning the neuron into exactly an input-output unit. All construction of variations of this type of neural construct is then called the \textbf{neuron class} (classical) in which connectionist builds their neuron. Denoted as $N$, the neuron class is constructed of three fundamental components as $(I(p), \Sigma, f)$, where $I$ handles the input into the neuron, $\Sigma$ preprocess the input into some forms or another, and $f$ regulates the internal mechanism of output-transmission of the neuron - in a somewhat ambiguous term, regulate what the neuron is designed to "think" given specific input and its own interpretation as $f$. If you see others, more advanced and often messy construction of a neuron, then it is because they have added semantics onto it, or rather, the supporting and outer influencing components. However, the standard issued compartments are the same, and hence, we would treat this as the base model for our neuron unit.
+
+Each operation in the neuron model, at least for the standard basis, serves a different purpose. The input $I$ is there to handle the input, by symbolically giving each signal or channel of a specific elementary configuration, called \textbf{weights} $w$. This will determine the relative "importance" of a given input, or by scaling up and down the channel's information inward. Numerically, it controls how the preliminary processing or dependency of inputs are observed to be configured in the objective concept that is required to be mimicked. For example, if the objective concept is something like $3x_1 + 4x_2 - 1/5 x_3$, we would expect the preliminary process to handle the factor $(3,4,1/5)$ to be replicated by behaviours of $x_i$. $\Sigma$ on the other hand, provides the $+$ operation inside. Often, we use addition or for a vector representation of all input $\mathbf{x}\in \mathbf{X}$, it is the dot product. But generally, it is defined for all generalized composing operation $\Sigma= \bigoplus_{i=1}^{n}w_i n_i$. And finally, as we may have been familiar, is the interpreter of the neuron, the transfer function $f$. Though, arguably, the transfer function is classically defined only for it to be able to let the neuron be nonlinear, with respect to the space of all numerical representation. 
+
+With this, we are able to define the first definition on the neuron model. This is a preliminary definition, since we will add things in later on.
+
+\begin{definition}[Neuron model,  Preliminary definition]
+    The neuron model conceptually can be encapsulated into the categorization of all \textbf{neuron class} $N$ with the \textbf{standard basis} denoted by $N_{0}$. The standard basis is then consists of the tuple $(I,\Sigma, f)$, where $I$ denotes the process operates on input form which denoted $p$, $\Sigma$ is the input internal process - most prominent in case of multiple discrete input channel present (essentially helps to organize the input interface), and $f$ is the \textbf{interpretation output} of the model. 
+\end{definition}
+
+It is good to observe that the neuron as a unit is somewhat very similar to how we observe the black-box model of mathematical modelling, for a given problem. Hence, it is sufficed to say, generally, that in some ways or another, that the neural unit is actually approximating the supposed internal state of a black-box system, by presupposing certain simplification or empirical generalization of the observed information. This is often not guaranteed to be similar to the actual black box, but rather of its own interpretation unit, to approximate it with a pre-supposed internal mechanics instead. One could then ask though, of the extended problem to this conception of neural unit - what would then be the expression for the \textbf{internal system of a neural network} (more than one neuron)? We would do this in sequence, so let's hope that we will touch upon this. 
+
+\subsection{Principles and philosophy}
+To finalize our view on the definition and principles, we have to give ourselves the plenty (mathematical) statement in consideration of the system in which our neuron will be defined of their subjects and functions. Those will hopefully, eventually lay out the correct assumptions that we took, figuratively, and to prevent further ambiguity (in the case where everyone, and anyone get different reactions or formulations). In essence, our construction forgo the following assumptions for the statements $M$:
+
+\begin{itemize}[itemsep=1pt, topsep=3pt,leftmargin=4pt]
+    \item[(+)] The flow of information and operation is \textit{one-dimensional, single-directed}. That is, every operation follows the schema recognized by the input-output model, such that any open interface or exposed structure must abide the sequential and single-directed flow of process, for all components in a neuron class. This then defines a \textbf{'heliocentric' topology} \index{heliocentric topology} on the neuron class, denoted by $C$ which organize the flow of process. \footnote{Then, single-directed means that $C$ is minimally described by a vector $\vec{d}$, such that if each neuron is represented per specification, into a directed graph (either equipped with an embedding space or not), then the component's direction vector $\vec{c}_{i}\in C$ , must satisfy $\langle \vec{d},\vec{c}_{i}\rangle \geq 0$. This notion wil have to be expanded later on, as we will see why it is perhaps more important than not. In fact, I am racking my brain to think of the case when one dimensional, without single-directed description would be. This notion also generally can be applied to larger network as well.}
+    \item[(+)] Almost all physical realization of the neuron is removed in the modelling. That is, there exists no synapses and axons, replaced by the abstract input-output - we assume no failure of communication. Furthermore, we assume that each neuron can handle infinite amount of data, given certain representation of said data channel, and output of the same amount. If not explicitly stated, we also assume that the channel capacity between each connection is negligible, and always infinite. Numerically, all neuron also has infinite numerical representation range, at least when it comes to the real number field $\mathbb{R}$. 
+    \item[(+)] All neuron class can be subsequently reduced to the standard basis neuron class $N_{0}$. 
+    \item[(+)] The input section $I$ only process data by packaging each input channel with a modifiable weight $w$, or the importance measure, and nothing more. 
+    \item[(+)] All information or materials assigned in the operating and living space of the model is numerical, perhaps. As such, we might want to insist on a clear \textit{representation scheme}, and a embedded structure within all numerical system used to represent it. 
+    \item[(+)] Each neuron has two types of parameters: the macroscopic parameters that define its structure, called \textbf{hyperparameter}, and the inner mechanism-specific parameters, called the \textit{systemic parameters} that is intrinsic of the inner configuration and operation. For our theoretical treatment and applications of the model, our model assumes \textbf{static construction} but \textbf{dynamic mechanics} for said construction. The reverse is noteworthy of being analysed, and this criteria in general is an interesting notion. 
+    \item[(+)] A consequence of the single-directed flow is that one can form a neuron loop with two or more neuron together. For a network of connected neuron, we said that it is an \textbf{isolated}, or contained network if no connection is headless - not connected to any of the given neuron. 
+    \item[(+)] A neuron can perform \textbf{self-loop} - feeding itself of its own output. This scales up for network as well.  
+    \item[(+)] Correction within connections of neuron is negligible and is almost non-existence in context. If there exists noise or unwanted information, then it will almost be presented in the input observations and information - any external sources. 
+\end{itemize}
+
+Each neuron can also be defined by either design, or by operation, to be independent of each other. This is often conducted by defining the relative dependency, given the assumption in design of being single-directed, most representable by the notion of \textbf{layer}\index{layer}, denoted by $\mathcal{L}^{(i)}$. A layer is, loosely speaking, an ensemble of neuron units, all of which is arranged in parallel, with equal processing order, that is, they operate sequentially parallel as a cluster on their own. Then, each layer defines the relative dependency to the previous layer, if there are any, and hence, a neuron only depends on the behaviour feed of neurons in previous layers. For a neuron $n[i]\in \mathcal{L}^{(j)}$, however, it can also be designed such that inhibitory neuron in $\mathcal{L}^{(j-1)}$ does not affect its operation or signals of other neurons in operation. For example, that is why a lot of typical construction of neuron use $\Sigma = \sum_{i=1}^{n} w_{i}p_{i}[R]$ for input sequence $p[R]$ of range $R$, such that if one neuron is inhibitory ($=0$), then others are not affected. This is perhaps trivial, and should not have been mentioned, but I mention it anyway. 
+
+Using the better, well-founded notion for $(S,Q,M)$, we then define a more conclusive definition of the conceptual neuron model. 
+\begin{definition}[Neuron model, neuron class]
+    The neuron model conceptually can be encapsulated into the categorization of all \textbf{neuron class} $\mathcal{N}_{k_{i}}^{(i)}$\footnote{This description is perhaps incomplete, but we will use it throughout our formation as it is. the suffix $k$ relies on the arbitrary meaning of a \textit{configuration space}, hence $k_i$ is all arbitrary configurations possible for structure of order $i$.}, for $i=1$, specified by two descriptions for any neuron $n\in \mathcal{N}_{k_{i}}^{(i)}$: An quantized, 'parameter(-ized)' descriptions contains all variables or parameters that define the \textbf{represented mass} of the model, denoted $N$, and the operational description contains, for example, rules, flows, cases, orders, functionals, special values, denoted by $\mathcal{M}$. We can also call the neuron class as the \textbf{hypothesis class}, for $h\in \mathcal{H}$ of a given description.
+    \label{def:neuron_class_model}
+\end{definition}
+
+An interesting question (perhaps can be said to be fairly long, and an \textit{interesting side tangent}) arises when we state out those question by ourselves, and is perhaps more importance in the sense of information theory and perhaps, quantum mechanical interpretation. \footnote{A trivial note. In the process of neuron functions, there will always be information down scaling and dimensional transformation. Information losses and reinterpretability is questioned, as always, but might be redundant as it is. }
+\begin{question}
+    How is information, or \textbf{resources per matters} are preserved or transmitted in an artificial neuron $a$ of a given neuron class of both standard basis or more? Are all information destroyed figuratively, if one assume no knowledge from the external modifier side (in a typically learning process, one requires a supervisor with full exposure to the internal mechanics of the neuron model - or generally the hypothesis). Given two neuron acting on the same scenario, but with diverted process, can one revert the information to retrieve the opposite reversed neuron respectively, in which we call the standard one the \textit{encoder}, and the opposite the \textit{decoder}? What is their topology?
+\end{question}
+For this question, we have to deal with a lot of things more before the experimental setting can be structured to test it. Another point to note is that usually, one can treat the neuron component $f$ as the neuron's intrinsic interpretation of the encoding space. What does the encoding space means will be further defined and explored, but for now, you can picture it as its interpretation in the numerical encoding of the world and observations thereof. The question above indicted the issues toward the lack of analysis in such aspect, however, we would like to present interesting notions on said view, for example, \cite{liu2025kankolmogorovarnoldnetworks} with their \textbf{Kolmogorov-Arnold Networks (KAN)}. We leave this for now in favour of the foundational assembly of our model, to be discussed in later sections.  
+\subsection{Class separation}
+The final issue that have not been discussed yet, however, is to cut out the notion of class categorization in our general idea. Specifically, \textit{what constitute the class separation} of its entirety? To separate something means to based of some specific quality to classify them into hierarchy in our case - and such depends on a scale of which items can be put up in order, with less ambiguity than what is tolerated. What is then such scale to apply on the neuron units' classes? 
+
+Toward such issue, it is rather fairly simple, though not particularly troublesome in the potential downfall of such specific organization. Previously, we bargained on the stance of separating the model of operational machines into two main aspects - the process running on itself, and the acute facilities, both \textit{existential} and \textit{functional} of the machine. Per our view, the neuron class refers to the facility and not the process, of which process is then the unique combinations and configuration of the facilities provided. Coupled this with the notion, or rather, the principle of construction such that the first class $\mathcal{N}_{n-1}$ supersedes $\mathcal{N}_{n}$ of its functions and main compartmentalization (that is to say, using $n-1$ as main component in constructing $n$), then the scale of hierarchy is simple --- separating by virtue of nested construction, or the path of dependency. 
+\begin{theorem}[Class separation principle]
+    Given two neuron class, $\mathcal{N}_{n-1}$ and $\mathcal{N}_{n}$ relatively. Then, of the decomposition of neuron class (as in theorem~\ref{def:neuron_class_model}), as $\mathcal{N}=\{\mathcal{M},N\}$, then the ordering makes sense if $N=\mathcal{N}_{n-1}$, that is to say, \textit{components of $\mathcal{N}_{n}$ consists of largely $x\in \mathcal{N}_{n-1}$}. Or rather, for two arbitrary $\mathcal{N},\mathcal{N}'$, then if the following holds: 
+    \begin{equation}
+        \sup_{x\in \mathcal{N}} \lvert x\rvert = y \in \mathcal{N}'
+    \end{equation}
+    Then we say that $\mathcal{N}$ is of higher class than $\mathcal{N}'$, and can be assigned of high index $i\in \mathbb{N}$. 
+\end{theorem}
+This principle holds for any organized system. However, usually, we will find ourselves confined in designs and prototypes that have no distinctive and unique class categorization by itself. In such case, we consider them \textbf{rogue class}, of which goes out of the scope for such principles and laws being used in the theory, since they cannot be applied on. \index{rogue class}
+\section{Notation}
+Before we construct neurons and their individual components, we would have to select and systemize our choices of the notation specifically. We make deferences of the neuron class, such that all neuronal architecture class is denoted by $\mathcal{N}_{i}^{(p)}$, for any variation $p$ of the neuron class of level $i$ in the relative scale, for $i\geq k$. A specific \textit{network construction} of the neuron, is then called neural network, denoted by $\mathfrak{N}$. Distinguishing between neural networks altogether would be used of varied subscripts and superscripts, as there exists no strict rules on them. Each \textbf{neuronal unit} (or just neuron instance) is denoted by $N\in \mathcal{N}_{i}^{(p)}$. Component-wise, we can also write $\mathfrak{N}=\prod_{i< k} \mathcal{N}_{i}$ by the Cartesian product on the neuron set (we typically use neuron set and class in conjunction with each other anyway) to represents different configuration possible, or at least the space of which the neural network takes from. Hence, for example, if $k=5$ for 6 classes of neuron in participation, we would have: 
+\begin{equation}
+    \mathfrak{R} = \prod_{i<k} \mathcal{N}_{i}^{c_i} = \mathcal{N}_{0}^{c_{0}}\mathcal{N}_{1}^{c_{1}}\times\mathcal{N}_{2}^{c_{2}}\times\mathcal{N}_{3}^{c_{3}}\times\mathcal{N}_{4}^{c_{4}}\times\mathcal{N}_{5}^{c_{5}}, \quad \{c_{1},c_{2},c_{3},c_{4},c_{5}\in \mathbb{N}\}
+\end{equation}
+with $\{c_{i}\}_{k}$ the set of the number of neuron in construction, which is analogous to different configuration space for each of them. The component of individual neuron is then denoted generally by $q_{j}$ for $j$ the index for all $r$ components of a neuron; $r$ is also available as specification from the neuron class, however, subsets of each neuron class might have just different $r$. We will proceed with the above notation, and any given improvements or changes in notations will be specific instead. 
+
+\section{Classical neuron template}
+
+As we might have observed, neuron has its own familiar properties and characteristics that defines the name `neuron'. We then might as well classify the neuron in an operational sense - purely as a working, functional mechanics. Then, a \textbf{neuron} $x\in \mathcal{N}$ of any class will have to have the following component classifications as its minimal requirement to be classified as such: 
+\begin{enumerate}[topsep=1pt,itemsep=0.5pt,leftmargin=18pt]
+    \item One external state unit, or \textbf{input unit} $I$ to interpret received information. \index{input unit}
+    \item One internal state and action units, or \textbf{mechanical unit} $M$. This includes the \textit{mass} - what is used to express it, and the \textit{operation} - what is used to process it. \index{mechanical unit}
+    \item One external action unit, or \textbf{output unit} $O$. This can be considered to be the \textit{product} of the model, or \textit{observables} that we can see of the model. \index{output unit}
+\end{enumerate}
+We can define this formally as a definition, though it does not change much from the original presumption rather than stating the already established notion. However, we will then call such as a framework. \index{minimized structure}
+\begin{definition}[Minimization set]
+    Let $x$ be a neuron of arbitrary neuronal classification $\mathcal{N}$. Then, the requirement of all neuron class is to be able to distinguish its component to three parts, that is, $\min_{\mathcal{N}_{i}\in \mathcal{N}}{\mathcal{N}_{i}}\equiv \mathcal{I}, \mathcal{M},\mathcal{O}$ where $\mathcal{I}$ is the input channel, $\mathcal{M}$ the internal mechanics, and the output $\mathcal{O}$. Let $i,j,k$ represents the cardinality of each part respectively, then if
+    \begin{equation}
+        i=j=k=1, \quad \min_{\mathcal{N}_{q}\in \mathcal{N}}{\mathcal{N}_{q}} = \mathcal{N}_{q}, \forall q \geq 0
+    \end{equation}
+    Then we call this class of neuron the \textbf{minimal neuron class}, and any $x\in \mathcal{N}_{i}$ of such is called the \textbf{minimal neuron} or \textbf{standard neuron}, denoted by $x_{S}$. By default, this is satisfied if $q=0$ in our construction. \footnote{The constant $i$ here refers to the organization numbering of nested classes built upon by another components. In such, we observe that this construction implicitly defines itself to be the simple zeroth class.}
+\end{definition}
+With this condition, any construct $x$ of this type would be called a neuron unit. There is simply no configuration specified, so $x$ can belong to any $q$th class. This is illustrated as in Figure~\ref{fig:nn1}. Every member of a class would then be concerned of largely those objects that can be classified as such. 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/nn1.png}
+    \caption{\textbf{The standard minimal configuration of any neuron $x\in \mathcal{N}_{i}$}. We denote $p$, $q$ for particular neuron input and output sequences.}
+    \label{fig:nn1}
+\end{figure}
+
+Even though we insisted on the components, many times they can be missing from the neuron yet would still be called as such. In such "edge case", we can employ the notion of inhibition or blocking to represent, or at least interpret the absence of such action as to be blocked, rather than the missing of such component. Therefore, a neuron without $\mathcal{I}$ is called an \textbf{isolated (neuron) unit}, a neuron without $\mathcal{O}$ is called an \textbf{endpoint (neuron) unit}, and a neuron without $\mathcal{M}$ mutation is called a \textbf{dummy (neuron) unit}. More importantly, dummy units will be used in plenty illustrations and formation to classify typical linear behaviour, unchanged instructions, or placeholders. 
+
+Furthermore, as we have been seeing from the formulation, it is also of interest to know why we implicitly want to have only one unit for each type of components. Thereby, we would also define the component classes. Hence, there exists the \textbf{input (unit) class}, the \textbf{output (unit) class} and the \textbf{internal (unit) class}. And as the definition above hold, the reason for minimal class to be satisfied is not special at all. Well, at all. It simply is to restrict the component class, and to somewhat prevent unnecessary constructions that would lead to overcomplication later, for example, by not examining standard component, the dilemma between many-input and single-input neuron will get far more complex. Mentioning this, and countering this by force at hand is perhaps more suited as for now, so that we will not encounter the same later on. And it also applies with our view on constructing everything similarly to computers and electrical components constructs larger units. Then, let's see how we can make use of the standard neuron first, by introducing the first class - the class \textbf{$\mathcal{N}_{0}$ simplex}. You also might have noticed that this is simply in normal theory, the single unit neuron. 
+\section{Class $\mathcal{N}_{0}$ simplex}
+When we begin with everything, we start with the smallest and most fundamental unit. In this case, it refers to components of the same type categorized into the \textbf{class $\mathcal{N}_{0}$ simplex} \index{$\mathcal{N}_{0}$ simplex}(not complex). The first neuron structure is the single-input, single-output, \textit{minimal neuron construct}. A neuron $N\in \mathcal{N}_{0}$ considers all special neuron construction such that $\mathcal{N}_{0}=\{I,M,O\}$, where $I$ represents the input module (and its processor), $M$ is the inner structure of the neuron, and $O$ represents the output unit of it. The first neuron of the class $\mathcal{N}_{0}$ is called the standard neuron, historically introduced throughout by \cite{mcculloch_logical_1943,nakkiran_deep_2019,goodfellow2016deep}. But first, let us introduce to the familiar notion of a standard neuron, through the lens of its components in $\mathbb{R}$. \index{$\mathbb{R}$ standard neuron.}
+\begin{definition}[Standard neuron on $\mathbb{R}$]
+    A neuron unit $x\in \mathcal{N}$ belongs to class $\mathcal{N}_{0}(\mathbb{R})$ and is called a \textbf{standard neuron on $\mathbb{R}$} if it satisfies the minimization set criteria, and can be written of the form: 
+    \begin{equation}
+        x = q = \sigma_{\mathcal{M}}(w\cdot p + b),\quad  p\in \mathcal{I}\subset \mathbb{R}, w,b \subset \mathbb{R}\subset \mathcal{M}, \sigma: \mathbb{R}\to \mathbb{R} \in \mathcal{M}, q \in \mathcal{O}
+    \end{equation}
+    If $\sigma$ is linear unit, that is, $\sigma(wp+b)=wp+b$, then we say $x$ is a \textbf{linear standard unit}. \footnote{One might ask why we use the product and addition in the formula of $wp$ and then $b$. In fact, this is perhaps more trivial - as to facilitate the concept of \textit{linearity} - the formulation looks exactly like the linear line in a plane. Furthermore, as we will soon see, it is also of interest such that units of neurons can be linearly combined in a way, at least of computational aspect in running it on computers.} 
+\end{definition}
+
+Using this definition, we have constructed a standard neuron without any single component added outside the categorization above. While we have been saying arbitrarily placeholder for the components, it's then we have to clarify the options and specification for each component. 
+%\begin{figure}[htb]
+%    \centering
+%    \resizebox{0.6\textwidth}{!}{
+%            \begin{tikzcd}
+%	& w \\
+%	I & \sum & \sigma && q \\
+%	&& b
+%	\arrow[dashed, from=1-2, to=2-2]
+%	\arrow["{p\: (1)}", dashed, from=2-1, to=2-2]
+%	\arrow["{wp+b}", from=2-2, to=2-3]
+%	\arrow["{\sigma(wp+b)\: (3)}"', from=2-3, to=2-5]
+%	\arrow[dashed, from=3-3, to=2-2]
+%        \end{tikzcd}
+%    }
+%\end{figure}
+%\[\begin{tikzcd}[sep=large]
+%	& w \\
+%	I & \sum & \sigma && q \\
+%	&& b
+%	\arrow[dashed, from=1-2, to=2-2]
+%	\arrow["{{p\: (1)}}", dashed, from=2-1, to=2-2]
+%	\arrow["{{wp+b}\: (2)}", from=2-2, to=2-3]
+%	\arrow["{{\sigma(wp+b)\: (3)}}"', from=2-3, to=2-5]
+%	\arrow[dashed, from=3-3, to=2-2]
+%\end{tikzcd}\]
+
+\vspace{0.00mm}
+
+\begin{figure}[!htp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/standard_n0_class.png}
+    \caption{Commutative diagram of the standard $\mathcal{N}_{0}(\mathbb{R})$ class. The in-out objects are denoted in blue, the operators are denoted in red, and the objective mass (parameters) are denoted in yellow. The procedure is then denoted of four successive processes of $S_{i}$, up to $S_{4}$.}
+    \label{fig:comm_diag_standard_neuron}
+\end{figure}
+Figure~\ref{fig:comm_diag_standard_neuron} is the illustrative diagram for the flow of operation of a standard neuron. As we can see, it receives input, which can be thought of as generally just $\mathcal{I}$, if there exists no modification or filtering of the input, which is not in this case. Two parameters $w,b$ is the neuron's internal mechanistic part that dictates how the input is controlled by a factor of multiplicative and additive; and finally $\sigma$ attains the interpretation of the neuron to the data itself. Since there's nothing else to work on after $\sigma$ processes the input modified, we output it to $q$, hence completing a cycle. Note that this construction abides the $(1,1,1)$ template, and hence $x$ is a minimal neuron. Hence, we have that \textit{all $x\in \mathcal{N}_{0}(\mathbb{R})$ is standard}, or $\mathcal{N}_{0}(\mathbb{R})$ is the subset of the \textbf{standard neuron class}. \index{standard class}
+
+This neuron class is fairly simple, since it has only one channel of action and one channel of input. Its configuration can also be easily modified. However, the reason why there exists the modifier $(\times, +)$ is troublesome. Why we need it? Heuristically, it is because of the observations that biological neurons have this kind of \textit{inhibiting} approach, such is to completely block specific information flow from the synapse. Hence, it is also then to facilitate that kind of behaviour. Another answer to this question is to consider the standard neuron in this case without $\sigma$. Then, the standard neuron becomes an \textit{amplifier unit}, that is, for $0\leq w<1,-p<b<0$, it inhibits the input information, while for $1\leq w,b>0$, it amplifies the input. If the signal is negative, however (generally speaking or biologically speaking, negative activity seems redundant as nonexistent), then $w\neq 0,b<0$ and $w>0,b>0$ are the respective inhibition and amplification range - absurdly simpler than the positive case. This is the \textbf{operational approach} to justifying this. However, if $\sigma$ is in definition, we would have trouble with this interpretation. In such case, we can say that the above action \textit{shift the perception range}, that is, interpreting the input as more than it is, or lower than it is, thus reducing or expanding the perception range of the neuron. Furthermore, it is also intuitive to recall that positivity and negativity only works as a notion, when there exists an \textbf{encoding} that is specific of such. Thereby, it is then important to note of the necessity of an encoding or reference frame when constructing and interpreting such structure. Unlike in biological neuron where one can make distinction between positivity and negativity as to mean directions of electrical flow between neurons: \textbf{Excitatory Postsynaptic Potential (EPSP)} or \textbf{Inhibitory Postsynaptic Potential (IPSP)} thus representing positive or negative charges, we do not have such comfort in the simplified model itself. And we will have to make ado with defining our model in the most general way possible, as for an operational model in the sense of it operating under any configuration. 
+
+It is at this point that we note a perhaps considerable notion in between the dilemma of interpreting the standard neuron. In the above standard neuron on $\mathbb{R}$, we indict the entire environment to work on the encoding space of real number space, $\mathbb{R}$, and as scalar, singleton number. What if it is not the case, and instead the information received is singular, yet interpreted differently, for example, as a string of binary $0110010101$? Furthermore, what if there is mismatch between the data in, and the system to handle it? Based on the singleton structure, then this would be inadequate to resolve. We want a minimal structure, but there are a lot of things that is perhaps not trivial and is not minimal, hence makes the analysis fairly troublesome. We would likely want to generalize the neuron class as such. Figuratively, the \textbf{standard neuron on specific encoding $\mathcal{E}_{W}$} would be defined to be similar to the following diagram:
+
+\begin{figure}[!htp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{img/generalized_sn_1.png}
+    \caption{\textbf{Illustration standard neuron class $\mathcal{N}_{0}$}. $(a)$. We regard the component of the model as $\mathbf{M}$, consists of the mass and the operations $\mathbf{H}$. $(b)$. Instead of considering the operation as subcomponent of the model structure, decomposition gives them separated with two types of operation - either \textit{processing} operators (operations that prepare the parameters) or \textit{transforming} operators (act on the prepared processing that it receives).}
+\end{figure}
+This is more general than the standard neuron on $\mathbb{R}$. By configuration, it can also be defined to be a singleton, that is as followed. 
+\begin{definition}[Standard neuron]
+    A \textbf{standard neuron} is a 3-field $\mathcal{N}_{0}$ corresponding to $(\mathcal{I},\mathcal{M},\mathcal{O})$ such that the standard neuron (minimization set criteria) criteria is satisfied, and $\sigma_{\mathcal{M}}\in \mathcal{E}\subset \mathcal{M}$ belongs to the space $\mathcal{E}$ of all \textbf{encoding} of the neuron structure. 
+\end{definition}
+
+With this, on itself, the sign $(+,-)$ does not have any meaning. But, with the encoding, it would be interpreted as something and not just simply semantic. We also mandate that the input must be usable, otherwise, if its representation is different, we would not be able to work with each other effectively, or at all. 
+
+Now, let's talk about $\sigma$ itself. Usually, it is called a \textbf{transfer function} or \textbf{activation function}. Because it is a function, we note in this case, typically, its range and domain is $\sigma:\mathbb{R}\to\mathbb{R}$ of all reals. Transfer function, or activation function, as we have noted as fixed, can be chosen independently to satisfy some specification of the problem that the neuron will attempt to solve. 
+
+A variety of transfer function can be included, but most of the time, we would like to focus on certain types of them. For example, the \textit{hard limit function}, more piecewise function, \textit{linear function} $f(x)=x$ --- in the case where the processing preserves the combination, or \textbf{sigmoid}, $a=1/(1+\exp{-n})$. Recently, there is also the Rectified Linear Unit (ReLU)\index{ReLU} function, defined by $$y=\begin{cases}
+x & x \geq 0  \\
+0 & x < 0
+\end{cases}$$
+which takes inspiration from the rectification in signal processing. The list of all transfer functions can be found in the appendix section. 
+\subsection{Chaining standard unit}
+We can chain multiple standard neuron together, as their design allows for $x$ to give its output to $y$ as input, and so on for $z,q,f,g,\dots$. This is called \textit{single chaining}. For now, we would not dive too deep into its effect, however, we will have to define its structure and behaviour. \index{neuron chaining}\index{single chaining}
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/chaining1.png}
+    \caption{Chaining of multiple standard unit on each other.}
+    \label{fig:chaining_1_c5}
+\end{figure}
+Let's say we have three neurons (we shorten standard to this) $x_{1},x_{2}$ and $x_{3}$. Chaining basically can be seen as connecting or combining two neuron together by letting $p_{x_{2}}$ (the input), to be $\mathcal{O}(\sigma(wp+b))=\sigma(wp+b)$, which we would denote it simply as $\sigma(x_{2})$ for clarification, and because the output $\mathcal{O}$ only is there to specify the flow. Hence, in this sense, we can separately illustrate the progress for the transition function such that,
+\begin{equation}
+    p(x_{1}) = p_{1}, \quad p(x_{i}) = \sigma_{i-1}(x_{i-1}) \: \: \forall i \geq 2
+\end{equation}
+similar to how function chaining is performed. Hence, we gain the functional chain $\sigma_{1}\circ \sigma_{2}\sigma_{3}$. Extend this to $n$-length chaining will give $n$-composition of $\sigma$. 
+
+\begin{figure}[!htp]
+    \centering
+    \includegraphics[width=\textwidth]{img/function.png}
+    \caption{Illustration of the chaining process and the nested function chaining between $\sigma_{i}$.}
+\end{figure}
+To express this more clearly, let's take $wp+b$. Then we have: 
+\begin{align*}
+    p(x_{1}) &= p_{1}\\
+    p(x_{2}) & = \sigma_{1}(x_{1})=w_{2}(\sigma_{1}(w_{1}p_{1}+b_{1}))+b_{2}\\
+    p(x_{3}) & = \sigma_{2}(x_{2})= w_{3}[\sigma_{2}(w_{2}(\sigma_{1}(w_{1}p_{1}+b_{1}))+b_{2})]+b_{3}\\
+    \vdots & \\
+    p(x_{n}) & = \sigma_{n-1}(x_{n-1}) = \sigma_{n-1}\Big[w_{n-1} \{ \sigma_{n-2}(w_{n-2}(w_{n-3}(w_{n-4}\dots)+b_{n-3})) + b_{n-2} \}\Big]
+\end{align*}
+This looks rather confusing, so we might be more inclined to look at this in a more simplified manner, for $n=3$, thus three neuron $x_{1},x_{2},x_{3}$ as above to see what is going on with the chaining calculation, and with specific activation function for said purpose. Let's take $\sigma(x)=1/(1+\exp{-n})$, the sigmoid one. Then: 
+\begin{equation}
+    \mathcal{O}(x_{1}) = \frac{1}{1+\exp{[-(wp+b)]}}
+\end{equation}
+As for chaining, we observe that $p_{x_{2}}=\mathcal{O}(x_{1})$, hence: 
+\begin{equation}
+    \mathcal{O}(x_{2}) = \left\{ 1+ \exp{\left[ -w_{2}\left( \frac{1}{1+\exp{[-(wp+b)]}}\right) - b_{2} \right]} \right\}^{-1}
+\end{equation}
+Finally, for $p_{3}=\mathcal{O}(x_{2})$, then we have: 
+\begin{equation}
+\mathcal{O}(x_{3})
+=
+\left[ 1+ \exp{-w_{3}\left[ 1+ \exp{\left(1+\left[ -w_{2}\left( \frac{1}{1+\exp{[-(wp+b)]}}\right) - b_{2} \right]\right)} \right]^{-1} - b_{3}} \right]^{-1}
+\end{equation}
+This would take quite long, and as it suggest, the sequence indeed decreases by itself up to $k$th chaining. Now though, the interesting part is, what is their effects? And how they work together? Let us start with the generic composition, for $w=1, b=0$ throughout. This is illustrated in Figure~\ref{fig:sigmoid_illustration_1}. 
+
+\begin{figure}[htbp]
+  \centering
+  % first sub‑figure (32% of textwidth)
+  \begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/sigmoid_illus_x1.png}
+    \caption{First sigmoidal node.}
+    \label{fig:a_sigmoid_1}
+  \end{subfigure}\hfill
+  % second sub‑figure (32% of textwidth)
+  \begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/sigmoid_illus_x2.png}
+    \caption{Second sigmoidal node.}
+    \label{fig:a_sigmoid_2}
+  \end{subfigure}\hfill
+  % third sub‑figure (32% of textwidth)
+  \begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/sigmoid_illus_x3.png}
+    \caption{Third sigmoidal node.}
+    \label{fig:a_sigmoid_3}
+  \end{subfigure}
+
+  \caption{Initial starting configuration for \(x_{1}, x_{2}, x_{3}\) and their functionals \(\sigma_{1}, \sigma_{2}, \sigma_{3}\) under the same initializer.}
+  \label{fig:sigmoid_illustration_1}
+\end{figure}
+
+Let us then refer to the configuration as $\mathbf{w}, \mathbf{b}$ for the vector $\mathbf{w}$ of all control parameters $w$ and $b$. For $w_{i}>0, b=0$, nothing changes aside from the contraction of the shape itself. This is apparent of the elementary precalculus notion of warping and shifting. Hence, $b$ handles the shifting range. For $\mathbf{w}=(2.0,-2.5,2.5)$, the behaviour switch between successive neuron, that is, for specific sign shift between them. 
+
+Before moving on, let's see what is available for that specific configuration. This is illustrated clearly in Figure~\ref{fig:sigmoid_illustration_2}.
+
+\begin{figure}[h!]
+  \centering
+  % first sub‑figure (32% of textwidth)
+  \begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/sigmoid_illus_x1_2.png}
+    \caption{First sigmoidal node.}
+    \label{fig:a_sigmoid_1_2}
+  \end{subfigure}\hfill
+  % second sub‑figure (32% of textwidth)
+  \begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/sigmoid_illus_x2_2.png}
+    \caption{Second sigmoidal node.}
+    \label{fig:a_sigmoid_2_2}
+  \end{subfigure}\hfill
+  % third sub‑figure (32% of textwidth)
+  \begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/sigmoid_illus_x3_2.png}
+    \caption{Third sigmoidal node.}
+    \label{fig:a_sigmoid_3_2}
+  \end{subfigure}
+
+  \caption{Sequential configuration for \(x_{1},x_{2},x_{3}\) and their functionals \(\sigma_{1},\sigma_{2},\sigma_{3}\) of the same initializer with \(\mathbf{w}=(2.0,-2.5,2.5)\).}
+  \label{fig:sigmoid_illustration_2}
+\end{figure}
+
+A fair lot of concepts and behaviours can be constructed using such sigmoidal chain. More specifically, it is the dependent categorization of specific encoding into a functional method. With such, specific configuration will yield different landing points on the graph. It also looks eerily like fuzzy logic, in one sense or another. However, what is the application for such presentation depends on what is the representation it is supposed to be indicted of, and how it can operate. In a stance, while the facility supports it, the action and life-time operation itself matters the most to the changing landscape. 
+
+An interesting phenomenon also happens with ReLU-like function, or rather, its precursor instead. For a \texttt{hardlim} functional, 
+\begin{equation}
+    \texttt{hardlims}[x] = \begin{cases}
+        -1 & x < 0\\
+        +1 & x \geq 0 
+    \end{cases}
+\end{equation}
+The end-result range would look like range-custom logic processor more than not, especially with chaining. Specifically, you can chain them as it is, however, their result range would be fairly small, with regard to the $(-1,+1)$ pair multiplier. 
+
+Again, what is used of it depends on the operation, configuration, and not simply the mathematical formulation of it. Interpretation matters in such regard because as it is, we are implicitly talking about the encoding of specific target to a language, in which case, we choose it to be an operational language process, just as neuron. In the subsequent sections, we will then discover that this scheme of emulating concepts and subject matter is perhaps, fairly effective of certain narrative of modelling.
+
+\section{Class $\mathcal{N}_{1}$ simplex}
+While we have been concerned of single-input neuron, and all structures that can be made of using such simple $\mathcal{N}_{0}$ class, it has its own inefficiencies. Depends on the circumstance, it might not be enough with it $(1,j,1)$ configuration, setting aside $j$ for extensible inner processing components. Depends on the encoding specified, the input might be limited, and certain concept, or rather mechanism might not be able to be simulated. For example, the 3-pair interaction relation would not be able to be simulated if one can only be influenced by in-out potential, while it requires 2, perhaps 3 depends on self-looping. If we reduce it to standard neuron configuration $(1,1,1)$, it is then even more limited. One potential fix would be to 'fix bayonet' and free up $i$, thus giving the construction of $(i,j,1)$. We call this \textbf{multivariate neuron}. If it is $(i,1,1)$, then we call it the \textbf{multivariate standard neuron}. All of such neurons then belong to the \textbf{class $\mathcal{N}_{1}$ neuron} simplex. \index{$\mathcal{N}_{1}$ simplex}. 
+
+\begin{figure}[!htp]
+    \centering
+    \resizebox{0.65\textwidth}{!}{
+        \begin{tikzcd}[ampersand replacement=\&]
+	{p_{1}} \\
+	{p_{2}} \&\&\&\& {\mathbf{b}} \\
+	{p_{3}} \&\& {\mathcal{I}(\Sigma)} \&\& {\mathcal{M}} \& {\sigma(\cdot)} \&\& \bullet \\
+	\vdots \&\& {\mathbf{w}} \\
+	{p_{r}}
+	\arrow[curve={height=6pt}, no head, from=1-1, to=3-3]
+	\arrow[curve={height=6pt}, no head, from=2-1, to=3-3]
+	\arrow[from=2-5, to=3-5]
+	\arrow[no head, from=3-1, to=3-3]
+	\arrow[from=3-3, to=3-5]
+	\arrow["{\mathbb{R}^{r}\to\mathbb{R}}", shift left, curve={height=-12pt}, from=3-3, to=3-5]
+	\arrow[from=3-5, to=3-6]
+	\arrow[from=3-6, to=3-8]
+	\arrow["{\mathbb{R}\to\mathbb{R}}", shift left=3, curve={height=-6pt}, from=3-6, to=3-8]
+	\arrow[from=4-3, to=3-3]
+	\arrow[curve={height=-12pt}, no head, from=5-1, to=3-3]
+\end{tikzcd}
+    }
+    \caption{\textbf{Illustrative simplified commutative diagram schematic of $r$-input neuron process unit.} The specific field dimension transition for a standard neuron of $\mathbb{R}$ is denoted specifically between transitions.}
+\end{figure}
+
+Typically, for functionality, we have more than one input that the neuron can handle. A neuron with $r$ amount of inputs is shown as: 
+\begin{align}
+    n & = \sum^{r}_{i=1}w_{i}p_{i}= w_{1}p_{1} + w_{2}p_{2}+w_{3}p_{3}+\dots w_{r}p_{r} + b= \mathbf{W}\mathbf{p}+b\\
+    a & = \sigma\left(\sum^{n}_{i=1}w_{i}p_{i}\right) = \sigma(\mathbf{Wp}+b)
+\end{align}
+Here, we fix the input aggregator, $\Sigma$, because usually this portion would not be configured too much aside from the fairly intuitive additive-multiplicative conjunction control $w_{i}p_{i}$. 
+\subsection{McCulloch-Pitts multivariate}
+Let's give examples to certain implementation of this type of neural structure for better or worse. For a single neuron, there exists many examples how people making their own configuration, plus properties. The most, easily oldest and nicely put neural structure is the \textbf{McCulloch-Pitts neuron}, by McCulloch and Pitts (1943). Given the series of inputs, that is, for $n_i \to \{x_1,\dots,x_n\}$, the internal mechanism $M$ consists of $(g,f)$ such that $g$ aggregates $n_{i}$, which is the same as the typical construction, and $f$ works as a serial, discrete logic transfer function. That is, 
+
+\begin{equation*}
+    g(n_i) = g(x_1,\dots,x_n) = g(\mathbf{x}) = \sum_{i=1}^{n} x_{i}, \quad y= f(g(\mathbf{x})) = \begin{cases}
+        1 & g(\mathbf{x}) > \theta \\
+        0 & \text{o.w.}
+    \end{cases}, \theta > 0
+\end{equation*}
+Here, $\theta$ is called the threshold parameter, and is typically, under context, not \textit{normalized} (we will see what does this mean in a much clearer context. For now, it means the entire operational range is between $[0,1]$). We notice that the operating space, in general, of the neural class, belongs to the predicate spaces of logical values, or at least the embedding of the logical space. Because this type of construction works by defining $f$ at the end tail of the process by a discrete unit, it can be formalized to construct others logical-relevant neural unit, for example, the $\mathsf{AND}$, $\mathsf{OR}$, $\mathsf{NAND}$, $\mathsf{NOR}$ and $\mathsf{NOT}$ unit. They are defined on all $x_{i}$ taking values in $\{0,1\}$, so that to mimic logical unit. Then, for $\mathsf{AND}$, we have: 
+\begin{equation}
+    \mathsf{AND} = (\mathbf{p},g,f_{\land}) \: \text{s.c} \: f_{\land}(g(\mathbf{x})) =\begin{cases}
+        1 & \forall \mathrm{card}(\mathbf{x}) = g(\mathbf{x})\\
+        0 & \text{o.w}
+    \end{cases}
+\end{equation}
+Here, $\mathrm{card}(\mathbf{x})$ means the \textit{cardinality} component-wise, which can also be written as just $\lvert\mathbf{x}\rvert$ as for the size. Hence, $\mathsf{AND}$ is true only when the cardinality is equal to the aggregated value, which is effectively the counting element. In such similar sense, we can then write $\mathsf{OR}$ as,
+\begin{equation}
+    \mathsf{OR}(\mathbf{p},g,f_{\lor})\: \text{s.c}\: f_{\lor}(g(\mathbf{x})) = \begin{cases}
+        1 & \text{o.w}\\
+        0 & g(\mathbf{x}) \neq 0
+    \end{cases}
+\end{equation}
+Since $\mathsf{OR}$ takes any value as long as it is not `empty' for it to be true, we can use the aggregator instead. This is then perhaps one of the way that the aggregator form $g$ is actually very useful in regard to identifier. 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.65\textwidth]{img/logic_unit_v1.png}
+    \caption{\textbf{Schematic of the $\mathsf{AND}$ and $\mathsf{OR}$ logical configuration}. The only change in their construction is that the criterion in the function is now different - from $|\mathbf{x}|=\Sigma(\mathbf{x})$ (which means all signals' sum must be equal to their absolute magnitude - in agree state), or $\Sigma(\mathbf{x})\ne 0$ (as long as a single signal is active is enough).}
+\end{figure}
+Continue on, $\mathsf{NOR}$ and $\mathsf{NOT}$ can be defined just the same. But for them, $i=1,2$ is the specific logical configuration; and also notice that in some way or another, we can construct $\mathsf{NOR}$ from $\mathsf{NOT}$. 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.15\textwidth]{img/logic_unit_v2.png}
+    \caption{Schematic of the $\mathsf{NOT}$ logical configuration.}
+\end{figure}
+Hence, the operation $\mathsf{NOT}$ is: 
+\begin{equation}
+    \mathsf{NOT}(\mathbf{x},f_{N}) : f_{N}(x) = \begin{cases}
+        1 & x = 0\\
+        0 & x = 1
+    \end{cases}
+\end{equation}
+Continuing, mathematically the $\mathsf{NAND}$ unit is formulated to be: 
+\begin{equation}
+    \mathsf{NAND}(\mathbf{p}, g,f_{\not\land}) : f_{\not\land}(g(\mathbf{x})) = \begin{cases}
+        1 & \text{o.w.}\\
+        0 & \forall \mathrm{card}(\mathbf{x}) = g(\mathbf{x})
+    \end{cases}
+\end{equation}
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=\textwidth]{img/logic_unit_v3.png}
+    \caption{Schematic of the $\mathsf{NAND}$ and $\mathsf{NOR}$ logical configurations.}
+\end{figure}
+
+As we can see, operations and further units are multivariate, and also can be combined with each other to construct a system, using only the base units, which falls in line of the neuron classification we made due of previously. While being illustrated as such, we also notice that it looks just as \textit{logical operations}, now just expressed as a processing unit. Taken from a representation-based aspect, we can consider the manifestation of logical operators in realization and existence similarly. In fact, some argue that within the McCulloch-Pitts standard basis (of logical units), it is a complete re-representation of \textbf{Boolean system} and computer structure, given additional ordering structures. So far, it means only of changing observation angle. 
+
+\subsection{Minsky-Papert Perceptron}
+A step up from McCulloch unit is the \textbf{Perceptron} (\cite{10.5555/50066}) of Marvin Minsky, and partially both of Rosenblatt. The second example is the definition of a \textit{perceptron} in Marvin Minsky's \textit{Perceptron} book (Minsky, Papert, 1970). His definition, per contrast, might seem a bit difficult to follow since it is based on predicate logic. In this example, we will follow those predicates definition and construction to understand what is being tried. 
+\vspace{2mm}
+
+Marvin Minsky is particularly interested in several of his \textit{world representation}, tackling mundane problems that make use of the physical world, for example, geometrical classification and decision. Thereby, a lot of his constructions contains the geometrical arguments, just as we will soon see. His idea, however, perhaps also is based on the living state space that the processing unit would have to operate on, and thus the world that it sees, as much geometrical or numerical as it gets. 
+
+Let $R$ be the space $\mathbb{R}^{2}$, and $X$ be a geometric figure drawn on $R$\footnote{In his book, \textit{Perceptron}, it is the main topic of geometrical learning that is mostly discussed, so a lot of examples and definitions might lean on the geometrical tasks side of things.}. Let $\psi(X)$ be a two-valued function of $X$ on $R$, usually think of as $0$ or $1$. By this embedding, we have created the \textit{predicate} on which $\{0,1\}\mapsto \{F,T\}$, or there are now variable statement whose truth or falsity depends on the choice of $X$. For example, the predicate
+\begin{equation*}
+    \psi_{\text{circle}} (X) = \begin{cases}
+        1 & X \text{ is a circle}\\
+        0 & \text{o.w.}
+    \end{cases}
+\end{equation*} 
+calculate the \textit{membership criteria} for a circle construct, such that the geometrical shape is provided of $X$. Hence, we know that the predicate works more like classification and categorization units, as have been mentioned. 
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/minsky_perceptron_predicate_1.png}
+    \caption{Results and values of the predicate $\psi_{\text{circle}}$ on various geometrical shape. The detail of what gives the criterion is not mentioned, however implicitly defined to be naturally encoded. Taken from \cite{10.5555/50066}.}
+\end{figure}
+
+For a convex figure, we have the according predicate $\psi_{\text{convex}}$, such is also 
+\begin{equation}
+    \psi_{\text{convex}} = \begin{cases}
+        1 & $X$ \text{ is a connected convex figure}\\
+        0 & \text{otherwise}
+    \end{cases}
+\end{equation}
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/minsky_perceptron_predicate_2.png}
+    \caption{Results and values of the predicate $\psi_{\text{convex}}$ on various geometrical shape. While still being implicitly defined, computationally this predicate takes more complexity than the circle predicate. Taken from \cite{10.5555/50066}.}
+\end{figure}
+
+Additionally, we define some very much simpler predicates, in which for the sake of clearness, denoted by $\varphi$. So, for example, for $X\subset R$, the recognize predicate is that: 
+\begin{equation*}
+    \varphi_{p}(X) = \begin{cases}
+        1 & p \in X\\
+        0 & \text{o.w.}
+    \end{cases}
+\end{equation*}
+or by extending this for an entire subset $A$: \begin{equation*}
+    \varphi{A}(X) = \begin{cases}
+        1 & A \subset X\\
+        0 & \text{o.w.}
+    \end{cases}
+\end{equation*}
+So, for a typical system, Marvin devised the scheme of working on a listing of \textbf{predicate}: functions and op-code that acts like logical predicate, for $\varphi$ being those simpler predicate (the \textit{ground} predicate), and $\psi$ the constructed, more complex predicate. In the end, they would work together to devise specific structures from it. 
+
+\subsubsection{The concept of `locality'}
+
+There are still a few preliminaries before defining the Minsky-Papert Perceptron. Properties elementary to those predicate includes the concept of \textbf{locals}. We define it as original, which requires the definition of set convexity: 
+\begin{definition}[Set-theoretic convexity on $R$]
+    A set $X$ fails to be convex if and only if there exists three points such that $q$ is in the line segment joining $p$ and $r$, and: 
+    \begin{itemize}[noitemsep,topsep=0pt]
+        \item $p\in X$. 
+        \item $q\not\in X$. 
+        \item $r\in X$
+    \end{itemize}
+\end{definition}
+Thus we can test for convexity by examining triplets of points. Because all the tests can be done independently, and the final decision made by such a logically simple procedure, unanimity of all tests, Minsky propose it as a kind of "local" conjunction. 
+
+We then define the notion of \textit{conjunctively local}:
+\begin{definition}[Conjunctively local]
+    A predicate $\psi$ is \textbf{conjunctively local} of order $k$ if it can be computed by a set of $\Phi$ of predicates $\varphi$ such that: 
+    \begin{itemize}
+        \item Each $\varphi$ depends upon no more than $k$ points of $R$. 
+        \item The predicate $\psi(X)$ is evaluated by: \begin{equation}
+            \psi(X) = \begin{cases}
+                1 & \varphi(X) = 1\forall \varphi \in \Phi \\
+                0 & \text{o.w.}
+            \end{cases}
+        \end{equation}
+    \end{itemize}
+    In such sense, $\psi_{\text{convex}}$ is conjunctively local of order 3.
+\end{definition}
+
+Computed here refers to the analogous mention of \textit{parallel computation}, in which is described by calculating $\psi(X)$ with the computation of \textit{independent predicate} $\varphi_{1}(X),\varphi_{2}(X),\dots$ and then combine the result by means of a function $\Omega$ of $n$ arguments to obtain $\psi$. 
+
+Now, the perceptron structure is defined as followed. First, we determine the linearity argument of the problem. 
+\begin{definition}[Minsky, linearity of predicate]
+    Let $\Phi = \{\varphi_{1},\dots,\varphi_{n}\}$ be a family of predicates. We will say that $\psi$ is linear with respect to $\Phi$ if there exists a number $\theta$ and a set of numbers $\{\alpha(\varphi_{1}),\dots,\alpha(\varphi_{n})\}$ such that \begin{equation}
+        \psi(X) = 1 \leftrightarrows \alpha(\varphi_{1})\varphi_{1}(X) + \dots + \alpha(\varphi_{n}) \varphi_{n}(X) > \theta
+    \end{equation} 
+    In the same notion, $\theta$ is called the \textbf{characteristic threshold}, and $\alpha$ are called weights. 
+\end{definition}
+The intuition of this is that each predicate $\Phi$ is supposed to provide some evidence about whether $\psi$ is true for any figure $X$. A subject that can solve this problem is called a \textbf{perceptron}: 
+\begin{definition}[Minsky, perceptron]
+    A \textbf{perceptron} is then a device capable of computing all predicates which are linear in some given set $\Phi$ of partial predicates. 
+\end{definition}
+The family of perceptrons is numerous. Under such definition, there are plenty of
+\begin{enumerate}[noitemsep]
+    \item \textbf{Diameter-limited perceptrons}: For each $\varphi$ in $\Phi$, the set of points upon which $\varphi$ depends is restricted not to exceed a certain \textit{fixed diameter} in the plane. 
+    \item \textbf{Order-restricted perceptron}: We say that a perceptron has order $\leq n$ if no member of $\Phi$ depends on more than $n$ points. 
+    \item \textbf{Gamba perceptron}: Each member of $\Phi$ may depend on all the points but must be a "linear threshold function" (that is, each member of $\Phi$ is itself computed by a perceptron of order 1, as defined.) 
+    \item \textbf{Random perceptron}: These are the form most extensively studied by Rosenblatt: the $\varphi$ are random Boolean functions. 
+    \item \textbf{Bounded perceptron}: $\Phi$ contains an infinite number of $\varphi$, but all the parameters $\{\alpha\}$ lie in a finite set of numbers. 
+\end{enumerate} 

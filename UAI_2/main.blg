@@ -1,0 +1,134 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: content/introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: content/reading.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter1.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc1.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc2.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc3.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc4.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc5.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc6.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc7.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc8.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter2.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter3.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter5.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter6.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/chapter6cs1.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/chapter6cs2.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter7.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter1prob.aux
+Reallocating 'name_of_file' (item size: 1) to 32 items.
+A level-1 auxiliary file: content/prob/chapter1.5prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter2prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter3prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter4prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter5prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter6prob.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: content/main/chaptert1.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: content/main/chaptert2.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Database file #1: reference1.bib
+Reallocating 'field_info' (item size: 4) to 10012 items.
+Warning--I'm ignoring boucheron_concentration_2013's extra "doi" field
+--line 1455 of file reference1.bib
+Warning--entry type for "tunali2019empirical" isn't style-file defined
+--line 2979 of file reference1.bib
+Warning--I didn't find a database entry for "zhang2023mathematical"
+Warning--to sort, need author or key in VeltenetalMathematicalModelling
+Warning--to sort, need author or key in noauthor_bias-variance_nodate
+Warning--to sort, need author or key in unified_bias_composition
+Warning--to sort, need author or key in noauthor_pdf_nodate-1
+Warning--to sort, need author or key in noauthor_neural_nodate
+Warning--empty year in noauthor_bias-variance_nodate
+Warning--empty year in noauthor_neural_nodate
+Warning--empty year in noauthor_pdf_nodate-1
+Warning--empty year in unified_bias_composition
+Warning--empty year in achlioptas_stochastic_nodate
+Warning--empty year in achlioptas_stochastic_nodate
+Warning--can't use both volume and number fields in bartlett2005local
+Warning--empty booktitle in Briggs2014MachineE
+Warning--empty booktitle in Cristianini2000AnIT
+Warning--empty journal in DreyfusImpasse1979
+Warning--empty year in modelcomplex_exp
+Warning--empty publisher in STL_Hajek_Maxim_2021
+Warning--empty year in GRP_Hamilton
+Warning--empty year in GRP_Hamilton
+Warning--empty title in 1180370208
+Warning--empty chapter and pages in 1180370208
+Warning--can't use both volume and number fields in Mei2022TowardsBridging
+Warning--empty year in neurondoctrinemishqat
+Warning--empty booktitle in Pinter2019ABO
+Warning--can't use both author and editor fields in Shapiro1997-SHAPOM-18
+You've used 200 entries,
+            2773 wiz_defined-function locations,
+            1852 strings with 43834 characters,
+and the built_in function-call counts, 86631 in all, are:
+= -- 7758
+> -- 4783
+< -- 156
++ -- 1656
+- -- 1445
+* -- 6606
+:= -- 13355
+add.period$ -- 790
+call.type$ -- 200
+change.case$ -- 1049
+chr.to.int$ -- 189
+cite$ -- 430
+duplicate$ -- 4032
+empty$ -- 7295
+format.name$ -- 1748
+if$ -- 18356
+int.to.chr$ -- 12
+int.to.str$ -- 1
+missing$ -- 180
+newline$ -- 1182
+num.names$ -- 791
+pop$ -- 2347
+preamble$ -- 1
+purify$ -- 879
+quote$ -- 0
+skip$ -- 3181
+stack$ -- 0
+substring$ -- 2097
+swap$ -- 481
+text.length$ -- 29
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1975
+warning$ -- 25
+while$ -- 710
+width$ -- 0
+write$ -- 2892
+(There were 28 warnings)

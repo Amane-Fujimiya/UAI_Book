@@ -1,0 +1,91 @@
+\contentsline {chapter}{Contents}{2}{section*.1}%
+\contentsline {chapter}{List of Figures}{5}{section*.2}%
+\contentsline {chapter}{Introduction}{i}{chapter*.3}%
+\contentsline {section}{What is in the book}{i}{section*.4}%
+\contentsline {section}{How much topic is covered?}{ii}{section*.5}%
+\contentsline {part}{I\hspace {1em}Physics}{1}{part.1}%
+\contentsline {chapter}{\chapternumberline {1}Electromagnetism}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Electrostatic}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Electric charge}{3}{subsection.1.1.1}%
+\contentsline {subsubsection}{Properties of electrical charges (1)}{3}{subsubsection*.6}%
+\contentsline {subsubsection}{Properties of electrical charges (2)}{4}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {1.1.2}Conservation of charge}{4}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Quantization of charge}{4}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Coulomb's law}{4}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Energy of a system of charges}{6}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}Electric field}{6}{subsection.1.1.6}%
+\contentsline {chapter}{\chapternumberline {2}Theoretical mechanics}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Calculus of variations}{9}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}The shortest path between two points}{9}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Fermat's Principle}{9}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}The Euler-Lagrange equation}{10}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}More than two variables}{12}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Generalize formalism}{13}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Lagrangian mechanics}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Degree of freedom}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Lagrangian formalism}{14}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Lagrangian of free mass (unconstrained motion)}{15}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Multiple particles in actions}{16}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Lagrangian on constrained system}{18}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}An example}{19}{subsection.2.4.1}%
+\contentsline {subsubsection}{Kinematic}{20}{subsubsection*.10}%
+\contentsline {subsubsection}{Forces}{21}{subsubsection*.11}%
+\contentsline {subsubsection}{Newtonian analysis}{21}{subsubsection*.12}%
+\contentsline {subsubsection}{Lagrangian analysis}{23}{subsubsection*.13}%
+\contentsline {section}{\numberline {2.5}Generalized system in general}{23}{section.2.5}%
+\contentsline {chapter}{\chapternumberline {3}Quantum mechanics}{25}{chapter.3}%
+\contentsline {part}{II\hspace {1em}Research}{27}{part.2}%
+\contentsline {chapter}{\chapternumberline {4}Quantum Well analysis - Expository}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Note}{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}What is quantum well?}{29}{section.4.2}%
+\contentsline {section}{\numberline {4.3}The dimensional Schrödinger equation}{30}{section.4.3}%
+\contentsline {section}{\numberline {4.4}The 3-dimensional case}{30}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}The infinite square cube}{32}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}The quantum well}{34}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Related formulation}{35}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Symmetric infinite square potential}{35}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Asymmetric Potential}{37}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Semi-parabolic potential, I}{38}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}Solution draft}{39}{section.4.6}%
+\contentsline {section}{\numberline {4.7}The quantum harmonic oscillator}{40}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Classical harmonic oscillator}{40}{subsection.4.7.1}%
+\contentsline {section}{\numberline {4.8}Solution}{41}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Attempt 1}{41}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Attempt 2}{42}{subsection.4.8.2}%
+\contentsline {subsubsection}{Case $0 < z < L$}{42}{subsubsection*.14}%
+\contentsline {subsubsection}{Non-dimensionalization of the Equation}{42}{subsubsection*.15}%
+\contentsline {subsubsection}{Analysis Using Hermite Polynomials}{43}{subsubsection*.16}%
+\contentsline {subsubsection}{Boundary Condition at $z = 0$}{44}{subsubsection*.17}%
+\contentsline {subsubsection}{Wavefunction Normalization}{44}{subsubsection*.18}%
+\contentsline {subsubsection}{Case $N = 0$}{44}{subsubsection*.19}%
+\contentsline {subsubsection}{Case $N = 1$}{44}{subsubsection*.20}%
+\contentsline {subsection}{\numberline {4.8.3}Problem with attempt 2}{45}{subsection.4.8.3}%
+\contentsline {subsection}{\numberline {4.8.4}Derivation of Schrödinger equation}{45}{subsection.4.8.4}%
+\contentsline {subsection}{\numberline {4.8.5}Bloch's theorem}{47}{subsection.4.8.5}%
+\contentsline {chapter}{Index}{49}{section*.21}%
+\contentsline {chapter}{List of problems in theoretical mechanics}{51}{chapter*.22}%
+\contentsline {section}{Introduction}{51}{section*.23}%
+\contentsline {section}{Lagrangian mechanics}{51}{section*.24}%
+\contentsline {subsection}{Single pendulum}{51}{subsection*.25}%
+\contentsline {subsection}{Double pendulum}{52}{subsection*.27}%
+\contentsline {subsection}{Single pendulum with moving support}{54}{subsection*.29}%
+\contentsline {subsection}{Pendulum with rotating support}{55}{subsection*.31}%
+\contentsline {subsection}{Pendulum with oscillating support}{57}{subsection*.33}%
+\contentsline {subsection}{Constrained 1D grapple motion}{58}{subsection*.34}%
+\contentsline {subsection}{Connected 3-mass springs}{59}{subsection*.36}%
+\contentsline {section}{Conservation laws in Lagrangian terms}{61}{section*.38}%
+\contentsline {subsection}{Cylindrical coordinates}{61}{subsection*.39}%
+\contentsline {subsection}{Spherical coordinates}{61}{subsection*.40}%
+\contentsline {subsection}{Finding momenta from Lagrangian}{62}{subsection*.41}%
+\contentsline {section}{Small oscillations}{62}{section*.42}%
+\contentsline {subsection}{Problems}{63}{subsection*.43}%
+\contentsline {section}{Rigid body motions}{64}{section*.44}%
+\contentsline {subsection}{Swinging rod}{64}{subsection*.45}%
+\contentsline {subsection}{Rod attached of a thin disc}{65}{subsection*.47}%
+\contentsline {section}{Somewhat a pendulum}{66}{section*.49}%
+\contentsline {subsection}{Grapple}{67}{subsection*.51}%
+\contentsline {subsection}{Rolling wheel of thunder}{68}{subsection*.53}%
+\contentsline {section}{Hamiltonian and its equation}{69}{section*.55}%
+\contentsline {subsection}{Hamiltonian from Lagrangian}{69}{subsection*.56}%
+\contentsline {chapter}{Bibliography}{71}{chapter*.57}%

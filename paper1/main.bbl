@@ -1,0 +1,439 @@
+\begin{thebibliography}{62}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[uni()]{unified_bias_composition}
+[{PDF}] {A} {Unifeid} {Bias}-{Variance} {Decomposition} and its {Applications}
+  {\textbar} {Semantic} {Scholar}.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/A-Unifeid-Bias-Variance-Decomposition-and-its-Domingos/e1ed9d24db5e8f7ab326aeb797e965a94f5ad6d3}.
+
+\bibitem[Achlioptas()]{achlioptas_stochastic_nodate}
+Panos Achlioptas.
+\newblock Stochastic {Gradient} {Descent} in {Theory} and {Practice}.
+\newblock \emph{Lecture note, Stanford's AI}.
+
+\bibitem[Adlam and
+  Pennington(2020)]{adlam2020understandingdoubledescentrequires}
+Ben Adlam and Jeffrey Pennington.
+\newblock Understanding double descent requires a fine-grained bias-variance
+  decomposition, 2020.
+\newblock URL \url{https://arxiv.org/abs/2011.03321}.
+
+\bibitem[Advani and
+  Saxe(2017)]{advani2017highdimensionaldynamicsgeneralizationerror}
+Madhu~S. Advani and Andrew~M. Saxe.
+\newblock High-dimensional dynamics of generalization error in neural networks,
+  2017.
+\newblock URL \url{https://arxiv.org/abs/1710.03667}.
+
+\bibitem[Barceló et~al.(2020)Barceló, Monet, Pérez, and
+  Subercaseaux]{barceló2020modelinterpretabilitylenscomputational}
+Pablo Barceló, Mikaël Monet, Jorge Pérez, and Bernardo Subercaseaux.
+\newblock Model interpretability through the lens of computational complexity,
+  2020.
+\newblock URL \url{https://arxiv.org/abs/2010.12265}.
+
+\bibitem[Belkin et~al.(2018)Belkin, Ma, and
+  Mandal]{belkin2018understanddeeplearningneed}
+Mikhail Belkin, Siyuan Ma, and Soumik Mandal.
+\newblock To understand deep learning we need to understand kernel learning,
+  2018.
+\newblock URL \url{https://arxiv.org/abs/1802.01396}.
+
+\bibitem[Belkin et~al.(2019)Belkin, Hsu, Ma, and
+  Mandal]{belkin_reconciling_2019}
+Mikhail Belkin, Daniel Hsu, Siyuan Ma, and Soumik Mandal.
+\newblock Reconciling modern machine learning practice and the bias-variance
+  trade-off.
+\newblock \emph{Proc. Natl. Acad. Sci. U.S.A.}, 116\penalty0 (32):\penalty0
+  15849--15854, August 2019.
+\newblock ISSN 0027-8424, 1091-6490.
+\newblock \doi{10.1073/pnas.1903070116}.
+\newblock URL \url{http://arxiv.org/abs/1812.11118}.
+\newblock arXiv:1812.11118 [cs, stat].
+
+\bibitem[Bousquet et~al.(2020)Bousquet, Hanneke, Moran, van Handel, and
+  Yehudayoff]{bousquet2020theoryuniversallearning}
+Olivier Bousquet, Steve Hanneke, Shay Moran, Ramon van Handel, and Amir
+  Yehudayoff.
+\newblock A theory of universal learning, 2020.
+\newblock URL \url{https://arxiv.org/abs/2011.04483}.
+
+\bibitem[Bronstein et~al.(2021)Bronstein, Bruna, Cohen, and
+  Veličković]{bronstein2021geometricdeeplearninggrids}
+Michael~M. Bronstein, Joan Bruna, Taco Cohen, and Petar Veličković.
+\newblock Geometric deep learning: Grids, groups, graphs, geodesics, and
+  gauges, 2021.
+\newblock URL \url{https://arxiv.org/abs/2104.13478}.
+
+\bibitem[Brown and Ali(2024)]{brown2024biasvariance}
+Gavin Brown and Riccardo Ali.
+\newblock Bias/variance is not the same as approximation/estimation.
+\newblock \emph{Transactions on Machine Learning Research}, 2024.
+\newblock ISSN 2835-8856.
+\newblock URL \url{https://openreview.net/forum?id=4TnFbv16hK}.
+
+\bibitem[Buschjäger et~al.(2020)Buschjäger, Pfahler, and
+  Morik]{buschjager_generalized_2020}
+Sebastian Buschjäger, Lukas Pfahler, and Katharina Morik.
+\newblock Generalized {Negative} {Correlation} {Learning} for {Deep}
+  {Ensembling}, December 2020.
+\newblock URL \url{http://arxiv.org/abs/2011.02952}.
+\newblock arXiv:2011.02952 [cs, stat].
+
+\bibitem[Cristianini and Shawe-Taylor(2000)]{Cristianini2000AnIT}
+Nello Cristianini and John Shawe-Taylor.
+\newblock An introduction to support vector machines and other kernel-based
+  learning methods.
+\newblock 2000.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:60486887}.
+
+\bibitem[d'~Ascoli et~al.(2020)d'~Ascoli, Sagun, and
+  Biroli]{d_ascoli_triple_2020}
+Stéphane d'~Ascoli, Levent Sagun, and Giulio Biroli.
+\newblock Triple descent and the two kinds of overfitting: where \& why do they
+  appear?
+\newblock In \emph{Advances in {Neural} {Information} {Processing} {Systems}},
+  volume~33, pages 3058--3069. Curran Associates, Inc., 2020.
+\newblock URL
+  \url{https://proceedings.neurips.cc/paper/2020/hash/1fd09c5f59a8ff35d499c0ee25a1d47e-Abstract.html}.
+
+\bibitem[Davies et~al.(2023)Davies, Langosco, and
+  Krueger]{davies_unifying_2023}
+Xander Davies, Lauro Langosco, and David Krueger.
+\newblock Unifying {Grokking} and {Double} {Descent}, March 2023.
+\newblock URL \url{http://arxiv.org/abs/2303.06173}.
+\newblock arXiv:2303.06173 [cs].
+
+\bibitem[Domingos(2000{\natexlab{a}})]{Domingos2000AUB}
+Pedro~M. Domingos.
+\newblock A unified bias-variance decomposition for zero-one and squared loss.
+\newblock In \emph{AAAI/IAAI}, 2000{\natexlab{a}}.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:2063488}.
+
+\bibitem[Domingos(2000{\natexlab{b}})]{domingos_unifeid_2000}
+Pedro~M. Domingos.
+\newblock A {Unifeid} {Bias}-{Variance} {Decomposition} and its {Applications}.
+\newblock In \emph{Semantic Scholar}, June 2000{\natexlab{b}}.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/A-Unifeid-Bias-Variance-Decomposition-and-its-Domingos/e1ed9d24db5e8f7ab326aeb797e965a94f5ad6d3}.
+
+\bibitem[E.~L.~Lehmann(1998)]{LehmannCasella_theory_1998}
+George~Casella E.~L.~Lehmann.
+\newblock \emph{Theory of {Point} {Estimation}}.
+\newblock Springer {Texts} in {Statistics}. Springer-Verlag, New York, 1998.
+\newblock ISBN 978-0-387-98502-2.
+\newblock \doi{10.1007/b98854}.
+\newblock URL \url{http://link.springer.com/10.1007/b98854}.
+
+\bibitem[Fey and Lenssen(2019)]{Fey/Lenssen/2019}
+Matthias Fey and Jan~Eric Lenssen.
+\newblock Fast graph representation learning with {PyTorch Geometric}.
+\newblock In \emph{ICLR Workshop on Representation Learning on Graphs and
+  Manifolds}, 2019.
+\newblock URL \url{https://arxiv.org/abs/1903.02428}.
+
+\bibitem[Fortmann(2012)]{Scott_Fortmann_Bias}
+Scott Fortmann.
+\newblock Understanding the {Bias}-{Variance} {Tradeoff}, 2012.
+\newblock URL \url{https://scott.fortmann-roe.com/docs/BiasVariance.html}.
+
+\bibitem[Geman et~al.(1992)Geman, Bienenstock, and Doursat]{6797087}
+Stuart Geman, Elie Bienenstock, and René Doursat.
+\newblock Neural networks and the bias/variance dilemma.
+\newblock \emph{Neural Computation}, 4\penalty0 (1):\penalty0 1--58, 1992.
+\newblock \doi{10.1162/neco.1992.4.1.1}.
+
+\bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, Courville, and
+  Bengio]{goodfellow2016deep}
+Ian Goodfellow, Yoshua Bengio, Aaron Courville, and Yoshua Bengio.
+\newblock \emph{Deep learning}, volume~1.
+\newblock MIT Press, 2016.
+
+\bibitem[Hajek and Raginsky(2021)]{STL_Hajek_Maxim_2021}
+Bruce Hajek and Maxim Raginsky.
+\newblock \emph{Statistical Learning Theory}, volume~1.
+\newblock 2021.
+\newblock URL \url{https://maxim.ece.illinois.edu/teaching/SLT/}.
+
+\bibitem[Hamilton()]{GRP_Hamilton}
+William~L. Hamilton.
+\newblock Graph representation learning.
+\newblock \emph{Synthesis Lectures on Artificial Intelligence and Machine
+  Learning}, 14\penalty0 (3):\penalty0 1--159.
+
+\bibitem[Hastie et~al.(2019)Hastie, Montanari, Rosset, and
+  Tibshirani]{hastie2019surprises}
+Trevor Hastie, Andrea Montanari, Saharon Rosset, and Ryan~J Tibshirani.
+\newblock Surprises in high-dimensional ridgeless least squares interpolation.
+\newblock \emph{arXiv preprint arXiv:1903.08560}, 2019.
+
+\bibitem[Hu et~al.(2021)Hu, Chu, Pei, Liu, and
+  Bian]{hu2021modelcomplexitydeeplearning}
+Xia Hu, Lingyang Chu, Jian Pei, Weiqing Liu, and Jiang Bian.
+\newblock Model complexity of deep learning: A survey, 2021.
+\newblock URL \url{https://arxiv.org/abs/2103.05127}.
+
+\bibitem[James et~al.(2013)James, Hastie, Tibshirani, and
+  Witten]{gareth_james_introduction_2013}
+Gareth James, Trevor Hastie, Robert Tibshirani, and Daniela Witten.
+\newblock \emph{An introduction to statistical learning : with applications in
+  {R}}.
+\newblock New York : Springer, [2013] ©2013, 2013.
+\newblock URL \url{https://search.library.wisc.edu/catalog/9910207152902121}.
+
+\bibitem[Janik and Witaszczyk(2021)]{janik2021complexitydeepneuralnetworks}
+Romuald~A. Janik and Przemek Witaszczyk.
+\newblock Complexity for deep neural networks and other characteristics of deep
+  feature representations, 2021.
+\newblock URL \url{https://arxiv.org/abs/2006.04791}.
+
+\bibitem[Kay(1993)]{MkayPretenceSignalStatistics1993}
+Steven~M. Kay.
+\newblock Fundamentals of statistical signal processing: estimation theory
+  {\textbar} {Guide} books {\textbar} {ACM} {Digital} {Library}, 1993.
+\newblock URL \url{https://dl.acm.org/doi/10.5555/151045}.
+
+\bibitem[Kearns and Vazirani(1994)]{10.5555/200548}
+Michael~J. Kearns and Umesh~V. Vazirani.
+\newblock \emph{An introduction to computational learning theory}.
+\newblock MIT Press, Cambridge, MA, USA, 1994.
+\newblock ISBN 0262111934.
+
+\bibitem[Lafon and Thomas(2024)]{lafon_understanding_2024}
+Marc Lafon and Alexandre Thomas.
+\newblock Understanding the {Double} {Descent} {Phenomenon} in {Deep}
+  {Learning}, March 2024.
+\newblock URL \url{http://arxiv.org/abs/2403.10459}.
+\newblock arXiv:2403.10459 [cs, stat].
+
+\bibitem[Liu and Flanigan(2023)]{liu2023understandingroleoptimizationdouble}
+Chris~Yuhao Liu and Jeffrey Flanigan.
+\newblock Understanding the role of optimization in double descent, 2023.
+\newblock URL \url{https://arxiv.org/abs/2312.03951}.
+
+\bibitem[Lopushanskyy and Shi(2024)]{lopushanskyy2024graphneuralnetworksgraph}
+Dmytro Lopushanskyy and Borun Shi.
+\newblock Graph neural networks on graph databases, 2024.
+\newblock URL \url{https://arxiv.org/abs/2411.11375}.
+
+\bibitem[Luo et~al.(2024)Luo, Wang, and
+  Huang]{luo2024investigatingimpactmodelcomplexity}
+Jing Luo, Huiyuan Wang, and Weiran Huang.
+\newblock Investigating the impact of model complexity in large language
+  models, 2024.
+\newblock URL \url{https://arxiv.org/abs/2410.00699}.
+
+\bibitem[Mei and Montanari(2019)]{mei2019generalization}
+Song Mei and Andrea Montanari.
+\newblock The generalization error of random features regression: Precise
+  asymptotics and double descent curve.
+\newblock \emph{arXiv preprint arXiv:1908.05355}, 2019.
+
+\bibitem[Mei and Montanari(2020)]{mei2020generalizationerrorrandomfeatures}
+Song Mei and Andrea Montanari.
+\newblock The generalization error of random features regression: Precise
+  asymptotics and double descent curve, 2020.
+\newblock URL \url{https://arxiv.org/abs/1908.05355}.
+
+\bibitem[Mohri et~al.(2012)Mohri, Rostamizadeh, and Talwalkar]{10.5555/2371238}
+Mehryar Mohri, Afshin Rostamizadeh, and Ameet Talwalkar.
+\newblock \emph{Foundations of Machine Learning}.
+\newblock The MIT Press, 2012.
+\newblock ISBN 026201825X.
+
+\bibitem[Molnar et~al.(2020)Molnar, Casalicchio, and Bischl]{Molnar_2020}
+Christoph Molnar, Giuseppe Casalicchio, and Bernd Bischl.
+\newblock \emph{Quantifying Model Complexity via Functional Decomposition for
+  Better Post-hoc Interpretability}, page 193–204.
+\newblock Springer International Publishing, 2020.
+\newblock ISBN 9783030438234.
+\newblock \doi{10.1007/978-3-030-43823-4_17}.
+\newblock URL \url{http://dx.doi.org/10.1007/978-3-030-43823-4_17}.
+
+\bibitem[Nakkiran et~al.(2019)Nakkiran, Kaplun, Bansal, Yang, Barak, and
+  Sutskever]{nakkiran_deep_2019}
+Preetum Nakkiran, Gal Kaplun, Yamini Bansal, Tristan Yang, Boaz Barak, and Ilya
+  Sutskever.
+\newblock Deep {Double} {Descent}: {Where} {Bigger} {Models} and {More} {Data}
+  {Hurt}, December 2019.
+\newblock URL \url{http://arxiv.org/abs/1912.02292}.
+\newblock arXiv:1912.02292 [cs, stat].
+
+\bibitem[Neal(2019)]{neal2019biasvariancetradeofftextbooksneed}
+Brady Neal.
+\newblock On the bias-variance tradeoff: Textbooks need an update, 2019.
+\newblock URL \url{https://arxiv.org/abs/1912.08286}.
+
+\bibitem[Neal et~al.(2018)Neal, Mittal, Baratin, Tantia, Scicluna,
+  Lacoste-Julien, and Mitliagkas]{neal2018modern}
+Brady Neal, Sarthak Mittal, Aristide Baratin, Vinayak Tantia, Matthew Scicluna,
+  Simon Lacoste-Julien, and Ioannis Mitliagkas.
+\newblock A modern take on the bias-variance tradeoff in neural networks.
+\newblock \emph{arXiv preprint arXiv:1810.08591}, 2018.
+
+\bibitem[Olmin and
+  Lindsten(2024)]{olmin2024understandingepochwisedoubledescent}
+Amanda Olmin and Fredrik Lindsten.
+\newblock Towards understanding epoch-wise double descent in two-layer linear
+  neural networks, 2024.
+\newblock URL \url{https://arxiv.org/abs/2407.09845}.
+
+\bibitem[Oono and Suzuki(2020)]{Oono2020Graph}
+Kenta Oono and Taiji Suzuki.
+\newblock Graph neural networks exponentially lose expressive power for node
+  classification.
+\newblock In \emph{International Conference on Learning Representations}, 2020.
+\newblock URL \url{https://openreview.net/forum?id=S1ldO2EFPr}.
+
+\bibitem[Paninski(2005)]{liam_statistics_2005}
+Liam Paninski.
+\newblock Statistics 4107: {Intro} to {Math} {Stat} (fall 2005), 2005.
+\newblock URL \url{https://sites.stat.columbia.edu/liam/teaching/4107-fall05/}.
+
+\bibitem[Pfau(2013)]{PfauBregmanDivergence}
+David Pfau.
+\newblock A generalized bias-variance decomposition for bregman divergences.
+\newblock Technical report, 2013.
+
+\bibitem[Piera and Javier(2005)]{piera_sample_2005}
+Villares Piera and Nemesio Javier.
+\newblock \emph{Sample {Covariance} {Based} {Parameter} {Estimation} {For}
+  {Digital} {Communications}}.
+\newblock Doctoral thesis, Universitat Politècnica de Catalunya, October 2005.
+\newblock URL \url{https://upcommons.upc.edu/handle/2117/94206}.
+\newblock Accepted: 2011-04-12T15:27:01Z ISBN: 9788468995571 Publication Title:
+  TDX (Tesis Doctorals en Xarxa).
+
+\bibitem[{PyTorch Geometric Team}(2025)]{pyg_docs}
+{PyTorch Geometric Team}.
+\newblock Creating message passing networks, 2025.
+\newblock URL
+  \url{https://pytorch-geometric.readthedocs.io/en/2.6.1/notes/create_gnn.html}.
+
+\bibitem[Rossi et~al.(2020)Rossi, Chamberlain, Frasca, Eynard, Monti, and
+  Bronstein]{rossi2020temporalgraphnetworksdeep}
+Emanuele Rossi, Ben Chamberlain, Fabrizio Frasca, Davide Eynard, Federico
+  Monti, and Michael Bronstein.
+\newblock Temporal graph networks for deep learning on dynamic graphs, 2020.
+\newblock URL \url{https://arxiv.org/abs/2006.10637}.
+
+\bibitem[Ruder(2017)]{ruder_overview_2017}
+Sebastian Ruder.
+\newblock An overview of gradient descent optimization algorithms, June 2017.
+\newblock URL \url{http://arxiv.org/abs/1609.04747}.
+\newblock arXiv:1609.04747 [cs].
+
+\bibitem[Scarselli et~al.(2009)Scarselli, Gori, Tsoi, Hagenbuchner, and
+  Monfardini]{Scar04}
+Franco Scarselli, Marco Gori, Ah~Chung Tsoi, Markus Hagenbuchner, and Gabriele
+  Monfardini.
+\newblock The graph neural network model.
+\newblock \emph{IEEE Transactions on Neural Networks}, 20\penalty0
+  (1):\penalty0 61--80, 2009.
+\newblock \doi{10.1109/TNN.2008.2005605}.
+
+\bibitem[Schaeffer et~al.(2023)Schaeffer, Khona, Robertson, Boopathy,
+  Pistunova, Rocks, Fiete, and Koyejo]{schaeffer_double_2023}
+Rylan Schaeffer, Mikail Khona, Zachary Robertson, Akhilan Boopathy, Kateryna
+  Pistunova, Jason~W. Rocks, Ila~Rani Fiete, and Oluwasanmi Koyejo.
+\newblock Double {Descent} {Demystified}: {Identifying}, {Interpreting} \&
+  {Ablating} the {Sources} of a {Deep} {Learning} {Puzzle}, March 2023.
+\newblock URL \url{http://arxiv.org/abs/2303.14151}.
+\newblock arXiv:2303.14151 [cs, stat].
+
+\bibitem[Shalev-Shwartz and Ben-David(2014)]{10.5555/2621980}
+Shai Shalev-Shwartz and Shai Ben-David.
+\newblock \emph{Understanding Machine Learning: From Theory to Algorithms}.
+\newblock Cambridge University Press, USA, 2014.
+\newblock ISBN 1107057132.
+
+\bibitem[Sharma and Aiken(2014)]{sharma_bias-variance_2014}
+Rahul Sharma and Alex Aiken.
+\newblock Bias-variance tradeoffs in program analysis.
+\newblock In \emph{Proceedings of the 41st {ACM} {SIGPLAN}-{SIGACT} {Symposium}
+  on {Principles} of {Programming} {Languages}}, {POPL} '14, pages 127--137,
+  New York, NY, USA, 2014. Association for Computing Machinery.
+\newblock ISBN 978-1-4503-2544-8.
+\newblock \doi{10.1145/2535838.2535853}.
+\newblock URL \url{https://doi.org/10.1145/2535838.2535853}.
+
+\bibitem[Shi et~al.(2024)Shi, Pan, Hu, and
+  Dokmanić]{shi2024homophilymodulatesdoubledescent}
+Cheng Shi, Liming Pan, Hong Hu, and Ivan Dokmanić.
+\newblock Homophily modulates double descent generalization in graph
+  convolution networks, 2024.
+\newblock URL \url{https://arxiv.org/abs/2212.13069}.
+
+\bibitem[Sterkenburg(2024)]{Sterkenburg_2024}
+Tom~F. Sterkenburg.
+\newblock Statistical learning theory and occam’s razor: The core argument.
+\newblock \emph{Minds and Machines}, 35\penalty0 (1), November 2024.
+\newblock ISSN 1572-8641.
+\newblock \doi{10.1007/s11023-024-09703-y}.
+\newblock URL \url{http://dx.doi.org/10.1007/s11023-024-09703-y}.
+
+\bibitem[Sugiyama(2015)]{10.5555/2930837}
+Masashi Sugiyama.
+\newblock \emph{Introduction to Statistical Machine Learning}.
+\newblock Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 2015.
+\newblock ISBN 9780128023501.
+
+\bibitem[Tanis et~al.(2024)Tanis, Giannella, and
+  Mariano]{tanis2024introductiongraphneuralnetworks}
+James~H. Tanis, Chris Giannella, and Adrian~V. Mariano.
+\newblock Introduction to graph neural networks: A starting point for machine
+  learning engineers, 2024.
+\newblock URL \url{https://arxiv.org/abs/2412.19419}.
+
+\bibitem[Valiant(1984)]{10.1145/1968.1972}
+L.~G. Valiant.
+\newblock A theory of the learnable.
+\newblock \emph{Commun. ACM}, 27\penalty0 (11):\penalty0 1134–1142, November
+  1984.
+\newblock ISSN 0001-0782.
+\newblock \doi{10.1145/1968.1972}.
+\newblock URL \url{https://doi.org/10.1145/1968.1972}.
+
+\bibitem[Vapnik(1999)]{Vapnik1999-VAPTNO}
+Vladimir Vapnik.
+\newblock \emph{The Nature of Statistical Learning Theory}.
+\newblock Springer: New York, 1999.
+
+\bibitem[Veličković(2023)]{Veli_kovi__2023}
+Petar Veličković.
+\newblock Everything is connected: Graph neural networks.
+\newblock \emph{Current Opinion in Structural Biology}, 79:\penalty0 102538,
+  April 2023.
+\newblock ISSN 0959-440X.
+\newblock \doi{10.1016/j.sbi.2023.102538}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.sbi.2023.102538}.
+
+\bibitem[Yang et~al.(2020)Yang, Yu, You, Steinhardt, and
+  Ma]{yang_rethinking_2020}
+Zitong Yang, Yaodong Yu, Chong You, Jacob Steinhardt, and Yi~Ma.
+\newblock Rethinking {Bias}-{Variance} {Trade}-off for {Generalization} of
+  {Neural} {Networks}, December 2020.
+\newblock URL \url{http://arxiv.org/abs/2002.11328}.
+\newblock arXiv:2002.11328 [cs, stat].
+
+\bibitem[Zhang(2019)]{zhang_gradient_2019}
+Jiawei Zhang.
+\newblock Gradient {Descent} based {Optimization} {Algorithms} for {Deep}
+  {Learning} {Models} {Training}, March 2019.
+\newblock URL \url{http://arxiv.org/abs/1903.03614}.
+\newblock arXiv:1903.03614 [cs].
+
+\bibitem[Zhang(2023)]{zhang2023mathematical}
+Tong Zhang.
+\newblock \emph{Mathematical Analysis of Machine Learning Algorithms}.
+\newblock Cambridge University Press, 2023.
+\newblock \doi{10.1017/9781009093057}.
+\newblock URL
+  \url{https://www.cambridge.org/core/books/mathematical-analysis-of-machine-learning-algorithms/EB9BABB05A5C312F19C38E5A01A5ECFC}.
+
+\end{thebibliography}

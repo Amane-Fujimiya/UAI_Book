@@ -1,0 +1,407 @@
+\chapter{Probability and Statistics}
+For our purposes (most models and construction we will be encountering will be specifically \textit{black-box models}, which are statitical by default), the knowledge of probability and statistics is a must. Despite what others said, in the real world, as well as theoretical works, the theory of probability and the work on statistics is the core foundation of modern automated system, and machine learning as a whole. Thereby, we might as well spare no efforts in introducing those concepts, broad and may-not-so deep.
+
+\section{What is probability?}
+
+Before even studying probability, and somewhat its more empirical centric statistic, what is even probability and statistic? Broadly speaking, quite a lot of definitions and interpretations that you can find yourselves. Perhaps not surprisingly, in normal life, you have been using the term probability, or statistics in its variations every time, every day. For example, just saying "he is probably reading books.", or "statistically, the price is cheaper.", or "I don't know? Probably.". The terms, and its perhaps intuitive notion has been quit a mouthful for everyone in their daily life, and throughout normal conversation. In said situation, probability often means, or rather implies the notion of \textit{uncertainty}, while statistic implies the guarantee of \textit{occurrences and patterns}. 
+
+While the concept of probability is popular and is perhaps quite intuitive, emerged before thousands of years, the concrete inception of probability as a discipline, and a field of mathematics took until mid-seventeenth century, by the work of Blaise Pascal and Pierre de Fermat. It took more time together, later on, for mathematicians to take measure theory and potential theory for formalizing and generalizing the theory of Probability, and become probability theory (in which we shall also study in a later date). 
+
+So, what can be concluded of the general notion of probability? 
+
+\blockquote[Ionut Florescu, 2009]{Mathematical modeling of random events and phenomena. It is fundamentally different from modeling deterministic events and functions, which constitutes the traditional study of Mathematics.}
+
+What does this mean, and how it works, we have to then research ourselves, the theory of both. 
+
+\subsection{The fundamental principle of probability}
+
+\subsection{Subjectivity of probability}
+
+Because of its nature, probability has the same problem as quantum mechanics - it invites people to get it certain interpretation or others. More than enough, there exists De Finetti's view on probability, with a strong remark as `probability is fake'. On the other side, you have the typical, more popular view between \textit{Bayesian} and \textit{frequentist} interpretation of probability. Perhaps, a very good example will be sufficed to talk about this (Taken from \href{https://stats.stackexchange.com/questions/22/bayesian-and-frequentist-reasoning-in-plain-english}{the top answer of this question on the Statistic Stack Exchange}).
+
+I have misplaced my phone somewhere in the home. I can use the phone locator on the base of the instrument to locate the phone and when I press the phone locator the phone starts beeping.
+
+\textbf{Problem}: Which area of my home should I search?
+\begin{itemize}
+    \item \textbf{Frequentist reasoning}: I can hear the phone beeping. I also have a mental model which helps me identify the area from which the sound is coming. Therefore, upon hearing the beep, I infer the area of my home I must search to locate the phone.
+    \item \textbf{Bayesian reasoning}: I can hear the phone beeping. Now, apart from a mental model which helps me identify the area from which the sound is coming from, I also know the locations where I have misplaced the phone in the past. So, I combine my inferences using the beeps and my prior information about the locations I have misplaced the phone in the past to identify an area I must search to locate the phone.
+\end{itemize}
+
+In essence, the frequentist view base the events and probability as long-term, perhaps objective truth. While Bayesian goes for the subjective perspective of priori belief, and overall trust within the future prediction. What is right or wrong? Perhaps there are none. 
+\section{Space of probability}
+
+Probability, at its core, relies on the interpretation of \textit{events} and general phenomena that happens. In fact, The XVII-th century records the first documented evidence of the use of Probability Theory. More precisely in 1654 Antoine Gombaud, Chevalier de Mere, a French nobleman with an interest in gaming and gambling questions, was puzzled by an apparent contradiction concerning a popular dice game. The game consisted in throwing a pair of dice 24 times; the problem was to decide whether or not to bet even money on the occurrence of at least one "double six” during the 24 throws. A seemingly well-established gambling rule led de Mere to believe that betting on a double six in 24 throws would be profitable, but his own calculations based on many repetitions of the 24 throws indicated just the opposite. Using modern probability language, de Mere was trying to establish if such an event has probability greater than 0.5. Puzzled by this and other similar gambling problems he called the attention of the famous mathematician Blaise Pascal. In turn this led to an exchange of letters between Pascal and another famous French mathematician Pierre de Fermat, this exchange becoming the first documented evidence of the fundamental principles of the theory of probability. This coincides with our needs to then define and interpret the working space on that probability will be exhibited. 
+
+We define the following as the space in which probability is concerned.
+\begin{definition}
+    The set of all possible outcomes of an experiment is known as the \textbf{sample space} of the experiment, denoted $S$. For events $E$ and $F$, the \textit{union} is defined by $E\cup F$, being either $E$ or $F$ occurs. Similarly, $EF=E\cap F$ is the event of \textbf{intersection}, where $E$ \textit{and} $F$ both occur. If $EF=\varnothing$, we say that they are mutually exclusive. Generally, \begin{equation}
+        E_{1}\cup E_{2}\cup\dots=\bigcup_{n=1}^{\infty}E_{n}, \quad E_{1}\cap E_{2}\cap\dots=\bigcap^{\infty}_{n=1}E_{n} \quad \forall n \in \mathbb{N}[1,n]
+    \end{equation}
+\end{definition}
+Under that notion, suppose $\Omega=\{ \omega_{1},\dots,\omega_{n}\}$. Let $A\subseteq \Omega$ be an event, then the probability of $A$ is 
+$$\mathbb{P}=\frac{\text{Number of outcomes in A}}{\text{Number of outcomes in }\Omega}=\frac{\lvert A \rvert}{n}=\frac{\lvert A \rvert }{\lvert \Omega \rvert }$$
+
+\begin{example}
+    Suppose $r$ digits are chosen from a table of random numbers, so that the available digits are $0\leq k\leq 9$. Find the probability that:
+    \begin{itemize}[noitemsep,topsep=0pt]
+        \item No digit exceed $k$.
+        \item $k$ is the greatest digit drawn. 
+    \end{itemize}
+    Take $$\Omega=\{ a_{1},\dots,a_{r}\mid 0 \leq a_{i} \leq 9, i \in I \}$$
+    be the sample space. The event $A_{k}=[\text{no digit exceeds}\: k]$ is defined as $$A_{k}=\{ (a_{1},a_{2},\dots,a_{r}) \mid 0 \leq a_{i}\leq k\}$$
+    Thus $\lvert \Omega \rvert=10^{r}$ and $\lvert A_{k} \rvert=(k+1)^{r}$. We also have, intuitively, $A_{k}\subseteq \Omega$. Then: 
+    $$\mathbb{P}(A_{k})=\frac{\lvert A_{k} \rvert }{\lvert \Omega \rvert }=\frac{(k+1)^{r}}{10^{r}}$$
+    Continuing, we see that $B_{k}=[k\:\text{is the greatest digits drawn}]$ is a subset of $A_{k}$., of which excluding all the case of that no digit exceed $k-1$ (meaning there are no $k$ presents). Hence, we have $$\lvert B_{k} \rvert =\lvert A_{k} \rvert -\lvert A_{k-1} \rvert $$
+    Hence, $$\mathbb{P}(B_{k})= \frac{(k+1)^{r}-k^{r}}{10^{r}}$$    
+\end{example}
+
+We will treat probability axiomatically of the preceding sections. For now, though, we recognize that a lot of the problem connected to the notion of 'maybe it is probably true', can be resolved by simply counting all the possible way things can occur. 
+\section{Combinatorial probability}
+The basic principle of counting is used, when you want to, well, \textit{counts} in the way of \textbf{combinatorial analysis} upon how many configuration, outcomes and occurrence for and event of interest. Hence, it is the fundamental to our work, as for most of the time you can brute force probability using such principle. 
+\begin{definition}[The basic principle of counting]
+    Suppose that two experiments are to be performed. Then if experiment 1 can result in any one of $m$ possible outcomes and if, for each outcome of experiment 1, there are $n$ possible outcomes of experiment 2, then together there are $mn$ possible outcomes of the two experiments. 
+\end{definition}
+
+\begin{proof}
+    The basic principle may be proven by enumerating all the possible outcomes of the two experiments. We say that the outcome is $(i,j)$ if experiment 1 results in its $i$th possible outcome, and experiment 2 results in its $j$th possible outcome. The set of outcome consists of $m$ rows, and $n$ columns. Hence, the total space contains $mn$ pairs, hence proves the result.
+\end{proof}
+
+The more general form of said expression can be the following interpretation for a set of choice. 
+\begin{definition}[The basic principle of counting]
+    Suppose $r$ multiple choices are to be made in sequence, there are $m_{1}$ possibilities for the first choice, then $m_{2}$ for the second choices and so on until after making $r-1$ choices there are $m_{r}$ possibilities for the $r$th choice. Then the total number of different possibilities for the set of choice is: $$T_{\mathbb{P}}= \prod_{i=1}^{r}m_{i}$$
+\end{definition}
+So, how many of counting or scenario there typically are? 
+\subsubsection{Sampling with or without replacement}
+Standard calculation often involves counting numbers of equally likely outcomes, and can be viewed as counting the number of lists of length $n$ that can be constructed from a set of $x$ items $X= \{ 1,\dots,x \}$
+
+Let $N=\{ 1,\dots,n \}$ be the set of list position. Consider $f:N\to X$ that gives the ordered list $(f(1),\dots,f(n))$. The function can be proceeded in three ways: 
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item \textbf{Sampling with replacement}: After choosing an item we put it back so it can be chosen again.
+    \item \textbf{Sampling without replacement}: After choosing an item we put it aside. This creates an ordered list of $n$ distinct items. The order of magnitude is not the order we are talking about.  
+    \item Sampling with replacement, but requiring each item is chosen at least once. 
+\end{itemize}
+
+Effectively, we can see that the first one is for any $f$, injective $f$ and surjective $f$. 
+\subsubsection{Sampling without ordering}
+When counting numbers of possible $f:N\to X$, we might decide that the labels that are given to elements of $N$ and $X$ do or do not matter. For the case of having $(f(1),\dots,f(n))$, we have a few options: 
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item Do nothing (order matters). 
+    \item Ascending sort (labels of the position in the list do not matter)
+    \item Renumber each item in the list by the number of the draw on which it was first seen (label of the item do not matter).
+    \item Do both the two above (no labels matters). 
+\end{itemize}
+For the second one, we are saying that $g(1),\dots,g(n)=(f(1),\dots,f(n))$ if there is permutation of $\pi$ of $1,\dots,n$ such that $g(i)=f(\pi(i))$. 
+\subsubsection{Four cases of enumerative combinatorics}
+Considering four possibilities obtained from combinations of sampling and first two ordering, we have the following important case of combinatorial combinations. 
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item \textbf{Sampling with replacement and with ordering}: Each location in the list can be filled in $x$ way, the total possibilities are $x^{n}$. 
+    \item \textbf{Sampling without replacement and with ordering}: Applying the fundamental rule, this can be done in $x_{(n)} =x(x-1)\dots(x-(n-1))$. Another notation is $x^{\underline{n}}$, read as '$x$ to the $n$ falling'. In special case $n=x$ then this equal to $x!$. 
+    \item \textbf{Sampling without replacement and without ordering}: We care only which items are selected. The position in the list are indistinguishable. The total space of possibilities are $$\frac{x_{n}}{n!}= {x \choose n}$$ i.e. the answer above divided by $n!$. Notice that the answer is the \textbf{binomial coefficient}, the distinguishable sets of $n$ items that can be chosen from a set of $x$ items. 
+    \item \textbf{Sampling with replacement and without ordering}: Now we care only how many times each item is selected. In order: We are sampling without ordering, $(2,4)$ is the same as $(4,2)$. Then, for every chosen item, we put it back in the choosing bin. The number of distinct $f$ is the number of nonnegative integer solution to $$n_{1}+n_{2}+\dots+n_{x}=n$$
+\end{itemize}
+Explanation is possible - Suppose a set $A=\{ 1,2,3 \}$. There are six possibilities of choosing them with replacement without the concern of ordering: 
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item $1,2$
+\item $1,1$
+\item $2,2$
+\item $3,1$
+\item $3,2$
+\item $3,3$
+\end{itemize}
+Notice that if we somehow settle that $(x_{1},x_{2},x_{3})$ is the tuple that represents, for each possibilities, the number of individual elements it has, then 
+
+\begin{equation*}
+    \begin{split}
+        1,2 \to (x_{1},x_{2},x_{3}) & = (1,1,0)\\
+        1,1 \to (x_{1},x_{2},x_{3}) & = (2,0,0)\\
+        2,2 \to (x_{1},x_{2},x_{3}) & = (0,2,0)
+        \end{split}
+\end{equation*}
+
+%\begin{definition}
+%    The complement is denoted $E^{c}$ for event $E$. If $E$ is in $F$, then we denote $E\subset F$. Elementary laws of such is defined by: 
+%\begin{align*}
+%    E \cup F &= F \cup E & EF &= FE \\
+%    (E\cup F ) \cup G &= E \cup (F\cup G) & (EF)G &= E(FG)\\
+%    (E\cup F)G &= EG \cup GF & EF\cup G &= (E\cup G)(F\cup G)
+%\end{align*}
+%\end{definition}
+
+%\begin{definition}[De Morgan's]
+%    For set of events $\{ E_{1},\dots \}$ to $n$, we have: 
+%    \begin{equation}
+%        \left( \bigcup^{n}_{i=1} E_{i} \right)=\bigcap^{n}_{i=1}E^{c}_{i}, \quad \quad \left( \bigcap^{n}_{i=1}E_{i} \right)^{c}= \bigcup^%{n}_{i=1}E^{c}_{i}
+%    \end{equation}
+%\end{definition}
+\section{Axiomatic probability}
+With the advent of probability to the point that requires a deeper analysis, one such typically way to achieve this, is to axiomatize it. Although indeed there are problems that come with axiomatizing a formal system, and the presumed observation seems more tiresome than not, it is by this way that we can argue that it far outweighs the hardship that comes with using it, for less ambiguous notions or definitions, and the permittivity to expand the probability interpretation to even further - most likely to get you the \textit{probability measure}. 
+\subsection{Axiom of probability}
+Axiomatization of probability reserves the formal treatment of said notion to a powerful foundation, at least grounded probability in mathematical notion more than arbitrary spaces. Defining the \textit{probability of event $E$} as the following definition
+\begin{definition}
+    Define the probability of event $E$ as the following expression: $$P(E)= \lim_{ n \to \infty } \frac{n(E)}{n}$$ That is, $P(E)$ is defined as the proportion of time that $E$ occurs.
+\end{definition}
+A \textbf{probability space} is then defined of the triple $(\Omega, \mathcal{F}, P)$ in which $\Omega$ is the sample space, $\mathcal{F}$ is a collection of subsets of $\Omega$, and $P$ is a \textbf{probability measure} $P:\mathcal{F}\to [0,1]$. To obtain a consistent theory, we place requirements on $\mathcal{F}$: 
+\begin{enumerate}
+    \item $\varnothing \in \mathcal{F}$ and $\Omega\in \mathcal{F}$. 
+    \item $A\in \mathcal{F}\implies A^{c}\in \mathcal{F}$. 
+    \item $A_{1},\dots\in \mathcal{F}\implies \bigcup_{i=1}^{\infty}A_{i}\in \mathcal{F}$.  
+\end{enumerate}
+We proceed to give the three axioms of probability, which is then the restrictions applied for $P$ of the tuple: 
+\begin{axiom}[Axiom of probability]
+    For event $E$ and probability $P(E)$, sample space $S$: 
+    \begin{enumerate}[label=\Roman*.]
+        \item $0\leq P(E)\leq 1$. 
+        \item $P(S)=1$. 
+        \item For any sequence of mutually exclusive events $E_{1},E_{2},\dots$, that is, for $E_{i}E_{j}=\varnothing$ when $i\neq j$, we have: $$P\left( \bigcup^{\infty}_{i=1}E_{i} \right)=\sum^{\infty}_{i=1}P(E_{i})$$
+    \end{enumerate}
+    We refer to $P(E)$ as the \textit{probability} of $E$. 
+\end{axiom}
+If $\Omega$ is not finite then it may not be possible to let $\mathcal{F}$ be all subsets of $\Omega$. It can be shown that it is impossible to define a $P$ for all possible subsets of the interval $[0,1]$ that will satisfy the axioms.
+\begin{theorem}[Properties of $P$]
+    Axioms I-III imply the following further properties: 
+    \begin{enumerate}[label=\roman*.]
+        \item $P(\varnothing)=0$ (probability of empty set)
+        \item $P(A^{c})=1-P(A)$.
+        \item If $A\subseteq B$ then $P(A)\leq P(B)$. (monotonicity)
+        \item $P(A\cup B) = P(A)+P(B)-P(A\cap B)$ (by inclusion-exclusion)
+        \item If $A_{1}\subseteq A_{2}\subseteq \dots$ then \begin{equation}
+            P \left(\bigcup^{\infty}_{i=1}A_{i}\right) = \lim_{n\to\infty} P(A_n)
+        \end{equation}
+    \end{enumerate}
+    Property $(v)$ says that $P(\cdot)$ is a continuous function.
+\end{theorem}
+
+\subsection{Boole's inequality}
+One of the more important result, especially in the way of doing combinatorial analysis for probability, is the \textbf{Boole's inequality}. We state the inequality. 
+
+\subsection{Conditional probability}
+%For $P(E\mid F)$ being the probability of $E$ given $F$, it is calculated by: 
+%\begin{equation}
+%    P(E\mid F)=\frac{P(EF)}{P(F)}, \quad P(F) > 0
+%\end{equation}
+%which implies: 
+%\begin{equation}
+%    P(E_{1}\dots E_{n})=P(E_{1})P(E_{2}\mid E_{1})\dots P(E_{n}\mid E_{1}\dots E_{n-1})\quad \forall E_{i} \in \{E\}
+%\end{equation}
+
+\begin{definition}[Bayes's law]
+    For 2 events $E$ and $F$, the following construction is true: 
+    \begin{equation}
+        P(F_{j}\mid E)=\frac{P(EF_{j})}{P(E)}=\frac{P(E\mid F_{j})P(F_{j})}{\displaystyle{\sum^{n}_{i=1}P(E\mid F_{i})P(F_{i})}}
+    \end{equation} by $P(E)=P(E\mid F)P(F)+P(E\mid F^{c})[1-P(F)]$. Reducing to a two-case basis of $E$ and $F$: \begin{equation}
+        P(F\mid E)=\frac{P(E\mid F)P(F)}{P(E)}
+    \end{equation}
+    which gives the standard form of a single-dependency \textit{Bayes's formula} of prior hypothesis. 
+\end{definition}
+
+\begin{definition}[Independent events]
+    Two events $E$ and $F$ are said to be \textit{independent} if $P(EF)=P(E)P(F)$. Two events $E$ and $F$ are not independent are said to be \textit{dependent}. 
+    Generally, for events $E_{1},\dots,E_{n}$, they are \textit{independent} if for every subset $E_{1'},\dots,E_{r'}$ for $r\leq n$ of these events, then $$P(E_{1'}E_{2'}\dots E_{r'})=P(E_{1'})\dots P(E_{r'})$$
+\end{definition}
+
+\section{Random variables}
+It is considered that the space of values of $X$ as random variable, is the \textit{sample space} of the \textit{sample (outcome) space}, or just $\Omega(\Omega)$ if you want an analogous view. For a given observable event space $\Omega$, a \textbf{random variable} $X$ is a specific quantification of interest, that is, $X:\Omega \to \mathcal{P}(\mathbb{F})$. 
+
+For a random variable $X$, $F(x)=P\{X\leq x\}$ for $x\in S_{X}\subset \mathcal{P}(\mathbb{F})$ is the \textit{cumulative distribution function} $\mathsf{CDF}(X)$, or the \textit{distribution function}. $F(x)$ is a non-decreasing function of $x$, such that for $a\leq b$, $F(a)\leq F(b)$. 
+
+A random variable is discrete if the range $S_{X}$ is countable, or there exists a discrete function $f_{d}$ govern by a set of parameters $\{\lambda_j\}\subset \mathbb{A}^{j}$ of rational or algebraic number, such that \begin{equation}
+    P(i) = P\{X=i\} = f(i,\{\lambda_{1},\dots,\lambda_{n}\}), 
+\end{equation}
+Then, we define the \textit{probability mass function} $p(a)$ of $X$ by the quantity $p(a)=P\{X=a\}$. It then follows that \begin{equation}
+    \sum_{i=1}^{\infty} p(x_{i}) = 1\quad \forall x_{i}\in S_{X}
+\end{equation}
+
+A random variable is \textbf{continuous} if there exists a non-negative $f\in C^{q}$ of differentiable function define on $D=(-\infty,+\infty)$, called the \textit{probability density function} such that: \begin{equation}
+    P\{X\in B\} = \int_{B} f(x) \: dx \quad B\subset D \subset \mathbb{R}
+\end{equation}
+This satisfies the axiom of probability, such that \begin{equation}
+    P\{X\in D\} = \int_{-\infty}^{\infty} f(x) \: dx = 1 
+\end{equation}
+\section{Expected values}
+The \textbf{expectation} of a random variable is the \textit{weighted average} on the probable random outcome space of $X$, weighted by the probability $p(x), x\in S_{X}$. Denoted $E[X]$, for discrete $X$: 
+\begin{equation}
+    E[X]=\sum_{x:p(x)>0}xp(x)
+\end{equation}
+and for continuous $X$: 
+\begin{equation}
+    E[X] = \int_{-\infty}^{\infty} xf(x) \: dx
+\end{equation}
+
+\begin{theorem}[Linearity of expectation]
+    Let $\Omega$ be the sample space of an experiment, $X,Y: \Omega\to \mathbb{R}$ be (possibly "dependent") random variable both defined on $\Omega$ and $a,b,c\in\mathbb{R}$ be scalar. Then, 
+    \begin{equation}
+        \mathbb{E}[X+Y] = \mathbb{E}[X]+\mathbb{E}[Y],\quad \quad \mathbb{E}[aX+b] = a\mathbb{E}[X] + b
+    \end{equation}
+\end{theorem}
+
+The following important proposition is called \textbf{The law of the unconcious statistician}. 
+
+\begin{proposition}
+    If $X$ is a \textit{discrete random variable} that takes on one of the values $x_{i},i\geq 1$, with respective probabilities $p(x_{i})$, then for any real-valued function $g$, \begin{equation}
+        E[g(X)]=\sum_{i}g(x_{i})p(x_{i})
+    \end{equation}
+\end{proposition}
+\begin{proof}
+    Suppose that $y_{j},j\geq 1$ represents the different values of $g(x_{i}),i\geq 1$. Then, we have: 
+\begin{equation}
+    \begin{split}
+        \sum_{i} g(x_{i})p(x_{i}) &= \sum_{j}\sum_{i:g(x_{i})=y_{j}} g(x_{i}p(x_{i})) \\
+        & = \sum_{j} \sum_{i:g(x_{i})=y_{j}} y_{j}p(x_{i})\\
+        & = \sum_{j}y_{j} \sum_{i:g(x_{i})=y_{j}}p(x_{i})\\
+        &= \sum_{j}y_{j}P\{ g(X)=y_{j} \}\\
+        &= E[g(X)]
+        \end{split}
+\end{equation}
+\end{proof}
+
+\begin{proposition}
+    If $X$ is a continuous r.v. with pmf $f(x)$, then for any $g$ on $\mathbb{R}$ (real-valued): \begin{equation}
+        E[g(x)] = \int_{-\infty}^{\infty} g(x)f(x) \: dx
+    \end{equation}
+\end{proposition}
+\begin{proof}
+    We have the following lemma.
+    \begin{lemma}\label{lem:lemmaprob}
+        For $Y>0$ random variable, 
+        \begin{equation}
+            E[Y] = \int_{0}^{\infty} P\{Y > y\} \: dy
+        \end{equation}
+    \end{lemma}
+    \begin{proof}
+        Assume that $Y$ has a pdf $f_{Y}$, we have: \begin{equation}
+            \begin{split}
+                \int_{0}^{\infty} P\{Y > y\} \: dy &= \int_{0}^{\infty}\int_{y}^{\infty} f_{Y}(x) \:dx \: dy\\
+                & = \int_{0}^{\infty} \left(\int_{0}^{x} \: dy\right) f_{Y}(x) \: dx\\
+                & = \int_{0}^{\infty} xf_{Y}(x)\: dx = E[Y]
+            \end{split}
+        \end{equation}
+        where $P\{Y>y\}=\int_{Y}^{\infty}f_{Y}(x)\:dx$. 
+    \end{proof}
+    From \ref{lem:lemmaprob}, for any $g(x)\geq 0$, 
+    \begin{equation}
+        \begin{split}
+            E[g(X)] & = \int_{0}^{\infty} P\{g(X)>y\}\: dy\\
+            & = \int_{0}^{\infty} \int_{x: g(x)>y} f(x)\:dx\:dy\\
+            & = \int_{x: g(x)>y} f(x)\int_{0}^{g(x)} dyf(x)\:dx\\
+            & = \int_{x:g(x)>0} g(x)f(x) \: dx
+        \end{split}
+    \end{equation}
+\end{proof}
+\subsubsection{Properties of expectation}
+\begin{theorem}
+    The following is true for random variables $X,Y$ and expectation $E$:
+    \begin{enumerate}
+        \item If $X\geq 0$ then $E[X]\geq 0$. 
+        \item If $X\geq 0 $ and $E[X]=0$ then $P(X=0)=1$. 
+        \item $E{X}$ is the constant that minimizes $E\Big[(X-c)^2\Big]$. 
+    \end{enumerate}
+\end{theorem}
+\subsection{Variance}
+Given a random variable along with its distribution function $F$, one of the primitive fundamental property of $F$ is called the \textbf{variance}. 
+\begin{definition}[Variance]
+    If $X$ is a random variable with mean $\mu$, then the variance of $X$, denoted $\mathrm{Var}(X)$ is defined by: $$\mathrm{Var}(X)=E[(X-\mu)^{2}]=E[X^{2}]-\mu^{2}$$ for $\mu=E[X]$.\footnote{A useful identity is that for any constant $a$ and $b$: $$\mathrm{Var}(aX+b)=a^{2}\mathrm{Var}(X)$$} \footnote{The standard deviation is then $\sqrt{\mathrm{Var}(X)}$}
+\end{definition}
+\begin{theorem}[Properties of variances]
+    For variance $\mathrm{Var}(\cdot)$ of some random variable $X$, we have that 
+\end{theorem}
+
+\section{Some distribution functions}
+In this section, we would introduce and glance through certain probability distribution usually met while working on probability and its interpretation.
+\subsection{Bernoulli and binomial distribution}
+Suppose that a trial, or an experiment whose outcome can be classified as either \textit{success} or \textit{failure} is performed. The p.m.f of $X\in\{ 0,1 \}$ is then given by: $$p(0)=P\{ X=0 \}=1-p,\quad p(1)=P\{ X=1 \}=p$$
+where $p,0\leq g\leq 1$, is the probability that the trial is a success. Then $X$ is said to be a \textbf{Bernoulli random variable}. 
+
+Suppose for $n$ independent trials, each of which results in success or failure with probability $p$ and $1-p$. If $X$ represents the number of successes, then $X$ is said to be a \textbf{binomial random variable} of parameter $(n,p)$. The pmf in this case is given by: $$p(i)={n\choose i}p^{i} (1-p)^{n-i},\quad i = 0,1,\dots,n$$
+Note that $$\sum^{\infty}_{i=1}p(i)=\sum^{n}_{i=1}{n\choose i}p^{i}(1-p)^{n-i}=1$$
+For a binomial distribution. $E[X]=np$ for $n$ trials. Furthermore, we have: $$E[X^{2}]=np[(n-1)p+1]$$
+And $$\mathrm{Var}(X)=E[X^{2}]-(E[X])^{2}=np(1-p)$$
+\begin{proposition}
+    If $X$ is a binomial random variable with parameters $(n,p)$ where $0<p<1$, then as $k:0\to n$, $P\{ X=k \}$ increases monotonically then decreases monotonically, reaching its largest value when $k=\mathrm{max}(q)\leq (n+1)p$, $q\in \mathbb{Z}$. (that is, the largest integer less or equal to $(n+1)p$
+\end{proposition}
+We can calculate numerically the binomial distribution of $(n,p)$ by using: \begin{equation}
+    P(X=k+1)=\frac{p}{1-p} \frac{n-k}{k+1}P\{ X=k \}
+\end{equation}
+\subsection{Poisson distribution}
+A random variable $X$ that takes on one of the values $0,1,2,\dots$ is said to be a \textbf{Poisson random variable} with parameter $\lambda$ for some $\lambda>0$ if $$P(i)=P\{ X=i \}=e^{-\lambda} \frac{\lambda^{i}}{i!},\quad i=0,1,\dots$$
+The pmf of Poisson random variable is then in the form: $$\sum^{\infty}_{i=0}p(i)=e^{-\lambda}\sum^{\infty}_{i=0} \frac{\lambda^{i}}{i!}=e^{-\lambda}e^{\lambda}=1$$
+Poisson random variable is tremendously useful, and one of which is because for moderate $p$, and large $n$, Poisson variable can be used as an \textit{approximation} of the binomial $(n,p)$. 
+
+The \textbf{expected value} of Poisson random variable is then is: $$E[X]=\sum^{\infty}_{i=0}\frac{ie^{-\lambda}\lambda^{i}}{i!}=\lambda$$
+and $$E[X^{2}]=\sum^{\infty}_{i=0} \frac{i^{2}e^{\lambda}\lambda^{i}}{i!}=\lambda(\lambda+1)$$
+Since $E[X]=\lambda$, we have: $$\mathrm{Var}(X)=E[X^{2}]-(E[X])^{2}=\lambda$$
+The expected value and the \textit{variance} is then both equal to $\lambda$. 
+\subsubsection{Poisson paradigm}
+Consider $n$ events, with $p_{i}$ equal to the probability that event $i$ occurs, $i=1,\dots,n$. If all the $p_{i}$ are 'small' and the trials are either independent or at most "weakly dependent", then the number of these events that occur approximately has a Poisson distribution with mean $\sum_{i=1}^{n}p_{i}$. 
+
+Another use of the Poisson probability distribution arises in situations where "events" occur at certain points in time. One example is to designate the occurrence of an earthquake as an event; another possibility would be for events to correspond to people entering a particular establishment. Suppose that events are indeed random occurrence. For some $\lambda>0$, the following *assumptions* are true: 
+\begin{enumerate}
+    \item The probability that exactly one event occurs in a given interval of length $h$ is equal to $\lambda h+o(h)$. 
+    \item The probability that 2 or more events occur in an interval of length $h$ is equal to $o(h)$. 
+    \item For any $n\in\mathbb{Z}$, $j_{1},\dots,j_{n}$ and any set of $n$ nonoverlapping intervals, if we define $E_{i}$ to be the event that exactly $j_{i}$ of the events under consideration occur in the $i$th of these intervals, then events $E_{1},\dots,E_{n}$ are independent. 
+\end{enumerate}
+\subsection{Uniform distribution}
+A random variable is said to be \textit{uniformly distributed} over $(0,1)$ if its probability density function is given by \begin{equation}
+    f(x)=\begin{cases}
+        1& 0 < x < 1 \\
+        0 & \mathrm{o.w}
+        \end{cases}
+\end{equation}
+The above function is a density function, since $f(x)\geq 0$ and $\int_{-\infty}^{\infty} f(x) \, dx= \int _{0}^{1} \, dx=1$. Because $f(x)>0$ only when $x\in(0,1)$, it follows that $X$ must assume a value in $(0,1)$. The \textbf{probability} that $X$ is in any particular subinterval of $(0,1)$ equals the length of that subinterval. 
+In general, we say that $X$ is a \textbf{uniform random variable} on $(\alpha,\beta)$ if the p.d.f of $X$ is given by
+\begin{equation}
+    f(x)=\begin{cases}
+        \displaystyle{\frac{1}{\beta-\alpha}} & \alpha<x<\beta \\
+        0 & \text{o.w}
+        \end{cases}
+\end{equation}
+Since $F(a)=\int_{-\infty}^{a} f(x) \, dx$ it follows from $f(x)$ that \begin{equation}
+F(a)=\begin{cases}
+    0&a\leq \alpha \\
+    \frac{a-\alpha}{\beta-\alpha} & \alpha < a < \beta \\
+    1 & a \geq \beta
+    \end{cases}
+\end{equation}
+For $X$ be uniformly distributed over $(\alpha,\beta)$, we have: 
+$$E[X]=\frac{\beta+\alpha}{2}, \quad \mathrm{Var}[X]=\frac{(\beta-\alpha)^{2}}{12}$$
+\subsection{Normal distribution}
+We say that $X$ is a \textbf{normal random variable}, or simply that $X$ is normally distributed, with parameters $\mu$ and $\sigma^{2}$ if the density of $X$ is given by $$f(x)=\frac{1}{\sqrt{ 2\pi }\sigma}e^{-(x-\mu)^{2}/2\sigma^{2}}\quad -\infty< x< \infty$$
+This density function is a bell-shaped curve that is symmetric about $\mu$. 
+
+If we are to prove that $f(x)$ is indeed a probability density function, we need to show that $$\frac{1}{\sqrt{ 2\pi \sigma}}\int_{-\infty}^{\infty} e^{-(x-\mu)^{2}/2\sigma^{2}} \, dx=1 $$
+Which is indeed the case, as for certainty the proof is too long to fit. 
+
+An important fact about normal random variables is that if $X$ is normally distributed with parameters $\mu$ and $\sigma^{2}$, then $Y=aX+b$ is normally distributed with parameters $a\mu+b$ and $a^{2}\sigma^{2}$. To prove this, suppose that $a>0$. Let $F_{Y}$ denotes the cdf, then
+$$F_{Y}(x)=P\{ Y\leq x \}=P\left\{  X\leq \frac{x-b}{a}  \right\} = F_{{X}}\left( \frac{x-b}{a} \right)$$
+By differentiation, the density function is hence $$f_{Y}(x)=\frac{1}{a}f_{{X}} \left( \frac{x-b}{a} \right)= \frac{1}{\sqrt{ 2\pi }a\sigma}\exp{\left[  -\frac{(x-b-a\mu)^{2}}{2(a\sigma)^{2}} \right]}$$
+Which shows that $Y$ is normal with parameters $a\mu+b$ and $a^{2}\mu^{2}$. This also implies that if $X$ is normally distributed, then for $Z=(X-\mu)/\sigma$, it is said to be normally distributed with parameters 0 and 1. Such random variable is called \textit{standard}, or \textit{unit} normal random variable.   
+\subsubsection{Normal approximation of binomial distribution}
+It is a theorem that is called the \textbf{DeMoivre-Laplace} limit theorem, which states that for large $n$, a binomial RV with parameters $n,p$ will have approximately same distribution as $\mathcal{N}(\sigma,\mu)$ as the binomial. 
+\begin{theorem}[DeMoivre-Laplace limit theorem]
+    If $S_{n}$ denotes the number of successes that occur when $n$ independent trials, each resulting in a success with probability $p$, are performed, then, for any $a<b$, we have: $$P\left\{ a\leq \frac{(S_{n}-np)}{\sqrt{ np(1-p) }} \leq b  \right\}=\Theta(b)-\Theta(a)$$
+     as $n\to \infty$. 
+\end{theorem}
+\subsection{Exponential distribution}
+A continuous random variable whose probability density function is given, for some $\lambda>0$, by $$f(x)=\begin{cases}
+    \lambda e^{-\lambda x} & x \geq 0 \\
+    0 & x < 0
+    \end{cases}$$
+    is said to be an \textit{exponential random variable}, or exponentially distributed with parameter $\lambda$. The cdf of such variable is then given by: $$F(a)=P\{ X\leq a \}=1-e^{-\lambda a}, \quad a \geq 0$$
+    Its expected value is $$E[X]=\frac{1}{\lambda},\quad E[X^{n}]= \int_{-\infty}^{0} x^{n}\lambda e^{-\lambda x} \, dx= \frac{n}{\lambda}E[X^{n-1}] $$
+    From that, we get $$\mathrm{Var}(X)=\frac{2}{\lambda^{2}}-\left( \frac{1}{\lambda} \right)^{2}=\frac{1}{\lambda^{2}}$$
+\subsubsection{Memory}
+We say that a non-negative random variable is \textbf{memoryless} if: $$P\{ X>x+t\mid X>t \}=P\{ X>s \}$$ for all $s,t>0$. 
+The above equation is equal to: $$P\{ X>s+t \}=P\{ X>s \}P\{ X>t \}$$
+When $X$ is exponentially distributed, we see that it is memoryless.
+\subsubsection{Hazard rate}
+Consider a positive continuous random variable $X$ that we interpret as being the lifetime of some item. Let $X$ have distribution function $F$ and density $f$. The \textit{hazard rate} function $\lambda(t)$ of $F$ is defined by: $$\lambda(t)=\frac{f(t)}{\bar{F}(t)}$$
+where $\bar{F}=1-F$.  
+\subsection{Distribution function of variables}
+
+Often, we know the probability distribution of a random variable and are interested in determining the distribution of some function of it. For example, we know $f(X)$, and is trying to find the distribution of $g(X)$. To do so, it is to express the event that $g(X)\leq y$, in terms of $X$ being in some set. We have the following theorem. 
+
+\begin{theorem}
+    Let $X$ be a continuous random variable having probability density function $f_{{X}}$. Suppose that $g(x)$ is a strictly monotonic, differentiable function of $x$. Then the random variable $Y$ defined by $Y=g(X)$ has a probability density function given by: $$f_{{Y}}(y)=\begin{cases}
+         \displaystyle{f_{X}[g^{-1}(y)]\left\lvert  \frac{d}{dy} g^{-1}(y) \right\rvert } & y = g(x)\\
+         0 & y \neq g(x)
+        \end{cases}$$
+\end{theorem}

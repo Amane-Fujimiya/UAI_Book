@@ -1,0 +1,466 @@
+% PACKAGE INCLUSION
+\usepackage{amsbsy,amssymb,amsmath,amsfonts,amsthm} % Math and related rendering
+\allowdisplaybreaks
+\usepackage{tikz-cd,tikz-3dplot,circuitikz} % For graphical drawing
+%\usepackage{natbib} % For citation, using numbering style. 
+\usepackage{graphicx}
+\usepackage{geometry} % configure the geometry page
+\usepackage{bbm} % Better bold (for example, \mathbb{1} does not work for font not alphabetical)
+\usepackage{bm} % Bold symbol 
+\usepackage{tikz} % for normal graphing
+\usepackage{enumitem} % for customizing options for lists, enumerations, and descriptions
+\usepackage{fancyhdr} % configuring header
+\usepackage{parskip} % For paragraph spacing
+\usepackage{caption} % captioning options
+\usepackage{mathtools} % using this to fix \multlined environment altogether
+\usepackage{parnotes}% take this one for marginnote substitute (or the reverse because this one looks so much better)
+\usepackage{braket} % For bra-ket notation
+%\usepackage{fontspec} % does fontspec works for memoir? 
+\usepackage{float} % more float control
+\usepackage[dvipsnames,svgnames,x11names]{xcolor} % color schema, definitely should have included this
+\usetikzlibrary{matrix}
+\usepackage{thmtools} % hooks and stuff for listoftheorem
+%\DisemulatePackage{showidx} %(2)
+%\usepackage{makeidx} % I HATE THIS
+%\usepackage{showidx} % I HATE THIS
+%\usepackage{subfigure}
+\usepackage{caption} % uh, caption
+\usepackage{nicematrix} % for drawing matrix
+\usepackage{subcaption} % This and the two right above it is required for multi-figure display, so yeah.
+\setcounter{tocdepth}{2}
+%-------------------------------%
+% CONFIGURING NATBIB
+\usepackage{natbib} 
+%-------------------------------%
+% NEXT IS INDEX CONFIG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref} % For referencing
+\makeatletter
+\renewcommand{\index}[1]{%
+  \oldindex{#1}%
+  \if@reversemargin
+    \marginpar{\raggedleft\small#1}%
+  \else
+    \marginpar{\raggedright\small#1}%
+  \fi
+}
+\makeatother
+%\showindexmarks
+\makeindex
+\let\oldindex\index
+\renewcommand{\index}[1]{\oldindex{#1}\marginpar{\hspace{3mm}\small#1}}
+%\newcommand\boldblue[1]{\textcolor{blue}{\textbf{#1}}}
+%####################################
+\let\oldtextit\textit 
+\renewcommand\textit[1]{\oldtextit{\color{orange!70!black}#1}}
+%\let\oldtextbf\textbf
+%\renewcommand\textbf[1]{\oldtextbf{\color{orange!90!black}#1}}
+%####################################
+\setlength{\parskip}{3pt}
+\let\MakeUppercase\relax
+\fancyhfinit{\sffamily\bfseries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Titlepage configuration
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\makeatletter							% Title
+\def\printtitle{%						
+    {\centering \@title\par}}
+\makeatother									
+
+\makeatletter							% Author
+\def\printauthor{%					
+    {\centering \large \@author}}				
+\makeatother
+
+\title{	\normalsize \textsc{Research Records} 	% Subtitle
+		 	\\[3.0cm]								% 2cm spacing
+			\HRule{0.5pt} \\						% Upper rule
+			\huge {\sffamily The Manuscript Compendium}% Title
+      
+			\HRule{1pt} \\ [2.5cm]		% Lower rule + 0.5cm spacing
+			\normalsize	\normalfont 		% Todays date
+		}
+\author{
+		F. Amane\\ Department of Physics
+}
+\date{Last comprehensive review: May 18, 2025}
+% End config
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MARGIN
+%\setstocksize{31.2cm}{22.5cm}
+\setlrmarginsandblock{4.8cm}{2.5cm}{1}
+%\setulmarginsandblock{2.5cm}{*}{1}
+\checkandfixthelayout 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% COLOR BOX CONFIG
+\theoremstyle{plain}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{col}{Corollary}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{setting}{Setting}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{assume}{Assumption}[subsection]
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{hypothesis}{Hypothesis}[section]
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{question}{Question}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{note}{Note}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\makeatletter
+%\renewcommand{\sidepar}[1]{\marginpar{\footnotesize #1}}
+%\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[breakable,theorems,skins]{tcolorbox}
+\tcbuselibrary{breakable}
+\tcbset{%
+  breakable,
+  enhanced jigsaw,
+  parbox=false,
+  nobeforeafter,
+  before skip=10pt,
+  after skip=10pt,
+  arc=2pt,
+}
+\tcolorboxenvironment{theorem}{
+  breakable,
+  colback=blue!5!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt,right=2pt,top=2pt,bottom=2pt,
+  oversize=2pt,
+  before skip=\topsep,
+  after skip=\topsep,
+  enhanced jigsaw,
+}
+\tcolorboxenvironment{definition}{
+  colback=gray!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+\tcolorboxenvironment{col}{
+  colback=orange!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+\tcolorboxenvironment{conjecture}{
+  colback=red!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+\tcolorboxenvironment{setting}{
+  colback=blue!40!orange!20!white, % Mix blue (40%) and orange (20%)
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+% Proposition (green)
+\tcolorboxenvironment{proposition}{
+  colback=green!5!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Lemma (orange -- toned down)
+\tcolorboxenvironment{lemma}{
+  colback=orange!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Assumption (purple)
+\tcolorboxenvironment{assumption}{
+  colback=purple!5!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Assume (a variant of Assumption with a slightly different shade)
+\tcolorboxenvironment{assume}{
+  colback=purple!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Remark (gray, very neutral)
+\tcolorboxenvironment{remark}{
+  colback=gray!5!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Hypothesis (cyan)
+\tcolorboxenvironment{hypothesis}{
+  colback=cyan!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Axiom (yellow -- with extra white to reduce brightness)
+\tcolorboxenvironment{axiom}{
+  colback=yellow!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Question (magenta -- toned down)
+\tcolorboxenvironment{question}{
+  colback=magenta!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Interject (red -- toned down)
+\tcolorboxenvironment{interject}{
+  colback=red!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Example (teal)
+\tcolorboxenvironment{note}{
+  colback=teal!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+  enhanced jigsaw,
+}
+%-----------------------------%
+% Setting margin
+%\setlength{\textwidth}{5in}
+%\setlength{\oddsidemargin}{7pt}
+%\setlength{\evensidemargin}{7pt}
+%\chapterstyle{default}
+%%\renewcommand{\chapternamenum}{}
+%\setlength{\beforechapskip}{0pt}
+%\setlength{\midchapskip}{0pt}
+%\setlength{\afterchapskip}{0pt}
+%\renewcommand*{\chapnumfont}{\normalfont\Huge\bfseries\sffamily}
+%\renewcommand*{\chaptitlefont}{\normalfont\Huge\bfseries\sffamily}
+
+%\makechapterstyle{sfspaced}{
+%  \renewcommand{\chapnamefont}{\sffamily\bfseries\LARGE}
+%  \renewcommand{\chapnumfont}{\sffamily\bfseries\LARGE}
+%  \renewcommand{\chaptitlefont}{\sffamily\bfseries\Huge}
+%
+%  \renewcommand{\printchaptername}{\chapnamefont Chapter}
+%  \renewcommand{\printchapternum}{\chapnumfont\thechapter}
+%  \renewcommand{\afterchapternum}{\par\vspace{1em}} % vertical space
+%  \renewcommand{\printchaptertitle}[1]{\chaptitlefont ##1}
+%}
+%
+%\chapterstyle{sfspaced}
+%\let\chaptername\relax
+%\makeatletter
+%\makechapterstyle{thesis}{
+%\renewcommand{\chapternamenum}{}
+%\setlength{\beforechapskip}{0pt}
+%\setlength{\midchapskip}{0pt}
+%\setlength{\afterchapskip}{0pt}
+%\renewcommand{\chapnamefont}{\LARGE}
+%\renewcommand{\chapnumfont}{\chapnamefont}
+%\renewcommand{\chaptitlefont}{\chapnamefont}
+%\renewcommand{\printchapternum}{}
+%\renewcommand{\afterchapternum}{}
+%\renewcommand{\printchaptername}{}
+%\renewcommand{\afterchaptertitle}{\chapnumfont\hfill\thechapter\\\vspace*{-.3cm}%\hrulefill\vspace*{6cm}\\}
+%}
+%\makeatother
+%\setbeforesecskip{0pt}
+%\setaftersecskip{0pt}
+%\setbeforesubsecskip{0.5pt}
+%\setaftersubsecskip{0.25pt}
+\setlength{\itemindent}{-2em}
+\titleformat{\chapter}{\huge\sffamily}{\chaptername~\thechapter.}{1em}{}{}
+%\titleformat{\section}{\large}{\thesection}{1em}{}{}
+%\titleformat{\subsection}{\normalsize}{\thesubsection}{1em}{}{}
+\setsecnumdepth{subsection}
+\setsecheadstyle{\sffamily\Large}
+\setsubsecheadstyle{\sffamily\large}
+\setsubsubsecheadstyle{\sffamily\normalsize}
+\setparaheadstyle{\sffamily\normalsize\itshape}
+% FOOTNOTE PENALTY
+\interfootnotelinepenalty=9000
+\titlespacing{\section}{0pt}{5pt}{3pt}
+\titlespacing{\subsection}{0pt}{3pt}{2pt}
+\titlespacing{\subsubsection}{0pt}{1pt}{1pt}
+
+\setlength{\textfloatsep}{10pt plus 1.0pt minus 2.0pt}
+
+%----------------------------------------------------------------------------------% 
+% SMALL SETTING
+\usepackage{pgfplots} % for something else
+\usetikzlibrary{patterns}       % For custom patterns
+\usetikzlibrary{shadings}       % For gradient fills
+\usetikzlibrary{shapes.geometric} % For geometric shapes
+\usetikzlibrary{calc}           % For coordinate calculations
+\usetikzlibrary{positioning}    % For node positioning
+\usetikzlibrary{decorations.pathreplacing} % For path decorations
+\usetikzlibrary{fit} % For fitting shapes around nodes
+\newcommand{\calx}[1]{\mathcal{#1}}
+\newcommand{\mynote}[1]{\medskip\par\textbf{\small Note}\quad\setlength{\extrarowheight}{2pt}\begin{tabularx}{\linegoal}{X}
+\Xhline{1pt}
+\rowcolor{WhiteSmoke!80!Lavender}#1 \\
+\Xhline{1pt}
+\end{tabularx}}
+
+\makeatletter
+\pgfutil@ifundefined{pgf@pattern@name@_xg1qse1zm}{
+  \pgfdeclarepatternformonly[\mcThickness,\mcSize]{_xg1qse1zm}
+  {\pgfqpoint{0pt}{-\mcThickness}}
+  {\pgfpoint{\mcSize}{\mcSize}}
+  {\pgfpoint{\mcSize}{\mcSize}}
+  {
+    \pgfsetcolor{\tikz@pattern@color}
+    \pgfsetlinewidth{\mcThickness}
+    \pgfpathmoveto{\pgfqpoint{0pt}{\mcSize}}
+    \pgfpathlineto{\pgfpoint{\mcSize+\mcThickness}{-\mcThickness}}
+    \pgfusepath{stroke}
+  }
+}
+\makeatother
+
+\makeatletter
+\pgfutil@ifundefined{pgf@pattern@name@_lbrsyyeax}{
+  \pgfdeclarepatternformonly[\mcThickness,\mcSize]{_lbrsyyeax}
+  {\pgfqpoint{0pt}{0pt}}
+  {\pgfpoint{\mcSize+\mcThickness}{\mcSize+\mcThickness}}
+  {\pgfpoint{\mcSize}{\mcSize}}
+  {
+    \pgfsetcolor{\tikz@pattern@color}
+    \pgfsetlinewidth{\mcThickness}
+    \pgfpathmoveto{\pgfqpoint{0pt}{0pt}}
+    \pgfpathlineto{\pgfpoint{\mcSize+\mcThickness}{\mcSize+\mcThickness}}
+    \pgfusepath{stroke}
+  }
+}
+\makeatother
+%-----------------------------------------------------------------------------------------%
+%\renewcommand\index{\@bsphack\begingroup\@sanitize\catcode32=10\relax\@index}
+%
+%\renewcommand\makeindex{\if@filesw \newwrite\@indexfile
+%\immediate\openout\@indexfile=\jobname.idx
+%\def\index{\@bsphack\begingroup
+%\def\protect####1{\string####1\space}\@sanitize
+%\catcode32=10 \@wrindex\@indexfile}\typeout
+%{Writing index file \jobname.idx }\fi}
+%
+%\def\@wrindex#1#2{\let\thepage\relax
+%\xdef\@gtempa{\write#1{\string
+%\indexentry{#2}{\thepage}}}\endgroup\@gtempa
+%\@showidx{#2}\if@nobreak \ifvmode\nobreak\fi\fi\@esphack}
+%------------------------------------------------------------------------------------------%
+% Test blockquote
+
+\usepackage{csquotes}
+\makeatletter
+\patchcmd{\csq@bquote@i}{{#6}}{{\emph{#6}}}{}{}
+\makeatother
+\renewcommand{\mkbegdispquote}[2]{\itshape}
+\newcommand{\cH}{{\mathcal{H}}}
+\newcommand{\cHN}{{\mathcal{H}_N}}
+\newcommand{\rkhs}{{\mathcal{H_\infty}}}
+
+% Reference box setup
+\hypersetup{
+    pagebackref=true,
+    hyperindex=true,
+    colorlinks=true,
+    breaklinks=true,
+    urlcolor=black,
+    filecolor=black,
+    citecolor=blue,
+    linkcolor=black, % <--- prevents ToC and section links from being colored
+    bookmarks=true,
+    bookmarksopen=false
+}
+
+
+\ifodd\value{page}
+  \normalmarginpar
+\else
+  \reversemarginpar
+\fi
+
+\newcommand{\x}{\times}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cT}{\mathcal{T}}
