@@ -1,4 +1,4 @@
-\begin{thebibliography}{200}
+\begin{thebibliography}{228}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -78,6 +78,11 @@ Stephen Andrilli and David Hecker.
 \newblock \doi{https://doi.org/10.1016/B978-0-12-374751-8.00001-9}.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/B9780123747518000019}.
+
+\bibitem[Anscombe(1957)]{Anscombe1957}
+G.~E.~M. Anscombe.
+\newblock \emph{Intention}.
+\newblock Basil Blackwell, Oxford, 1957.
 
 \bibitem[Arjevani et~al.(2025)Arjevani, Bruna, Kileel, Polak, and
   Trager]{arjevani2025geometryoptimizationshallowpolynomial}
@@ -171,6 +176,13 @@ Peter~L. Bartlett, Dylan~J. Foster, and Matus Telgarsky.
 Peter~L. Bartlett, Andrea Montanari, and Alexander Rakhlin.
 \newblock Deep learning: a statistical viewpoint.
 \newblock \emph{Acta Numerica}, 30:\penalty0 87--201, 2021.
+
+\bibitem[Bathaee(2018)]{Bathaee2018TheAI}
+Yavar Bathaee.
+\newblock The artificial intelligence black box and the failure of intent and
+  causation.
+\newblock \emph{Harvard Journal of Law \& Technology}, 31:\penalty0 889, 2018.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:158988823}.
 
 \bibitem[Beardon(2005)]{Beardon_2005}
 Alan~F. Beardon.
@@ -344,6 +356,19 @@ Lenaic Chizat and Francis Bach.
 \newblock \emph{Advances in Neural Information Processing Systems (NeurIPS)},
   31, 2018.
 
+\bibitem[Churchland(1986)]{churchland1986_neurophilosophy}
+Patricia~S. Churchland.
+\newblock \emph{Neurophilosophy: Toward a Unified Science of the Mind-Brain}.
+\newblock MIT Press, Cambridge, MA, 1986.
+\newblock ISBN 978-0262031165.
+
+\bibitem[Copeland and Proudfoot(2018)]{copeland2018_evolution_computationalism}
+Jack Copeland and Diane Proudfoot.
+\newblock From computer metaphor to computational modeling: The evolution of
+  computationalism.
+\newblock \emph{Minds and Machines}, 28\penalty0 (4):\penalty0 515--542, 2018.
+\newblock \doi{10.1007/s11023-018-9468-3}.
+
 \bibitem[Cristianini and Shawe-Taylor(2000)]{Cristianini2000AnIT}
 Nello Cristianini and John Shawe-Taylor.
 \newblock An introduction to support vector machines and other kernel-based
@@ -367,6 +392,19 @@ Adnan Darwiche and Pierre Marquis.
 \newblock \emph{Journal of Artificial Intelligence Research}, 17:\penalty0
   229–264, 2002.
 
+\bibitem[Davidson(1963)]{Davidson1963}
+Donald Davidson.
+\newblock Actions, reasons, and causes.
+\newblock \emph{The Journal of Philosophy}, 60\penalty0 (23):\penalty0
+  685--700, 1963.
+\newblock \doi{10.2307/2023177}.
+
+\bibitem[Davidson(1970)]{Davidson1970}
+Donald Davidson.
+\newblock Mental events.
+\newblock In Lawrence Foster and J.~W. Swanson, editors, \emph{Experience and
+  Theory}. Humanities Press, London, 1970.
+
 \bibitem[Davies et~al.(2023)Davies, Langosco, and
   Krueger]{davies_unifying_2023}
 Xander Davies, Lauro Langosco, and David Krueger.
@@ -386,10 +424,29 @@ Howard~B. Demuth, Mark~H. Beale, Orlando De~Jess, and Martin~T. Hagan.
 \newblock Martin Hagan, Stillwater, OK, USA, 2nd edition, 2014.
 \newblock ISBN 0971732116.
 
+\bibitem[Dennett(1978)]{dennett1978_brainstorms}
+Daniel~C. Dennett.
+\newblock \emph{Brainstorms: Philosophical Essays on Mind and Psychology}.
+\newblock MIT Press, Cambridge, MA, 1978.
+\newblock ISBN 978-0262540377.
+
+\bibitem[Dennett(1991)]{dennett1991_consciousness}
+Daniel~C. Dennett.
+\newblock \emph{Consciousness Explained}.
+\newblock Little, Brown and Company, Boston, 1991.
+\newblock ISBN 978-0316180665.
+
 \bibitem[Descartes(1950)]{Descartes1950-DESDOM}
 Rene? Descartes.
 \newblock \emph{Discourse on Method}.
 \newblock Harmondsworth, Penguin, Harmondsworth,, 1950.
+
+\bibitem[Dodig-Crnkovic(2012)]{dodig2012_infocomputationalism}
+Gordana Dodig-Crnkovic.
+\newblock Info-computationalism and morphological computing of informational
+  structures.
+\newblock \emph{Information}, 3\penalty0 (2):\penalty0 204--218, 2012.
+\newblock \doi{10.3390/info3020204}.
 
 \bibitem[Domingos(2000{\natexlab{a}})]{Domingos2000AUB}
 Pedro~M. Domingos.
@@ -481,6 +538,12 @@ Stephen Floyd and Manfred~K. Warmuth.
 \newblock \emph{Machine Learning}, 21\penalty0 (3):\penalty0 269--304, 1995.
 \newblock Compression bounds linking model size and generalization.
 
+\bibitem[Fodor(1975)]{fodor1975_languageofthought}
+Jerry~A. Fodor.
+\newblock \emph{The Language of Thought}.
+\newblock Harvard University Press, Cambridge, MA, 1975.
+\newblock ISBN 978-0674510302.
+
 \bibitem[Fortmann(2012)]{Scott_Fortmann_Bias}
 Scott Fortmann.
 \newblock Understanding the {Bias}-{Variance} {Tradeoff}, 2012.
@@ -491,6 +554,13 @@ Joseph~A. Gallian.
 \newblock \emph{Contemporary Abstract Algebra}.
 \newblock Brooks/Cole, Pacific Grove, CA, 8th edition, 2013.
 \newblock ISBN 978-1133599708.
+
+\bibitem[Gauvrit et~al.(2015)Gauvrit, Zenil, and
+  {Tegnér}]{gauvrit2015_algorithmic_cognition}
+Nicolas Gauvrit, Hector Zenil, and Per {Tegnér}.
+\newblock The information-theoretic and algorithmic approach to human, animal
+  and artificial cognition.
+\newblock \emph{arXiv preprint}, 2015.
 
 \bibitem[Geman et~al.(1992)Geman, Bienenstock, and Doursat]{6797087}
 Stuart Geman, Elie Bienenstock, and René Doursat.
@@ -521,6 +591,13 @@ Ashok Goel.
 Ian Goodfellow, Yoshua Bengio, Aaron Courville, and Yoshua Bengio.
 \newblock \emph{Deep learning}, volume~1.
 \newblock MIT Press, 2016.
+
+\bibitem[Goodman et~al.(2009)Goodman, Baker, and
+  Tenenbaum]{GoodmanBakerTenenbaum2009}
+Noah~D. Goodman, Chris~L. Baker, and Joshua~B. Tenenbaum.
+\newblock Cause and intent: Social reasoning in causal learning.
+\newblock In \emph{Proceedings of the Thirty-First Annual Conference of the
+  Cognitive Science Society}, pages 2759--2764, Amsterdam, 2009.
 
 \bibitem[Gowers et~al.(2008)Gowers, Barrow-Green, and Leader]{10.5555/1513920}
 Timothy Gowers, June Barrow-Green, and Imre Leader.
@@ -577,6 +654,12 @@ Yu-Chi Ho and D.L. Pepyne.
 \newblock In \emph{Proceedings of the 40th IEEE Conference on Decision and
   Control (Cat. No.01CH37228)}, volume~5, pages 4409--4414 vol.5, 2001.
 \newblock \doi{10.1109/CDC.2001.980896}.
+
+\bibitem[Hornsby(2004)]{Hornsby2004}
+Jennifer Hornsby.
+\newblock Agency and actions.
+\newblock In H.~Steward and J.~Hyman, editors, \emph{Agency and Action}.
+  Cambridge University Press, Cambridge, 2004.
 
 \bibitem[Horsten(2023)]{sep-philosophy-mathematics}
 Leon et~al. Horsten.
@@ -687,12 +770,24 @@ Mohammad~Emtiyaz Khan and Håvard Rue.
 \newblock URL \url{http://arxiv.org/abs/2107.04562}.
 \newblock arXiv:2107.04562 [cs, stat] version: 4.
 
+\bibitem[Kim(1998)]{Kim1998}
+Jaegwon Kim.
+\newblock \emph{Mind in a Physical World: An Essay on the Mind--Body Problem
+  and Mental Causation}.
+\newblock MIT Press, Cambridge, MA, 1998.
+
 \bibitem[Lafon and Thomas(2024)]{lafon_understanding_2024}
 Marc Lafon and Alexandre Thomas.
 \newblock Understanding the {Double} {Descent} {Phenomenon} in {Deep}
   {Learning}, March 2024.
 \newblock URL \url{http://arxiv.org/abs/2403.10459}.
 \newblock arXiv:2403.10459 [cs, stat].
+
+\bibitem[LaForte(1998)]{laforte1998_godel_computationalism}
+Geoffrey LaForte.
+\newblock Why gödel’s theorem cannot refute computationalism.
+\newblock \emph{Minds and Machines}, 8\penalty0 (4):\penalty0 577--593, 1998.
+\newblock \doi{10.1023/A:1008320429318}.
 
 \bibitem[Lee et~al.(2019)Lee, Xiao, Schoenholz, Bahri, Novak, Sohl-Dickstein,
   and Pennington]{lee2019wide}
@@ -702,6 +797,11 @@ Jaehoon Lee, Lechao Xiao, Samuel~S. Schoenholz, Yasaman Bahri, Roman Novak,
   gradient descent.
 \newblock In \emph{Advances in Neural Information Processing Systems
   (NeurIPS)}, pages 8572--8583, 2019.
+
+\bibitem[Legg and Hutter(2007)]{legg2007collectiondefinitionsintelligence}
+Shane Legg and Marcus Hutter.
+\newblock A collection of definitions of intelligence, 2007.
+\newblock URL \url{https://arxiv.org/abs/0706.3639}.
 
 \bibitem[Lipton(2018)]{lipton2016mythos}
 Zachary~C. Lipton.
@@ -826,6 +926,13 @@ Song Mei and Andrea Montanari.
   asymptotics and double descent curve, 2020.
 \newblock URL \url{https://arxiv.org/abs/1908.05355}.
 
+\bibitem[Menzies and Price(1993)]{MenziesPrice1993}
+Peter Menzies and Huw Price.
+\newblock Causation as a secondary quality.
+\newblock \emph{The British Journal for the Philosophy of Science}, 44\penalty0
+  (2):\penalty0 187--203, 1993.
+\newblock \doi{10.1093/bjps/44.2.187}.
+
 \bibitem[Metaxiotis and Samouilidis(2000)]{articleMetaxiotis}
 Kostas Metaxiotis and J-E Samouilidis.
 \newblock Expert systems in medicine: Academic illusion or real power?
@@ -907,12 +1014,24 @@ Thomas Müller, Alex Evans, Christoph Schied, and Alexander Keller.
 \newblock \doi{10.1145/3528223.3530127}.
 \newblock URL \url{http://dx.doi.org/10.1145/3528223.3530127}.
 
+\bibitem[Müller(2025)]{muller2025_symbolgrounding}
+Vincent~C. Müller.
+\newblock Symbol grounding in computational systems: A paradox of intentions.
+\newblock \emph{arXiv preprint}, 2025.
+
 \bibitem[Nagarajan and
   Kolter(2021)]{nagarajan2021uniformconvergenceunableexplain}
 Vaishnavh Nagarajan and J.~Zico Kolter.
 \newblock Uniform convergence may be unable to explain generalization in deep
   learning, 2021.
 \newblock URL \url{https://arxiv.org/abs/1902.04742}.
+
+\bibitem[Nagel(2012)]{nagel2012_mindandcosmos}
+Thomas Nagel.
+\newblock \emph{Mind and Cosmos: Why the Materialist Neo-Darwinian Conception
+  of Nature Is Almost Certainly False}.
+\newblock Oxford University Press, New York, 2012.
+\newblock ISBN 978-0199919758.
 
 \bibitem[Nakkiran et~al.(2019)Nakkiran, Kaplun, Bansal, Yang, Barak, and
   Sutskever]{nakkiran_deep_2019}
@@ -989,6 +1108,20 @@ Judea Pearl.
 \newblock ISBN 9780521895606.
 \newblock \doi{10.1017/CBO9780511803161}.
 
+\bibitem[Penrose(1989)]{penrose1989_emperorsmind}
+Roger Penrose.
+\newblock \emph{The Emperor’s New Mind: Concerning Computers, Minds, and the
+  Laws of Physics}.
+\newblock Oxford University Press, Oxford, 1989.
+\newblock ISBN 978-0198519737.
+
+\bibitem[Penrose(1994)]{penrose1994_shadows}
+Roger Penrose.
+\newblock \emph{Shadows of the Mind: A Search for the Missing Science of
+  Consciousness}.
+\newblock Oxford University Press, Oxford, 1994.
+\newblock ISBN 978-0198539780.
+
 \bibitem[Pfau(2013)]{PfauBregmanDivergence}
 David Pfau.
 \newblock A generalized bias-variance decomposition for bregman divergences.
@@ -1032,6 +1165,12 @@ Dale Purves, George~J. Augustine, David Fitzpatrick, William~C. Hall,
 \newblock Neuroscience, 3rd ed. Sinauer Associates, Sunderland, MA, US, 2004.
 \newblock ISBN 978-0-87893-725-7.
 \newblock Pages: xix, 773.
+
+\bibitem[Putnam(1988)]{putnam1988_representation}
+Hilary Putnam.
+\newblock \emph{Representation and Reality}.
+\newblock MIT Press, Cambridge, MA, 1988.
+\newblock ISBN 978-0262660594.
 
 \bibitem[Quétu and Tartaglione(2023{\natexlab{a}})]{quetu_can_2023}
 Victor Quétu and Enzo Tartaglione.
@@ -1122,16 +1261,35 @@ Rylan Schaeffer, Mikail Khona, Zachary Robertson, Akhilan Boopathy, Kateryna
 \newblock URL \url{http://arxiv.org/abs/2303.14151}.
 \newblock arXiv:2303.14151 [cs, stat].
 
+\bibitem[Scheutz(2002)]{scheutz2002_computationalism}
+Matthias Scheutz, editor.
+\newblock \emph{Computationalism: New Directions}.
+\newblock MIT Press, Cambridge, MA, 2002.
+\newblock ISBN 978-0262692843.
+
 \bibitem[Seager(2010s (or older))]{SeagerFrameAxiological}
 William Seager.
 \newblock Frame problems, emotions and axiological projectionism.
 \newblock \emph{Philosophical report}, 2010s (or older).
 
-\bibitem[Searle(1980)]{searle1980minds}
+\bibitem[Searle(1980{\natexlab{a}})]{searle1980_mindsbrains}
 John~R. Searle.
 \newblock Minds, brains, and programs.
 \newblock \emph{Behavioral and Brain Sciences}, 3\penalty0 (3):\penalty0
-  417--457, 1980.
+  417--457, 1980{\natexlab{a}}.
+\newblock \doi{10.1017/S0140525X00005756}.
+
+\bibitem[Searle(1980{\natexlab{b}})]{searle1980minds}
+John~R. Searle.
+\newblock Minds, brains, and programs.
+\newblock \emph{Behavioral and Brain Sciences}, 3\penalty0 (3):\penalty0
+  417--457, 1980{\natexlab{b}}.
+
+\bibitem[Searle(1992)]{searle1992_rediscovery}
+John~R. Searle.
+\newblock \emph{The Rediscovery of the Mind}.
+\newblock MIT Press, Cambridge, MA, 1992.
+\newblock ISBN 978-0262691549.
 
 \bibitem[Shalev-Shwartz and Ben-David(2014)]{10.5555/2621980}
 Shai Shalev-Shwartz and Shai Ben-David.
@@ -1176,6 +1334,12 @@ Cheng Shi, Liming Pan, Hong Hu, and Ivan Dokmanić.
   convolution networks, 2024.
 \newblock URL \url{https://arxiv.org/abs/2212.13069}.
 
+\bibitem[Simon(1969)]{simon1969_sciences}
+Herbert~A. Simon.
+\newblock \emph{The Sciences of the Artificial}.
+\newblock MIT Press, Cambridge, MA, 1 edition, 1969.
+\newblock ISBN 978-0262190510.
+
 \bibitem[Smith and Tabachnikova(2000)]{Smith_Tabachnikova_2000}
 Geoff Smith and Olga Tabachnikova.
 \newblock \emph{Topics in Group Theory}.
@@ -1188,6 +1352,14 @@ Daniel Soudry, Elad Hoffer, Mor~Shpigel Nacson, Suriya Gunasekar, and Nathan
   Srebro.
 \newblock The implicit bias of gradient descent on separable data, 2024.
 \newblock URL \url{https://arxiv.org/abs/1710.10345}.
+
+\bibitem[{Stanford Encyclopedia of Philosophy}(2018)]{stanford2018ai}
+{Stanford Encyclopedia of Philosophy}.
+\newblock Artificial intelligence.
+\newblock \url{https://plato.stanford.edu/entries/artificial-intelligence/},
+  2018.
+\newblock A well-rounded survey of history, proposed definitions, and
+  philosophy-of-AI debates.
 
 \bibitem[Sterkenburg(2024)]{Sterkenburg_2024}
 Tom~F. Sterkenburg.
@@ -1349,6 +1521,11 @@ David~H Wolpert and William~G Macready.
 \newblock Coevolutionary free lunches.
 \newblock \emph{IEEE Transactions on Evolutionary Computation}, 9\penalty0
   (6):\penalty0 721--735, 2005.
+
+\bibitem[Woodward(2003)]{Woodward2003}
+James Woodward.
+\newblock \emph{Making Things Happen: A Theory of Causal Explanation}.
+\newblock Oxford University Press, New York, 2003.
 
 \bibitem[Xu and Raginsky(2017)]{XuRaginsky:2017:InfoGen}
 An~Xu and Maxim Raginsky.

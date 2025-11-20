@@ -889,11 +889,11 @@ INPUT .\img\expertsystem1.png
 INPUT .\img\expertsystem1.png
 INPUT .\img\expertsystem1.png
 INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-Italic-tlf-t1.tfm
+INPUT D:\MikTek\fonts\vf\public\etbb\ETbb-Italic-tlf-t1.vf
+INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-Italic-tlf-t1--base.tfm
 INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-BoldItalic-tlf-t1.tfm
 INPUT D:\MikTek\fonts\vf\public\etbb\ETbb-BoldItalic-tlf-t1.vf
 INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-BoldItalic-tlf-t1--base.tfm
-INPUT D:\MikTek\fonts\vf\public\etbb\ETbb-Italic-tlf-t1.vf
-INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-Italic-tlf-t1--base.tfm
 INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-Italic-tlf-t1.tfm
 INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-Italic-tlf-t1.tfm
 INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-Bold-tlf-t1.tfm

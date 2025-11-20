@@ -1,91 +1,92 @@
 \begin{theindex}
 
-  \item $\mathbb  {R}$ standard neuron., \hyperpage{227}
-  \item $\mathcal  {N}_{0}$ simplex, \hyperpage{227}
-  \item $\mathcal  {N}_{1}$ simplex, \hyperpage{232}
+  \item $\mathbb  {R}$ standard neuron., \hyperpage{233}
+  \item $\mathcal  {N}_{0}$ simplex, \hyperpage{233}
+  \item $\mathcal  {N}_{1}$ simplex, \hyperpage{238}
 
   \indexspace
 
-  \item adjoint operator, \hyperpage{249}
-  \item algebra, \hyperpage{96}
-  \item algebraic operation, \hyperpage{98}
-  \item algebraic structure, \hyperpage{97}
-  \item artificial, \hyperpage{22}
-  \item axon, \hyperpage{216}
+  \item adjoint operator, \hyperpage{255}
+  \item agent model, \hyperpage{34}
+  \item algebra, \hyperpage{102}
+  \item algebraic operation, \hyperpage{104}
+  \item algebraic structure, \hyperpage{103}
+  \item axon, \hyperpage{222}
 
   \indexspace
 
-  \item Bernoulli equation, \hyperpage{117}
-  \item brain lateralization, \hyperpage{216}
+  \item Bernoulli equation, \hyperpage{123}
+  \item brain lateralization, \hyperpage{222}
 
   \indexspace
 
-  \item Caratheodory theorem, \hyperpage{204}
+  \item Caratheodory theorem, \hyperpage{210}
   \item certainty factor, \hyperpage{12}
-  \item characterization, \hyperpage{42}
-  \item Chernoff's inequality, \hyperpage{94}
-  \item closure, \hyperpage{98}
-  \item commutativity, \hyperpage{99}
-  \item commutator, \hyperpage{248}
-  \item complex number, \hyperpage{319}
-  \item composition, \hyperpage{51}
-  \item compressed form, \hyperpage{60}
+  \item characterization, \hyperpage{48}
+  \item Chernoff's inequality, \hyperpage{100}
+  \item closure, \hyperpage{104}
+  \item commutativity, \hyperpage{105}
+  \item commutator, \hyperpage{254}
+  \item complex number, \hyperpage{325}
+  \item composition, \hyperpage{57}
+  \item compressed form, \hyperpage{66}
   \item computational rationality, \hyperpage{6}
-  \item concentration inequalities, \hyperpage{89}
-  \item conjunctions, \hyperpage{37}
+  \item concentration inequalities, \hyperpage{95}
+  \item conjunctions, \hyperpage{43}
   \item connectionism, \hyperpage{8}
-  \item contradiction, \hyperpage{39}
-  \item convex hull, \hyperpage{203}
-  \item Cramer condition, \hyperpage{94}
+  \item contradiction, \hyperpage{45}
+  \item convex hull, \hyperpage{209}
+  \item Cramer condition, \hyperpage{100}
 
   \indexspace
 
   \item deep learning, \hyperpage{17}
-  \item dendrites, \hyperpage{216}
-  \item disjunction, \hyperpage{37}
-  \item dual space, \hyperpage{245}
+  \item dendrites, \hyperpage{222}
+  \item disjunction, \hyperpage{43}
+  \item dual space, \hyperpage{251}
 
   \indexspace
 
-  \item eigenfunction, \hyperpage{247}
-  \item empirical risk, \hyperpage{161}
-  \item ERC, \hyperpage{191}
+  \item eigenfunction, \hyperpage{253}
+  \item empirical risk, \hyperpage{167}
+  \item environment, \hyperpage{34}
+  \item ERC, \hyperpage{197}
   \item expert system, \hyperpage{10}
 
   \indexspace
 
-  \item first-order differential equation, \hyperpage{112}
-  \item function, \hyperpage{51}
+  \item first-order differential equation, \hyperpage{118}
+  \item function, \hyperpage{57}
 
   \indexspace
 
-  \item generalization risk, \hyperpage{161}
-  \item gray model, \hyperpage{137}
-  \item growth function, \hyperpage{197}
+  \item generalization risk, \hyperpage{167}
+  \item gray model, \hyperpage{143}
+  \item growth function, \hyperpage{203}
   \item GSM, \hyperpage{17}
 
   \indexspace
 
-  \item halfspace, \hyperpage{198, 199}
+  \item halfspace, \hyperpage{204, 205}
   \item Hebbian learning, \hyperpage{5}
-  \item heliocentric topology, \hyperpage{222}
-  \item Hermitian operator, \hyperpage{249}
+  \item heliocentric topology, \hyperpage{228}
+  \item Hermitian operator, \hyperpage{255}
   \item hidden Markov models, \hyperpage{17}
 
   \indexspace
 
-  \item identity, \hyperpage{99}
-  \item image (function), \hyperpage{51}
-  \item implicit form, \hyperpage{119}
+  \item identity, \hyperpage{105}
+  \item image (function), \hyperpage{57}
+  \item implicit form, \hyperpage{125}
   \item inference engine, \hyperpage{10}
-  \item inner product space, \hyperpage{244}
-  \item input unit, \hyperpage{225}
-  \item integral domain, \hyperpage{320}
-  \item integrating factor method, \hyperpage{113}
-  \item Intelligence, \hyperpage{20}
-  \item Intelligent, \hyperpage{20}
+  \item inner product space, \hyperpage{250}
+  \item input unit, \hyperpage{231}
+  \item integral domain, \hyperpage{326}
+  \item integrating factor method, \hyperpage{119}
+  \item Intelligence, \hyperpage{22}
+  \item Intelligent, \hyperpage{22}
   \item intelligent agent, \hyperpage{6}
-  \item inverse, \hyperpage{100}
+  \item inverse, \hyperpage{106}
 
   \indexspace
 
@@ -93,100 +94,100 @@
 
   \indexspace
 
-  \item layer, \hyperpage{223}
-  \item linear functional, \hyperpage{245}
+  \item layer, \hyperpage{229}
+  \item linear functional, \hyperpage{251}
   \item Logic Theorist, \hyperpage{6}
-  \item logical equivalence, \hyperpage{39}
-  \item logical operation, \hyperpage{36}
-  \item logical quantification, \hyperpage{40}
-  \item logical system, \hyperpage{36}
-  \item logics, \hyperpage{35}
-  \item LVCE, \hyperpage{115}
+  \item logical equivalence, \hyperpage{45}
+  \item logical operation, \hyperpage{42}
+  \item logical quantification, \hyperpage{46}
+  \item logical system, \hyperpage{42}
+  \item logics, \hyperpage{41}
+  \item LVCE, \hyperpage{121}
 
   \indexspace
 
-  \item Markov's inequality, \hyperpage{90}
-  \item martingale methods, \hyperpage{89}
-  \item Massart's lemma, \hyperpage{197}
-  \item mathematical model, \hyperpage{132}
-  \item mathematical representation, \hyperpage{95}
-  \item mechanical unit, \hyperpage{225}
-  \item mechanistic model, \hyperpage{136}
-  \item minimal polynomial, \hyperpage{321}
-  \item minimized structure, \hyperpage{226}
-  \item model, \hyperpage{128}
-  \item model-free learning, \hyperpage{174}
+  \item Markov's inequality, \hyperpage{96}
+  \item martingale methods, \hyperpage{95}
+  \item Massart's lemma, \hyperpage{203}
+  \item mathematical model, \hyperpage{138}
+  \item mathematical representation, \hyperpage{101}
+  \item mechanical unit, \hyperpage{231}
+  \item mechanistic model, \hyperpage{142}
+  \item minimal polynomial, \hyperpage{327}
+  \item minimized structure, \hyperpage{232}
+  \item model, \hyperpage{134}
+  \item model-free learning, \hyperpage{180}
 
   \indexspace
 
-  \item Neural Doctrine, \hyperpage{218}
-  \item neural vacancy path, \hyperpage{216}
-  \item neuroglia, \hyperpage{217}
-  \item neuron chaining, \hyperpage{229}
-  \item noise, \hyperpage{185}
+  \item Neural Doctrine, \hyperpage{224}
+  \item neural vacancy path, \hyperpage{222}
+  \item neuroglia, \hyperpage{223}
+  \item neuron chaining, \hyperpage{235}
+  \item noise, \hyperpage{191}
 
   \indexspace
 
-  \item open sentence, \hyperpage{36}
-  \item outer typing, \hyperpage{351}
-  \item output unit, \hyperpage{226}
+  \item open sentence, \hyperpage{42}
+  \item outer typing, \hyperpage{357}
+  \item output unit, \hyperpage{232}
 
   \indexspace
 
-  \item PAC learning, \hyperpage{173}
-  \item partial operation, \hyperpage{98}
-  \item phenomenological model, \hyperpage{136}
-  \item physical model, \hyperpage{131}
-  \item polynomial coefficient, \hyperpage{318}
-  \item polynomial root, \hyperpage{318}
-  \item precategory, \hyperpage{103}
-  \item preimage, \hyperpage{52}
-  \item proofs, \hyperpage{35}
-  \item pseudometric space, \hyperpage{83}
+  \item PAC learning, \hyperpage{179}
+  \item partial operation, \hyperpage{104}
+  \item phenomenological model, \hyperpage{142}
+  \item physical model, \hyperpage{137}
+  \item polynomial coefficient, \hyperpage{324}
+  \item polynomial root, \hyperpage{324}
+  \item precategory, \hyperpage{109}
+  \item preimage, \hyperpage{58}
+  \item proofs, \hyperpage{41}
+  \item pseudometric space, \hyperpage{89}
 
   \indexspace
 
-  \item quantified statement, \hyperpage{40}
+  \item quantified statement, \hyperpage{46}
 
   \indexspace
 
-  \item Rademacher complexity, \hyperpage{192}
-  \item Rademacher variables, \hyperpage{191}
-  \item Radon's theorem, \hyperpage{205}
-  \item reduced system, \hyperpage{133}
-  \item ReLU, \hyperpage{229}
-  \item representation scheme, \hyperpage{176}
-  \item representation size, \hyperpage{177}
-  \item Reticular Theory, \hyperpage{218}
-  \item rogue class, \hyperpage{225}
-  \item Russell's paradox, \hyperpage{45}
+  \item Rademacher complexity, \hyperpage{198}
+  \item Rademacher variables, \hyperpage{197}
+  \item Radon's theorem, \hyperpage{211}
+  \item reduced system, \hyperpage{139}
+  \item ReLU, \hyperpage{235}
+  \item representation scheme, \hyperpage{182}
+  \item representation size, \hyperpage{183}
+  \item Reticular Theory, \hyperpage{224}
+  \item rogue class, \hyperpage{231}
+  \item Russell's paradox, \hyperpage{51}
 
   \indexspace
 
-  \item Sauer's lemma, \hyperpage{207}
-  \item scalar, \hyperpage{58}
-  \item scaled Hyperbolic Tangent, \hyperpage{360}
-  \item self-adjoint, \hyperpage{250}
-  \item separable equation(s), \hyperpage{118}
-  \item shattering, \hyperpage{199}
-  \item sigma-algebra, \hyperpage{85}
-  \item simulation, \hyperpage{130}
-  \item single chaining, \hyperpage{229}
-  \item skew-adjoint, \hyperpage{250}
-  \item standard class, \hyperpage{228}
-  \item statement, \hyperpage{35}
-  \item synapse, \hyperpage{217}
-  \item system, \hyperpage{130}
-  \item system parameter, \hyperpage{133}
+  \item Sauer's lemma, \hyperpage{213}
+  \item scalar, \hyperpage{64}
+  \item scaled Hyperbolic Tangent, \hyperpage{366}
+  \item self-adjoint, \hyperpage{256}
+  \item separable equation(s), \hyperpage{124}
+  \item shattering, \hyperpage{205}
+  \item sigma-algebra, \hyperpage{91}
+  \item simulation, \hyperpage{136}
+  \item single chaining, \hyperpage{235}
+  \item skew-adjoint, \hyperpage{256}
+  \item standard class, \hyperpage{234}
+  \item statement, \hyperpage{41}
+  \item synapse, \hyperpage{223}
+  \item system, \hyperpage{136}
+  \item system parameter, \hyperpage{139}
 
   \indexspace
 
-  \item tautology, \hyperpage{38}
-  \item theoretical model, \hyperpage{131}
+  \item tautology, \hyperpage{44}
+  \item theoretical model, \hyperpage{137}
 
   \indexspace
 
-  \item VC-dimension, \hyperpage{199}
-  \item vector, \hyperpage{58}
+  \item VC-dimension, \hyperpage{205}
+  \item vector, \hyperpage{64}
 
 \end{theindex}

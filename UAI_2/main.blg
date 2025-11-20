@@ -58,8 +58,8 @@ A level-1 auxiliary file: content/main/chaptert2.aux
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
+Reallocating 'field_info' (item size: 4) to 10096 items.
 Database file #1: reference1.bib
-Reallocating 'field_info' (item size: 4) to 10012 items.
 Warning--I'm ignoring boucheron_concentration_2013's extra "doi" field
 --line 1455 of file reference1.bib
 Warning--entry type for "tunali2019empirical" isn't style-file defined
@@ -90,45 +90,45 @@ Warning--can't use both volume and number fields in Mei2022TowardsBridging
 Warning--empty year in neurondoctrinemishqat
 Warning--empty booktitle in Pinter2019ABO
 Warning--can't use both author and editor fields in Shapiro1997-SHAPOM-18
-You've used 200 entries,
+You've used 228 entries,
             2773 wiz_defined-function locations,
-            1852 strings with 43834 characters,
-and the built_in function-call counts, 86631 in all, are:
-= -- 7758
-> -- 4783
-< -- 156
-+ -- 1656
-- -- 1445
-* -- 6606
-:= -- 13355
-add.period$ -- 790
-call.type$ -- 200
-change.case$ -- 1049
-chr.to.int$ -- 189
-cite$ -- 430
-duplicate$ -- 4032
-empty$ -- 7295
-format.name$ -- 1748
-if$ -- 18356
-int.to.chr$ -- 12
+            1992 strings with 47407 characters,
+and the built_in function-call counts, 96673 in all, are:
+= -- 8658
+> -- 5153
+< -- 183
++ -- 1794
+- -- 1554
+* -- 7253
+:= -- 14956
+add.period$ -- 895
+call.type$ -- 228
+change.case$ -- 1155
+chr.to.int$ -- 216
+cite$ -- 486
+duplicate$ -- 4606
+empty$ -- 8285
+format.name$ -- 1891
+if$ -- 20488
+int.to.chr$ -- 13
 int.to.str$ -- 1
-missing$ -- 180
-newline$ -- 1182
-num.names$ -- 791
-pop$ -- 2347
+missing$ -- 219
+newline$ -- 1341
+num.names$ -- 908
+pop$ -- 2618
 preamble$ -- 1
-purify$ -- 879
+purify$ -- 970
 quote$ -- 0
-skip$ -- 3181
+skip$ -- 3553
 stack$ -- 0
-substring$ -- 2097
-swap$ -- 481
-text.length$ -- 29
+substring$ -- 2352
+swap$ -- 522
+text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1975
+type$ -- 2213
 warning$ -- 25
-while$ -- 710
+while$ -- 812
 width$ -- 0
-write$ -- 2892
+write$ -- 3294
 (There were 28 warnings)

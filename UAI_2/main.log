@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.17)  6 OCT 2025 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.13)  20 NOV 2025 12:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1883,82 +1883,82 @@ Overfull \hbox (0.81998pt too wide) detected at line 94
 
 
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 109
+ \T1/cmss/m/n/10.95 107
  []
 
 
 
 [3]
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 127
+ \T1/cmss/m/n/10.95 115
  []
 
 
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 147
+ \T1/cmss/m/n/10.95 133
+ []
+
+
+Overfull \hbox (0.81998pt too wide) detected at line 94
+ \T1/cmss/m/n/10.95 153
  []
 
 
 
 [4]
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 157
+ \T1/cmss/m/n/10.95 163
  []
 
 LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
 (Font)              scaled to size 9.0pt on input line 94.
 
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 215
+ \T1/cmss/m/n/10.95 221
  []
 
 
 
 [5]
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 239
+ \T1/cmss/m/n/10.95 245
  []
 
 
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 241
+ \T1/cmss/m/n/10.95 247
  []
 
 
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 253
+ \T1/cmss/m/n/10.95 259
  []
 
 
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 265
+ \T1/cmss/m/n/10.95 271
  []
 
 
 
 [6]
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 317
- []
-
-
-Overfull \hbox (0.81998pt too wide) detected at line 94
  \T1/cmss/m/n/10.95 323
  []
 
 
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 325
- []
-
-
-Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 327
- []
-
-
-Overfull \hbox (0.81998pt too wide) detected at line 94
  \T1/cmss/m/n/10.95 329
+ []
+
+
+Overfull \hbox (0.81998pt too wide) detected at line 94
+ \T1/cmss/m/n/10.95 331
+ []
+
+
+Overfull \hbox (0.81998pt too wide) detected at line 94
+ \T1/cmss/m/n/10.95 333
  []
 
 
@@ -1975,22 +1975,27 @@ Overfull \hbox (0.81998pt too wide) detected at line 94
 
 
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 345
+ \T1/cmss/m/n/10.95 347
  []
 
 
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 353
+ \T1/cmss/m/n/10.95 351
  []
 
 
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 355
+ \T1/cmss/m/n/10.95 359
  []
 
 
 Overfull \hbox (0.81998pt too wide) detected at line 94
- \T1/cmss/m/n/10.95 365
+ \T1/cmss/m/n/10.95 361
+ []
+
+
+Overfull \hbox (0.81998pt too wide) detected at line 94
+ \T1/cmss/m/n/10.95 371
  []
 
 
@@ -2113,7 +2118,7 @@ l.12 ...entists work on it together for a summer.}
 
 
 ]
-<img/AI_concept_timeline.png, id=1860, 833.1125pt x 365.365pt>
+<img/AI_concept_timeline.png, id=1883, 833.1125pt x 365.365pt>
 File: img/AI_concept_timeline.png Graphic file (type png)
 <use img/AI_concept_timeline.png>
 Package pdftex.def Info: img/AI_concept_timeline.png  used on input line 20.
@@ -2168,14 +2173,15 @@ LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
 (Font)              scaled to size 8.0pt on input line 86.
 LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
 (Font)              scaled to size 6.0pt on input line 86.
-Package marginnote Info: Margin note 29.1 is on absolute page 30 on input line 89.
-Package marginnote Info: xpos seems to be 272.64899pt on input line 89.
 
 
 [7{D:/MikTek/fonts/enc/dvips/etbb/etbb_6z6nrw.enc}]
+Package marginnote Info: Margin note 30.1 is on absolute page 30 on input line 89.
+Package marginnote Info: xpos seems to be 272.64899pt on input line 89.
+
 
 [8]
-<img/image.png, id=1910, 290.08376pt x 174.6525pt>
+<img/image.png, id=1933, 290.08376pt x 174.6525pt>
 File: img/image.png Graphic file (type png)
 <use img/image.png>
 Package pdftex.def Info: img/image.png  used on input line 115.
@@ -2187,9 +2193,6 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package marginnote Info: Margin note 31.1 is on absolute page 32 on input line 122.
 Package marginnote Info: xpos seems to be 151.60817pt on input line 122.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [9]
 Package marginnote Info: Margin note 32.1 is on absolute page 32 on input line 123.
@@ -2199,7 +2202,7 @@ Package marginnote Info: xpos seems to be 292.57608pt on input line 123.
 
 
 [10 <./img/image.png (PNG copy)>]
-<img/expertsystem1.png, id=1928, 853.1875pt x 498.86375pt>
+<img/expertsystem1.png, id=1951, 853.1875pt x 498.86375pt>
 File: img/expertsystem1.png Graphic file (type png)
 <use img/expertsystem1.png>
 Package pdftex.def Info: img/expertsystem1.png  used on input line 144.
@@ -2242,73 +2245,62 @@ Package marginnote Info: Margin note 39.1 is on absolute page 39 on input line 2
 Package marginnote Info: xpos seems to be 316.38725pt on input line 207.
 Package marginnote Info: Margin note 39.2 is on absolute page 39 on input line 207.
 Package marginnote Info: xpos seems to be 129.60721pt on input line 207.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
+(Font)              scaled to size 8.0pt on input line 217.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [17]
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 221.
+
 
 [18]
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 247.
-
 
 [19]
-LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
-(Font)              scaled to size 8.0pt on input line 263.
-Package marginnote Info: Margin note 42.1 is on absolute page 42 on input line 266.
-Package marginnote Info: xpos seems to be 514.83781pt on input line 266.
-LaTeX Font Info:    Font shape `T1/ETbb-TLF/bold/it' will be
-(Font)              scaled to size 10.0pt on input line 268.
-Package marginnote Info: Margin note 42.2 is on absolute page 42 on input line 274.
-Package marginnote Info: xpos seems to be 215.78813pt on input line 274.
-
 
 [20]
 
 [21]
-Package marginnote Info: Margin note 44.1 is on absolute page 44 on input line 318.
-Package marginnote Info: xpos seems to be 295.81802pt on input line 318.
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.320     W
-           e say an object is artificial only if it is not natural, or rathe...
-Package hyperref Info: bookmark level for unknown hypothesis defaults to 0 on input line 326.
-LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
-(Font)              scaled to size 7.0pt on input line 330.
-LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
-(Font)              scaled to size 6.0pt on input line 330.
-LaTeX Font Info:    Font shape `T1/ETbb-TLF/bold/n' will be
-(Font)              scaled to size 8.0pt on input line 330.
+Package marginnote Info: Margin note 44.1 is on absolute page 44 on input line 279.
+Package marginnote Info: xpos seems to be 514.83781pt on input line 279.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/bold/it' will be
+(Font)              scaled to size 10.0pt on input line 281.
+Package marginnote Info: Margin note 44.2 is on absolute page 44 on input line 287.
+Package marginnote Info: xpos seems to be 215.78813pt on input line 287.
 
 
 [22]
-Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on input line 340.
-
 
 [23]
-pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.364     A
-            \textbf{construct} is a conceptual encapsulation of two componen...
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 371.
-LaTeX Font Info:    Font shape `TS1/ETbb-TLF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 374.
+Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on input line 335.
+
+
+[24]
+Package hyperref Info: bookmark level for unknown hypothesis defaults to 0 on input line 354.
 LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
-(Font)              scaled to size 5.0pt on input line 383.
+(Font)              scaled to size 7.0pt on input line 358.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
+(Font)              scaled to size 6.0pt on input line 358.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/bold/n' will be
+(Font)              scaled to size 8.0pt on input line 358.
 
-
-[24{D:/MikTek/fonts/enc/dvips/etbb/etbb_65swoa.enc}]
 
 [25]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.379     A
+            \textbf{construct} is a conceptual encapsulation of two componen...
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 386.
+LaTeX Font Info:    Font shape `TS1/ETbb-TLF/regular/it' will be
+(Font)              scaled to size 10.0pt on input line 389.
+LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
+(Font)              scaled to size 5.0pt on input line 398.
 
 
-
-[26]
+[26{D:/MikTek/fonts/enc/dvips/etbb/etbb_65swoa.enc}]
 
 [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2318,52 +2310,103 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [28]
 
 [29]
+
+[30]
+
+[31]
+
+[32]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 478.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 478.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 478.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 478.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 478.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 478.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 478.
+
+
+
+[33]
+Package marginnote Info: Margin note 56.1 is on absolute page 56 on input line 489.
+Package marginnote Info: xpos seems to be 279.39574pt on input line 489.
+Package marginnote Info: Margin note 56.2 is on absolute page 56 on input line 491.
+Package marginnote Info: xpos seems to be 197.80125pt on input line 491.
+
+
+[34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[30]
-Package hyperref Info: bookmark level for unknown assumption defaults to 0 on input line 478.
+[35]
+Package hyperref Info: bookmark level for unknown assumption defaults to 0 on input line 504.
 
+
+[36]
+pdfTeX warning (ext4): destination with the same identifier (name{assumption.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.527 O
+       f the layer dilemma, for the set $\{L_i\}_{i\leq n}$ of the bottom-up...
 pdfTeX warning (ext4): destination with the same identifier (name{conjecture.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.484     S
+l.533     S
            uppose there exists a measure $\mathcal{M}[L_i \in A_n]\in \mathb...
-
-[31]
-<pdf/blueprint1.pdf, id=2115, 462.96765pt x 195.73627pt>
+<pdf/blueprint1.pdf, id=2225, 462.96765pt x 195.73627pt>
 File: pdf/blueprint1.pdf Graphic file (type pdf)
 <use pdf/blueprint1.pdf>
-Package pdftex.def Info: pdf/blueprint1.pdf  used on input line 489.
+Package pdftex.def Info: pdf/blueprint1.pdf  used on input line 538.
 (pdftex.def)             Requested size: 365.50655pt x 154.54034pt.
 LaTeX Font Info:    Font shape `T1/ETbb-TLF/bold/n' will be
-(Font)              scaled to size 9.0pt on input line 490.
+(Font)              scaled to size 9.0pt on input line 539.
 LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
-(Font)              scaled to size 9.0pt on input line 490.
+(Font)              scaled to size 9.0pt on input line 539.
 
+
+[37]
 pdfTeX warning (ext4): destination with the same identifier (name{hypothesis.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.498     G
+l.547     G
            iven the set $\{L_i\}_{i\leq n}$, there exists a dimensional anal...)
 
-[32 <./pdf/blueprint1.pdf>]
+[38 <./pdf/blueprint1.pdf>]
 
-[33
+[39
 
 
 
 
 ]
 
-[34]
+[40]
 \openout2 = `content/math/mathc1.aux'.
 
  (content/math/mathc1.tex
-Package marginnote Info: Margin note 57.1 is on absolute page 57 on input line 5.
+Package marginnote Info: Margin note 63.1 is on absolute page 63 on input line 5.
 Package marginnote Info: xpos seems to be 284.88596pt on input line 5.
-Package marginnote Info: Margin note 57.2 is on absolute page 57 on input line 5.
+Package marginnote Info: Margin note 63.2 is on absolute page 63 on input line 5.
 Package marginnote Info: xpos seems to be 330.07591pt on input line 5.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -2376,7 +2419,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
                    \relax 
 l.14     A
            proof is a sequence of logical statements, one implying another, ...
-Package marginnote Info: Margin note 57.3 is on absolute page 57 on input line 20.
+Package marginnote Info: Margin note 63.3 is on absolute page 63 on input line 20.
 Package marginnote Info: xpos seems to be 410.49971pt on input line 20.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
@@ -2384,35 +2427,40 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.3})
                    \relax 
 l.21     A
            statement is a sentence that can have a true value. That is, it i...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29     A
+           statement is a declarative sentence, otherwise called a declarati...
 
-[35
+[41
 
 
 
 ]
-Package marginnote Info: Margin note 58.1 is on absolute page 58 on input line 38.
+Package marginnote Info: Margin note 64.1 is on absolute page 64 on input line 38.
 Package marginnote Info: xpos seems to be 255.094pt on input line 38.
-Package marginnote Info: Margin note 58.2 is on absolute page 58 on input line 52.
+Package marginnote Info: Margin note 64.2 is on absolute page 64 on input line 52.
 Package marginnote Info: xpos seems to be 266.07661pt on input line 52.
-Package marginnote Info: Margin note 58.3 is on absolute page 58 on input line 52.
+Package marginnote Info: Margin note 64.3 is on absolute page 64 on input line 52.
 Package marginnote Info: xpos seems to be 413.80647pt on input line 52.
-Package marginnote Info: Margin note 58.4 is on absolute page 59 on input line 54.
+Package marginnote Info: Margin note 64.4 is on absolute page 65 on input line 54.
 Package marginnote Info: xpos seems to be 140.32895pt on input line 54.
-Package marginnote Info: Margin note 58.5 is on absolute page 59 on input line 54.
+Package marginnote Info: Margin note 64.5 is on absolute page 65 on input line 54.
 Package marginnote Info: xpos seems to be 213.88857pt on input line 54.
 
 
-[36]
+[42]
 
-[37]
-Package marginnote Info: Margin note 60.1 is on absolute page 60 on input line 132.
+[43]
+Package marginnote Info: Margin note 66.1 is on absolute page 66 on input line 132.
 Package marginnote Info: xpos seems to be 420.45094pt on input line 132.
-Package marginnote Info: Margin note 60.2 is on absolute page 61 on input line 140.
+Package marginnote Info: Margin note 66.2 is on absolute page 67 on input line 140.
 Package marginnote Info: xpos seems to be 333.2085pt on input line 140.
 
 
-[38]
-Package marginnote Info: Margin note 61.1 is on absolute page 61 on input line 153.
+[44]
+Package marginnote Info: Margin note 67.1 is on absolute page 67 on input line 153.
 Package marginnote Info: xpos seems to be 230.07796pt on input line 153.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
@@ -2421,24 +2469,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) ha
 l.170     L
            et $P$ and $Q$ be two statements. Then
 
-[39]
-Package marginnote Info: Margin note 62.1 is on absolute page 62 on input line 213.
+[45]
+Package marginnote Info: Margin note 68.1 is on absolute page 68 on input line 213.
 Package marginnote Info: xpos seems to be 469.84148pt on input line 213.
-Package marginnote Info: Margin note 62.2 is on absolute page 62 on input line 213.
+Package marginnote Info: Margin note 68.2 is on absolute page 68 on input line 213.
 Package marginnote Info: xpos seems to be 180.31418pt on input line 213.
 
 
-[40]
+[46]
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 235.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 238.
 
 
-[41]
-Package marginnote Info: Margin note 64.1 is on absolute page 64 on input line 264.
+[47]
+Package marginnote Info: Margin note 70.1 is on absolute page 70 on input line 264.
 Package marginnote Info: xpos seems to be 333.89397pt on input line 264.
 
 
-[42]
+[48]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2447,7 +2495,7 @@ l.306     A
 Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input line 312.
 
 
-[43]
+[49]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2459,14 +2507,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) ha
 l.340     G
            iven a set $X$ and a collection of set, denoted by $\{A_i\}_{i\in...
 
-[44]
-Package marginnote Info: Margin note 67.1 is on absolute page 67 on input line 361.
+[50]
+Package marginnote Info: Margin note 73.1 is on absolute page 73 on input line 361.
 Package marginnote Info: xpos seems to be 442.38736pt on input line 361.
 
 
-[45]
+[51]
 
-[46]
+[52]
 pdfTeX warning (ext4): destination with the same identifier (name{axiom.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2478,14 +2526,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.434     $
            \varnothing$ is the set having no members.
 
-[47]
+[53]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.438     F
            or sets $uv,a,b$ and their power set $\mathcal{P}(\cdot)$, we hav...
 
-[48]
+[54]
 LaTeX Font Info:    Trying to load font information for U+euf on input line 475.
  (D:\MikTek\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
@@ -2496,13 +2544,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.493     A
            n \textbf{equivalence relation} on a set $A$ is a relation $C$ on...
 
-[49]
+[55]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.518     A
             \textbf{rule of assignment} is a subset $r$ of the Cartesian pro...
-Package marginnote Info: Margin note 72.1 is on absolute page 73 on input line 534.
+Package marginnote Info: Margin note 78.1 is on absolute page 79 on input line 534.
 Package marginnote Info: xpos seems to be 263.32196pt on input line 534.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
@@ -2511,8 +2559,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
 l.535     A
             \textbf{function} is a rule of assignment $r$, together with a s...
 
-[50]
-Package marginnote Info: Margin note 73.1 is on absolute page 73 on input line 542.
+[56]
+Package marginnote Info: Margin note 79.1 is on absolute page 79 on input line 542.
 Package marginnote Info: xpos seems to be 364.23982pt on input line 542.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
@@ -2525,7 +2573,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.4})
                    \relax 
 l.547     I
            f $f: A\to B$ and if $A_0$ is a subset of $A$, we define the \tex...
-Package marginnote Info: Margin note 73.2 is on absolute page 73 on input line 554.
+Package marginnote Info: Margin note 79.2 is on absolute page 79 on input line 554.
 Package marginnote Info: xpos seems to be 383.19188pt on input line 554.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.5}) has been already used, duplicate ignored
@@ -2534,24 +2582,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.5})
 l.555     G
            iven function $f: A\to B$ and $g: B \to C$, we define the \textbf...
 
-[51]
-Package marginnote Info: Margin note 74.1 is on absolute page 74 on input line 579.
+[57]
+Package marginnote Info: Margin note 80.1 is on absolute page 80 on input line 579.
 Package marginnote Info: xpos seems to be 142.14944pt on input line 579.
 
 
-[52]
+[58]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.589     T
            he left inverse of $f$ exists iff $f$ is injective.)
 
-[53]
+[59]
 \openout2 = `content/math/mathc2.aux'.
 
  (content/math/mathc2.tex
 
-[54
+[60
 
 
 
@@ -2561,33 +2609,33 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[55]
+[61]
 
-[56]
-Package marginnote Info: Margin note 79.1 is on absolute page 80 on input line 119.
+[62]
+Package marginnote Info: Margin note 85.1 is on absolute page 86 on input line 119.
 Package marginnote Info: xpos seems to be 453.98122pt on input line 119.
-Package marginnote Info: Margin note 79.2 is on absolute page 80 on input line 119.
+Package marginnote Info: Margin note 85.2 is on absolute page 86 on input line 119.
 Package marginnote Info: xpos seems to be 478.75049pt on input line 119.
 
 
-[57]
+[63]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.127     A
             (nonzero) \textbf{vector} $\vec{v}$, or $\mathbf{v}$, is a quant...
 
-[58]
-<img/vector1.png, id=2391, 1003.75pt x 393.47pt>
+[64]
+<img/vector1.png, id=2507, 1003.75pt x 393.47pt>
 File: img/vector1.png Graphic file (type png)
 <use img/vector1.png>
 Package pdftex.def Info: img/vector1.png  used on input line 159.
 (pdftex.def)             Requested size: 258.00539pt x 101.13503pt.
-Package marginnote Info: Margin note 81.1 is on absolute page 82 on input line 164.
+Package marginnote Info: Margin note 87.1 is on absolute page 88 on input line 164.
 Package marginnote Info: xpos seems to be 225.73979pt on input line 164.
 
 
-[59 <./img/vector1.png>]
+[65 <./img/vector1.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2599,67 +2647,67 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) ha
 l.179     F
            or a vector $\mathbf{v}=(a,b,c)$ in $\mathbb{R}^3$, the magnitude...
 
-[60]
+[66]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.192     T
            he \textbf{sum} of vectors $\mathbf{v},\mathbf{w}$, denoted by $\...
 Package hyperref Info: bookmark level for unknown question defaults to 0 on input line 226.
-<img/vector_sum-001.png, id=2414, 1716.4125pt x 629.35126pt>
+<img/vector_sum-001.png, id=2530, 1716.4125pt x 629.35126pt>
 File: img/vector_sum-001.png Graphic file (type png)
 <use img/vector_sum-001.png>
 Package pdftex.def Info: img/vector_sum-001.png  used on input line 231.
 (pdftex.def)             Requested size: 344.005pt x 126.1273pt.
 
 
-[61 <./img/vector_sum-001.png>]
+[67 <./img/vector_sum-001.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.254     W
            e define a \textbf{scalar} as a quantity equal to a single compon...
 
-[62]
+[68]
 
-[63]
+[69]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.311     A
             matrix $A$ is a two-dimensional array, with dimensions' size of ...
 
-[64]
+[70]
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 352.
-<img/jjgh.jpg, id=2476, 230.2407pt x 202.73973pt>
+<img/jjgh.jpg, id=2592, 230.2407pt x 202.73973pt>
 File: img/jjgh.jpg Graphic file (type jpg)
 <use img/jjgh.jpg>
 Package pdftex.def Info: img/jjgh.jpg  used on input line 384.
 (pdftex.def)             Requested size: 171.99922pt x 151.45735pt.
-<img/matmulss.png, id=2481, 1027.84pt x 905.3825pt>
+<img/matmulss.png, id=2597, 1027.84pt x 905.3825pt>
 File: img/matmulss.png Graphic file (type png)
 <use img/matmulss.png>
 Package pdftex.def Info: img/matmulss.png  used on input line 390.
 (pdftex.def)             Requested size: 171.99922pt x 151.49536pt.
 
 
-[65]
+[71]
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on input line 416.
 
 Underfull \vbox (badness 1436) has occurred while \output is active []
 
 
 
-[66 <./img/jjgh.jpg> <./img/matmulss.png>]
+[72 <./img/jjgh.jpg> <./img/matmulss.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.477     A
             \textit{square matrix} $\mathbf{A}\in\mathbb{R}^{n\times n}$ is ...
 
-[67])
+[73])
 
-[68]
+[74]
 \openout2 = `content/math/mathc3.aux'.
 
  (content/math/mathc3.tex
@@ -2667,7 +2715,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[69
+[75
 
 
 
@@ -2684,7 +2732,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{example.1}) ha
 l.45     S
           uppose $r$ digits are chosen from a table of random numbers, so th...
 
-[70]
+[76]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2696,7 +2744,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
 l.71     S
           uppose $r$ multiple choices are to be made in sequence, there are ...
 
-[71]
+[77]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
@@ -2704,14 +2752,14 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 
 
 
-[72]
+[78]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.141     D
            efine the probability of event $E$ as the following expression: $...
 
-[73]
+[79]
 pdfTeX warning (ext4): destination with the same identifier (name{axiom.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2728,7 +2776,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
 l.188     F
            or 2 events $E$ and $F$, the following construction is true:
 
-[74]
+[80]
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before break' or set page breaks manually on input line 195.
 
@@ -2744,7 +2792,7 @@ Overfull \hbox (1.42998pt too wide) in paragraph at lines 198--199
 
 
 
-[75]
+[81]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2766,7 +2814,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{lemma.4}) has 
 l.265         F
                or $Y>0$ random variable,
 
-[76]
+[82]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2778,36 +2826,36 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.302     I
            f $X$ is a random variable with mean $\mu$, then the variance of ...
 
-[77]
+[83]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.305     F
            or variance $\mathrm{Var}(\cdot)$ of some random variable $X$, we...
 
-[78]
+[84]
 
-[79]
+[85]
 
-[80]
+[86]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.380     I
            f $S_{n}$ denotes the number of successes that occur when $n$ ind...
 
-[81]
+[87]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.403     L
            et $X$ be a continuous random variable having probability density...)
 
-[82]
+[88]
 \openout2 = `content/math/mathc4.aux'.
 
  (content/math/mathc4.tex
-Package marginnote Info: Margin note 105.1 is on absolute page 105 on input line 19.
+Package marginnote Info: Margin note 111.1 is on absolute page 111 on input line 19.
 Package marginnote Info: xpos seems to be 350.21613pt on input line 19.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -2816,7 +2864,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.22     S
           uppose $X$ is a set. A function $\rho:X\times X\to \mathbb{R}_{+}$...
 
-[83
+[89
 
 
 
@@ -2833,8 +2881,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{example.1}) ha
 l.53     T
           he usual metric on $\mathbb{R}$ is $d(x,y)=\lvert x-y\rvert$. Clea...
 
-[84]
-Package marginnote Info: Margin note 107.1 is on absolute page 107 on input line 66.
+[90]
+Package marginnote Info: Margin note 113.1 is on absolute page 113 on input line 66.
 Package marginnote Info: xpos seems to be 131.93604pt on input line 66.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -2846,7 +2894,7 @@ Underfull \vbox (badness 6542) has occurred while \output is active []
 
 
 
-[85]
+[91]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2858,35 +2906,35 @@ pdfTeX warning (ext4): destination with the same identifier (name{example.1}) ha
 l.110     T
            he \textbf{counting measure} assigns, to any set, the \textbf{car...
 
-[86]
+[92]
 pdfTeX warning (ext4): destination with the same identifier (name{example.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.115     S
            uppose $X$ is a finite set, and $\mathcal{X}=\mathcal{P}(X)$. The...
 
-[87])
+[93])
 
-[88]
+[94]
 \openout2 = `content/math/mathc5.aux'.
 
  (content/math/mathc5.tex
-Package marginnote Info: Margin note 111.1 is on absolute page 111 on input line 11.
+Package marginnote Info: Margin note 117.1 is on absolute page 117 on input line 11.
 Package marginnote Info: xpos seems to be 145.15004pt on input line 11.
-Package marginnote Info: Margin note 111.2 is on absolute page 111 on input line 15.
+Package marginnote Info: Margin note 117.2 is on absolute page 117 on input line 15.
 Package marginnote Info: xpos seems to be 292.68979pt on input line 15.
 Package hyperref Info: bookmark level for unknown note defaults to 0 on input line 16.
 
 
-[89
+[95
 
 
 
 
 ]
-Package marginnote Info: Margin note 112.1 is on absolute page 112 on input line 34.
+Package marginnote Info: Margin note 118.1 is on absolute page 118 on input line 34.
 Package marginnote Info: xpos seems to be 532.03224pt on input line 34.
-<img/markovbound.png, id=2730, 949.29657pt x 450.18187pt>
+<img/markovbound.png, id=2846, 949.29657pt x 450.18187pt>
 File: img/markovbound.png Graphic file (type png)
 <use img/markovbound.png>
 Package pdftex.def Info: img/markovbound.png  used on input line 41.
@@ -2896,9 +2944,9 @@ LaTeX Font Info:    Trying to load font information for U+bbm on input line 50.
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
 
-[90 <./img/markovbound.png>]
+[96 <./img/markovbound.png>]
 
-[91]
+[97]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2910,12 +2958,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) ha
 l.95     L
           et $X_{1},\dots,X_{n}$ be independent random variables, where $X_{...
 
-[92]
+[98]
 
-[93]
-Package marginnote Info: Margin note 116.1 is on absolute page 116 on input line 176.
+[99]
+Package marginnote Info: Margin note 122.1 is on absolute page 122 on input line 176.
 Package marginnote Info: xpos seems to be 266.66606pt on input line 176.
-Package marginnote Info: Margin note 116.2 is on absolute page 116 on input line 180.
+Package marginnote Info: Margin note 122.2 is on absolute page 122 on input line 180.
 Package marginnote Info: xpos seems to be 414.60382pt on input line 180.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -2924,64 +2972,64 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.181     L
            et $M_{X}$ denote the moment-generating function of a given rando...)
 
-[94]
+[100]
 \openout2 = `content/math/mathc6.aux'.
 
  (content/math/mathc6.tex
-Package marginnote Info: Margin note 117.1 is on absolute page 117 on input line 5.
+Package marginnote Info: Margin note 123.1 is on absolute page 123 on input line 5.
 Package marginnote Info: xpos seems to be 269.81393pt on input line 5.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[95
+[101
 
 
 
 
 ]
-Package marginnote Info: Margin note 118.1 is on absolute page 118 on input line 11.
+Package marginnote Info: Margin note 124.1 is on absolute page 124 on input line 11.
 Package marginnote Info: xpos seems to be 386.45663pt on input line 11.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[96]
-Package marginnote Info: Margin note 119.1 is on absolute page 119 on input line 19.
+[102]
+Package marginnote Info: Margin note 125.1 is on absolute page 125 on input line 19.
 Package marginnote Info: xpos seems to be 150.2244pt on input line 19.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[97]
+[103]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.31     L
           et $A$ be any set of structured notion. Then, an \textit{operation...
-Package marginnote Info: Margin note 120.1 is on absolute page 120 on input line 31.
+Package marginnote Info: Margin note 126.1 is on absolute page 126 on input line 31.
 Package marginnote Info: xpos seems to be 451.4325pt on input line 31.
-Package marginnote Info: Margin note 120.2 is on absolute page 120 on input line 34.
+Package marginnote Info: Margin note 126.2 is on absolute page 126 on input line 34.
 Package marginnote Info: xpos seems to be 367.47327pt on input line 34.
-Package marginnote Info: Margin note 120.3 is on absolute page 120 on input line 38.
+Package marginnote Info: Margin note 126.3 is on absolute page 126 on input line 38.
 Package marginnote Info: xpos seems to be 344.34595pt on input line 38.
 
 
-[98]
-Package marginnote Info: Margin note 121.1 is on absolute page 121 on input line 46.
+[104]
+Package marginnote Info: Margin note 127.1 is on absolute page 127 on input line 46.
 Package marginnote Info: xpos seems to be 210.35599pt on input line 46.
-Package marginnote Info: Margin note 121.2 is on absolute page 121 on input line 62.
+Package marginnote Info: Margin note 127.2 is on absolute page 127 on input line 62.
 Package marginnote Info: xpos seems to be 184.04547pt on input line 62.
-Package marginnote Info: Margin note 121.3 is on absolute page 122 on input line 66.
+Package marginnote Info: Margin note 127.3 is on absolute page 128 on input line 66.
 Package marginnote Info: xpos seems to be 216.0606pt on input line 66.
 
 
-[99])
+[105])
 
-[100]
+[106]
 \openout2 = `content/math/mathc7.aux'.
 
  (content/math/mathc7.tex
@@ -2996,7 +3044,7 @@ Overfull \hbox (4.3144pt too wide) in paragraph at lines 10--11
 
 
 
-[101
+[107
 
 
 
@@ -3008,26 +3056,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.73     A
            category is a system of:
 
-[102]
+[108]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.88 F
       or a category, there are 5 axioms of which from (1) to (3) are of typi...
-Package marginnote Info: Margin note 125.1 is on absolute page 125 on input line 99.
+Package marginnote Info: Margin note 131.1 is on absolute page 131 on input line 99.
 Package marginnote Info: xpos seems to be 149.19786pt on input line 99.
 
 
-[103]
+[109]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.118     A
             functor
 
-[104]
+[110]
 
-[105]
+[111]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3039,7 +3087,7 @@ Overfull \hbox (2.08713pt too wide) in paragraph at lines 221--222
 
 
 
-[106]
+[112]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3051,12 +3099,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.3})
 l.248     I
            n any category $\mathbf{C}$, an arrow $f:A\to B$ is called an iso...)
 
-[107]
+[113]
 \openout2 = `content/math/mathc8.aux'.
 
  (content/math/mathc8.tex
 
-[108
+[114
 
 
 
@@ -3066,20 +3114,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[109]
+[115]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.41     $
           exp(x)=e^{x}$ is the unique function $F$ satisfying $f'(x)=f(x)$ a...
 
-[110]
+[116]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.46     A
           n eigenfunction under the differential operator is a functin whose...
-Package marginnote Info: Margin note 133.1 is on absolute page 134 on input line 69.
+Package marginnote Info: Margin note 139.1 is on absolute page 140 on input line 69.
 Package marginnote Info: xpos seems to be 293.85402pt on input line 69.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
@@ -3088,19 +3136,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.3})
 l.71     A
            first order ODE on the unknown $y$ is:
 
-[111]
+[117]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.80     T
           he linear differential equation $$y'=ay+b$$ with $a\neq 0$ and con...
 
-[112]
-Package marginnote Info: Margin note 135.1 is on absolute page 135 on input line 111.
+[118]
+Package marginnote Info: Margin note 141.1 is on absolute page 141 on input line 111.
 Package marginnote Info: xpos seems to be 191.95998pt on input line 111.
 
 
-[113]
+[119]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3112,8 +3160,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) ha
 l.137     G
            iven the constant $a,b,t_{0},y_{0}\in\mathbb{R}$, with $a\neq 0$,...
 
-[114]
-Package marginnote Info: Margin note 137.1 is on absolute page 137 on input line 149.
+[120]
+Package marginnote Info: Margin note 143.1 is on absolute page 143 on input line 149.
 Package marginnote Info: xpos seems to be 73.71613pt on input line 149.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
@@ -3122,15 +3170,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) ha
 l.161     I
            f the function $a,b$ are continuous, then $$y'=a(t)y+b(t)$$ Has i...
 
-[115]
+[121]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.181     G
            iven continuous function $a,b$ with domain $(t_{1},t_{2})$, and c...
 
-[116]
-Package marginnote Info: Margin note 139.1 is on absolute page 139 on input line 212.
+[122]
+Package marginnote Info: Margin note 145.1 is on absolute page 145 on input line 212.
 Package marginnote Info: xpos seems to be 218.86105pt on input line 212.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.6}) has been already used, duplicate ignored
@@ -3139,13 +3187,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.6})
 l.215     T
            he Bernoulli equation is $$y'=p(t)y+q(t)y^{n}$$
 
-[117]
+[123]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.223     T
            he function $y$ is a solution of the Bernoulli equation $$y'=p(t)...
-Package marginnote Info: Margin note 140.1 is on absolute page 140 on input line 238.
+Package marginnote Info: Margin note 146.1 is on absolute page 146 on input line 238.
 Package marginnote Info: xpos seems to be 455.82776pt on input line 238.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -3154,7 +3202,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.239     A
             \textbf{separable} differential equation for the function $y$ is...
 
-[118]
+[124]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3165,11 +3213,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) ha
                    \relax 
 l.269     A
             function $y$ is a solution in \index{implicit form}\textbf{impli...
-Package marginnote Info: Margin note 141.1 is on absolute page 141 on input line 269.
+Package marginnote Info: Margin note 147.1 is on absolute page 147 on input line 269.
 Package marginnote Info: xpos seems to be 254.33534pt on input line 269.
 
 
-[119]
+[125]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3186,7 +3234,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) ha
 l.291     T
            he Euler homogeneous equation $$y'=F\left( \frac{y}{t} \right)$$
 
-[120]
+[126]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3198,7 +3246,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) ha
 l.320     I
            f the differential equation $$N(t,y)y'+M(t,y)=0$$
 
-[121]
+[127]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3215,30 +3263,30 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) ha
 l.346     I
            f the equation $$N(t,y)y'+M(t,y)=0$$
 
-[122]
+[128]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.363     $
            Ny'+M=0$ is exact if and only if $Mx'+N=0$ is also exact. For sem...
 
-[123]
+[129]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.379     I
            f the equation $$Mx'+N=0$$)
 
-[124]
+[130]
 
-[125
+[131
 
 
 
 
 ]
 
-[126]
+[132]
 \openout2 = `content/chapter2.aux'.
 
  (content/chapter2.tex
@@ -3246,12 +3294,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[127
+[133
 
 
 
 ]
-Package marginnote Info: Margin note 150.1 is on absolute page 150 on input line 28.
+Package marginnote Info: Margin note 156.1 is on absolute page 156 on input line 28.
 Package marginnote Info: xpos seems to be 425.43987pt on input line 28.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -3260,15 +3308,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.30     T
           o an observer $B$, an object $A^{*}$ is a \textbf{model} of an obj...
 
-[128]
+[134]
 pdfTeX warning (ext4): destination with the same identifier (name{proposition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.49     T
           he modelling and simulation scheme can be attained as followed:
 
-[129]
-Package marginnote Info: Margin note 152.1 is on absolute page 152 on input line 64.
+[135]
+Package marginnote Info: Margin note 158.1 is on absolute page 158 on input line 64.
 Package marginnote Info: xpos seems to be 500.9699pt on input line 64.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
@@ -3276,7 +3324,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
                    \relax 
 l.66     \textit{Simulation}
                              is the application of a model with the objectiv...
-Package marginnote Info: Margin note 152.2 is on absolute page 152 on input line 73.
+Package marginnote Info: Margin note 158.2 is on absolute page 158 on input line 73.
 Package marginnote Info: xpos seems to be 167.51819pt on input line 73.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
@@ -3285,23 +3333,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.3})
 l.75     A
            \textit{system} is a collection or a collection of objects whose ...
 
-[130]
-Package marginnote Info: Margin note 153.1 is on absolute page 153 on input line 87.
+[136]
+Package marginnote Info: Margin note 159.1 is on absolute page 159 on input line 87.
 Package marginnote Info: xpos seems to be 391.2198pt on input line 87.
-Package marginnote Info: Margin note 153.2 is on absolute page 153 on input line 89.
+Package marginnote Info: Margin note 159.2 is on absolute page 159 on input line 89.
 Package marginnote Info: xpos seems to be 379.6501pt on input line 89.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[131]
+[137]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.111     A
             \textit{mathematical model} is a set of mathematical statements ...
-Package marginnote Info: Margin note 154.1 is on absolute page 154 on input line 114.
+Package marginnote Info: Margin note 160.1 is on absolute page 160 on input line 114.
 Package marginnote Info: xpos seems to be 262.34802pt on input line 114.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
@@ -3315,8 +3363,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{example.1}) ha
 l.124     S
            uppose that we want to \textit{predict} the behaviour of some \te...
 
-[132]
-Package marginnote Info: Margin note 155.1 is on absolute page 155 on input line 130.
+[138]
+Package marginnote Info: Margin note 161.1 is on absolute page 161 on input line 130.
 Package marginnote Info: xpos seems to be 310.86984pt on input line 130.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
@@ -3324,7 +3372,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.3})
                    \relax 
 l.131     L
            et $(S,Q,M)$ be a mathematical model. Mathematical quantities $s_...
-Package marginnote Info: Margin note 155.2 is on absolute page 155 on input line 135.
+Package marginnote Info: Margin note 161.2 is on absolute page 161 on input line 135.
 Package marginnote Info: xpos seems to be 351.03986pt on input line 135.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
@@ -3333,7 +3381,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.4})
 l.136     L
            et $s_{1},\dots,s_{n}$ be the state variables of a mathematical m...
 
-[133]
+[139]
 pdfTeX warning (ext4): destination with the same identifier (name{remark.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3344,7 +3392,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{note.1}) has b
                    \relax 
 l.157     I
            n general, because people working with mathematical models has no...
-<img/problemsolvingdiagram.drawio.png, id=3108, 932.48375pt x 300.12125pt>
+<img/problemsolvingdiagram.drawio.png, id=3224, 932.48375pt x 300.12125pt>
 File: img/problemsolvingdiagram.drawio.png Graphic file (type png)
 <use img/problemsolvingdiagram.drawio.png>
 Package pdftex.def Info: img/problemsolvingdiagram.drawio.png  used on input line 164.
@@ -3355,20 +3403,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[134]
+[140]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[135 <./img/problemsolvingdiagram.drawio.png>]
-<img/blackboxstatistics.png, id=3125, 805.0075pt x 746.79pt>
+[141 <./img/problemsolvingdiagram.drawio.png>]
+<img/blackboxstatistics.png, id=3241, 805.0075pt x 746.79pt>
 File: img/blackboxstatistics.png Graphic file (type png)
 <use img/blackboxstatistics.png>
 Package pdftex.def Info: img/blackboxstatistics.png  used on input line 195.
 (pdftex.def)             Requested size: 215.0023pt x 199.44814pt.
-Package marginnote Info: Margin note 158.1 is on absolute page 158 on input line 204.
+Package marginnote Info: Margin note 164.1 is on absolute page 164 on input line 204.
 Package marginnote Info: xpos seems to be 165.59802pt on input line 204.
-Package marginnote Info: Margin note 158.2 is on absolute page 158 on input line 204.
+Package marginnote Info: Margin note 164.2 is on absolute page 164 on input line 204.
 Package marginnote Info: xpos seems to be 470.6575pt on input line 204.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -3377,19 +3425,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.206     A
             (mathematical) model $(S,Q,M)$ is said to be:
 
-[136 <./img/blackboxstatistics.png>]
-Package marginnote Info: Margin note 159.1 is on absolute page 159 on input line 213.
+[142 <./img/blackboxstatistics.png>]
+Package marginnote Info: Margin note 165.1 is on absolute page 165 on input line 213.
 Package marginnote Info: xpos seems to be 138.21603pt on input line 213.
-<img/expreise.png, id=3131, 420.06938pt x 425.33907pt>
+<img/expreise.png, id=3247, 420.06938pt x 425.33907pt>
 File: img/expreise.png Graphic file (type png)
 <use img/expreise.png>
 Package pdftex.def Info: img/expreise.png  used on input line 218.
 (pdftex.def)             Requested size: 171.99922pt x 174.1565pt.
 
 
-[137 <./img/expreise.png>]
+[143 <./img/expreise.png>]
 
-[138]
+[144]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3399,8 +3447,8 @@ Underfull \vbox (badness 1292) has occurred while \output is active []
 
 
 
-[139]
-<img/purityxkcd.png, id=3151, 742.775pt x 309.155pt>
+[145]
+<img/purityxkcd.png, id=3267, 742.775pt x 309.155pt>
 File: img/purityxkcd.png Graphic file (type png)
 <use img/purityxkcd.png>
 Package pdftex.def Info: img/purityxkcd.png  used on input line 274.
@@ -3410,19 +3458,19 @@ Underfull \vbox (badness 2020) has occurred while \output is active []
 
 
 
-[140 <./img/purityxkcd.png (PNG copy)>]
+[146 <./img/purityxkcd.png (PNG copy)>]
 
-[141]
+[147]
 
-[142]
-<img/Platon_Cave_Sanraedam_1604.jpg, id=3172, 1606.0pt x 1170.3725pt>
+[148]
+<img/Platon_Cave_Sanraedam_1604.jpg, id=3288, 1606.0pt x 1170.3725pt>
 File: img/Platon_Cave_Sanraedam_1604.jpg Graphic file (type jpg)
 <use img/Platon_Cave_Sanraedam_1604.jpg>
 Package pdftex.def Info: img/Platon_Cave_Sanraedam_1604.jpg  used on input line 317.
 (pdftex.def)             Requested size: 387.00153pt x 282.02022pt.
 
 
-[143 <./img/Platon_Cave_Sanraedam_1604.jpg>]
+[149 <./img/Platon_Cave_Sanraedam_1604.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{axiom.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3434,67 +3482,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
 
 
-[144]
+[150]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.367     T
            he \textit{standard form} of the linear programming problem is to...
 
-[145])
+[151])
 
-[146]
+[152]
 \openout2 = `content/chapter3.aux'.
 
  (content/chapter3.tex
 
-[147
+[153
 
 
 
 
 ]
 
-[148]
+[154]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.37     W
           e refer to calculation as the \textit{exact operations} of arithme...
 
-[149{D:/MikTek/fonts/enc/dvips/etbb/etbb_6bhqsy.enc}]
+[155{D:/MikTek/fonts/enc/dvips/etbb/etbb_6bhqsy.enc}]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.58     A
            \textbf{Turing machine} $M$ is a 6-tuple $\{Q,\Sigma,\Gamma, \del...
 
-[150]
+[156]
 
-[151]
+[157]
 
-[152]
+[158]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.121     T
            he \textbf{algebraic abstraction} is defined as the \textit{abstr...
 
-[153]
+[159]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.137     \textbf{Computation}
                                is the exact `implementation' of the specifie...
 
-[154])
+[160])
 
-[155]
+[161]
 \openout2 = `content/chapter5.aux'.
 
  (content/chapter5.tex
 
-[156
+[162
 
 
 
@@ -3504,20 +3552,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[157]
+[163]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[158]
+[164]
 
-[159]
+[165]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[160]
-Package marginnote Info: Margin note 183.1 is on absolute page 183 on input line 75.
+[166]
+Package marginnote Info: Margin note 189.1 is on absolute page 189 on input line 75.
 Package marginnote Info: xpos seems to be 282.80814pt on input line 75.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -3525,7 +3573,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
                    \relax 
 l.76     G
           iven a hypothesis $h\in \mathcal{H}$, a target concept $c\in \math...
-Package marginnote Info: Margin note 183.2 is on absolute page 183 on input line 80.
+Package marginnote Info: Margin note 189.2 is on absolute page 189 on input line 80.
 Package marginnote Info: xpos seems to be 73.71613pt on input line 80.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
@@ -3539,7 +3587,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) ha
 l.91     F
           or fixed $\mathcal{H}$, for fixed and sufficiently large $\mathcal...
 
-[161]
+[167]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3551,8 +3599,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.4})
 l.130     W
            e present the formal form of the generalization learning problem....
 
-[162]
-<pdf/figfig-crop.pdf, id=3304, 191.71625pt x 135.50626pt>
+[168]
+<pdf/figfig-crop.pdf, id=3420, 191.71625pt x 135.50626pt>
 File: pdf/figfig-crop.pdf Graphic file (type pdf)
 <use pdf/figfig-crop.pdf>
 Package pdftex.def Info: pdf/figfig-crop.pdf  used on input line 140.
@@ -3571,18 +3619,18 @@ l.153     A
 Package hyperref Info: bookmark level for unknown setting defaults to 0 on input line 163.
 
 
-[163 <./pdf/figfig-crop.pdf>]
+[169 <./pdf/figfig-crop.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{question.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.175     U
            nder the probabilistic interpretation, what can be said about the...
 
-[164]
+[170]
 
-[165]
+[171]
 
-[166]
+[172]
 LaTeX Font Info:    Font shape `T1/ETbb-TLF/m/it' aliased to
 (Font)              `T1/ETbb-TLF/regular/it' on input line 261.
 LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
@@ -3604,7 +3652,7 @@ Overfull \hbox (17.14725pt too wide) in paragraph at lines 265--268
 
 
 
-[167]
+[173]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3621,7 +3669,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.4})
 l.296     G
            iven $h\in \mathcal{H}$, for $c\in \mathcal{C}$ of some concept c...
 
-[168]
+[174]
 pdfTeX warning (ext4): destination with the same identifier (name{proposition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3633,7 +3681,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.5})
 l.322     A
             learning problem is learnable if there exist a learning rule $\m...
 
-[169]
+[175]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3645,28 +3693,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.7})
 l.341     A
             rule $\mathcal{A}$ is an SRM (Structural Risk Minimizer), denote...
 
-[170]
-<img/mamamia.png, id=3417, 600.5637pt x 315.8199pt>
+[176]
+<img/mamamia.png, id=3533, 600.5637pt x 315.8199pt>
 File: img/mamamia.png Graphic file (type png)
 <use img/mamamia.png>
 Package pdftex.def Info: img/mamamia.png  used on input line 390.
 (pdftex.def)             Requested size: 258.00539pt x 135.68425pt.
 
 
-[171]
+[177]
 
-[172 <./img/mamamia.png>]
-Package marginnote Info: Margin note 195.1 is on absolute page 195 on input line 407.
+[178 <./img/mamamia.png>]
+Package marginnote Info: Margin note 201.1 is on absolute page 201 on input line 407.
 Package marginnote Info: xpos seems to be 388.29977pt on input line 407.
 
 
-[173]
+[179]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.422     A
             learning scenario is called \textit{model-specific} learning if,...
-Package marginnote Info: Margin note 196.1 is on absolute page 196 on input line 428.
+Package marginnote Info: Margin note 202.1 is on absolute page 202 on input line 428.
 Package marginnote Info: xpos seems to be 206.893pt on input line 428.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
@@ -3675,15 +3723,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
 l.430     A
             learning scenario is called \textit{model-free} learning if, for...
 
-[174]
+[180]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.457     L
            et $\mathcal{C}$ be a concept class over $X$. We say that $\mathc...
 
-[175]
-Package marginnote Info: Margin note 198.1 is on absolute page 198 on input line 476.
+[181]
+Package marginnote Info: Margin note 204.1 is on absolute page 204 on input line 476.
 Package marginnote Info: xpos seems to be 188.42807pt on input line 476.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
@@ -3695,11 +3743,11 @@ l.483     F
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
 (Font)              using `U/stmry/m/n' instead on input line 483.
 
-Package marginnote Info: Margin note 198.2 is on absolute page 199 on input line 488.
+Package marginnote Info: Margin note 204.2 is on absolute page 205 on input line 488.
 Package marginnote Info: xpos seems to be 263.40453pt on input line 488.
 
 
-[176]
+[182]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3716,7 +3764,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.518     W
            e say that an algorithm is a consistent learner for a concept cla...
 
-[177]
+[183]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 528.
@@ -3732,9 +3780,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) ha
 l.533     L
            et $H$ be a finite set of functions mapping from $\mathcal{X}\to ...
 
-[178]
+[184]
 
-[179]
+[185]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 591.
@@ -3746,16 +3794,16 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Info: bookmark level for unknown col defaults to 0 on input line 597.
 
 
-[180]
+[186]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.657     L
            et $\mathcal{H}$ be a finite hypothesis set. Then, for any $\delt...
 
-[181]
+[187]
 
-[182]
+[188]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3767,15 +3815,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{proposition.1}
 l.709     F
            or any $h\in\mathcal{H}$, for any $\delta\in(0,1)$,
 
-[183]
+[189]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.741     A
            ssume that $\mathrm{card}(\mathcal{H})=M<+\infty$, for any $\delt...
 
-[184]
-Package marginnote Info: Margin note 207.1 is on absolute page 207 on input line 773.
+[190]
+Package marginnote Info: Margin note 213.1 is on absolute page 213 on input line 773.
 Package marginnote Info: xpos seems to be 426.49951pt on input line 773.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
@@ -3784,14 +3832,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
 l.775     G
            iven a distribution $\mathcal{D}$ over $\mathcal{X}\times \mathca...
 
-[185]
+[191]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.800     L
            et $\alpha \geq 0$ and $0\leq \beta < 1$ be constant. $L$ is an $...
 
-[186]
+[192]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3803,31 +3851,31 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) ha
 l.824     L
            et $L$ be an efficient $(\alpha,\beta)$-Occam algorithm for $\mat...
 
-[187]
+[193]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.835     L
            et $\mathcal{C}$ be a concept class and $\mathcal{H}$ a represent...
 
-[188]
+[194]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.884     T
            he representation class of conjunctions of boolean literals is ef...
 
-[189]
+[195]
 
-[190]
-Package marginnote Info: Margin note 213.1 is on absolute page 213 on input line 946.
+[196]
+Package marginnote Info: Margin note 219.1 is on absolute page 219 on input line 946.
 Package marginnote Info: xpos seems to be 311.45987pt on input line 946.
-Package marginnote Info: Margin note 213.2 is on absolute page 213 on input line 952.
+Package marginnote Info: Margin note 219.2 is on absolute page 219 on input line 952.
 Package marginnote Info: xpos seems to be 312.76118pt on input line 952.
 
 
-[191]
-Package marginnote Info: Margin note 214.1 is on absolute page 214 on input line 958.
+[197]
+Package marginnote Info: Margin note 220.1 is on absolute page 220 on input line 958.
 Package marginnote Info: xpos seems to be 373.86804pt on input line 958.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -3841,9 +3889,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) ha
 l.968     L
            et $\mathcal{G}$ be a family of functions mapping from $\mathcal{...
 
-[192]
+[198]
 
-[193]
+[199]
 pdfTeX warning (ext4): destination with the same identifier (name{col.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3855,7 +3903,7 @@ Overfull \hbox (6.97476pt too wide) in paragraph at lines 1041--1041
 
 
 
-[194]
+[200]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3867,23 +3915,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{example.1}) ha
 l.1093 L
         et $\Pi=\{A_1, \dots,A_k\}$ be a fixed partition of $\mathcal{X}$, s...
 
-[195]
+[201]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1132     G
             iven a binary class of functions $\mathcal{H}$, we define the \t...
-Package marginnote Info: Margin note 218.1 is on absolute page 219 on input line 1132.
+Package marginnote Info: Margin note 224.1 is on absolute page 225 on input line 1132.
 Package marginnote Info: xpos seems to be 234.7874pt on input line 1132.
 
 
-[196]
+[202]
 pdfTeX warning (ext4): destination with the same identifier (name{lemma.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1141     L
             et $A$ be a finite subset of $\mathbb{R}^{m}$, and let $$\max_{\...
-Package marginnote Info: Margin note 219.1 is on absolute page 219 on input line 1141.
+Package marginnote Info: Margin note 225.1 is on absolute page 225 on input line 1141.
 Package marginnote Info: xpos seems to be 221.62593pt on input line 1141.
 
 pdfTeX warning (ext4): destination with the same identifier (name{col.2}) has been already used, duplicate ignored
@@ -3892,25 +3940,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{col.2}) has be
 l.1149     L
             et $\mathcal{G}$ be a family of functions taking values in $\{-1...
 
-[197]
-Package marginnote Info: Margin note 220.1 is on absolute page 220 on input line 1186.
+[203]
+Package marginnote Info: Margin note 226.1 is on absolute page 226 on input line 1186.
 Package marginnote Info: xpos seems to be 174.28598pt on input line 1186.
 
 
-[198]
-Package marginnote Info: Margin note 221.1 is on absolute page 221 on input line 1216.
+[204]
+Package marginnote Info: Margin note 227.1 is on absolute page 227 on input line 1216.
 Package marginnote Info: xpos seems to be 189.52406pt on input line 1216.
-<img/hyperplane.png, id=3709, 1423.3175pt x 602.25pt>
+<img/hyperplane.png, id=3825, 1423.3175pt x 602.25pt>
 File: img/hyperplane.png Graphic file (type png)
 <use img/hyperplane.png>
 Package pdftex.def Info: img/hyperplane.png  used on input line 1219.
 (pdftex.def)             Requested size: 301.00192pt x 127.35843pt.
-<img/halfspace_illustration_c4.png, id=3712, 1204.5pt x 1361.085pt>
+<img/halfspace_illustration_c4.png, id=3828, 1204.5pt x 1361.085pt>
 File: img/halfspace_illustration_c4.png Graphic file (type png)
 <use img/halfspace_illustration_c4.png>
 Package pdftex.def Info: img/halfspace_illustration_c4.png  used on input line 1224.
 (pdftex.def)             Requested size: 171.99922pt x 194.35123pt.
-Package marginnote Info: Margin note 221.2 is on absolute page 221 on input line 1230.
+Package marginnote Info: Margin note 227.2 is on absolute page 227 on input line 1230.
 Package marginnote Info: xpos seems to be 409.62175pt on input line 1230.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -3918,7 +3966,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
                    \relax 
 l.1232     W
             e say that a finite set $S\subset \mathcal{X}$ is \textbf{shatte...
-Package marginnote Info: Margin note 221.3 is on absolute page 221 on input line 1236.
+Package marginnote Info: Margin note 227.3 is on absolute page 227 on input line 1236.
 Package marginnote Info: xpos seems to be 376.54852pt on input line 1236.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
@@ -3927,15 +3975,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
 l.1237     T
             he \textbf{VC}-dimension of a hypothesis set $\mathcal{H}$ is th...
 
-[199]
+[205]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{example.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1248 \begin{example}[Intervals on the real line]
-                                                   [200 <./img/hyperplane.png (PNG copy)> <./img/halfspace_illustration_c4.png>]
-<img/vc_dim_ex1.png, id=3729, 587.94656pt x 148.30406pt>
+                                                   [206 <./img/hyperplane.png (PNG copy)> <./img/halfspace_illustration_c4.png>]
+<img/vc_dim_ex1.png, id=3845, 587.94656pt x 148.30406pt>
 File: img/vc_dim_ex1.png Graphic file (type png)
 <use img/vc_dim_ex1.png>
 Package pdftex.def Info: img/vc_dim_ex1.png  used on input line 1256.
@@ -3946,7 +3994,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{example.2}) ha
                    \relax 
 l.1260     C
             onsider the set of all hyperplanes in $\mathbb{R}^{2}$. We obser...
-<img/vc_dim_ex2.png, id=3734, 316.93407pt x 181.42781pt>
+<img/vc_dim_ex2.png, id=3850, 316.93407pt x 181.42781pt>
 File: img/vc_dim_ex2.png Graphic file (type png)
 <use img/vc_dim_ex2.png>
 Package pdftex.def Info: img/vc_dim_ex2.png  used on input line 1274.
@@ -3957,8 +4005,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[201 <./img/vc_dim_ex1.png>]
-<img/convex_set.png, id=3751, 486.81876pt x 227.85126pt>
+[207 <./img/vc_dim_ex1.png>]
+<img/convex_set.png, id=3867, 486.81876pt x 227.85126pt>
 File: img/convex_set.png Graphic file (type png)
 <use img/convex_set.png>
 Package pdftex.def Info: img/convex_set.png  used on input line 1298.
@@ -3974,8 +4022,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{lemma.1}) has 
 l.1307     I
             f $C$ is a convex subset of $\mathbb{R}^{d}$ and $a_{1},\dots,a_...
 
-[202 <./img/vc_dim_ex2.png>]
-Package marginnote Info: Margin note 225.1 is on absolute page 225 on input line 1310.
+[208 <./img/vc_dim_ex2.png>]
+Package marginnote Info: Margin note 231.1 is on absolute page 231 on input line 1310.
 Package marginnote Info: xpos seems to be 390.18326pt on input line 1310.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
@@ -3989,8 +4037,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{lemma.2}) has 
 l.1326     L
             et $P=\{p_{1},\dots,p_{n}\}\subset \mathbb{R}^{d}$ be a finite s...
 
-[203 <./img/convex_set.png (PNG copy)>]
-Package marginnote Info: Margin note 226.1 is on absolute page 226 on input line 1346.
+[209 <./img/convex_set.png (PNG copy)>]
+Package marginnote Info: Margin note 232.1 is on absolute page 232 on input line 1346.
 Package marginnote Info: xpos seems to be 531.29776pt on input line 1346.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
@@ -3999,8 +4047,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) ha
 l.1347     L
             et $\mathcal{A}$ be a subset in $\mathbb{R}^{d}$. Suppose that $...
 
-[204]
-Package marginnote Info: Margin note 227.1 is on absolute page 227 on input line 1405.
+[210]
+Package marginnote Info: Margin note 233.1 is on absolute page 233 on input line 1405.
 Package marginnote Info: xpos seems to be 332.46962pt on input line 1405.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) has been already used, duplicate ignored
@@ -4009,16 +4057,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) ha
 l.1406     A
             ny set of $\mathcal{X}$ of $d+2$ points in $\mathbb{R}^{d}$ can ...
 
-[205]
-<img/partition_radon.png, id=3798, 556.32843pt x 170.13562pt>
+[211]
+<img/partition_radon.png, id=3914, 556.32843pt x 170.13562pt>
 File: img/partition_radon.png Graphic file (type png)
 <use img/partition_radon.png>
 Package pdftex.def Info: img/partition_radon.png  used on input line 1410.
 (pdftex.def)             Requested size: 301.00192pt x 92.05357pt.
 
 
-[206 <./img/partition_radon.png>]
-Package marginnote Info: Margin note 229.1 is on absolute page 229 on input line 1454.
+[212 <./img/partition_radon.png>]
+Package marginnote Info: Margin note 235.1 is on absolute page 235 on input line 1454.
 Package marginnote Info: xpos seems to be 199.52998pt on input line 1454.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.5}) has been already used, duplicate ignored
@@ -4027,16 +4075,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.5}) ha
 l.1455     L
             et $\mathcal{H}$ be a hypothesis set with $\mathrm{VCdim}(\mathc...
 
-[207]
+[213]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1494     L
             et $\mathcal{H}$ be a hypothesis set with $VC$-dimension $d>1$. ...
 
-[208]
+[214]
 
-[209]
+[215]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4048,20 +4096,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{lemma.3}) has 
 l.1590     L
             et $\alpha$ be a uniformly distributed random variable taking va...
 
-[210]
+[216]
 pdfTeX warning (ext4): destination with the same identifier (name{lemma.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1614     L
             et $Z$ be a random variable taking values in $[0,1]$. Then, for ...
 
-[211]
+[217]
 
-[212]
+[218]
 
-[213])
+[219])
 
-[214]
+[220]
 \openout2 = `content/chapter6.aux'.
 
  (content/chapter6.tex
@@ -4069,13 +4117,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[215
+[221
 
 
 
 
 ]
-Package marginnote Info: Margin note 238.1 is on absolute page 238 on input line 16.
+Package marginnote Info: Margin note 244.1 is on absolute page 244 on input line 16.
 Package marginnote Info: xpos seems to be 495.01572pt on input line 16.
 
 pdfTeX warning (ext4): destination with the same identifier (name{note.1}) has been already used, duplicate ignored
@@ -4083,25 +4131,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{note.1}) has b
                    \relax 
 l.18     I
           n the brain, a nerve bundle connects two regions and allows signal...
-Package marginnote Info: Margin note 238.2 is on absolute page 238 on input line 26.
+Package marginnote Info: Margin note 244.2 is on absolute page 244 on input line 26.
 Package marginnote Info: xpos seems to be 370.30794pt on input line 26.
-<img/brainneuron1.png, id=3914, 517.935pt x 248.93pt>
+<img/brainneuron1.png, id=4030, 517.935pt x 248.93pt>
 File: img/brainneuron1.png Graphic file (type png)
 <use img/brainneuron1.png>
 Package pdftex.def Info: img/brainneuron1.png  used on input line 31.
 (pdftex.def)             Requested size: 301.00192pt x 144.67197pt.
-Package marginnote Info: Margin note 238.3 is on absolute page 238 on input line 35.
+Package marginnote Info: Margin note 244.3 is on absolute page 244 on input line 35.
 Package marginnote Info: xpos seems to be 522.7328pt on input line 35.
-Package marginnote Info: Margin note 238.4 is on absolute page 238 on input line 35.
+Package marginnote Info: Margin note 244.4 is on absolute page 244 on input line 35.
 Package marginnote Info: xpos seems to be 202.69977pt on input line 35.
-Package marginnote Info: Margin note 238.5 is on absolute page 239 on input line 35.
+Package marginnote Info: Margin note 244.5 is on absolute page 245 on input line 35.
 Package marginnote Info: xpos seems to be 363.88869pt on input line 35.
 
 
-[216 <./img/brainneuron1.png (PNG copy)>]
-Package marginnote Info: Margin note 239.1 is on absolute page 239 on input line 37.
+[222 <./img/brainneuron1.png (PNG copy)>]
+Package marginnote Info: Margin note 245.1 is on absolute page 245 on input line 37.
 Package marginnote Info: xpos seems to be 73.71613pt on input line 37.
-<img/cajal1.png, id=3922, 722.7pt x 1027.84pt>
+<img/cajal1.png, id=4038, 722.7pt x 1027.84pt>
 File: img/cajal1.png Graphic file (type png)
 <use img/cajal1.png>
 Package pdftex.def Info: img/cajal1.png  used on input line 46.
@@ -4111,12 +4159,12 @@ Underfull \hbox (badness 3088) in paragraph at lines 47--47
 []\T1/ETbb-TLF/regular/n/8 (a) |San-ti-ago Ca-jal, purk-inje neu-ron
  []
 
-<img/golgi1.png, id=3923, 783.92876pt x 1027.84pt>
+<img/golgi1.png, id=4039, 783.92876pt x 1027.84pt>
 File: img/golgi1.png Graphic file (type png)
 <use img/golgi1.png>
 Package pdftex.def Info: img/golgi1.png  used on input line 54.
 (pdftex.def)             Requested size: 129.00269pt x 169.13145pt.
-<img/SantiagoRam贸nyCajalNetwork.png, id=3924, 1373.13pt x 1887.05pt>
+<img/SantiagoRam贸nyCajalNetwork.png, id=4040, 1373.13pt x 1887.05pt>
 File: img/SantiagoRam贸nyCajalNetwork.png Graphic file (type png)
 <use img/SantiagoRam贸nyCajalNetwork.png>
 Package pdftex.def Info: img/SantiagoRam贸nyCajalNetwork.png  used on input line 62.
@@ -4124,7 +4172,7 @@ Package pdftex.def Info: img/SantiagoRam贸nyCajalNetwork.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/overwhelminglycomplexshit.png, id=3925, 918.43124pt x 777.65532pt>
+<img/overwhelminglycomplexshit.png, id=4041, 918.43124pt x 777.65532pt>
 File: img/overwhelminglycomplexshit.png Graphic file (type png)
 <use img/overwhelminglycomplexshit.png>
 Package pdftex.def Info: img/overwhelminglycomplexshit.png  used on input line 76.
@@ -4134,46 +4182,46 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[217]
+[223]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package marginnote Info: Margin note 240.1 is on absolute page 240 on input line 80.
+Package marginnote Info: Margin note 246.1 is on absolute page 246 on input line 80.
 Package marginnote Info: xpos seems to be 436.4938pt on input line 80.
-Package marginnote Info: Margin note 240.2 is on absolute page 240 on input line 80.
+Package marginnote Info: Margin note 246.2 is on absolute page 246 on input line 80.
 Package marginnote Info: xpos seems to be 517.8289pt on input line 80.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[218 <./img/cajal1.png (PNG copy)> <./img/golgi1.png (PNG copy)> <./img/SantiagoRam贸nyCajalNetwork.png>]
+[224 <./img/cajal1.png (PNG copy)> <./img/golgi1.png (PNG copy)> <./img/SantiagoRam贸nyCajalNetwork.png>]
 
-[219 <./img/overwhelminglycomplexshit.png>]
+[225 <./img/overwhelminglycomplexshit.png>]
 
-[220]
-<img/abstractionpps.png, id=3955, 983.675pt x 698.61pt>
+[226]
+<img/abstractionpps.png, id=4071, 983.675pt x 698.61pt>
 File: img/abstractionpps.png Graphic file (type png)
 <use img/abstractionpps.png>
 Package pdftex.def Info: img/abstractionpps.png  used on input line 109.
 (pdftex.def)             Requested size: 344.005pt x 244.31462pt.
 
 
-[221 <./img/abstractionpps.png>]
+[227 <./img/abstractionpps.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.122     T
            he neuron model conceptually can be encapsulated into the categor...
-Package marginnote Info: Margin note 244.1 is on absolute page 244 on input line 131.
+Package marginnote Info: Margin note 250.1 is on absolute page 250 on input line 131.
 Package marginnote Info: xpos seems to be 277.33844pt on input line 131.
 
 Underfull \vbox (badness 3713) has occurred while \output is active []
 
 
 
-[222]
-Package marginnote Info: Margin note 245.1 is on absolute page 245 on input line 142.
+[228]
+Package marginnote Info: Margin note 251.1 is on absolute page 251 on input line 142.
 Package marginnote Info: xpos seems to be 312.96115pt on input line 142.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
@@ -4182,7 +4230,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
 l.146     T
            he neuron model conceptually can be encapsulated into the categor...
 
-[223]
+[229]
 pdfTeX warning (ext4): destination with the same identifier (name{question.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4194,19 +4242,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) ha
 l.160     G
            iven two neuron class, $\mathcal{N}_{n-1}$ and $\mathcal{N}_{n}$ ...
 
-[224]
-Package marginnote Info: Margin note 247.1 is on absolute page 247 on input line 167.
+[230]
+Package marginnote Info: Margin note 253.1 is on absolute page 253 on input line 167.
 Package marginnote Info: xpos seems to be 244.04991pt on input line 167.
-Package marginnote Info: Margin note 247.2 is on absolute page 247 on input line 179.
+Package marginnote Info: Margin note 253.2 is on absolute page 253 on input line 179.
 Package marginnote Info: xpos seems to be 400.77028pt on input line 179.
-Package marginnote Info: Margin note 247.3 is on absolute page 247 on input line 180.
+Package marginnote Info: Margin note 253.3 is on absolute page 253 on input line 180.
 Package marginnote Info: xpos seems to be 323.35983pt on input line 180.
-Package marginnote Info: Margin note 247.4 is on absolute page 248 on input line 181.
+Package marginnote Info: Margin note 253.4 is on absolute page 254 on input line 181.
 Package marginnote Info: xpos seems to be 299.3281pt on input line 181.
 
 
-[225]
-Package marginnote Info: Margin note 248.1 is on absolute page 248 on input line 183.
+[231]
+Package marginnote Info: Margin note 254.1 is on absolute page 254 on input line 183.
 Package marginnote Info: xpos seems to be 524.2297pt on input line 183.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -4214,7 +4262,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
                    \relax 
 l.184     L
            et $x$ be a neuron of arbitrary neuronal classification $\mathcal...
-<img/nn1.png, id=3998, 662.475pt x 82.3075pt>
+<img/nn1.png, id=4114, 662.475pt x 82.3075pt>
 File: img/nn1.png Graphic file (type png)
 <use img/nn1.png>
 Package pdftex.def Info: img/nn1.png  used on input line 193.
@@ -4232,9 +4280,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 201.
 
-Package marginnote Info: Margin note 248.2 is on absolute page 249 on input line 202.
+Package marginnote Info: Margin note 254.2 is on absolute page 255 on input line 202.
 Package marginnote Info: xpos seems to be 402.44041pt on input line 202.
-Package marginnote Info: Margin note 248.3 is on absolute page 249 on input line 203.
+Package marginnote Info: Margin note 254.3 is on absolute page 255 on input line 203.
 Package marginnote Info: xpos seems to be 335.3021pt on input line 203.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -4243,18 +4291,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.204     A
             neuron unit $x\in \mathcal{N}$ belongs to class $\mathcal{N}_{0}...
 
-[226 <./img/nn1.png>]
-<img/standard_n0_class.png, id=4015, 268.1217pt x 145.9854pt>
+[232 <./img/nn1.png>]
+<img/standard_n0_class.png, id=4131, 268.1217pt x 145.9854pt>
 File: img/standard_n0_class.png Graphic file (type png)
 <use img/standard_n0_class.png>
 Package pdftex.def Info: img/standard_n0_class.png  used on input line 242.
 (pdftex.def)             Requested size: 258.00539pt x 140.48964pt.
-Package marginnote Info: Margin note 249.1 is on absolute page 250 on input line 247.
+Package marginnote Info: Margin note 255.1 is on absolute page 256 on input line 247.
 Package marginnote Info: xpos seems to be 316.69905pt on input line 247.
 
 
-[227 <./img/standard_n0_class.png>]
-<img/generalized_sn_1.png, id=4025, 3116.64375pt x 808.01875pt>
+[233 <./img/standard_n0_class.png>]
+<img/generalized_sn_1.png, id=4141, 3116.64375pt x 808.01875pt>
 File: img/generalized_sn_1.png Graphic file (type png)
 <use img/generalized_sn_1.png>
 Package pdftex.def Info: img/generalized_sn_1.png  used on input line 254.
@@ -4266,52 +4314,52 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
 l.259     A
             \textbf{standard neuron} is a 3-field $\mathcal{N}_{0}$ correspo...
 
-[228 <./img/generalized_sn_1.png>]
-Package marginnote Info: Margin note 251.1 is on absolute page 251 on input line 266.
+[234 <./img/generalized_sn_1.png>]
+Package marginnote Info: Margin note 257.1 is on absolute page 257 on input line 266.
 Package marginnote Info: xpos seems to be 265.76593pt on input line 266.
-Package marginnote Info: Margin note 251.2 is on absolute page 251 on input line 272.
+Package marginnote Info: Margin note 257.2 is on absolute page 257 on input line 272.
 Package marginnote Info: xpos seems to be 323.69258pt on input line 272.
-Package marginnote Info: Margin note 251.3 is on absolute page 251 on input line 273.
+Package marginnote Info: Margin note 257.3 is on absolute page 257 on input line 273.
 Package marginnote Info: xpos seems to be 369.63683pt on input line 273.
-<img/chaining1.png, id=4032, 1297.84875pt x 183.68625pt>
+<img/chaining1.png, id=4148, 1297.84875pt x 183.68625pt>
 File: img/chaining1.png Graphic file (type png)
 <use img/chaining1.png>
 Package pdftex.def Info: img/chaining1.png  used on input line 275.
 (pdftex.def)             Requested size: 344.005pt x 48.68501pt.
-<img/function.png, id=4033, 1753.30031pt x 440.39531pt>
+<img/function.png, id=4149, 1753.30031pt x 440.39531pt>
 File: img/function.png Graphic file (type png)
 <use img/function.png>
 Package pdftex.def Info: img/function.png  used on input line 287.
 (pdftex.def)             Requested size: 430.00462pt x 108.00867pt.
 
 
-[229 <./img/chaining1.png>]
-<img/sigmoid_illus_x1.png, id=4042, 406.1574pt x 325.215pt>
+[235 <./img/chaining1.png>]
+<img/sigmoid_illus_x1.png, id=4158, 406.1574pt x 325.215pt>
 File: img/sigmoid_illus_x1.png Graphic file (type png)
 <use img/sigmoid_illus_x1.png>
 Package pdftex.def Info: img/sigmoid_illus_x1.png  used on input line 319.
 (pdftex.def)             Requested size: 137.60461pt x 110.1796pt.
-<img/sigmoid_illus_x2.png, id=4043, 411.2163pt x 325.215pt>
+<img/sigmoid_illus_x2.png, id=4159, 411.2163pt x 325.215pt>
 File: img/sigmoid_illus_x2.png Graphic file (type png)
 <use img/sigmoid_illus_x2.png>
 Package pdftex.def Info: img/sigmoid_illus_x2.png  used on input line 326.
 (pdftex.def)             Requested size: 137.60461pt x 108.82487pt.
-<img/sigmoid_illus_x3.png, id=4044, 411.2163pt x 325.215pt>
+<img/sigmoid_illus_x3.png, id=4160, 411.2163pt x 325.215pt>
 File: img/sigmoid_illus_x3.png Graphic file (type png)
 <use img/sigmoid_illus_x3.png>
 Package pdftex.def Info: img/sigmoid_illus_x3.png  used on input line 333.
 (pdftex.def)             Requested size: 137.60461pt x 108.82487pt.
-<img/sigmoid_illus_x1_2.png, id=4046, 406.1574pt x 325.215pt>
+<img/sigmoid_illus_x1_2.png, id=4162, 406.1574pt x 325.215pt>
 File: img/sigmoid_illus_x1_2.png Graphic file (type png)
 <use img/sigmoid_illus_x1_2.png>
 Package pdftex.def Info: img/sigmoid_illus_x1_2.png  used on input line 351.
 (pdftex.def)             Requested size: 137.60461pt x 110.1796pt.
-<img/sigmoid_illus_x2_2.png, id=4047, 411.2163pt x 325.215pt>
+<img/sigmoid_illus_x2_2.png, id=4163, 411.2163pt x 325.215pt>
 File: img/sigmoid_illus_x2_2.png Graphic file (type png)
 <use img/sigmoid_illus_x2_2.png>
 Package pdftex.def Info: img/sigmoid_illus_x2_2.png  used on input line 358.
 (pdftex.def)             Requested size: 137.60461pt x 108.82487pt.
-<img/sigmoid_illus_x3_2.png, id=4048, 411.2163pt x 325.215pt>
+<img/sigmoid_illus_x3_2.png, id=4164, 411.2163pt x 325.215pt>
 File: img/sigmoid_illus_x3_2.png Graphic file (type png)
 <use img/sigmoid_illus_x3_2.png>
 Package pdftex.def Info: img/sigmoid_illus_x3_2.png  used on input line 365.
@@ -4322,9 +4370,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[230 <./img/function.png>]
+[236 <./img/function.png>]
 
-[231 <./img/sigmoid_illus_x1.png> <./img/sigmoid_illus_x2.png> <./img/sigmoid_illus_x3.png> <./img/sigmoid_illus_x1_2.png> <./img/sigmoid_illus_x2_2.png> <./img/sigmoid_illus_x3_2.png>]
+[237 <./img/sigmoid_illus_x1.png> <./img/sigmoid_illus_x2.png> <./img/sigmoid_illus_x3.png> <./img/sigmoid_illus_x1_2.png> <./img/sigmoid_illus_x2_2.png> <./img/sigmoid_illus_x3_2.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 387.
@@ -4337,45 +4385,45 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 387.
 
-Package marginnote Info: Margin note 254.1 is on absolute page 254 on input line 388.
+Package marginnote Info: Margin note 260.1 is on absolute page 260 on input line 388.
 Package marginnote Info: xpos seems to be 243.63715pt on input line 388.
 
 
-[232]
-<img/logic_unit_v1.png, id=4075, 3449.88875pt x 1475.5125pt>
+[238]
+<img/logic_unit_v1.png, id=4191, 3449.88875pt x 1475.5125pt>
 File: img/logic_unit_v1.png Graphic file (type png)
 <use img/logic_unit_v1.png>
 Package pdftex.def Info: img/logic_unit_v1.png  used on input line 447.
 (pdftex.def)             Requested size: 279.50037pt x 119.52936pt.
-<img/logic_unit_v2.png, id=4076, 920.43875pt x 1433.355pt>
+<img/logic_unit_v2.png, id=4192, 920.43875pt x 1433.355pt>
 File: img/logic_unit_v2.png Graphic file (type png)
 <use img/logic_unit_v2.png>
 Package pdftex.def Info: img/logic_unit_v2.png  used on input line 453.
 (pdftex.def)             Requested size: 64.49806pt x 100.43259pt.
 
 
-[233 <./img/logic_unit_v1.png>]
-<img/logic_unit_v3.png, id=4084, 6077.70625pt x 1637.11626pt>
+[239 <./img/logic_unit_v1.png>]
+<img/logic_unit_v3.png, id=4200, 6077.70625pt x 1637.11626pt>
 File: img/logic_unit_v3.png Graphic file (type png)
 <use img/logic_unit_v3.png>
 Package pdftex.def Info: img/logic_unit_v3.png  used on input line 472.
 (pdftex.def)             Requested size: 430.00462pt x 115.8089pt.
 
 
-[234 <./img/logic_unit_v2.png> <./img/logic_unit_v3.png>]
-<img/minsky_perceptron_predicate_1.png, id=4096, 578.16pt x 158.09062pt>
+[240 <./img/logic_unit_v2.png> <./img/logic_unit_v3.png>]
+<img/minsky_perceptron_predicate_1.png, id=4212, 578.16pt x 158.09062pt>
 File: img/minsky_perceptron_predicate_1.png Graphic file (type png)
 <use img/minsky_perceptron_predicate_1.png>
 Package pdftex.def Info: img/minsky_perceptron_predicate_1.png  used on input line 495.
 (pdftex.def)             Requested size: 344.005pt x 94.06387pt.
-<img/minsky_perceptron_predicate_2.png, id=4101, 658.71094pt x 173.89969pt>
+<img/minsky_perceptron_predicate_2.png, id=4217, 658.71094pt x 173.89969pt>
 File: img/minsky_perceptron_predicate_2.png Graphic file (type png)
 <use img/minsky_perceptron_predicate_2.png>
 Package pdftex.def Info: img/minsky_perceptron_predicate_2.png  used on input line 508.
 (pdftex.def)             Requested size: 344.005pt x 90.8184pt.
 
 
-[235 <./img/minsky_perceptron_predicate_1.png>]
+[241 <./img/minsky_perceptron_predicate_1.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4387,7 +4435,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
 l.542     A
             predicate $\psi$ is \textbf{conjunctively local} of order $k$ if...
 
-[236 <./img/minsky_perceptron_predicate_2.png>]
+[242 <./img/minsky_perceptron_predicate_2.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4399,24 +4447,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.4})
 l.566     A
             \textbf{perceptron} is then a device capable of computing all pr...)
 
-[237]
+[243]
 \openout2 = `content/chapter6cs1.aux'.
 
  (content/chapter6cs1.tex
 
-[238
+[244
 
 
 
 
 ])
 
-[239]
+[245]
 \openout2 = `content/chapter6cs2.aux'.
 
  (content/chapter6cs2.tex
 
-[240
+[246
 
 
 
@@ -4428,7 +4476,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.15     A
            vector space $\mathbb{V}$ is a set of objects called \textit{vect...
 
-[241]
+[247]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4438,7 +4486,7 @@ Underfull \vbox (badness 1237) has occurred while \output is active []
 
 
 
-[242]
+[248]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4450,8 +4498,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.4})
 l.60     A
            vector space has \textit{dimension} $n$ if it can accommodate a m...
 
-[243]
-Package marginnote Info: Margin note 266.1 is on absolute page 266 on input line 73.
+[249]
+Package marginnote Info: Margin note 272.1 is on absolute page 272 on input line 73.
 Package marginnote Info: xpos seems to be 426.97182pt on input line 73.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.5}) has been already used, duplicate ignored
@@ -4475,10 +4523,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) ha
 l.108     G
            iven a linearly independent basis we can form the linear combinat...
 
-[244]
-Package marginnote Info: Margin note 267.1 is on absolute page 267 on input line 114.
+[250]
+Package marginnote Info: Margin note 273.1 is on absolute page 273 on input line 114.
 Package marginnote Info: xpos seems to be 137.4681pt on input line 114.
-Package marginnote Info: Margin note 267.2 is on absolute page 267 on input line 114.
+Package marginnote Info: Margin note 273.2 is on absolute page 273 on input line 114.
 Package marginnote Info: xpos seems to be 370.91273pt on input line 114.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
@@ -4497,10 +4545,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) ha
 l.136     S
            uppose $V$ is finite-dimensional and $\varphi$ is a linear functi...
 
-[245]
+[251]
 
-[246]
-Package marginnote Info: Margin note 269.1 is on absolute page 269 on input line 176.
+[252]
+Package marginnote Info: Margin note 275.1 is on absolute page 275 on input line 176.
 Package marginnote Info: xpos seems to be 189.76678pt on input line 176.
 
 pdfTeX warning (ext4): destination with the same identifier (name{example.1}) has been already used, duplicate ignored
@@ -4509,8 +4557,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{example.1}) ha
 l.178     T
            o determine the eigenvalue and eigenfunction of $\hat{A}=i(d/dx)$...
 
-[247]
-Package marginnote Info: Margin note 270.1 is on absolute page 270 on input line 207.
+[253]
+Package marginnote Info: Margin note 276.1 is on absolute page 276 on input line 207.
 Package marginnote Info: xpos seems to be 181.06416pt on input line 207.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) has been already used, duplicate ignored
@@ -4519,8 +4567,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) ha
 l.214     L
            et $a,b$ be constants, $A,B$ be operators on $n$-differentiable s...
 
-[248]
-Package marginnote Info: Margin note 271.1 is on absolute page 271 on input line 239.
+[254]
+Package marginnote Info: Margin note 277.1 is on absolute page 277 on input line 239.
 Package marginnote Info: xpos seems to be 453.14856pt on input line 239.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.5}) has been already used, duplicate ignored
@@ -4528,25 +4576,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.5}) ha
                    \relax 
 l.241     L
            et $T\in\mathcal{B}(X)$ be a bounded linear operator on a Hilbert...
-Package marginnote Info: Margin note 271.2 is on absolute page 271 on input line 250.
+Package marginnote Info: Margin note 277.2 is on absolute page 277 on input line 250.
 Package marginnote Info: xpos seems to be 486.92316pt on input line 250.
-Package marginnote Info: Margin note 271.3 is on absolute page 272 on input line 255.
+Package marginnote Info: Margin note 277.3 is on absolute page 278 on input line 255.
 Package marginnote Info: xpos seems to be 293.70236pt on input line 255.
 
 
-[249]
-Package marginnote Info: Margin note 272.1 is on absolute page 272 on input line 262.
+[255]
+Package marginnote Info: Margin note 278.1 is on absolute page 278 on input line 262.
 Package marginnote Info: xpos seems to be 290.46973pt on input line 262.
 
 Underfull \vbox (badness 4024) has occurred while \output is active []
 
 
 
-[250]
+[256]
 
-[251])
+[257])
 
-[252]
+[258]
 \openout2 = `content/chapter7.aux'.
 
  (content/chapter7.tex
@@ -4554,7 +4602,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[253
+[259
 
 
 
@@ -4564,7 +4612,7 @@ Underfull \vbox (badness 2951) has occurred while \output is active []
 
 
 
-[254]
+[260]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4580,26 +4628,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.3})
                    \relax 
 l.48     T
           he ambiance space $\mathcal{A}$ is defined as the collection of ob...
-<img/model_representation.png, id=4304, 289.8027pt x 181.3977pt>
+<img/model_representation.png, id=4420, 289.8027pt x 181.3977pt>
 File: img/model_representation.png Graphic file (type png)
 <use img/model_representation.png>
 Package pdftex.def Info: img/model_representation.png  used on input line 55.
 (pdftex.def)             Requested size: 215.0023pt x 134.57817pt.
 
 
-[255]
+[261]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[256 <./img/model_representation.png>]
+[262 <./img/model_representation.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.78   T
         he language $\mathcal{L}^{*}$ of the ambiance space $\mathcal{A}$ of...
 
-[257]
+[263]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4616,16 +4664,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.7})
 l.102 \end{definition}
                       )
 
-[258]
+[264]
 
-[259
+[265
 
 
 
 
 ]
 
-[260] (content/prob/probintro.tex
+[266] (content/prob/probintro.tex
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 8.
@@ -4635,38 +4683,38 @@ Underfull \vbox (badness 1596) has occurred while \output is active []
 
 
 
-[261
+[267
 
 
 ]
 
-[262])
+[268])
 
-[263]
+[269]
 \openout2 = `content/prob/chapter1prob.aux'.
 
  (content/prob/chapter1prob.tex
 
-[264
+[270
 
 
 ]
 
-[265]
+[271]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[266]
+[272]
 
-[267]
+[273]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.61     S
           uppose the model $f(x;\mathcal{D})$ for the data $\mathcal{D}=(x_i...
 
-[268]
+[274]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4678,33 +4726,33 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.110         A
                 \textbf{parametric model} is one that can be parameterized b...
 
-[269]
+[275]
 
-[270]
-<pdf/u-shaped.pdf, id=4557, 114.32813pt x 75.23106pt>
+[276]
+<pdf/u-shaped.pdf, id=4673, 114.32813pt x 75.23106pt>
 File: pdf/u-shaped.pdf Graphic file (type pdf)
 <use pdf/u-shaped.pdf>
 Package pdftex.def Info: pdf/u-shaped.pdf  used on input line 165.
 (pdftex.def)             Requested size: 126.85162pt x 83.46808pt.
-<pdf/doubledescent.pdf, id=4558, 203.12387pt x 75.23106pt>
+<pdf/doubledescent.pdf, id=4674, 203.12387pt x 75.23106pt>
 File: pdf/doubledescent.pdf Graphic file (type pdf)
 <use pdf/doubledescent.pdf>
 Package pdftex.def Info: pdf/doubledescent.pdf  used on input line 166.
 (pdftex.def)             Requested size: 225.37407pt x 83.46808pt.
 
 
-[271 <./pdf/u-shaped.pdf> <./pdf/doubledescent.pdf>]
-<img/errorvscomplexity.png, id=4619, 986.7264pt x 263.5446pt>
+[277 <./pdf/u-shaped.pdf> <./pdf/doubledescent.pdf>]
+<img/errorvscomplexity.png, id=4735, 986.7264pt x 263.5446pt>
 File: img/errorvscomplexity.png Graphic file (type png)
 <use img/errorvscomplexity.png>
 Package pdftex.def Info: img/errorvscomplexity.png  used on input line 187.
 (pdftex.def)             Requested size: 430.00462pt x 114.85008pt.
-<img/Intro-ocean-test.png, id=4624, 885.0666pt x 493.3632pt>
+<img/Intro-ocean-test.png, id=4740, 885.0666pt x 493.3632pt>
 File: img/Intro-ocean-test.png Graphic file (type png)
 <use img/Intro-ocean-test.png>
 Package pdftex.def Info: img/Intro-ocean-test.png  used on input line 210.
 (pdftex.def)             Requested size: 220.15953pt x 122.72319pt.
-<img/Rn-cifar10-p15-adam-aug-train.png, id=4625, 869.1672pt x 493.3632pt>
+<img/Rn-cifar10-p15-adam-aug-train.png, id=4741, 869.1672pt x 493.3632pt>
 File: img/Rn-cifar10-p15-adam-aug-train.png Graphic file (type png)
 <use img/Rn-cifar10-p15-adam-aug-train.png>
 Package pdftex.def Info: img/Rn-cifar10-p15-adam-aug-train.png  used on input line 214.
@@ -4721,37 +4769,34 @@ pdfTeX warning (ext4): destination with the same identifier (name{hypothesis.1})
 l.241 F
        or any natural data distribution $\cD$, neural-network-based training...
 
-[272 <./img/errorvscomplexity.png> <./img/Intro-ocean-test.png> <./img/Rn-cifar10-p15-adam-aug-train.png>]
+[278 <./img/errorvscomplexity.png> <./img/Intro-ocean-test.png> <./img/Rn-cifar10-p15-adam-aug-train.png>]
 
-[273]
+[279]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[274]
+[280]
 
-[275]
-Underfull \vbox (badness 5231) has occurred while \output is active []
+[281]
 
-
-
-[276]
+[282]
 pdfTeX warning (ext4): destination with the same identifier (name{proposition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.320     F
            or any $h\in\mathcal{H}$, for any $\delta\in(0,1)$,
 
-[277]
+[283]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[278]
+[284]
 
-[279]
+[285]
 
-[280]
+[286]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4763,14 +4808,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
 l.416     G
            iven a concept $c\in\mathcal{C}$, the \textbf{representation comp...
 
-[281]
+[287]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.439   T
          he \textbf{optimization complexity}, or $\epsilon$-optimization of ...
 
-[282]
+[288]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4782,50 +4827,50 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.5})
 l.460   A
           measure $\mathcal{M}_{S}[\epsilon,\mu](h,c)$ gauges the \textit{sa...
 
-[283]
+[289]
 
-[284]
+[290]
 
-[285
+[291
 
 ]
 
-[286]
+[292]
 
-[287]
-<img/Diagramatic_Modelling_View.png, id=4945, 9144.1625pt x 5560.775pt>
+[293]
+<img/Diagramatic_Modelling_View.png, id=5062, 9144.1625pt x 5560.775pt>
 File: img/Diagramatic_Modelling_View.png Graphic file (type png)
 <use img/Diagramatic_Modelling_View.png>
 Package pdftex.def Info: img/Diagramatic_Modelling_View.png  used on input line 585.
 (pdftex.def)             Requested size: 279.50037pt x 169.95552pt.
-<img/diagram_2.png, id=4947, 203.94594pt x 119.67912pt>
+<img/diagram_2.png, id=5064, 203.94594pt x 119.67912pt>
 File: img/diagram_2.png Graphic file (type png)
 <use img/diagram_2.png>
 Package pdftex.def Info: img/diagram_2.png  used on input line 594.
 (pdftex.def)             Requested size: 279.50037pt x 164.02148pt.
 
 
-[288
+[294
 
  <./img/Diagramatic_Modelling_View.png>]
-<img/diagram_3.png, id=4953, 291.2481pt x 176.15813pt>
+<img/diagram_3.png, id=5070, 291.2481pt x 176.15813pt>
 File: img/diagram_3.png Graphic file (type png)
 <use img/diagram_3.png>
 Package pdftex.def Info: img/diagram_3.png  used on input line 603.
 (pdftex.def)             Requested size: 279.50037pt x 169.06686pt.
 
 
-[289 <./img/diagram_2.png> <./img/diagram_3.png>]
-<img/double_descent_synthetic.png, id=4962, 1610.015pt x 1385.175pt>
+[295 <./img/diagram_2.png> <./img/diagram_3.png>]
+<img/double_descent_synthetic.png, id=5079, 1610.015pt x 1385.175pt>
 File: img/double_descent_synthetic.png Graphic file (type png)
 <use img/double_descent_synthetic.png>
 Package pdftex.def Info: img/double_descent_synthetic.png  used on input line 659.
 (pdftex.def)             Requested size: 236.50385pt x 203.47667pt.
 
 
-[290]
+[296]
 
-[291 <./img/double_descent_synthetic.png>]
+[297 <./img/double_descent_synthetic.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{hypothesis.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4837,7 +4882,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{conjecture.1})
 l.721   D
          ouble descent happens, for a polynomial class model $h_{n}\in\mathc...
 
-[292]
+[298]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4849,7 +4894,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
 l.743     T
            he polynomial network based on Model~\ref{def:poly_structure1} is...
 
-[293]
+[299]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4861,7 +4906,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) ha
 l.769   L
          et $S$ be a locally compact Hausdorff space. Let $A$ be the subset ...
 
-[294]
+[300]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4872,30 +4917,30 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) ha
                    \relax 
 l.819 L
        et $(x, \epsilon)\in \R^d\times\R$ independent random variables with ...
-<pdf/theorem_1.pdf, id=5021, 462.96765pt x 279.93083pt>
+<pdf/theorem_1.pdf, id=5138, 462.96765pt x 279.93083pt>
 File: pdf/theorem_1.pdf Graphic file (type pdf)
 <use pdf/theorem_1.pdf>
 Package pdftex.def Info: pdf/theorem_1.pdf  used on input line 837.
 (pdftex.def)             Requested size: 344.005pt x 208.01265pt.
 
 
-[295
+[301
 
 ]
-<pdf/theorem_2.pdf, id=5037, 462.96765pt x 267.93098pt>
+<pdf/theorem_2.pdf, id=5154, 462.96765pt x 267.93098pt>
 File: pdf/theorem_2.pdf Graphic file (type pdf)
 <use pdf/theorem_2.pdf>
 Package pdftex.def Info: pdf/theorem_2.pdf  used on input line 856.
 (pdftex.def)             Requested size: 344.005pt x 199.09573pt.
 
 
-[296 <./pdf/theorem_1.pdf>]
-<pdf/theorem_3.pdf, id=5088, 462.96765pt x 269.35028pt>
+[302 <./pdf/theorem_1.pdf>]
+<pdf/theorem_3.pdf, id=5205, 462.96765pt x 269.35028pt>
 File: pdf/theorem_3.pdf Graphic file (type pdf)
 <use pdf/theorem_3.pdf>
 Package pdftex.def Info: pdf/theorem_3.pdf  used on input line 878.
 (pdftex.def)             Requested size: 344.005pt x 200.1504pt.
-<img/dimensional_descent.png, id=5093, 792.9625pt x 491.8375pt>
+<img/dimensional_descent.png, id=5210, 792.9625pt x 491.8375pt>
 File: img/dimensional_descent.png Graphic file (type png)
 <use img/dimensional_descent.png>
 Package pdftex.def Info: img/dimensional_descent.png  used on input line 884.
@@ -4906,10 +4951,10 @@ LaTeX Warning: Command \textellipsis invalid in math mode on input line 930.
 
 
 
-[297 <./pdf/theorem_2.pdf>]
+[303 <./pdf/theorem_2.pdf>]
 
-[298 <./pdf/theorem_3.pdf> <./img/dimensional_descent.png>]
-<pdf/theorem_4_verify.pdf, id=5187, 462.96765pt x 356.13351pt>
+[304 <./pdf/theorem_3.pdf> <./img/dimensional_descent.png>]
+<pdf/theorem_4_verify.pdf, id=5304, 462.96765pt x 356.13351pt>
 File: pdf/theorem_4_verify.pdf Graphic file (type pdf)
 <use pdf/theorem_4_verify.pdf>
 Package pdftex.def Info: pdf/theorem_4_verify.pdf  used on input line 940.
@@ -4919,22 +4964,22 @@ Underfull \vbox (badness 1342) has occurred while \output is active []
 
 
 
-[299]
+[305]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[300 <./pdf/theorem_4_verify.pdf>]
+[306 <./pdf/theorem_4_verify.pdf>]
 
-[301]
+[307]
 
-[302
+[308
 
 ]
 
-[303]
+[309]
 
-Package natbib Warning: Citation `zhang2023mathematical' on page 304 undefined on input line 988.
+Package natbib Warning: Citation `zhang2023mathematical' on page 310 undefined on input line 988.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{setting.1}) has been already used, duplicate ignored
@@ -4943,63 +4988,63 @@ pdfTeX warning (ext4): destination with the same identifier (name{setting.1}) ha
 l.1000     W
             e formulate the neural network scenario as followed. Let the hyp...
 
-[304
+[310
 
 ]
 
-[305
+[311
 
 ]
 
-[306
+[312
 
 ]
 
-[307]
+[313]
 
-[308
+[314
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[309]
+[315]
 
-[310]
+[316]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1201     F
             or a system and its object, an object's \textbf{representation s...
 
-[311
+[317
 
 ]
 
-[312]
+[318]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1251     G
             iven a graph $G(V,E,\psi_{E})$ for $\psi_{E}$ the edge proprieta...
 
-[313]
-<img/What.png, id=5382, 738.3585pt x 351.714pt>
+[319]
+<img/What.png, id=5499, 738.3585pt x 351.714pt>
 File: img/What.png Graphic file (type png)
 <use img/What.png>
 Package pdftex.def Info: img/What.png  used on input line 1285.
 (pdftex.def)             Requested size: 344.005pt x 163.86732pt.
 
 
-[314 <./img/What.png>])
+[320 <./img/What.png>])
 
-[315]
+[321]
 \openout2 = `content/prob/chapter1.5prob.aux'.
 
  (content/prob/chapter1.5prob.tex
 
-[316
+[322
 
 
 
@@ -5011,10 +5056,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.10     A
            function of a single variable $t$ is a polynomial on its domain i...
 
-[317]
-Package marginnote Info: Margin note 340.1 is on absolute page 340 on input line 25.
+[323]
+Package marginnote Info: Margin note 346.1 is on absolute page 346 on input line 25.
 Package marginnote Info: xpos seems to be 432.96176pt on input line 25.
-Package marginnote Info: Margin note 340.2 is on absolute page 340 on input line 28.
+Package marginnote Info: Margin note 346.2 is on absolute page 346 on input line 28.
 Package marginnote Info: xpos seems to be 299.60532pt on input line 28.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
@@ -5023,22 +5068,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) ha
 l.33     E
           xtend the elementary operations to polynomial object $p,q,\dots$. ...
 
-[318]
-Package marginnote Info: Margin note 341.1 is on absolute page 341 on input line 60.
+[324]
+Package marginnote Info: Margin note 347.1 is on absolute page 347 on input line 60.
 Package marginnote Info: xpos seems to be 252.78026pt on input line 60.
 
 
-[319]
+[325]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.83     L
           et $K$ be a field, then we have:
-Package marginnote Info: Margin note 342.1 is on absolute page 342 on input line 83.
+Package marginnote Info: Margin note 348.1 is on absolute page 348 on input line 83.
 Package marginnote Info: xpos seems to be 257.96408pt on input line 83.
 
 
-[320]
+[326]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -5049,7 +5094,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) ha
                    \relax 
 l.100     L
            et $K$ be a filed. If $a(x)$ and $b(x)$ are nonzero polynomials i...
-Package marginnote Info: Margin note 343.1 is on absolute page 343 on input line 118.
+Package marginnote Info: Margin note 349.1 is on absolute page 349 on input line 118.
 Package marginnote Info: xpos seems to be 379.29384pt on input line 118.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) has been already used, duplicate ignored
@@ -5063,9 +5108,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.5}) ha
 l.125     S
            uppose $K\subseteq L$ is a field extension and $\gamma$ is an ele...
 
-[321])
+[327])
 
-[322]
+[328]
 \openout2 = `content/prob/chapter2prob.aux'.
 
  (content/prob/chapter2prob.tex
@@ -5080,7 +5125,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{col.1}) has be
 l.22     L
           et $\mathcal{X}$ be an infinite domain, and let $\mathcal{H}$ be a...
 
-[323
+[329
 
 
 
@@ -5092,12 +5137,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{conjecture.1})
 l.36     B
           ias-variance can be identified, under several contexts, to mean th...)
 
-[324]
+[330]
 \openout2 = `content/prob/chapter3prob.aux'.
 
  (content/prob/chapter3prob.tex)
 
-[325
+[331
 
 
 
@@ -5107,7 +5152,7 @@ l.36     B
 
  (content/prob/chapter4prob.tex
 
-[326
+[332
 
 
 
@@ -5117,14 +5162,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[327])
+[333])
 
-[328]
+[334]
 \openout2 = `content/prob/chapter5prob.aux'.
 
  (content/prob/chapter5prob.tex
 
-[329
+[335
 
 
 
@@ -5134,28 +5179,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[330]
+[336]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.45     S
           uppose the model $f(x;\mathcal{D})$ for the data $\mathcal{D}=(x_i...
 
-[331]
+[337]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.72     F
           or the expected loss of any given hypothesis $h$, the bias $\mathc...
 
-[332])
+[338])
 
-[333]
+[339]
 \openout2 = `content/prob/chapter6prob.aux'.
 
  (content/prob/chapter6prob.tex
 
-[334
+[340
 
 
 
@@ -5167,13 +5212,13 @@ Overfull \hbox (9.70128pt too wide) in paragraph at lines 11--12
 
 
 
-[335]
-<img/0925_rosenblatt4.jpg, id=5674, 903.375pt x 538.26094pt>
+[341]
+<img/0925_rosenblatt4.jpg, id=5791, 903.375pt x 538.26094pt>
 File: img/0925_rosenblatt4.jpg Graphic file (type jpg)
 <use img/0925_rosenblatt4.jpg>
 Package pdftex.def Info: img/0925_rosenblatt4.jpg  used on input line 36.
 (pdftex.def)             Requested size: 171.99922pt x 102.48418pt.
-<img/A_unit_receptors.png, id=5675, 792.71156pt x 282.30469pt>
+<img/A_unit_receptors.png, id=5792, 792.71156pt x 282.30469pt>
 File: img/A_unit_receptors.png Graphic file (type png)
 <use img/A_unit_receptors.png>
 Package pdftex.def Info: img/A_unit_receptors.png  used on input line 42.
@@ -5188,27 +5233,27 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[336]
+[342]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.57   A
          \textit{perceptron} (or linear classifier) is a function \begin{equ...
 
-[337 <./img/0925_rosenblatt4.jpg> <./img/A_unit_receptors.png>])
+[343 <./img/0925_rosenblatt4.jpg> <./img/A_unit_receptors.png>])
 
-[338]
+[344]
 \openout2 = `content/main/chaptert1.aux'.
 
  (content/main/chaptert1.tex
 
-[339
+[345
 
 
 
 ]
 
-[340
+[346
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
@@ -5220,21 +5265,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[341]
+[347]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.26     A
            \textbf{construct} $U$, subjected to a system $S$ is called \text...
 
-[342]
+[348]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[343])
+[349])
 
-[344]
+[350]
 \openout2 = `content/main/chaptert2.aux'.
 
  (content/main/chaptert2.tex
@@ -5249,7 +5294,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) ha
 l.22     I
           n the construction of an automated, artificial intelligence constr...
 
-[345
+[351
 
 
 
@@ -5276,13 +5321,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{proposition.2}
 l.70     A
           n abstract neuron $A$  can be dissected into three most important ...
 
-[346] (content/c2fig1.tex)
+[352] (content/c2fig1.tex)
 
-[347]
+[353]
 
-[348]
+[354]
 
-[349]
+[355]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -5294,14 +5339,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
 l.131     W
            e define the base neuron class $\mathcal{N}_{1}\equiv L_{1}$ as f...
 
-[350]
-Package marginnote Info: Margin note 373.1 is on absolute page 373 on input line 134.
+[356]
+Package marginnote Info: Margin note 379.1 is on absolute page 379 on input line 134.
 Package marginnote Info: xpos seems to be 395.30359pt on input line 134.
 )
 
-[351]
+[357]
 
-[352
+[358
 
 
 
@@ -5309,15 +5354,15 @@ Package marginnote Info: xpos seems to be 395.30359pt on input line 134.
 
 
 
-[353
+[359
 
 
 ]
 
 
 
-[354]) (appendix/appendix2.tex
-<img/hardlim1.png, id=5973, 568.1225pt x 430.60875pt>
+[360]) (appendix/appendix2.tex
+<img/hardlim1.png, id=6091, 568.1225pt x 430.60875pt>
 File: img/hardlim1.png Graphic file (type png)
 <use img/hardlim1.png>
 Package pdftex.def Info: img/hardlim1.png  used on input line 16.
@@ -5327,29 +5372,29 @@ Underfull \vbox (badness 1968) has occurred while \output is active []
 
 
 
-[355
+[361
 
 
  <./img/hardlim1.png>]
-<img/hardlim3.png, id=5980, 568.1225pt x 430.60875pt>
+<img/hardlim3.png, id=6098, 568.1225pt x 430.60875pt>
 File: img/hardlim3.png Graphic file (type png)
 <use img/hardlim3.png>
 Package pdftex.def Info: img/hardlim3.png  used on input line 29.
 (pdftex.def)             Requested size: 215.0023pt x 162.96281pt.
-<img/symhardlim.png, id=5981, 585.18625pt x 430.60875pt>
+<img/symhardlim.png, id=6099, 585.18625pt x 430.60875pt>
 File: img/symhardlim.png Graphic file (type png)
 <use img/symhardlim.png>
 Package pdftex.def Info: img/symhardlim.png  used on input line 42.
 (pdftex.def)             Requested size: 215.0023pt x 158.21231pt.
 
 
-[356 <./img/hardlim3.png>]
-<img/saturatinglin.png, id=5990, 568.1225pt x 430.60875pt>
+[362 <./img/hardlim3.png>]
+<img/saturatinglin.png, id=6108, 568.1225pt x 430.60875pt>
 File: img/saturatinglin.png Graphic file (type png)
 <use img/saturatinglin.png>
 Package pdftex.def Info: img/saturatinglin.png  used on input line 77.
 (pdftex.def)             Requested size: 215.0023pt x 162.96281pt.
-<img/symsatlins.png, id=5991, 591.20876pt x 430.60875pt>
+<img/symsatlins.png, id=6109, 591.20876pt x 430.60875pt>
 File: img/symsatlins.png Graphic file (type png)
 <use img/symsatlins.png>
 Package pdftex.def Info: img/symsatlins.png  used on input line 82.
@@ -5361,7 +5406,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/sigmoid.png, id=5992, 568.1225pt x 430.60875pt>
+<img/sigmoid.png, id=6110, 568.1225pt x 430.60875pt>
 File: img/sigmoid.png Graphic file (type png)
 <use img/sigmoid.png>
 Package pdftex.def Info: img/sigmoid.png  used on input line 92.
@@ -5369,7 +5414,7 @@ Package pdftex.def Info: img/sigmoid.png  used on input line 92.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/logsigmoid.png, id=5993, 564.1075pt x 435.6275pt>
+<img/logsigmoid.png, id=6111, 564.1075pt x 435.6275pt>
 File: img/logsigmoid.png Graphic file (type png)
 <use img/logsigmoid.png>
 Package pdftex.def Info: img/logsigmoid.png  used on input line 102.
@@ -5379,8 +5424,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[357 <./img/symhardlim.png>]
-<img/tansig.png, id=6003, 582.175pt x 430.60875pt>
+[363 <./img/symhardlim.png>]
+<img/tansig.png, id=6121, 582.175pt x 430.60875pt>
 File: img/tansig.png Graphic file (type png)
 <use img/tansig.png>
 Package pdftex.def Info: img/tansig.png  used on input line 116.
@@ -5390,19 +5435,19 @@ Underfull \vbox (badness 1348) has occurred while \output is active []
 
 
 
-[358 <./img/saturatinglin.png> <./img/symsatlins.png>]
+[364 <./img/saturatinglin.png> <./img/symsatlins.png>]
 Overfull \vbox (11.54536pt too high) has occurred while \output is active []
 
 
 
-[359 <./img/sigmoid.png> <./img/logsigmoid.png> <./img/tansig.png>]
-Package marginnote Info: Margin note 382.1 is on absolute page 382 on input line 128.
+[365 <./img/sigmoid.png> <./img/logsigmoid.png> <./img/tansig.png>]
+Package marginnote Info: Margin note 388.1 is on absolute page 388 on input line 128.
 Package marginnote Info: xpos seems to be 272.02405pt on input line 128.
 
 
-[360]
+[366]
 
-[361]
+[367]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -5424,11 +5469,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) ha
 l.236     F
            or all $x\in D\subset \mathbb{R}$, we have
 
-[362]) (main.bbl
+[368]) (main.bbl
 
-[363]
+[369]
 
-[364
+[370
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 20--24
@@ -5462,132 +5507,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--30
 
 
 
-[365]
+[371]
 
-[366]
-Underfull \hbox (badness 2343) in paragraph at lines 304--309
+[372]
+
+[373]
+Underfull \hbox (badness 2343) in paragraph at lines 316--321
 []\T1/ETbb-TLF/regular/n/10 Sebastian Buschj鋑er, Lukas Pfahler, and Katha-rina Morik.  Gen-er-al-ized Neg-a-tive Cor-re-la-tion
  []
 
 
-
-[367]
-Underfull \hbox (badness 2343) in paragraph at lines 312--317
+Underfull \hbox (badness 2343) in paragraph at lines 324--329
 []\T1/ETbb-TLF/regular/n/10 Sebastian Buschj鋑er, Lukas Pfahler, and Katha-rina Morik.  Gen-er-al-ized Neg-a-tive Cor-re-la-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--406
+Underfull \hbox (badness 1910) in paragraph at lines 366--371
+\T1/ETbb-TLF/regular/n/10 evo-lu-tion of com-pu-ta-tion-al-ism.  \T1/ETbb-TLF/regular/it/10 Minds and Ma-chines\T1/ETbb-TLF/regular/n/10 , 28(4):515--542, 2018.  doi: $10 . 1007 /
+ []
+
+
+
+[374]
+Underfull \hbox (badness 10000) in paragraph at lines 458--463
 []\T1/ETbb-TLF/regular/n/10 Pedro M. Domin-gos.  A Unifeid Bias-Variance De-com-po-si-tion and its Ap-pli-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--406
+Underfull \hbox (badness 10000) in paragraph at lines 458--463
 \T1/ETbb-TLF/regular/n/10 tions.  In \T1/ETbb-TLF/regular/it/10 Se-man-tic Scholar\T1/ETbb-TLF/regular/n/10 , June 2000b.  URL [][]$\T1/cmtt/m/n/10 https : / / www . semanticscholar .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--406
+Underfull \hbox (badness 10000) in paragraph at lines 458--463
 \T1/cmtt/m/n/10 org / paper / A-[]Unifeid-[]Bias-[]Variance-[]Decomposition-[]and-[]its-[]Domingos /
  []
 
 
-
-[368]
-Underfull \hbox (badness 10000) in paragraph at lines 458--464
+Underfull \hbox (badness 10000) in paragraph at lines 515--521
 []\T1/ETbb-TLF/regular/n/10 C. El-liot.  \T1/ETbb-TLF/regular/it/10 On De Finetti's Phi-los-o-phy of Prob-a-bil-ity\T1/ETbb-TLF/regular/n/10 .  PhD the-sis, Tilburg Uni-ver-sity,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--464
+Underfull \hbox (badness 10000) in paragraph at lines 515--521
 \T1/ETbb-TLF/regular/n/10 June 2019.  URL [][]$\T1/cmtt/m/n/10 https : / / research . tilburguniversity . edu / en / publications /
  []
 
 
-Underfull \hbox (badness 2460) in paragraph at lines 458--464
+Underfull \hbox (badness 2460) in paragraph at lines 515--521
 \T1/cmtt/m/n/10 on-[]de-[]finettis-[]philosophy-[]of-[]probability$[][]\T1/ETbb-TLF/regular/n/10 .  Avail-able from Tilburg Uni-ver-sity repos-i-
  []
 
 
-Underfull \hbox (badness 3168) in paragraph at lines 485--488
+
+[375]
+Underfull \hbox (badness 3168) in paragraph at lines 548--551
 []\T1/ETbb-TLF/regular/n/10 Scott Fort-mann.  Un-der-stand-ing the Bias-Variance Trade-off, 2012.  URL [][]$\T1/cmtt/m/n/10 https : / / scott .
  []
 
 
-Underfull \hbox (badness 4454) in paragraph at lines 502--510
+Underfull \hbox (badness 4454) in paragraph at lines 572--580
 []\T1/ETbb-TLF/regular/n/10 Joseph von Ger-lach.  Ue-ber die struc-tur der grauen sub-stanz des men-schlichen grosshirns.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--510
+Underfull \hbox (badness 10000) in paragraph at lines 572--580
 \T1/ETbb-TLF/regular/n/10 vor-l鋟-fige mitheilung.  \T1/ETbb-TLF/regular/it/10 Cen-tral-blatt f黵 die medi-zinis-chen Wis-senschaften\T1/ETbb-TLF/regular/n/10 , 10:273--
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--510
+Underfull \hbox (badness 10000) in paragraph at lines 572--580
 \T1/ETbb-TLF/regular/n/10 288, 1872.  URL [][]$\T1/cmtt/m/n/10 https : / / www . booklooker . de / B % C3 % BCcher / Joseph-[]Gerlach %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--510
+Underfull \hbox (badness 10000) in paragraph at lines 572--580
 \T1/cmtt/m/n/10 2BUeber-[]die-[]Structur-[]der-[]grauen-[]Substanz-[]des-[]menschlichen-[]Grosshirns-[]Vorl %
  []
 
 
 
-[369]
-Underfull \hbox (badness 1033) in paragraph at lines 604--609
+[376]
+Underfull \hbox (badness 1033) in paragraph at lines 687--692
 []\T1/ETbb-TLF/regular/n/10 Baihe Huang, Shanda Li, Tian-hao Wu, Yim-ing Yang, Ameet Tal-walkar, Kan-nan Ram-chan-dran,
  []
 
 
 
-[370]
+[377]
 
-[371]
-Underfull \hbox (badness 1087) in paragraph at lines 837--844
+[378]
+Underfull \hbox (badness 1087) in paragraph at lines 944--951
 []\T1/ETbb-TLF/regular/n/10 Recorla Michael.  Com-pu-ta-tional mod-el-ing of the mind: What role for men-tal rep-re-sen-ta-tion?
  []
 
 
 
-[372]
+[379]
 
-[373]
+[380]
 
-[374]
+[381]
 
-[375]
-Underfull \hbox (badness 1661) in paragraph at lines 1214--1218
+[382]
+Underfull \hbox (badness 1533) in paragraph at lines 1357--1363
+[]\T1/ETbb-TLF/regular/n/10 Stanford En-cy-clo-pe-dia of Phi-los-o-phy.  Ar-ti-fi-cial in-tel-li-gence.  [][]$\T1/cmtt/m/n/10 https : / / plato . stanford . edu /
+ []
+
+
+
+[383]
+Underfull \hbox (badness 1661) in paragraph at lines 1386--1390
 []\T1/ETbb-TLF/regular/n/10 Richard S. Sut-ton.  The bit-ter les-son.  Web es-say / blog post, 2019.  URL [][]$\T1/cmtt/m/n/10 https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1244
+Underfull \hbox (badness 10000) in paragraph at lines 1410--1416
 []\T1/ETbb-TLF/regular/n/10 Onur Tu-nali.  Em-pir-i-cal rademacher com-plex-ity and its im-pli-ca-tions to deep learn-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1244
+Underfull \hbox (badness 10000) in paragraph at lines 1410--1416
 \T1/ETbb-TLF/regular/n/10 ing, Febru-ary 2019.  URL [][]$\T1/cmtt/m/n/10 https : / / www . onurtunali . com / ml / 2019 / 02 / 01 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1244
+Underfull \hbox (badness 10000) in paragraph at lines 1410--1416
 \T1/cmtt/m/n/10 empirical-[]rademacher-[]complexity-[]and-[]its-[]implications-[]to-[]deep-[]learning . html$[][]\T1/ETbb-TLF/regular/n/10 .
  []
 
 
 
-[376]
+[384]
 
-[377])
+[385])
 
 Package natbib Warning: There were undefined citations.
 
 
 
-[378]
+[386]
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
@@ -5601,20 +5660,20 @@ L3 programming layer <2020/03/25>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C21A790464EFE28AB63C275FAE13D340;48673.
+(rerunfilecheck)             Checksum: AD9A8C094AF07F5333944635160CCC7A;49370.
  ) 
 Here is how much of TeX's memory you used:
- 78124 strings out of 468187
- 1880651 string characters out of 5448667
- 2794029 words of memory out of 5000000
- 103249 multiletter control sequences out of 15000+600000
+ 78259 strings out of 468187
+ 1884283 string characters out of 5448666
+ 2794888 words of memory out of 5000000
+ 103342 multiletter control sequences out of 15000+600000
  888944 words of font info for 208 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,25n,120p,2997b,1104s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,25n,120p,3054b,1164s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/dpi600\bbm10.pk><D:/MikTek/fonts/type1/public/etbb/ETbb-Bold.pfb><D:/MikTek/fonts/type1/public/etbb/ETbb-BoldItalic.pfb><D:/MikTek/fonts/type1/public/etbb/ETbb-Italic.pfb><D:/MikTek/fonts/type1/public/etbb/ETbb-Regular.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmib10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmss8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmss9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy9.pfb><D:/MikTek/fonts/type1/public/amsfonts/euler/eufm10.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msam7.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msbm7.pfb><D:/MikTek/fonts/type1/public/cm-super/sfit1000.pfb><D:/MikTek/fonts/type1/public/cm-super/sfrm0800.pfb><D:/MikTek/fonts/type1/public/cm-super/sfrm1000.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss0900.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss1000.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss1095.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss1200.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss1728.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss2074.pfb><D:/MikTek/fonts/type1/public/cm-super/sfsx1000.pfb><D:/MikTek/fonts/type1/public/cm-super/sftt0800.pfb><D:/MikTek/fonts/type1/public/cm-super/sftt0900.pfb><D:/MikTek/fonts/type1/public/cm-super/sftt1000.pfb><D:/MikTek/fonts/type1/public/cm-super/sftt1095.pfb><D:/MikTek/fonts/type1/public/hoekwater/stmary10.pfb><D:/MikTek/fonts/type1/public/hoekwater/stmary7.pfb>
-Output written on main.pdf (400 pages, 21629755 bytes).
+Output written on main.pdf (408 pages, 21683673 bytes).
 PDF statistics:
- 7022 PDF objects out of 7423 (max. 8388607)
- 2167 named destinations out of 2487 (max. 500000)
- 2555 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 7168 PDF objects out of 7423 (max. 8388607)
+ 2209 named destinations out of 2487 (max. 500000)
+ 2587 words of extra memory for PDF output out of 10000 (max. 10000000)
 
