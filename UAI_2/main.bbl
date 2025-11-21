@@ -1,4 +1,4 @@
-\begin{thebibliography}{228}
+\begin{thebibliography}{308}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -40,6 +40,21 @@ Kumar Abhishek, Sneha Maheshwari, and Sujit Gujar.
 \newblock Introduction to concentration inequalities, 2019.
 \newblock URL \url{https://arxiv.org/abs/1910.02884}.
 
+\bibitem[Abrahamsen et~al.(2021)Abrahamsen, Kleist, and
+  Miltzow]{abrahamsen2021existential}
+Mikkel Abrahamsen, Linda Kleist, and Tillmann Miltzow.
+\newblock Training neural networks is {$\exists\mathbb{R}$}-complete.
+\newblock In \emph{Proceedings of NeurIPS 2021}, 2021.
+\newblock URL \url{https://arxiv.org/abs/2102.09798}.
+\newblock arXiv:2102.09798.
+
+\bibitem[Abreu et~al.(2025)Abreu, Edwards, and
+  Motta]{abreu2025topologicalmachinelearningunreduced}
+Nicole Abreu, Parker~B. Edwards, and Francis Motta.
+\newblock Topological machine learning with unreduced persistence diagrams,
+  2025.
+\newblock URL \url{https://arxiv.org/abs/2507.07156}.
+
 \bibitem[Achlioptas()]{achlioptas_stochastic_nodate}
 Panos Achlioptas.
 \newblock Stochastic {Gradient} {Descent} in {Theory} and {Practice}.
@@ -58,6 +73,20 @@ Madhu~S. Advani and Andrew~M. Saxe.
 \newblock High-dimensional dynamics of generalization error in neural networks,
   2017.
 \newblock URL \url{https://arxiv.org/abs/1710.03667}.
+
+\bibitem[Alon and Yahav(2021)]{alon2021bottleneckgraphneuralnetworks}
+Uri Alon and Eran Yahav.
+\newblock On the bottleneck of graph neural networks and its practical
+  implications, 2021.
+\newblock URL \url{https://arxiv.org/abs/2006.05205}.
+
+\bibitem[Alquier(2008)]{alquier2008pac}
+Pierre Alquier.
+\newblock Pac-bayesian bounds for randomized empirical risk minimizers.
+\newblock \emph{Mathematical Methods of Statistics}, 17\penalty0 (4):\penalty0
+  279--304, 2008.
+\newblock \doi{10.3103/S1066530708040017}.
+\newblock Bounds for randomized predictors; extended PAC-Bayesian theory.
 
 \bibitem[Alquier(2024)]{Alquier_2024}
 Pierre Alquier.
@@ -78,6 +107,20 @@ Stephen Andrilli and David Hecker.
 \newblock \doi{https://doi.org/10.1016/B978-0-12-374751-8.00001-9}.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/B9780123747518000019}.
+
+\bibitem[Angluin(1988)]{angluin1988queries}
+Dana Angluin.
+\newblock Queries and concept learning.
+\newblock \emph{Machine Learning}, 2\penalty0 (4):\penalty0 319--342, 1988.
+\newblock \doi{10.1007/BF00116828}.
+\newblock URL \url{https://doi.org/10.1007/BF00116828}.
+
+\bibitem[Angluin(1989)]{computationallimits1989}
+Dana Angluin.
+\newblock Computational limitations on learning from examples.
+\newblock \emph{Journal of the ACM}, 36\penalty0 (4):\penalty0 955--981, 1989.
+\newblock \doi{10.1145/76322.76335}.
+\newblock URL \url{https://dl.acm.org/doi/10.1145/76322.76335}.
 
 \bibitem[Anscombe(1957)]{Anscombe1957}
 G.~E.~M. Anscombe.
@@ -109,6 +152,15 @@ Michael Artin.
 \newblock Pearson Prentice Hall, Upper Saddle River, NJ, 2nd edition, 2011.
 \newblock ISBN 978-0132413770.
 
+\bibitem[Bahri et~al.(2024)Bahri, Dyer, Kaplan, Lee, and
+  Sharma]{doi:10.1073/pnas.2311878121}
+Yasaman Bahri, Ethan Dyer, Jared Kaplan, Jaehoon Lee, and Utkarsh Sharma.
+\newblock Explaining neural scaling laws.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 121\penalty0
+  (27):\penalty0 e2311878121, 2024.
+\newblock \doi{10.1073/pnas.2311878121}.
+\newblock URL \url{https://www.pnas.org/doi/abs/10.1073/pnas.2311878121}.
+
 \bibitem[Balcan et~al.(2010)Balcan, Hanneke, and
   Wortman~Vaughan]{Balcan2010TrueSampleComplexity}
 Maria-Florina Balcan, Steve Hanneke, and Jennifer Wortman~Vaughan.
@@ -118,6 +170,16 @@ Maria-Florina Balcan, Steve Hanneke, and Jennifer Wortman~Vaughan.
 \newblock \doi{10.1007/s10994-010-5174-y}.
 \newblock URL
   \url{https://link.springer.com/article/10.1007/s10994-010-5174-y}.
+
+\bibitem[Barak et~al.(2016)Barak, Hopkins, Kelner, Kothari, Moitra, and
+  Potechin]{barak2016nearly}
+Boaz Barak, Samuel~B. Hopkins, Jonathan Kelner, Pravesh Kothari, Ankur Moitra,
+  and Aaron Potechin.
+\newblock A nearly tight sum-of-squares lower bound for the planted clique
+  problem.
+\newblock In \emph{Proceedings of the 57th Annual IEEE Symposium on Foundations
+  of Computer Science (FOCS)}, pages 428--437, 2016.
+\newblock \doi{10.1109/FOCS.2016.52}.
 
 \bibitem[Barbierato and Gatti(2024)]{electronics13020416}
 Enrico Barbierato and Alice Gatti.
@@ -220,6 +282,32 @@ Mikhail Belkin, Daniel Hsu, Siyuan Ma, and Soumik Mandal.
 \newblock \doi{10.1073/pnas.1903070116}.
 \newblock URL \url{http://arxiv.org/abs/1812.11118}.
 \newblock arXiv:1812.11118 [cs, stat].
+
+\bibitem[Bennett(2025)]{bennett2025conscious}
+Michael~Timothy Bennett.
+\newblock \emph{How To Build Conscious Machines}.
+\newblock Ph.d. thesis, Australian National University, 2025.
+\newblock URL \url{https://osf.io/preprints/thesiscommons/wehmg_v1}.
+
+\bibitem[Blum et~al.(2003)Blum, Kalai, and Wasserman]{blum2003noise}
+Avrim Blum, Adam~Tauman Kalai, and Hal Wasserman.
+\newblock Noise-tolerant learning, the parity problem, and the statistical
+  query model.
+\newblock \emph{Journal of the ACM}, 50\penalty0 (4):\penalty0 506--519, 2003.
+\newblock \doi{10.1145/792538.792543}.
+
+\bibitem[Blum and Rivest(1992)]{blum1992training}
+Avrim~L. Blum and Ronald~L. Rivest.
+\newblock Training a 3-node neural network is np-complete.
+\newblock \emph{Neural Networks}, 5\penalty0 (1):\penalty0 117--127, 1992.
+
+\bibitem[Board and Pitt(1992)]{board1992necessity}
+Raymond Board and Leonard Pitt.
+\newblock On the necessity of occam algorithms.
+\newblock \emph{Theoretical Computer Science}, 100\penalty0 (1):\penalty0
+  157--184, 1992.
+\newblock \doi{10.1016/0304-3975(92)90367-O}.
+\newblock URL \url{https://doi.org/10.1016/0304-3975(92)90367-O}.
 
 \bibitem[Boole(1854)]{Boole_1854}
 George Boole.
@@ -349,6 +437,12 @@ Ruben Cartuyvels, Graham Spinks, and Marie-Francine Moens.
 \newblock \doi{10.1016/j.aiopen.2021.07.002}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.aiopen.2021.07.002}.
 
+\bibitem[Chen et~al.(2019)Chen, Rubanova, Bettencourt, and
+  Duvenaud]{chen2019neuralordinarydifferentialequations}
+Ricky T.~Q. Chen, Yulia Rubanova, Jesse Bettencourt, and David Duvenaud.
+\newblock Neural ordinary differential equations, 2019.
+\newblock URL \url{https://arxiv.org/abs/1806.07366}.
+
 \bibitem[Chizat and Bach(2018)]{chizat2019lazy}
 Lenaic Chizat and Francis Bach.
 \newblock On the global convergence of gradient descent for over-parameterized
@@ -356,11 +450,44 @@ Lenaic Chizat and Francis Bach.
 \newblock \emph{Advances in Neural Information Processing Systems (NeurIPS)},
   31, 2018.
 
+\bibitem[Chowdhary(2020)]{Chowdhary2020}
+K.~R. Chowdhary.
+\newblock \emph{Fundamentals of Artificial Intelligence}.
+\newblock Springer, 2020.
+\newblock ISBN 978-81-322-3970-3.
+
 \bibitem[Churchland(1986)]{churchland1986_neurophilosophy}
 Patricia~S. Churchland.
 \newblock \emph{Neurophilosophy: Toward a Unified Science of the Mind-Brain}.
 \newblock MIT Press, Cambridge, MA, 1986.
 \newblock ISBN 978-0262031165.
+
+\bibitem[Clocksin and Mellish(2003)]{clocksin2003programming}
+William~F. Clocksin and Christopher~S. Mellish.
+\newblock \emph{Programming in Prolog: Using the ISO Standard}.
+\newblock Springer, 5th edition, 2003.
+\newblock ISBN 978-3-540-00678-7.
+
+\bibitem[Collins and Quillian(1969)]{collins1969retrieval}
+Allan~M. Collins and M.~Ross Quillian.
+\newblock Retrieval time from semantic memory.
+\newblock \emph{Journal of Verbal Learning and Verbal Behavior}, 8\penalty0
+  (2):\penalty0 240--247, 1969.
+
+\bibitem[Colmerauer and Roussel(1993)]{colmerauer1993birth}
+Alain Colmerauer and Philippe Roussel.
+\newblock The birth of prolog.
+\newblock In \emph{History of programming languages---II}, pages 331--367. ACM,
+  1993.
+\newblock Originally written November 1992.
+
+\bibitem[Colmerauer et~al.(1972)Colmerauer, Kanoui, Pasero, and
+  Roussel]{colmerauer1972systeme}
+Alain Colmerauer, Henry Kanoui, Robert Pasero, and Philippe Roussel.
+\newblock Un système de communication homme-machine en français.
+\newblock Rapport préliminaire de fin de contrat iria, Groupe Intelligence
+  Artificielle, Faculté des Sciences de Luminy, Université Aix-Marseille II,
+  France, October 1972.
 
 \bibitem[Copeland and Proudfoot(2018)]{copeland2018_evolution_computationalism}
 Jack Copeland and Diane Proudfoot.
@@ -369,12 +496,28 @@ Jack Copeland and Diane Proudfoot.
 \newblock \emph{Minds and Machines}, 28\penalty0 (4):\penalty0 515--542, 2018.
 \newblock \doi{10.1007/s11023-018-9468-3}.
 
+\bibitem[Cover(1965)]{cover1965geometrical}
+Thomas~M. Cover.
+\newblock Geometrical and statistical properties of systems of linear
+  inequalities with applications in pattern recognition.
+\newblock \emph{IEEE Transactions on Electronic Computers}, EC-14\penalty0
+  (3):\penalty0 326--334, 1965.
+\newblock \doi{10.1109/PGEC.1965.264137}.
+\newblock URL \url{https://doi.org/10.1109/PGEC.1965.264137}.
+
 \bibitem[Cristianini and Shawe-Taylor(2000)]{Cristianini2000AnIT}
 Nello Cristianini and John Shawe-Taylor.
 \newblock An introduction to support vector machines and other kernel-based
   learning methods.
 \newblock 2000.
 \newblock URL \url{https://api.semanticscholar.org/CorpusID:60486887}.
+
+\bibitem[Cybenko(1989)]{cybenko1989approximation}
+George Cybenko.
+\newblock Approximation by superpositions of a sigmoidal function.
+\newblock \emph{Mathematics of Control, Signals and Systems}, 2\penalty0
+  (4):\penalty0 303--314, 1989.
+\newblock \doi{10.1007/BF02551274}.
 
 \bibitem[d'~Ascoli et~al.(2020)d'~Ascoli, Sagun, and
   Biroli]{d_ascoli_triple_2020}
@@ -412,6 +555,14 @@ Xander Davies, Lauro Langosco, and David Krueger.
 \newblock URL \url{http://arxiv.org/abs/2303.06173}.
 \newblock arXiv:2303.06173 [cs].
 
+\bibitem[Davis et~al.(1977)Davis, Buchanan, and
+  Shortliffe]{davis1977production}
+Randall Davis, Bruce Buchanan, and Edward Shortliffe.
+\newblock Production rules as a representation for a knowledge-based
+  consultation program.
+\newblock \emph{Artificial Intelligence}, 8\penalty0 (1):\penalty0 15--45,
+  1977.
+
 \bibitem[de~Finetti(1990)]{deFinetti1990_TheoryProbability}
 Bruno de~Finetti.
 \newblock \emph{Theory of Probability: A Critical Introductory Treatment}.
@@ -435,6 +586,14 @@ Daniel~C. Dennett.
 \newblock \emph{Consciousness Explained}.
 \newblock Little, Brown and Company, Boston, 1991.
 \newblock ISBN 978-0316180665.
+
+\bibitem[Derouiche et~al.(2025)Derouiche, Brahmi, and
+  Mazeni]{derouiche2025agentic}
+Hana Derouiche, Zaki Brahmi, and Haithem Mazeni.
+\newblock Agentic ai frameworks: Architectures, protocols, and design
+  challenges.
+\newblock \emph{arXiv preprint arXiv:2508.10146}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2508.10146}.
 
 \bibitem[Descartes(1950)]{Descartes1950-DESDOM}
 Rene? Descartes.
@@ -483,6 +642,12 @@ Hubert~L. Dreyfus.
 \newblock From micro-worlds to knowledge representation : Ai at an impasse.
 \newblock 1979.
 
+\bibitem[Dreyfus(1991)]{dreyfus1991being}
+Hubert~L. Dreyfus.
+\newblock \emph{Being-in-the-World: A Commentary on Heidegger's Being and Time,
+  Division I}.
+\newblock MIT Press, Cambridge, MA, 1991.
+
 \bibitem[Dreyfus and Dreyfus(1986)]{dreyfus1986mind}
 Hubert~L. Dreyfus and Stuart~E. Dreyfus.
 \newblock \emph{Mind Over Machine: The Power of Human Intuition and Expertise
@@ -510,6 +675,14 @@ George~Casella E.~L.~Lehmann.
 \newblock ISBN 978-0-387-98502-2.
 \newblock \doi{10.1007/b98854}.
 \newblock URL \url{http://link.springer.com/10.1007/b98854}.
+
+\bibitem[Eldan and Shamir(2016)]{eldan2016power}
+Ronen Eldan and Ohad Shamir.
+\newblock The power of depth for feedforward neural networks.
+\newblock In \emph{Proceedings of the 29th Annual Conference on Learning Theory
+  (COLT)}, volume~49 of \emph{Proceedings of Machine Learning Research}, pages
+  907--940, 2016.
+\newblock URL \url{https://proceedings.mlr.press/v49/eldan16.html}.
 
 \bibitem[Elliot(2019)]{Elliot2019_DeFinettiPhilosophy}
 C.~Elliot.
@@ -549,11 +722,30 @@ Scott Fortmann.
 \newblock Understanding the {Bias}-{Variance} {Tradeoff}, 2012.
 \newblock URL \url{https://scott.fortmann-roe.com/docs/BiasVariance.html}.
 
+\bibitem[Friedman et~al.(2007)Friedman, Hastie, H{\"o}fling, and
+  Tibshirani]{friedman2007pathwise}
+Jerome Friedman, Trevor Hastie, Holger H{\"o}fling, and Robert Tibshirani.
+\newblock Pathwise coordinate optimization.
+\newblock \emph{The Annals of Applied Statistics}, 1\penalty0 (2):\penalty0
+  302--332, 2007.
+\newblock \doi{10.1214/07-AOAS131}.
+
 \bibitem[Gallian(2013)]{Gallian_2013}
 Joseph~A. Gallian.
 \newblock \emph{Contemporary Abstract Algebra}.
 \newblock Brooks/Cole, Pacific Grove, CA, 8th edition, 2013.
 \newblock ISBN 978-1133599708.
+
+\bibitem[Gardner(1983)]{gardner1983frames}
+Howard Gardner.
+\newblock \emph{Frames of Mind: The Theory of Multiple Intelligences}.
+\newblock Basic Books, New York, 1983.
+
+\bibitem[Garg et~al.(2021)Garg, Kothari, Liu, and Raz]{garg2021memory}
+Sumegha Garg, Pravesh~K. Kothari, Pengda Liu, and Ran Raz.
+\newblock Memory-sample lower bounds for learning parity with noise.
+\newblock \emph{arXiv preprint arXiv:2107.02320}, 2021.
+\newblock URL \url{https://arxiv.org/abs/2107.02320}.
 
 \bibitem[Gauvrit et~al.(2015)Gauvrit, Zenil, and
   {Tegnér}]{gauvrit2015_algorithmic_cognition}
@@ -585,6 +777,20 @@ Ashok Goel.
 \newblock \doi{10.1609/aaai.12026}.
 \newblock URL
   \url{https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/15111}.
+
+\bibitem[Goertzel and Pennachin(2006)]{GoertzelPennachin2006}
+Ben Goertzel and Cassio Pennachin, editors.
+\newblock \emph{Artificial General Intelligence}.
+\newblock Springer Science \& Business Media, 2006.
+\newblock ISBN 9783540686774.
+
+\bibitem[Gold(1967)]{gold1967language}
+E.~Mark Gold.
+\newblock Language identification in the limit.
+\newblock \emph{Information and Control}, 10\penalty0 (5):\penalty0 447--474,
+  1967.
+\newblock \doi{10.1016/S0019-9958(67)91165-5}.
+\newblock URL \url{https://doi.org/10.1016/S0019-9958(67)91165-5}.
 
 \bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, Courville, and
   Bengio]{goodfellow2016deep}
@@ -634,6 +840,20 @@ Stevan Harnad.
 \newblock \emph{Physica D: Nonlinear Phenomena}, 42:\penalty0 335--346, 1990.
 \newblock \doi{10.1016/0167-2789(90)90087-6}.
 
+\bibitem[Haussler et~al.(1996)Haussler, Kearns, Seung, Tishby,
+  et~al.]{haussler1996rigorous}
+David Haussler, Michael~J. Kearns, H.~Sebastian Seung, Naftali Tishby, et~al.
+\newblock Rigorous learning curve bounds from statistical mechanics.
+\newblock \emph{Machine Learning}, 25\penalty0 (2--3):\penalty0 195--236, 1996.
+\newblock \doi{10.1007/BF00116991}.
+\newblock Connects VC dimension, statistical mechanics, learning curves.
+
+\bibitem[Heidegger(1962)]{heidegger1962being}
+Martin Heidegger.
+\newblock \emph{Being and Time}.
+\newblock Harper \& Row, New York, 1962.
+\newblock Originally published in German as \textit{Sein und Zeit} (1927).
+
 \bibitem[Hellström et~al.(2020)Hellström, Dignum, and
   Bensch]{hellstrom_bias_2020}
 Thomas Hellström, Virginia Dignum, and Suna Bensch.
@@ -655,6 +875,19 @@ Yu-Chi Ho and D.L. Pepyne.
   Control (Cat. No.01CH37228)}, volume~5, pages 4409--4414 vol.5, 2001.
 \newblock \doi{10.1109/CDC.2001.980896}.
 
+\bibitem[Hornik(1991)]{hornik1991approximation}
+Kurt Hornik.
+\newblock Approximation capabilities of multilayer feedforward networks.
+\newblock \emph{Neural Networks}, 4\penalty0 (2):\penalty0 251--257, 1991.
+\newblock \doi{10.1016/0893-6080(91)90009-T}.
+
+\bibitem[Hornik et~al.(1989)Hornik, Stinchcombe, and
+  White]{hornik1989multilayer}
+Kurt Hornik, Maxwell Stinchcombe, and Halbert White.
+\newblock Multilayer feedforward networks are universal approximators.
+\newblock \emph{Neural Networks}, 2\penalty0 (5):\penalty0 359--366, 1989.
+\newblock \doi{10.1016/0893-6080(89)90020-8}.
+
 \bibitem[Hornsby(2004)]{Hornsby2004}
 Jennifer Hornsby.
 \newblock Agency and actions.
@@ -667,6 +900,19 @@ Leon et~al. Horsten.
 \newblock In Edward~N. Zalta and Uri Nodelman, editors, \emph{The {Stanford}
   Encyclopedia of Philosophy}. Metaphysics Research Lab, Stanford University,
   {W}inter 2023 edition, 2023.
+
+\bibitem[Hsieh et~al.(2024)Hsieh, Bi, Jiang, Liu, Peng, Zhang, Pan, Xu, Wang,
+  Chen, Feng, Wen, Song, Wang, Liu, Yang, Li, Jing, Ren, Song, Tseng, Zhang,
+  def:SMLPand Qian~Niu, Chen, Wang, and
+  Liang]{hsieh2024comprehensiveguideexplainableai}
+Weiche Hsieh, Ziqian Bi, Chuanqi Jiang, Junyu Liu, Benji Peng, Sen Zhang,
+  Xuanhe Pan, Jiawei Xu, Jinlang Wang, Keyu Chen, Pohsun Feng, Yizhu Wen,
+  Xinyuan Song, Tianyang Wang, Ming Liu, Junjie Yang, Ming Li, Bowen Jing,
+  Jintao Ren, Junhao Song, Hong-Ming Tseng, Yichao Zhang, Lawrence K. Q.~Yan
+  def:SMLPand Qian~Niu, Silin Chen, Yunze Wang, and Chia~Xin Liang.
+\newblock A comprehensive guide to explainable ai: From classical models to
+  llms, 2024.
+\newblock URL \url{https://arxiv.org/abs/2412.00800}.
 
 \bibitem[Hu et~al.(2021{\natexlab{a}})Hu, Chu, Pei, Liu, and
   Bian]{hu2021modelcomplexitydeeplearning}
@@ -695,6 +941,23 @@ Thomas~W. Hungerford.
 \newblock \emph{Algebra}, volume~73 of \emph{Graduate Texts in Mathematics}.
 \newblock Springer-Verlag, New York, 1974.
 \newblock ISBN 978-0387905181.
+
+\bibitem[Ivgi et~al.(2022)Ivgi, Carmon, and Berant]{ivgi-etal-2022-scaling}
+Maor Ivgi, Yair Carmon, and Jonathan Berant.
+\newblock Scaling laws under the microscope: Predicting transformer performance
+  from small scale experiments.
+\newblock In Yoav Goldberg, Zornitsa Kozareva, and Yue Zhang, editors,
+  \emph{Findings of the Association for Computational Linguistics: EMNLP 2022},
+  pages 7354--7371, Abu Dhabi, United Arab Emirates, December 2022. Association
+  for Computational Linguistics.
+\newblock \doi{10.18653/v1/2022.findings-emnlp.544}.
+\newblock URL \url{https://aclanthology.org/2022.findings-emnlp.544/}.
+
+\bibitem[Jackson(2019)]{Jackson2019}
+Philip~C. Jackson.
+\newblock \emph{Introduction to Artificial Intelligence}.
+\newblock Dover Publications, 3 edition, 2019.
+\newblock ISBN 0486843076.
 
 \bibitem[Jacot et~al.(2018{\natexlab{a}})Jacot, Gabriel, and
   Hongler]{Jacot:2018:NTK}
@@ -727,6 +990,12 @@ Romuald~A. Janik and Przemek Witaszczyk.
   feature representations, 2021.
 \newblock URL \url{https://arxiv.org/abs/2006.04791}.
 
+\bibitem[Jeon and
+  Roy(2025)]{jeon2025informationtheoreticfoundationsmachinelearning}
+Hong~Jun Jeon and Benjamin~Van Roy.
+\newblock Information-theoretic foundations for machine learning, 2025.
+\newblock URL \url{https://arxiv.org/abs/2407.12288}.
+
 \bibitem[Judson(2023)]{Judson_2023}
 Thomas~W. Judson.
 \newblock \emph{Abstract Algebra: Theory and Applications}.
@@ -758,6 +1027,11 @@ Steven~M. Kay.
   {\textbar} {Guide} books {\textbar} {ACM} {Digital} {Library}, 1993.
 \newblock URL \url{https://dl.acm.org/doi/10.5555/151045}.
 
+\bibitem[Kearns(1998)]{kearns1998efficient}
+Michael~J. Kearns.
+\newblock Efficient noise-tolerant learning from statistical queries.
+\newblock \emph{Journal of the ACM}, 45\penalty0 (6):\penalty0 983--1006, 1998.
+
 \bibitem[Kearns and Vazirani(1994)]{10.5555/200548}
 Michael~J. Kearns and Umesh~V. Vazirani.
 \newblock \emph{An introduction to computational learning theory}.
@@ -775,6 +1049,12 @@ Jaegwon Kim.
 \newblock \emph{Mind in a Physical World: An Essay on the Mind--Body Problem
   and Mental Causation}.
 \newblock MIT Press, Cambridge, MA, 1998.
+
+\bibitem[Kutyniok(2022)]{kutyniok2022mathematics}
+Gitta Kutyniok.
+\newblock The mathematics of artificial intelligence.
+\newblock \emph{arXiv preprint arXiv:2203.08890}, 2022.
+\newblock URL \url{https://arxiv.org/abs/2203.08890}.
 
 \bibitem[Lafon and Thomas(2024)]{lafon_understanding_2024}
 Marc Lafon and Alexandre Thomas.
@@ -798,10 +1078,41 @@ Jaehoon Lee, Lechao Xiao, Samuel~S. Schoenholz, Yasaman Bahri, Roman Novak,
 \newblock In \emph{Advances in Neural Information Processing Systems
   (NeurIPS)}, pages 8572--8583, 2019.
 
+\bibitem[Lee and Dieng(2025)]{lee2025neuralscalinglawsleading}
+Siwoo Lee and Adji~Bousso Dieng.
+\newblock Are neural scaling laws leading quantum chemistry astray?, 2025.
+\newblock URL \url{https://arxiv.org/abs/2509.26397}.
+
 \bibitem[Legg and Hutter(2007)]{legg2007collectiondefinitionsintelligence}
 Shane Legg and Marcus Hutter.
 \newblock A collection of definitions of intelligence, 2007.
 \newblock URL \url{https://arxiv.org/abs/0706.3639}.
+
+\bibitem[Leshno et~al.(1993)Leshno, Lin, Pinkus, and
+  Schocken]{leshno1993multilayer}
+Moshe Leshno, Vladimir~Ya Lin, Allan Pinkus, and Shimon Schocken.
+\newblock Multilayer feedforward networks with a nonpolynomial activation
+  function can approximate any function.
+\newblock \emph{Neural Networks}, 6\penalty0 (6):\penalty0 861--867, 1993.
+\newblock \doi{10.1016/S0893-6080(05)80131-5}.
+
+\bibitem[Liang et~al.(2025)Liang, Wang, and Tong]{math13111707}
+Baoyu Liang, Yuchen Wang, and Chao Tong.
+\newblock Ai reasoning in deep learning era: From symbolic ai to
+  neural–symbolic ai.
+\newblock \emph{Mathematics}, 13\penalty0 (11), 2025.
+\newblock ISSN 2227-7390.
+\newblock \doi{10.3390/math13111707}.
+\newblock URL \url{https://www.mdpi.com/2227-7390/13/11/1707}.
+
+\bibitem[Lindsay et~al.(1993)Lindsay, Buchanan, Feigenbaum, and
+  Lederberg]{Lindsay1993DENDRALAC}
+Robert~K. Lindsay, Bruce~G. Buchanan, Edward~A. Feigenbaum, and Joshua
+  Lederberg.
+\newblock Dendral: A case study of the first expert system for scientific
+  hypothesis formation.
+\newblock \emph{Artif. Intell.}, 61:\penalty0 209--261, 1993.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:6929723}.
 
 \bibitem[Lipton(2018)]{lipton2016mythos}
 Zachary~C. Lipton.
@@ -846,6 +1157,14 @@ Jing Luo, Huiyuan Wang, and Weiran Huang.
   models, 2024.
 \newblock URL \url{https://arxiv.org/abs/2410.00699}.
 
+\bibitem[Luo and Tseng(1992)]{luo1992convergence}
+Zhi-Quan Luo and Paul Tseng.
+\newblock On the convergence of the coordinate descent method for convex
+  differentiable minimization.
+\newblock \emph{Journal of Optimization Theory and Applications}, 72\penalty0
+  (1):\penalty0 7--35, 1992.
+\newblock \doi{10.1007/BF00939948}.
+
 \bibitem[Mac~Lane(1978)]{MacLane_1978}
 Saunders Mac~Lane.
 \newblock \emph{Categories for the Working Mathematician}, volume~5 of
@@ -868,18 +1187,37 @@ Gary Marcus.
 \newblock arXiv preprint arXiv:1801.00631, 2018.
 \newblock URL \url{https://arxiv.org/abs/1801.00631}.
 
+\bibitem[Maron et~al.(2019)Maron, Ben-Hamu, Serviansky, and
+  Lipman]{NEURIPS2019_bb04af0f}
+Haggai Maron, Heli Ben-Hamu, Hadar Serviansky, and Yaron Lipman.
+\newblock Provably powerful graph networks.
+\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~d\textquotesingle
+  Alch\'{e}-Buc, E.~Fox, and R.~Garnett, editors, \emph{Advances in Neural
+  Information Processing Systems}, volume~32. Curran Associates, Inc., 2019.
+\newblock URL
+  \url{https://proceedings.neurips.cc/paper_files/paper/2019/file/bb04af0f7ecaee4aae62035497da1387-Paper.pdf}.
+
 \bibitem[{Mathematics LibreTexts}(2024)]{MathLibreTexts_Algebra}
 {Mathematics LibreTexts}.
 \newblock Algebra.
 \newblock \url{https://math.libretexts.org/Bookshelves/Algebra}, 2024.
 \newblock Free online educational resource with multiple algebra texts.
 
-\bibitem[McAllester(1999)]{McAllester:1999:PACBayes}
+\bibitem[McAllester(1999{\natexlab{a}})]{McAllester:1999:PACBayes}
 David~A. McAllester.
 \newblock Pac-bayesian model averaging.
 \newblock In \emph{Proceedings of the 12th Annual Conference on Computational
-  Learning Theory (COLT)}, pages 164--170. ACM, 1999.
+  Learning Theory (COLT)}, pages 164--170. ACM, 1999{\natexlab{a}}.
 \newblock Foundational PAC-Bayes framework.
+
+\bibitem[McAllester(1999{\natexlab{b}})]{mcallester1999some}
+David~A. McAllester.
+\newblock Some pac-bayesian theorems.
+\newblock \emph{Machine Learning}, 37\penalty0 (3):\penalty0 355--363,
+  1999{\natexlab{b}}.
+\newblock \doi{10.1023/A:1007618624809}.
+\newblock Early PAC-Bayesian bounds that combine Bayesian ideas with PAC
+  guarantees.
 
 \bibitem[McCarthy and Hayes(1969)]{mccarthy1969philosophical}
 John McCarthy and Patrick~J. Hayes.
@@ -949,12 +1287,37 @@ Recorla Michael.
   \url{https://philosophy.ucla.edu/wp-content/uploads/2016/08/Computation-Modeling.pdf}.
 \newblock Accessed: 2025-01-04.
 
+\bibitem[Michalski(1969)]{michalski1969aq}
+Ryszard~S. Michalski.
+\newblock On the quasi-inductive learning: the aq approach to rule extraction.
+\newblock In \emph{Machine Intelligence and Pattern Recognition}, volume~4,
+  pages 171--197. 1969.
+\newblock Early work leading to AQ family of inductive rule-learning algorithms
+  (symbolic rule induction).
+
 \bibitem[Miltersen et~al.(2005)Miltersen, Radhakrishnan, and
   Wegener]{MiltersenRadhakrishnanWegener2005}
 Peter~B. Miltersen, Jaikumar Radhakrishnan, and Ingo Wegener.
 \newblock On converting {CNF} to {DNF}.
 \newblock \emph{Theoretical Computer Science}, 347\penalty0 (1–2):\penalty0
   325–335, 2005.
+
+\bibitem[Minsky(1961)]{minsky1961steps}
+Marvin~L. Minsky.
+\newblock Steps toward artificial intelligence.
+\newblock \emph{Proceedings of the IRE}, 49:\penalty0 8--30, 1961.
+\newblock \doi{10.1109/JRPROC.1961.287775}.
+\newblock URL \url{https://courses.csail.mit.edu/6.803/pdf/steps.pdf}.
+\newblock Survey/position paper by Minsky summarizing early AI directions;
+  foundational for symbolic AI.
+
+\bibitem[Minsky(1968)]{minsky1968semantic}
+Marvin~L. Minsky, editor.
+\newblock \emph{Semantic Information Processing}.
+\newblock MIT Press, Cambridge, MA, 1968.
+\newblock URL \url{https://philpapers.org/rec/MINSIP}.
+\newblock Edited volume containing many classic symbolic AI papers (e.g.,
+  McCarthy, Minsky chapters).
 
 \bibitem[Minsky and Papert(1988)]{10.5555/50066}
 Marvin~L. Minsky and Seymour~A. Papert.
@@ -1061,6 +1424,29 @@ A.~Newell and H.~Simon.
   (3):\penalty0 61--79, 1956.
 \newblock \doi{10.1109/TIT.1956.1056797}.
 
+\bibitem[Newell and Simon(1976)]{newell1976computer}
+Allen Newell and Herbert~A. Simon.
+\newblock Computer science as empirical inquiry: symbols and search.
+\newblock \emph{Communications of the ACM}, 19\penalty0 (3):\penalty0 113--126,
+  1976.
+
+\bibitem[Newell et~al.(1958)Newell, Shaw, and Simon]{newell1958elements}
+Allen Newell, J.C. Shaw, and Herbert~A. Simon.
+\newblock Elements of a theory of human problem solving.
+\newblock \emph{Psychological Review}, 65\penalty0 (3):\penalty0 151--166,
+  1958.
+\newblock \doi{10.1037/h0048495}.
+\newblock URL \url{https://doi.org/10.1037/h0048495}.
+
+\bibitem[Newell et~al.(1959)Newell, Shaw, and Simon]{newell1959gps}
+Allen Newell, J.~C. Shaw, and Herbert~A. Simon.
+\newblock Report on a general problem-solving program.
+\newblock In \emph{Proceedings of the International Conference on Information
+  Processing}, pages 256--264, 1959.
+\newblock URL
+  \url{https://bitsavers.informatik.uni-stuttgart.de/pdf/rand/ipl/P-1584_Report_On_A_General_Problem-Solving_Program_Feb59.pdf}.
+\newblock Description of GPS (General Problem Solver) — means-ends analysis.
+
 \bibitem[Neyshabur et~al.(2015)Neyshabur, Tomioka, and
   Srebro]{neyshabur2015norm}
 Behnam Neyshabur, Ryota Tomioka, and Nathan Srebro.
@@ -1122,6 +1508,18 @@ Roger Penrose.
 \newblock Oxford University Press, Oxford, 1994.
 \newblock ISBN 978-0198539780.
 
+\bibitem[Penrose and Severino(1997)]{penrose1997artificial}
+Roger Penrose and Emanuele Severino.
+\newblock \emph{Artificial Intelligence Versus Natural Intelligence}.
+\newblock Springer, Dordrecht, Netherlands, 1997.
+\newblock URL \url{https://link.springer.com/book/10.1007/978-3-030-85480-5}.
+
+\bibitem[Peyré(2025)]{peyres2025mathematics}
+Gabriel Peyré.
+\newblock The mathematics of artificial intelligence.
+\newblock \emph{arXiv preprint arXiv:2501.10465}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2501.10465}.
+
 \bibitem[Pfau(2013)]{PfauBregmanDivergence}
 David Pfau.
 \newblock A generalized bias-variance decomposition for bregman divergences.
@@ -1172,6 +1570,15 @@ Hilary Putnam.
 \newblock MIT Press, Cambridge, MA, 1988.
 \newblock ISBN 978-0262660594.
 
+\bibitem[Quinlan(1986)]{quinlan1986induction}
+J.~R. Quinlan.
+\newblock \emph{Induction of Decision Trees}.
+\newblock Morgan Kaufmann, 1986.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/B9781558602485500092}.
+\newblock ID3 / decision-tree induction — classic symbolic learning algorithm
+  widely used in expert systems and symbolic concept learning.
+
 \bibitem[Quétu and Tartaglione(2023{\natexlab{a}})]{quetu_can_2023}
 Victor Quétu and Enzo Tartaglione.
 \newblock Can we avoid {Double} {Descent} in {Deep} {Neural} {Networks}?
@@ -1196,6 +1603,14 @@ Roshdi Rashed.
 \newblock Saqi Books, New York, 2009.
 \newblock ISBN 978-0863564307.
 \newblock Historical study of the origins of algebra.
+
+\bibitem[Raza et~al.(2025)Raza, Sapkota, Karkee, and
+  Emmanouilidis]{raza2025trism}
+Shaina Raza, Ranjan Sapkota, Manoj Karkee, and Christos Emmanouilidis.
+\newblock Trism for agentic ai: A review of trust, risk, and security
+  management in llm-based agentic multi-agent systems.
+\newblock \emph{arXiv preprint arXiv:2506.04133}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2506.04133}.
 
 \bibitem[Roberts et~al.(2022)Roberts, Yaida, and Hanin]{roberts2022principles}
 Daniel~A. Roberts, Sho Yaida, and Boris Hanin.
@@ -1225,6 +1640,12 @@ Jairo~A. Rozo, Irene Martínez-Gallego, and Antonio Rodríguez-Moreno.
 \newblock \doi{10.3389/fnana.2024.1331666}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10910026/}.
 
+\bibitem[Rumelhart et~al.(1986)Rumelhart, Hinton, and
+  Williams]{rumelhart1986learning}
+David~E Rumelhart, Geoffrey~E Hinton, and Ronald~J Williams.
+\newblock Learning representations by back-propagating errors.
+\newblock \emph{Nature}, 323\penalty0 (6088):\penalty0 533--536, 1986.
+
 \bibitem[Russell(1919)]{Russell_1919}
 Bertrand Russell.
 \newblock \emph{Introduction to Mathematical Philosophy}.
@@ -1242,6 +1663,14 @@ Daniel Russo and James Zou.
 \newblock Controlling bias in adaptive data analysis using information theory.
 \newblock In \emph{Proceedings of AISTATS}, 2016.
 \newblock Introduced info-theoretic generalization bounds.
+
+\bibitem[Sapkota et~al.(2025)Sapkota, Rosenthal, and
+  Karkee]{sapkota2025agentic}
+Ranjan Sapkota, Konstantinos~I. Rosenthal, and Manoj Karkee.
+\newblock Ai agents vs. agentic ai: A conceptual taxonomy, applications, and
+  challenges.
+\newblock \emph{arXiv preprint arXiv:2505.10468}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2505.10468}.
 
 \bibitem[Scarselli et~al.(2009)Scarselli, Gori, Tsoi, Hagenbuchner, and
   Monfardini]{Scar04}
@@ -1266,6 +1695,13 @@ Matthias Scheutz, editor.
 \newblock \emph{Computationalism: New Directions}.
 \newblock MIT Press, Cambridge, MA, 2002.
 \newblock ISBN 978-0262692843.
+
+\bibitem[Schneider(2025)]{schneider2025generative}
+J.~Schneider.
+\newblock Generative to agentic ai: Survey, conceptualization, and future
+  directions.
+\newblock \emph{arXiv preprint arXiv:2504.18875}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2504.18875}.
 
 \bibitem[Seager(2010s (or older))]{SeagerFrameAxiological}
 William Seager.
@@ -1297,12 +1733,20 @@ Shai Shalev-Shwartz and Shai Ben-David.
 \newblock Cambridge University Press, USA, 2014.
 \newblock ISBN 1107057132.
 
-\bibitem[Shalev-Shwartz et~al.(2010)Shalev-Shwartz, Shamir, Srebro, and
-  Sridharan]{JMLR:v11:shalev-shwartz10a}
+\bibitem[Shalev-Shwartz et~al.(2010{\natexlab{a}})Shalev-Shwartz, Shamir,
+  Srebro, and Sridharan]{JMLR:v11:shalev-shwartz10a}
 Shai Shalev-Shwartz, Ohad Shamir, Nathan Srebro, and Karthik Sridharan.
 \newblock Learnability, stability and uniform convergence.
 \newblock \emph{Journal of Machine Learning Research}, 11\penalty0
-  (90):\penalty0 2635--2670, 2010.
+  (90):\penalty0 2635--2670, 2010{\natexlab{a}}.
+\newblock URL \url{http://jmlr.org/papers/v11/shalev-shwartz10a.html}.
+
+\bibitem[Shalev-Shwartz et~al.(2010{\natexlab{b}})Shalev-Shwartz, Shamir,
+  Srebro, and Sridharan]{shalev-shwartz2010learnability}
+Shai Shalev-Shwartz, Ohad Shamir, Nathan Srebro, and Karthik Sridharan.
+\newblock Learnability, stability and uniform convergence.
+\newblock \emph{Journal of Machine Learning Research}, 11:\penalty0 2635--2670,
+  2010{\natexlab{b}}.
 \newblock URL \url{http://jmlr.org/papers/v11/shalev-shwartz10a.html}.
 
 \bibitem[Shanahan(2016)]{sep-frame-problem}
@@ -1334,6 +1778,20 @@ Cheng Shi, Liming Pan, Hong Hu, and Ivan Dokmanić.
   convolution networks, 2024.
 \newblock URL \url{https://arxiv.org/abs/2212.13069}.
 
+\bibitem[Shortliffe(1976)]{shortliffe1976computer}
+Edward~Hance Shortliffe.
+\newblock \emph{Computer-Based Medical Consultations: MYCIN}.
+\newblock Elsevier, New York, 1976.
+\newblock American Elsevier Publishing Company.
+
+\bibitem[Siegelmann and Sontag(1991)]{siegelmann1991turing}
+Hava~T. Siegelmann and Eduardo~D. Sontag.
+\newblock Turing computability with neural nets.
+\newblock \emph{Applied Mathematics Letters}, 4\penalty0 (6):\penalty0 77--80,
+  1991.
+\newblock \doi{10.1016/0893-9659(91)90080-F}.
+\newblock URL \url{https://www.sontaglab.org/FTPDIR/aml-turing.pdf}.
+
 \bibitem[Simon(1969)]{simon1969_sciences}
 Herbert~A. Simon.
 \newblock \emph{The Sciences of the Artificial}.
@@ -1345,6 +1803,37 @@ Geoff Smith and Olga Tabachnikova.
 \newblock \emph{Topics in Group Theory}.
 \newblock Springer Undergraduate Mathematics Series. Springer, London, 2000.
 \newblock ISBN 978-1852332358.
+
+\bibitem[Solomonoff(1964{\natexlab{a}})]{solomonoff1964formal1}
+Ray~J. Solomonoff.
+\newblock A formal theory of inductive inference. part i.
+\newblock \emph{Information and Control}, 7\penalty0 (1):\penalty0 1--22,
+  1964{\natexlab{a}}.
+\newblock \doi{10.1016/S0019-9958(64)90223-2}.
+\newblock URL \url{https://doi.org/10.1016/S0019-9958(64)90223-2}.
+
+\bibitem[Solomonoff(1964{\natexlab{b}})]{solomonoff1964formal2}
+Ray~J. Solomonoff.
+\newblock A formal theory of inductive inference. part ii.
+\newblock \emph{Information and Control}, 7\penalty0 (2):\penalty0 224--254,
+  1964{\natexlab{b}}.
+\newblock \doi{10.1016/S0019-9958(64)90131-7}.
+\newblock URL \url{https://doi.org/10.1016/S0019-9958(64)90131-7}.
+
+\bibitem[Song et~al.(2025)Song, Hu, and
+  Mahowald]{song2025languagemodelsfailintrospect}
+Siyuan Song, Jennifer Hu, and Kyle Mahowald.
+\newblock Language models fail to introspect about their knowledge of language,
+  2025.
+\newblock URL \url{https://arxiv.org/abs/2503.07513}.
+
+\bibitem[Sorscher et~al.(2023)Sorscher, Geirhos, Shekhar, Ganguli, and
+  Morcos]{sorscher2023neuralscalinglawsbeating}
+Ben Sorscher, Robert Geirhos, Shashank Shekhar, Surya Ganguli, and Ari~S.
+  Morcos.
+\newblock Beyond neural scaling laws: beating power law scaling via data
+  pruning, 2023.
+\newblock URL \url{https://arxiv.org/abs/2206.14486}.
 
 \bibitem[Soudry et~al.(2024)Soudry, Hoffer, Nacson, Gunasekar, and
   Srebro]{soudry2024implicitbiasgradientdescent}
@@ -1368,6 +1857,12 @@ Tom~F. Sterkenburg.
 \newblock ISSN 1572-8641.
 \newblock \doi{10.1007/s11023-024-09703-y}.
 \newblock URL \url{http://dx.doi.org/10.1007/s11023-024-09703-y}.
+
+\bibitem[Su et~al.(2024)Su, Tian, Shen, and
+  Cai]{su2024unravelingmysteryscalinglaws}
+Hui Su, Zhi Tian, Xiaoyu Shen, and Xunliang Cai.
+\newblock Unraveling the mystery of scaling laws: Part i, 2024.
+\newblock URL \url{https://arxiv.org/abs/2403.06563}.
 
 \bibitem[Suchman(1987)]{suchman1987plans}
 Lucy~A. Suchman.
@@ -1400,11 +1895,33 @@ James~H. Tanis, Chris Giannella, and Adrian~V. Mariano.
   learning engineers, 2024.
 \newblock URL \url{https://arxiv.org/abs/2412.19419}.
 
+\bibitem[Telgarsky(2016)]{telgarsky2016benefits}
+Matus Telgarsky.
+\newblock Benefits of depth in neural networks.
+\newblock In \emph{Proceedings of COLT 2016}, 2016.
+\newblock URL \url{https://arxiv.org/abs/1602.04485}.
+
 \bibitem[Truong(2025)]{truong2025rademachercomplexitybasedgeneralizationbounds}
 Lan~V. Truong.
 \newblock On rademacher complexity-based generalization bounds for deep
   learning, 2025.
 \newblock URL \url{https://arxiv.org/abs/2208.04284}.
+
+\bibitem[Tseng(2001)]{tseng2001convergence}
+Paul Tseng.
+\newblock Convergence of a block coordinate descent method for
+  nondifferentiable minimization.
+\newblock \emph{Journal of Optimization Theory and Applications}, 109\penalty0
+  (3):\penalty0 475--494, 2001.
+\newblock \doi{10.1007/s10957-001-0006-4}.
+
+\bibitem[Tseng and Yun(2009)]{tseng2009coordinate}
+Paul Tseng and Sangwoon Yun.
+\newblock A coordinate gradient descent method for nonsmooth separable
+  minimization.
+\newblock \emph{Mathematical Programming}, 117\penalty0 (1):\penalty0 387--423,
+  2009.
+\newblock \doi{10.1007/s10107-007-0170-0}.
 
 \bibitem[Tunali(2019)]{tunali2019empirical}
 Onur Tunali.
@@ -1414,14 +1931,28 @@ Onur Tunali.
   \url{https://www.onurtunali.com/ml/2019/02/01/empirical-rademacher-complexity-and-its-implications-to-deep-learning.html}.
 \newblock Accessed: 2025-08-29.
 
-\bibitem[Valiant(1984)]{10.1145/1968.1972}
+\bibitem[Turing(1950)]{turing1950computing}
+Alan~M. Turing.
+\newblock Computing machinery and intelligence.
+\newblock \emph{Mind}, 59\penalty0 (236):\penalty0 433--460, 1950.
+\newblock Classic proposal of the ``Imitation Game'' (Turing Test).
+
+\bibitem[Valiant(1984{\natexlab{a}})]{10.1145/1968.1972}
 L.~G. Valiant.
 \newblock A theory of the learnable.
 \newblock \emph{Commun. ACM}, 27\penalty0 (11):\penalty0 1134–1142, November
-  1984.
+  1984{\natexlab{a}}.
 \newblock ISSN 0001-0782.
 \newblock \doi{10.1145/1968.1972}.
 \newblock URL \url{https://doi.org/10.1145/1968.1972}.
+
+\bibitem[Valiant(1984{\natexlab{b}})]{valiant1984learnable}
+Leslie~G. Valiant.
+\newblock A theory of the learnable.
+\newblock \emph{Communications of the ACM}, 27\penalty0 (11):\penalty0
+  1134--1142, 1984{\natexlab{b}}.
+\newblock \doi{10.1145/1968.1972}.
+\newblock URL \url{https://dl.acm.org/doi/10.1145/1968.1972}.
 
 \bibitem[van~de Ven et~al.(2024)van~de Ven, Soures, and
   Kudithipudi]{vandeven2024continuallearningcatastrophicforgetting}
@@ -1435,17 +1966,36 @@ Bartel~Leendert van~der Waerden.
 \newblock Springer, Berlin, 1930-1931.
 \newblock Later editions titled simply "Algebra" from 4th ed. 1955.
 
+\bibitem[Vapnik and Chervonenkis(1968)]{vapnik1968uniform}
+V.~N. Vapnik and A.~Ya. Chervonenkis.
+\newblock The uniform convergence of the frequencies of events to their
+  probabilities.
+\newblock \emph{Doklady Akademii Nauk SSSR}, 181\penalty0 (4):\penalty0
+  781--783, 1968.
+\newblock URL \url{https://mi.mathnet.ru/eng/tvrf/v181/i4/p781}.
+\newblock Translated \& extended in Theory of Probability \& Its Applications
+  1971.
+
+\bibitem[Vapnik and Chervonenkis(1971{\natexlab{a}})]{vapnik1971uniform}
+V.~N. Vapnik and A.~Ya. Chervonenkis.
+\newblock On the uniform convergence of relative frequencies of events to their
+  probabilities.
+\newblock \emph{Theory of Probability \& Its Applications}, 16\penalty0
+  (2):\penalty0 264--280, 1971{\natexlab{a}}.
+\newblock \doi{10.1137/1116025}.
+\newblock URL \url{https://link.aip.org/link/?TPR/16/264/1}.
+
 \bibitem[Vapnik(1999)]{Vapnik1999-VAPTNO}
 Vladimir Vapnik.
 \newblock \emph{The Nature of Statistical Learning Theory}.
 \newblock Springer: New York, 1999.
 
-\bibitem[Vapnik and Chervonenkis(1971)]{VapnikChervonenkis:1971}
+\bibitem[Vapnik and Chervonenkis(1971{\natexlab{b}})]{VapnikChervonenkis:1971}
 Vladimir~N. Vapnik and Alexey~Y. Chervonenkis.
 \newblock On the uniform convergence of relative frequencies to their
   probabilities.
 \newblock \emph{Theory of Probability and Its Applications}, 16\penalty0
-  (2):\penalty0 264--280, 1971.
+  (2):\penalty0 264--280, 1971{\natexlab{b}}.
 \newblock Classic VC uniform convergence result.
 
 \bibitem[Veličković(2023)]{Veli_kovi__2023}
@@ -1492,6 +2042,21 @@ Jason Wei, Yi~Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian
 \newblock Emergent abilities of large language models, 2022{\natexlab{b}}.
 \newblock URL \url{https://arxiv.org/abs/2206.07682}.
 
+\bibitem[Wei et~al.(2025)]{wei2025agentic}
+Jiaqi Wei et~al.
+\newblock From ai for science to agentic science: A survey on autonomous
+  scientific discovery.
+\newblock \emph{arXiv preprint arXiv:2508.14111}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2508.14111}.
+
+\bibitem[Weiss et~al.(2018)Weiss, Goldberg, and Yahav]{weiss2018practical}
+Gail Weiss, Yoav Goldberg, and Eran Yahav.
+\newblock On the practical computational power of finite precision rnns for
+  language recognition.
+\newblock In \emph{Proceedings of ACL (short papers) / arXiv}, 2018.
+\newblock URL \url{https://arxiv.org/abs/1805.04908}.
+\newblock arXiv:1805.04908.
+
 \bibitem[Werker and Tees(1984)]{WERKER198449}
 Janet~F. Werker and Richard~C. Tees.
 \newblock Cross-language speech perception: Evidence for perceptual
@@ -1510,11 +2075,35 @@ C.~Whitehead.
   edition, 2003.
 \newblock ISBN 978-0333794487.
 
-\bibitem[Wolpert and Macready(1997)]{wolpert1997no}
+\bibitem[Winograd(1972)]{winograd1972understanding}
+Terry Winograd.
+\newblock \emph{Understanding Natural Language}.
+\newblock Academic Press, New York, 1972.
+\newblock URL \url{https://archive.org/details/understandingnat0000wino}.
+\newblock SHRDLU project — language understanding in a blocks world; core
+  early symbolic NLP system.
+
+\bibitem[Wolpert(1996)]{wolpert1996lack}
+David~H. Wolpert.
+\newblock The lack of a priori distinctions between learning algorithms.
+\newblock \emph{Neural Computation}, 8\penalty0 (7):\penalty0 1341--1390, 1996.
+\newblock \doi{10.1162/neco.1996.8.7.1341}.
+\newblock URL
+  \url{https://direct.mit.edu/neco/article/8/7/1341/6016/The-Lack-of-A-Priori-Distinctions-Between-Learning}.
+
+\bibitem[Wolpert and Macready(1997{\natexlab{a}})]{wolpert1997no}
 David~H Wolpert and William~G Macready.
 \newblock No free lunch theorems for optimization.
 \newblock \emph{IEEE Transactions on Evolutionary Computation}, 1\penalty0
-  (1):\penalty0 67--82, 1997.
+  (1):\penalty0 67--82, 1997{\natexlab{a}}.
+
+\bibitem[Wolpert and Macready(1997{\natexlab{b}})]{wolpert1997nofree}
+David~H. Wolpert and William~G. Macready.
+\newblock No free lunch theorems for optimization.
+\newblock \emph{IEEE Transactions on Evolutionary Computation}, 1\penalty0
+  (1):\penalty0 67--82, 1997{\natexlab{b}}.
+\newblock \doi{10.1109/4235.585893}.
+\newblock URL \url{https://www.cs.ubc.ca/~hutter/earg/papers07/00585893.pdf}.
 
 \bibitem[Wolpert and Macready(2005)]{wolpert2005coevolutionary}
 David~H Wolpert and William~G Macready.
@@ -1526,6 +2115,13 @@ David~H Wolpert and William~G Macready.
 James Woodward.
 \newblock \emph{Making Things Happen: A Theory of Causal Explanation}.
 \newblock Oxford University Press, New York, 2003.
+
+\bibitem[Wright(2015)]{wright2015coordinate}
+Stephen~J Wright.
+\newblock Coordinate descent algorithms.
+\newblock \emph{Mathematical Programming}, 151\penalty0 (1):\penalty0 3--34,
+  2015.
+\newblock \doi{10.1007/s10107-015-0892-3}.
 
 \bibitem[Xu and Raginsky(2017)]{XuRaginsky:2017:InfoGen}
 An~Xu and Maxim Raginsky.

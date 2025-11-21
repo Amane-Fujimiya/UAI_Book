@@ -10,7 +10,8 @@
 \contentsline {section}{Construction}{xvii}{section*.9}%
 \contentsline {subsection}{Topics in consideration}{xviii}{subsection*.10}%
 \contentsline {subsection}{Topics in working}{xviii}{subsection*.11}%
-\contentsline {chapter}{Reading}{xix}{chapter*.12}%
+\contentsline {section}{About the author}{xviii}{section*.12}%
+\contentsline {chapter}{Reading}{xix}{chapter*.13}%
 \contentsline {chapter}{\chapternumberline {1}Introduction to Artificial Intelligence}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}History of artificial intelligence}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Roughly, artificial intelligence}{2}{subsection.1.1.1}%
@@ -18,11 +19,11 @@
 \contentsline {subsection}{\numberline {1.1.3}Precursor - From the ancient time to 18th century}{3}{subsection.1.1.3}%
 \contentsline {subsection}{\numberline {1.1.4}The 1940s}{4}{subsection.1.1.4}%
 \contentsline {subsection}{\numberline {1.1.5}The 1950s to 1960s}{5}{subsection.1.1.5}%
-\contentsline {subsubsection}{Main camp 1. Symbolic AI}{8}{subsubsection*.14}%
-\contentsline {subsubsection}{Main camp 2. Classical connectionism}{8}{subsubsection*.15}%
+\contentsline {subsubsection}{Main camp 1. Symbolic AI}{8}{subsubsection*.15}%
+\contentsline {subsubsection}{Main camp 2. Classical connectionism}{8}{subsubsection*.16}%
 \contentsline {subsection}{\numberline {1.1.6}The first AI winter (1966-1973)}{8}{subsection.1.1.6}%
 \contentsline {subsection}{\numberline {1.1.7}Knowledge-based systems - expert system (1969-1979)}{9}{subsection.1.1.7}%
-\contentsline {subsubsection}{The problems with expert systems}{12}{subsubsection*.18}%
+\contentsline {subsubsection}{The problems with expert systems}{12}{subsubsection*.19}%
 \contentsline {subsection}{\numberline {1.1.8}Neural network, the return (1986)}{13}{subsection.1.1.8}%
 \contentsline {subsection}{\numberline {1.1.9}Adoption of scientific method (1987)}{14}{subsection.1.1.9}%
 \contentsline {subsection}{\numberline {1.1.10}Intelligent agents (1995)}{15}{subsection.1.1.10}%
@@ -32,362 +33,367 @@
 \contentsline {subsection}{\numberline {1.2.1}Defining artificial}{17}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Defining intelligence}{19}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Historical accounts}{19}{subsection.1.2.3}%
-\contentsline {subsubsection}{Two ways of definition}{20}{subsubsection*.19}%
-\contentsline {subsubsection}{Problems with defining intelligence}{21}{subsubsection*.20}%
+\contentsline {subsubsection}{Two ways of definition}{20}{subsubsection*.20}%
+\contentsline {subsubsection}{Problems with defining intelligence}{21}{subsubsection*.21}%
 \contentsline {subsection}{\numberline {1.2.4}The Descartes experiments}{22}{subsection.1.2.4}%
 \contentsline {subsection}{\numberline {1.2.5}The economic of definiendum}{23}{subsection.1.2.5}%
 \contentsline {section}{\numberline {1.3}The artificial intelligence}{24}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}The precursor artificial construct}{25}{subsection.1.3.1}%
 \contentsline {section}{\numberline {1.4}Philosophical arguments against AI}{28}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Descartes's argument (1700s)}{28}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Categorization - Strong and weak AI (1991)}{28}{subsection.1.4.2}%
-\contentsline {subsubsection}{The frame problem}{28}{subsubsection*.21}%
-\contentsline {subsection}{\numberline {1.4.3}The Chinese Room Argument (1980s)}{29}{subsection.1.4.3}%
-\contentsline {subsubsection}{An analysis of CRA}{30}{subsubsection*.22}%
-\contentsline {subsection}{\numberline {1.4.4}The Gödelian argument (1961)}{31}{subsection.1.4.4}%
-\contentsline {subsubsection}{Subtle remark}{32}{subsubsection*.23}%
-\contentsline {subsection}{\numberline {1.4.5}The Epistemological Argument --- \cite {Bathaee2018TheAI}}{33}{subsection.1.4.5}%
-\contentsline {section}{\numberline {1.5}Agent and observations}{34}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Appendix}{36}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}The merits of the processing unit}{37}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}The layer dilemma - or Chinese Room Argument}{37}{subsection.1.6.2}%
-\contentsline {part}{I\hspace {1em}Preliminary}{39}{part.1}%
-\contentsline {chapter}{\chapternumberline {2}Foundational mathematics}{41}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Elementary logics}{41}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}The Propositional logics}{42}{subsection.2.1.1}%
-\contentsline {subsubsection}{Logical connectives}{42}{subsubsection*.25}%
-\contentsline {subsubsection}{Tautology and Contradiction}{44}{subsubsection*.26}%
-\contentsline {subsubsection}{Logical equivalence}{45}{subsubsection*.27}%
-\contentsline {subsubsection}{Quantifiers}{46}{subsubsection*.28}%
-\contentsline {subsection}{\numberline {2.1.2}From frames to statements}{46}{subsection.2.1.2}%
-\contentsline {subsubsection}{Quantified(-cation of) statements}{46}{subsubsection*.29}%
-\contentsline {subsubsection}{Order of quantifiers}{47}{subsubsection*.30}%
-\contentsline {subsection}{\numberline {2.1.3}Characterization}{48}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Restricted variables}{49}{subsection.2.1.4}%
-\contentsline {section}{\numberline {2.2}Naive set theory}{49}{section.2.2}%
-\contentsline {subsubsection}{Operation on set}{50}{subsubsection*.31}%
-\contentsline {subsection}{\numberline {2.2.1}De Morgan's theorem}{50}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Formal set theory}{50}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}An informal view on sets}{52}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Classes}{52}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Axiomatizations}{53}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Ordered pairs and relations}{54}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Equivalence relations}{55}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2.5}Functions}{56}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Product sets, index notation}{59}{section.2.6}%
-\contentsline {chapter}{\chapternumberline {3}Linear algebra}{61}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Notation and structure}{62}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Array form}{62}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Vectors}{64}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Properties of vectors}{69}{subsection.3.2.1}%
-\contentsline {subsubsection}{Interpretation of references}{69}{subsubsection*.34}%
-\contentsline {subsubsection}{Basic vector algebra}{69}{subsubsection*.35}%
-\contentsline {subsubsection}{The `missing' operations}{70}{subsubsection*.36}%
-\contentsline {section}{\numberline {3.3}Matrix}{70}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Special matrices, operations, and properties}{71}{subsection.3.3.1}%
-\contentsline {subsubsection}{Matrix shape}{71}{subsubsection*.39}%
-\contentsline {subsubsection}{Transpose, inverse, trace and rank}{73}{subsubsection*.40}%
-\contentsline {chapter}{\chapternumberline {4}Probability and Statistics}{75}{chapter.4}%
-\contentsline {section}{\numberline {4.1}What is probability?}{75}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}The fundamental principle of probability}{75}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Subjectivity of probability}{75}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Space of probability}{76}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Combinatorial probability}{77}{section.4.3}%
-\contentsline {subsubsection}{Sampling with or without replacement}{78}{subsubsection*.41}%
-\contentsline {subsubsection}{Sampling without ordering}{78}{subsubsection*.42}%
-\contentsline {subsubsection}{Four cases of enumerative combinatorics}{78}{subsubsection*.43}%
-\contentsline {section}{\numberline {4.4}Axiomatic probability}{79}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Axiom of probability}{79}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Boole's inequality}{80}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Conditional probability}{80}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Random variables}{81}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Expected values}{82}{section.4.6}%
-\contentsline {subsubsection}{Properties of expectation}{83}{subsubsection*.44}%
-\contentsline {subsection}{\numberline {4.6.1}Variance}{83}{subsection.4.6.1}%
-\contentsline {section}{\numberline {4.7}Some distribution functions}{84}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Bernoulli and binomial distribution}{84}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Poisson distribution}{85}{subsection.4.7.2}%
-\contentsline {subsubsection}{Poisson paradigm}{85}{subsubsection*.45}%
-\contentsline {subsection}{\numberline {4.7.3}Uniform distribution}{86}{subsection.4.7.3}%
-\contentsline {subsection}{\numberline {4.7.4}Normal distribution}{86}{subsection.4.7.4}%
-\contentsline {subsubsection}{Normal approximation of binomial distribution}{87}{subsubsection*.46}%
-\contentsline {subsection}{\numberline {4.7.5}Exponential distribution}{87}{subsection.4.7.5}%
-\contentsline {subsubsection}{Memory}{87}{subsubsection*.47}%
-\contentsline {subsubsection}{Hazard rate}{88}{subsubsection*.48}%
-\contentsline {subsection}{\numberline {4.7.6}Distribution function of variables}{88}{subsection.4.7.6}%
-\contentsline {chapter}{\chapternumberline {5}Metric spaces, measure theory}{89}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Metric theory}{89}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Pseudometric spaces}{89}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Measure}{90}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Sigma-algebra}{91}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}A few sigma algebras}{91}{subsection.5.2.2}%
-\contentsline {subsubsection}{Trivial sigma algebras}{91}{subsubsection*.49}%
-\contentsline {subsubsection}{Partition algebras}{92}{subsubsection*.50}%
-\contentsline {subsubsection}{Borel sigma-algebra}{92}{subsubsection*.51}%
-\contentsline {subsubsection}{Product algebras}{92}{subsubsection*.52}%
-\contentsline {subsection}{\numberline {5.2.3}Measure}{92}{subsection.5.2.3}%
-\contentsline {chapter}{\chapternumberline {6}Concentration inequalities}{95}{chapter.6}%
-\contentsline {section}{\numberline {6.1}What are concentration inequalities?}{95}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Basic tools}{96}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Markov's inequality}{96}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Chebyshev's inequality}{97}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}McDiarmid's inequality}{98}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}The Cramer-Chernoff method}{100}{subsection.6.2.4}%
-\contentsline {chapter}{\chapternumberline {7}Abstract mathematics}{101}{chapter.7}%
-\contentsline {section}{\numberline {7.1}The algebra of objects}{102}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Operations}{104}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Algebraic structures}{106}{section.7.3}%
-\contentsline {chapter}{\chapternumberline {8}Category theory}{107}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Introduction to Functions}{107}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Category and Precategory}{108}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Functors}{110}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Examples of Category}{111}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Unital Ring}{111}{subsection.8.4.1}%
-\contentsline {subsection}{\numberline {8.4.2}Group and Monoid}{111}{subsection.8.4.2}%
-\contentsline {section}{\numberline {8.5}Investigation on Morphism}{111}{section.8.5}%
-\contentsline {subsection}{\numberline {8.5.1}Total Morphism}{112}{subsection.8.5.1}%
-\contentsline {subsection}{\numberline {8.5.2}Homomorphism}{112}{subsection.8.5.2}%
-\contentsline {subsection}{\numberline {8.5.3}Isomorphism}{113}{subsection.8.5.3}%
-\contentsline {chapter}{\chapternumberline {9}Differential mathematics}{115}{chapter.9}%
-\contentsline {section}{\numberline {9.1}The differential equation}{115}{section.9.1}%
-\contentsline {section}{\numberline {9.2}First Order Equations}{116}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}The Exponential function}{116}{subsection.9.2.1}%
-\contentsline {subsubsection}{The Exponential Decay}{117}{subsubsection*.54}%
-\contentsline {subsection}{\numberline {9.2.2}Linear Differential Equations}{118}{subsection.9.2.2}%
-\contentsline {subsubsection}{Remark}{119}{subsubsection*.55}%
-\contentsline {subsection}{\numberline {9.2.3}The Integrating Factor Method}{119}{subsection.9.2.3}%
-\contentsline {subsection}{\numberline {9.2.4}The Initial Value Problem}{120}{subsection.9.2.4}%
-\contentsline {subsection}{\numberline {9.2.5}Linear Variable Coefficient Equation}{121}{subsection.9.2.5}%
-\contentsline {subsection}{\numberline {9.2.6}The Bernoulli Equation}{123}{subsection.9.2.6}%
-\contentsline {section}{\numberline {9.3}Seperable Equations}{124}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Euler Homogeneous Equations}{126}{subsection.9.3.1}%
-\contentsline {section}{\numberline {9.4}Exact Differential Equation}{127}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Exact Equation}{127}{subsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.4.2}Exact Solution}{127}{subsection.9.4.2}%
-\contentsline {subsection}{\numberline {9.4.3}Geometrical Interpretations}{128}{subsection.9.4.3}%
-\contentsline {subsection}{\numberline {9.4.4}Semi-exact equations}{128}{subsection.9.4.4}%
-\contentsline {subsection}{\numberline {9.4.5}Equation for inverse function}{129}{subsection.9.4.5}%
-\contentsline {section}{\numberline {9.5}Conclusion}{130}{section.9.5}%
-\contentsline {part}{II\hspace {1em}Main}{131}{part.2}%
-\contentsline {chapter}{\chapternumberline {10}Classical mathematical modelling}{133}{chapter.10}%
-\contentsline {section}{\numberline {10.1}The supposed goal of modelling}{133}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Models, systems, and questions}{134}{section.10.2}%
-\contentsline {subsection}{\numberline {10.2.1}The modelling scheme}{135}{subsection.10.2.1}%
-\contentsline {subsection}{\numberline {10.2.2}Simulation}{136}{subsection.10.2.2}%
-\contentsline {subsection}{\numberline {10.2.3}System}{136}{subsection.10.2.3}%
-\contentsline {subsection}{\numberline {10.2.4}Conceptual and physical model}{137}{subsection.10.2.4}%
-\contentsline {section}{\numberline {10.3}Mathematical models}{137}{section.10.3}%
-\contentsline {subsubsection}{The role of experimental data}{138}{subsubsection*.56}%
-\contentsline {subsection}{\numberline {10.3.1}Definitions}{138}{subsection.10.3.1}%
-\contentsline {subsection}{\numberline {10.3.2}State variables and system parameters}{139}{subsection.10.3.2}%
-\contentsline {subsection}{\numberline {10.3.3}The Problem-Solving Scheme}{140}{subsection.10.3.3}%
-\contentsline {subsection}{\numberline {10.3.4}The black-box interpretation}{141}{subsection.10.3.4}%
-\contentsline {section}{\numberline {10.4}Flavours of modelling definitions}{142}{section.10.4}%
-\contentsline {subsection}{\numberline {10.4.1}Phenomenology and Mechanistic}{142}{subsection.10.4.1}%
-\contentsline {subsection}{\numberline {10.4.2}Stationary and unstationary models}{145}{subsection.10.4.2}%
-\contentsline {subsection}{\numberline {10.4.3}Classification of models}{146}{subsection.10.4.3}%
-\contentsline {subsubsection}{The $S$-Axis}{146}{subsubsection*.61}%
-\contentsline {subsubsection}{The $Q$-Axis}{147}{subsubsection*.62}%
-\contentsline {subsubsection}{The $M$-Axis}{148}{subsubsection*.63}%
-\contentsline {section}{\numberline {10.5}The don'ts of mathematical modelling}{148}{section.10.5}%
-\contentsline {section}{\numberline {10.6}Conclusion}{151}{section.10.6}%
-\contentsline {section}{\numberline {10.7}Appendix}{151}{section.10.7}%
-\contentsline {subsection}{\numberline {10.7.1}Linear programming}{151}{subsection.10.7.1}%
-\contentsline {chapter}{\chapternumberline {11}Computational philosophy}{153}{chapter.11}%
-\contentsline {section}{\numberline {11.1}The question of computation}{154}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Computation at the first level}{154}{section.11.2}%
-\contentsline {subsection}{\numberline {11.2.1}Calculation}{154}{subsection.11.2.1}%
-\contentsline {section}{\numberline {11.3}Inspecting computation}{156}{section.11.3}%
-\contentsline {subsection}{\numberline {11.3.1}Quick history}{156}{subsection.11.3.1}%
-\contentsline {subsection}{\numberline {11.3.2}Modern history (1900s --- Current) - Computational theory of mind}{157}{subsection.11.3.2}%
-\contentsline {subsection}{\numberline {11.3.3}Abstraction of computational processes}{159}{subsection.11.3.3}%
-\contentsline {subsection}{\numberline {11.3.4}Inspecting abstraction}{161}{subsection.11.3.4}%
-\contentsline {chapter}{\chapternumberline {12}Classical learning theory}{163}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Before the learning theory}{163}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Principle}{164}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Classical theory}{165}{section.12.3}%
-\contentsline {subsection}{\numberline {12.3.1}Concept and hypothesis}{165}{subsection.12.3.1}%
-\contentsline {subsection}{\numberline {12.3.2}Phenomenological aberration}{166}{subsection.12.3.2}%
-\contentsline {subsubsection}{About $\mathcal {X}$ and $\mathcal {Y}$}{171}{subsubsection*.68}%
-\contentsline {subsection}{\numberline {12.3.3}Statistical learning problem class}{171}{subsection.12.3.3}%
-\contentsline {subsection}{\numberline {12.3.4}Estimation and approximation error}{172}{subsection.12.3.4}%
-\contentsline {section}{\numberline {12.4}Structural example of learning setting}{172}{section.12.4}%
-\contentsline {subsection}{\numberline {12.4.1}First section}{172}{subsection.12.4.1}%
-\contentsline {subsection}{\numberline {12.4.2}Second section}{173}{subsection.12.4.2}%
-\contentsline {subsection}{\numberline {12.4.3}Third section}{174}{subsection.12.4.3}%
-\contentsline {subsection}{\numberline {12.4.4}Uniform convergence}{175}{subsection.12.4.4}%
-\contentsline {section}{\numberline {12.5}Problems}{176}{section.12.5}%
-\contentsline {subsection}{\numberline {12.5.1}Data and the general setting}{176}{subsection.12.5.1}%
-\contentsline {subsection}{\numberline {12.5.2}Observational partitioning}{177}{subsection.12.5.2}%
-\contentsline {subsection}{\numberline {12.5.3}Clarity of frameworks}{178}{subsection.12.5.3}%
-\contentsline {section}{\numberline {12.6}Learning criteria on time - PAC theory}{179}{section.12.6}%
-\contentsline {subsection}{\numberline {12.6.1}Classical PAC-learning}{179}{subsection.12.6.1}%
-\contentsline {subsubsection}{Representation size and PAC-configuration}{182}{subsubsection*.71}%
-\contentsline {section}{\numberline {12.7}Generalization bound for PAC-learning}{183}{section.12.7}%
-\contentsline {subsection}{\numberline {12.7.1}Consistent Learning}{183}{subsection.12.7.1}%
-\contentsline {subsection}{\numberline {12.7.2}Finite $H$, consistent hypothesis}{184}{subsection.12.7.2}%
-\contentsline {subsection}{\numberline {12.7.3}Examples}{185}{subsection.12.7.3}%
-\contentsline {subsubsection}{Boolean Conjunction}{185}{subsubsection*.72}%
-\contentsline {subsubsection}{Universal Concept Classes}{185}{subsubsection*.73}%
-\contentsline {subsection}{\numberline {12.7.4}Finite hypothesis sets $H$ - inconsistent case}{186}{subsection.12.7.4}%
-\contentsline {section}{\numberline {12.8}(Agnostic) General PAC-learning}{188}{section.12.8}%
-\contentsline {subsection}{\numberline {12.8.1}PAC-ERM bounds}{189}{subsection.12.8.1}%
-\contentsline {subsection}{\numberline {12.8.2}Noise}{191}{subsection.12.8.2}%
-\contentsline {section}{\numberline {12.9}Occam's Razor}{191}{section.12.9}%
-\contentsline {subsection}{\numberline {12.9.1}Occam Learning and Succinctness}{192}{subsection.12.9.1}%
-\contentsline {subsection}{\numberline {12.9.2}The Boolean conjunction learning problem (Occam's algorithm)}{195}{subsection.12.9.2}%
-\contentsline {section}{\numberline {12.10}Rademacher Complexity}{197}{section.12.10}%
-\contentsline {subsection}{\numberline {12.10.1}Rademacher descriptions}{197}{subsection.12.10.1}%
-\contentsline {subsection}{\numberline {12.10.2}Growth function}{203}{subsection.12.10.2}%
-\contentsline {section}{\numberline {12.11}Vapnik-Chervonenkis Theory}{204}{section.12.11}%
-\contentsline {subsection}{\numberline {12.11.1}Clarification {\small of the linear halfspaces}}{204}{subsection.12.11.1}%
-\contentsline {subsection}{\numberline {12.11.2}VC-dimension}{205}{subsection.12.11.2}%
-\contentsline {section}{\numberline {12.12}VC-lower bounds}{214}{section.12.12}%
-\contentsline {section}{\numberline {12.13}Conclusion}{219}{section.12.13}%
-\contentsline {chapter}{\chapternumberline {13}Introduction to classical connectionism}{221}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Biological inspiration}{221}{section.13.1}%
-\contentsline {section}{\numberline {13.2}The neuron model}{226}{section.13.2}%
-\contentsline {subsection}{\numberline {13.2.1}Principles and philosophy}{228}{subsection.13.2.1}%
-\contentsline {subsection}{\numberline {13.2.2}Class separation}{230}{subsection.13.2.2}%
-\contentsline {section}{\numberline {13.3}Notation}{231}{section.13.3}%
-\contentsline {section}{\numberline {13.4}Classical neuron template}{231}{section.13.4}%
-\contentsline {section}{\numberline {13.5}Class $\mathcal {N}_{0}$ simplex}{233}{section.13.5}%
-\contentsline {subsection}{\numberline {13.5.1}Chaining standard unit}{235}{subsection.13.5.1}%
-\contentsline {section}{\numberline {13.6}Class $\mathcal {N}_{1}$ simplex}{238}{section.13.6}%
-\contentsline {subsection}{\numberline {13.6.1}McCulloch-Pitts multivariate}{238}{subsection.13.6.1}%
-\contentsline {subsection}{\numberline {13.6.2}Minsky-Papert Perceptron}{240}{subsection.13.6.2}%
-\contentsline {subsubsection}{The concept of `locality'}{242}{subsubsection*.99}%
-\contentsline {chapter}{\chapternumberline {14}Case study - classical physics}{245}{chapter.14}%
-\contentsline {chapter}{\chapternumberline {15}Case study 2 - quantum physics}{247}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Mathematical preliminaries}{247}{section.15.1}%
-\contentsline {section}{\numberline {15.2}Linear and inner vector spaces}{247}{section.15.2}%
-\contentsline {subsubsection}{Gram-Schmidt scheme}{251}{subsubsection*.100}%
-\contentsline {subsection}{\numberline {15.2.1}Dual spaces and Dirac notation}{251}{subsection.15.2.1}%
-\contentsline {subsection}{\numberline {15.2.2}Operators}{252}{subsection.15.2.2}%
-\contentsline {subsection}{\numberline {15.2.3}Commutator}{254}{subsection.15.2.3}%
-\contentsline {subsection}{\numberline {15.2.4}Hermitian operators}{255}{subsection.15.2.4}%
-\contentsline {subsubsection}{A closer look at complex adjoint}{256}{subsubsection*.101}%
-\contentsline {subsubsection}{Quantum Hermitian operators}{257}{subsubsection*.102}%
-\contentsline {chapter}{\chapternumberline {16}Novel learning theory}{259}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Motivation}{259}{section.16.1}%
-\contentsline {section}{\numberline {16.2}Principle}{260}{section.16.2}%
-\contentsline {subsection}{\numberline {16.2.1}Planning}{260}{subsection.16.2.1}%
-\contentsline {section}{\numberline {16.3}System space}{261}{section.16.3}%
-\contentsline {subsection}{\numberline {16.3.1}Groundwork of systems}{262}{subsection.16.3.1}%
-\contentsline {subsection}{\numberline {16.3.2}Cardinality space}{264}{subsection.16.3.2}%
-\contentsline {subsection}{\numberline {16.3.3}Probability}{264}{subsection.16.3.3}%
-\contentsline {section}{\numberline {16.4}The concept of learning}{264}{section.16.4}%
-\contentsline {part}{III\hspace {1em}Research}{265}{part.3}%
-\contentsline {section}{\numberline {16.5}Research topics and organization}{267}{section.16.5}%
-\contentsline {section}{\numberline {16.6}Research entries}{267}{section.16.6}%
-\contentsline {subsection}{\numberline {16.6.1}Constructions}{269}{subsection.16.6.1}%
-\contentsline {chapter}{\chapternumberline {17}Double Descent}{271}{chapter.17}%
+\contentsline {subsection}{\numberline {1.4.1}The axiomatic requirement}{28}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Descartes's argument (1700s)}{30}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Categorization - Strong and weak AI (1991)}{30}{subsection.1.4.3}%
+\contentsline {subsubsection}{The frame problem}{31}{subsubsection*.22}%
+\contentsline {subsection}{\numberline {1.4.4}The Chinese Room Argument (1980s)}{32}{subsection.1.4.4}%
+\contentsline {subsubsection}{An analysis of CRA}{32}{subsubsection*.23}%
+\contentsline {subsection}{\numberline {1.4.5}The Gödelian argument (1961)}{33}{subsection.1.4.5}%
+\contentsline {subsubsection}{Subtle remark}{34}{subsubsection*.24}%
+\contentsline {subsection}{\numberline {1.4.6}The Epistemological Argument --- \cite {Bathaee2018TheAI}}{35}{subsection.1.4.6}%
+\contentsline {section}{\numberline {1.5}Agent and observations}{37}{section.1.5}%
+\contentsline {section}{\numberline {1.6}The Artificial General Intelligence (AGI)}{39}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Artificial Intelligence Theory}{40}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}The learning theory}{43}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Architectural Insufficiency}{45}{subsection.1.6.3}%
+\contentsline {section}{\numberline {1.7}Appendix}{49}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}The merits of the processing unit}{49}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}The layer dilemma - or Chinese Room Argument}{49}{subsection.1.7.2}%
+\contentsline {part}{I\hspace {1em}Preliminary}{53}{part.1}%
+\contentsline {chapter}{\chapternumberline {2}Foundational mathematics}{55}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Elementary logics}{55}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}The Propositional logics}{56}{subsection.2.1.1}%
+\contentsline {subsubsection}{Logical connectives}{56}{subsubsection*.28}%
+\contentsline {subsubsection}{Tautology and Contradiction}{58}{subsubsection*.29}%
+\contentsline {subsubsection}{Logical equivalence}{59}{subsubsection*.30}%
+\contentsline {subsubsection}{Quantifiers}{60}{subsubsection*.31}%
+\contentsline {subsection}{\numberline {2.1.2}From frames to statements}{60}{subsection.2.1.2}%
+\contentsline {subsubsection}{Quantified(-cation of) statements}{60}{subsubsection*.32}%
+\contentsline {subsubsection}{Order of quantifiers}{61}{subsubsection*.33}%
+\contentsline {subsection}{\numberline {2.1.3}Characterization}{62}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Restricted variables}{63}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Naive set theory}{63}{section.2.2}%
+\contentsline {subsubsection}{Operation on set}{64}{subsubsection*.34}%
+\contentsline {subsection}{\numberline {2.2.1}De Morgan's theorem}{64}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Formal set theory}{64}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}An informal view on sets}{66}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Classes}{66}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Axiomatizations}{67}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Ordered pairs and relations}{68}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Equivalence relations}{69}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Functions}{70}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Product sets, index notation}{73}{section.2.6}%
+\contentsline {chapter}{\chapternumberline {3}Linear algebra}{75}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Notation and structure}{76}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Array form}{76}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Vectors}{78}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Properties of vectors}{83}{subsection.3.2.1}%
+\contentsline {subsubsection}{Interpretation of references}{83}{subsubsection*.37}%
+\contentsline {subsubsection}{Basic vector algebra}{83}{subsubsection*.38}%
+\contentsline {subsubsection}{The `missing' operations}{84}{subsubsection*.39}%
+\contentsline {section}{\numberline {3.3}Matrix}{84}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Special matrices, operations, and properties}{85}{subsection.3.3.1}%
+\contentsline {subsubsection}{Matrix shape}{85}{subsubsection*.42}%
+\contentsline {subsubsection}{Transpose, inverse, trace and rank}{87}{subsubsection*.43}%
+\contentsline {chapter}{\chapternumberline {4}Probability and Statistics}{89}{chapter.4}%
+\contentsline {section}{\numberline {4.1}What is probability?}{89}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}The fundamental principle of probability}{89}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Subjectivity of probability}{89}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Space of probability}{90}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Combinatorial probability}{91}{section.4.3}%
+\contentsline {subsubsection}{Sampling with or without replacement}{92}{subsubsection*.44}%
+\contentsline {subsubsection}{Sampling without ordering}{92}{subsubsection*.45}%
+\contentsline {subsubsection}{Four cases of enumerative combinatorics}{92}{subsubsection*.46}%
+\contentsline {section}{\numberline {4.4}Axiomatic probability}{93}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Axiom of probability}{93}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Boole's inequality}{94}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Conditional probability}{94}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Random variables}{95}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Expected values}{96}{section.4.6}%
+\contentsline {subsubsection}{Properties of expectation}{97}{subsubsection*.47}%
+\contentsline {subsection}{\numberline {4.6.1}Variance}{97}{subsection.4.6.1}%
+\contentsline {section}{\numberline {4.7}Some distribution functions}{98}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Bernoulli and binomial distribution}{98}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Poisson distribution}{99}{subsection.4.7.2}%
+\contentsline {subsubsection}{Poisson paradigm}{99}{subsubsection*.48}%
+\contentsline {subsection}{\numberline {4.7.3}Uniform distribution}{100}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.4}Normal distribution}{100}{subsection.4.7.4}%
+\contentsline {subsubsection}{Normal approximation of binomial distribution}{101}{subsubsection*.49}%
+\contentsline {subsection}{\numberline {4.7.5}Exponential distribution}{101}{subsection.4.7.5}%
+\contentsline {subsubsection}{Memory}{101}{subsubsection*.50}%
+\contentsline {subsubsection}{Hazard rate}{102}{subsubsection*.51}%
+\contentsline {subsection}{\numberline {4.7.6}Distribution function of variables}{102}{subsection.4.7.6}%
+\contentsline {chapter}{\chapternumberline {5}Metric spaces, measure theory}{103}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Metric theory}{103}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Pseudometric spaces}{103}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Measure}{104}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Sigma-algebra}{105}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}A few sigma algebras}{105}{subsection.5.2.2}%
+\contentsline {subsubsection}{Trivial sigma algebras}{105}{subsubsection*.52}%
+\contentsline {subsubsection}{Partition algebras}{106}{subsubsection*.53}%
+\contentsline {subsubsection}{Borel sigma-algebra}{106}{subsubsection*.54}%
+\contentsline {subsubsection}{Product algebras}{106}{subsubsection*.55}%
+\contentsline {subsection}{\numberline {5.2.3}Measure}{106}{subsection.5.2.3}%
+\contentsline {chapter}{\chapternumberline {6}Concentration inequalities}{109}{chapter.6}%
+\contentsline {section}{\numberline {6.1}What are concentration inequalities?}{109}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Basic tools}{110}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Markov's inequality}{110}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Chebyshev's inequality}{111}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}McDiarmid's inequality}{112}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}The Cramer-Chernoff method}{114}{subsection.6.2.4}%
+\contentsline {chapter}{\chapternumberline {7}Abstract mathematics}{115}{chapter.7}%
+\contentsline {section}{\numberline {7.1}The algebra of objects}{116}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Operations}{118}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Algebraic structures}{120}{section.7.3}%
+\contentsline {chapter}{\chapternumberline {8}Category theory}{121}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introduction to Functions}{121}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Category and Precategory}{122}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Functors}{124}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Examples of Category}{125}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Unital Ring}{125}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Group and Monoid}{125}{subsection.8.4.2}%
+\contentsline {section}{\numberline {8.5}Investigation on Morphism}{125}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Total Morphism}{126}{subsection.8.5.1}%
+\contentsline {subsection}{\numberline {8.5.2}Homomorphism}{126}{subsection.8.5.2}%
+\contentsline {subsection}{\numberline {8.5.3}Isomorphism}{127}{subsection.8.5.3}%
+\contentsline {chapter}{\chapternumberline {9}Differential mathematics}{129}{chapter.9}%
+\contentsline {section}{\numberline {9.1}The differential equation}{129}{section.9.1}%
+\contentsline {section}{\numberline {9.2}First Order Equations}{130}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}The Exponential function}{130}{subsection.9.2.1}%
+\contentsline {subsubsection}{The Exponential Decay}{131}{subsubsection*.57}%
+\contentsline {subsection}{\numberline {9.2.2}Linear Differential Equations}{132}{subsection.9.2.2}%
+\contentsline {subsubsection}{Remark}{133}{subsubsection*.58}%
+\contentsline {subsection}{\numberline {9.2.3}The Integrating Factor Method}{133}{subsection.9.2.3}%
+\contentsline {subsection}{\numberline {9.2.4}The Initial Value Problem}{134}{subsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.2.5}Linear Variable Coefficient Equation}{135}{subsection.9.2.5}%
+\contentsline {subsection}{\numberline {9.2.6}The Bernoulli Equation}{137}{subsection.9.2.6}%
+\contentsline {section}{\numberline {9.3}Seperable Equations}{138}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Euler Homogeneous Equations}{140}{subsection.9.3.1}%
+\contentsline {section}{\numberline {9.4}Exact Differential Equation}{141}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Exact Equation}{141}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}Exact Solution}{141}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.3}Geometrical Interpretations}{142}{subsection.9.4.3}%
+\contentsline {subsection}{\numberline {9.4.4}Semi-exact equations}{142}{subsection.9.4.4}%
+\contentsline {subsection}{\numberline {9.4.5}Equation for inverse function}{143}{subsection.9.4.5}%
+\contentsline {section}{\numberline {9.5}Conclusion}{144}{section.9.5}%
+\contentsline {part}{II\hspace {1em}Main}{145}{part.2}%
+\contentsline {chapter}{\chapternumberline {10}Classical mathematical modelling}{147}{chapter.10}%
+\contentsline {section}{\numberline {10.1}The supposed goal of modelling}{147}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Models, systems, and questions}{148}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}The modelling scheme}{149}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Simulation}{150}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}System}{150}{subsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.2.4}Conceptual and physical model}{151}{subsection.10.2.4}%
+\contentsline {section}{\numberline {10.3}Mathematical models}{151}{section.10.3}%
+\contentsline {subsubsection}{The role of experimental data}{152}{subsubsection*.59}%
+\contentsline {subsection}{\numberline {10.3.1}Definitions}{152}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}State variables and system parameters}{153}{subsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.3.3}The Problem-Solving Scheme}{154}{subsection.10.3.3}%
+\contentsline {subsection}{\numberline {10.3.4}The black-box interpretation}{155}{subsection.10.3.4}%
+\contentsline {section}{\numberline {10.4}Flavours of modelling definitions}{156}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Phenomenology and Mechanistic}{156}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Stationary and unstationary models}{159}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}Classification of models}{160}{subsection.10.4.3}%
+\contentsline {subsubsection}{The $S$-Axis}{160}{subsubsection*.64}%
+\contentsline {subsubsection}{The $Q$-Axis}{161}{subsubsection*.65}%
+\contentsline {subsubsection}{The $M$-Axis}{162}{subsubsection*.66}%
+\contentsline {section}{\numberline {10.5}The don'ts of mathematical modelling}{162}{section.10.5}%
+\contentsline {section}{\numberline {10.6}Conclusion}{165}{section.10.6}%
+\contentsline {section}{\numberline {10.7}Appendix}{165}{section.10.7}%
+\contentsline {subsection}{\numberline {10.7.1}Linear programming}{165}{subsection.10.7.1}%
+\contentsline {chapter}{\chapternumberline {11}Computational philosophy}{167}{chapter.11}%
+\contentsline {section}{\numberline {11.1}The question of computation}{168}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Computation at the first level}{168}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Calculation}{168}{subsection.11.2.1}%
+\contentsline {section}{\numberline {11.3}Inspecting computation}{170}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Quick history}{170}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Modern history (1900s --- Current) - Computational theory of mind}{171}{subsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.3.3}Abstraction of computational processes}{173}{subsection.11.3.3}%
+\contentsline {subsection}{\numberline {11.3.4}Inspecting abstraction}{175}{subsection.11.3.4}%
+\contentsline {chapter}{\chapternumberline {12}Classical learning theory}{177}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Before the learning theory}{177}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Principle}{178}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Classical theory}{179}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Concept and hypothesis}{179}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}Phenomenological aberration}{180}{subsection.12.3.2}%
+\contentsline {subsubsection}{About $\mathcal {X}$ and $\mathcal {Y}$}{185}{subsubsection*.71}%
+\contentsline {subsection}{\numberline {12.3.3}Statistical learning problem class}{185}{subsection.12.3.3}%
+\contentsline {subsection}{\numberline {12.3.4}Estimation and approximation error}{186}{subsection.12.3.4}%
+\contentsline {section}{\numberline {12.4}Structural example of learning setting}{186}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}First section}{186}{subsection.12.4.1}%
+\contentsline {subsection}{\numberline {12.4.2}Second section}{187}{subsection.12.4.2}%
+\contentsline {subsection}{\numberline {12.4.3}Third section}{188}{subsection.12.4.3}%
+\contentsline {subsection}{\numberline {12.4.4}Uniform convergence}{189}{subsection.12.4.4}%
+\contentsline {section}{\numberline {12.5}Problems}{190}{section.12.5}%
+\contentsline {subsection}{\numberline {12.5.1}Data and the general setting}{190}{subsection.12.5.1}%
+\contentsline {subsection}{\numberline {12.5.2}Observational partitioning}{191}{subsection.12.5.2}%
+\contentsline {subsection}{\numberline {12.5.3}Clarity of frameworks}{192}{subsection.12.5.3}%
+\contentsline {section}{\numberline {12.6}Learning criteria on time - PAC theory}{193}{section.12.6}%
+\contentsline {subsection}{\numberline {12.6.1}Classical PAC-learning}{193}{subsection.12.6.1}%
+\contentsline {subsubsection}{Representation size and PAC-configuration}{196}{subsubsection*.74}%
+\contentsline {section}{\numberline {12.7}Generalization bound for PAC-learning}{197}{section.12.7}%
+\contentsline {subsection}{\numberline {12.7.1}Consistent Learning}{197}{subsection.12.7.1}%
+\contentsline {subsection}{\numberline {12.7.2}Finite $H$, consistent hypothesis}{198}{subsection.12.7.2}%
+\contentsline {subsection}{\numberline {12.7.3}Examples}{199}{subsection.12.7.3}%
+\contentsline {subsubsection}{Boolean Conjunction}{199}{subsubsection*.75}%
+\contentsline {subsubsection}{Universal Concept Classes}{199}{subsubsection*.76}%
+\contentsline {subsection}{\numberline {12.7.4}Finite hypothesis sets $H$ - inconsistent case}{200}{subsection.12.7.4}%
+\contentsline {section}{\numberline {12.8}(Agnostic) General PAC-learning}{202}{section.12.8}%
+\contentsline {subsection}{\numberline {12.8.1}PAC-ERM bounds}{203}{subsection.12.8.1}%
+\contentsline {subsection}{\numberline {12.8.2}Noise}{205}{subsection.12.8.2}%
+\contentsline {section}{\numberline {12.9}Occam's Razor}{205}{section.12.9}%
+\contentsline {subsection}{\numberline {12.9.1}Occam Learning and Succinctness}{206}{subsection.12.9.1}%
+\contentsline {subsection}{\numberline {12.9.2}The Boolean conjunction learning problem (Occam's algorithm)}{209}{subsection.12.9.2}%
+\contentsline {section}{\numberline {12.10}Rademacher Complexity}{211}{section.12.10}%
+\contentsline {subsection}{\numberline {12.10.1}Rademacher descriptions}{211}{subsection.12.10.1}%
+\contentsline {subsection}{\numberline {12.10.2}Growth function}{217}{subsection.12.10.2}%
+\contentsline {section}{\numberline {12.11}Vapnik-Chervonenkis Theory}{218}{section.12.11}%
+\contentsline {subsection}{\numberline {12.11.1}Clarification {\small of the linear halfspaces}}{218}{subsection.12.11.1}%
+\contentsline {subsection}{\numberline {12.11.2}VC-dimension}{219}{subsection.12.11.2}%
+\contentsline {section}{\numberline {12.12}VC-lower bounds}{228}{section.12.12}%
+\contentsline {section}{\numberline {12.13}Conclusion}{233}{section.12.13}%
+\contentsline {chapter}{\chapternumberline {13}Introduction to classical connectionism}{235}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Biological inspiration}{235}{section.13.1}%
+\contentsline {section}{\numberline {13.2}The neuron model}{240}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Principles and philosophy}{242}{subsection.13.2.1}%
+\contentsline {subsection}{\numberline {13.2.2}Class separation}{244}{subsection.13.2.2}%
+\contentsline {section}{\numberline {13.3}Notation}{245}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Classical neuron template}{245}{section.13.4}%
+\contentsline {section}{\numberline {13.5}Class $\mathcal {N}_{0}$ simplex}{247}{section.13.5}%
+\contentsline {subsection}{\numberline {13.5.1}Chaining standard unit}{249}{subsection.13.5.1}%
+\contentsline {section}{\numberline {13.6}Class $\mathcal {N}_{1}$ simplex}{252}{section.13.6}%
+\contentsline {subsection}{\numberline {13.6.1}McCulloch-Pitts multivariate}{252}{subsection.13.6.1}%
+\contentsline {subsection}{\numberline {13.6.2}Minsky-Papert Perceptron}{254}{subsection.13.6.2}%
+\contentsline {subsubsection}{The concept of `locality'}{256}{subsubsection*.102}%
+\contentsline {chapter}{\chapternumberline {14}Case study - classical physics}{259}{chapter.14}%
+\contentsline {chapter}{\chapternumberline {15}Case study 2 - quantum physics}{261}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Mathematical preliminaries}{261}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Linear and inner vector spaces}{261}{section.15.2}%
+\contentsline {subsubsection}{Gram-Schmidt scheme}{265}{subsubsection*.103}%
+\contentsline {subsection}{\numberline {15.2.1}Dual spaces and Dirac notation}{265}{subsection.15.2.1}%
+\contentsline {subsection}{\numberline {15.2.2}Operators}{266}{subsection.15.2.2}%
+\contentsline {subsection}{\numberline {15.2.3}Commutator}{268}{subsection.15.2.3}%
+\contentsline {subsection}{\numberline {15.2.4}Hermitian operators}{269}{subsection.15.2.4}%
+\contentsline {subsubsection}{A closer look at complex adjoint}{270}{subsubsection*.104}%
+\contentsline {subsubsection}{Quantum Hermitian operators}{271}{subsubsection*.105}%
+\contentsline {chapter}{\chapternumberline {16}Novel learning theory}{273}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Motivation}{273}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Principle}{274}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Planning}{274}{subsection.16.2.1}%
+\contentsline {section}{\numberline {16.3}System space}{275}{section.16.3}%
+\contentsline {subsection}{\numberline {16.3.1}Groundwork of systems}{276}{subsection.16.3.1}%
+\contentsline {subsection}{\numberline {16.3.2}Cardinality space}{278}{subsection.16.3.2}%
+\contentsline {subsection}{\numberline {16.3.3}Probability}{278}{subsection.16.3.3}%
+\contentsline {section}{\numberline {16.4}The concept of learning}{278}{section.16.4}%
+\contentsline {part}{III\hspace {1em}Research}{279}{part.3}%
+\contentsline {section}{\numberline {16.5}Research topics and organization}{281}{section.16.5}%
+\contentsline {section}{\numberline {16.6}Research entries}{281}{section.16.6}%
+\contentsline {subsection}{\numberline {16.6.1}Constructions}{283}{subsection.16.6.1}%
+\contentsline {chapter}{\chapternumberline {17}Double Descent}{285}{chapter.17}%
 \etoc@startlocaltoc {2}
-\contentsline {@section}{Contents}{271}{etoc@tocid.2}%
-\contentsline {section}{\numberline {17.1}Introduction}{271}{section.17.1}%
-\contentsline {section}{\numberline {17.2}Double descent, the problem}{273}{section.17.2}%
-\contentsline {subsection}{\numberline {17.2.1}Bias-variance tradeoff}{273}{subsection.17.2.1}%
-\contentsline {subsubsection}{Statistical origin}{273}{subsubsection*.105}%
-\contentsline {subsubsection}{Precursor (Geman et al., 1992)}{274}{subsubsection*.106}%
-\contentsline {subsubsection}{Geman's derivation in \cite {6797087}}{275}{subsubsection*.107}%
-\contentsline {subsection}{\numberline {17.2.2}Double descent}{277}{subsection.17.2.2}%
-\contentsline {subsection}{\numberline {17.2.3}So, what's the point?}{279}{subsection.17.2.3}%
-\contentsline {subsection}{\numberline {17.2.4}Problems}{280}{subsection.17.2.4}%
-\contentsline {section}{\numberline {17.3}Previous attempts}{282}{section.17.3}%
-\contentsline {subsection}{\numberline {17.3.1}Bounding inequalities}{283}{subsection.17.3.1}%
-\contentsline {subsection}{\numberline {17.3.2}Complexity notions}{285}{subsection.17.3.2}%
-\contentsline {subsubsection}{Representation complexity}{287}{subsubsection*.113}%
-\contentsline {subsubsection}{Optimization complexity}{288}{subsubsection*.114}%
-\contentsline {subsubsection}{Sample complexity}{289}{subsubsection*.115}%
-\contentsline {subsubsection}{Expressive complexity}{290}{subsubsection*.116}%
-\contentsline {subsubsection}{Structural mass}{290}{subsubsection*.117}%
-\contentsline {subsection}{\numberline {17.3.3}Insights}{290}{subsection.17.3.3}%
-\contentsline {section}{\numberline {17.4}Previous suggestions}{291}{section.17.4}%
-\contentsline {subsection}{\numberline {17.4.1}Observing gradient of decompositions}{291}{subsection.17.4.1}%
-\contentsline {subsubsection}{Modern bias-variance decomposition}{292}{subsubsection*.118}%
-\contentsline {subsection}{\numberline {17.4.2}Inductive bias}{293}{subsection.17.4.2}%
-\contentsline {subsection}{\numberline {17.4.3}Neural Tangent Kernel}{293}{subsection.17.4.3}%
-\contentsline {section}{\numberline {17.5}Observations and verifications}{294}{section.17.5}%
-\contentsline {subsection}{\numberline {17.5.1}Polynomial space approximation}{296}{subsection.17.5.1}%
-\contentsline {subsubsection}{Polynomial model structure}{299}{subsubsection*.123}%
-\contentsline {subsubsection}{Testing result}{299}{subsubsection*.124}%
-\contentsline {subsubsection}{Stone-Weierstrass theorem}{300}{subsubsection*.125}%
-\contentsline {subsubsection}{A description of polynomial regression}{300}{subsubsection*.126}%
-\contentsline {subsubsection}{Newtonian and Lagrangian basis}{300}{subsubsection*.127}%
-\contentsline {subsection}{\numberline {17.5.2}Linear correspondence classes}{301}{subsection.17.5.2}%
-\contentsline {subsubsection}{Verification}{303}{subsubsection*.132}%
-\contentsline {subsubsection}{Remark}{305}{subsubsection*.135}%
-\contentsline {subsection}{\numberline {17.5.3}Support vector machine}{308}{subsection.17.5.3}%
-\contentsline {subsubsection}{Introduction}{308}{subsubsection*.136}%
-\contentsline {subsubsection}{Structural analysis}{309}{subsubsection*.137}%
-\contentsline {subsection}{\numberline {17.5.4}Multilayer perceptron (vanilla neural network)}{310}{subsection.17.5.4}%
-\contentsline {section}{\numberline {17.6}Experimental instruction}{311}{section.17.6}%
-\contentsline {section}{\numberline {17.7}New theoretical analysis}{312}{section.17.7}%
-\contentsline {subsection}{\numberline {17.7.1}Hypothetical analysis}{312}{subsection.17.7.1}%
-\contentsline {subsubsection}{Stability of bias-variance measure}{312}{subsubsection*.138}%
-\contentsline {subsubsection}{Alternative measures}{312}{subsubsection*.139}%
-\contentsline {subsubsection}{Inductive bias}{312}{subsubsection*.140}%
-\contentsline {subsubsection}{Randomness and probabilistic setting}{312}{subsubsection*.141}%
-\contentsline {subsubsection}{Knowledge masking}{313}{subsubsection*.142}%
-\contentsline {subsubsection}{Data sensitivity and substructures}{313}{subsubsection*.143}%
-\contentsline {section}{\numberline {17.8}Polynomial testing pseudocodes and settings}{314}{section.17.8}%
-\contentsline {section}{\numberline {17.9}Appendix A. Representation scheme}{317}{section.17.9}%
-\contentsline {section}{\numberline {17.10}Appendix B. Graph theoretical analysis}{318}{section.17.10}%
-\contentsline {subsubsection}{Quick introduction to graph theory}{318}{subsubsection*.145}%
-\contentsline {subsubsection}{Graph Neural Network}{319}{subsubsection*.146}%
-\contentsline {subsection}{\numberline {17.10.1}Analysis of GNN}{320}{subsection.17.10.1}%
-\contentsline {subsection}{\numberline {17.10.2}Experiment 1: Identifying bias-variance in GNN}{320}{subsection.17.10.2}%
-\contentsline {section}{\numberline {17.11}Related works}{321}{section.17.11}%
-\contentsline {chapter}{\chapternumberline {18}Approximation theory}{323}{chapter.18}%
-\contentsline {section}{\numberline {18.1}Fundamental knowledge}{323}{section.18.1}%
-\contentsline {subsection}{\numberline {18.1.1}Polynomial of several variables}{325}{subsection.18.1.1}%
-\contentsline {subsection}{\numberline {18.1.2}Complex numbers}{325}{subsection.18.1.2}%
-\contentsline {section}{\numberline {18.2}Algebraic polynomial}{326}{section.18.2}%
-\contentsline {subsection}{\numberline {18.2.1}Minimal polynomials}{327}{subsection.18.2.1}%
-\contentsline {section}{\numberline {18.3}Approximation theory}{328}{section.18.3}%
-\contentsline {chapter}{\chapternumberline {19}No free lunch}{329}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Original statements}{329}{section.19.1}%
-\contentsline {section}{\numberline {19.2}Bias-variance accordance}{330}{section.19.2}%
-\contentsline {chapter}{\chapternumberline {20}Open question in theoretical machine learning}{331}{chapter.20}%
-\contentsline {section}{\numberline {20.1}Introduction}{331}{section.20.1}%
-\contentsline {chapter}{\chapternumberline {21}A novel analysis on learning theory}{333}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Introduction}{333}{section.21.1}%
-\contentsline {subsection}{\numberline {21.1.1}Principle}{333}{subsection.21.1.1}%
-\contentsline {subsection}{\numberline {21.1.2}Planning}{334}{subsection.21.1.2}%
-\contentsline {chapter}{\chapternumberline {22}Introductory Double Descent}{335}{chapter.22}%
-\contentsline {section}{\numberline {22.1}Introduction}{335}{section.22.1}%
-\contentsline {section}{\numberline {22.2}Problem statements}{336}{section.22.2}%
-\contentsline {subsection}{\numberline {22.2.1}Bias-variance tradeoff}{336}{subsection.22.2.1}%
-\contentsline {subsubsection}{Precursor (Geman et al., 1992)}{337}{subsubsection*.148}%
-\contentsline {subsubsection}{Expansion and variations}{338}{subsubsection*.149}%
-\contentsline {section}{\numberline {22.3}Double descent}{339}{section.22.3}%
-\contentsline {chapter}{\chapternumberline {23}Neural Network Framework}{341}{chapter.23}%
-\contentsline {section}{\numberline {23.1}Introduction}{341}{section.23.1}%
-\contentsline {section}{\numberline {23.2}Constructions}{342}{section.23.2}%
-\contentsline {subsection}{\numberline {23.2.1}Multilayer perceptron (MLP)}{343}{subsection.23.2.1}%
-\contentsline {subsubsection}{Remark}{344}{subsubsection*.151}%
-\contentsline {section}{\numberline {23.3}A structural analysis}{344}{section.23.3}%
-\contentsline {chapter}{\chapternumberline {24}General principles}{347}{chapter.24}%
-\contentsline {section}{\numberline {24.1}Defining artificial intelligence}{347}{section.24.1}%
-\contentsline {subsection}{\numberline {24.1.1}Intelligence criterion}{348}{subsection.24.1.1}%
-\contentsline {subsection}{\numberline {24.1.2} The should not of defining AI}{349}{subsection.24.1.2}%
-\contentsline {subsection}{\numberline {24.1.3}Deferences in approach?}{349}{subsection.24.1.3}%
-\contentsline {chapter}{\chapternumberline {25}The principle neural architecture}{351}{chapter.25}%
-\contentsline {section}{\numberline {25.1}Neurons perspective}{351}{section.25.1}%
-\contentsline {subsection}{\numberline {25.1.1}Analysis}{354}{subsection.25.1.1}%
-\contentsline {subsection}{\numberline {25.1.2}Why we call it minimal}{356}{subsection.25.1.2}%
-\contentsline {section}{\numberline {25.2}Formalisation}{356}{section.25.2}%
-\contentsline {chapter}{Index}{359}{section*.154}%
-\contentsline {chapter}{List of transfer functions}{361}{chapter*.155}%
-\contentsline {section}{Classical transfer functions}{361}{section*.156}%
-\contentsline {subsection}{Hard limit (\texttt {hardlim[x]})}{361}{subsection*.157}%
-\contentsline {subsection}{Symmetric hard limit (\texttt {hardlims[x]})}{362}{subsection*.160}%
-\contentsline {subsection}{Linear family (\texttt {satlin[x]}, \texttt {satlins[x]}, \texttt {purelin[x]})}{362}{subsection*.162}%
-\contentsline {subsection}{Sigmoid (\texttt {sigmoid[x]}) and log-sigmoid (\texttt {logsigmoid[x]})}{363}{subsection*.165}%
-\contentsline {subsection}{Hyperbolic tangent (\texttt {tansig[x]})}{364}{subsection*.168}%
-\contentsline {section}{Deep learning-theoretic activation functions}{366}{section*.170}%
-\contentsline {subsection}{Logistic Sigmoid and Tanh-based}{366}{subsection*.171}%
-\contentsline {subsection}{Rectified Activation Functions}{367}{subsection*.172}%
-\contentsline {subsubsection}{Properties}{368}{subsubsection*.173}%
-\contentsline {subsubsection}{Variation 1 - Non-negativity}{369}{subsubsection*.174}%
-\contentsline {chapter}{Bibliography}{371}{chapter*.175}%
+\contentsline {@section}{Contents}{285}{etoc@tocid.2}%
+\contentsline {section}{\numberline {17.1}Introduction}{285}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Double descent, the problem}{287}{section.17.2}%
+\contentsline {subsection}{\numberline {17.2.1}Bias-variance tradeoff}{287}{subsection.17.2.1}%
+\contentsline {subsubsection}{Statistical origin}{287}{subsubsection*.108}%
+\contentsline {subsubsection}{Precursor (Geman et al., 1992)}{288}{subsubsection*.109}%
+\contentsline {subsubsection}{Geman's derivation in \cite {6797087}}{289}{subsubsection*.110}%
+\contentsline {subsection}{\numberline {17.2.2}Double descent}{291}{subsection.17.2.2}%
+\contentsline {subsection}{\numberline {17.2.3}So, what's the point?}{293}{subsection.17.2.3}%
+\contentsline {subsection}{\numberline {17.2.4}Problems}{294}{subsection.17.2.4}%
+\contentsline {section}{\numberline {17.3}Previous attempts}{296}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}Bounding inequalities}{297}{subsection.17.3.1}%
+\contentsline {subsection}{\numberline {17.3.2}Complexity notions}{299}{subsection.17.3.2}%
+\contentsline {subsubsection}{Representation complexity}{301}{subsubsection*.116}%
+\contentsline {subsubsection}{Optimization complexity}{302}{subsubsection*.117}%
+\contentsline {subsubsection}{Sample complexity}{303}{subsubsection*.118}%
+\contentsline {subsubsection}{Expressive complexity}{304}{subsubsection*.119}%
+\contentsline {subsubsection}{Structural mass}{304}{subsubsection*.120}%
+\contentsline {subsection}{\numberline {17.3.3}Insights}{304}{subsection.17.3.3}%
+\contentsline {section}{\numberline {17.4}Previous suggestions}{305}{section.17.4}%
+\contentsline {subsection}{\numberline {17.4.1}Observing gradient of decompositions}{305}{subsection.17.4.1}%
+\contentsline {subsubsection}{Modern bias-variance decomposition}{306}{subsubsection*.121}%
+\contentsline {subsection}{\numberline {17.4.2}Inductive bias}{307}{subsection.17.4.2}%
+\contentsline {subsection}{\numberline {17.4.3}Neural Tangent Kernel}{307}{subsection.17.4.3}%
+\contentsline {section}{\numberline {17.5}Observations and verifications}{308}{section.17.5}%
+\contentsline {subsection}{\numberline {17.5.1}Polynomial space approximation}{310}{subsection.17.5.1}%
+\contentsline {subsubsection}{Polynomial model structure}{313}{subsubsection*.126}%
+\contentsline {subsubsection}{Testing result}{313}{subsubsection*.127}%
+\contentsline {subsubsection}{Stone-Weierstrass theorem}{314}{subsubsection*.128}%
+\contentsline {subsubsection}{A description of polynomial regression}{314}{subsubsection*.129}%
+\contentsline {subsubsection}{Newtonian and Lagrangian basis}{314}{subsubsection*.130}%
+\contentsline {subsection}{\numberline {17.5.2}Linear correspondence classes}{315}{subsection.17.5.2}%
+\contentsline {subsubsection}{Verification}{317}{subsubsection*.135}%
+\contentsline {subsubsection}{Remark}{319}{subsubsection*.138}%
+\contentsline {subsection}{\numberline {17.5.3}Support vector machine}{322}{subsection.17.5.3}%
+\contentsline {subsubsection}{Introduction}{322}{subsubsection*.139}%
+\contentsline {subsubsection}{Structural analysis}{323}{subsubsection*.140}%
+\contentsline {subsection}{\numberline {17.5.4}Multilayer perceptron (vanilla neural network)}{324}{subsection.17.5.4}%
+\contentsline {section}{\numberline {17.6}Experimental instruction}{325}{section.17.6}%
+\contentsline {section}{\numberline {17.7}New theoretical analysis}{326}{section.17.7}%
+\contentsline {subsection}{\numberline {17.7.1}Hypothetical analysis}{326}{subsection.17.7.1}%
+\contentsline {subsubsection}{Stability of bias-variance measure}{326}{subsubsection*.141}%
+\contentsline {subsubsection}{Alternative measures}{326}{subsubsection*.142}%
+\contentsline {subsubsection}{Inductive bias}{326}{subsubsection*.143}%
+\contentsline {subsubsection}{Randomness and probabilistic setting}{326}{subsubsection*.144}%
+\contentsline {subsubsection}{Knowledge masking}{327}{subsubsection*.145}%
+\contentsline {subsubsection}{Data sensitivity and substructures}{327}{subsubsection*.146}%
+\contentsline {section}{\numberline {17.8}Polynomial testing pseudocodes and settings}{328}{section.17.8}%
+\contentsline {section}{\numberline {17.9}Appendix A. Representation scheme}{331}{section.17.9}%
+\contentsline {section}{\numberline {17.10}Appendix B. Graph theoretical analysis}{332}{section.17.10}%
+\contentsline {subsubsection}{Quick introduction to graph theory}{332}{subsubsection*.148}%
+\contentsline {subsubsection}{Graph Neural Network}{333}{subsubsection*.149}%
+\contentsline {subsection}{\numberline {17.10.1}Analysis of GNN}{334}{subsection.17.10.1}%
+\contentsline {subsection}{\numberline {17.10.2}Experiment 1: Identifying bias-variance in GNN}{334}{subsection.17.10.2}%
+\contentsline {section}{\numberline {17.11}Related works}{335}{section.17.11}%
+\contentsline {chapter}{\chapternumberline {18}Approximation theory}{337}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Fundamental knowledge}{337}{section.18.1}%
+\contentsline {subsection}{\numberline {18.1.1}Polynomial of several variables}{339}{subsection.18.1.1}%
+\contentsline {subsection}{\numberline {18.1.2}Complex numbers}{339}{subsection.18.1.2}%
+\contentsline {section}{\numberline {18.2}Algebraic polynomial}{340}{section.18.2}%
+\contentsline {subsection}{\numberline {18.2.1}Minimal polynomials}{341}{subsection.18.2.1}%
+\contentsline {section}{\numberline {18.3}Approximation theory}{342}{section.18.3}%
+\contentsline {chapter}{\chapternumberline {19}No free lunch}{343}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Original statements}{343}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Bias-variance accordance}{344}{section.19.2}%
+\contentsline {chapter}{\chapternumberline {20}Open question in theoretical machine learning}{345}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Introduction}{345}{section.20.1}%
+\contentsline {chapter}{\chapternumberline {21}A novel analysis on learning theory}{347}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Introduction}{347}{section.21.1}%
+\contentsline {subsection}{\numberline {21.1.1}Principle}{347}{subsection.21.1.1}%
+\contentsline {subsection}{\numberline {21.1.2}Planning}{348}{subsection.21.1.2}%
+\contentsline {chapter}{\chapternumberline {22}Introductory Double Descent}{349}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Introduction}{349}{section.22.1}%
+\contentsline {section}{\numberline {22.2}Problem statements}{350}{section.22.2}%
+\contentsline {subsection}{\numberline {22.2.1}Bias-variance tradeoff}{350}{subsection.22.2.1}%
+\contentsline {subsubsection}{Precursor (Geman et al., 1992)}{351}{subsubsection*.151}%
+\contentsline {subsubsection}{Expansion and variations}{352}{subsubsection*.152}%
+\contentsline {section}{\numberline {22.3}Double descent}{353}{section.22.3}%
+\contentsline {chapter}{\chapternumberline {23}Neural Network Framework}{355}{chapter.23}%
+\contentsline {section}{\numberline {23.1}Introduction}{355}{section.23.1}%
+\contentsline {section}{\numberline {23.2}Constructions}{356}{section.23.2}%
+\contentsline {subsection}{\numberline {23.2.1}Multilayer perceptron (MLP)}{357}{subsection.23.2.1}%
+\contentsline {subsubsection}{Remark}{358}{subsubsection*.154}%
+\contentsline {section}{\numberline {23.3}A structural analysis}{358}{section.23.3}%
+\contentsline {chapter}{\chapternumberline {24}General principles}{361}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Defining artificial intelligence}{361}{section.24.1}%
+\contentsline {subsection}{\numberline {24.1.1}Intelligence criterion}{362}{subsection.24.1.1}%
+\contentsline {subsection}{\numberline {24.1.2} The should not of defining AI}{363}{subsection.24.1.2}%
+\contentsline {subsection}{\numberline {24.1.3}Deferences in approach?}{363}{subsection.24.1.3}%
+\contentsline {chapter}{\chapternumberline {25}The principle neural architecture}{365}{chapter.25}%
+\contentsline {section}{\numberline {25.1}Neurons perspective}{365}{section.25.1}%
+\contentsline {subsection}{\numberline {25.1.1}Analysis}{368}{subsection.25.1.1}%
+\contentsline {subsection}{\numberline {25.1.2}Why we call it minimal}{370}{subsection.25.1.2}%
+\contentsline {section}{\numberline {25.2}Formalisation}{370}{section.25.2}%
+\contentsline {chapter}{Index}{373}{section*.157}%
+\contentsline {chapter}{List of transfer functions}{375}{chapter*.158}%
+\contentsline {section}{Classical transfer functions}{375}{section*.159}%
+\contentsline {subsection}{Hard limit (\texttt {hardlim[x]})}{375}{subsection*.160}%
+\contentsline {subsection}{Symmetric hard limit (\texttt {hardlims[x]})}{376}{subsection*.163}%
+\contentsline {subsection}{Linear family (\texttt {satlin[x]}, \texttt {satlins[x]}, \texttt {purelin[x]})}{376}{subsection*.165}%
+\contentsline {subsection}{Sigmoid (\texttt {sigmoid[x]}) and log-sigmoid (\texttt {logsigmoid[x]})}{377}{subsection*.168}%
+\contentsline {subsection}{Hyperbolic tangent (\texttt {tansig[x]})}{378}{subsection*.171}%
+\contentsline {section}{Deep learning-theoretic activation functions}{380}{section*.173}%
+\contentsline {subsection}{Logistic Sigmoid and Tanh-based}{380}{subsection*.174}%
+\contentsline {subsection}{Rectified Activation Functions}{381}{subsection*.175}%
+\contentsline {subsubsection}{Properties}{382}{subsubsection*.176}%
+\contentsline {subsubsection}{Variation 1 - Non-negativity}{383}{subsubsection*.177}%
+\contentsline {chapter}{Bibliography}{385}{chapter*.178}%
