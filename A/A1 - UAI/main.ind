@@ -19,7 +19,7 @@
 
   \indexspace
 
-  \item Caratheodory theorem, \hyperpage{188}
+  \item Caratheodory theorem, \hyperpage{189}
   \item cardinality space, \hyperpage{241}
   \item certainty factor, \hyperpage{10}
   \item characterization, \hyperpage{51}
@@ -33,7 +33,7 @@
   \item conjunctions, \hyperpage{46}
   \item connectionism, \hyperpage{6}
   \item contradiction, \hyperpage{48}
-  \item convex hull, \hyperpage{187}
+  \item convex hull, \hyperpage{188}
   \item Cramer condition, \hyperpage{95}
   \item cross-model match, \hyperpage{242}
 
@@ -50,7 +50,7 @@
   \item empirical risk, \hyperpage{152}
   \item encoding space, \hyperpage{241}
   \item environment, \hyperpage{30}
-  \item ERC, \hyperpage{177}
+  \item ERC, \hyperpage{178}
   \item expert system, \hyperpage{9}
 
   \indexspace
@@ -62,12 +62,12 @@
 
   \item generalization risk, \hyperpage{152}
   \item gray model, \hyperpage{133}
-  \item growth function, \hyperpage{182}
+  \item growth function, \hyperpage{183}
   \item GSM, \hyperpage{14}
 
   \indexspace
 
-  \item halfspace, \hyperpage{183}
+  \item halfspace, \hyperpage{184}
   \item Hebbian learning, \hyperpage{4}
   \item heliocentric topology, \hyperpage{205}
   \item Hermitian operator, \hyperpage{228}
@@ -112,7 +112,7 @@
   \item minimal polynomial, \hyperpage{308}
   \item minimized structure, \hyperpage{208}
   \item model, \hyperpage{126}
-  \item model-free learning, \hyperpage{163}
+  \item model-free learning, \hyperpage{164}
   \item modelling problem, \hyperpage{235}
 
   \indexspace
@@ -121,7 +121,7 @@
   \item neural vacancy path, \hyperpage{199}
   \item neuroglia, \hyperpage{200}
   \item neuron chaining, \hyperpage{211}
-  \item noise, \hyperpage{172}
+  \item noise, \hyperpage{173}
 
   \indexspace
 
@@ -132,7 +132,7 @@
 
   \indexspace
 
-  \item PAC learning, \hyperpage{162}
+  \item PAC learning, \hyperpage{163}
   \item phenomenological model, \hyperpage{132}
   \item physical model, \hyperpage{128}
   \item polynomial coefficient, \hyperpage{306}
@@ -148,25 +148,25 @@
 
   \indexspace
 
-  \item Rademacher complexity, \hyperpage{178}
-  \item Rademacher variables, \hyperpage{177}
-  \item Radon's theorem, \hyperpage{190}
+  \item Rademacher complexity, \hyperpage{179}
+  \item Rademacher variables, \hyperpage{178}
+  \item Radon's theorem, \hyperpage{191}
   \item reduced system, \hyperpage{129}
   \item ReLU, \hyperpage{211}
-  \item representation scheme, \hyperpage{164}
-  \item representation size, \hyperpage{165}
+  \item representation scheme, \hyperpage{165}
+  \item representation size, \hyperpage{166}
   \item Reticular Theory, \hyperpage{202}
   \item rogue class, \hyperpage{207}
   \item Russell's paradox, \hyperpage{53}
 
   \indexspace
 
-  \item Sauer's lemma, \hyperpage{191}
+  \item Sauer's lemma, \hyperpage{192}
   \item scalar, \hyperpage{63}
   \item scaled Hyperbolic Tangent, \hyperpage{332}
   \item self-adjoint, \hyperpage{228}
   \item separable equation(s), \hyperpage{117}
-  \item shattering, \hyperpage{185}
+  \item shattering, \hyperpage{186}
   \item sigma-algebra, \hyperpage{86}
   \item simulation, \hyperpage{127}
   \item single chaining, \hyperpage{211}
@@ -184,7 +184,7 @@
 
   \indexspace
 
-  \item VC-dimension, \hyperpage{185}
+  \item VC-dimension, \hyperpage{186}
   \item vector, \hyperpage{63}
 
 \end{theindex}

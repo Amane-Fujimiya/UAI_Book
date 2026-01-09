@@ -233,30 +233,31 @@
 \contentsline {subsection}{\numberline {12.5.1}Data and the general setting}{160}{subsection.12.5.1}%
 \contentsline {subsection}{\numberline {12.5.2}Observational partitioning}{160}{subsection.12.5.2}%
 \contentsline {subsection}{\numberline {12.5.3}Clarity of frameworks}{162}{subsection.12.5.3}%
-\contentsline {section}{\numberline {12.6}Learning criteria on time - PAC theory}{162}{section.12.6}%
-\contentsline {subsection}{\numberline {12.6.1}Classical PAC-learning}{162}{subsection.12.6.1}%
-\contentsline {subsubsection}{Representation size and PAC-configuration}{164}{subsubsection*.74}%
-\contentsline {section}{\numberline {12.7}Generalization bound for PAC-learning}{166}{section.12.7}%
-\contentsline {subsection}{\numberline {12.7.1}Consistent Learning}{166}{subsection.12.7.1}%
-\contentsline {subsection}{\numberline {12.7.2}Finite $H$, consistent hypothesis}{166}{subsection.12.7.2}%
-\contentsline {subsection}{\numberline {12.7.3}Examples}{167}{subsection.12.7.3}%
-\contentsline {subsubsection}{Boolean Conjunction}{167}{subsubsection*.75}%
+\contentsline {subsection}{\numberline {12.5.4}Domain and process}{162}{subsection.12.5.4}%
+\contentsline {section}{\numberline {12.6}Learning criteria on time - PAC theory}{163}{section.12.6}%
+\contentsline {subsection}{\numberline {12.6.1}Classical PAC-learning}{163}{subsection.12.6.1}%
+\contentsline {subsubsection}{Representation size and PAC-configuration}{165}{subsubsection*.74}%
+\contentsline {section}{\numberline {12.7}Generalization bound for PAC-learning}{167}{section.12.7}%
+\contentsline {subsection}{\numberline {12.7.1}Consistent Learning}{167}{subsection.12.7.1}%
+\contentsline {subsection}{\numberline {12.7.2}Finite $H$, consistent hypothesis}{167}{subsection.12.7.2}%
+\contentsline {subsection}{\numberline {12.7.3}Examples}{168}{subsection.12.7.3}%
+\contentsline {subsubsection}{Boolean Conjunction}{168}{subsubsection*.75}%
 \contentsline {subsubsection}{Universal Concept Classes}{168}{subsubsection*.76}%
-\contentsline {subsection}{\numberline {12.7.4}Finite hypothesis sets $H$ - inconsistent case}{168}{subsection.12.7.4}%
+\contentsline {subsection}{\numberline {12.7.4}Finite hypothesis sets $H$ - inconsistent case}{169}{subsection.12.7.4}%
 \contentsline {section}{\numberline {12.8}(Agnostic) General PAC-learning}{170}{section.12.8}%
-\contentsline {subsection}{\numberline {12.8.1}PAC-ERM bounds}{171}{subsection.12.8.1}%
-\contentsline {subsection}{\numberline {12.8.2}Noise}{172}{subsection.12.8.2}%
-\contentsline {section}{\numberline {12.9}Occam's Razor}{172}{section.12.9}%
-\contentsline {subsection}{\numberline {12.9.1}Occam Learning and Succinctness}{173}{subsection.12.9.1}%
-\contentsline {subsection}{\numberline {12.9.2}The Boolean conjunction learning problem (Occam's algorithm)}{175}{subsection.12.9.2}%
-\contentsline {section}{\numberline {12.10}Rademacher Complexity}{177}{section.12.10}%
-\contentsline {subsection}{\numberline {12.10.1}Rademacher descriptions}{177}{subsection.12.10.1}%
-\contentsline {subsection}{\numberline {12.10.2}Growth function}{182}{subsection.12.10.2}%
-\contentsline {section}{\numberline {12.11}Vapnik-Chervonenkis Theory}{183}{section.12.11}%
-\contentsline {subsection}{\numberline {12.11.1}Clarification {\small of the linear halfspaces}}{183}{subsection.12.11.1}%
-\contentsline {subsection}{\numberline {12.11.2}VC-dimension}{185}{subsection.12.11.2}%
-\contentsline {section}{\numberline {12.12}VC-lower bounds}{192}{section.12.12}%
-\contentsline {section}{\numberline {12.13}Conclusion}{196}{section.12.13}%
+\contentsline {subsection}{\numberline {12.8.1}PAC-ERM bounds}{172}{subsection.12.8.1}%
+\contentsline {subsection}{\numberline {12.8.2}Noise}{173}{subsection.12.8.2}%
+\contentsline {section}{\numberline {12.9}Occam's Razor}{173}{section.12.9}%
+\contentsline {subsection}{\numberline {12.9.1}Occam Learning and Succinctness}{174}{subsection.12.9.1}%
+\contentsline {subsection}{\numberline {12.9.2}The Boolean conjunction learning problem (Occam's algorithm)}{176}{subsection.12.9.2}%
+\contentsline {section}{\numberline {12.10}Rademacher Complexity}{178}{section.12.10}%
+\contentsline {subsection}{\numberline {12.10.1}Rademacher descriptions}{178}{subsection.12.10.1}%
+\contentsline {subsection}{\numberline {12.10.2}Growth function}{183}{subsection.12.10.2}%
+\contentsline {section}{\numberline {12.11}Vapnik-Chervonenkis Theory}{184}{section.12.11}%
+\contentsline {subsection}{\numberline {12.11.1}Clarification {\small of the linear halfspaces}}{184}{subsection.12.11.1}%
+\contentsline {subsection}{\numberline {12.11.2}VC-dimension}{186}{subsection.12.11.2}%
+\contentsline {section}{\numberline {12.12}VC-lower bounds}{193}{section.12.12}%
+\contentsline {section}{\numberline {12.13}Conclusion}{197}{section.12.13}%
 \contentsline {chapter}{\chapternumberline {13}Introduction to classical connectionism}{199}{chapter.13}%
 \contentsline {section}{\numberline {13.1}Biological inspiration}{199}{section.13.1}%
 \contentsline {section}{\numberline {13.2}The neuron model}{203}{section.13.2}%
@@ -313,7 +314,7 @@
 \contentsline {section}{\numberline {19.1}Introduction}{263}{section.19.1}%
 \contentsline {section}{\numberline {19.2}Double descent, the problem}{264}{section.19.2}%
 \contentsline {subsection}{\numberline {19.2.1}Bias-variance tradeoff}{264}{subsection.19.2.1}%
-\contentsline {subsubsection}{Statistical origin}{265}{subsubsection*.117}%
+\contentsline {subsubsection}{Statistical origin}{264}{subsubsection*.117}%
 \contentsline {subsubsection}{Precursor (Geman et al., 1992)}{265}{subsubsection*.118}%
 \contentsline {subsubsection}{Geman's derivation in \cite {6797087}}{267}{subsubsection*.119}%
 \contentsline {subsection}{\numberline {19.2.2}Double descent}{268}{subsection.19.2.2}%

@@ -65,22 +65,22 @@
 \indexentry{gray model|hyperpage}{133}
 \indexentry{empirical risk|hyperpage}{152}
 \indexentry{generalization risk|hyperpage}{152}
-\indexentry{PAC learning|hyperpage}{162}
-\indexentry{model-free learning|hyperpage}{163}
-\indexentry{representation scheme|hyperpage}{164}
-\indexentry{representation size|hyperpage}{165}
-\indexentry{noise|hyperpage}{172}
-\indexentry{ERC|hyperpage}{177}
-\indexentry{Rademacher variables|hyperpage}{177}
-\indexentry{Rademacher complexity|hyperpage}{178}
-\indexentry{growth function|hyperpage}{182}
-\indexentry{halfspace|hyperpage}{183}
-\indexentry{shattering|hyperpage}{185}
-\indexentry{VC-dimension|hyperpage}{185}
-\indexentry{convex hull|hyperpage}{187}
-\indexentry{Caratheodory theorem|hyperpage}{188}
-\indexentry{Radon's theorem|hyperpage}{190}
-\indexentry{Sauer's lemma|hyperpage}{191}
+\indexentry{PAC learning|hyperpage}{163}
+\indexentry{model-free learning|hyperpage}{164}
+\indexentry{representation scheme|hyperpage}{165}
+\indexentry{representation size|hyperpage}{166}
+\indexentry{noise|hyperpage}{173}
+\indexentry{ERC|hyperpage}{178}
+\indexentry{Rademacher variables|hyperpage}{178}
+\indexentry{Rademacher complexity|hyperpage}{179}
+\indexentry{growth function|hyperpage}{183}
+\indexentry{halfspace|hyperpage}{184}
+\indexentry{shattering|hyperpage}{186}
+\indexentry{VC-dimension|hyperpage}{186}
+\indexentry{convex hull|hyperpage}{188}
+\indexentry{Caratheodory theorem|hyperpage}{189}
+\indexentry{Radon's theorem|hyperpage}{191}
+\indexentry{Sauer's lemma|hyperpage}{192}
 \indexentry{neural vacancy path|hyperpage}{199}
 \indexentry{brain lateralization|hyperpage}{200}
 \indexentry{dendrites|hyperpage}{200}

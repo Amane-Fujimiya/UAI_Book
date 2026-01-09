@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.13)  8 JAN 2026 22:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.13)  9 JAN 2026 17:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1844,9 +1844,6 @@ LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
 
 
 {D:/MikTek/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-
-Package natbib Warning: Citation `Bathaee2018TheAI' on page ii undefined on input line 95.
-
 LaTeX Font Info:    Font shape `T1/ETbb-TLF/bold/n' will be
 (Font)              scaled to size 10.0pt on input line 95.
 
@@ -1979,12 +1976,6 @@ Overfull \hbox (5.59372pt too wide) in paragraph at lines 4--4
 Package natbib Warning: Citation `clocksin2003programming' on page viii undefined on input line 7.
 
 
-Package natbib Warning: Citation `stanford2018ai' on page viii undefined on input line 8.
-
-
-Package natbib Warning: Citation `ANDRILLI20101' on page viii undefined on input line 14.
-
-
 Underfull \vbox (badness 6252) has occurred while \output is active []
 
 
@@ -1993,31 +1984,24 @@ Underfull \vbox (badness 6252) has occurred while \output is active []
 
 ]
 
-Package natbib Warning: Citation `purves_neuroscience_2004' on page ix undefined on input line 43.
-
-
-
 [9]
 LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/n' will be
 (Font)              scaled to size 5.0pt on input line 56.
-
-
-Package natbib Warning: Citation `10.5555/50066' on page x undefined on input line 56.
-
-
-Package natbib Warning: Citation `10.5555/50066' on page x undefined on input line 57.
 
 
 Class memoir Warning: The \bf font command is deprecated. 
 (memoir)              Use \textbf{...} or {\bfseries... } instead on input line 73.
 
 
-Underfull \vbox (badness 1902) has occurred while \output is active []
+Package natbib Warning: Citation `belkin_reconciling_2019' on page x undefined on input line 73.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3919) has occurred while \output is active []
 
 
 
@@ -2068,13 +2052,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  (content/chapter1.tex
 
-Package natbib Warning: Citation `AIWashington' on page 1 undefined on input line 16.
-
-
-Package natbib Warning: Citation `10.5555/1671238' on page 1 undefined on input line 16.
-
-
-
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -2084,7 +2061,7 @@ l.17
 
 
 ]
-<img/AI_concept_timeline.png, id=1969, 833.1125pt x 365.365pt>
+<img/AI_concept_timeline.png, id=1995, 833.1125pt x 365.365pt>
 File: img/AI_concept_timeline.png Graphic file (type png)
 <use img/AI_concept_timeline.png>
 Package pdftex.def Info: img/AI_concept_timeline.png  used on input line 20.
@@ -2099,9 +2076,6 @@ l.34
       [2 <./img/AI_concept_timeline.png>]
 
 [3]
-
-Package natbib Warning: Citation `mcculloch_logical_1943' on page 4 undefined on input line 57.
-
 Package marginnote Info: Margin note 24.1 is on absolute page 24 on input line 62.
 Package marginnote Info: xpos seems to be 487.54211pt on input line 62.
 Package marginnote Info: Margin note 24.2 is on absolute page 25 on input line 69.
@@ -2112,18 +2086,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [4]
-
-Package natbib Warning: Citation `1056797NewellSimon' on page 5 undefined on input line 72.
-
 Package marginnote Info: Margin note 25.1 is on absolute page 25 on input line 73.
-Package marginnote Info: xpos seems to be 76.37291pt on input line 73.
+Package marginnote Info: xpos seems to be 175.25748pt on input line 73.
 Package marginnote Info: Margin note 25.2 is on absolute page 25 on input line 77.
 Package marginnote Info: xpos seems to be 346.14014pt on input line 77.
-
-Package natbib Warning: Citation `10.5555/1671238' on page 5 undefined on input line 80.
-
 LaTeX Font Info:    Trying to load font information for TS1+ETbb-TLF on input line 83.
-(D:\MikTek\tex/latex/etbb\ts1etbb-tlf.fd
+ (D:\MikTek\tex/latex/etbb\ts1etbb-tlf.fd
 File: TS1ETbb-TLF.fd 2020/07/01 (autoinst) Font definitions for TS1/ETbb-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/ETbb-TLF/regular/n' will be
@@ -2139,12 +2107,8 @@ Package marginnote Info: xpos seems to be 164.55612pt on input line 89.
 
 [6]
 
-Package natbib Warning: Citation `Goel_2022' on page 7 undefined on input line 91.
-
-
-
 [7]
-<img/image.png, id=2006, 290.08376pt x 174.6525pt>
+<img/image.png, id=2043, 290.08376pt x 174.6525pt>
 File: img/image.png Graphic file (type png)
 <use img/image.png>
 Package pdftex.def Info: img/image.png  used on input line 123.
@@ -2153,11 +2117,8 @@ Package pdftex.def Info: img/image.png  used on input line 123.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Package natbib Warning: Citation `10.5555/1671238' on page 8 undefined on input line 129.
-
 Package marginnote Info: Margin note 28.1 is on absolute page 29 on input line 130.
-Package marginnote Info: xpos seems to be 291.04227pt on input line 130.
+Package marginnote Info: xpos seems to be 432.15744pt on input line 130.
 
 
 [8]
@@ -2167,12 +2128,8 @@ Package marginnote Info: Margin note 29.2 is on absolute page 29 on input line 1
 Package marginnote Info: xpos seems to be 117.10507pt on input line 131.
 
 
-Package natbib Warning: Citation `articleMetaxiotis' on page 9 undefined on input line 133.
-
-
-
 [9 <./img/image.png (PNG copy)>]
-<img/expertsystem1.png, id=2018, 853.1875pt x 498.86375pt>
+<img/expertsystem1.png, id=2060, 853.1875pt x 498.86375pt>
 File: img/expertsystem1.png Graphic file (type png)
 <use img/expertsystem1.png>
 Package pdftex.def Info: img/expertsystem1.png  used on input line 152.
@@ -2184,13 +2141,6 @@ Package marginnote Info: xpos seems to be 351.01566pt on input line 158.
 [10 <./img/expertsystem1.png (PNG copy)>]
 
 [11]
-
-Package natbib Warning: Citation `1056797NewellSimon' on page 12 undefined on input line 184.
-
-
-Package natbib Warning: Citation `10.5555/1671238' on page 12 undefined on input line 188.
-
-
 Overfull \hbox (0.70062pt too wide) in paragraph at lines 190--191
 []\T1/ETbb-TLF/regular/n/9 Every sci-ence start with con-cep-tual un-der-stand-ing and con-cep-tual struc-tures. The main goal of the ear-lier prospects
  []
@@ -2217,69 +2167,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [14]
 LaTeX Font Info:    Font shape `T1/ETbb-TLF/regular/it' will be
 (Font)              scaled to size 7.0pt on input line 225.
-
-
-Package natbib Warning: Citation `simon1969_sciences' on page 15 undefined on input line 225.
-
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 229.
-
-Package natbib Warning: Citation `putnam1988_representation' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `fodor1975_languageofthought' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `churchland1986_neurophilosophy' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `dennett1978_brainstorms' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `dennett1991_consciousness' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `scheutz2002_computationalism' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `dodig2012_infocomputationalism' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `gauvrit2015_algorithmic_cognition' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `copeland2018_evolution_computationalism' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `searle1980_mindsbrains' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `searle1992_rediscovery' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `penrose1989_emperorsmind' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `penrose1994_shadows' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `nagel2012_mindandcosmos' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `muller2025_symbolgrounding' on page 15 undefined on input line 235.
-
-
-Package natbib Warning: Citation `laforte1998_godel_computationalism' on page 15 undefined on input line 235.
-
 
 
 [15]
-
-Package natbib Warning: Citation `Oygarden2019' on page 16 undefined on input line 240.
-
-
-Package natbib Warning: Citation `legg2007collectiondefinitionsintelligence' on page 16 undefined on input line 246.
-
-
 
 [16]
 
@@ -2292,16 +2183,9 @@ Package marginnote Info: Margin note 38.2 is on absolute page 38 on input line 2
 Package marginnote Info: xpos seems to be 169.9957pt on input line 295.
 
 
-Package natbib Warning: Citation `Descartes1950-DESDOM' on page 18 undefined on input line 304.
-
-
-
 [18]
 
 [19]
-
-Package natbib Warning: Citation `stanford2018ai' on page 20 undefined on input line 338.
-
 Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on input line 343.
 Package hyperref Info: bookmark level for unknown hypothesis defaults to 0 on input line 362.
 
@@ -2326,10 +2210,6 @@ LaTeX Font Info:    Font shape `TS1/ETbb-TLF/regular/it' will be
 
 
 [22{D:/MikTek/fonts/enc/dvips/etbb/etbb_65swoa.enc}]
-
-Package natbib Warning: Citation `bennett2025conscious' on page 23 undefined on input line 417.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2348,9 +2228,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [26]
 
 [27]
-
-Package natbib Warning: Citation `Bathaee2018TheAI' on page 28 undefined on input line 511.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\begingroup' on input line 511.
@@ -2380,21 +2257,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\new@ifnextchar' on input line 511.
 
 
-Package natbib Warning: Citation `Bathaee2018TheAI' on page 28 undefined on input line 512.
-
-
 
 [28]
-
-Package natbib Warning: Citation `GoodmanBakerTenenbaum2009' on page 29 undefined on input line 514.
-
-
-Package natbib Warning: Citation `Hornsby2004' on page 29 undefined on input line 514.
-
 Package marginnote Info: Margin note 49.1 is on absolute page 50 on input line 522.
 Package marginnote Info: xpos seems to be 160.78067pt on input line 522.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3657) has occurred while \output is active []
 
 
 
@@ -2412,28 +2280,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package hyperref Info: bookmark level for unknown assumption defaults to 0 on input line 537.
 
 
-Package natbib Warning: Citation `turing1950computing' on page 31 undefined on input line 544.
-
-
-Package natbib Warning: Citation `gardner1983frames' on page 31 undefined on input line 544.
-
-
-Package natbib Warning: Citation `sapkota2025agentic' on page 31 undefined on input line 544.
-
-
-Package natbib Warning: Citation `derouiche2025agentic' on page 31 undefined on input line 544.
-
-
-Package natbib Warning: Citation `schneider2025generative' on page 31 undefined on input line 544.
-
-
-Package natbib Warning: Citation `wei2025agentic' on page 31 undefined on input line 544.
-
-
-Package natbib Warning: Citation `raza2025trism' on page 31 undefined on input line 544.
-
-
-
 [31]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -2441,53 +2287,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.551     B
            ased on Conjectures~\ref{conj:conjecture_AI_1} and~\ref{conj:conj...
 
-Package natbib Warning: Citation `Jackson2019' on page 32 undefined on input line 564.
-
-
-Package natbib Warning: Citation `GoertzelPennachin2006' on page 32 undefined on input line 564.
-
-
-Package natbib Warning: Citation `Chowdhary2020' on page 32 undefined on input line 564.
-
-
-Package natbib Warning: Citation `10.5555/1671238' on page 32 undefined on input line 564.
-
-
-Package natbib Warning: Citation `shortliffe1976computer' on page 32 undefined on input line 564.
-
-
-Package natbib Warning: Citation `newell1976computer' on page 32 undefined on input line 564.
-
-
-Package natbib Warning: Citation `collins1969retrieval' on page 32 undefined on input line 564.
-
-
-Package natbib Warning: Citation `davis1977production' on page 32 undefined on input line 564.
-
-
-Package natbib Warning: Citation `Lindsay1993DENDRALAC' on page 32 undefined on input line 564.
-
-
-Package natbib Warning: Citation `math13111707' on page 32 undefined on input line 564.
-
-
-
 [32]
 
 Package natbib Warning: Citation `clocksin2003programming' on page 33 undefined on input line 566.
 
-
-Package natbib Warning: Citation `colmerauer1972systeme' on page 33 undefined on input line 566.
-
-
-Package natbib Warning: Citation `colmerauer1993birth' on page 33 undefined on input line 566.
-
-<img/symbolic_prolog1.png, id=2232, 398.23781pt x 493.845pt>
+<img/symbolic_prolog1.png, id=2399, 398.23781pt x 493.845pt>
 File: img/symbolic_prolog1.png Graphic file (type png)
 <use img/symbolic_prolog1.png>
 Package pdftex.def Info: img/symbolic_prolog1.png  used on input line 571.
 (pdftex.def)             Requested size: 137.5999pt x 170.6329pt.
-<img/symbolic_prolog2.png, id=2233, 438.13687pt x 189.70876pt>
+<img/symbolic_prolog2.png, id=2400, 438.13687pt x 189.70876pt>
 File: img/symbolic_prolog2.png Graphic file (type png)
 <use img/symbolic_prolog2.png>
 Package pdftex.def Info: img/symbolic_prolog2.png  used on input line 578.
@@ -2506,119 +2315,25 @@ Package natbib Warning: Citation `clocksin2003programming' on page 33 undefined 
 Package natbib Warning: Citation `clocksin2003programming' on page 33 undefined on input line 582.
 
 
-Package natbib Warning: Citation `VeltenetalMathematicalModelling' on page 33 undefined on input line 588.
-
-
-Package natbib Warning: Citation `song2025languagemodelsfailintrospect' on page 33 undefined on input line 588.
-
-
 
 [33 <./img/symbolic_prolog1.png> <./img/symbolic_prolog2.png>]
-
-Package natbib Warning: Citation `wolpert1996lack' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `shalev-shwartz2010learnability' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `1056797NewellSimon' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `newell1959gps' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `winograd1972understanding' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `michalski1969aq' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `minsky1961steps' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `minsky1968semantic' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `quinlan1986induction' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `solomonoff1964formal1' on page 34 undefined on input line 596.
-
 
 Package natbib Warning: Citation `solomonoff1964formal2' on page 34 undefined on input line 596.
 
 
-Package natbib Warning: Citation `gold1967language' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `newell1958elements' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `cover1965geometrical' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `vapnik1968uniform' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `vapnik1971uniform' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `valiant1984learnable' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `angluin1988queries' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `computationallimits1989' on page 34 undefined on input line 596.
-
-
-Package natbib Warning: Citation `board1992necessity' on page 34 undefined on input line 596.
-
-
 
 [34]
-
-Package natbib Warning: Citation `mcallester1999some' on page 35 undefined on input line 600.
-
-
-Package natbib Warning: Citation `alquier2008pac' on page 35 undefined on input line 600.
-
-
-Package natbib Warning: Citation `haussler1996rigorous' on page 35 undefined on input line 600.
-
-
-Package natbib Warning: Citation `jeon2025informationtheoreticfoundationsmachinelearning' on page 35 undefined on input line 600.
-
-
-Package natbib Warning: Citation `abreu2025topologicalmachinelearningunreduced' on page 35 undefined on input line 600.
-
-
-Package natbib Warning: Citation `10.5555/2721661' on page 35 undefined on input line 600.
-
-<img/learningagent.png, id=2265, 574.145pt x 401.5pt>
+<img/learningagent.png, id=2502, 574.145pt x 401.5pt>
 File: img/learningagent.png Graphic file (type png)
 <use img/learningagent.png>
 Package pdftex.def Info: img/learningagent.png  used on input line 608.
 (pdftex.def)             Requested size: 301.00192pt x 210.49658pt.
-
-Package natbib Warning: Citation `stanford2018ai' on page 35 undefined on input line 609.
-
-
-Package natbib Warning: Citation `stanford2018ai' on page 35 undefined on input line 609.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [35]
-
-Package natbib Warning: Citation `mcculloch_logical_1943' on page 36 undefined on input line 620.
-
-
-Package natbib Warning: Citation `zhang2023divedeeplearning' on page 36 undefined on input line 622.
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2626,92 +2341,16 @@ l.623     W
            e define a $K$-layer fully-connected deep neural network with rea...
 
 [36 <./img/learningagent.png (PNG copy)>]
-
-Package natbib Warning: Citation `GRP_Hamilton' on page 37 undefined on input line 632.
-
-
-Package natbib Warning: Citation `chen2019neuralordinarydifferentialequations' on page 37 undefined on input line 632.
-
-
-Package natbib Warning: Citation `cybenko1989approximation' on page 37 undefined on input line 636.
-
-
-Package natbib Warning: Citation `hornik1989multilayer' on page 37 undefined on input line 636.
-
-
-Package natbib Warning: Citation `leshno1993multilayer' on page 37 undefined on input line 636.
-
-
-Package natbib Warning: Citation `hornik1991approximation' on page 37 undefined on input line 636.
-
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 638.
-
-Package natbib Warning: Citation `tseng2009coordinate' on page 37 undefined on input line 651.
-
-
-Package natbib Warning: Citation `rumelhart1986learning' on page 37 undefined on input line 651.
-
 
 
 [37]
 
-Package natbib Warning: Citation `alon2021bottleneckgraphneuralnetworks' on page 38 undefined on input line 660.
-
-
-Package natbib Warning: Citation `NEURIPS2019_bb04af0f' on page 38 undefined on input line 660.
-
-
-Package natbib Warning: Citation `blum2003noise' on page 38 undefined on input line 660.
-
-
-Package natbib Warning: Citation `garg2021memory' on page 38 undefined on input line 660.
-
-
-Package natbib Warning: Citation `barak2016nearly' on page 38 undefined on input line 660.
-
-
-Package natbib Warning: Citation `blum1992training' on page 38 undefined on input line 660.
-
-
-Package natbib Warning: Citation `abrahamsen2021existential' on page 38 undefined on input line 660.
-
-
-Package natbib Warning: Citation `eldan2016power' on page 38 undefined on input line 660.
-
-
-Package natbib Warning: Citation `telgarsky2016benefits' on page 38 undefined on input line 660.
-
-
-Package natbib Warning: Citation `siegelmann1991turing' on page 38 undefined on input line 660.
-
-
-Package natbib Warning: Citation `weiss2018practical' on page 38 undefined on input line 660.
-
-
-Package natbib Warning: Citation `wolpert1997nofree' on page 38 undefined on input line 660.
+Package natbib Warning: Citation `luo1992convergence' on page 38 undefined on input line 651.
 
 
 
 [38]
-
-Package natbib Warning: Citation `sorscher2023neuralscalinglawsbeating' on page 39 undefined on input line 664.
-
-
-Package natbib Warning: Citation `ivgi-etal-2022-scaling' on page 39 undefined on input line 664.
-
-
-Package natbib Warning: Citation `su2024unravelingmysteryscalinglaws' on page 39 undefined on input line 664.
-
-
-Package natbib Warning: Citation `lee2025neuralscalinglawsleading' on page 39 undefined on input line 664.
-
-
-Package natbib Warning: Citation `doi:10.1073/pnas.2311878121' on page 39 undefined on input line 664.
-
-
-Package natbib Warning: Citation `hsieh2024comprehensiveguideexplainableai' on page 39 undefined on input line 664.
-
-
 
 [39]
 pdfTeX warning (ext4): destination with the same identifier (name{assumption.1}) has been already used, duplicate ignored
@@ -2724,7 +2363,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{conjecture.1})
                    \relax 
 l.689     S
            uppose there exists a measure $\mathcal{M}[L_i \in A_n]\in \mathb...
-<pdf/blueprint1.pdf, id=2330, 462.96765pt x 195.73627pt>
+<pdf/blueprint1.pdf, id=2670, 462.96765pt x 195.73627pt>
 File: pdf/blueprint1.pdf Graphic file (type pdf)
 <use pdf/blueprint1.pdf>
 Package pdftex.def Info: pdf/blueprint1.pdf  used on input line 694.
@@ -2975,7 +2614,7 @@ l.127     A
             (nonzero) \textbf{vector} $\vec{v}$, or $\mathbf{v}$, is a quant...
 
 [63]
-<img/vector1.png, id=2589, 1003.75pt x 393.47pt>
+<img/vector1.png, id=2929, 1003.75pt x 393.47pt>
 File: img/vector1.png Graphic file (type png)
 <use img/vector1.png>
 Package pdftex.def Info: img/vector1.png  used on input line 159.
@@ -3003,7 +2642,7 @@ l.192     T
 
 [65]
 Package hyperref Info: bookmark level for unknown question defaults to 0 on input line 226.
-<img/vector_sum-001.png, id=2616, 1716.4125pt x 629.35126pt>
+<img/vector_sum-001.png, id=2956, 1716.4125pt x 629.35126pt>
 File: img/vector_sum-001.png Graphic file (type png)
 <use img/vector_sum-001.png>
 Package pdftex.def Info: img/vector_sum-001.png  used on input line 231.
@@ -3026,19 +2665,12 @@ l.311     A
 
 [68]
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 352.
-<img/jjgh.jpg, id=2670, 230.2407pt x 202.73973pt>
+<img/jjgh.jpg, id=3010, 230.2407pt x 202.73973pt>
 File: img/jjgh.jpg Graphic file (type jpg)
 <use img/jjgh.jpg>
 Package pdftex.def Info: img/jjgh.jpg  used on input line 384.
 (pdftex.def)             Requested size: 171.99922pt x 151.45735pt.
-
-
-Package natbib Warning: Citation `ANDRILLI20101' on page 69 undefined on input line 385.
-
-
-Package natbib Warning: Citation `ANDRILLI20101' on page 69 undefined on input line 385.
-
-<img/matmulss.png, id=2671, 1027.84pt x 905.3825pt>
+<img/matmulss.png, id=3015, 1027.84pt x 905.3825pt>
 File: img/matmulss.png Graphic file (type png)
 <use img/matmulss.png>
 Package pdftex.def Info: img/matmulss.png  used on input line 390.
@@ -3281,7 +2913,7 @@ Underfull \vbox (badness 4739) has occurred while \output is active []
 [91]
 Package marginnote Info: Margin note 112.1 is on absolute page 112 on input line 34.
 Package marginnote Info: xpos seems to be 489.43956pt on input line 34.
-<img/markovbound.png, id=2913, 949.29657pt x 450.18187pt>
+<img/markovbound.png, id=3257, 949.29657pt x 450.18187pt>
 File: img/markovbound.png Graphic file (type png)
 <use img/markovbound.png>
 Package pdftex.def Info: img/markovbound.png  used on input line 41.
@@ -3313,12 +2945,8 @@ l.95     L
 [94]
 Package marginnote Info: Margin note 115.1 is on absolute page 115 on input line 176.
 Package marginnote Info: xpos seems to be 214.19864pt on input line 176.
-
-
-Package natbib Warning: Citation `OstaszewskaZajkowski2014' on page 95 undefined on input line 179.
-
 Package marginnote Info: Margin note 115.2 is on absolute page 115 on input line 180.
-Package marginnote Info: xpos seems to be 108.60004pt on input line 180.
+Package marginnote Info: xpos seems to be 228.38081pt on input line 180.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -3616,10 +3244,6 @@ l.379     I
 \openout2 = `content/chapter2.aux'.
 
  (content/chapter2.tex
-
-Package natbib Warning: Citation `VeltenetalMathematicalModelling' on page 125 undefined on input line 8.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3720,7 +3344,7 @@ l.157     I
            n general, because people working with mathematical models has no...
 
 [130]
-<img/problemsolvingdiagram.drawio.png, id=3201, 932.48375pt x 300.12125pt>
+<img/problemsolvingdiagram.drawio.png, id=3550, 932.48375pt x 300.12125pt>
 File: img/problemsolvingdiagram.drawio.png Graphic file (type png)
 <use img/problemsolvingdiagram.drawio.png>
 Package pdftex.def Info: img/problemsolvingdiagram.drawio.png  used on input line 164.
@@ -3728,7 +3352,7 @@ Package pdftex.def Info: img/problemsolvingdiagram.drawio.png  used on input lin
 
 
 [131 <./img/problemsolvingdiagram.drawio.png>]
-<img/blackboxstatistics.png, id=3212, 805.0075pt x 746.79pt>
+<img/blackboxstatistics.png, id=3561, 805.0075pt x 746.79pt>
 File: img/blackboxstatistics.png Graphic file (type png)
 <use img/blackboxstatistics.png>
 Package pdftex.def Info: img/blackboxstatistics.png  used on input line 195.
@@ -3748,7 +3372,7 @@ Package marginnote Info: xpos seems to be 191.15689pt on input line 213.
 
 
 [132 <./img/blackboxstatistics.png>]
-<img/expreise.png, id=3219, 420.06938pt x 425.33907pt>
+<img/expreise.png, id=3568, 420.06938pt x 425.33907pt>
 File: img/expreise.png Graphic file (type png)
 <use img/expreise.png>
 Package pdftex.def Info: img/expreise.png  used on input line 218.
@@ -3771,21 +3395,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2})
                    \relax 
 l.258     A
             mathematical model $(S,Q,M)$ is called:
-<img/purityxkcd.png, id=3233, 742.775pt x 309.155pt>
+<img/purityxkcd.png, id=3582, 742.775pt x 309.155pt>
 File: img/purityxkcd.png Graphic file (type png)
 <use img/purityxkcd.png>
 Package pdftex.def Info: img/purityxkcd.png  used on input line 274.
 (pdftex.def)             Requested size: 430.00462pt x 178.9798pt.
 
 
-Package natbib Warning: Citation `VeltenetalMathematicalModelling' on page 135 undefined on input line 277.
-
-
-
 [135 <./img/purityxkcd.png (PNG copy)>]
 
 [136]
-<img/Platon_Cave_Sanraedam_1604.jpg, id=3247, 1606.0pt x 1170.3725pt>
+<img/Platon_Cave_Sanraedam_1604.jpg, id=3598, 1606.0pt x 1170.3725pt>
 File: img/Platon_Cave_Sanraedam_1604.jpg Graphic file (type jpg)
 <use img/Platon_Cave_Sanraedam_1604.jpg>
 Package pdftex.def Info: img/Platon_Cave_Sanraedam_1604.jpg  used on input line 317.
@@ -3842,10 +3462,6 @@ l.58     A
            \textbf{Turing machine} $M$ is a 6-tuple $\{Q,\Sigma,\Gamma, \del...
 
 [143{D:/MikTek/fonts/enc/dvips/etbb/etbb_6bhqsy.enc}]
-
-Package natbib Warning: Citation `compmodel2016' on page 144 undefined on input line 99.
-
-
 
 [144]
 Overfull \hbox (11.88934pt too wide) in paragraph at lines 114--115
@@ -3924,7 +3540,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.4})
                    \relax 
 l.130     W
            e present the formal form of the generalization learning problem....
-<pdf/figfig-crop.pdf, id=3358, 191.71625pt x 135.50626pt>
+<pdf/figfig-crop.pdf, id=3712, 191.71625pt x 135.50626pt>
 File: pdf/figfig-crop.pdf Graphic file (type pdf)
 <use pdf/figfig-crop.pdf>
 Package pdftex.def Info: pdf/figfig-crop.pdf  used on input line 140.
@@ -4013,7 +3629,7 @@ l.341     A
             rule $\mathcal{A}$ is an SRM (Structural Risk Minimizer), denote...
 
 [160]
-<img/mamamia.png, id=3475, 600.5637pt x 315.8199pt>
+<img/mamamia.png, id=3829, 600.5637pt x 315.8199pt>
 File: img/mamamia.png Graphic file (type png)
 <use img/mamamia.png>
 Package pdftex.def Info: img/mamamia.png  used on input line 390.
@@ -4021,408 +3637,388 @@ Package pdftex.def Info: img/mamamia.png  used on input line 390.
 
 
 [161 <./img/mamamia.png>]
-Package marginnote Info: Margin note 182.1 is on absolute page 182 on input line 407.
-Package marginnote Info: xpos seems to be 233.38261pt on input line 407.
-
 
 [162]
+Package marginnote Info: Margin note 183.1 is on absolute page 183 on input line 429.
+Package marginnote Info: xpos seems to be 196.52449pt on input line 429.
+
+
+[163]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.422     A
+l.444     A
             learning scenario is called \textit{model-specific} learning if,...
-Package marginnote Info: Margin note 183.1 is on absolute page 183 on input line 428.
-Package marginnote Info: xpos seems to be 429.73428pt on input line 428.
+Package marginnote Info: Margin note 184.1 is on absolute page 184 on input line 450.
+Package marginnote Info: xpos seems to be 466.5924pt on input line 450.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.430     A
+l.452     A
             learning scenario is called \textit{model-free} learning if, for...
 
-[163]
+[164]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.457     L
+l.479     L
            et $\mathcal{C}$ be a concept class over $X$. We say that $\mathc...
-Package marginnote Info: Margin note 184.1 is on absolute page 184 on input line 476.
-Package marginnote Info: xpos seems to be 145.16978pt on input line 476.
+Package marginnote Info: Margin note 185.1 is on absolute page 185 on input line 498.
+Package marginnote Info: xpos seems to be 108.31166pt on input line 498.
 
 
-[164]
+[165]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.483     F
+l.505     F
            or a given concept class $\mathcal{C}$, a \textbf{representation ...
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
-(Font)              using `U/stmry/m/n' instead on input line 483.
+(Font)              using `U/stmry/m/n' instead on input line 505.
 
-Package marginnote Info: Margin note 185.1 is on absolute page 185 on input line 488.
-Package marginnote Info: xpos seems to be 140.6256pt on input line 488.
+Package marginnote Info: Margin note 186.1 is on absolute page 186 on input line 510.
+Package marginnote Info: xpos seems to be 177.48372pt on input line 510.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.493     G
+l.515     G
            iven a concept $c\in\mathcal{C}$, the \textbf{representation comp...
 pdfTeX warning (ext4): destination with the same identifier (name{definition.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.504     A
+l.526     A
             concept class $\mathcal{C}$ is said to be \textbf{PAC-learnable}...
 
-[165]
+[166]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.518     W
+l.540     W
            e say that an algorithm is a consistent learner for a concept cla...
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 528.
+(hyperref)                removing `math shift' on input line 550.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 528.
+(hyperref)                removing `math shift' on input line 550.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.533     L
+l.555     L
            et $H$ be a finite set of functions mapping from $\mathcal{X}\to ...
-
-[166]
 
 [167]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 591.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 591.
-
-Package hyperref Info: bookmark level for unknown col defaults to 0 on input line 597.
-
-
 [168]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 613.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 613.
+
+Package hyperref Info: bookmark level for unknown col defaults to 0 on input line 619.
+
+
+[169]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.657     L
+l.679     L
            et $\mathcal{H}$ be a finite hypothesis set. Then, for any $\delt...
 
-[169]
+[170]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.694     A
+l.716     A
             concept class $\mathcal{C}$ is said to be \textbf{PAC-learnable}...
 
-[170]
+[171]
 pdfTeX warning (ext4): destination with the same identifier (name{proposition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.709     F
+l.731     F
            or any $h\in\mathcal{H}$, for any $\delta\in(0,1)$,
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.741     A
+l.763     A
            ssume that $\mathrm{card}(\mathcal{H})=M<+\infty$, for any $\delt...
 
-[171]
-Package marginnote Info: Margin note 192.1 is on absolute page 192 on input line 773.
-Package marginnote Info: xpos seems to be 421.46751pt on input line 773.
+[172]
+Package marginnote Info: Margin note 193.1 is on absolute page 193 on input line 795.
+Package marginnote Info: xpos seems to be 384.60939pt on input line 795.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.775     G
+l.797     G
            iven a distribution $\mathcal{D}$ over $\mathcal{X}\times \mathca...
 
-[172]
+[173]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.800     L
+l.822     L
            et $\alpha \geq 0$ and $0\leq \beta < 1$ be constant. $L$ is an $...
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.811     F
+l.833     F
            ix $n$. Then $\mathcal{O}(n\cdot size(c))^{\alpha} m^{\beta}$ is ...
 
-[173]
+[174]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.824     L
+l.846     L
            et $L$ be an efficient $(\alpha,\beta)$-Occam algorithm for $\mat...
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.835     L
+l.857     L
            et $\mathcal{C}$ be a concept class and $\mathcal{H}$ a represent...
 
-[174]
+[175]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.884     T
+l.906     T
            he representation class of conjunctions of boolean literals is ef...
 
-[175]
-
 [176]
-Package marginnote Info: Margin note 197.1 is on absolute page 197 on input line 946.
-Package marginnote Info: xpos seems to be 203.84146pt on input line 946.
-Package marginnote Info: Margin note 197.2 is on absolute page 197 on input line 952.
-Package marginnote Info: xpos seems to be 240.08536pt on input line 952.
-
 
 [177]
-Package marginnote Info: Margin note 198.1 is on absolute page 198 on input line 958.
-Package marginnote Info: xpos seems to be 346.03853pt on input line 958.
+Package marginnote Info: Margin note 198.1 is on absolute page 198 on input line 968.
+Package marginnote Info: xpos seems to be 240.69958pt on input line 968.
+Package marginnote Info: Margin note 198.2 is on absolute page 198 on input line 974.
+Package marginnote Info: xpos seems to be 276.94348pt on input line 974.
+
+
+[178]
+Package marginnote Info: Margin note 199.1 is on absolute page 199 on input line 980.
+Package marginnote Info: xpos seems to be 309.1804pt on input line 980.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.959     L
+l.981     L
            et $\mathcal{D}$ denote the distribution according to which sampl...
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.968     L
+l.990     L
            et $\mathcal{G}$ be a family of functions mapping from $\mathcal{...
 
-[178]
+[179]
 pdfTeX warning (ext4): destination with the same identifier (name{col.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1035     S
+l.1057     S
             uppose that a sample $S$ of size $m$ is drawn according to distr...
 
-[179]
-
 [180]
+
+[181]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1079     L
+l.1101     L
             et $\mathcal{H}$ be a family of functions taking values in $\{-1...
 pdfTeX warning (ext4): destination with the same identifier (name{example.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1093 L
+l.1115 L
         et $\Pi=\{A_1, \dots,A_k\}$ be a fixed partition of $\mathcal{X}$, s...
 
-[181]
-Package marginnote Info: Margin note 202.1 is on absolute page 202 on input line 1131.
-Package marginnote Info: xpos seems to be 503.47517pt on input line 1131.
+[182]
+Package marginnote Info: Margin note 203.1 is on absolute page 203 on input line 1153.
+Package marginnote Info: xpos seems to be 466.61705pt on input line 1153.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1132     G
+l.1154     G
             iven a binary class of functions $\mathcal{H}$, we define the \t...
 pdfTeX warning (ext4): destination with the same identifier (name{lemma.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1141     L
+l.1163     L
             et $A$ be a finite subset of $\mathbb{R}^{m}$, and let $$\max_{\...
 pdfTeX warning (ext4): destination with the same identifier (name{col.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1149     L
+l.1171     L
             et $\mathcal{G}$ be a family of functions taking values in $\{-1...
 
-[182]
-Package marginnote Info: Margin note 203.1 is on absolute page 203 on input line 1186.
-Package marginnote Info: xpos seems to be 75.35121pt on input line 1186.
-
-
 [183]
-<img/hyperplane.png, id=3743, 1423.3175pt x 602.25pt>
+Package marginnote Info: Margin note 204.1 is on absolute page 204 on input line 1208.
+Package marginnote Info: xpos seems to be 112.20934pt on input line 1208.
+
+
+[184]
+<img/hyperplane.png, id=4103, 1423.3175pt x 602.25pt>
 File: img/hyperplane.png Graphic file (type png)
 <use img/hyperplane.png>
-Package pdftex.def Info: img/hyperplane.png  used on input line 1219.
+Package pdftex.def Info: img/hyperplane.png  used on input line 1241.
 (pdftex.def)             Requested size: 301.00192pt x 127.35843pt.
-<img/halfspace_illustration_c4.png, id=3746, 1204.5pt x 1361.085pt>
+<img/halfspace_illustration_c4.png, id=4106, 1204.5pt x 1361.085pt>
 File: img/halfspace_illustration_c4.png Graphic file (type png)
 <use img/halfspace_illustration_c4.png>
-Package pdftex.def Info: img/halfspace_illustration_c4.png  used on input line 1224.
+Package pdftex.def Info: img/halfspace_illustration_c4.png  used on input line 1246.
 (pdftex.def)             Requested size: 171.99922pt x 194.35123pt.
 
 
-[184 <./img/hyperplane.png (PNG copy)>]
-Package marginnote Info: Margin note 205.1 is on absolute page 205 on input line 1230.
-Package marginnote Info: xpos seems to be 380.75127pt on input line 1230.
+[185 <./img/hyperplane.png (PNG copy)>]
+Package marginnote Info: Margin note 206.1 is on absolute page 206 on input line 1252.
+Package marginnote Info: xpos seems to be 417.60939pt on input line 1252.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1232     W
+l.1254     W
             e say that a finite set $S\subset \mathcal{X}$ is \textbf{shatte...
-Package marginnote Info: Margin note 205.2 is on absolute page 205 on input line 1236.
-Package marginnote Info: xpos seems to be 344.88986pt on input line 1236.
+Package marginnote Info: Margin note 206.2 is on absolute page 206 on input line 1258.
+Package marginnote Info: xpos seems to be 381.74799pt on input line 1258.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1237     T
+l.1259     T
             he \textbf{VC}-dimension of a hypothesis set $\mathcal{H}$ is th...
 pdfTeX warning (ext4): destination with the same identifier (name{example.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1249     O
+l.1271     O
             ur first example involves the hypothesis class of intervals on r...
 
-[185 <./img/halfspace_illustration_c4.png>]
-<img/vc_dim_ex1.png, id=3765, 587.94656pt x 148.30406pt>
+[186 <./img/halfspace_illustration_c4.png>]
+<img/vc_dim_ex1.png, id=4125, 587.94656pt x 148.30406pt>
 File: img/vc_dim_ex1.png Graphic file (type png)
 <use img/vc_dim_ex1.png>
-Package pdftex.def Info: img/vc_dim_ex1.png  used on input line 1256.
+Package pdftex.def Info: img/vc_dim_ex1.png  used on input line 1278.
 (pdftex.def)             Requested size: 344.005pt x 86.77222pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{example.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1260     C
+l.1282     C
             onsider the set of all hyperplanes in $\mathbb{R}^{2}$. We obser...
-<img/vc_dim_ex2.png, id=3770, 316.93407pt x 181.42781pt>
+<img/vc_dim_ex2.png, id=4130, 316.93407pt x 181.42781pt>
 File: img/vc_dim_ex2.png Graphic file (type png)
 <use img/vc_dim_ex2.png>
-Package pdftex.def Info: img/vc_dim_ex2.png  used on input line 1274.
+Package pdftex.def Info: img/vc_dim_ex2.png  used on input line 1296.
 (pdftex.def)             Requested size: 215.0023pt x 123.08136pt.
 
 
-[186 <./img/vc_dim_ex1.png> <./img/vc_dim_ex2.png>]
-<img/convex_set.png, id=3786, 486.81876pt x 227.85126pt>
+[187 <./img/vc_dim_ex1.png> <./img/vc_dim_ex2.png>]
+<img/convex_set.png, id=4146, 486.81876pt x 227.85126pt>
 File: img/convex_set.png Graphic file (type png)
 <use img/convex_set.png>
-Package pdftex.def Info: img/convex_set.png  used on input line 1298.
+Package pdftex.def Info: img/convex_set.png  used on input line 1320.
 (pdftex.def)             Requested size: 215.0023pt x 100.63034pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{lemma.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1307     I
+l.1329     I
             f $C$ is a convex subset of $\mathbb{R}^{d}$ and $a_{1},\dots,a_...
-Package marginnote Info: Margin note 207.1 is on absolute page 207 on input line 1310.
-Package marginnote Info: xpos seems to be 357.31952pt on input line 1310.
+Package marginnote Info: Margin note 208.1 is on absolute page 208 on input line 1332.
+Package marginnote Info: xpos seems to be 394.17764pt on input line 1332.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1311     G
+l.1333     G
             iven a set $A$, the convex hull of a set $A$, denoted by $\mathr...
 
-[187 <./img/convex_set.png (PNG copy)>]
+[188 <./img/convex_set.png (PNG copy)>]
 pdfTeX warning (ext4): destination with the same identifier (name{lemma.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1326     L
+l.1348     L
             et $P=\{p_{1},\dots,p_{n}\}\subset \mathbb{R}^{d}$ be a finite s...
-Package marginnote Info: Margin note 208.1 is on absolute page 208 on input line 1346.
-Package marginnote Info: xpos seems to be 487.72511pt on input line 1346.
+Package marginnote Info: Margin note 209.1 is on absolute page 209 on input line 1368.
+Package marginnote Info: xpos seems to be 450.86699pt on input line 1368.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1347     L
+l.1369     L
             et $\mathcal{A}$ be a subset in $\mathbb{R}^{d}$. Suppose that $...
 
-[188]
-
 [189]
-Package marginnote Info: Margin note 210.1 is on absolute page 210 on input line 1405.
-Package marginnote Info: xpos seems to be 237.42865pt on input line 1405.
+
+[190]
+Package marginnote Info: Margin note 211.1 is on absolute page 211 on input line 1427.
+Package marginnote Info: xpos seems to be 200.57053pt on input line 1427.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1406     A
+l.1428     A
             ny set of $\mathcal{X}$ of $d+2$ points in $\mathbb{R}^{d}$ can ...
-<img/partition_radon.png, id=3828, 556.32843pt x 170.13562pt>
+<img/partition_radon.png, id=4188, 556.32843pt x 170.13562pt>
 File: img/partition_radon.png Graphic file (type png)
 <use img/partition_radon.png>
-Package pdftex.def Info: img/partition_radon.png  used on input line 1410.
+Package pdftex.def Info: img/partition_radon.png  used on input line 1432.
 (pdftex.def)             Requested size: 301.00192pt x 92.05357pt.
 
 
-[190 <./img/partition_radon.png>]
-Package marginnote Info: Margin note 211.1 is on absolute page 211 on input line 1454.
-Package marginnote Info: xpos seems to be 76.37291pt on input line 1454.
+[191 <./img/partition_radon.png>]
+Package marginnote Info: Margin note 212.1 is on absolute page 212 on input line 1476.
+Package marginnote Info: xpos seems to be 113.23103pt on input line 1476.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1455     L
+l.1477     L
             et $\mathcal{H}$ be a hypothesis set with $\mathrm{VCdim}(\mathc...
 
-[191]
+[192]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1494     L
-            et $\mathcal{H}$ be a hypothesis set with $VC$-dimension $d>1$. ...
-
-[192]
-pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1577     L
+l.1516     L
             et $\mathcal{H}$ be a hypothesis set with $VC$-dimension $d>1$. ...
 
 [193]
+pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1599     L
+            et $\mathcal{H}$ be a hypothesis set with $VC$-dimension $d>1$. ...
+
+[194]
 pdfTeX warning (ext4): destination with the same identifier (name{lemma.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1590     L
+l.1612     L
             et $\alpha$ be a uniformly distributed random variable taking va...
 pdfTeX warning (ext4): destination with the same identifier (name{lemma.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1614     L
+l.1636     L
             et $Z$ be a random variable taking values in $[0,1]$. Then, for ...
-
-[194]
 
 [195]
 
-[196])
+[196]
 
-[197]
+[197])
+
+[198]
 \openout2 = `content/chapter6.aux'.
 
  (content/chapter6.tex
-
-[198
-
-
-
-
-]
-
-Package natbib Warning: Citation `zhang2023divedeeplearning' on page 199 undefined on input line 5.
-
-
-Package natbib Warning: Citation `10.5555/2721661' on page 199 undefined on input line 5.
-
-
-Package natbib Warning: Citation `mcculloch_logical_1943' on page 199 undefined on input line 9.
-
-
-Package natbib Warning: Citation `1180370208' on page 199 undefined on input line 9.
-
-
-Package natbib Warning: Citation `purves_neuroscience_2004' on page 199 undefined on input line 9.
-
 Package marginnote Info: Margin note 219.1 is on absolute page 219 on input line 16.
 Package marginnote Info: xpos seems to be 226.24063pt on input line 16.
 
@@ -4431,14 +4027,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{note.1}) has b
                    \relax 
 l.18     I
           n the brain, a nerve bundle connects two regions and allows signal...
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2027) has occurred while \output is active []
 
 
 
-[199]
+[199
+
+
+
+
+]
 Package marginnote Info: Margin note 220.1 is on absolute page 220 on input line 26.
 Package marginnote Info: xpos seems to be 270.68753pt on input line 26.
-<img/brainneuron1.png, id=3931, 517.935pt x 248.93pt>
+<img/brainneuron1.png, id=4299, 517.935pt x 248.93pt>
 File: img/brainneuron1.png Graphic file (type png)
 <use img/brainneuron1.png>
 Package pdftex.def Info: img/brainneuron1.png  used on input line 31.
@@ -4454,52 +4055,39 @@ Package marginnote Info: xpos seems to be 498.6831pt on input line 37.
 
 
 [200 <./img/brainneuron1.png (PNG copy)>]
-
-Package natbib Warning: Citation `WERKER198449' on page 201 undefined on input line 39.
-
-<img/cajal1.png, id=3938, 722.7pt x 1027.84pt>
+<img/cajal1.png, id=4308, 722.7pt x 1027.84pt>
 File: img/cajal1.png Graphic file (type png)
 <use img/cajal1.png>
 Package pdftex.def Info: img/cajal1.png  used on input line 46.
 (pdftex.def)             Requested size: 129.00269pt x 183.46623pt.
-<img/golgi1.png, id=3939, 783.92876pt x 1027.84pt>
+<img/golgi1.png, id=4309, 783.92876pt x 1027.84pt>
 File: img/golgi1.png Graphic file (type png)
 <use img/golgi1.png>
 Package pdftex.def Info: img/golgi1.png  used on input line 54.
 (pdftex.def)             Requested size: 129.00269pt x 169.13145pt.
-<img/SantiagoRamónyCajalNetwork.png, id=3940, 1373.13pt x 1887.05pt>
+<img/SantiagoRamónyCajalNetwork.png, id=4310, 1373.13pt x 1887.05pt>
 File: img/SantiagoRamónyCajalNetwork.png Graphic file (type png)
 <use img/SantiagoRamónyCajalNetwork.png>
 Package pdftex.def Info: img/SantiagoRamónyCajalNetwork.png  used on input line 62.
 (pdftex.def)             Requested size: 129.00269pt x 177.25603pt.
-<img/overwhelminglycomplexshit.png, id=3941, 918.43124pt x 777.65532pt>
+<img/overwhelminglycomplexshit.png, id=4311, 918.43124pt x 777.65532pt>
 File: img/overwhelminglycomplexshit.png Graphic file (type png)
 <use img/overwhelminglycomplexshit.png>
 Package pdftex.def Info: img/overwhelminglycomplexshit.png  used on input line 76.
 (pdftex.def)             Requested size: 344.005pt x 291.27591pt.
 
-Package natbib Warning: Citation `purves_neuroscience_2004' on page 201 undefined on input line 77.
-
-
-Package natbib Warning: Citation `purves_neuroscience_2004' on page 201 undefined on input line 77.
-
-
 
 [201 <./img/cajal1.png (PNG copy)> <./img/golgi1.png (PNG copy)> <./img/SantiagoRamónyCajalNetwork.png>]
 Package marginnote Info: Margin note 222.1 is on absolute page 222 on input line 80.
 Package marginnote Info: xpos seems to be 389.93596pt on input line 80.
-
-
-Package natbib Warning: Citation `gerlach1872struktur' on page 202 undefined on input line 80.
-
 Package marginnote Info: Margin note 222.2 is on absolute page 223 on input line 80.
-Package marginnote Info: xpos seems to be 273.79842pt on input line 80.
+Package marginnote Info: xpos seems to be 367.52777pt on input line 80.
 
 
 [202 <./img/overwhelminglycomplexshit.png>]
 
 [203]
-<img/abstractionpps.png, id=3959, 983.675pt x 698.61pt>
+<img/abstractionpps.png, id=4337, 983.675pt x 698.61pt>
 File: img/abstractionpps.png Graphic file (type png)
 <use img/abstractionpps.png>
 Package pdftex.def Info: img/abstractionpps.png  used on input line 109.
@@ -4531,10 +4119,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{question.1}) h
 l.152     H
            ow is information, or \textbf{resources per matters} are preserve...
 
-Package natbib Warning: Citation `liu2025kankolmogorovarnoldnetworks' on page 206 undefined on input line 154.
-
-
-
 [206]
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -4560,7 +4144,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
                    \relax 
 l.184     L
            et $x$ be a neuron of arbitrary neuronal classification $\mathcal...
-<img/nn1.png, id=3992, 662.475pt x 82.3075pt>
+<img/nn1.png, id=4373, 662.475pt x 82.3075pt>
 File: img/nn1.png Graphic file (type png)
 <use img/nn1.png>
 Package pdftex.def Info: img/nn1.png  used on input line 193.
@@ -4580,11 +4164,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package marginnote Info: Margin note 228.5 is on absolute page 229 on input line 202.
 Package marginnote Info: xpos seems to be 339.3554pt on input line 202.
-
-Package natbib Warning: Citation `mcculloch_logical_1943' on page 208 undefined on input line 202.
-
 Package marginnote Info: Margin note 228.6 is on absolute page 229 on input line 203.
-Package marginnote Info: xpos seems to be 381.60214pt on input line 203.
+Package marginnote Info: xpos seems to be 486.69492pt on input line 203.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -4596,7 +4177,7 @@ Underfull \vbox (badness 1902) has occurred while \output is active []
 
 
 [208 <./img/nn1.png>]
-<img/standard_n0_class.png, id=4009, 268.1217pt x 145.9854pt>
+<img/standard_n0_class.png, id=4392, 268.1217pt x 145.9854pt>
 File: img/standard_n0_class.png Graphic file (type png)
 <use img/standard_n0_class.png>
 Package pdftex.def Info: img/standard_n0_class.png  used on input line 242.
@@ -4606,7 +4187,7 @@ Package marginnote Info: xpos seems to be 355.71628pt on input line 247.
 
 
 [209 <./img/standard_n0_class.png>]
-<img/generalized_sn_1.png, id=4020, 3116.64375pt x 808.01875pt>
+<img/generalized_sn_1.png, id=4403, 3116.64375pt x 808.01875pt>
 File: img/generalized_sn_1.png Graphic file (type png)
 <use img/generalized_sn_1.png>
 Package pdftex.def Info: img/generalized_sn_1.png  used on input line 254.
@@ -4629,12 +4210,12 @@ Package marginnote Info: Margin note 231.1 is on absolute page 231 on input line
 Package marginnote Info: xpos seems to be 263.75258pt on input line 272.
 Package marginnote Info: Margin note 231.2 is on absolute page 231 on input line 273.
 Package marginnote Info: xpos seems to be 270.60533pt on input line 273.
-<img/chaining1.png, id=4028, 1297.84875pt x 183.68625pt>
+<img/chaining1.png, id=4411, 1297.84875pt x 183.68625pt>
 File: img/chaining1.png Graphic file (type png)
 <use img/chaining1.png>
 Package pdftex.def Info: img/chaining1.png  used on input line 275.
 (pdftex.def)             Requested size: 344.005pt x 48.68501pt.
-<img/function.png, id=4029, 1753.30031pt x 440.39531pt>
+<img/function.png, id=4412, 1753.30031pt x 440.39531pt>
 File: img/function.png Graphic file (type png)
 <use img/function.png>
 Package pdftex.def Info: img/function.png  used on input line 287.
@@ -4642,32 +4223,32 @@ Package pdftex.def Info: img/function.png  used on input line 287.
 
 
 [211 <./img/chaining1.png> <./img/function.png>]
-<img/sigmoid_illus_x1.png, id=4038, 406.1574pt x 325.215pt>
+<img/sigmoid_illus_x1.png, id=4421, 406.1574pt x 325.215pt>
 File: img/sigmoid_illus_x1.png Graphic file (type png)
 <use img/sigmoid_illus_x1.png>
 Package pdftex.def Info: img/sigmoid_illus_x1.png  used on input line 319.
 (pdftex.def)             Requested size: 137.60461pt x 110.1796pt.
-<img/sigmoid_illus_x2.png, id=4039, 411.2163pt x 325.215pt>
+<img/sigmoid_illus_x2.png, id=4422, 411.2163pt x 325.215pt>
 File: img/sigmoid_illus_x2.png Graphic file (type png)
 <use img/sigmoid_illus_x2.png>
 Package pdftex.def Info: img/sigmoid_illus_x2.png  used on input line 326.
 (pdftex.def)             Requested size: 137.60461pt x 108.82487pt.
-<img/sigmoid_illus_x3.png, id=4040, 411.2163pt x 325.215pt>
+<img/sigmoid_illus_x3.png, id=4423, 411.2163pt x 325.215pt>
 File: img/sigmoid_illus_x3.png Graphic file (type png)
 <use img/sigmoid_illus_x3.png>
 Package pdftex.def Info: img/sigmoid_illus_x3.png  used on input line 333.
 (pdftex.def)             Requested size: 137.60461pt x 108.82487pt.
-<img/sigmoid_illus_x1_2.png, id=4042, 406.1574pt x 325.215pt>
+<img/sigmoid_illus_x1_2.png, id=4425, 406.1574pt x 325.215pt>
 File: img/sigmoid_illus_x1_2.png Graphic file (type png)
 <use img/sigmoid_illus_x1_2.png>
 Package pdftex.def Info: img/sigmoid_illus_x1_2.png  used on input line 351.
 (pdftex.def)             Requested size: 137.60461pt x 110.1796pt.
-<img/sigmoid_illus_x2_2.png, id=4043, 411.2163pt x 325.215pt>
+<img/sigmoid_illus_x2_2.png, id=4426, 411.2163pt x 325.215pt>
 File: img/sigmoid_illus_x2_2.png Graphic file (type png)
 <use img/sigmoid_illus_x2_2.png>
 Package pdftex.def Info: img/sigmoid_illus_x2_2.png  used on input line 358.
 (pdftex.def)             Requested size: 137.60461pt x 108.82487pt.
-<img/sigmoid_illus_x3_2.png, id=4044, 411.2163pt x 325.215pt>
+<img/sigmoid_illus_x3_2.png, id=4427, 411.2163pt x 325.215pt>
 File: img/sigmoid_illus_x3_2.png Graphic file (type png)
 <use img/sigmoid_illus_x3_2.png>
 Package pdftex.def Info: img/sigmoid_illus_x3_2.png  used on input line 365.
@@ -4699,17 +4280,17 @@ Underfull \vbox (badness 3623) has occurred while \output is active []
 
 
 [213 <./img/sigmoid_illus_x1_2.png> <./img/sigmoid_illus_x2_2.png> <./img/sigmoid_illus_x3_2.png>]
-<img/logic_unit_v1.png, id=4063, 3449.88875pt x 1475.5125pt>
+<img/logic_unit_v1.png, id=4446, 3449.88875pt x 1475.5125pt>
 File: img/logic_unit_v1.png Graphic file (type png)
 <use img/logic_unit_v1.png>
 Package pdftex.def Info: img/logic_unit_v1.png  used on input line 447.
 (pdftex.def)             Requested size: 279.50037pt x 119.52936pt.
-<img/logic_unit_v2.png, id=4064, 920.43875pt x 1433.355pt>
+<img/logic_unit_v2.png, id=4447, 920.43875pt x 1433.355pt>
 File: img/logic_unit_v2.png Graphic file (type png)
 <use img/logic_unit_v2.png>
 Package pdftex.def Info: img/logic_unit_v2.png  used on input line 453.
 (pdftex.def)             Requested size: 64.49806pt x 100.43259pt.
-<img/logic_unit_v3.png, id=4065, 6077.70625pt x 1637.11626pt>
+<img/logic_unit_v3.png, id=4448, 6077.70625pt x 1637.11626pt>
 File: img/logic_unit_v3.png Graphic file (type png)
 <use img/logic_unit_v3.png>
 Package pdftex.def Info: img/logic_unit_v3.png  used on input line 472.
@@ -4718,34 +4299,17 @@ Package pdftex.def Info: img/logic_unit_v3.png  used on input line 472.
 
 [214]
 
-Package natbib Warning: Citation `10.5555/50066' on page 215 undefined on input line 479.
-
-
-
 [215 <./img/logic_unit_v1.png> <./img/logic_unit_v2.png> <./img/logic_unit_v3.png>]
-<img/minsky_perceptron_predicate_1.png, id=4085, 578.16pt x 158.09062pt>
+<img/minsky_perceptron_predicate_1.png, id=4470, 578.16pt x 158.09062pt>
 File: img/minsky_perceptron_predicate_1.png Graphic file (type png)
 <use img/minsky_perceptron_predicate_1.png>
 Package pdftex.def Info: img/minsky_perceptron_predicate_1.png  used on input line 495.
 (pdftex.def)             Requested size: 344.005pt x 94.06387pt.
-
-
-Package natbib Warning: Citation `10.5555/50066' on page 216 undefined on input line 496.
-
-
-Package natbib Warning: Citation `10.5555/50066' on page 216 undefined on input line 496.
-
-<img/minsky_perceptron_predicate_2.png, id=4086, 658.71094pt x 173.89969pt>
+<img/minsky_perceptron_predicate_2.png, id=4475, 658.71094pt x 173.89969pt>
 File: img/minsky_perceptron_predicate_2.png Graphic file (type png)
 <use img/minsky_perceptron_predicate_2.png>
 Package pdftex.def Info: img/minsky_perceptron_predicate_2.png  used on input line 508.
 (pdftex.def)             Requested size: 344.005pt x 90.8184pt.
-
-Package natbib Warning: Citation `10.5555/50066' on page 216 undefined on input line 509.
-
-
-Package natbib Warning: Citation `10.5555/50066' on page 216 undefined on input line 509.
-
 
 
 [216 <./img/minsky_perceptron_predicate_1.png> <./img/minsky_perceptron_predicate_2.png>]
@@ -4926,11 +4490,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [233]
+
+Package natbib Warning: Citation `luo1992convergence' on page 234 undefined on input line 18.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [234]
+
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 235 undefined on input line 20.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -4943,6 +4515,10 @@ Package marginnote Info: xpos seems to be 226.01129pt on input line 26.
 [235]
 
 [236]
+
+Package natbib Warning: Citation `Anderson1987' on page 237 undefined on input line 55.
+
+
 Underfull \vbox (badness 1259) has occurred while \output is active []
 
 
@@ -4963,7 +4539,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.3})
                    \relax 
 l.78     T
           he ambiance space $\mathcal{A}$ is defined as the collection of ob...
-<img/model_representation.png, id=4859, 289.8027pt x 181.3977pt>
+<img/model_representation.png, id=5249, 289.8027pt x 181.3977pt>
 File: img/model_representation.png Graphic file (type png)
 <use img/model_representation.png>
 Package pdftex.def Info: img/model_representation.png  used on input line 83.
@@ -5118,10 +4694,6 @@ l.18     A
 
 
 ]
-
-Package natbib Warning: Citation `jacot2018ntk' on page 255 undefined on input line 3.
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{note.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -5190,26 +4762,33 @@ Package marginnote Info: xpos seems to be 275.93411pt on input line 134.
 
  (content/prob/chapter1prob.tex
 
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 263 undefined on input line 7.
+
+
+
 [263
 
 
 
 ]
+
+Package natbib Warning: Citation `bousquet2020theoryuniversallearning' on page 264 undefined on input line 19.
+
+
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 264 undefined on input line 19.
+
+
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 264 undefined on input line 21.
+
+
+Package natbib Warning: Citation `liu2023understandingroleoptimizationdouble' on page 264 undefined on input line 21.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [264]
-
-Package natbib Warning: Citation `piera_sample_2005' on page 265 undefined on input line 39.
-
-
-Package natbib Warning: Citation `MkayPretenceSignalStatistics1993' on page 265 undefined on input line 39.
-
-
-Package natbib Warning: Citation `MkayPretenceSignalStatistics1993' on page 265 undefined on input line 39.
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -5222,36 +4801,48 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) ha
                    \relax 
 l.88     F
           or the expected loss of any given hypothesis $h$, the bias $\mathc...
-
-[266]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.110         A
                 \textbf{parametric model} is one that can be parameterized b...
 
+[266]
+
 [267]
-<pdf/u-shaped.pdf, id=5302, 114.32813pt x 75.23106pt>
+
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 268 undefined on input line 160.
+
+<pdf/u-shaped.pdf, id=5692, 114.32813pt x 75.23106pt>
 File: pdf/u-shaped.pdf Graphic file (type pdf)
 <use pdf/u-shaped.pdf>
 Package pdftex.def Info: pdf/u-shaped.pdf  used on input line 165.
 (pdftex.def)             Requested size: 126.85162pt x 83.46808pt.
-<pdf/doubledescent.pdf, id=5303, 203.12387pt x 75.23106pt>
+<pdf/doubledescent.pdf, id=5693, 203.12387pt x 75.23106pt>
 File: pdf/doubledescent.pdf Graphic file (type pdf)
 <use pdf/doubledescent.pdf>
 Package pdftex.def Info: pdf/doubledescent.pdf  used on input line 166.
 (pdftex.def)             Requested size: 225.37407pt x 83.46808pt.
-<img/errorvscomplexity.png, id=5313, 986.7264pt x 263.5446pt>
+
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 268 undefined on input line 172.
+
+
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 268 undefined on input line 172.
+
+
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 268 undefined on input line 181.
+
+<img/errorvscomplexity.png, id=5697, 986.7264pt x 263.5446pt>
 File: img/errorvscomplexity.png Graphic file (type png)
 <use img/errorvscomplexity.png>
 Package pdftex.def Info: img/errorvscomplexity.png  used on input line 187.
 (pdftex.def)             Requested size: 430.00462pt x 114.85008pt.
-<img/Intro-ocean-test.png, id=5318, 885.0666pt x 493.3632pt>
+<img/Intro-ocean-test.png, id=5702, 885.0666pt x 493.3632pt>
 File: img/Intro-ocean-test.png Graphic file (type png)
 <use img/Intro-ocean-test.png>
 Package pdftex.def Info: img/Intro-ocean-test.png  used on input line 210.
 (pdftex.def)             Requested size: 220.15953pt x 122.72319pt.
-<img/Rn-cifar10-p15-adam-aug-train.png, id=5319, 869.1672pt x 493.3632pt>
+<img/Rn-cifar10-p15-adam-aug-train.png, id=5703, 869.1672pt x 493.3632pt>
 File: img/Rn-cifar10-p15-adam-aug-train.png Graphic file (type png)
 <use img/Rn-cifar10-p15-adam-aug-train.png>
 Package pdftex.def Info: img/Rn-cifar10-p15-adam-aug-train.png  used on input line 214.
@@ -5271,13 +4862,17 @@ l.241 F
        or any natural data distribution $\cD$, neural-network-based training...
 
 [269 <./img/errorvscomplexity.png> <./img/Intro-ocean-test.png> <./img/Rn-cifar10-p15-adam-aug-train.png>]
+
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 270 undefined on input line 256.
+
+
 Underfull \vbox (badness 1354) has occurred while \output is active []
 
 
 
 [270]
 
-Package natbib Warning: Citation `barceló2020modelinterpretabilitylenscomputational' on page 271 undefined on input line 272.
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 271 undefined on input line 274.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -5285,31 +4880,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [271]
-
-Package natbib Warning: Citation `electronics13020416' on page 272 undefined on input line 295.
-
-
-Package natbib Warning: Citation `lipton2016mythos' on page 272 undefined on input line 295.
-
-
-Package natbib Warning: Citation `molnar2020general' on page 272 undefined on input line 295.
-
-
-Package natbib Warning: Citation `molnar2020general' on page 272 undefined on input line 295.
-
-
-Package natbib Warning: Citation `lipton2018troublingtrendsmachinelearning' on page 272 undefined on input line 296.
-
-
-Package natbib Warning: Citation `romer2015mathiness' on page 272 undefined on input line 296.
-
-
-Package natbib Warning: Citation `syll2024postreal' on page 272 undefined on input line 296.
-
-
-Package natbib Warning: Citation `kapoor2022leakage' on page 272 undefined on input line 297.
-
-
 
 [272]
 pdfTeX warning (ext4): destination with the same identifier (name{proposition.1}) has been already used, duplicate ignored
@@ -5320,22 +4890,10 @@ l.320     F
 
 [273]
 
-Package natbib Warning: Citation `zhang2017understandingdeeplearningrequires' on page 274 undefined on input line 332.
+Package natbib Warning: Citation `truong2025rademachercomplexitybasedgeneralizationbounds' on page 274 undefined on input line 332.
 
 
-Package natbib Warning: Citation `nagarajan2021uniformconvergenceunableexplain' on page 274 undefined on input line 332.
-
-
-Package natbib Warning: Citation `tunali2019empirical' on page 274 undefined on input line 332.
-
-
-Package natbib Warning: Citation `bartlett2005local' on page 274 undefined on input line 332.
-
-
-Package natbib Warning: Citation `bartlett2017spectrally' on page 274 undefined on input line 332.
-
-
-Underfull \vbox (badness 2277) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -5347,16 +4905,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
                    \relax 
 l.411     F
            or a given concept class $\mathcal{C}$, a \textbf{representation ...
-
-Package natbib Warning: Citation `Wegener1987' on page 276 undefined on input line 414.
-
-
-Package natbib Warning: Citation `MiltersenRadhakrishnanWegener2005' on page 276 undefined on input line 414.
-
-
-Package natbib Warning: Citation `DarwicheMarquis2002' on page 276 undefined on input line 414.
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{definition.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -5369,16 +4917,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.3})
                    \relax 
 l.439   T
          he \textbf{optimization complexity}, or $\epsilon$-optimization of ...
-
-Package natbib Warning: Citation `wegel2025samplecomplexitysemisupervisedmultiobjective' on page 277 undefined on input line 446.
-
-
-Package natbib Warning: Citation `Mei2022TowardsBridging' on page 277 undefined on input line 446.
-
-
-Package natbib Warning: Citation `Balcan2010TrueSampleComplexity' on page 277 undefined on input line 446.
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{definition.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -5401,17 +4939,17 @@ l.460   A
 [280]
 
 [281]
-<img/Diagramatic_Modelling_View.png, id=5602, 9144.1625pt x 5560.775pt>
+<img/Diagramatic_Modelling_View.png, id=6039, 9144.1625pt x 5560.775pt>
 File: img/Diagramatic_Modelling_View.png Graphic file (type png)
 <use img/Diagramatic_Modelling_View.png>
 Package pdftex.def Info: img/Diagramatic_Modelling_View.png  used on input line 585.
 (pdftex.def)             Requested size: 279.50037pt x 169.95552pt.
-<img/diagram_2.png, id=5604, 203.94594pt x 119.67912pt>
+<img/diagram_2.png, id=6041, 203.94594pt x 119.67912pt>
 File: img/diagram_2.png Graphic file (type png)
 <use img/diagram_2.png>
 Package pdftex.def Info: img/diagram_2.png  used on input line 594.
 (pdftex.def)             Requested size: 279.50037pt x 164.02148pt.
-<img/diagram_3.png, id=5605, 291.2481pt x 176.15813pt>
+<img/diagram_3.png, id=6042, 291.2481pt x 176.15813pt>
 File: img/diagram_3.png Graphic file (type png)
 <use img/diagram_3.png>
 Package pdftex.def Info: img/diagram_3.png  used on input line 603.
@@ -5422,12 +4960,8 @@ Package pdftex.def Info: img/diagram_3.png  used on input line 603.
 
  <./img/Diagramatic_Modelling_View.png>]
 
-Package natbib Warning: Citation `McArtneyInterpolation2003' on page 283 undefined on input line 614.
-
-
-
 [283 <./img/diagram_2.png> <./img/diagram_3.png>]
-<img/double_descent_synthetic.png, id=5617, 1610.015pt x 1385.175pt>
+<img/double_descent_synthetic.png, id=6056, 1610.015pt x 1385.175pt>
 File: img/double_descent_synthetic.png Graphic file (type png)
 <use img/double_descent_synthetic.png>
 Package pdftex.def Info: img/double_descent_synthetic.png  used on input line 659.
@@ -5470,10 +5004,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.2}) ha
 l.769   L
          et $S$ be a locally compact Hausdorff space. Let $A$ be the subset ...
 
-Package natbib Warning: Citation `McArtneyInterpolation2003' on page 287 undefined on input line 782.
-
-
-
 [287]
 pdfTeX warning (ext4): destination with the same identifier (name{definition.3}) has been already used, duplicate ignored
 <to be read again> 
@@ -5485,7 +5015,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) ha
                    \relax 
 l.819 L
        et $(x, \epsilon)\in \R^d\times\R$ independent random variables with ...
-<pdf/theorem_1.pdf, id=5669, 462.96765pt x 279.93083pt>
+<pdf/theorem_1.pdf, id=6111, 462.96765pt x 279.93083pt>
 File: pdf/theorem_1.pdf Graphic file (type pdf)
 <use pdf/theorem_1.pdf>
 Package pdftex.def Info: pdf/theorem_1.pdf  used on input line 837.
@@ -5495,17 +5025,17 @@ Package pdftex.def Info: pdf/theorem_1.pdf  used on input line 837.
 [288
 
 ]
-<pdf/theorem_2.pdf, id=5685, 462.96765pt x 267.93098pt>
+<pdf/theorem_2.pdf, id=6127, 462.96765pt x 267.93098pt>
 File: pdf/theorem_2.pdf Graphic file (type pdf)
 <use pdf/theorem_2.pdf>
 Package pdftex.def Info: pdf/theorem_2.pdf  used on input line 856.
 (pdftex.def)             Requested size: 344.005pt x 199.09573pt.
-<pdf/theorem_3.pdf, id=5690, 462.96765pt x 269.35028pt>
+<pdf/theorem_3.pdf, id=6132, 462.96765pt x 269.35028pt>
 File: pdf/theorem_3.pdf Graphic file (type pdf)
 <use pdf/theorem_3.pdf>
 Package pdftex.def Info: pdf/theorem_3.pdf  used on input line 878.
 (pdftex.def)             Requested size: 344.005pt x 200.1504pt.
-<img/dimensional_descent.png, id=5695, 792.9625pt x 491.8375pt>
+<img/dimensional_descent.png, id=6137, 792.9625pt x 491.8375pt>
 File: img/dimensional_descent.png Graphic file (type png)
 <use img/dimensional_descent.png>
 Package pdftex.def Info: img/dimensional_descent.png  used on input line 884.
@@ -5516,7 +5046,7 @@ Package pdftex.def Info: img/dimensional_descent.png  used on input line 884.
 
 LaTeX Warning: Command \textellipsis invalid in math mode on input line 930.
 
-<pdf/theorem_4_verify.pdf, id=5751, 462.96765pt x 356.13351pt>
+<pdf/theorem_4_verify.pdf, id=6193, 462.96765pt x 356.13351pt>
 File: pdf/theorem_4_verify.pdf Graphic file (type pdf)
 <use pdf/theorem_4_verify.pdf>
 Package pdftex.def Info: pdf/theorem_4_verify.pdf  used on input line 940.
@@ -5533,10 +5063,6 @@ Underfull \vbox (badness 2970) has occurred while \output is active []
 [292]
 
 [293 <./pdf/theorem_4_verify.pdf>]
-
-Package natbib Warning: Citation `Cristianini2000AnIT' on page 294 undefined on input line 969.
-
-
 
 [294
 
@@ -5584,24 +5110,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1})
 l.1251     G
             iven a graph $G(V,E,\psi_{E})$ for $\psi_{E}$ the edge proprieta...
 
-Package natbib Warning: Citation `GRP_Hamilton' on page 302 undefined on input line 1263.
-
-
-Package natbib Warning: Citation `Veli_kovi__2023' on page 302 undefined on input line 1263.
-
-
-Package natbib Warning: Citation `tanis2024introductiongraphneuralnetworks' on page 302 undefined on input line 1263.
-
-
-Package natbib Warning: Citation `lopushanskyy2024graphneuralnetworksgraph' on page 302 undefined on input line 1263.
-
-
-
 [302]
-
-Package natbib Warning: Citation `GRP_Hamilton' on page 303 undefined on input line 1271.
-
-<img/What.png, id=5998, 738.3585pt x 351.714pt>
+<img/What.png, id=6452, 738.3585pt x 351.714pt>
 File: img/What.png Graphic file (type png)
 <use img/What.png>
 Package pdftex.def Info: img/What.png  used on input line 1285.
@@ -5610,7 +5120,10 @@ Package pdftex.def Info: img/What.png  used on input line 1285.
 
 [303 <./img/What.png>]
 
-Package natbib Warning: Citation `GRP_Hamilton' on page 304 undefined on input line 1306.
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 304 undefined on input line 1304.
+
+
+Package natbib Warning: Citation `liu2023understandingroleoptimizationdouble' on page 304 undefined on input line 1304.
 
 )
 
@@ -5747,6 +5260,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  (content/prob/chapter5prob.tex
 
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 317 undefined on input line 6.
+
+
+Package natbib Warning: Citation `bousquet2020theoryuniversallearning' on page 317 undefined on input line 14.
+
+
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 317 undefined on input line 14.
+
+
+
 [317
 
 
@@ -5754,7 +5277,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 
-Package natbib Warning: Citation `gareth_james_introduction_2013' on page 318 undefined on input line 24.
+Package natbib Warning: Citation `belkin_reconciling_2019' on page 318 undefined on input line 16.
+
+
+Package natbib Warning: Citation `liu2023understandingroleoptimizationdouble' on page 318 undefined on input line 16.
 
 
 
@@ -5783,12 +5309,12 @@ l.72     F
 
 
 ]
-<img/0925_rosenblatt4.jpg, id=6270, 903.375pt x 538.26094pt>
+<img/0925_rosenblatt4.jpg, id=6720, 903.375pt x 538.26094pt>
 File: img/0925_rosenblatt4.jpg Graphic file (type jpg)
 <use img/0925_rosenblatt4.jpg>
 Package pdftex.def Info: img/0925_rosenblatt4.jpg  used on input line 36.
 (pdftex.def)             Requested size: 171.99922pt x 102.48418pt.
-<img/A_unit_receptors.png, id=6271, 792.71156pt x 282.30469pt>
+<img/A_unit_receptors.png, id=6721, 792.71156pt x 282.30469pt>
 File: img/A_unit_receptors.png Graphic file (type png)
 <use img/A_unit_receptors.png>
 Package pdftex.def Info: img/A_unit_receptors.png  used on input line 42.
@@ -5826,15 +5352,12 @@ l.57   A
 [326
 
 ]) (appendix/appendix2.tex
-
-Package natbib Warning: Citation `10.5555/2721661' on page 327 undefined on input line 5.
-
-<img/hardlim1.png, id=6436, 568.1225pt x 430.60875pt>
+<img/hardlim1.png, id=6888, 568.1225pt x 430.60875pt>
 File: img/hardlim1.png Graphic file (type png)
 <use img/hardlim1.png>
 Package pdftex.def Info: img/hardlim1.png  used on input line 16.
 (pdftex.def)             Requested size: 215.0023pt x 162.96281pt.
-<img/hardlim3.png, id=6437, 568.1225pt x 430.60875pt>
+<img/hardlim3.png, id=6889, 568.1225pt x 430.60875pt>
 File: img/hardlim3.png Graphic file (type png)
 <use img/hardlim3.png>
 Package pdftex.def Info: img/hardlim3.png  used on input line 29.
@@ -5845,7 +5368,7 @@ Package pdftex.def Info: img/hardlim3.png  used on input line 29.
 
 
  <./img/hardlim1.png>]
-<img/symhardlim.png, id=6445, 585.18625pt x 430.60875pt>
+<img/symhardlim.png, id=6898, 585.18625pt x 430.60875pt>
 File: img/symhardlim.png Graphic file (type png)
 <use img/symhardlim.png>
 Package pdftex.def Info: img/symhardlim.png  used on input line 42.
@@ -5853,12 +5376,12 @@ Package pdftex.def Info: img/symhardlim.png  used on input line 42.
 
 
 [328 <./img/hardlim3.png>]
-<img/saturatinglin.png, id=6454, 568.1225pt x 430.60875pt>
+<img/saturatinglin.png, id=6907, 568.1225pt x 430.60875pt>
 File: img/saturatinglin.png Graphic file (type png)
 <use img/saturatinglin.png>
 Package pdftex.def Info: img/saturatinglin.png  used on input line 77.
 (pdftex.def)             Requested size: 215.0023pt x 162.96281pt.
-<img/symsatlins.png, id=6455, 591.20876pt x 430.60875pt>
+<img/symsatlins.png, id=6908, 591.20876pt x 430.60875pt>
 File: img/symsatlins.png Graphic file (type png)
 <use img/symsatlins.png>
 Package pdftex.def Info: img/symsatlins.png  used on input line 82.
@@ -5867,7 +5390,7 @@ Package pdftex.def Info: img/symsatlins.png  used on input line 82.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/sigmoid.png, id=6456, 568.1225pt x 430.60875pt>
+<img/sigmoid.png, id=6909, 568.1225pt x 430.60875pt>
 File: img/sigmoid.png Graphic file (type png)
 <use img/sigmoid.png>
 Package pdftex.def Info: img/sigmoid.png  used on input line 92.
@@ -5875,7 +5398,7 @@ Package pdftex.def Info: img/sigmoid.png  used on input line 92.
 
 
 [329 <./img/symhardlim.png> <./img/saturatinglin.png>]
-<img/logsigmoid.png, id=6464, 564.1075pt x 435.6275pt>
+<img/logsigmoid.png, id=6917, 564.1075pt x 435.6275pt>
 File: img/logsigmoid.png Graphic file (type png)
 <use img/logsigmoid.png>
 Package pdftex.def Info: img/logsigmoid.png  used on input line 102.
@@ -5887,15 +5410,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 [330 <./img/symsatlins.png> <./img/sigmoid.png>]
-<img/tansig.png, id=6471, 582.175pt x 430.60875pt>
+<img/tansig.png, id=6924, 582.175pt x 430.60875pt>
 File: img/tansig.png Graphic file (type png)
 <use img/tansig.png>
 Package pdftex.def Info: img/tansig.png  used on input line 116.
 (pdftex.def)             Requested size: 215.0023pt x 159.02705pt.
-
-
-Package natbib Warning: Citation `dubey2022activationfunctionsdeeplearning' on page 331 undefined on input line 123.
-
 
 
 [331 <./img/logsigmoid.png> <./img/tansig.png>]
@@ -5936,54 +5455,14 @@ l.236     F
 [336]
 
 [337]
-Underfull \hbox (badness 10000) in paragraph at lines 688--693
-[]\T1/ETbb-TLF/regular/n/7 Pedro M. Domin-gos.  A Unifeid Bias-Variance De-com-po-si-tion and its Ap-pli-ca-tions.  In \T1/ETbb-TLF/regular/it/7 Se-man-tic Scholar\T1/ETbb-TLF/regular/n/7 , June 2000d.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 688--693
-\T1/ETbb-TLF/regular/n/7 URL [][]$\T1/cmtt/m/n/7 https : / / www . semanticscholar . org / paper / A-[]Unifeid-[]Bias-[]Variance-[]Decomposition-[]and-[]its-[]Domingos /
- []
-
-
 
 [338]
 
 [339]
 
 [340]
-Underfull \hbox (badness 1286) in paragraph at lines 1189--1193
-[]\T1/ETbb-TLF/regular/n/7 Mohammad Emtiyaz Khan and H^^F avard Rue.  The Bayesian Learn-ing Rule, June 2024.  URL [][]$\T1/cmtt/m/n/7 http : / / arxiv . org / abs / 2107 . 04562$[][]\T1/ETbb-TLF/regular/n/7 .
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 1238--1242
-[]\T1/ETbb-TLF/regular/n/7 Ilya Kostrikov, Seyed-kam-yar Ghasemipour, and Sergey Levine.  Of-fline re-in-force-ment learn-ing with im-plicit q-learning.  \T1/ETbb-TLF/regular/it/7 arXiv preprint
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1245--1251
-[]\T1/ETbb-TLF/regular/n/7 Alex Krizhevsky, Ilya Sutskever, and Ge-of-frey E. Hin-ton.  Im-a-genet clas-si-fi-ca-tion with deep con-vo-lu-tional neu-ral net-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1245--1251
-\T1/ETbb-TLF/regular/n/7 works.  In \T1/ETbb-TLF/regular/it/7 Ad-vances in Neu-ral In-for-ma-tion Pro-cess-ing Sys-tems (NeurIPS)\T1/ETbb-TLF/regular/n/7 , 2012.  URL [][]$\T1/cmtt/m/n/7 https : / / papers . nips . cc / paper /
- []
-
-
 
 [341]
-Underfull \hbox (badness 2326) in paragraph at lines 1342--1351
-\T1/ETbb-TLF/regular/n/7 D. Bel-grave, A. Fan, U. Pa-quet, J. Tom-czak, and C. Zhang, ed-i-tors, \T1/ETbb-TLF/regular/it/7 Ad-vances in Neu-ral In-for-ma-tion Pro-cess-ing Sys-tems\T1/ETbb-TLF/regular/n/7 , vol-ume 37,
- []
-
-
-Underfull \hbox (badness 6252) in paragraph at lines 1342--1351
-\T1/ETbb-TLF/regular/n/7 pages 25510--25560. Cur-ran As-so-ciates, Inc., 2024.  URL [][]$\T1/cmtt/m/n/7 https : / / proceedings . neurips . cc / paper _ files / paper / 2024 / file /
- []
-
-
 
 [342]
 
@@ -5992,40 +5471,28 @@ Underfull \hbox (badness 6252) in paragraph at lines 1342--1351
 [344]
 
 [345]
-Underfull \hbox (badness 2096) in paragraph at lines 2035--2039
-[]\T1/ETbb-TLF/regular/n/7 Sebastian Ruder.  An overview of gra-di-ent de-scent op-ti-miza-tion al-go-rithms, June 2017.  URL [][]$\T1/cmtt/m/n/7 http : / / arxiv . org / abs / 1609 . 04747$[][]\T1/ETbb-TLF/regular/n/7 .
- []
-
-
 
 [346]
-Underfull \hbox (badness 1546) in paragraph at lines 2370--2374
-[]\T1/ETbb-TLF/regular/n/7 Richard S. Sut-ton and An-drew G. Barto.  \T1/ETbb-TLF/regular/it/7 Re-in-force-ment Learn-ing: An In-tro-duc-tion\T1/ETbb-TLF/regular/n/7 .  MIT Press, 2nd edi-tion, 2018.  Avail-able on-line:
- []
-
-
 
 [347]
 
 [348]
-Underfull \hbox (badness 10000) in paragraph at lines 2718--2724
-[]\T1/ETbb-TLF/regular/n/7 Tong Zhang.  \T1/ETbb-TLF/regular/it/7 Math-e-mat-i-cal Anal-y-sis of Ma-chine Learn-ing Al-go-rithms\T1/ETbb-TLF/regular/n/7 .  Cam-bridge Uni-ver-sity Press, 2023.  doi: $10 . 1017 /
- []
 
+[349]
 
-Underfull \hbox (badness 6944) in paragraph at lines 2718--2724
-\T1/ETbb-TLF/regular/n/7 9781009093057$.  URL [][]$\T1/cmtt/m/n/7 https : / / www . cambridge . org / core / books / mathematical-[]analysis-[]of-[]machine-[]learning-[]algorithms /
- []
+[350]
 
+[351]
 
+[352]
 
-[349])
+[353])
 
 Package natbib Warning: There were undefined citations.
 
 
 
-[350]
+[354]
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
@@ -6039,20 +5506,20 @@ L3 programming layer <2020/03/25>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D5F1AAB64F7149D8F8F941F698078EC8;53125.
+(rerunfilecheck)             Checksum: B8B0AAFC3D4FD5E7A7ED64304B1C634C;53286.
  ) 
 Here is how much of TeX's memory you used:
- 80434 strings out of 468187
- 1939705 string characters out of 5448666
- 2879167 words of memory out of 5000000
- 105319 multiletter control sequences out of 15000+600000
+ 81222 strings out of 468187
+ 1962538 string characters out of 5448666
+ 2889319 words of memory out of 5000000
+ 105905 multiletter control sequences out of 15000+600000
  867459 words of font info for 192 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,25n,120p,4096b,1491s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,25n,120p,4096b,1846s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/dpi600\bbm9.pk><D:/MikTek/fonts/type1/public/etbb/ETbb-Bold.pfb><D:/MikTek/fonts/type1/public/etbb/ETbb-BoldItalic.pfb><D:/MikTek/fonts/type1/public/etbb/ETbb-Italic.pfb><D:/MikTek/fonts/type1/public/etbb/ETbb-Regular.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmss8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmss9.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy9.pfb><D:/MikTek/fonts/type1/public/amsfonts/euler/eufm10.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msam7.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msbm7.pfb><D:/MikTek/fonts/type1/public/cm-super/sfit0900.pfb><D:/MikTek/fonts/type1/public/cm-super/sfrm0800.pfb><D:/MikTek/fonts/type1/public/cm-super/sfrm1000.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss0800.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss0900.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss1000.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss1095.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss1440.pfb><D:/MikTek/fonts/type1/public/cm-super/sfss1728.pfb><D:/MikTek/fonts/type1/public/cm-super/sfsx0900.pfb><D:/MikTek/fonts/type1/public/cm-super/sftt0800.pfb><D:/MikTek/fonts/type1/public/cm-super/sftt0900.pfb><D:/MikTek/fonts/type1/public/cm-super/sftt1000.pfb><D:/MikTek/fonts/type1/public/hoekwater/stmary6.pfb><D:/MikTek/fonts/type1/public/hoekwater/stmary9.pfb>
-Output written on main.pdf (370 pages, 21957424 bytes).
+Output written on main.pdf (374 pages, 22012034 bytes).
 PDF statistics:
- 7678 PDF objects out of 8907 (max. 8388607)
- 2413 named destinations out of 2487 (max. 500000)
- 2754 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 8016 PDF objects out of 8907 (max. 8388607)
+ 2615 named destinations out of 2984 (max. 500000)
+ 2762 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -830,8 +830,6 @@ INPUT D:\MikTek\fonts\vf\public\etbb\ETbb-Italic-tlf-t1.vf
 INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-Italic-tlf-t1--base.tfm
 INPUT D:\MikTek\fonts\vf\public\etbb\ETbb-Bold-tlf-t1.vf
 INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-Bold-tlf-t1--base.tfm
-INPUT D:\MikTek\fonts\vf\public\etbb\ETbb-Bold-tlf-t1.vf
-INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-Bold-tlf-t1--base.tfm
 INPUT D:\MikTek\fonts\tfm\jknappen\ec\ectt0900.tfm
 INPUT .\main.lof
 INPUT .\main.lof
@@ -839,6 +837,8 @@ INPUT main.lof
 INPUT D:\MikTek\fonts\tfm\public\cm\cmss9.tfm
 INPUT D:\MikTek\fonts\tfm\public\cm\cmss8.tfm
 INPUT D:\MikTek\fonts\tfm\public\cm\cmss8.tfm
+INPUT D:\MikTek\fonts\vf\public\etbb\ETbb-Bold-tlf-t1.vf
+INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-Bold-tlf-t1--base.tfm
 INPUT D:\MikTek\fonts\tfm\public\etbb\ETbb-Regular-tlf-t1.tfm
 INPUT .\content\introduction.tex
 INPUT .\content\introduction.tex
