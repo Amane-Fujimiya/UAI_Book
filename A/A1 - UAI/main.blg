@@ -1,0 +1,267 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: content/introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: content/reading.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter1.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc1.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc2.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc3.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc4.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc5.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc6.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc7.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc8.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter2.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter3.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter5.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter6.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/chapter6cs1.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/chapter6cs2.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: content/main/chaptert01.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: content/main/chaptert1.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: content/main/chaptert2.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter1prob.aux
+Reallocating 'name_of_file' (item size: 1) to 32 items.
+A level-1 auxiliary file: content/prob/chapter1.5prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter2prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter3prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter4prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter5prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter6prob.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'field_info' (item size: 4) to 16228 items.
+Database file #1: reference1.bib
+Reallocating 'str_pool' (item size: 1) to 130000 items.
+Warning--I didn't find a database entry for "Bathaee2018TheAI"
+Warning--I didn't find a database entry for "clocksin2003programming"
+Warning--I didn't find a database entry for "stanford2018ai"
+Warning--I didn't find a database entry for "ANDRILLI20101"
+Warning--I didn't find a database entry for "purves_neuroscience_2004"
+Warning--I didn't find a database entry for "10.5555/50066"
+Warning--I didn't find a database entry for "AIWashington"
+Warning--I didn't find a database entry for "10.5555/1671238"
+Warning--I didn't find a database entry for "mcculloch_logical_1943"
+Warning--I didn't find a database entry for "1056797NewellSimon"
+Warning--I didn't find a database entry for "Goel_2022"
+Warning--I didn't find a database entry for "articleMetaxiotis"
+Warning--I didn't find a database entry for "simon1969_sciences"
+Warning--I didn't find a database entry for "putnam1988_representation"
+Warning--I didn't find a database entry for "fodor1975_languageofthought"
+Warning--I didn't find a database entry for "churchland1986_neurophilosophy"
+Warning--I didn't find a database entry for "dennett1978_brainstorms"
+Warning--I didn't find a database entry for "dennett1991_consciousness"
+Warning--I didn't find a database entry for "scheutz2002_computationalism"
+Warning--I didn't find a database entry for "dodig2012_infocomputationalism"
+Warning--I didn't find a database entry for "gauvrit2015_algorithmic_cognition"
+Warning--I didn't find a database entry for "copeland2018_evolution_computationalism"
+Warning--I didn't find a database entry for "searle1980_mindsbrains"
+Warning--I didn't find a database entry for "searle1992_rediscovery"
+Warning--I didn't find a database entry for "penrose1989_emperorsmind"
+Warning--I didn't find a database entry for "penrose1994_shadows"
+Warning--I didn't find a database entry for "nagel2012_mindandcosmos"
+Warning--I didn't find a database entry for "muller2025_symbolgrounding"
+Warning--I didn't find a database entry for "laforte1998_godel_computationalism"
+Warning--I didn't find a database entry for "Oygarden2019"
+Warning--I didn't find a database entry for "legg2007collectiondefinitionsintelligence"
+Warning--I didn't find a database entry for "Descartes1950-DESDOM"
+Warning--I didn't find a database entry for "bennett2025conscious"
+Warning--I didn't find a database entry for "GoodmanBakerTenenbaum2009"
+Warning--I didn't find a database entry for "Hornsby2004"
+Warning--I didn't find a database entry for "turing1950computing"
+Warning--I didn't find a database entry for "gardner1983frames"
+Warning--I didn't find a database entry for "sapkota2025agentic"
+Warning--I didn't find a database entry for "derouiche2025agentic"
+Warning--I didn't find a database entry for "schneider2025generative"
+Warning--I didn't find a database entry for "wei2025agentic"
+Warning--I didn't find a database entry for "raza2025trism"
+Warning--I didn't find a database entry for "Jackson2019"
+Warning--I didn't find a database entry for "GoertzelPennachin2006"
+Warning--I didn't find a database entry for "Chowdhary2020"
+Warning--I didn't find a database entry for "shortliffe1976computer"
+Warning--I didn't find a database entry for "newell1976computer"
+Warning--I didn't find a database entry for "collins1969retrieval"
+Warning--I didn't find a database entry for "davis1977production"
+Warning--I didn't find a database entry for "Lindsay1993DENDRALAC"
+Warning--I didn't find a database entry for "math13111707"
+Warning--I didn't find a database entry for "colmerauer1972systeme"
+Warning--I didn't find a database entry for "colmerauer1993birth"
+Warning--I didn't find a database entry for "VeltenetalMathematicalModelling"
+Warning--I didn't find a database entry for "song2025languagemodelsfailintrospect"
+Warning--I didn't find a database entry for "wolpert1996lack"
+Warning--I didn't find a database entry for "shalev-shwartz2010learnability"
+Warning--I didn't find a database entry for "newell1959gps"
+Warning--I didn't find a database entry for "winograd1972understanding"
+Warning--I didn't find a database entry for "michalski1969aq"
+Warning--I didn't find a database entry for "minsky1961steps"
+Warning--I didn't find a database entry for "minsky1968semantic"
+Warning--I didn't find a database entry for "quinlan1986induction"
+Warning--I didn't find a database entry for "solomonoff1964formal1"
+Warning--I didn't find a database entry for "solomonoff1964formal2"
+Warning--I didn't find a database entry for "gold1967language"
+Warning--I didn't find a database entry for "newell1958elements"
+Warning--I didn't find a database entry for "cover1965geometrical"
+Warning--I didn't find a database entry for "vapnik1968uniform"
+Warning--I didn't find a database entry for "vapnik1971uniform"
+Warning--I didn't find a database entry for "valiant1984learnable"
+Warning--I didn't find a database entry for "angluin1988queries"
+Warning--I didn't find a database entry for "computationallimits1989"
+Warning--I didn't find a database entry for "board1992necessity"
+Warning--I didn't find a database entry for "mcallester1999some"
+Warning--I didn't find a database entry for "alquier2008pac"
+Warning--I didn't find a database entry for "haussler1996rigorous"
+Warning--I didn't find a database entry for "jeon2025informationtheoreticfoundationsmachinelearning"
+Warning--I didn't find a database entry for "abreu2025topologicalmachinelearningunreduced"
+Warning--I didn't find a database entry for "10.5555/2721661"
+Warning--I didn't find a database entry for "zhang2023divedeeplearning"
+Warning--I didn't find a database entry for "GRP_Hamilton"
+Warning--I didn't find a database entry for "chen2019neuralordinarydifferentialequations"
+Warning--I didn't find a database entry for "cybenko1989approximation"
+Warning--I didn't find a database entry for "hornik1989multilayer"
+Warning--I didn't find a database entry for "leshno1993multilayer"
+Warning--I didn't find a database entry for "hornik1991approximation"
+Warning--I didn't find a database entry for "tseng2009coordinate"
+Warning--I didn't find a database entry for "rumelhart1986learning"
+Warning--I didn't find a database entry for "alon2021bottleneckgraphneuralnetworks"
+Warning--I didn't find a database entry for "NEURIPS2019_bb04af0f"
+Warning--I didn't find a database entry for "blum2003noise"
+Warning--I didn't find a database entry for "garg2021memory"
+Warning--I didn't find a database entry for "barak2016nearly"
+Warning--I didn't find a database entry for "blum1992training"
+Warning--I didn't find a database entry for "abrahamsen2021existential"
+Warning--I didn't find a database entry for "eldan2016power"
+Warning--I didn't find a database entry for "telgarsky2016benefits"
+Warning--I didn't find a database entry for "siegelmann1991turing"
+Warning--I didn't find a database entry for "weiss2018practical"
+Warning--I didn't find a database entry for "wolpert1997nofree"
+Warning--I didn't find a database entry for "sorscher2023neuralscalinglawsbeating"
+Warning--I didn't find a database entry for "ivgi-etal-2022-scaling"
+Warning--I didn't find a database entry for "su2024unravelingmysteryscalinglaws"
+Warning--I didn't find a database entry for "lee2025neuralscalinglawsleading"
+Warning--I didn't find a database entry for "doi:10.1073/pnas.2311878121"
+Warning--I didn't find a database entry for "hsieh2024comprehensiveguideexplainableai"
+Warning--I didn't find a database entry for "OstaszewskaZajkowski2014"
+Warning--I didn't find a database entry for "compmodel2016"
+Warning--I didn't find a database entry for "1180370208"
+Warning--I didn't find a database entry for "WERKER198449"
+Warning--I didn't find a database entry for "gerlach1872struktur"
+Warning--I didn't find a database entry for "liu2025kankolmogorovarnoldnetworks"
+Warning--I didn't find a database entry for "jacot2018ntk"
+Warning--I didn't find a database entry for "piera_sample_2005"
+Warning--I didn't find a database entry for "MkayPretenceSignalStatistics1993"
+Warning--I didn't find a database entry for "barceló2020modelinterpretabilitylenscomputational"
+Warning--I didn't find a database entry for "electronics13020416"
+Warning--I didn't find a database entry for "lipton2016mythos"
+Warning--I didn't find a database entry for "molnar2020general"
+Warning--I didn't find a database entry for "lipton2018troublingtrendsmachinelearning"
+Warning--I didn't find a database entry for "romer2015mathiness"
+Warning--I didn't find a database entry for "syll2024postreal"
+Warning--I didn't find a database entry for "kapoor2022leakage"
+Warning--I didn't find a database entry for "zhang2017understandingdeeplearningrequires"
+Warning--I didn't find a database entry for "nagarajan2021uniformconvergenceunableexplain"
+Warning--I didn't find a database entry for "tunali2019empirical"
+Warning--I didn't find a database entry for "bartlett2005local"
+Warning--I didn't find a database entry for "bartlett2017spectrally"
+Warning--I didn't find a database entry for "Wegener1987"
+Warning--I didn't find a database entry for "MiltersenRadhakrishnanWegener2005"
+Warning--I didn't find a database entry for "DarwicheMarquis2002"
+Warning--I didn't find a database entry for "wegel2025samplecomplexitysemisupervisedmultiobjective"
+Warning--I didn't find a database entry for "Mei2022TowardsBridging"
+Warning--I didn't find a database entry for "Balcan2010TrueSampleComplexity"
+Warning--I didn't find a database entry for "McArtneyInterpolation2003"
+Warning--I didn't find a database entry for "Cristianini2000AnIT"
+Warning--I didn't find a database entry for "Veli_kovi__2023"
+Warning--I didn't find a database entry for "tanis2024introductiongraphneuralnetworks"
+Warning--I didn't find a database entry for "lopushanskyy2024graphneuralnetworksgraph"
+Warning--I didn't find a database entry for "gareth_james_introduction_2013"
+Warning--I didn't find a database entry for "dubey2022activationfunctionsdeeplearning"
+Warning--to sort, need author or key in noauthor_bias-variance_nodate
+Warning--to sort, need author or key in unified_bias_composition
+Warning--to sort, need author or key in noauthor_pdf_nodate-1
+Warning--to sort, need author or key in bgpt2024
+Warning--empty year in noauthor_bias-variance_nodate
+Warning--empty year in noauthor_pdf_nodate-1
+Warning--empty year in unified_bias_composition
+Warning--empty author in bgpt2024
+Warning--empty year in achlioptas_stochastic_nodate
+Warning--empty year in achlioptas_stochastic_nodate
+Warning--empty booktitle in Briggs2014MachineE
+Warning--empty year in Conway1970
+Warning--empty journal in DreyfusImpasse1979
+Warning--empty year in modelcomplex_exp
+Warning--empty publisher in STL_Hajek_Maxim_2021
+Warning--there's a number but no volume in ErdongHu2021
+Warning--empty year in EXFOR
+Warning--empty publisher in kaelbling1996reinforcement
+Warning--empty publisher in lang-tate-1958
+Warning--empty journal in navier1823mouvement
+You've used 387 entries,
+            2773 wiz_defined-function locations,
+            3062 strings with 86012 characters,
+and the built_in function-call counts, 174894 in all, are:
+= -- 15614
+> -- 10380
+< -- 288
++ -- 3584
+- -- 3176
+* -- 13646
+:= -- 27394
+add.period$ -- 1534
+call.type$ -- 387
+change.case$ -- 2143
+chr.to.int$ -- 366
+cite$ -- 798
+duplicate$ -- 7861
+empty$ -- 14079
+format.name$ -- 3750
+if$ -- 36622
+int.to.chr$ -- 22
+int.to.str$ -- 1
+missing$ -- 375
+newline$ -- 2292
+num.names$ -- 1541
+pop$ -- 4470
+preamble$ -- 1
+purify$ -- 1807
+quote$ -- 0
+skip$ -- 6164
+stack$ -- 0
+substring$ -- 4778
+swap$ -- 803
+text.length$ -- 46
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 3922
+warning$ -- 20
+while$ -- 1450
+width$ -- 0
+write$ -- 5580
+(There were 162 warnings)

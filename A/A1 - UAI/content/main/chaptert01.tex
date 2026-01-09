@@ -1,0 +1,521 @@
+\chapter{Formal advanced theory}
+
+We have reviewed the concepts, the particular theories and development made in history, and the current usage of the treatment in the field of artificial intelligence and by extension to the modern machine learning theory. While there are much to be desired, it is imperative to note that we did not do a thorough overview, but the general theoretical interest. 
+
+With that, comes evaluation of the classical stance. Even though the classical theory can be seen as quite advanced and matured, in fact, it is not. Rather, it is endowed in the world of mathematics and empiricalism, for its advancements and development as present. Furthermore, which is one of the factor that inflicts the status of \textit{naive} onto the classical treatment, is the overall no coherence structure - given how much and how rapid the changes have been - of the establishment, both practical-wise and theory-wise. Science itself, particularly, also has this problem. Other than that, there is also the fact that the current framework of theoretical artificial intelligence is not matured enough to take on various new questions and problems that are detrimental to their operation and mechanism. If one was to say, then they would be saying that while we dream of AGI (Artificial General Intelligence), we have no tools capable of reaching it aside from the dreams come true of wishes. So much so is also to address a much larger problem present in the meta-theory inspection of the theoretical world, in which everything, will fall into places. 
+
+We introduce the precursor idea of the \textit{Ambiance-Encoding Theory} (AET, or System Encoding Theory), a formal framework distinguishing physical systems from their mathematical representations. Contemporary modeling conflates these layers: the \textit{ambiance space} $\mathcal{A}$ (empirically accessible entities with minimal observational language) and the \textit{encoding space} $\mathrm{ENC}$ (formal descriptions under chosen representation schemes). This conflation generates persistent validation ambiguities across physics, machine learning, and mathematics.
+The framework establishes three validation requirements: (i) explicit ambiance specification independent of formalism, (ii) encoding justification from ambiance requirements rather than mathematical convenience, and (iii) systematic classification of structures as \textit{connected} (ambiance-invariant) or \textit{unconnected} (encoding artifacts). These principles generate algorithmic proof obligations for arbitrary theories.
+Applications demonstrate generative power: string theory's fundamental structures (extra dimensions, vacuum landscape) fail ambiance-grounding tests; machine learning representations are formalized as encoding choices over data ambiance; spectroscopic theory's inconsistencies arise from ambiance-encoding conflation. Extending to mathematics, independence results (Continuum Hypothesis, Axiom of Choice) reveal encoding-dependent structures, formalizing mathematical pluralism.
+
+\section{Justification}
+
+Almost everything in the history of classical and modern sciences are models. Numbers are regarded as the first pre-formal and precursor quantification model of which answer the question of "how much and how many", for quantifying objects into post-physical form (removing physical realization and condition on existence). Physical system and world model first quantize objects, and their interaction principles and intuitions, before evolution into descriptions and formulaic approaches. Such is also different models of artificial intelligence, mathematics, and physical theories sought to describe the world, in one form or another. One of the key hindsight in general of the framework generation, theory defining progresses, is the fact that deliberately, the determination of the world through the body of scientific theories, formal theories and domain-specific, such as different form of physical theories (classical formalism, N/L/H formalism of mechanics, quantum formalism, string theories, operational physics, relativistic theories, causal-based primitives), rely on interpreting, triangulating, extrapolate and form \textbf{models}, using certain primitives language and descriptive system, such as the most generic model options on symbols, sets, cardinality and combinatorial aspects, abstract quantifications, and so on, to set the basis. These basis, under the presumption of approximately ignorable, functions to set up abstractions that allows for the creation of higher order and more sophisticated systems. However, the process itself is not fully understood, and from certain perspective, misdiagnosed and led to questions, debates, disagreement on categorization and functions, such as the epistemological justification of string theory, or the rhetoric on the quantization of quantum mechanics, understood in a wrong way of mismatching between \textit{configuration space}, and \textit{reality ontology}. Such problem occurs in externalized systems, such is also artificial intelligence constructs, machine learning systems, and so on. It is thus the function of the paper to propose an understanding of such concept and notion, and thus to push further on a conjectured framework, that can serve to clarify such questions. And as this introductory section indicates, the problem is widespread. 
+
+It is fairly evident from the amount of structural problems that we have accumulated, that hinted toward \textit{modelling aspect} in which simply stating of reconciling such via formalism and mathematics is impossible. Such problem lies deeper, and states on the inherent dangerousness of principles, axioms and configurations defining on different abstract-capacity space, where mathematics resides as the minimally-abstracted with minimal capacity institution or model, which is able to be coherent and structurally largely consistent within certain structural conformation (even then, Gödel's incompleteness theorem moves the goalpost from understanding axiomatic systems, to perhaps the \textbf{model of mathematics}), while physics, itself being of higher capacity, because it encodes and requires more object, hinged upon many physical properties in realization of the world, to be more unstable. All of such, hints toward the understanding of \textbf{model} as the potential theory that precedes all structural systems, in which mathematics can also be considered in perspective as a model, and so are scientific models in physics, economics, and so on, where there exists the \textbf{oracle}, $\mathcal{O}$ of the reality reference. The paper then is concerned of such development, and especially, the introduction of the \textbf{Ambiance-Encoding Theory} (AET), in which conjectured and formalized such modelling schema and how they are formed. We note that the paper does not attempt to solve every epistemic problems as listed above, or relevant classes, but only certain specific cases or general structures. However, expansions in later works and collaborations are regarded as significant, hence the status of the literature would be to establish the \textit{foundational structure} for the theory of models. 
+
+\subsection{Problem diagnosis}
+Within an example of Artificial Intelligence (AI), developments of the theory have reached a pivotal point of matured positioning on the symbolic/semantic rigidity and statistical failures, and thus develop certain form of mechanism to mitigate such. As is, that includes techniques in conjunction to hypothetical computationalism approaches, for example, the \textbf{learning theory}, or the technique of knowledge encoding, the latent space specifications, modelling constructions, agent-theoretic formalism, \textbf{actionable system feedback} techniques, and so on. Within such, resurfaced the utilization of (super)computers and so on, within the baseline of computational theory of construction, and subsequently, computational learning theory / statistical learning theory (CoLT/SLT). Such system relies on the algorithmic approaches and procedural, computable representation of the automata systems to create models with capacities capable of being called as AI, and in a narrower sense, capable of adjusting or self-regulating response upon which it is provided of observations and situation-aware information. Such is where the word \textit{machine learning} comes, and situated itself as the main anecdotal reason or capability of AI, for an artificial intelligence system to be intelligent, is posited to have the learning process. Of a long history in development, ever since the few first systems and classical notions of AI, \cite{mcculloch_pitts_1943,Rosenblatt1958ThePA,minsky_papert_1969,hebb_1949,Robbins:1951,widrow_hoff_1960_adaline,Hestenes:1952} of the old paradigm in symbolic and neuronal approaches of discrete formulaic learning, to the looser \textit{statistical, data-based learning}, particularly as of \cite{10.1145/1968.1972,Vapnik1999-VAPTNO,10.5555/200548,hopfield_1982,fukushima_1980,cybenko_1989,bishop_1995,haykin_1994,kohonen_1982,6797087,nemirovski_yudin_1983,amari_rattray_saad_1998_natural_gradient_online,10.5555/2371238}, and up to modern development of such materials, such as, \cite{Jacot:2018:NTK,khan_bayesian_2024,buschjager_generalized_2020,Manin_2024,devlin_2018_bert,goodfellow2016deep,kaplan2020scalinglawsneurallanguage,Bronstein_2017,bronstein2021geometricdeeplearninggrids,luo1992convergence,tseng2001convergence,friedman2007pathwise,hu_model_2021,wright2015coordinate,janik2021complexitydeepneuralnetworks}, and so on, of the topics about the modern consideration of learning theories, optimization techniques and interpretation landscape, formal languages of the learning processes, as well as architectures on which modern systems are based on; more advanced techniques are developed, for example, as \textit{reinforcement learning}, as seen of \cite{sutton2018reinforcement,bertsekas1996neuro,bertsekas2019dynamic,szepesvari2010algorithms,lattimore2020bandit,kaelbling1996reinforcement,watkins1992q,bellman1957dynamic,williams1992simple,konda2000actor,mnih2015human,mnih2016asynchronous,silver2016mastering,schulman2015trust,schulman2017ppo,lillicrap2015ddpg,haarnoja2018soft,arulkumaran2017brief,ernst2005tree,fu2020d4rl,kostrikov2021offline}, or \textit{online learning} of \cite{shalev2012online,cesa2006prediction,zinkevich2003online,hazan2016introduction} and \cite{littlestone1994weighted} as authoritative examples. Even further, is toward Large Language Model, or LLM (\cite{vaswani2017attention,devlin2019bert,brown2020language,zhao2023llmsurvey,zhao2024llmsurvey2,radford2019language,radford2018improving,raffel2020exploring,touvron2023llama,touvron2023llama2,chowdhery2022palm,ouyang2022training,wei2022chain,kaplan2020scaling,hoffmann2022training,bai2022constitutional}), where cutting edge efforts and so on are to build agentic systems capable of replacing certain labours kind of human in real systems, and so on improving quality of life. The scope is truly large, the field of applications and its limit overwhelmingly extended, and a much richer landscape was formed in those fields.
+
+However, even with such advancements, certain pushback started to emerge. Those are \textit{structural pushbacks} against previously held assumptions, foundational problems regarding concepts taken for granted of hand-waived, or simply is not considered, structural behaviours out of scope of the dynamical trajectory that classical theory tracks (i.e. a theoretical sensory problem), and inadequacy of theory against empiricism, practiced in the modern AI landscapes. Such mismatch highlights substantial loopholes and opaque understanding and patchworks workaround that was present within the field, in which making a large portion of important problems simply too hard to solve analytically or conclusively, as for example, grokking, seen of \cite{power2022grokkinggeneralizationoverfittingsmall}, or \textit{double descent}, as of \cite{belkin_reconciling_2019,nakkiran_deep_2019}, in which exposes the loose nature of the definition on model selections and its landscape, model complexity, and evaluation on model theoretic approaches. The push for information theoretic learning, statistical interpretation, discourses among different interpretation of the learning setting and so is also for artificial intelligence in general, plus the concerns on explainability of artificial intelligence, of which the modern paradigm poorly offer such, as seen of such pushes on \cite{doshi2017towards,lipton2018mythos,ribeiro2016should,lundberg2017shap,molnar2020interpretable}
+. Foundational problems still retain its strength unquestioned or unresolved, such as \cite{dreyfus1965alchemy,dreyfus1972what,dreyfus1986mind,suchman1987plans,brooks1991intelligence,searle1980minds,mccarthy1969philosophical,harnad1990symbol}. On the more modern side, of contemporary critiques, \cite{pearl2009causality,marcus2018deep,sutton2019bitter}, and the modernized Chinese Room Arguments. The \textit{frame problem}, while problematic and is often ignored by modern practitioners, often resurfaced when discussions about explainability and operability are in range, as well as the epistemological notions of artificial operatives, or proofs that such artificial constructs truly `understand', or `learn', and its particular computational nature. More than all, is the apparent \textit{theoretical entropy} observed from the landscape of development itself. While empiricism pushes forward, such encouraged particular fields, or rather somewhat all of them, to introduce different analogous interpretation, framing, concepts, or treatments in and of their own to the mechanical details of artificial intelligence. While not solving the inherent foundational problems or assumptive framework that it was based on, various different theories are used to tackle, in a heuristically employed manner, to patch different deviations or unexplainable phenomena together\footnote{These recurring failures point to a single underlying functional cause: many pathologies are not merely technical but arise from modelling misalignment — that is, from encoding choices that do not respect the structural indeterminacy present earlier in the modelling pipeline. The consequence is practical: fixing problems inside a formalism (more regularization, more compute, more parameters) frequently treats symptoms rather than the underlying mismatch.}. 
+
+Such problem is not inherently special of AI itself, as the problem is more general than is perceived. Let us define the modelling problem, in which will be relevant in later development of the theory itself. 
+
+\begin{definition}[Modelling problem]\index{modelling problem}
+	A modelling problem occurs when the epistemic choices that fix an encoding produce a systematic mismatch between (i) the structural degrees of freedom available in the ambience/construction stage and (ii) the representational assumptions imposed during encoding. Equivalently, modelling problems appear when the ENC bottleneck forces decisions (origins, gauges, metric choices, discretizations, priors) that are not justified by the underlying ambience, yielding instabilities, non-identifiabilities, or brittle extrapolation in the objectified world.
+\end{definition}
+
+The hard problems are now misalignment between structural capacity, reality reference, and encoding fixation instead. Indeed, of physics, and wider on the landscape of application sciences encountered such problems, by the inability to reconcile with modelling options and approaches. For example, is the quantum measurement problem and interpretations thereof, where there exists the paradox between extremely functional, and operationally accurate formalism (Schrödinger evolution, operators, Born rule), but with the inability to give unambiguous account on the measurement outcome definition and determination, and unobserved behaviours (\cite{Zurek2009,Zurek2018,Pusey_2012}). As such, multiple interpretations coexist, each fills into mismatch of another, while giving tensions of paradox or disagreements within (see of \cite{Zurek2003,vonNeumann1955,Pusey_2012,Bell1964,Everett1957} and \cite{Schlosshauer2004}), so more on even canonical and simple but complex notion of time (\cite{Altaie2022}), and the concern on information loss (\cite{Unruh_2017}). Such problem introduce the core inconsistency - orthodox formalism leaves a conceptual gap (the collapse/appearance of definite outcomes) that the mathematical machinery does not resolve; assumptions (unitary evolution everywhere, observer neutrality) cannot be simultaneously sustained without adding extra structure. On fluid-like systems, where much of targets in which are of PDE and system dynamics analysis, the problem is surrounded of hard systems, like turbulence, or Navier-Stokes equations (\cite{navier1822mouvement,navier1823mouvement,stokes1845internal,leray1934weak,darrigol2002five,bistafa2023navierstokes200,batchelor1967fluid,anderson1995history}). At its core, it is unquestionable that fluid dynamics and the fluid-like dynamical analysis have been tremendously useful toward answering physics and phenomena of the same behaviours (\cite{NSMillenniumProblemWikipedia}). But it also has stalled because of different failure modes seen of the theory itself. For example of fluid dynamics: 
+\begin{enumerate}[leftmargin=0.5cm,topsep=1pt,itemsep=1pt]
+	\item \textbf{The continuum hypothesis and its foundation (?)}: The assumption on this is that fluids and solids can be treated as smooth, continuous media. This means in analytical form, we can essentially ignore their discrete molecular/atomic structure. In \cite{Sharma2022RevisitingFluidMechanics}, the author explicitly argue that "The commonly accepted belief … is that the fluids are composed of tiny parcels of `continuum' … Yet to this date, there is no rationale for why this hypothesis works.", also in \cite{Fefferman2006}. In \cite{Mariano2023FoundationalContinuum}, the author state that continuum mechanics emerge at \textit{long-wavelength approximation}, and does not account directly for the quantum or molecular structure of matters. Attempts have been there for the type of \textbf{quantum fluid dynamics}, but even then, the incorporation is limited. This is also argued in \cite{Kolmogorov1941} and \cite{Frisch1995}. 
+	\item \textbf{Mathematical pathologies, unresolved holes}: The classical Navier-Stokes existence and smoothness problem remains unsolved. It is a fact that we don't even know for sure that the 3D Navier-Stokes equations always admit smooth global solutions for arbitrary nice initial data (\cite{Dou2022NoExistenceNavierStokes,NSMillenniumProblemWikipedia}). Again, of \cite{Sharma2022RevisitingFluidMechanics}, it is indicated that the continuum description leads to mathematical pathologies on assumptions, behaviours that are counterintuitive or beyond justification. Dropping such hypothesis however is logistically hard. 
+	\item \textbf{Model-reality gap}: This includes \textit{closure problems, constitutive modelling, multi-scale effects}. It can be argued that model-reality gap is especially evident in flows with strong multi-scale coupling (granular flows, multiphase flows, turbulent boundary layers) where the continuum approximation struggles, as seen in arguments of \cite{en16010065} analysis. A lot of fluid/continuum mechanics relies on closure assumptions hence. For example, turbulence models, empirical constitutive laws that aren't derived strictly from first-principles, and is patched in. Ontologically, those create unstable theory on itself. 
+\end{enumerate}
+On statistical mechanics, \textit{thermalization} failures and \textit{many-body localization}, equilibrium statistical frameworks assume ergodicity on stable region and convergence, and typically, when these fail, the predictive apparatus, for example, entropy maximization, ensemble equivalence gives incorrect conclusions, thus reducing the expected usage scope of the formation itself. This leads to the observation that while well-founded on its limited set of problems, many quantum and classical many-body systems do not thermalize in expected way, for example, of integrable systems, and prethermalisation, which is largely present in isolated quantum systems for quantum statistical physics (\cite{Mori_2018}). Further critiques on such problem and the stagnation of the theory itself, is found in \cite{Rigol2007,Basko2006,Polkovnikov2011} and \cite{Gogolin2016}.
+\vspace{1mm}
+
+
+On emergence and reductionism, complex systems and so on, macroscopic phenomena, like phase transitions, emergent collective behaviours are qualititatively different from microscopic rules, where many micromodels fall into the same universality class while many specific microscopies don't predict emergent properties. Naive reductionist expectation fails in such non-limited range, and also where theoretical frameworks that ignore emergent degrees of freedom or collective variables can be considered \textit{incomplete}. In actually even, such notion on \textbf{emergence} is also not rigorously defined in a non-structural and intrinsic structural forms, leading to difficulties in analysing such, of its own ontology on whether it is the information loss from our own analysis. This is typically seen of literatures as \cite{Anderson1972,Goldenfeld1992,LaughlinPines2000} and \cite{NicolisPrigogine1977}. Works can be pointed out, specifically of the class of \textit{Conway's Game of Life}, specifically also the Langton's ant (\cite{LangtonsAntWiki}) models, of which can be seen of \cite{Conway1970,HamannSchmicklCrailsheim2011,Cook2004,Cailleteau2017} and \cite{Wolfram2002,Rule110Wiki} on a new kind of science of computational irreducibility principle, which is controversial. The main issue that plagues such analysis remains in the form of percolation-related inability to analyse models and system models in transition of the structural emergence from itself by ergodic runtime or state-transition percolation. Indeed, there is the problem of \textbf{computational irreducibility} and undecidability, for many cellular automata can simulate universal computation, and thus also patterns and questions being undecidable aside from explicitly \textit{simulate them}, which is not similar to numerical `simulation' in classical sense. There exists, by then, no shortcut on analytical theory that always predicts long-term behaviours faster than actual simulation. Secondly, is the emergence beyond reductionist descriptions, where reductionist conform the analysis to microscopic rules, but not the higher-level primitives, where the macroscopic structures form. Inherently, however, the reductionists are not at fault, but of the nature of such system itself that pushes the reductionist view as to be on sensitivity of the system on micro-macro transition, the inability to cleanly separate abstractions and the notion of \textit{abstracted operating space} in-between of simple intuition on micro and macro-world. Long transient, and late-onset order is also a particular problem, similar to grokking in SLT, where the system evolves through long chaotic transients, followed by sudden organized behaviours. Whether this is generalization pattern on stabilization of structure is an open question, but hinders a lot of progress and explanation as it breaks certain models and system of choice. Aside from such issues, there are the non-uniqueness and explanatory levels mismatch and ontological fitness of each level, phenomenological engineering and ad-hoc constructions of which gives specialized results than theoretically feasible one, and the \textit{interpretability} of thermodynamic/statistical analogues. 
+
+These issues are not a miscellany of intractable facts; they are recurrent symptoms of a single structural fault: modelling misalignment. When encoding choices (origins, gauges, discretisations, priors) are fixed without regard to the ambient degrees of freedom from which data arise, instability, non-identifiability, and brittle reproducibility follow. In a sense, such critque is aiming for the establishment or semi-adoption of practitioners to (i) declare the encoding decisions explicitly, (ii) evaluate sensitivity to alternative encodings, and (iii) treat external constraints as first-class modelling inputs rather than afterthoughts.
+
+There exists more than an exhaustive list of problems similar to those mentioned; typical examples include:
+\begin{enumerate}[leftmargin=0.5cm,topsep=1pt,itemsep=1pt]
+\item[(1)] \textbf{Inverse problem and identifiability}. (\cite{Hadamard1902,Tikhonov1977,Vogel2002,ColtonKress1998}) of plenty illustrations and results. 
+
+\item[(2)] \textbf{Breakdown on multiscale modelling}. (\cite{E2011,Engquist2003,Kevrekidis2003,Bensoussan1978}) 
+
+\item[(3)] \textit{Semi-empirical models and epistemic issues on patchworks}. (\cite{Randall2003,Sornette2003}; similar works in the same category: \cite{Pope2000,Cornell1995}, though these are not direct critiques or problem-addressing literatures)
+
+\item[(4)] \textbf{Fundamental chaos-theoretical dynamics}. (\cite{Lorenz1963,Strogatz2018,RuelleTakens1971,Ott1990})
+
+\item[(5)] \textit{Reproducibility crisis and experimental uncertainty} across fields. (\cite{Ioannidis2005,OpenScience2015,BegleyEllis2012})
+
+\item[(6)] \textbf{High-Tc superconductivity \& strongly correlated systems}, where BCS theory is insufficient as a full theoretical explanation and patchwork-consensus issues arise. (\cite{BednorzMuller1986,Anderson1987,Lee2006,Scalapino1995})
+
+\item[(7)] Discussion on sparse and extremely long-distance objects, as in \textbf{cosmology}, where observations strongly suggest new physics and motivate modified theoretical solutions. (\cite{Zwicky1933,Rubin1970,Riess1998,Perlmutter1999})
+
+\item[(8)] \textbf{Numerical approximation limits and discretization artefacts}, where schemes (discretization, truncation, stabilization) produce numerical diffusion, undefined behaviours, artificial stability, or unjustified assumptions — for example, the infinite-resolution form used in learning theory — which leads to implementation violations and instability. References to include \cite{StrangFix1973,Trefethen2000,Hairer1993,LeVeque2002}, \cite{Higham2002,Wilkinson1963,Roache1998,Oberkampf2002,SanchezStern2017,Lam2010}, \cite{Zitko2009,Hu2012,Menard2021}, and \cite{Coveney2020}.
+
+\item[(9)] \textbf{Operational descriptions in nuclear physics}, where different theories and models form a copula of explanations for distinct phenomena or mechanisms. This includes instability regions and degeneracy challenges (\cite{Otsuka2005,Warburton1990,Thielemann2017,Mumpower2016}), numerical approximation problems (\cite{Furnstahl2015,Mumpower2016}), sudden structural transitions (\cite{Iachello2001,Casten2000}), reproducibility issues (\cite{Leeb2008} on \cite{EXFOR} data), Ericson fluctuations or chaotic scattering (\cite{Ericson1960,Bohigas1984}), and interpretation or measurement stresses (\cite{Ericson1960,HauserFeshbach1952}). Emergence is conceptually settled but fundamentally open, and none of these problems are fully resolved.
+\end{enumerate}
+\section{Precursors}
+
+Motivated by such dilemma, it is observed that the analysis is entangled, with various situations, interpretations, setting and assumptions together, and with a non-unified structure of models in question. The system in which the model is considered and analyzed is also ineffective when considering larger structures or more `realistic' consideration aside from very simplified, strong system itself. There are a lot of ambiguities around what is considered and what is not, even with probabilistic nature and the deterministic aspect. Terms like \textbf{latent spaces} and many do not capture the entire dynamic or meaning of the system. It is then we introduce our novel analytical framework, namely the \textbf{Ambiance-Encoding Theory} framework. While this was initially procured for a description of learning theory, the issue lies much deeper in the theory of mathematical and non-mathematical modelling, model theory in premature forms, and axiomatic justification of system configurations. Thereby, the generality of this framework, supposedly and subjectively projected of such, to be wider than the claim here initially addresses. To do this, we must define the \textit{system space}.
+
+\subsection{System spaces}
+The goal of the system space is to specify everything that contributes to the system dynamic. Or rather, any component, objects, subject structures, and so forth that acts, that exist, that is considered of interest in a given context. The principle is simple, to separate between the \textit{assumed shape} of an object from it representation or encoding. This can be done by specifying two parts - the \textit{ambiance space}, of which contains all the object in consideration, minus their properties and so of, and the \textit{encoding space}, which as its name implies, encodes all relevant structural information and properties that is considered, of said object. Just consider the very simple example of a car, specifying the barebone existence of it in an operational space, and the encoding space of the specific details of such cars, and factors affecting such. Before doing anything, let us define what is meant by ambiance space, and subsequently, encoding space, via a more statement-form definition. First, let us define the \textit{system space}. 
+\begin{definition}[System space, Preliminary version]
+  For any `procedural' structures, objects, realization \footnote{In the sense of explicit construction like coding, creating models that will have to be evaluated, instead of mathematical static statements and of operational means.}, we define the \textit{system space} $\mathcal{S}$ as the space containing two types of facilities that support it, the \textit{ambiance space} for where objects are realized, and the \textit{encoding space} where their realization is encoded and supported of its operation. 
+\end{definition}
+Hence, in essence, the system space includes, and contain the realization of the object itself. Such object can be anything, apple, baskets, logical system, interpretable text structure, 'unstructured data' in a sense, and so on. The accompanying space of the system space, however, is the encoding space. 
+\begin{definition}[Encoding space, Preliminary version]
+    The encoding space $\mathrm{ENC}$ of particular system space $\mathcal{S}$, contains the information and structural encoding of objects of the ambiance space $\mathcal{A}$, within certain representation scheme. 
+\end{definition}
+The ambiance space is simply defined as followed, of which contains the ambiance of the system. 
+\begin{definition}[Ambiance space, Preliminary version]
+    The ambiance space $\mathcal{A}$ is defined as the collection of objects of interest, with minimal observational language specifying it, and contain the raw, non-encoded subject of interest. 
+\end{definition}
+This contrast, even though we take inspiration from it, the ambiance space in the context of mathematical geometry and the like. For mathematics, the \textit{ambiance space} of a given object $x$ is the surrounding space of that mathematical object. So, if we study $\{x\}$, then its ambiance space is the $\mathbb{R}$ set. If $x$ is specified to be of high-dimension, then so on for $\mathbb{R}^n$. 
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.5\textwidth]{img/model_representation.png}
+  \caption{\textbf{Illustration of ambiance and encoding space, alongside a specific structural compact on the encoding}. The notation shifted to $\mathbb{A,M,E}$, but nevertheless represents the same structure. Here, as we can see, the system space contains ambiance and encoding space, alongside a specific encoding-related structure $\mathcal{M}$, and then two decoding and encoding which is short for interpreting between the two encoding spaces.}
+\end{figure}
+We understand this as inference of structures and objects into an interpretable and operational form. Specifying structures of certain objects, specifying properties of certain objects, the process of describing starting from static form, is inferred in the encoding sense. To encode objects, then in the ambiance space, require a representation framework that is powerful or rigid enough, to express particular properties and descriptions available to describe such object. We call it also the \textit{language} $\mathcal{L}_{E}$ of the encoding space, and subsequently, of the system space. 
+
+The definition of the ambiance space is fairly arbitrary. What can be made of it to specify $\mathcal{A}$ more concretely? The space of objects has its own minimal language, we denote as $\mathcal{L}_{E}^{*}$. Taking inspiration from quantum physics, the ambiance space captures the \textit{state} of the system to a given particular \textit{state space}, the cardinality or size of the system in consideration, and object's structure of state space level. To clarify this, we can look both of the encoding of abstraction. An object $x$ has two type of general description - the overall $x$ state, lies in the state space $\mathcal{X}_{S}$, and the specific $x$-only description, the description space $\mathcal{X}_{D}$. These two spaces work alongside each other. For example, in the static case, $x$ has no variation, the state space and the description space is related such that there will be a description for specific state of $x$ in $\mathcal{X}_{S}$, and vice versa of a corresponding state. For a dynamic system, then, of any variation from $x_{1}\to x_{2}$ in the state space, then there exists a quantified variation that explains such variation in the state space. Conversely, if one wish to vary certain description of the description space, then there will have to exist a corresponding variation in the state space. This is a simple concept, but explains the relation between them. Coincidentally, the state space is described, within and of the ambiance space, and encoding space for the description space. 
+
+\subsection{System groundworks}
+
+The system itself has some particular structures and working relations altogether, such as given by the definitions above. As we explained, the system itself contains two spaces copulated together as is this current form. We still do not know at this point how to smuggle into the framework the notion of \textbf{cardinal pre-structural} system, but for now, we have the option to investigate this dual form. Let take a system $\mathcal{S}_{0}$. This system contains the ambiance space of response paradigm, for example, if in physics, the set of particles observations in specific potential landscape - for example, inside a potential well or not. Then, we have the ambiance space $\mathcal{A}=\{a_{i}\}^{n}$ of such particles. The minimal language here is the positional intrinsic space $(x,y,z,\dots)$. The reason why in this case we choose it is because it is intrinsic of the object by itself - the object exists in such space, instead of the object draws out such description by itself. The encoding space then, includes the language $\mathcal{L}_{E}$, with alphabet or description sets $\{p_{1},p_{2},\dots,\}$. In our case, then, the role of the language is to describe the object via the encoding space, and certain relation of it. 
+
+A property $p_{i}\in \mathrm{ENC}$ is \textit{connected} (dependent) to the ambiance space $\mathcal{A}$, if for all taken expression of $p_{i}$ for any corresponding $x_{i}$, then $p_{i}$ is per definition, not of a constant quantity. If it is, then $p_{i}$ is unconnected (independent) of the system description. Such is for example, the mass $m$ of the particle at any given point is a static and constant quantity, but electric charge $q$ or something else, might depend on the configuration in the ambiance space for its quantification to take effect. Certain quantity depends on the evolution of $x_{i}$ over specified axis, usually time $t$, to be specified, for example, velocity, or displacement. Such are secondary quantity, and is harder to define. 
+
+We can also remove and strip down everything to its most natural state in the ambiance space. That is, to make the object to be totally abstract as a singular existential state. It is similar to asking an apple to exist, with the only description now available is the cardinality of the object itself. And in such sense, we can then also use a fairly typical view of \textit{graph theory} to aid in such description. However, as said, we must be very careful when introducing new concepts of interpretations. 
+
+These two languages, $\mathcal{L}^{*}$ and $\mathcal{L}_{E}$ are what called the \textit{configuration} of the system. Without it, the system itself cannot exist, because they form the basis of forming the model and the system the model lives and acts on. How can we relate them? For once, as we argued of the state space, the state of the system at large can be considered, strip to bare minimum, an \textit{object cardinality language}. 
+
+\begin{definition}[Cardinal descriptor language]
+  The language $\mathcal{L}^{*}$ of the ambiance space $\mathcal{A}$ inherited from cardinality structure of arbitrary size and shape, can be expressed minimally into the \textit{object cardinality class} (OCC) in which every object is specified by the pair $(i,y)$ for identifier $i$ and cardinality $y$. Hence, in general, the minimal OCC is the space $(I,\mathbb{N})$, for arbitrary identifier.
+\end{definition}
+
+At this point, an inquiry must be pointed at. The use of the word language in our formal treatment is not similar to the usual language typically seen in of mathematics and the like. It can be, or should be, referred to as the operational or representation language instead. Mathematically speaking, we can consider it a wrapper on the standard mathematical language. Thereby, a lot of components we use would be taken without proof or formalism required, out from the mathematical language itself. So what is it that we are actually using? These languages have the role to describe the system in certain manner only, within a scheme of quantization and an encoding method. For now, what we are discussing refers to the system without the \textit{model} in it. The goal later is then to exhibit that our models can indeed, work within such language interpretation. 
+
+Finally, we would like to talk about the correspondence in actuality between the two space of the system space. Inherently in our expression, we specified that those two form the system space. However, we should also notice that this does not specifically specify how and what, for in the ambiance space, such object $o\in \mathcal{A}$ can be transitioned in side such space, given the description $\mathcal{L}^{*}$. For example, in the positional coordinate, what acts on the particle for its positional description to move from one point to another? Hence, we might as well consider the current system space as being treated in a static form, such that there exists no additional structure that governs such transition. If now there exists such structure, adding a dynamic encoding, and with a transiting structure, then we will call it a \textbf{dynamic system space}.
+
+\section{Formalism}
+
+Those ideas can be bundled together, and is now mature enough of perspective to finally argue about the formalism in which structures would have to be addressed upon. Basically, it pushes forth a conjectured but well-needed partitions, and such must be realized in the condition itself. We have been speaking of the encoding space and ambiance for a while now, but there is a problem. We have subconsciously removed the aspect of the object not being encoded in the way that we actually entitled it to be in the same way. What is this? 
+
+\subsection{External entrapment}
+
+For starter, an object itself \textit{must} exist. Of a system in consideration, entities within it has their own rules, their own structures, their own properties and behaviours that one then might take it as of its own, not quantized by experiments but intrinsic of itself, like volumes. Thereby, it would be lacking to presume every system to conform to the ambiance-encoding form, since sometimes what we only need is the existence specification of the system, and then the structure is encoded and governed, given a correct representation and encoding, of the encoding space. Thereby, it would be better to redefine what has been done above into a three-component system instead. Hence, we introduce the generalized system, with the following definition. We note that the following definitions are \textbf{not mathematical}, but system and modelling theoretic, as aligning with \textit{model precedes axioms} view. Hence, we use the term `space' in the modelling sense: a domain of admissible system descriptions, prior to any topological, algebraic, or measure-theoretic structure.
+
+What we then define is the process of \textbf{world building}, i.e. of the external world encoded into certain pretext on language of understanding, of the concept of \textit{model} to be reflected between systems; in this specific case, of the external reference point toward a specific construction of a \textit{encoding environment}, on which allows for an \textit{internal model utilization} to partake. For now, however, we would like to retain such conversation, and allow for introduction of any \textit{encoding system variate} of choice, whether or not exists of the reference form. For any world construction, we ask the main following three questions: 
+
+\begin{enumerate}[topsep=1pt,itemsep=1pt]
+	\item What \textbf{exists} and \textbf{includable}? 
+	\item What are of their \textit{relation}, or more specifically, their dynamics on arbitrary change?
+	\item What can be used to described them, quantize them, and so on?
+\end{enumerate}
+
+Using such notion, we can then come up with the definition of the schema, or construction~\ref{diag:based_construction}, where there exists of the first world-construction the procedure containing $(\mathcal{C},\mathcal{A}\mathrm{ENC})$ of the entire process. 
+
+\begin{figure*}
+	\centering
+	\resizebox{0.8\textwidth}{!}{
+		\begin{tikzcd}[ampersand replacement=\&]
+	{(I,\mathbb{N})} \& {(I,\mathbb{N})} \& {(I,\mathbb{N})} \&\& {\mathcal{G}} \&\& {(\{e\}^{i},\mathcal{S}_{G})} \& {\mathcal{W}_{E}} \& {(X,\{\mathcal{S}_{i}\})} \\
+	{(I,\mathbb{N})^{n}} \\
+	{\mathcal{C}} \&\&\&\& {\mathcal{A}} \&\& {\mathrm{ENC}} \&\& {\mathcal{W}^{*}(\theta^{*},\Gamma^{*})}
+	\arrow["{{{\pi_{1}}}}", from=1-1, to=1-2]
+	\arrow["{{{\pi_{n}}}}", from=1-2, to=1-3]
+	\arrow["{{{g_{n}}}}"{description}, from=1-3, to=1-5]
+	\arrow["{{{\cong\mathcal{C}}}}"{description}, Rightarrow, from=1-3, to=3-5]
+	\arrow["{{{\lambda_{2}}}}"{description}, from=1-5, to=3-5]
+	\arrow["{{{g_{e}}}}"{description}, from=1-7, to=1-5]
+	\arrow["{{\psi_{\mathrm{ex}}}}"{description}, squiggly, from=1-8, to=3-7]
+	\arrow["{{{\varphi_{2}}}}"{description}, from=1-9, to=3-7]
+	\arrow["{{{\pi_{0}}}}", from=2-1, to=1-1]
+	\arrow["{{{\pi_{j}}}}"', from=2-1, to=1-3]
+	\arrow["{{{{\small s(n,i,k)}}}}"', from=3-1, to=2-1]
+	\arrow["{{{\lambda_{1}}}}", from=3-1, to=3-5]
+	\arrow["{{{\varphi_{1}}}}"{description}, from=3-5, to=3-7]
+	\arrow["{{{\gamma_{\mathcal{W}}^{*}}}}"{description}, from=3-7, to=3-9]
+\end{tikzcd}
+	}
+	\caption{Structural formation of arbitrary abstract space entities, with three different layered schemas as the main physical-agnostic layering; for $\mathcal{C}$ the cardinality on construction $(I,\mathbb{N})^{n}$, the cardinality expansion to ambiance space $\mathcal{A}$ on $\mathcal{C},\mathcal{G}$, and the encoding $\mathrm{ENC}$ of which deliberately outputs the objectified world on schema $(X,\mathcal{S}_{i})$ of structural formation, on $\mathcal{W}^{*}$. Any structure that uses such properties of $\mathcal{W}^{*}$ would then admit representation minimum of the structures, thereby allows for expression in systems. $\mathcal{W}_{E}$ contains the external, non-chain additional constraints or properties, and can be used deliberately as a funnel for extension on structures of different build-up process later downward.}
+	\label{diag:based_construction}
+\end{figure*}
+
+\begin{definition}[Cardinality space]\index{cardinality space}
+  The cardinality space, denoted $\mathcal{C}$, is a 2-tuple $(I,\mathbb{N})^{n}$ where $I$ is the type of $n$ arbitrary objects, and $\mathbb{N}$ the cardinality of each type with respect to the $n$ set itself. 
+\end{definition}
+Next, is the \textbf{ambiance space} on definition. Previously this is stated to be the relational mapping and structural actions, outside any structural presumption, mutations, or changes across the wide range of mathematically feasible descriptions. We have the following. 
+\begin{definition}[Ambiance space, formal definition]\index{ambiance space}
+  The ambiance space, denoted $\mathcal{A}$ contains the abstract notion on which all objects are held upon. $\mathcal{A}$ then is a 2-tuple on $(\mathcal{C},\mathcal{G})$ where $\mathcal{G}$ is a causal or relational, connective relations or ruleset, typically can be considered a \textbf{graph} structure for simplicity, for $\mathcal{G}(c,E)$ of $c\in\mathcal{C}$ of components in the ambiance space. 
+\end{definition}
+Such definition is deliberately arbitrary, as to suggest of the conceptual relational observation we typically see, as of data, concepts, and so on. The advantage is to recognize that the system itself is not simply of singular pair $(x,y)$ as typical machine learning, but also contains sufficient richness to argue that such view is the \textit{directional compression} of components in the ambiance space, and so on. However, ambiance space does not take into account the structural and quantitative properties, of the quantification scheme (i.e. numerical fixation, as simple as number counting), so the effect of graph theoretical actions is not typically present, but isolated of different objects itself. In usual, such is expressed by constructing an \textit{encoding space}, which is defined as followed.  
+\begin{definition}[Encoding space, formal definition]\index{encoding space}
+  The encoding space, denoted $\mathrm{ENC}(\mathcal{A},\cdot)$ of any arbitrary structural argument, has the minimal fixation on the 2-tuple $(\mathcal{A},\cdot)$, for the second argument be the \textit{minimally representative encoding space} of the ambiance dual term. Options includes $\mathbb{F}$-based analytical/geometrical space, such as $(\mathcal{A},\mathbb{F}^{n})$ for decomposable $n$ on index $I$, $(\mathcal{A},[X,\langle\cdot,\cdot\rangle])$ or $(\mathcal{A},[\mathcal{H},\langle\cdot,\cdot\rangle])$ for inner product space and Hilbert-based space encoding, $(\mathcal{A},[X,||\cdot||])$ for Banach-based encoding space, analytical/geometrical manifold on $(\mathcal{A},[M,A])$ of the topological atlas $A$, Hilbert manifold encoding $(\mathcal{A},[M,A,\varphi])$ for $\varphi:U_{\alpha}\to\mathcal{H}$; in more generalized notion, encoded on \textbf{torsor}-based space, for example, the encoding $(\mathcal{A},[\mathcal{O}_{G},\cdot])$ for $G$-torsor with additional structures to move it to field-level torsor-based structure. Most generally, encoding space admits the form $(\mathcal{A},[X,\{\mathcal{S}_{i}\}])$ for based objects set structure $X$ with metric dimensions on $\mathcal{S}_{i}$. 
+\end{definition}
+
+Here, we mentioned of the structure on \textbf{torsor}. Deliberately speaking, $(\mathcal{A},\cdot)$ can contain vector space, as such enforcing generic linearity on abstract encoding space. However, this is often not ideal and is a non-trivial choice. As such, the notion of $G$-torsor on group $G$ represents a pre-linear, non-gauge-fixed structure, and often non-assumptive basis, on which can be then added to construct to the $V$-torsor over vector space $V$, which is also often accounted to be called as the \textit{affine space}. Again, epistemic vector space structure can be reconciled, but usually, torsor is added to remove the sense in which everything should be expressed of such structural conditions. In fact, since $G$ is a group, we can say that the condition should also be, for example, $(\mathcal{A},\mathcal{O}_{\mathcal{A}})$ of the $\mathcal{A}$-torsor on such abstract space, and thus extended to $(\mathcal{A},[\mathcal{O}_{\mathcal{A}},\mathbb{F}])$ for torsor extension on field $\mathbb{F}$, i.e. fairly similar (conjuctured) to the Galois cohomology set $H^{1}(k,\mathcal{A})$. One might suggest that the notion on $\mathcal{A}$ is irrelevant as implicitly it is almost fully torsor, or implicitly enforces a torsor-primary representation, with all further structure arising from choices of trivialization. 
+
+\subsubsection{Cross-models, and reference point oracle}
+
+The system can be adapted to specify, or analyse the setting of \textit{model-model interpretations}\index{cross-model match}, or in most of the case, \textit{oracle-model matching}, where construction of the models are created to mimic, describe or sufficiency information encoding creation of certain interest system, of which we ultimately called as the \textbf{oracle}, denoted $\mathcal{O}$. This is illustrated in a plain form of construction~\ref{diag:encoding_structure}, where the exists the oracle $\mathcal{O}(\theta,\Gamma)$ of its $\theta$ descriptions and $\Gamma$ structures. Here, the oracle is \textbf{static}, as it forms the system dynamics, not the arbitrary action-change dynamics typical seen of moving system by arbitrary notion of change. At its most abstract form where the oracle is formed only from $(\theta,\Gamma)$, we call it the \textit{foundational oracle}. Specify $\mathcal{O}_{n}$ as its increased increment of oracle structures, or rather the $n$-order copula of all oracle system itself, we can separate such structures into two pairs, i.e. $[\mathcal{O}_{i},\mathcal{O}_{j}]_{i\neq j}$ for any $\mathcal{O}_{i}$ that are \textbf{static structures}, and any $\mathcal{O}_{j}$ that are \textbf{moving structures}, such is for interaction, actions and mutation to occur. Under such lens, we posit the following simple conjecture, often called the \textbf{oracle separation conjecture}, basing on the notion of structural partition\index{Oracle separation}:
+
+\begin{conjecture}[Oracle separation]
+	$\mathcal{O}_{j}$ cannot be known from descriptions of $\mathcal{O}_{i}$, and $\mathcal{O}_{j}$ cannot infer about $\mathcal{O}_{i}$.
+\end{conjecture}
+
+This will be the mainstay of our treatment on the oracle topic, and system construction problem. Implicitly, existence of $\mathcal{W}_{E}$ implies the form of constructive \textbf{inheritance} or layered expansion, where one depends on structural conformation of earlier relative primitive encoding. Thus, we implicitly emphasize the \textit{strength} or the load-bearing nature of the encoding system. Admissibly, the encoding scheme takes on the risk of \textit{doing too much} out of its allowable domain. Aside from being a eventual principle of which states of the \textbf{allowable inheriting scaffold} of the model, when extend to external encoding of observables references, as will be expanded in construction or schema~\ref{diag:encoding_structure}, the encoding scheme itself allows for infinite interpretations and so on. Successive constructions might not be compatible to the former one without strict conditions, and contradictions are eventual where system collapses object specification, over-interpreted variants of base form, non-conservativeness dressed in interpretations, or hidden additional structure that cannot recover the base-class, in certain case, instead of making the scaffolding inherently larger by extensions, let the derived inheritance scaffolding being the \textbf{specific limited case}, thus contradicting the purpose itself. Inherently, this applies for any system construction that results in $\mathcal{W}^{*}$. A precursor system will not have $\mathcal{W}_{E}$, or such is reduced to certain constraint sets $\{C_{i}\}$ instead, of which is effectively factory-based preferences and bookkeeping. This results in the following principle of which establishes our analytical lense, and also the direction of construction further downward. 
+
+\begin{principle}[Representation expansion, faithfulness constraint]
+	All representation accumulation is required to retain lower-level schematics elementaries, and hence its details, with modularity taken into consideration for backward decomposition.
+\end{principle}
+
+As such, we can understand in that middle ground, $\mathcal{A}$ is already a relational structure, on the dynamic class - essentially group-like, and cardinality-driven - but not yet a numerical and torsor-composite over field structure. In essence, it is not obstruction theory per se, but an obstruction-aware encoding. For details on specific ideas and theories this has taken into consideration, see \cite{serre-galois-cohomology,skorobogatov-torsors,lang-tate-1958,borel-linear-algebraic-groups,giraud-cohomologie-nonabelienne,grothendieck-sga1,vistoli-descent-notes,milne-principal-homogeneous,kobayashi-nomizu,knapp-lie-groups,borovoi-2023-galois-cohomology}, and \cite{milne-etale-cohomology}. The argument on cohomology is observational-only, as the framework's treatment of encoding choices parallels how gauge theories handle coordinate freedom, suggesting connections to torsor theory and cohomology. Full mathematical development remains open and incomplete, thus can be falsified without issues. However, we note that gauge theory succeed using the same principle of separation from realization to encoding.  
+\vspace{1mm}
+
+Next, if we talk about a functional perspective, then $\mathcal{S}:(\mathcal{A}\to y)(\mathrm{ENC}\to x,f)(\mathcal{C}\to (I,\mathbb{N}))$ where $(I,\mathbb{N})$ is the cardinality of each type of category, suggested by $I$, together with the discrete number of them in natural number set. We assume the mathematical structure already defined of its foundation. Encoding spaces introduce additional mathematical structure and should be understood as representations, not identities, thus put it distinctively outside. The view here, as model precedes axioms, is that typically, we reserve our deference to \textbf{structural foundational minimization}, thus admits the primitive languages, such as \textit{set,collection,relational actions}, and logical procedures, without any \textit{structural algebra} or else. The axioms in those space can be considered pre-structure or pre-encoding axioms, and thus the language is hence pre-structure expression alphabet, i.e. the domain in which the assumptions of the primitive language are \textbf{existence} and \textbf{organizational relations} only. Hence, we have diagram~\ref{diag:based_construction} of the explicit construction. We note that we have the construction machinery $\mathcal{C}\cong (I,\mathbb{N})^{n}$ for clarify of form as per expansion of the cardinality space, and the encoding process. Overall, the construct can be, and is used to dissect different model systems on what it determines, and os on. For example, neural network, analysing from the perspective of being a standard factory-based construction, can be determined rather easily by the dual form on $\mathrm{ENC}$ of cardinality, ambiance, and the encoding on numerical evaluations. Any objects or systems based on such form, living in $\mathcal{W}^{*}$, would admit the component view, where individual neurons, temporary denote as $n_{i}$ admits certain restriction on such class or $\mathcal{W}^{*}$. A rule can then be added, of which has been implicitly defined or hinted at in the diagram, is that extension reuses sub-world funnels as lower constituent components, from the funnelling at $\mathcal{W}_{E}$. Modify such for a marginally small configuration, we obtains the layer-based representation of recursive and type-stable systems of neural architecture at will, and such is often more preferable to recover all classical models in perspective. Returning to generality, we call such representative form a kind of \textbf{factory schematics} in the sense of mathematical or non-mathematical construction of abstract system. 
+
+Another way of seeing this is from the perspective of layering conditions. Specifically, the configurations, options, constructions and theoretical understanding and workspace possible, per each type of description available, and different goalpost of objects how they determine which layer to transform to. Expansion outward implicitly told us to take the highest level-abstraction or layer of interpretation as the cardinality $\mathcal{C}$, then move downward toward higher degree of structure specifications. Indeed, one can also visualize this by Diagram~\ref{diag:encoding_structure}, where the structural commutative diagram is taken into consideration. We note that the use of commutative diagrams is for representational device, not as categorical constructions. 
+
+\begin{figure}[htb]
+  \centering
+  \resizebox{0.9\textwidth}{!}{
+\begin{tikzcd}[ampersand replacement=\&]
+	{(I,\mathbb{N})^{(1)}} \& {(I,\mathbb{N})^{(1)}} \& {(I,\mathbb{N})^{(n)}} \&\& {\mathcal{G}} \&\& {(\{e\}^{i},\mathcal{S}_{G})} \& {\mathcal{W}_{A}} \&\& {(X,\{\mathcal{S}_{i}\})} \\
+	{(I,\mathbb{N})^{n}} \\
+	{\mathcal{C}} \&\&\&\& {\mathcal{A}} \&\&\& {\mathrm{ENC}} \&\& {\mathcal{W}^{*}(\theta^{*},\Gamma^{*})} \\
+	\\
+	{\mathcal{O}(\theta,\Gamma)} \&\&\&\& {\mathcal{D}_{m}} \&\& {\mathcal{W}(\theta',\Gamma')} \&\&\& {\mathrm{ENC}'}
+	\arrow["{{\pi_{1}}}", from=1-1, to=1-2]
+	\arrow["{{\pi_{n}}}", from=1-2, to=1-3]
+	\arrow["{{g_{n}}}"{description}, from=1-3, to=1-5]
+	\arrow["{{\cong\mathcal{C}}}"{description}, from=1-3, to=3-5]
+	\arrow["{{\lambda_{2}}}"{description}, from=1-5, to=3-5]
+	\arrow["{{g_{e}}}"{description}, from=1-7, to=1-5]
+	\arrow["{\psi_{\mathrm{ex}}}"{description}, from=1-8, to=3-8]
+	\arrow["{{\varphi_{2}}}"{description}, from=1-10, to=3-8]
+	\arrow["{{\pi_{0}}}", from=2-1, to=1-1]
+	\arrow["{{\pi_{j}}}"', from=2-1, to=1-3]
+	\arrow["{{{\small s(n,i,k)}}}"', from=3-1, to=2-1]
+	\arrow["{{\lambda_{1}}}", from=3-1, to=3-5]
+	\arrow["{{\varphi_{1}}}"{description}, from=3-5, to=3-8]
+	\arrow["{{\gamma_{\mathcal{W}}^{*}}}"{description}, from=3-8, to=3-10]
+	\arrow["{{d_{\mathcal{C}}}}", from=5-1, to=3-1]
+	\arrow["{{d_{\mathcal{A}}}}"{pos=0.3}, from=5-1, to=3-5]
+	\arrow["{{\gamma:(\theta,\Gamma)\times\varepsilon}}", from=5-1, to=5-5]
+	\arrow["{{d_{\mathcal{C}}'}}"'{pos=0.3}, from=5-5, to=3-1]
+	\arrow["{{d_{\mathcal{A}}'}}", from=5-5, to=3-5]
+	\arrow["\times"{description}, from=5-5, to=5-7]
+	\arrow["{{\gamma_{\mathcal{W}}}}"{description}, from=5-7, to=5-10]
+\end{tikzcd}
+  }
+  \caption{Diagrammatic representative form of the encoding scheme and commutative layering diagram. Note that the diagram is irreversible as the arrow goes toward transformation and additional structures. The directed structure induces the set $\{\pi_{j}\}$ on expansion form of the cardinality space, $s(n,i,k)$ explicitly specifies the category $n$, on $i$ objects of $k$ each, or any 3-fold cardinality conditions. The set of one-directional structural morphism includes $\lambda_{1},\lambda_{2}$ for ambiance space encoding, $\varphi_{1},\varphi_{2}$ for encoding space construction. From outside the encoding scheme (the lower parts), there exists the oracle, i.e. the structural physical world or any sufficient abstract objects, $\mathcal{O}$ specified by mass $\theta$ on description, and $\Gamma$ on structural descriptions, $\mathcal{W}$ as the empirical structural and exterior world model, or any externally created model, governed by a different set $\theta',\Gamma'$ on the morphism $\times$ on observations (data) space $\mathcal{D}_{m}$ of density $m$.}
+  \label{diag:encoding_structure}
+\end{figure}
+
+It is also to note that this construction is purely on the description of the reference space approximations. Such can argue that different notions of the oracle mapping can be conducted, for example, on the semantic of semi-supervised learning in typical systems. Toward such stance, tokenization on large system corresponds to the structural identification both in framework implementation and implicit choice of empirical routines toward $\mathcal{C}$, and the implicit frameworks as to be in $\mathcal{A}$ on the causal relationships. Encoding then of an instance, can be considered the numerical space with certain measures, of which is the precursor and simple form. However, on conditioned systems, of which as we can  say, mathematics on the first principle with abstractions, we can safely assume that the precursor form of mathematics, starting from quantification of numbers and geometric abstraction on volumetric space, by its own nature, implicitly condition that $\mathcal{W}(\theta',\Gamma')'\cong\mathcal{O}(\theta,\Gamma)$, or, the $\mathcal{D}_{m}$ matches the oracle conditions. Hence, the network reduces immensely, to schema~\ref{diag:oracle_mathematics}. 
+\begin{figure}[htb]
+  \centering
+  \resizebox{0.9\textwidth}{!}{
+    \begin{tikzcd}[ampersand replacement=\&]
+	{(I,\mathbb{N})^{(1)}} \& {(I,\mathbb{N})^{(1)}} \& {(I,\mathbb{N})^{(n)}} \&\& {\mathcal{G}} \&\& {(\{e\}^{i},\mathcal{S}_{G})} \& {\mathcal{W}_{A}} \&\& {(X,\{\mathcal{S}_{i}\})} \\
+	{(I,\mathbb{N})^{n}} \\
+	{\mathcal{C}} \&\&\&\& {\mathcal{A}} \&\&\& {\mathrm{ENC}} \&\& {\mathcal{W}^{*}(\theta^{*},\Gamma^{*})} \\
+	\\
+	{\mathcal{O}(\theta,\Gamma)}
+	\arrow["{{{\pi_{1}}}}", from=1-1, to=1-2]
+	\arrow["{{{\pi_{n}}}}", from=1-2, to=1-3]
+	\arrow["{{{g_{n}}}}"{description}, from=1-3, to=1-5]
+	\arrow["{{{\cong\mathcal{C}}}}"{description}, from=1-3, to=3-5]
+	\arrow["{{{\lambda_{2}}}}"{description}, from=1-5, to=3-5]
+	\arrow["{{{g_{e}}}}"{description}, from=1-7, to=1-5]
+	\arrow["{{\psi_{\mathrm{ex}}}}"{description}, from=1-8, to=3-8]
+	\arrow["{{{\varphi_{2}}}}"{description}, from=1-10, to=3-8]
+	\arrow["{{{\pi_{0}}}}", from=2-1, to=1-1]
+	\arrow["{{{\pi_{j}}}}"', from=2-1, to=1-3]
+	\arrow["{{{{\small s(n,i,k)}}}}"', from=3-1, to=2-1]
+	\arrow["{{{\lambda_{1}}}}", from=3-1, to=3-5]
+	\arrow["{{{\varphi_{1}}}}"{description}, from=3-5, to=3-8]
+	\arrow["{{{\gamma_{\mathcal{W}}^{*}}}}"{description}, from=3-8, to=3-10]
+	\arrow["{{{d_{\mathcal{C}}}}}", from=5-1, to=3-1]
+	\arrow["{{{d_{\mathcal{A}}}}}"{pos=0.3}, from=5-1, to=3-5]
+\end{tikzcd}
+  }
+  \caption{Diagrammatic view on the reduced abstract language encoding on mathematic conditions. This is where the object is abstract enough in considerations, that oracle access can actually be reconciled with the system inherently.}
+  \label{diag:oracle_mathematics}
+\end{figure}
+From then on out, such structure evolutes naturally inward, such is to say that most of the mathematics can be constructed on abstraction levels upwards, with gradual evolutions only by added semantic from additional oracle ideas, $\{\mathcal{O}_{i}\}$. In certain case the additional oracle representing semantic upgrade is not even needed, and hence the mathematical structure is then a \textit{funnelled self-contained schema}. This is expressed in schema~\ref{diag:conditioning_isolation}. The view is also shared within scientific evolutions, in which within specific starter language, one defers to the next and more general language or theoretical explanation, with different upper-level schema, usually \textit{only if} the next schema deliberately constructs or constrains the lower-order one, into sub-structure of itself; the so on \textit{backward compatibility} of scientific theories. 
+
+\begin{figure}[htb]
+  \centering
+  \resizebox{0.9\textwidth}{!}{
+    \begin{tikzcd}[ampersand replacement=\&]
+	{(I,\mathbb{N})^{(1)}} \& {(I,\mathbb{N})^{(1)}} \& {(I,\mathbb{N})^{(n)}} \&\& {\mathcal{G}} \&\& {(\{e\}^{i},\mathcal{S}_{G})} \& {\mathcal{W}_{A}} \\
+	{(I,\mathbb{N})^{n}} \\
+	{\mathcal{C}} \&\&\&\& {\mathcal{A}} \&\&\& {\mathrm{ENC}_{0}} \&\& {(X,\{\mathcal{S}_{i}\})} \\
+	\\
+	{(I,\mathbb{N})} \& {(I,\mathbb{N})} \& {(I,\mathbb{N})} \&\& {\mathcal{G}} \&\& {(\{e\}^{i},\mathcal{S}_{G})} \& {\mathcal{W}^{*}_{0}(\theta^{*},\Gamma^{*})} \\
+	{(I,\mathbb{N})^{n}} \\
+	{\mathcal{C}} \&\&\&\& {\mathcal{A}} \&\&\& {\mathrm{ENC}_{1}} \&\& {(X,\{\mathcal{S}_{i}\})} \\
+	\\
+	{\mathcal{O}_{1}(\theta,\Gamma)} \&\&\&\&\&\&\& {\mathcal{W}^{*}_{1}(\theta^{*},\Gamma^{*})}
+	\arrow["{{{\pi_{1}}}}", from=1-1, to=1-2]
+	\arrow["{{{\pi_{n}}}}", from=1-2, to=1-3]
+	\arrow["{{{g_{n}}}}"{description}, from=1-3, to=1-5]
+	\arrow["{{{\cong\mathcal{C}}}}"{description}, from=1-3, to=3-5]
+	\arrow["{{{\lambda_{2}}}}"{description}, from=1-5, to=3-5]
+	\arrow["{{{g_{e}}}}"{description}, from=1-7, to=1-5]
+	\arrow["{{\psi_{\mathrm{ex}}}}"{description}, from=1-8, to=3-8]
+	\arrow["{{{\pi_{0}}}}", from=2-1, to=1-1]
+	\arrow["{{{\pi_{j}}}}"', from=2-1, to=1-3]
+	\arrow["{{{{\small s(n,i,k)}}}}"', from=3-1, to=2-1]
+	\arrow["{{{\lambda_{1}}}}", from=3-1, to=3-5]
+	\arrow["{{{\varphi_{1}}}}"{description}, from=3-5, to=3-8]
+	\arrow["{{{\gamma_{\mathcal{W}}^{*}}}}"{description}, from=3-8, to=5-8]
+	\arrow["{{{\varphi_{2}}}}"{description}, from=3-10, to=3-8]
+	\arrow["{{{\pi_{1}}}}", from=5-1, to=5-2]
+	\arrow["{{{\pi_{n}}}}", from=5-2, to=5-3]
+	\arrow["{{{g_{n}}}}"{description}, from=5-3, to=5-5]
+	\arrow["{{{\cong\mathcal{C}}}}"{description}, from=5-3, to=7-5]
+	\arrow["{{{\lambda_{2}}}}"{description}, from=5-5, to=7-5]
+	\arrow["{{{g_{e}}}}"{description}, from=5-7, to=5-5]
+	\arrow["{{\psi_{\mathrm{ex}}}}"{description}, from=5-8, to=7-8]
+	\arrow["{{{\pi_{0}}}}", from=6-1, to=5-1]
+	\arrow["{{{\pi_{j}}}}"', from=6-1, to=5-3]
+	\arrow["{{{{\small s(n,i,k)}}}}"', from=7-1, to=6-1]
+	\arrow["{{{\lambda_{1}}}}", from=7-1, to=7-5]
+	\arrow["{{{\varphi_{1}}}}"{description}, from=7-5, to=7-8]
+	\arrow["{{{\gamma_{\mathcal{W}}^{*}}}}"{description}, from=7-8, to=9-8]
+	\arrow["{{{\varphi_{2}}}}"{description}, from=7-10, to=7-8]
+	\arrow["{d_{\mathcal{C}}^{(1)}}"{description}, from=9-1, to=7-1]
+	\arrow["{d_{\mathcal{A}}^{(1)}}"{description}, from=9-1, to=7-5]
+\end{tikzcd}
+  }
+  \caption{Diagrammatic of diagrammatic recursion of build up on pushback encoding structures. $\mathcal{W}_{0}^{*}\to\mathcal{W}_{1}^{*}$ inheritance can be understood in two ways, as the deferences of structural details and conditions, operator idea or encoding law but extended to larger structures, or component-based lower-class devolution of the structure itself.}
+  \label{diag:conditioning_isolation}
+\end{figure}
+
+On the side of machine learning, and other structural encoding and approximation systems, such diagrammatic movement changes, and thus instead of collapsing $\mathcal{D}_{m}$ to the oracle, we collapse $\mathcal{O}$ out of existence, in most general cases of the learning view where the \textbf{oracle access} assumption, where one can access the actual information, is not possible. The noisy term, $\epsilon$, while can be misleadingly noted to be simply measurement noise, can also represent a variety of different noise intrinsic to the system itself. This means two things. First, the first realization conjecture can go as followed. 
+
+\begin{conjecture}[Compression limit]
+	Up to certain point of the encoding requirements on ontology $(\mathcal{C},\mathcal{A},\mathrm{ENC})$, the oracle $\mathcal{O}$ available abstractness will be lower-bounded by certain information density criteria. Otherwise, $\mathcal{O}$ is deemed to be approximated by a proxy $\mathcal{O}'$ with incomplete knowledge.
+\end{conjecture}
+Such forces the narrative to be in two realistic cases - the model-agnostic without completion of knowledge or structural formation, and the other one is the imperfect access to the proxical oracle itself. As will be seen in the assessment of the theory. 
+
+\begin{figure}[htb]
+	\centering
+	\resizebox{1\textwidth}{!}{
+		\begin{tikzcd}[ampersand replacement=\&]
+	\& {(I,\mathbb{N})} \& {(I,\mathbb{N})} \& {(I,\mathbb{N})} \&\& {\mathcal{G}} \&\& {(\{e\}^{i},\mathcal{S}_{G})} \& {\mathcal{W}_{A}} \&\& {(X,\{\mathcal{S}_{i}\})} \\
+	\& {(I,\mathbb{N})^{n}} \\
+	\& {\mathcal{C}} \&\&\&\& {\mathcal{A}} \&\&\& {\mathrm{ENC}} \&\& {\mathcal{W}^{*}(\theta^{*},\Gamma^{*})} \\
+	\\
+	{\mathcal{O}(\theta,\Gamma)} \& {\mathcal{O}'(\theta,\Gamma)} \&\&\&\& {\mathcal{D}_{m}} \&\& {\mathcal{W}(\theta',\Gamma')} \&\&\& {\mathrm{ENC}'} \\
+	\& {(I,\mathbb{N})} \& {(I,\mathbb{N})} \& {(I,\mathbb{N})} \&\& {\mathcal{G}} \&\& {(\{e\}^{i},\mathcal{S}_{G})} \& {\mathcal{W}_{A}} \&\& {(X,\{\mathcal{S}_{i}\})} \\
+	\& {(I,\mathbb{N})^{n}} \\
+	\& {\mathcal{C}} \&\&\&\& {\mathcal{A}} \&\&\& {\mathrm{ENC}} \&\& {\mathcal{W}^{*}(\theta^{*},\Gamma^{*})} \\
+	\\
+	\&\&\&\&\& {\mathcal{D}_{m}} \&\& {\mathcal{W}(\theta',\Gamma')} \&\&\& {\mathrm{ENC}'}
+	\arrow["{{{\pi_{1}}}}", from=1-2, to=1-3]
+	\arrow["{{{\pi_{n}}}}", from=1-3, to=1-4]
+	\arrow["{{{g_{n}}}}"{description}, from=1-4, to=1-6]
+	\arrow["{{{\cong\mathcal{C}}}}"{description}, Rightarrow, from=1-4, to=3-6]
+	\arrow["{{{\lambda_{2}}}}"{description}, from=1-6, to=3-6]
+	\arrow["{{{g_{e}}}}"{description}, from=1-8, to=1-6]
+	\arrow["{{\psi_{\mathrm{ex}}}}"{description}, from=1-9, to=3-9]
+	\arrow["{{{\varphi_{2}}}}"{description}, from=1-11, to=3-9]
+	\arrow["{{{\pi_{0}}}}", from=2-2, to=1-2]
+	\arrow["{{{\pi_{j}}}}"', from=2-2, to=1-4]
+	\arrow["{{{{\small s(n,i,k)}}}}"', from=3-2, to=2-2]
+	\arrow["{{{\lambda_{1}}}}", from=3-2, to=3-6]
+	\arrow["{{{\varphi_{1}}}}"{description}, from=3-6, to=3-9]
+	\arrow["{{{\gamma_{\mathcal{W}}^{*}}}}"{description}, from=3-9, to=3-11]
+	\arrow["\sim", dashed, from=5-1, to=5-2]
+	\arrow["{{{d_{\mathcal{C}}}}}", dashed, from=5-2, to=3-2]
+	\arrow["{{{d_{\mathcal{A}}}}}"{pos=0.3}, dashed, from=5-2, to=3-6]
+	\arrow["{{{\gamma:(\theta,\Gamma)\times\varepsilon}}}", from=5-2, to=5-6]
+	\arrow["{{{d_{\mathcal{C}}'}}}"'{pos=0.3}, from=5-6, to=3-2]
+	\arrow["{{{d_{\mathcal{A}}'}}}", from=5-6, to=3-6]
+	\arrow["\times"{description}, from=5-6, to=5-8]
+	\arrow["{{{\gamma_{\mathcal{W}}}}}"{description}, from=5-8, to=5-11]
+	\arrow["{{{\pi_{1}}}}", from=6-2, to=6-3]
+	\arrow["{{{\pi_{n}}}}", from=6-3, to=6-4]
+	\arrow["{{{g_{n}}}}"{description}, from=6-4, to=6-6]
+	\arrow["{{{\cong\mathcal{C}}}}"{description}, Rightarrow, from=6-4, to=8-6]
+	\arrow["{{{\lambda_{2}}}}"{description}, from=6-6, to=8-6]
+	\arrow["{{{g_{e}}}}"{description}, from=6-8, to=6-6]
+	\arrow["{{\psi_{\mathrm{ex}}}}"{description}, from=6-9, to=8-9]
+	\arrow["{{{\varphi_{2}}}}"{description}, from=6-11, to=8-9]
+	\arrow["{{{\pi_{0}}}}", from=7-2, to=6-2]
+	\arrow["{{{\pi_{j}}}}"', from=7-2, to=6-4]
+	\arrow["{{{{\small s(n,i,k)}}}}"', from=8-2, to=7-2]
+	\arrow["{{{\lambda_{1}}}}", from=8-2, to=8-6]
+	\arrow["{{{\varphi_{1}}}}"{description}, from=8-6, to=8-9]
+	\arrow["{{{\gamma_{\mathcal{W}}^{*}}}}"{description}, from=8-9, to=8-11]
+	\arrow["{{{d_{\mathcal{C}}'}}}"'{pos=0.3}, from=10-6, to=8-2]
+	\arrow["{{{d_{\mathcal{A}}'}}}", from=10-6, to=8-6]
+	\arrow["\times"{description}, from=10-6, to=10-8]
+	\arrow["{{{\gamma_{\mathcal{W}}}}}"{description}, from=10-8, to=10-11]
+\end{tikzcd}
+	}
+	\caption{Diagrammatic expansion of the encoding scheme on approximation generation, with the differentiation between \textit{model-agnostic} (lower diagram) and flawed model-expression (upper diagram). The oracle $\mathcal{O}$ is replaced by the flaw proxy, by the assumptions on inaccessibility of oracle, thus retains only $\mathcal{O}$.}
+\end{figure}
+
+Lastly, we would like to reinforce our point on the view of which \textit{modelling preceded axioms}, or structural axioms to be exact. The main principle or philosophy here is the observation between pre-formal and formal context, and different machinery of abstraction. 
+
+\subsection{Encoding process and world constructions}
+
+The encoding process itself is not trivial, and itself coupled with the world construction, provides different information dimensions and conjunction structure for such, and further utilization of it in a dynamic, or operational systems for $\mathcal{W}$ of all forms. In here, we state $\mathcal{C}\cong (I,\mathbb{N})^{n}$ in transition diagram as the combinatorial, cardinality space, on which attains $s(n,i,k)$ as the three-argument codification or identifier of such. The entry $n$ is minimally defined to be the cardinal space size, on $i$ objects, and of $k$ specification code-length for each. For example, if information are regarded by the categorization of the specific cardinal scheme, and $n>k$, then the categorization at best, of each cardinal expression, will only contain at much $k$-fold categories. In our diagram, we assume that they are equal. In general, however, aside from relational system, we can replace $s(n,i,k)$ with arbitrary categorization specification schemes, as $s(\cdot,\dots)$, provide that they function with the cardinality expression on $(I,\mathbb{N})$. Internal functions on expansions, $\pi_{j}$, is responsible for the expansion, which is usually monolithic, and its definition is arbitrary but functionally as the description provides. 
+
+From the cardinality space to the ambiance space, the structure attains relational structures on $\mathcal{G}$, non-encoding of quantification sense, and the cardinality space, from $\lambda_{1},\lambda_{2}$. $\mathcal{G}$ itself attains specific description from end-point expansion, i.e. directly from $(I,\mathbb{N})^{n}$ of the diagram; however, we note that it is diagrammatically the same. The point of such transition is to encode different means onto the ontological relations of the further inquiry on encoding structures, but not directly onto the topological ground where encodings, structures, representations are in effect. Thus, the abstract ambiance space holds and attain all information, if able, of the formal system together, to transfer it to $\mathrm{ENC}$ where representations and so on, plus external, non-structural (with respect to the schematic aforementioned) constructs $\mathcal{W}_{A}$ on $\psi_{ex}$, representation system $(X,\{\mathcal{S}_{i}\})$ on $\psi_{2}$, and transference from $\mathcal{A}$ via $\psi_{1}$. The order of encoding is simple as $\psi_{1}\to \psi_{ex}\psi_{2}$, or in cases where external descriptions do not take prior, then $\psi_{1}\to\psi_{2}\to\psi_{ex}$ as accordance. Such then finally procure into $\mathcal{W}_{\mathrm{ENC}}$ via $\gamma^{*}_{\mathcal{W}}$. 
+
+While the secondary nonstructural path from $\mathcal{D}_{m}\to\mathcal{W}'(\theta',\Gamma')$ is simplified, the same structural argument can be stated for that path alone, as seen in schema expansion~\ref{diag:phenomenological_aspect}. In such construction, the expanded diagram explicitly contain, or rather includes the simpleton $(I,\mathbb{N})$ on themselves; usually, this should be denoted as $(1,n)$ for $n\in\mathbb{N}$ since it is enumerative only. There also exists no $\mathcal{A}$, and so on, thus the ambiance is rather ambiguous. The only missing part is the fact that there still exists certain $\mathcal{W}_{A}^{emp}$ for empirical-conditioning, since even in empirical system, certain choices and constraints force the system to be interpreted differently, though virtually no-bias system ideally is achievable. 
+
+We also note that fact that the construction refrains from being \textbf{categorically nondestructive}. For example, the copula form of the encoding process can be attained as a three-stage composition. First, we have
+\begin{equation}
+		\begin{bmatrix}
+		\mathcal{C}\\
+		(I,\mathbb{N})^{n}
+	\end{bmatrix}
+\end{equation}
+as the cardinality and its expanded form, by the presumption of finitude. After transformation on $\lambda$, $\mathcal{A}$ takes the form
+\begin{equation}
+	\begin{bmatrix}
+		\mathcal{A}\\
+		\mathcal{C}(I,\mathbb{N},n),\mathcal{G}
+	\end{bmatrix}
+\end{equation}
+for added $\mathcal{G}$-structure. Finally, the schema realize the encoding $\mathrm{ENC}$ as within compositional information of
+\begin{equation}
+	\begin{bmatrix}
+		\mathrm{ENC}\\
+		\mathcal{A}(\mathcal{C}(I,\mathbb{N},n),\mathcal{G}),(X,\{S_{i}\})
+	\end{bmatrix}
+\end{equation}
+After each iteration, information increases, but is not destroyed, thus are those transformations being additive rather than destructive. This is important, because per usual, encoding system are \textit{not conservative} of transitioning or morphism between components. Particularly foundational is the vector-space encoding, specifically those used in vector library in modern ML landscapes. Each type of encoding per choice destroys certain aspect, while keeping some intact for specific reasons. Granted, this is the example that is admissible of $\mathrm{ENC}$ stage itself, but same happens to renormalized systems, and probabilistic measure space structures. This can be easily prevented if we instead explicitly frame the construction as additive, and is simple as such. 
+
+\begin{figure}[htb]
+	\centering
+	\resizebox{\textwidth}{!}{
+		\begin{tikzcd}[ampersand replacement=\&]
+	{(I,\mathbb{N})^{(1)}} \& {(I,\mathbb{N})^{(1)}} \& {(I,\mathbb{N})^{(n)}} \&\& {\mathcal{G}} \&\& {(\{e\}^{i},\mathcal{S}_{G})} \& {\mathcal{W}_{A}} \\
+	{(I,\mathbb{N})^{n}} \\
+	{\mathcal{C}} \&\&\&\& {\mathcal{A}} \&\&\& {\mathrm{ENC}} \&\& {\mathcal{W}^{*}(\theta^{*},\Gamma^{*})} \\
+	\&\&\&\&\&\&\& {(X,\{\mathcal{S}_{i}\})} \\
+	{\mathcal{O}(\theta,\Gamma)} \&\&\&\& {\mathcal{D}_{m}} \&\&\& {\mathrm{ENC}'} \&\& {\mathcal{W}'(\theta',\Gamma')} \\
+	\&\&\&\&\& {(I,\mathbb{N})} \\
+	\&\&\&\& {\mathcal{C}'} \&\&\& {\mathcal{A}'}
+	\arrow["{{{{\pi_{1}}}}}", from=1-1, to=1-2]
+	\arrow["{{{{\pi_{n}}}}}", from=1-2, to=1-3]
+	\arrow["{{{{g_{n}}}}}"{description}, from=1-3, to=1-5]
+	\arrow["{{{{\cong\mathcal{C}}}}}"{description}, from=1-3, to=3-5]
+	\arrow["{{{{\lambda_{2}}}}}"{description}, from=1-5, to=3-5]
+	\arrow["{{{{g_{e}}}}}"{description}, from=1-7, to=1-5]
+	\arrow["{{{\psi_{\mathrm{ex}}}}}"{description}, from=1-8, to=3-8]
+	\arrow["{{{{\pi_{0}}}}}", from=2-1, to=1-1]
+	\arrow["{{{{\pi_{j}}}}}"', from=2-1, to=1-3]
+	\arrow["{{{{{\small s(n,i,k)}}}}}"', from=3-1, to=2-1]
+	\arrow["{{{{\lambda_{1}}}}}", from=3-1, to=3-5]
+	\arrow["{{{{\varphi_{1}}}}}"{description}, from=3-5, to=3-8]
+	\arrow["{{{{\gamma_{\mathcal{W}}^{*}}}}}"{description}, from=3-8, to=3-10]
+	\arrow["{{{{\varphi_{2}}}}}"{description}, from=4-8, to=3-8]
+	\arrow["{{{{d_{\mathcal{C}}}}}}", from=5-1, to=3-1]
+	\arrow["{{{{d_{\mathcal{A}}}}}}"{pos=0.3}, from=5-1, to=3-5]
+	\arrow["{{{{\gamma:(\theta,\Gamma)\times\varepsilon}}}}", from=5-1, to=5-5]
+	\arrow["{{{{d_{\mathcal{C}}'}}}}"'{pos=0.3}, from=5-5, to=3-1]
+	\arrow["{{{{d_{\mathcal{A}}'}}}}", from=5-5, to=3-5]
+	\arrow["\times"{description}, from=5-5, to=5-8]
+	\arrow[from=5-5, to=7-5]
+	\arrow["{{{{\gamma_{\mathcal{W}}}}}}"{description}, from=5-8, to=5-10]
+	\arrow["{{\cong \mathcal{C}}}"{description}, from=6-6, to=7-8]
+	\arrow["\pi", from=7-5, to=6-6]
+	\arrow[from=7-5, to=7-8]
+	\arrow["{{{{\varphi}}}}"{description}, from=7-8, to=5-8]
+\end{tikzcd}
+	}
+	\caption{Configuration for explicit phenomenological process, on finite similarity categorization. Here, the minimalized non-categorical mono-$\mathcal{C}$ and singular $\mathcal{A}$ onto $\mathrm{ENC}'$ is clarified, in conjunction of different to schema~\ref{diag:based_construction}.}
+	\label{diag:phenomenological_aspect}
+\end{figure}
+
+\subsection{Claim forcing}
+
+The structural formation of the system itself, as descriptive layer of interactions, can be explained as to consist of different directives, all in support of even the one-directional morphism without pushback or inverse. For the claims, though, it is to clarify of the structures on which claims should be made upon. The core notions of interest is on the encoding scheme only. Such is, this is the chain of observables, and hence, they are interconnected. There exists two main standing points. First, is the two encodings, $\mathrm{ENC}$ and $\mathrm{ENC}'$, of one results from $\psi_{\mathcal{W}}$ of the empirical approximation scheme on the data itself only, of the supposed naive observational world model $\mathcal{W}'$. The worlds set comprises $\mathcal{W}_{A}$, the external preconditioning world substrates, typical of system in application-roles or extensions, where the newer structures requires exposition and adoptions of earlier or existing world formations (i.e. for example nested substructures with extensions); $\mathcal{W}'(\theta',\Gamma')$ as the implicit empirical-only realization scheme; $\mathcal{W}^{*}$ as the formal representation scheme generated from the layering compositions, and the $\mathcal{O}(\theta,\Gamma)$ actual conceptual frameworks, of which the goalpost on actual representation lies. The list of arguments runs wild, but in majority, there also includes the version of the Correspondence Theorem, and the criterion on \textit{falsifiability} implicitly defined in the structure itself. The first ever conjecture or rather, principle, that is used in this text, is 
+\begin{principle}[The principle of model procedure]
+	Abstract encodings and descriptions are models, in which precedes structural axioms, but retain primitive foundational schema - abstract set annotations, alphabetical language and logical systems, etc.
+\end{principle}
+This principle, in general, states that for all ontological existences of different models in scientific or rigorous studies, such axioms can be considered into \textit{combinatorial, non-structured primitive schema}, in which the oracle in extraction principle is abstract and simplified enough, such is for schema/diagram~\ref{diag:oracle_mathematics} to effectively reconcile of the different between observables and the supposed oracle; and \textit{structural schema}, of which only appears after the first $\mathcal{W}^{*}$ of the primitive encoding as such, as to be the total \textit{choice of understanding} instead. Where the oracle starts to deviate from the certainty of abstraction by the virtue of increment in information consideration, more structures must be taken into accounts, hence more cardinality, more ambiance space configurations. Those can be supplied using primitive forms. This is also where the notion of externalized information exchange is implied, of between modelling and reality there exists such baseline in deferences of analysis that can be stated to be \textit{minimal}, for the foremost example as the mathematical formation since ancient civilization mathematics. The first ontology, as usually expressed of formal mathematics, can then be \textit{effectively ignored}, but not totally, as to be the baseline of the new layer. It also conjectures that for every starter theory, there must exist such primitive encoding, and one should not take it as such to say that there exists infinitely many possible axiomatic structures for effective encoding logics. 
+\begin{conjecture}
+	Encoding realization is constrained such that all encoding is one-way, and thus $\mathrm{ENC}$ and its constituent systems cannot consider itself $\mathcal{O}$ of the oracle. 
+\end{conjecture}
+This is the realization, naturally so from the system, to justify the invertibility of the arrow from $\mathrm{ENC}\to\mathcal{A}\to\mathcal{C}\to\mathcal{O}$. Let us take the simplest example, on $\mathcal{A}\to\mathcal{O}$. Simply speak, we conjecture that any attempt by theory to “define” reality would require an arrow that the epistemic structure forbids. Such action requires epistemic invertibility, or $\mathcal{A}\leftrightarrow \mathcal{O}$. However, in circumstances, this is impossible, as the flawed proxy can contain different structural difficulties in lining up with actual observations, and $\mathcal{D}_{m}$ lossy pathway increases this even further on question. Secondly, such also implies the notion of \textbf{closure}, in which $\mathcal{O}$ is internal to $S\equiv(\mathrm{ENC},\mathcal{A},\mathcal{C})$ for simplification of notation. However, this is forbidden, as the encoding go one way and the channel is not explicit on if such constructor morphism can go back. More specifically, the form of such inverse transition is ill-defined and opaque. And thirdly, it the path where \textbf{substitution} is considered. However, the framework and general modelling system already illustrates that the act of substituting $S$ to $\mathcal{O}$ invalidates the notion of the oracle, as physical realization or reference system induced. Hence, those moves are ill-defined. This leads to the observation,
+\begin{conjecture}[Theoretical irreversibility]
+	Internal structure $S$ cannot define or pushback $\mathcal{O}$, by the epistemic argument on access on $\mathcal{O}$ is mediated, lossy, representation-dependent, where there exists \textit{constrain representation}, cardinality organizational abstraction, encoding commitments on $\mathrm{ENC}$ and $\mathcal{W}_{\mathrm{ENC}}$, and thus cannot eliminate measurement contingency and representational choice and bypass such mediation.
+\end{conjecture}
+Hence, instead of arguing on the ground that "theory shouldn't define reality", the framework itself determines the enforcement of "there exists \textit{no epistemically valid transition} in which internal structure can define external structure." or reality in different case. The closure often seen in mathematics and so on is the \textit{special case} where oracle collapse is guaranteed, but not general. I should also be noted that the idea that theory defines reality has already been criticized; this framework formalizes that critique as an unavoidable epistemic asymmetry rather than a philosophical stance. Overall, at least up to this constraining mechanics, we have the following conjecture or claim system, 
+\begin{conjecture}[Provisional conjecture frameworks, T1]
+	We claim, or conjecture, according to synthesis~\ref{diag:based_construction}, synthesis~\ref{diag:conditioning_isolation}, synthesis~\ref{diag:encoding_structure} and synthesis~\ref{diag:oracle_mathematics}, alongside its respective theoretical conjectures and theorems, the following:
+	\begin{enumerate}[leftmargin=0.5cm,itemsep=1pt,topsep=1pt]
+		\item \textbf{Structure-as-directive claim}: The system's structure consists of directives of interaction, not objects or states as \textit{secondary extension}. 
+		\item \textbf{One-directionality composition}: Directive and schema bases support a \textit{one-directional morphism} without pushback or inverse, except with noise or forced constraints. 
+		\item \textbf{Anti-morphism}: directional morphisms are secondary to clarifying the underlying structural conditions. 
+		\item \textbf{Encoding primacy}: The encoding scheme and $\mathcal{W}_{\mathrm{ENC}}$ is the primary object on epistemology, but not ontology. 
+		\item \textbf{$\mathrm{ENC}$ existence-in-modelling-sense}: $\mathrm{ENC}$ and $\mathrm{ENC}'$ exist only in a modelling sense, relative to naive world model $\mathcal{W}'$, structurally induced world model $\mathcal{W}_{\mathrm{ENC}}$ and oracle $\mathcal{O}$. 
+		\item \textbf{Exposure/adoption}: New structures require exposure to and adoption of earlier world formations in typical case, aside from radical move of reformalising all structural dependency. 
+		\item \textbf{Representational goalpost}: The goalpost of actual representation lies at the level of conceptual frameworks, \textbf{not} raw world correspondence.
+		\item \textbf{Model-precede-axiom principle}: Abstract encodings and descriptions are models that precede structural axioms. The primitive axioms on categorization and \textit{minimal information primitive structures} are retain for language and structural formation. 
+		\item \textbf{Axioms-as-combinatorial-derivative}: Primitive axioms can be considered (briefly) combinatorial, non-structured derivatives of encodings. Structural axioms follow but alongside encoding structures. 
+		\item \textbf{Encoding-second to ontology}: Ontological existence of different models precedes abstract encoding. 
+		\item \textbf{Effective-ignorability of primitive}: Similar to points on minimal information primitive structures, primitive ontologies can be effectively ignored once encoding stabilizes on the arbitrary notion of such. 
+		\item \textbf{Baseline-encoding necessity}: Every framework requires a primitive encoding as a baseline, aside from the baseline itself. 
+		\item \textbf{Epistemic sufficiency hypothesis}: Supposedly, abstract encoding (i.e. cardinality and ambiance) alone is sufficient for analysis and specific inference, even without ontological and encoding-specific grounding. 
+	\end{enumerate}
+	The conjectural statements above are not mutually independent and may be grouped according to their logical role and dependency structure. Claims (1)--(3) form the \textbf{structural stance}, fixing the primitive notion of structure as directive-based and enforcing an intrinsic one-directionality without assumed inverse or pushback. Claims (4)--(7) constitute the \textbf{representational hierarchy}, specifying the primacy of encoding, the modelling-relative existence of $\mathrm{ENC}$ and $\mathrm{ENC}'$, the role of exposure and adoption across world formations, and the relocation of representational adequacy from raw correspondence to conceptual frameworks. Claims (8)--(9) define the \textbf{axiom displacement principle}, of which assert that abstract encoding precedes axiomatization and that primitive axioms arise as combinatorial or derivative artefacts within an established encoding regime. Claims (10)--(12) describe the \textbf{ontological consequences} of the preceding principles, including the encoding-first status of ontology, the effective ignorability of primitive ontologies after stabilization, and the necessity of a baseline encoding for any formal framework. Finally, claim (13) is isolated as a \textbf{epistemic sufficiency hypothesis}, which is intentionally stronger and more provisional, asserting that abstract encoding alone may suffice for analysis and specific inference even in the absence of ontological or encoding-specific grounding. Accordingly, claims (1)--(7) function as structural axioms of the framework, claims (8)--(12) as derived conjectural consequences, and claim (13) as a testable and revisable hypothesis.
+\end{conjecture}
+Some of further conjectures also follow the claim on which a system can be claimed as to be epistemically general, however, such issue is better suited if taken in a theoretical physics sense, thus would not be included in this section. In general, the architecture of this conjecture system addresses methodology, pragmatics and epistemological ontology. There are, however, problems with its framing, as bootstrapping and \textit{recursive rejection} (logical evolution and layered encoding of its use might reject recursively to the formal presumption taken of previous primitive layers) of higher-level systems are presented in those claims. However, we suggest in such a conjectured notion of \textit{concept dependency}, in which such systems are argued against. The notion directly indicates that there exists a particular quantification that can determine of a theory, its object information or dependences on model formation\footnote{Ideally, this is a meta-criterion, in which any theory or modelling construct can quantify what concepts it depends on, what object information it contains, and what model formation it presupposes. As such, it allows for external validation, comparison across theories, the identification of baselines, and detection of different aspect toward null formation, which is addressed in this part.}. As such, mathematics from its primitive form attains \textit{minimal physical information} as abstraction to numbers and furthermore to variables are, but retains presumptions or set of information that precedes such, for example, the notion of interactions between objects or its manipulations, and the baseline presumption on objects and its epistemic form (what is there to take of the objects). Overall, a model \textit{cannot function without baseline system}, or a \textit{primitive general model} precedes it; for similar reason that of a system with no information about what it determines, what it simulates, what it performs actions to describe, what it uses of the language of descriptions, etc., then it is not a system but a \textbf{non-existence null formation}, in support of claim 12. Thereby, we can then only state, of the primitive model conjecture, as followed, to settle such:
+
+Structurally of the minimized schema~\ref{diag:based_construction}, we have a few fixation on interpretations. The most important one at the initial condition, is about the notion of \textbf{finite and infinite} of a specific modelling language, aside from mathematics. Our view on such matter is applied on $\mathcal{C}$, and in general, of the ambiance space cardinality and extensions of objects mechanism on $\mathrm{ENC}$. The stances are two-fold, and as stated of the following construction:
+\begin{conjecture}[Finitary approximations]
+	We posit that in general modelling of AET, (1) only \textbf{finite tuple} exist as genuine elements of realization. (2) \textbf{Infinite objects} are then considered as the ideal limits, where the real epistemic objects are finite prefixes. Hence, for any infinite product or countably infinite space, we can replace it with the finite sequence, 
+	\begin{equation}
+		(I,\mathbb{N})^{<\omega} \cong \bigsqcup_{n\geq 0} (I,\mathbb{N})^{n}
+	\end{equation}
+	for all $s(n,i,k)$ as expression finite code of cardinal $\mathcal{C}$. 
+\end{conjecture} 
+
+In such conjecture we hold our stance on, all projection mapping $\{\pi_{j}\}$ in certainty limit are therefore partials on code length of specific $j$ descriptor for certain type of cardinal object. In case of homogeneous object space, such compress to singular $(I,\mathbb{N})$ pair, and said cardinality infiniteness also applies onto any configuration $(I,k)$ for $k\in\mathbb{N}$ of enumerative function. The main stance however, is that \textit{infinite objects}, including $\mathbb{N}^{\mathbb{N}}$ and $k'>k$, appears only as ideal limit points of the directed construction system from schema constructor $\pi_{j}$. In other standard notion, one observe that it is equivalently as points in the ideal completion of the finite-prefix poset. The conjecture that we claim here is structural, of which is to implement the epistemic claim that \textit{"infinity is infeasible"} by forbidding any primitive morphism that requires access to infinitely many coordinates. However, tools that allow for such notion is permitted in the configuration space $\mathcal{W}$ of post-encoding system, as by then it is the choice of representation, not epistemic. We do not disprove infinity by any mean, since such is a notion by itself, but rather to say that it is a useful fiction in this interpretation. 
+
+\subsubsection{On the Oracle $\mathcal{O}$ and its proxy $\mathcal{O}'$}
+
+It is also for us to specify, and clarify exactly the dynamics of the oracles, in different theories, and different theoretical settings. When talking about the oracle $\mathcal{O}$, we don't simply mean the old view of \textit{perfect input-output}, though that view applies in a limited but correct sense. The oracle, in the sense of application science, and within the action of observation-descriptor encoding between language of descriptions and its object, relies on several conjectured observations, some of which are mundane but still have to be listed. 
+\begin{conjecture}[Existence]
+	We posit of the \textbf{independent existence} of the oracle $\mathcal{O}$ that precedes any language. Ontological supposition precedes encoding of such oracle. 
+\end{conjecture}
+This aligns with the stance on which the oracle is not present within frameworks, and independent of its observers. Only its externalized observations from such observers are dependent on the observers, the oracle's setting, and so on, thus retain objectivity toward the true concept. The second argument, is about oracle knowledge framing, or, and inspiration taken from the \textbf{frame problem} (\cite{sep-frame-problem,FrameGryzJarek,SeagerFrameAxiological,Briggs2014MachineE,DreyfusImpasse1979}), and is also a consequence of the framework itself, as followed. 
+\begin{conjecture}[Oracle knowledge]
+	We posit that oracle $\mathcal{O}$ is pre-structural, pre-model. Furthermore, for every oracle $\mathcal{O}$, the most likely outcome of any given model with sophisticated modelling scheme on knowledge of such oracle, is restricted by a \textbf{proxical sub-oracle} $\mathcal{O}^{*}$ that is restricted into a frame $Q[\mathcal{O}]$, with enclosure of oracle knowledge attainable only at specific $Q$ and thus the proxy oracle. 
+\end{conjecture}
+The conjecture simply claims that there exists only a consistent-frame in which oracle knowledge will not be entirely known, but any given prediction, inter-extrapolation of such, and attempts to attain information clearance to such oracle, will only contain of a small \textit{frame} that defines a sub-oracle knowledge. Hence, for every system that claims itself as to have oracle knowledge, is flawed and potentially unjustifiable claim, or inherently inconsistent as it also implicitly posits of the \textbf{inconsistency region} for every possible `universal model'. In one way or another, we conjectured the intuition that Gödel's inconsistency theorem already mentioned, but in context of mathematics. 
+
+In another context, it also allows us to view the functional interpretation of the oracle in different settings, especially machine learning as a coupled pair $(x_{i},y_{i})$ of the observation set as a \textit{slice of knowledge} inherent of what to be known, and the frame to be concluded. As such, it retains partially, with however greater flexibility in a sense, in consideration of difference to symbolic system learner; but the other axis on frames is unresolved. In such context, the formal relationship present in both conjecture, 
+\begin{equation}
+	\mathcal{O}\underset{q(\cdot)}{\longrightarrow}Q[\mathcal{O}] \supset \mathcal{O}^{*} \longrightarrow (\mathcal{C},\mathcal{A},\mathrm{ENC}) \longrightarrow \mathcal{W}
+\end{equation}
+set up the claims and of which, argue on the position of compressed information on operations only, for statistical systems or function-derived observations dynamic. Intractability on $\mathcal{O}$ is hence structural, and unless breakthroughs are to be implied, it cannot be lifted out of the framework. Interestingly, it also aligns well with the usual intuition in probability, of which `a probability of one does not mean it will always happen, and the probability of zero does not mean impossibility is guaranteed'. 
+\section{World dynamics}
+
+For now, as introduction per se, we need to figure out the post-encoding substrate operational level, i.e. after encoded, what changes and what is used in the system by itself? Where will \textit{dynamic} fits into this context?
+
+\noindent\rule{\linewidth}{1pt}
+
+While the formation of the dual $\mathrm{ENC},\mathrm{ENC}_{\mathcal{W}}$ is now completed, it is then trivial that the next task is to employ such framework into realistic formalism of knowable and established systems, particularly those within machine learning theoretics, physical system where oracle substrates are determined to be a \textit{natural encoding decision}, and the foremost tool named mathematics. Thereby, the next following sections will employ AET onto those fields, or certain examples and positions. We note that the list is selective and incomplete, partially of ways in which invites further elaborations or coverages. Thus, it is much better to mark this work as incomplete of examples, and open for interpretations. 
+
+\noindent\rule{\linewidth}{1pt}
+

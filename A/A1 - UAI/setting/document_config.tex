@@ -1,0 +1,83 @@
+%################################################################################
+%# Titlepage configuration
+%########################################
+%# Helper method
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+%########################################
+%# Author and stuff
+\author{Fujimiya Amane}
+\title{Modelling Copula}
+%################################################################################
+%# Document global presetting
+%########################################
+%# Headers style configuration (TOC)
+\renewcommand{\cftchapterfont}{\sffamily\mdseries\large}     % title text
+\renewcommand{\cftchapterpagefont}{\sffamily\mdseries\large} % page numbers
+%
+%\renewcommand{\cftsectionfont}{\sffamily\mdseries\normalsize} % title text
+%\renewcommand{\cftsectionpagefont}{\sffamily\mdseries\normalsize}
+%
+%\renewcommand{\cftsubsectionfont}{\sffamily\normalsize\mdseries} % title text
+%\renewcommand{\cftsubsectionpagefont}{\sffamily\normalsize\mdseries}
+%
+%\renewcommand{\cftsubsubsectionfont}{\rmfamily\slshape\normalsize\mdseries} % title text
+%\renewcommand{\cftsubsubsectionpagefont}{\rmfamily\slshape\normalsize\mdseries}
+%########################################
+%# Headers style configuration
+\titleformat{\chapter}{\huge\sffamily}{\chaptername~\thechapter.}{1em}{}{}
+\setsecheadstyle{\sffamily\Large}
+\setsubsecheadstyle{\sffamily\large}
+\setsubsubsecheadstyle{\bfseries\sffamily\normalsize}
+\setparaheadstyle{\sffamily\normalsize\itshape}
+%########################################
+%# Footnote penalty
+\interfootnotelinepenalty=10000
+%########################################
+%# Titles pacing
+\titlespacing{\section}{0pt}{5pt}{3pt}
+\titlespacing{\subsection}{0pt}{4pt}{3pt}
+\titlespacing{\subsubsection}{0pt}{2pt}{2pt}
+%########################################
+%# Section numbering depth (1 = section, 2 = subsection, and so on)
+\setsecnumdepth{subsection}
+%########################################
+\renewcommand{\printloftitle}[1]{%
+  
+  \sffamily\mdseries\Huge #1
+}
+%########################################
+\renewcommand{\printtoctitle}[1]{%
+  \normalfont\Huge\sffamily #1%
+}
+%########################################
+%# Change marginpar to work on outer margin
+\strictpagecheck            % ensure correct side after page breaks
+\marginparmargin{outer}     % ensure outer-margin notes (default in twoside)
+\normalmarginpar            % normal (outer) margin orientation
+%########################################
+%# Defines margin index using marginnote package instead
+\usepackage{marginnote}
+\makeindex
+\let\oldindex\index
+\renewcommand{\index}[1]{%
+  \oldindex{#1}%
+  \marginnote{\hspace{1mm}\small #1}%
+}
+\setmarginnotes{0.6cm}{2.5cm}{0.5cm} 
+%$\checkandfixthelayout
+%########################################
+%# Fancy box definition
+\newenvironment{specification}[3]{%
+  \begin{table}[htb]
+  \vspace{1.5mm}%
+  \noindent%
+  \begin{tabularx}{\linewidth}{|lX|}
+    \hline
+    \multicolumn{2}{|c|}{\scshape #1} \\ \hline
+    \textit{Instance:} & #2 \\[0.5em]
+    \textit{Objective:} & #3 \\ \hline
+  \end{tabularx}%
+  \vspace{1.5mm}%
+  \end{table}
+}{}
+%################################################################################

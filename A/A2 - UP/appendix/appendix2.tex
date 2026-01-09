@@ -1,0 +1,119 @@
+\chapter{List of transfer functions}
+In our book, we mentioned a lot about specifically transfer functions in the neural construction. For convenience, here we summarize almost all transfer function of interest. What they are for? No idea (read the book, god-damn it!), but we will just search for them in here for a while, I guess. 
+
+\section{Classical transfer functions}
+A lot of transfer function, or rather the modern derivative of it in the classical sense, can be taken from \cite{10.5555/2721661}. Here, the transfer function can be linear or nonlinear function, in which it is used to transform the input-output characteristic of a single-input neuron into the variety of the transfer function. 
+\subsection{Hard limit (\texttt{hardlim[x]})}
+The hard limit transfer function, used in distinctive categorical sorting, has its input-output characteristic as: 
+\begin{equation}
+    \texttt{hardlim}[x] = \begin{cases}
+        0 & x < 0\\
+        1 & x \geq 0
+    \end{cases}
+\end{equation}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/hardlim1.png}
+    \caption{The typical hard limit transfer function with fixed $a$, and fixed range for $x$ in $[0,1]$.}
+\end{figure}
+If we allow modification of the inhibitory value, that is, the zero, by putting it to another variable $a$, the function turns into the dynamic hard limit function, 
+\begin{equation}
+    \texttt{varhardlim}[x] = \begin{cases}
+        0 & x < a\\
+        1 & x \geq a
+    \end{cases}
+\end{equation}
+Actually, you can even give the function the value range of absolute jump to be more than $[0,1]$, though fundamentally, according to the logical design, it is not interpretable to anything substantial. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/hardlim3.png}
+    \caption{The typical hard limit transfer function with variable inhibition $a$, and fixed range for $x$ in $[0,1]$.}
+\end{figure}
+\subsection{Symmetric hard limit (\texttt{hradlims[x]})}
+This one is a variation of \texttt{hardlim}, in which the discrete binary channel is $\{-1,+1\}$ instead. Hard limit is more fitting for probability of logic setting, while symmetric hard limit is more favourable in certain specification, for example, for fuzzy logical domain or directed value functions. Coincidentally, this is also the range that certain sigmoidal variation takes place. Symmetric hard limit is then defined by
+\begin{equation}
+    \texttt{hardlims}[x] = \begin{cases}
+        -1 & x < 0\\
+        +1 & x \geq 0 
+    \end{cases}
+\end{equation}
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/symhardlim.png}
+    \caption{The typical symmetric hard limit transfer function with static inhibition $a$, and fixed range for $x$ in $[-1,+1]$. As specified, this is the normal-extended range.}
+\end{figure}
+\subsection{Linear family (\texttt{satlin[x]}, \texttt{satlins[x]}, \texttt{purelin[x]})}
+There are many ways to structure the linear input-ouput processing node. Usually, we will have the pure linear channel \texttt{purelin}, the saturating linear channel \texttt{satlin}, and the symmetric variation of the saturating linear channel \texttt{satlins}. Because they belong to the same family. The linear one is simple.
+\begin{equation}
+    \texttt{purelim}[x] = x
+\end{equation}
+For saturating linear, we have its signal inhibited toward the two ends: 
+\begin{equation}
+    \texttt{satlin}[x] = \begin{cases}
+        0 & x < 0\\
+        x & 0 \leq x \leq 1\\
+        1 & x > 1
+    \end{cases}
+\end{equation}
+A generalization of this is taken in the form of a functional $f(x)$ enclosed within this range. That is, 
+\begin{equation}
+    \texttt{varsatlin}[x] = \begin{cases}
+        0 & x < 0\\
+        f(x) & 0 \leq x \leq 1\\
+        1 & x > 1
+    \end{cases}
+\end{equation}
+which might lead to undesire behaviours or simply non-continuous values, but we will have to resolve that later on. If ever. And finally, the symmetric version of the saturating linear functional, 
+\begin{equation}
+    \texttt{satlin}[x] = \begin{cases}
+        -1 & x < 0\\
+        x & 0 \leq x \leq 1\\
+        1 & x > 1
+    \end{cases}
+\end{equation}
+which will also have the same generalized form. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/saturatinglin.png}
+    \caption{The saturating linear with linear region of $[0,1]$. A smoother variation would be something like sigmoidal functions, that is.}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/symsatlins.png}
+    \caption{The symmetric saturating linear with linear region of $[-1,1]$, a positive-negative variation of the saturating linear.}
+\end{figure}
+\subsection{Sigmoid (\texttt{sigmoid[x]}) and log-sigmoid (\texttt{logsigmoid[x]})}
+The sigmoid function is fairly simple. Instead of giving piecewise saturating condition, we find the expression that gives pairwise, two-sided contiuously saturated function, expressed by: 
+\begin{equation}
+    \texttt{sigmoid}[x] = \frac{1}{1+ e^{-x}}
+\end{equation}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/sigmoid.png}
+    \caption{The sigmoidal function channel}
+\end{figure}
+A fairly complicated and often reductive version of it is the log-sigmoid function, as
+\begin{equation}
+    \texttt{logsigmoid}[x] = \log{\left(\frac{1}{1+ e^{-x}}\right)} = -\log{(1+ \exp{(-x)})}
+\end{equation}
+Interestingly, the differentiation operator on log-sigmoid gives the sigmoid function, while sigmoid's differentiation gives $\texttt{sigmoid}[x](1-\texttt{sigmoid}[x])$. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/logsigmoid.png}
+    \caption{The logarithmic sigmoidal function channel. Notice that the range of \texttt{logsigmoid} is $[-\infty, 0]$, making it somewhat weird of a choice for a transfer function.}
+\end{figure}
+\subsection{Hyperbolic tangent (\texttt{tansig[x]})}
+The hyperbolic tangent the adoption of the hyperbolic function to be transfer function. As such, its range also lies in $[-1,1]$, making it on par with variations of symmetric saturation function. Normally, we would regard this as the somewhat narrow (by width) symmetric version of sigmoid. It is formulated as: 
+\begin{equation}
+    \texttt{tansig}[x] = \frac{\exp{(x)} - \exp{(-x)}}{\exp{(x)} + \exp{(x)}}
+\end{equation}
+Also interestingly, hyperbolic tangent is self-referential, evidentual of the derivative:
+\begin{equation*}
+    \frac{d}{dx} \tanh{(x)} = 1 - \tanh^{2}{(x)}
+\end{equation*}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/tansig.png}
+    \caption{The hyperbolic tangent transfer function channel.}
+\end{figure}
+The uses of those function can be interpreted to be quite similar to how we can formulate the binary classification, or binary categorization problem-solving solution. 

@@ -1,0 +1,234 @@
+We are now ready to start an overview of the current, present implementation of the neural network architecture and their components. The first simple formation of a neuron construct is the \textit{single-input neuron}, in which we will introduce here. Suppose that $a$ is a neuron. Then, we have: $$a(p)=f(wp+b)$$
+
+for $p$ the \textit{single input}, $w$ the \textit{neuron's weight}, $b$ the \textit{bias} and $f$ the \textit{activation function}. $f$ is the same concept as the threshold we discussed above, or the cell body's function. Hence, $a$ is equal to $(w,b,f)$, in which the flow of working begins from receiving $p$, then apply them with $wp+b$, and send it for the function $f$. Notice that $b$ is implicit - normally, this can be omitted if you do not want. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/brainneuron2.png}
+    \caption{A very simple, single-input neuron. We specify explicitly the input $I$ (usually, it is simply omitted, but the form of the input changes the network) with the flow $P$, the \textbf{composer} $\Sigma(P, w)$ with controllable factor (or weights), the \textbf{bias} $b$ (for some reason), and the \textbf{transfer (activation) function} $f$ which handles the often called "interpretation" of the neural unit. Usually, the activation function is fixed.}
+\end{figure}
+We now note that $w$ and $b$ are what called \textit{adjustable} parameters of the neuron. Hence, effectively, for fixed $f$, $w$ and $b$ is the \textbf{characteristic property} of the neuron, signify how the neuron would work. 
+%\begin{figure}[h!]
+%    \centering
+%    \includegraphics[width=0.5\textwidth]{img/diagrambrainneuronsingle2.%png}
+%    \caption{A perhaps simplistic view of the neuron. From the onset %(which perhaps will be exploited in later sections), there exists %the fundamental interpretation of \textit{channel communication} %between several anecdotal conceptual understanding of a neuron's %operation.}
+%\end{figure}
+
+\subsection{Transfer function}
+\textbf{Transfer function}, or activation function, as we have noted as fixed, can be chosen independently to satisfy some specification of the problem that the neuron will attempt to solve. 
+
+A variety of transfer function can be included, but most of the time, we would like to focus on certain types of them. For example, the \textit{hard limit function}, more piecewise function, \textit{linear function} $f(x)=x$ - in the case where the processing preserves the combination, or \textbf{sigmoid}, $a=1/(1+\exp{-n})$. Recently, there is also the Rectified Linear Unit (ReLU)\index{ReLU} function, defined by $$y=\begin{cases}
+x & x \geq 0  \\
+0 & x < 0
+\end{cases}$$
+which takes inspiration from the rectification in signal processing. The list of all transfer functions can be found in the appendix section. 
+\subsection{Formalism}
+
+Formalize the above description, we have the following definition, which uses our definition of \ref{def:neuclass}. 
+\begin{definition}[Singleton neuron]
+    A single-input neuron, or \textbf{singleton unit} $a$, belongs to the class $\mathfrak{R}(\mathcal{N},\mathcal{C})$ such that: 
+    \begin{itemize}
+        \item $\lvert n_i \rvert=1$, $n_i$ is expressed by parameter $n_{i}^{[j]}=p$.
+        \item Weights: $\mathbf{w}\in n_i$ of single value on $\mathbb{R}$, no $\mathbf{w}'$. 
+        \item $f_{0}:n_{i}[\mathbf{w}]\times \mathbb{R}\to \mathbb{R}$ as $wp+b, b\in \mathbb{R}$. 
+        \item $f_{1}:n_{i}[\mathbf{w}]\times n_{o}[\mathbf{w}']\to\mathcal{O}$ is any function of the \textbf{transfer function} class, expressed by: $f_{1}\mapsto \mathrm{Tr}(f_{0})= \mathrm{Tr}(wp+b)$. 
+    \end{itemize}
+\end{definition}
+
+In this definition, we have $M(f_0, f_0)$ for our collection of operative unit. We do not use, yet, our definition which requires us to separate $(\mathcal{N},\mathcal{C})$ discretely, since it is not well-defined, and is much more painful to work on. Another issue that we would have to face, is the scaling problem for such definition over a huge set of parameters and configuration. 
+
+\subsection{Purpose}
+Overall, the single-input neuron is very simple as it is. It processes singular input, provides the \textit{relative significance} of the signal received, process it, and then output it by provide it to an output signal function. Aside from the function signal output, in more numerous setting, there might be a lot of overhead in this step. 
+\subsection{Multiple-input neuron}
+The capability of this singular neuron is very limited, as we can see by the name of \textit{single-input}. We have two ways to deal with the task of added capacity. Either expand it vertically - \textbf{multiple-input neurons}, or by stacking them - \textit{layered neural network}. We will discuss the first one. 
+
+Typically, for functionality, we have more than one input that the neuron can handle. A neuron with $R$ inputs is shown as: \begin{align}
+    & n = w_{1}p_{1} + w_{2}p_{2}+w_{3}p_{3}+\dots w_{r}p_{r} + b= \mathbf{W}\mathbf{p}+b\\
+    & a = f(\mathbf{Wp}+b)
+\end{align}
+
+The typical form gives us the \ref{fig:mlnet}, in which again, the aggregator $g$ and the function $f$ is represented by the two boxes.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.25\textwidth]{img/mlnet.png}
+    \caption{A very simple, multiple-input neuron with homogeneous inputs.}
+    \label{fig:mlnet}
+\end{figure}
+
+By notation, we use the encapsulation of \textit{matrix notation}, such that $\mathbf{W}=\begin{bmatrix}w_{1} & \dots & w_{r}\end{bmatrix}$. This is more convenient dealing with numerical computation and operation, if we choose to streamline them. It also helps that by this way, we can utilize the hardware called a \textit{Graphic processing unit} (GPU), which is usually configured for managing graphics - matrices for grids of pixels - for this process. 
+
+\subsection{Examples}
+
+We will now give examples to certain implementation of this type of neural structure. For a single neuron, there exists many examples how people making their own configuration, plus properties.  
+
+\subsubsection{McCulloch-Pitts neuron (McCulloch and Pitts, 1943)}
+The most, easily oldest and nicely put neural structure is the \textbf{McCulloch-Pitts neuron}, by McCulloch and Pitts (1943). Given the series of inputs, that is, for $n_i \to \{x_1,\dots,x_n\}$, the internal mechanism $M$ consists of $(g,f)$ such that $g$ aggregates $n_{i}$, which is the same as the typical construction, and $f$ works as a serial, discrete logic transfer function. That is, 
+\begin{equation*}
+    g(n_i) = g(x_1,\dots,x_n) = g(\mathbf{x}) = \sum_{i=1}^{n} x_{i}, \quad y= f(g(\mathbf{x})) = \begin{cases}
+        1 & g(\mathbf{x}) > \theta \\
+        0 & \text{o.w.}
+    \end{cases}, \theta > 0
+\end{equation*}
+Here, $\theta$ is called the threshold parameter, and is typically, under context, not \textit{normalized} (we will see what does this mean). We notice that the operating space, in general, of the neural class, belongs to the predicate spaces of logical values, or at least the embedding of the logical space. Because this type of construction works by defining $f$ at the end tail of the process by a discrete unit, it can be formalized to construct others logical-relevant neural unit, for example, the $\mathsf{AND}$, $\mathsf{OR}$, $\mathsf{NAND}$, $\mathsf{NOR}$ and $\mathsf{NOT}$ unit. For all $x_{i}$ taking values in $\{0,1\}$, we have the following implementation:
+\begin{align*}
+    & \mathsf{AND} (n_{i}(\mathbf{x}),g,f_{A}): f_{A}(g(\mathbf{x})) = \begin{cases}
+        1 & \lvert n_{i} \rvert = g(\mathbf{x})\\
+        0 & \text{o.w.}
+    \end{cases}\\
+    & \mathsf{OR} (n_{i}(\mathbf{x}),g,f_{A}): f_{A}(g(\mathbf{x})) = \begin{cases}
+        0 & \lvert n_{i} \rvert = 0\\
+        1 & \text{o.w.}
+    \end{cases}\\
+    & \mathsf{NAND}(n_{i}(x_1, x_2), g,f_{A}) : f_{A}(g(\mathbf{x})) = \begin{cases}
+        1 & g(\mathbf{x}) = 1\\
+        0 & \text{o.w.}
+    \end{cases}\\
+    & \mathsf{NOR}(n_{i}(x_1, x_2),g,f_{A}): f_{A}(g(\mathbf{x})) = \begin{cases}
+        1 & g(\mathbf{x}) = 0\\
+        0 & \text{o.w.}
+    \end{cases}\\
+    & \mathsf{NOT}(n_{i}(x),f_A) : f_{A}(x) = \begin{cases}
+        1 & x = 0\\
+        0 & x = 1
+    \end{cases}
+\end{align*}
+
+Out of all of them, only $\mathsf{OR}$ and $\mathsf{AND}$ have the highest input-allowance count, for arbitrary $n$ counts of the size of $n_{i}$. After constructing this class of neuron, one then can ask the question: 
+\begin{question}
+Can any boolean function be represented using a McCulloch-Pitts neuron?
+\end{question}
+This question poses the aspect of \textit{functional completeness} within the class of all Boolean function or concepts - is it possible, for any arbitrary boolean system $\mathcal{B}$, there exists an MP-neuron capable of representing it? For boolean logic, this is called the question of \textbf{functional completeness}. A set of logical connectives is called \textbf{functionally complete} if every boolean expression is equivalent to one involving only these connectives. We have the following theorem: 
+
+\begin{theorem}
+    A single McCulloch-Pitts neural class's neuron can represents any \textbf{linearly separable} boolean functions, that is, all boolean functions $\mathcal{B}$ of dimension $n$ that can be separated by a hyper $n-1$ plane. In $\mathbb{R}^3$, for example, it is the hyperplane in $\mathbb{R}^{2}$ of the subspace. 
+\end{theorem}
+
+The above theorem only use \textit{one} MP-unit, and it is able to linearly separate such boolean function. What happens if we increase it to more than one? Then, we have to figure out the way to wire all those neuron together to form functional logical system. Usually, this is pretty complex and hard to do. However, we see another equivalent - this looks like some examples from \textit{linear programming}. Perhaps we should explore it that way. 
+\subsubsection{Perceptrons (Marvin Minsky, 1970)}
+The second example one can find, which fits the above definition and also, historically there, is the definition of a \textit{perceptron} by Marvin Minsky's \textit{Perceptron} (Minsky, Papert, 1970). His definition, per contrast, might seem a bit difficult to follow since it is based on predicate logic. In this example, we will follow those predicates definition and construction to understand what is being tried. 
+\vspace{2mm}
+
+Let $R$ be the space $\mathbb{R}^{2}$, and $X$ be a geometric figure drawn on $R$\footnote{In his book, \textit{Perceptron}, it is the main topic of geometrical learning that is mostly discussed, so a lot of examples and definitions might lean on the geometrical tasks side of things.}. Let $\psi(X)$ be a two-valued function of $X$ on $R$, usually think of as $0$ or $1$. By this embedding, we have created the \textit{predicate} on which $\{0,1\}\mapsto \{F,T\}$, or there are now variable statement whose truth or falsity depends on the choice of $X$. For example, 
+\begin{equation*}
+    \psi_{\text{circle}} (X) = \begin{cases}
+        1 & X \text{ is a circle}\\
+        0 & \text{o.w.}
+    \end{cases}
+\end{equation*} 
+For this, we define some very much simpler predicates, in which for the sake of clearness, denoted by $\varphi$. So, for example, for $X\subset R$, the recognize predicate is that: 
+\begin{equation*}
+    \varphi_{p}(X) = \begin{cases}
+        1 & p \in X\\
+        0 & \text{o.w.}
+    \end{cases}
+\end{equation*}
+or by extending this for an entire subset $A$: \begin{equation*}
+    \varphi{A}(X) = \begin{cases}
+        1 & A \subset X\\
+        0 & \text{o.w.}
+    \end{cases}
+\end{equation*}
+So, for a typical system, Marvin devised the scheme of working on a listing of \textbf{predicate}: functions and op-code that acts like logical predicate, for $\varphi$ being those simpler predicate (the \textit{ground} predicate), and $\psi$ the constructed, more complex predicate. 
+
+Properties elementary to those predicate includes the concept of \textbf{locals}. We define it as original, which requires the definition of set convexity: 
+\begin{definition}[Set-theoretic convexity on $R$]
+    A set $X$ fails to be convex if and only if there exists three points such that $q$ is in the line segment joining $p$ and $r$, and: 
+    \begin{itemize}[noitemsep,topsep=0pt]
+        \item $p\in X$. 
+        \item $q\not\in X$. 
+        \item $r\in X$
+    \end{itemize}
+\end{definition}
+
+We then define the notion of \textit{conjunctively local}:
+\begin{definition}[Conjunctively local]
+    A predicate $\psi$ is \textbf{conjunctively local} of order $k$ if it can be computed by a set of $\Phi$ of predicates $\varphi$ such that: 
+    \begin{itemize}
+        \item Each $\varphi$ depends upon no more than $k$ points of $R$. 
+        \item The predicate $\psi(X)$ is evaluated by: \begin{equation}
+            \psi(X) = \begin{cases}
+                1 & \varphi(X) = 1\forall \varphi \in \Phi \\
+                0 & \text{o.w.}
+            \end{cases}
+        \end{equation}
+    \end{itemize}
+    In such sense, $\psi_{\text{convex}}$ is conjunctively local of order 3.
+\end{definition}
+
+Computed here refers to the analogous mention of \textit{parallel computation}, in which is described by calculating $\psi(X)$ with the computation of \textit{independent predicate} $\varphi_{1}(X),\varphi_{2}(X),\dots$ and then combine the result by means of a function $\Omega$ of $n$ arguments to obtain $\psi$. 
+
+Now, the perceptron structure is defined as followed. First, we determine the linearity argument of the problem. 
+\begin{definition}[Minsky, linearity of predicate]
+    Let $\Phi = \{\varphi_{1},\dots,\varphi_{n}\}$ be a family of predicates. We will say that $\psi$ is linear with respect to $\Phi$ if there exists a number $\theta$ and a set of numbers $\{\alpha(\varphi_{1}),\dots,\alpha(\varphi_{n})\}$ such that \begin{equation}
+        \psi(X) = 1 \leftrightarrows \alpha(\varphi_{1})\varphi_{1}(X) + \dots + \alpha(\varphi_{n}) \varphi_{n}(X) > \theta
+    \end{equation} 
+    In the same notion, $\theta$ is called the \textbf{characteristic threshold}, and $\alpha$ are called weights. 
+\end{definition}
+The intuition of this is that each predicate $\Phi$ is supposed to provide some evidence about whether $\psi$ is true for any figure $X$. A subject that can solve this problem is called a \textbf{perceptron}: 
+\begin{definition}[Minsky, perceptron]
+    A \textbf{perceptron} is then a device capable of computing all predicates which are linear in some given set $\Phi$ of partial predicates. 
+\end{definition}
+The family of perceptrons is numerous. Under such definition, there are plenty of
+\begin{enumerate}[noitemsep]
+    \item \textbf{Diameter-limited perceptrons}: For each $\varphi$ in $\Phi$, the set of points upon which $\varphi$ depends is restricted not to exceed a certain \textit{fixed diameter} in the plane. 
+    \item \textbf{Order-restricted perceptron}: We say that a perceptron has order $\leq n$ if no member of $\Phi$ depends on more than $n$ points. 
+    \item \textbf{Gamba perceptron}: Each member of $\Phi$ may depend on all the points but must be a "linear threshold function" (that is, each member of $\Phi$ is itself computed by a perceptron of order 1, as defined.) 
+    \item \textbf{Random perceptron}: These are the form most extensively studied by Rosenblatt: the $\varphi$ are random Boolean functions. 
+    \item \textbf{Bounded perceptron}: $\Phi$ contains an infinite number of $\varphi$, but all the parameters $\{\alpha\}$ lie in a finite set of numbers. 
+\end{enumerate} 
+
+\section{Constructing the network}
+
+Commonly, in a working technical setting, one neuron with many inputs might not be sufficient. We might need five or ten, or more, operating in parallel. This way, we have more computational power (supposedly). This prompted the solution to put multiple neuron together, and somehow makes sense of their evaluation and actions. But how? One solution to this is to stack them linearly, ordered into \textit{layer}, which is then applicable also for the concept of parallel computation, somehow. This creates another new object, called \textit{layer neural network}. Until now, this is the first time we can sufficiently call it a network. 
+
+A \textit{single-layer network} of $S$ neuron, which looks rather like in figure \ref{fig:lulululala}, in a linear stack layer, and distributed input sequence. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.3\textwidth]{img/aaeSFF.png}
+    \caption{A layer of neurons. A layer typically has $S$ neurons and with $R$ port for input. The form of the transfer function $f$ is presumed to be uniform, but in practice, this is not necessary.}
+    \label{fig:lulululala}
+\end{figure}
+
+In which consists of $R$ input channel, connected fully to any individual neurons, and the weight matrix accordingly will have the shape of a \textbf{matrix} instead, of the size $S\times R$, or $S$ rows, since we have $S$ neurons now. The layer includes also the summer, the bias vector $\mathbf{b}$, the transfer function boxes and the output vector $\mathbf{a}$. Under normal circumstances, it is common for $R\neq S$, or for the input and the neuron to be of different size. An aspect worth considering is that in a layer, it is not so restrictive that every transfer function needs to be the same. Indeed, we can define a single composite layer of neurons having different transfer functions in it. 
+
+The input vector elements enter the network through the weight matrix $\mathbf{W}$: 
+
+$$\mathbf{W}=\begin{bmatrix}
+w_{11}  & w_{12} & w_{13}  & \dots & w_{1R} \\
+w_{21} & w_{22}  & w_{23} & \dots & w_{2R} \\
+\vdots & \vdots & \vdots &  & \vdots \\
+w_{S1} & w_{S2} & w_{S3} & \dots & w_{SR}
+\end{bmatrix}$$
+
+As noted, the row indices indicate the destination neuron associated with that weight, while the column indicate the source of the input. Thus, the indices in $w_{32}$ indicates the connection to the \textit{third neuron of the second source}.
+
+In such term, the entire network can be given in the form \begin{equation*}
+    L(\mathbf{p}) = f(\mathbf{Wp}+ \mathbf{b}) = \begin{bmatrix}
+        f_{1}(\mathbf{w}_{1,[R]}\cdot \mathbf{p} + b_1)\\
+        f_{1}(\mathbf{w}_{2,[R]}\cdot \mathbf{p} + b_2) \\
+        \vdots \\
+        f_{1}(\mathbf{w}_{S,[R]}\cdot \mathbf{p} + b_S)
+    \end{bmatrix}
+\end{equation*}
+
+Usually, those process will be fed into yet another standard procedure to then being grounded to a central unit. This can be expressed by the formula 
+
+\begin{equation}
+    f_{m}(w,\mathbf{x}) = \sum^{m}_{j=1} u_{j} h(\mathbf{w}_{j}^{\top}x + b_{j})
+\end{equation}
+for input $\mathbf{x}\in \mathbb{R}^{d}$, $\mathbf{w}\in \mathbb{R}^{d}\subset \mathbf{W}$, $b_{j}\in \mathbb{R}\subset \mathbf{b}$, $u_{j}\in \mathbb{R}$, and the notation for $w$ is $w=\{[u_j, \mathbf{w}_{j},b_{j}]\}$. 
+
+\subsection{Relationism in network}
+We might want to explain the scheme in which we want to connect neurons together, and their implications. Overall, the relationalism here is such that: 
+\begin{itemize}
+    \item Every neuron is \textit{functionally independent}, stage-wise. 
+    \item Neurons are then grouped into stages, called \textit{layers}. 
+    \item Operation flows from layer-to-layer, neuron of this layer to neuron of that layer, for 1-DOF manner as going forward. There are no horizontal or tangential connections or operations, no loops, no handler.  
+\end{itemize}
+
+This creates a relation scheme of one-dimensional execution strategy for large networks of interest, in which we can stack layers upon layers, neuron is normalized to the specific layers, and so on. The effect on which layers upon layers interdicts is not clear, however, in the current context. 
+
+\subsection{Multiple layers in network}
+
+As we have mentioned of the above section, the degree of freedom of information flow is forward, or, from layer-to=layer. That is to say, you can also stack just similarly to multiple consecutive neurons in one sequence. 
+
+By the notation of mathematics, we define the following:

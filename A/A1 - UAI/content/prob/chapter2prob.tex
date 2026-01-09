@@ -1,0 +1,40 @@
+\chapter{No free lunch}
+
+Even though bias-variance tradeoff is considered to be the standard rule of thumb in encounters of the dichotomy between \textit{complexity} and \textit{performance}, its form and analytical expression is not uniform throughout different literature of interest. Specifically, it is sometime considered to be equal to the estimation-approximation tradeoff, though in some case it is not. Hence, for an approach for the formal treatment, our consideration should start with the question of the existence of a universal approximator. The goal of the standard learning problem, aside from microscopic and specific details, deals with the construction of the solution to the problem of approximating a given observation set, providing that there exists a hidden relation or concept $c$ that governs the observation itself. Then, the question is to ask if there exists a universal approximator that can approximate any concept $c$ of the entire concept space $\mathcal{C}$, given sufficient time, complexity, and expression. 
+
+\section{Original statements}
+
+Of anything, we are typically concerned of creating a universal framework - for example, in a meeting of which we require the unification of voices and resolution; of mathematics where category theory and a lot of others try to unify mathematics under the singular lens; or in physics, there exists the quest for the theory of universal physical law, of which the standard model almost, almost claims such title in the process. The same is true for learning theory. Specifically, it is the question as to ask, "Will there ever be a universal learner $\mathcal{L}$ that will be able to approximate everything, to a given degree of correctness?". The villain in such story, is then, the \textbf{no-free-lunch} theorem. A simplified case basis of such theorem (\cite{10.5555/2621980}) on binary classification can be recalled as followed. 
+
+\begin{theorem}[No-Free-Lunch]
+    Let $A$ be any learning algorithm for the task of binary classification with respect to the $0-1$ loss over a domain $\mathcal{X}$. Let $m$ be any number smaller than $|\mathcal{X}|/2$, representing the training set size. Then, there exists a distribution $\mathcal{D}$ over $\mathcal{X}\times \{0,1\}$, such that: 
+    \begin{enumerate}
+        \item There exists a function $f:\mathcal{X}\to \{0,1\}$ with $L_{\mathcal{D}}(f)= 0$. 
+        \item With probability of at least $1/7$ over the choice of $S\sim \mathcal{D}^{m}$ we have that $R_{\mathcal{D}}(A(S))\geq 1/8$. 
+    \end{enumerate}
+\end{theorem}
+
+This theorem states that there exists no universal learner, for every learner there exists a task on which it fails, even though success can be achieved by another learner. In certain way or another, this theorem is in the profession of \textit{impossibility theorem}, where one choose to forbid the model at present theory from being universal, that is, capable of doing everything. In particular, any algorithm that chooses its output from hypothesis in $\mathcal{H}$ will fail on some learning tasks. 
+
+Do note that this theorem as of this, consider a very mundane and simplified class of model, and also a very simplified class of ambiance space, of $\mathbb{A}_{0}$ under category of unity (binary classification). To make it more effective, we need a general statement of such. 
+
+\begin{col}
+    Let $\mathcal{X}$ be an infinite domain, and let $\mathcal{H}$ be all functions from $\mathcal{X}\to \mathcal{Y}$. Then $\mathcal{H}$ is not PAC learnable. 
+\end{col}
+
+\begin{proof}[Draft proof for binary case]
+    We first prove this for some class of binary classification functions $f: \mathcal{X}\to \{0,1\}$. Assume $\mathcal{H}$ is learnable. Choose for $\epsilon < 1/8, \delta < 1/7$. There, $\mathcal{H}$ is fixed. Then, by PAC learning, for some number $m=m(\epsilon, \delta)$, there must be some algorithm $\mathcal{A}$ and an integer $m = m(\epsilon, \delta)$, such that for any data-generating distribution over $\mathcal{X} \times \{0,1\}$, if for some function $f: \mathcal{X} \to \{0,1\}$, $R(f) = 0$, then with probability greater than $1 - \delta$ when $A$ is applied to samples $S$ of size $m$, generated i.i.d. by $\mathcal{D}$, $R(A(S)) \leq \epsilon$. However, applying the No-Free-Lunch theorem, since $|\mathcal{X}| > 2m$, for every learning algorithm (and in particular for the algorithm $A$), there exists a distribution $\mathcal{D}$ such that with probability greater than $1/7 > \delta$, $R(A(S)) > 1/8 > \epsilon$, which leads to the desired contradiction.
+\end{proof}
+
+This theorem is even then, not so fairly satisfactory, especially of binary classification only. Furthermore, after such introduction, we are still not yet clear what is meant by the theorem itself. So, what is going on?
+
+\section{Bias-variance accordance}
+
+In certain way, we can indeed discover some traces of no-free-lunch in accordance to bias-variance tradeoff. Or rather, the lack thereof of the NFL. 
+
+\begin{conjecture}[General insight, \cite{10.5555/2621980}]
+    Bias-variance can be identified, under several contexts, to mean the following: \begin{itemize}
+        \item For any model $h$ and measure of its complexity $\mathcal{M}(h):\mathcal{H}\to \mathbb{F}^{k}$, There exists a point $\psi$ such that when an approach of $h\to c$, as $\mathcal{M}(h)\to\infty$ will not be guaranteed such that $\ell(h,c)\leq \epsilon$ for an arbitrary $\epsilon>0$, and arbitrary measure $\ell(\cdot,\cdot)$. Similarly, there exists point $\phi^{*}$ where $\nabla_{\varphi}\ell(h,c)\approx 0$ around $[\phi^{*}-\delta,\phi^{*}+\delta]$, via the proxy point. We call this the \textit{saddle swing point} of the measure landscape, under the context of learning theory.
+        \item For any model $h$ in comparison to a hidden concept $c$, of its complexity $\mathcal{M}(h)$, there is the decomposition of the error measure $\ell(h,c)$ into three terms, $\mathbb{B}(h,c)$ as expressive error, $\mathbb{V}(h,c)$ as fluctuation error and $\mathbb{I}(h,c)=\epsilon_{itr}$ as irreducible error (i.e. noise). Then, there exists a point $\phi\in \mathcal{M}(h)$ on space $(\mathcal{M}(\mathcal{H},\mathcal{L}))$ for $\ell \in \mathcal{L}$ of the general error landscape, such that $\min_{h\in \mathcal{H}}\ell(h,c)= h_{\phi}$, and there exists only one such point. Furthermore, $\lim_{\mathcal{M}(h)\to 0^{+}}\ell(h,c) = +\infty$, and $\lim_{\mathcal{M}(h)\to \infty^{-}}=+\infty$, accordingly. 
+    \end{itemize}
+\end{conjecture}
