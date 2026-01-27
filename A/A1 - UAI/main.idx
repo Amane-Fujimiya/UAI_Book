@@ -113,15 +113,16 @@
 \indexentry{skew-adjoint|hyperpage}{228}
 \indexentry{self-adjoint|hyperpage}{228}
 \indexentry{modelling problem|hyperpage}{235}
-\indexentry{cardinality space|hyperpage}{241}
-\indexentry{ambiance space|hyperpage}{241}
-\indexentry{encoding space|hyperpage}{241}
-\indexentry{cross-model match|hyperpage}{242}
-\indexentry{Oracle separation|hyperpage}{242}
-\indexentry{outer typing|hyperpage}{259}
-\indexentry{polynomial coefficient|hyperpage}{306}
-\indexentry{polynomial root|hyperpage}{306}
-\indexentry{complex number|hyperpage}{307}
-\indexentry{integral domain|hyperpage}{308}
-\indexentry{minimal polynomial|hyperpage}{308}
-\indexentry{scaled Hyperbolic Tangent|hyperpage}{332}
+\indexentry{cardinal pre-structural|hyperpage}{240}
+\indexentry{cardinality space|hyperpage}{244}
+\indexentry{ambiance space|hyperpage}{244}
+\indexentry{encoding space|hyperpage}{244}
+\indexentry{cross-model match|hyperpage}{245}
+\indexentry{Oracle separation|hyperpage}{245}
+\indexentry{outer typing|hyperpage}{265}
+\indexentry{polynomial coefficient|hyperpage}{312}
+\indexentry{polynomial root|hyperpage}{312}
+\indexentry{complex number|hyperpage}{313}
+\indexentry{integral domain|hyperpage}{314}
+\indexentry{minimal polynomial|hyperpage}{314}
+\indexentry{scaled Hyperbolic Tangent|hyperpage}{338}

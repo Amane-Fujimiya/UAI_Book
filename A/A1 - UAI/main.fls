@@ -1351,13 +1351,6 @@ OUTPUT content\main\chaptert01.aux
 INPUT .\content\main\chaptert01.tex
 INPUT .\content\main\chaptert01.tex
 INPUT content\main\chaptert01.tex
-INPUT .\img\model_representation.png
-INPUT .\img\model_representation.png
-INPUT .\img\model_representation.png
-INPUT .\img\model_representation.png
-INPUT .\img\model_representation.png
-INPUT .\img\model_representation.png
-INPUT .\img\model_representation.png
 INPUT .\content\main\chaptert1.tex
 INPUT .\content\main\chaptert1.tex
 OUTPUT content\main\chaptert1.aux

@@ -1,4 +1,4 @@
-\begin{thebibliography}{582}
+\begin{thebibliography}{601}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -71,6 +71,14 @@ Oskar Allerbo.
 \newblock Changing the {{Kernel During Training Leads}} to {{Double Descent}}
   in {{Kernel Regression}}, 2025.
 
+\bibitem[Allori(2015)]{allori2015}
+Valia Allori.
+\newblock Primitive ontology in a nutshell.
+\newblock \emph{International Journal of Quantum Foundations}, 1\penalty0
+  (2):\penalty0 107--122, 2015.
+\newblock URL \url{https://ijqf.org/archives/2394}.
+\newblock Survey of the primitive-ontology programme in quantum foundations.
+
 \bibitem[Alon and Yahav(2021)]{alon2021bottleneckgraphneuralnetworks}
 Uri Alon and Eran Yahav.
 \newblock On the {{Bottleneck}} of {{Graph Neural Networks}} and its
@@ -128,6 +136,11 @@ P.~W. Anderson.
 \newblock More {{Is Different}}.
 \newblock \emph{Science}, 177:\penalty0 393--396, 1972.
 \newblock \doi{10.1126/science.177.4047.393}.
+
+\bibitem[Anderson(1987)]{Anderson1987}
+P.~W. Anderson.
+\newblock The resonating valence bond state in la2cuo4 and superconductivity.
+\newblock \emph{Science}, 235:\penalty0 1196--1198, 1987.
 
 \bibitem[Andrilli and Hecker(2010)]{ANDRILLI20101}
 Stephen Andrilli and David Hecker.
@@ -407,6 +420,13 @@ Sylvio~R. Bistafa.
 \newblock 200 {{Years}} of the {{Navier-Stokes Equation}}.
 \newblock \emph{arXiv preprint}, 2023.
 
+\bibitem[Bliss and Trogdon(2014)]{bliss2014}
+Ricki Bliss and Kelly Trogdon.
+\newblock Metaphysical grounding.
+\newblock Stanford Encyclopedia of Philosophy, 2014.
+\newblock URL \url{https://plato.stanford.edu/entries/grounding/}.
+\newblock Entry on grounding and constitutive dependence (revised online).
+
 \bibitem[Blum et~al.(2003)Blum, Kalai, and Wasserman]{blum2003noise}
 Avrim Blum, Adam~Tauman Kalai, and Hal Wasserman.
 \newblock Noise-tolerant learning, the parity problem, and the statistical
@@ -595,11 +615,27 @@ T.~Cailleteau et~al.
 \newblock Langton's {{Ant}} from the {{Ant}}'s {{Referential}}.
 \newblock \emph{arXiv}, 2017.
 
+\bibitem[Cam(1986)]{lecam_asymptotic_1986}
+Lucien~Le Cam.
+\newblock \emph{Asymptotic Methods in Statistical Decision Theory}.
+\newblock Springer, New York, 1986.
+\newblock ISBN 978-0387967496.
+
 \bibitem[Cameron(2008)]{Cameron_2008}
 Peter~J. Cameron.
 \newblock \emph{Introduction to {{Algebra}}}.
 \newblock Oxford University Press, Oxford, 2008.
 \newblock ISBN 978-0-19-852793-0.
+
+\bibitem[Carnap(1950)]{carnap1950}
+Rudolf Carnap.
+\newblock Empiricism, semantics and ontology.
+\newblock \emph{Revue Internationale de Philosophie}, 4\penalty0 (11):\penalty0
+  20--40, 1950.
+\newblock URL
+  \url{https://phil.cmu.edu/projects/carnap/editorial/latex_pdf/1950-1.pdf}.
+\newblock Frameworks / internal vs external questions; important for
+  linguistic-framework approach.
 
 \bibitem[Carter(2009)]{Carter_2009}
 Nathan~C. Carter.
@@ -1062,6 +1098,16 @@ Damien Ernst, Pierre Geurts, and Louis Wehenkel.
 \newblock Tree-{{Backup}} and batch-mode reinforcement learning.
 \newblock \emph{Journal of Machine Learning Research}, 2005.
 
+\bibitem[Esfeld(2014)]{esfeld2014}
+Michael Esfeld.
+\newblock The primitive ontology of quantum physics: guidelines for an
+  assessment of the proposals.
+\newblock \emph{Studies in History and Philosophy of Modern Physics},
+  46:\penalty0 xxx--xxx, 2014.
+\newblock URL \url{https://arxiv.org/abs/1406.0732}.
+\newblock ArXiv version: arXiv:1406.0732; discusses Bohmian mechanics, GRW
+  proposals and criteria for primitive ontology.
+
 \bibitem[et~{al.}(2006)]{AIWashington}
 Chris~Smith et~{al.}
 \newblock The {{History}} of {{Artificial Intelligence}}.
@@ -1125,6 +1171,13 @@ Jerome Friedman, Trevor Hastie, Holger H{\"o}fling, and Robert Tibshirani.
 \newblock \emph{The Annals of Applied Statistics}, 1\penalty0 (2):\penalty0
   302--332, 2007.
 \newblock \doi{10.1214/07-AOAS131}.
+
+\bibitem[Frigg(2010)]{frigg_models_in_science_2010}
+Roman Frigg.
+\newblock Models in science.
+\newblock Stanford Encyclopedia of Philosophy, 2010.
+\newblock entry, revised online; see
+  https://plato.stanford.edu/entries/models-science/ (accessed 2026-01-28).
 
 \bibitem[Frisch(1995)]{Frisch1995}
 Uriel Frisch.
@@ -1279,6 +1332,13 @@ Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, and Sergey Levine.
 \newblock Soft {{Actor-Critic}}: {{Off-Policy Maximum Entropy Deep
   Reinforcement Learning}} with a {{Stochastic Actor}}.
 \newblock \emph{International Conference on Machine Learning (ICML)}, 2018.
+
+\bibitem[Hacking(1983)]{hacking_representing_1983}
+Ian Hacking.
+\newblock \emph{Representing and Intervening: Introductory Topics in the
+  Philosophy of Natural Science}.
+\newblock Cambridge University Press, Cambridge, 1983.
+\newblock ISBN 978-0521238298.
 
 \bibitem[Hadamard(1902)]{Hadamard1902}
 J.~Hadamard.
@@ -1535,6 +1595,13 @@ F.~Iachello.
 {IAEA / NNDC / EXFOR contributors}.
 \newblock {{EXFOR}} --- {{Experimental Nuclear Reaction Data}}.
 
+\bibitem[Ilinski(1997)]{ilinski_physics_of_finance_1997}
+Kirill Ilinski.
+\newblock Physics of finance / gauge theory of arbitrage.
+\newblock Technical report, arXiv / preprint, 1997.
+\newblock arXiv:hep-th/9710148; see https://arxiv.org/abs/hep-th/9710148
+  (accessed 2026-01-28).
+
 \bibitem[Ioannidis(2005)]{Ioannidis2005}
 John P.~A. Ioannidis.
 \newblock Why {{Most Published Research Findings Are False}}.
@@ -1736,6 +1803,15 @@ Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E. Hinton.
 Gitta Kutyniok.
 \newblock The {{Mathematics}} of {{Artificial Intelligence}}.
 \newblock \emph{arXiv preprint arXiv:2203.08890}, 2022.
+
+\bibitem[Ladyman and Ross(2007)]{ladyman2007}
+James Ladyman and Don Ross.
+\newblock \emph{Every Thing Must Go: Metaphysics Naturalized}.
+\newblock Oxford University Press, Oxford, 2007.
+\newblock ISBN 9780199276196.
+\newblock URL
+  \url{https://global.oup.com/academic/product/every-thing-must-go-9780199276196}.
+\newblock Defense of naturalized, scientifically-informed metaphysics.
 
 \bibitem[Lafon and Thomas(2024)]{lafon_understanding_2024}
 Marc Lafon and Alexandre Thomas.
@@ -2174,6 +2250,16 @@ Volodymyr Mnih, Adri{\`a}~Puigdom{\`e}nech Badia, Mehdi Mirza, Alex Graves, Tim
 \newblock \emph{Proceedings of the 33rd International Conference on Machine
   Learning (ICML)}, 2016.
 
+\bibitem[Mohammed~Ameen et~al.(2018)Mohammed~Ameen, Peerlings, and
+  Geers]{Ameen2018}
+M.~Mohammed~Ameen, R.H.J. Peerlings, and M.G.D. Geers.
+\newblock A quantitative assessment of the scale separation limits of classical
+  and higher-order asymptotic homogenization.
+\newblock \emph{European Journal of Mechanics. A, Solids}, 71:\penalty0
+  89--100, September 2018.
+\newblock ISSN 0997-7538.
+\newblock \doi{10.1016/j.euromechsol.2018.02.011}.
+
 \bibitem[Mohri et~al.(2012)Mohri, Rostamizadeh, and Talwalkar]{10.5555/2371238}
 Mehryar Mohri, Afshin Rostamizadeh, and Ameet Talwalkar.
 \newblock \emph{Foundations of {{Machine Learning}}}.
@@ -2404,6 +2490,16 @@ Peter Norvig.
 \newblock \emph{Paradigms of {{Artificial Intelligence Programming}}}.
 \newblock Morgan Kaufmann, 1992.
 
+\bibitem[Nussbaum(1996)]{nussbaum_asymptotic_1996}
+Michael Nussbaum.
+\newblock Asymptotic equivalence of density estimation and gaussian white
+  noise.
+\newblock \emph{The Annals of Statistics}, 24\penalty0 (6):\penalty0
+  2399--2430, 1996.
+\newblock \doi{10.1214/aos/1032181160}.
+\newblock URL
+  \url{https://projecteuclid.org/journals/annals-of-statistics/volume-24/issue-6/Asymptotic-equivalence-of-density-estimation-and-Gaussian-white-noise/10.1214/aos/1032181160.pdf}.
+
 \bibitem[Oberkampf and Trucano(2002)]{Oberkampf2002}
 William~L. Oberkampf and Timothy~G. Trucano.
 \newblock Verification and {{Validation}} in {{Computational Fluid Dynamics}}.
@@ -2604,6 +2700,14 @@ Victor Qu{\'e}tu and Enzo Tartaglione.
   Processing}} ({{ICIP}})}, pages 1625--1629, October 2023.
 \newblock \doi{10.1109/ICIP49359.2023.10222624}.
 
+\bibitem[Quine(1948)]{quine1948}
+W.~V. Quine.
+\newblock On what there is.
+\newblock \emph{Review of Metaphysics}, 2\penalty0 (5):\penalty0 21--38, 1948.
+\newblock URL \url{https://philpapers.org/rec/QUIOWT}.
+\newblock Classic statement of ontological commitment; reprinted in From a
+  Logical Point of View (1953).
+
 \bibitem[Quinlan(1986)]{quinlan1986induction}
 J.~R. Quinlan.
 \newblock \emph{Induction of {{Decision Trees}}}.
@@ -2760,6 +2864,14 @@ Vera~C. Rubin and W.~Kent~Ford Jr.
   of {{Emission Regions}}.
 \newblock \emph{Astrophysical Journal}, 159:\penalty0 379--+, 1970.
 
+\bibitem[Rubio(2022)]{rubio2022}
+Daniel Rubio.
+\newblock Ideological innocence.
+\newblock \emph{Philosophical Archive (PhilArchive)}, 2022.
+\newblock URL \url{https://philarchive.org/archive/RUBII}.
+\newblock On primitive operator / primitives axiom and expressive power; useful
+  for formal primitives-axiom device.
+
 \bibitem[Ruder(2017)]{ruder_overview_2017}
 Sebastian Ruder.
 \newblock An overview of gradient descent optimization algorithms, June 2017.
@@ -2862,6 +2974,13 @@ Rylan Schaeffer, Mikail Khona, Zachary Robertson, Akhilan Boopathy, Kateryna
   Pistunova, Jason~W. Rocks, Ila~Rani Fiete, and Oluwasanmi Koyejo.
 \newblock Double {{Descent Demystified}}: {{Identifying}}, {{Interpreting}} \&
   {{Ablating}} the {{Sources}} of a {{Deep Learning Puzzle}}, March 2023.
+
+\bibitem[Schaffer(2009)]{schaffer2009}
+Jonathan Schaffer.
+\newblock On what grounds what, 2009.
+\newblock URL \url{https://www.jonathanschaffer.org/grounds.pdf}.
+\newblock Seminal statement of grounding / fundamentality concerns; manuscript
+  and lecture notes available online.
 
 \bibitem[Schep(2007)]{Schep2007}
 Anton~R. Schep.
@@ -3198,6 +3317,13 @@ Csaba Szepesv{\'a}ri.
 \newblock \emph{Algorithms for {{Reinforcement Learning}}}.
 \newblock Morgan \& Claypool, 2010.
 
+\bibitem[Tal(2015)]{tal_measurement_2015}
+E.~Tal.
+\newblock Measurement in science.
+\newblock Stanford Encyclopedia of Philosophy, 2015.
+\newblock see https://plato.stanford.edu/entries/measurement-science/ (accessed
+  2026-01-28).
+
 \bibitem[Tamassia and Vismara(1997)]{Tamassia1997ACS}
 Roberto Tamassia and Luca Vismara.
 \newblock A {{Case Study}} in {{Algorithm Engineering}} for {{Geometric
@@ -3379,6 +3505,12 @@ Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
 \newblock In \emph{Advances in {{Neural Information Processing Systems}}
   ({{NeurIPS}})}, 2017{\natexlab{b}}.
 
+\bibitem[V{\'a}zquez and Farinelli(2012)]{vazquez_gauge_2012}
+Samuel~E. V{\'a}zquez and Simone Farinelli.
+\newblock Gauge invariance, geometry and arbitrage.
+\newblock \emph{The Journal of Investment Strategies}, 1\penalty0 (2):\penalty0
+  23--66, 2012.
+
 \bibitem[Veli{\v c}kovi{\'c}(2023)]{Veli_kovi__2023}
 Petar Veli{\v c}kovi{\'c}.
 \newblock Everything is connected: {{Graph}} neural networks.
@@ -3423,6 +3555,13 @@ Jingyuan Wang, Kai Feng, and Junjie Wu.
   Conference}} on {{Artificial Intelligence}} ({{IJCAI-19}})}, pages
   5262--5268, 2019.
 \newblock \doi{10.24963/ijcai.2019/731}.
+
+\bibitem[Wang and G{\'o}mez-Bombarelli(2019)]{wang_coarse-graining_2019}
+Wujie Wang and Rafael G{\'o}mez-Bombarelli.
+\newblock Coarse-graining auto-encoders for molecular dynamics.
+\newblock \emph{npj Computational Materials}, 5:\penalty0 125, 2019.
+\newblock \doi{10.1038/s41524-019-0261-5}.
+\newblock URL \url{https://doi.org/10.1038/s41524-019-0261-5}.
 
 \bibitem[Warburton et~al.(1990)Warburton, Brown, and Millener]{Warburton1990}
 E.~K. Warburton, B.~A. Brown, and D.~J. Millener.
@@ -3476,6 +3615,14 @@ Jiaqi Wei et~al.
 \newblock From {{AI}} for {{Science}} to {{Agentic Science}}: {{A Survey}} on
   {{Autonomous Scientific Discovery}}.
 \newblock \emph{arXiv preprint arXiv:2508.14111}, 2025.
+
+\bibitem[Weinan et~al.(2008)Weinan, Wehr, and Xin]{Weinanetal2008}
+Weinan, Jan Wehr, and Jack Xin.
+\newblock Breakdown of homogenization for the random hamilton-jacobi equations.
+\newblock \emph{Communications in Mathematical Sciences}, 6\penalty0
+  (1):\penalty0 189--197, 2008.
+\newblock ISSN 1539-6746.
+\newblock \doi{10.4310/CMS.2008.v6.n1.a9}.
 
 \bibitem[Weiss et~al.(2018)Weiss, Goldberg, and Yahav]{weiss2018practical}
 Gail Weiss, Yoav Goldberg, and Eran Yahav.
