@@ -1,0 +1,143 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: content/introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: content/reading.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter1.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc1.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc2.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc3.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc4.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc5.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc6.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc7.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/math/mathc8.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter2.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter3.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter5.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: content/chapter6.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/chapter6cs1.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/chapter6cs2.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: content/main/chaptert01.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: content/main/chaptert1.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: content/main/chaptert2.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter1prob.aux
+Reallocating 'name_of_file' (item size: 1) to 32 items.
+A level-1 auxiliary file: content/prob/chapter1.5prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter2prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter3prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter4prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter5prob.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: content/prob/chapter6prob.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'field_info' (item size: 4) to 18160 items.
+Database file #1: reference1.bib
+Reallocating 'str_pool' (item size: 1) to 130000 items.
+Reallocating 'field_info' (item size: 4) to 23172 items.
+Warning--I didn't find a database entry for "belkin_reconciling_2019"
+Warning--I didn't find a database entry for "bousquet2020theoryuniversallearning"
+Warning--I didn't find a database entry for "liu2023understandingroleoptimizationdouble"
+Warning--I didn't find a database entry for "truong2025rademachercomplexitybasedgeneralizationbounds"
+Warning--to sort, need author or key in VeltenetalMathematicalModelling
+Warning--to sort, need author or key in EnvelopeFunctionOverview
+Warning--to sort, need author or key in bgpt2024
+Warning--to sort, need author or key in noauthor_bias-variance_nodate
+Warning--to sort, need author or key in noauthor_neural_nodate
+Warning--to sort, need author or key in noauthor_pdf_nodate-1
+Warning--empty year in EnvelopeFunctionOverview
+Warning--empty year in noauthor_bias-variance_nodate
+Warning--empty year in noauthor_neural_nodate
+Warning--empty year in noauthor_pdf_nodate-1
+Warning--empty author in bgpt2024
+Warning--empty year in achlioptas_stochastic_nodate
+Warning--empty year in achlioptas_stochastic_nodate
+Warning--empty booktitle in Briggs2014MachineE
+Warning--empty journal in Cauchy:1847
+Warning--empty year in Conway1970
+Warning--empty booktitle in Cristianini2000AnIT
+Warning--empty journal in DreyfusImpasse1979
+Warning--empty year in modelcomplex_exp
+Warning--empty publisher in STL_Hajek_Maxim_2021
+Warning--empty year in GRP_Hamilton
+Warning--empty year in GRP_Hamilton
+Warning--there's a number but no volume in ErdongHu2021
+Warning--empty year in EXFOR
+Warning--empty publisher in kaelbling1996reinforcement
+Warning--empty title in 1180370208
+Warning--empty publisher in lang-tate-1958
+Warning--empty publisher in michalski1969aq
+Warning--empty year in neurondoctrinemishqat
+Warning--empty journal in navier1823mouvement
+Warning--empty booktitle in Peeters1992LowDS
+Warning--empty booktitle in Pinter2019ABO
+Warning--can't use both author and editor fields in Shapiro1997-SHAPOM-18
+You've used 666 entries,
+            2773 wiz_defined-function locations,
+            4075 strings with 119615 characters,
+and the built_in function-call counts, 286869 in all, are:
+= -- 25333
+> -- 16115
+< -- 527
++ -- 5604
+- -- 4893
+* -- 21949
+:= -- 44629
+add.period$ -- 2278
+call.type$ -- 666
+change.case$ -- 3486
+chr.to.int$ -- 621
+cite$ -- 1371
+duplicate$ -- 13507
+empty$ -- 24217
+format.name$ -- 5907
+if$ -- 60141
+int.to.chr$ -- 46
+int.to.str$ -- 1
+missing$ -- 682
+newline$ -- 3573
+num.names$ -- 2670
+pop$ -- 7634
+preamble$ -- 1
+purify$ -- 2927
+quote$ -- 0
+skip$ -- 10295
+stack$ -- 0
+substring$ -- 8289
+swap$ -- 1311
+text.length$ -- 71
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6596
+warning$ -- 33
+while$ -- 2546
+width$ -- 0
+write$ -- 8950
+(There were 37 warnings)

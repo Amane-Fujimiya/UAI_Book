@@ -1,0 +1,169 @@
+\documentclass[
+    9pt,
+    oldfontcommands,
+]{memoir}
+%################################################################################
+%# CONFIGURATION #
+%########################################
+%# Package
+\input{setting/package.tex}
+%########################################
+%# Configuration
+\input{setting/config.tex}
+%########################################
+%# Theorem definitions
+\input{setting/theorem.tex}
+%########################################
+%# Tcolorbox and theorems (environment for maths and theorems)
+\input{setting/tcb_env.tex}
+%########################################
+%# Document configuration (macro and displaying - titles etc)
+\input{setting/document_config.tex}
+%########################################
+%# Math commands
+\input{setting/mathcommand.tex}
+%########################################
+%# Include control
+\includeonly{
+    content/introduction,
+	content/reading,
+    content/chapter1,
+    content/math/mathc1,
+    content/math/mathc2,
+    content/math/mathc3,
+    content/math/mathc4,
+    content/math/mathc5,
+	content/math/mathc6,
+	content/math/mathc7,
+	content/math/mathc8,
+    content/chapter2,
+	content/chapter3,
+    content/chapter5,
+    content/chapter6,
+	content/chapter6cs1,
+	content/chapter6cs2,
+	content/main/chaptert01,
+    content/main/chaptert1,
+    content/main/chaptert2,
+	content/prob/probintro,
+	content/prob/chapter1prob,
+	content/prob/chapter1.5prob,
+	content/prob/chapter2prob,
+	content/prob/chapter3prob,
+	content/prob/chapter4prob,
+	content/prob/chapter5prob,
+	content/prob/chapter6prob
+}
+%################################################################################
+% END OF CONFIGURATION (PREAMBLE)
+
+%################################################################################%
+% BEGIN DOCUMENT
+\begin{document}
+%########################################
+% TITLE PAGE
+\newgeometry{left=3cm, right=3cm}
+\begin{titlingpage} % Suppresses headers and footers on the title page
+	\raggedleft % Right align everything
+	\vspace*{\baselineskip} % Whitespace at the top of the page
+	%------------------------------------------------
+	%	Author
+	%------------------------------------------------
+	{\Large Khanh Gia Bui\footnotemark[1]} % Author name
+
+	\vspace*{0.167\textheight} % Whitespace before the title
+	%------------------------------------------------
+	%	Title and subtitle
+	%------------------------------------------------
+	\textbf{\LARGE The Documentary of}\\[\baselineskip] % First title line
+	{\textcolor{customTeal}{\Huge Modelling Automata}}\\[\baselineskip] % Main title line which draws the focus of the reader
+	{\Large \textit{Theoretical and novel analysis}} % Subtitle
+	\vfill % Whitespace between the titles and the publisher
+	%------------------------------------------------
+	%	Publisher
+	%------------------------------------------------
+	{\large Open-source, in production~~\plogo} % Publisher and logo
+	
+	\vspace*{3\baselineskip} % Whitespace at the bottom of the page
+	\footnotetext[1]{\raggedright Department of Physics, Hanoi University of Science, Vietnam National University, Hanoi, Vietnam}
+\end{titlingpage}
+\restoregeometry
+%########################################
+%# TOC
+\frontmatter
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+%########################################
+%# Preface
+\include{content/introduction}
+
+\include{content/reading}
+\mainmatter
+\include{content/chapter1}
+%########################################
+\clearpage
+\partepigraph{There is nothing as bad luck. If you have to fall in line and abandon your time because of such things as luck, then it is the lack of preparation as such to tell, not the world falling down on you.}{Arthur. D. Morgan}
+\part{Preliminary}
+\clearpage
+\include{content/math/mathc1}
+\include{content/math/mathc2}
+\include{content/math/mathc3}
+\include{content/math/mathc4}
+\include{content/math/mathc5}
+\include{content/math/mathc6}
+\include{content/math/mathc7}
+\include{content/math/mathc8}
+
+\clearpage
+\partepigraph{A man who thinks all the time, has nothing except thoughts. However good the prologue is, and how impactful and dramatic the prelude conjure, the story of its main, is the most relevant.}{}
+\part{Main}
+\clearpage
+\include{content/chapter2}
+\include{content/chapter3}
+\include{content/chapter5}
+\include{content/chapter6}
+\include{content/chapter6cs1}
+\include{content/chapter6cs2}
+\include{content/main/chaptert01}
+\include{content/main/chaptert1}
+\include{content/main/chaptert2}
+%\include{content/chapter7}
+%########################################
+%# PROBLEM SECTION
+\clearpage
+\partepigraph{A man who thinks all the time, has nothing except thoughts. If we want to do something, I would rather do it in practice}{}
+\part{Research}
+\clearpage
+\input{content/prob/probintro.tex}
+\include{content/prob/chapter1prob}
+\include{content/prob/chapter1.5prob}
+\include{content/prob/chapter2prob}
+\include{content/prob/chapter3prob}
+\include{content/prob/chapter4prob}
+\include{content/prob/chapter5prob}
+\include{content/prob/chapter6prob}
+%########################################
+%# APPENDIX SECTION 
+%########################################
+%# Index 
+\backmatter
+\printindex
+%########################################
+%# Appendix
+\input{appendix/appendix2.tex}
+%########################################
+%# Bibliography
+{
+\footnotesize
+\nocite{*}
+\bibliography{reference1}
+% modification to natbib citations
+\setcitestyle{authoryear,open={[},close={]}}
+\bibliographystyle{plainnat}
+%\setcitestyle{authoryear,round,citesep={;},aysep={,},yysep={;}}
+}
+%################################################################################%
+%# End document
+\end{document}

@@ -1,0 +1,127 @@
+%################################################################################
+%# BEGIN
+%########################################
+%# TIKZ library
+\usetikzlibrary{matrix}
+\usetikzlibrary{patterns}       % For custom patterns
+\usetikzlibrary{shadings}       % For gradient fills
+\usetikzlibrary{shapes.geometric} % For geometric shapes
+\usetikzlibrary{calc}           % For coordinate calculations
+\usetikzlibrary{positioning}    % For node positioning
+\usetikzlibrary{decorations.pathreplacing} % For path decorations
+\usetikzlibrary{fit} % For fitting shapes around nodes
+\usetikzlibrary{cd} % Commutative diagram
+%########################################
+%# PGFPlot configuration for TikZ
+\makeatletter
+\pgfutil@ifundefined{pgf@pattern@name@_xg1qse1zm}{
+  \pgfdeclarepatternformonly[\mcThickness,\mcSize]{_xg1qse1zm}
+  {\pgfqpoint{0pt}{-\mcThickness}}
+  {\pgfpoint{\mcSize}{\mcSize}}
+  {\pgfpoint{\mcSize}{\mcSize}}
+  {
+    \pgfsetcolor{\tikz@pattern@color}
+    \pgfsetlinewidth{\mcThickness}
+    \pgfpathmoveto{\pgfqpoint{0pt}{\mcSize}}
+    \pgfpathlineto{\pgfpoint{\mcSize+\mcThickness}{-\mcThickness}}
+    \pgfusepath{stroke}
+  }
+}
+\makeatother
+
+\makeatletter
+\pgfutil@ifundefined{pgf@pattern@name@_lbrsyyeax}{
+  \pgfdeclarepatternformonly[\mcThickness,\mcSize]{_lbrsyyeax}
+  {\pgfqpoint{0pt}{0pt}}
+  {\pgfpoint{\mcSize+\mcThickness}{\mcSize+\mcThickness}}
+  {\pgfpoint{\mcSize}{\mcSize}}
+  {
+    \pgfsetcolor{\tikz@pattern@color}
+    \pgfsetlinewidth{\mcThickness}
+    \pgfpathmoveto{\pgfqpoint{0pt}{0pt}}
+    \pgfpathlineto{\pgfpoint{\mcSize+\mcThickness}{\mcSize+\mcThickness}}
+    \pgfusepath{stroke}
+  }
+}
+\makeatother
+%########################################
+%# Reference box setup
+\hypersetup{
+    pagebackref=true,
+    hyperindex=true,
+    colorlinks=true,
+    breaklinks=true,
+    urlcolor=black,
+    filecolor=black,
+    citecolor=blue,
+    linkcolor=black, % <--- prevents ToC and section links from being colored
+    bookmarks=true,
+    bookmarksopen=false
+}
+%########################################
+%# Part formatting
+\setlength\epigraphwidth{.6\textwidth}
+\setlength\epigraphrule{0pt}
+\renewcommand{\epigraphflush}{flushleft}  % or 'center' or 'flushright'
+\renewcommand{\textflush}{flushleft}      % author alignment
+\newcommand{\partepigraph}[2]{%
+  \gdef\thepartepigraph{\epigraph{#1}{#2}}%
+}
+% Custom part format
+\makeatletter
+\titleformat{\part}[hang]
+  {\Huge\normalfont\sffamily\raggedright}
+  {\thepart.}{1em}
+  {}  % Apply epigraph style page
+  [\vspace{1.25cm}\@afterheading\thepartepigraph]  % <--- epigraph inserted here
+\makeatother
+%########################################
+%# Custom math and order command (for compatibility to imported documents)
+\newcommand{\cH}{{\mathcal{H}}}
+\newcommand{\cHN}{{\mathcal{H}_N}}
+\newcommand{\rkhs}{{\mathcal{H_\infty}}}
+\newcommand{\x}{\times}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\calx}[1]{\mathcal{#1}}
+\newcommand{\mynote}[1]
+{
+    \medskip\par\textbf{\small Note}\quad\setlength{\extrarowheight}{2pt}\begin{tabularx}{\linegoal}{X}
+    \Xhline{1pt}
+    \rowcolor{WhiteSmoke!80!Lavender}#1 \\
+    \Xhline{1pt}
+    \end{tabularx}
+}
+%########################################
+%# Custom quote configuration
+\makeatletter
+\patchcmd{\csq@bquote@i}{{#6}}{{\emph{#6}}}{}{}
+\makeatother
+\renewcommand{\mkbegdispquote}[2]{\itshape}
+%########################################
+\newcommand*{\plogo}{\fbox{$\mathcal{AIL}$}}
+%########################################
+\definecolor{customTeal}{RGB}{66,104,105}
+%########################################
+\allowdisplaybreaks
+\setcounter{tocdepth}{2}
+%########################################
+\let\oldtextit\textit 
+\renewcommand\textit[1]{\oldtextit{\color{blue!60!black}#1}}
+%########################################
+%# Small top=page heading (reduce from full uppercase to lowercase)
+\let\MakeUppercase\relax
+%########################################
+%# Paragraph skip and float skip
+\setlength{\parskip}{3pt}
+\setlength{\textfloatsep}{10pt plus 1.0pt minus 2.0pt}
+%########################################
+%# Making index (in preamble)
+\makeindex
+%########################################
+\definecolor{paper}{RGB}{248,244,232} % very light cream
+\pagecolor{paper}

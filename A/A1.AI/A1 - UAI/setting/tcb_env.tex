@@ -1,0 +1,189 @@
+%################################################################################
+\tcbuselibrary{breakable} % Breakable criteria library for tcolorbox - enable multipage breaks
+%########################################
+%# Default setting and global option
+\tcbset{%
+  breakable,
+  enhanced jigsaw,
+  parbox=false,
+  nobeforeafter,
+  before skip=10pt,
+  after skip=10pt,
+  arc=2pt,
+}
+%########################################
+%# Box definition (match environment)
+\tcolorboxenvironment{theorem}{
+  breakable,
+  colback=blue!5!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt,right=2pt,top=2pt,bottom=2pt,
+  oversize=2pt,
+  before skip=\topsep,
+  after skip=\topsep,
+  enhanced jigsaw,
+}
+\tcolorboxenvironment{definition}{
+  colback=gray!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+\tcolorboxenvironment{col}{
+  colback=orange!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+\tcolorboxenvironment{conjecture}{
+  colback=red!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+\tcolorboxenvironment{setting}{
+  colback=blue!40!orange!20!white, % Mix blue (40%) and orange (20%)
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+% Proposition (green)
+\tcolorboxenvironment{proposition}{
+  colback=green!5!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Lemma (orange -- toned down)
+\tcolorboxenvironment{lemma}{
+  colback=orange!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Assumption (purple)
+\tcolorboxenvironment{assumption}{
+  colback=purple!5!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Assume (a variant of Assumption with a slightly different shade)
+\tcolorboxenvironment{assume}{
+  colback=purple!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Remark (gray, very neutral)
+\tcolorboxenvironment{remark}{
+  colback=gray!5!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Hypothesis (cyan)
+\tcolorboxenvironment{hypothesis}{
+  colback=cyan!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Axiom (yellow -- with extra white to reduce brightness)
+\tcolorboxenvironment{axiom}{
+  colback=yellow!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Question (magenta -- toned down)
+\tcolorboxenvironment{question}{
+  colback=magenta!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Interject (red -- toned down)
+\tcolorboxenvironment{interject}{
+  colback=red!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+% Example (teal)
+\tcolorboxenvironment{note}{
+  colback=teal!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt, right=2pt, top=2pt, bottom=2pt,
+  oversize=2pt,
+  %sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+  enhanced jigsaw,
+}
+%################################################################################
