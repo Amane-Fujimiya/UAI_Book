@@ -58,10 +58,10 @@ A level-1 auxiliary file: content/prob/chapter6prob.aux
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
-Reallocating 'field_info' (item size: 4) to 18160 items.
+Reallocating 'field_info' (item size: 4) to 18384 items.
 Database file #1: reference1.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
-Reallocating 'field_info' (item size: 4) to 23172 items.
+Reallocating 'field_info' (item size: 4) to 23396 items.
 Warning--I didn't find a database entry for "belkin_reconciling_2019"
 Warning--I didn't find a database entry for "bousquet2020theoryuniversallearning"
 Warning--I didn't find a database entry for "liu2023understandingroleoptimizationdouble"
