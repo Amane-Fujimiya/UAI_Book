@@ -37,97 +37,106 @@
 \indexentry{scalar|hyperpage}{69}
 \indexentry{vector|hyperpage}{69}
 \indexentry{compressed form|hyperpage}{71}
-\indexentry{pseudometric space|hyperpage}{91}
-\indexentry{sigma-algebra|hyperpage}{92}
-\indexentry{concentration inequalities|hyperpage}{97}
-\indexentry{martingale methods|hyperpage}{97}
-\indexentry{Markov's inequality|hyperpage}{98}
-\indexentry{Chernoff's inequality|hyperpage}{101}
-\indexentry{Cramer condition|hyperpage}{101}
-\indexentry{precategory|hyperpage}{105}
-\indexentry{first-order differential equation|hyperpage}{111}
-\indexentry{integrating factor method|hyperpage}{113}
-\indexentry{LVCE|hyperpage}{114}
-\indexentry{Bernoulli equation|hyperpage}{116}
-\indexentry{separable equation(s)|hyperpage}{117}
-\indexentry{implicit form|hyperpage}{118}
-\indexentry{model|hyperpage}{126}
-\indexentry{simulation|hyperpage}{127}
-\indexentry{system|hyperpage}{127}
-\indexentry{theoretical model|hyperpage}{128}
-\indexentry{physical model|hyperpage}{128}
-\indexentry{mathematical model|hyperpage}{129}
-\indexentry{system parameter|hyperpage}{129}
-\indexentry{reduced system|hyperpage}{129}
-\indexentry{phenomenological model|hyperpage}{132}
-\indexentry{mechanistic model|hyperpage}{132}
-\indexentry{gray model|hyperpage}{133}
-\indexentry{transparency|hyperpage}{151}
-\indexentry{mechanistic layer|hyperpage}{152}
-\indexentry{phenomenological layer|hyperpage}{152}
-\indexentry{operationalisation|hyperpage}{152}
-\indexentry{empirical risk|hyperpage}{155}
-\indexentry{generalization risk|hyperpage}{155}
-\indexentry{hypothesis class|hyperpage}{158}
+\indexentry{uncertainty|hyperpage}{79}
+\indexentry{uncertainty|hyperpage}{79}
+\indexentry{certainty|hyperpage}{80}
+\indexentry{deterministric|hyperpage}{80}
+\indexentry{nondeterministic|hyperpage}{80}
+\indexentry{universimorphismus|hyperpage}{81}
+\indexentry{perturbatio|hyperpage}{81}
+\indexentry{temporalis|hyperpage}{81}
+\indexentry{state-wide description|hyperpage}{81}
+\indexentry{pseudometric space|hyperpage}{95}
+\indexentry{sigma-algebra|hyperpage}{96}
+\indexentry{concentration inequalities|hyperpage}{101}
+\indexentry{martingale methods|hyperpage}{101}
+\indexentry{Markov's inequality|hyperpage}{102}
+\indexentry{Chernoff's inequality|hyperpage}{105}
+\indexentry{Cramer condition|hyperpage}{105}
+\indexentry{precategory|hyperpage}{109}
+\indexentry{first-order differential equation|hyperpage}{115}
+\indexentry{integrating factor method|hyperpage}{117}
+\indexentry{LVCE|hyperpage}{118}
+\indexentry{Bernoulli equation|hyperpage}{120}
+\indexentry{separable equation(s)|hyperpage}{121}
+\indexentry{implicit form|hyperpage}{122}
+\indexentry{model|hyperpage}{130}
+\indexentry{simulation|hyperpage}{131}
+\indexentry{system|hyperpage}{131}
+\indexentry{theoretical model|hyperpage}{132}
+\indexentry{physical model|hyperpage}{132}
+\indexentry{mathematical model|hyperpage}{133}
+\indexentry{system parameter|hyperpage}{133}
+\indexentry{reduced system|hyperpage}{133}
+\indexentry{phenomenological model|hyperpage}{136}
+\indexentry{mechanistic model|hyperpage}{136}
+\indexentry{gray model|hyperpage}{137}
+\indexentry{transparency|hyperpage}{155}
+\indexentry{mechanistic layer|hyperpage}{156}
+\indexentry{phenomenological layer|hyperpage}{156}
+\indexentry{operationalisation|hyperpage}{156}
 \indexentry{empirical risk|hyperpage}{159}
-\indexentry{PAC learning|hyperpage}{170}
-\indexentry{model-free learning|hyperpage}{171}
-\indexentry{representation scheme|hyperpage}{172}
-\indexentry{representation size|hyperpage}{173}
-\indexentry{noise|hyperpage}{180}
-\indexentry{ERC|hyperpage}{185}
-\indexentry{Rademacher variables|hyperpage}{185}
-\indexentry{Rademacher complexity|hyperpage}{185}
-\indexentry{growth function|hyperpage}{190}
-\indexentry{halfspace|hyperpage}{191}
-\indexentry{shattering|hyperpage}{192}
-\indexentry{VC-dimension|hyperpage}{193}
-\indexentry{convex hull|hyperpage}{195}
-\indexentry{Caratheodory theorem|hyperpage}{196}
-\indexentry{Radon's theorem|hyperpage}{197}
-\indexentry{Sauer's lemma|hyperpage}{199}
-\indexentry{neural vacancy path|hyperpage}{207}
-\indexentry{brain lateralization|hyperpage}{208}
-\indexentry{dendrites|hyperpage}{208}
-\indexentry{axon|hyperpage}{208}
-\indexentry{synapse|hyperpage}{208}
-\indexentry{neuroglia|hyperpage}{208}
-\indexentry{Reticular Theory|hyperpage}{210}
-\indexentry{Neural Doctrine|hyperpage}{211}
-\indexentry{heliocentric topology|hyperpage}{213}
-\indexentry{layer|hyperpage}{214}
-\indexentry{rogue class|hyperpage}{215}
-\indexentry{input unit|hyperpage}{216}
-\indexentry{mechanical unit|hyperpage}{216}
-\indexentry{output unit|hyperpage}{216}
-\indexentry{minimized structure|hyperpage}{216}
-\indexentry{$\mathcal  {N}_{0}$ simplex|hyperpage}{217}
-\indexentry{$\mathbb  {R}$ standard neuron.|hyperpage}{217}
-\indexentry{standard class|hyperpage}{217}
-\indexentry{ReLU|hyperpage}{219}
-\indexentry{single chaining|hyperpage}{219}
-\indexentry{neuron chaining|hyperpage}{219}
-\indexentry{$\mathcal  {N}_{1}$ simplex|hyperpage}{221}
-\indexentry{inner product space|hyperpage}{231}
-\indexentry{linear functional|hyperpage}{232}
-\indexentry{dual space|hyperpage}{232}
-\indexentry{eigenfunction|hyperpage}{234}
-\indexentry{commutator|hyperpage}{235}
-\indexentry{adjoint operator|hyperpage}{235}
-\indexentry{Hermitian operator|hyperpage}{236}
-\indexentry{skew-adjoint|hyperpage}{236}
-\indexentry{self-adjoint|hyperpage}{236}
-\indexentry{modelling problem|hyperpage}{251}
-\indexentry{cardinal pre-structural|hyperpage}{256}
-\indexentry{cardinality space|hyperpage}{260}
-\indexentry{ambiance space|hyperpage}{260}
-\indexentry{encoding space|hyperpage}{260}
-\indexentry{cross-model match|hyperpage}{261}
-\indexentry{Oracle separation|hyperpage}{261}
-\indexentry{outer typing|hyperpage}{283}
-\indexentry{polynomial coefficient|hyperpage}{330}
-\indexentry{polynomial root|hyperpage}{330}
-\indexentry{complex number|hyperpage}{331}
-\indexentry{integral domain|hyperpage}{332}
-\indexentry{minimal polynomial|hyperpage}{332}
-\indexentry{scaled Hyperbolic Tangent|hyperpage}{356}
+\indexentry{generalization risk|hyperpage}{159}
+\indexentry{hypothesis class|hyperpage}{162}
+\indexentry{empirical risk|hyperpage}{163}
+\indexentry{PAC learning|hyperpage}{174}
+\indexentry{model-free learning|hyperpage}{175}
+\indexentry{representation scheme|hyperpage}{176}
+\indexentry{representation size|hyperpage}{177}
+\indexentry{noise|hyperpage}{184}
+\indexentry{ERC|hyperpage}{189}
+\indexentry{Rademacher variables|hyperpage}{189}
+\indexentry{Rademacher complexity|hyperpage}{189}
+\indexentry{growth function|hyperpage}{194}
+\indexentry{halfspace|hyperpage}{195}
+\indexentry{shattering|hyperpage}{196}
+\indexentry{VC-dimension|hyperpage}{197}
+\indexentry{convex hull|hyperpage}{199}
+\indexentry{Caratheodory theorem|hyperpage}{200}
+\indexentry{Radon's theorem|hyperpage}{201}
+\indexentry{Sauer's lemma|hyperpage}{203}
+\indexentry{neural vacancy path|hyperpage}{211}
+\indexentry{brain lateralization|hyperpage}{212}
+\indexentry{dendrites|hyperpage}{212}
+\indexentry{axon|hyperpage}{212}
+\indexentry{synapse|hyperpage}{212}
+\indexentry{neuroglia|hyperpage}{212}
+\indexentry{Reticular Theory|hyperpage}{214}
+\indexentry{Neural Doctrine|hyperpage}{215}
+\indexentry{heliocentric topology|hyperpage}{217}
+\indexentry{layer|hyperpage}{218}
+\indexentry{rogue class|hyperpage}{219}
+\indexentry{input unit|hyperpage}{220}
+\indexentry{mechanical unit|hyperpage}{220}
+\indexentry{output unit|hyperpage}{220}
+\indexentry{minimized structure|hyperpage}{220}
+\indexentry{$\mathcal  {N}_{0}$ simplex|hyperpage}{221}
+\indexentry{$\mathbb  {R}$ standard neuron.|hyperpage}{221}
+\indexentry{standard class|hyperpage}{221}
+\indexentry{ReLU|hyperpage}{223}
+\indexentry{single chaining|hyperpage}{223}
+\indexentry{neuron chaining|hyperpage}{223}
+\indexentry{$\mathcal  {N}_{1}$ simplex|hyperpage}{225}
+\indexentry{inner product space|hyperpage}{235}
+\indexentry{linear functional|hyperpage}{236}
+\indexentry{dual space|hyperpage}{236}
+\indexentry{eigenfunction|hyperpage}{238}
+\indexentry{commutator|hyperpage}{239}
+\indexentry{adjoint operator|hyperpage}{239}
+\indexentry{Hermitian operator|hyperpage}{240}
+\indexentry{skew-adjoint|hyperpage}{240}
+\indexentry{self-adjoint|hyperpage}{240}
+\indexentry{modelling problem|hyperpage}{255}
+\indexentry{cardinal pre-structural|hyperpage}{260}
+\indexentry{cardinality space|hyperpage}{264}
+\indexentry{ambiance space|hyperpage}{264}
+\indexentry{encoding space|hyperpage}{264}
+\indexentry{cross-model match|hyperpage}{265}
+\indexentry{Oracle separation|hyperpage}{265}
+\indexentry{outer typing|hyperpage}{287}
+\indexentry{polynomial coefficient|hyperpage}{334}
+\indexentry{polynomial root|hyperpage}{334}
+\indexentry{complex number|hyperpage}{335}
+\indexentry{integral domain|hyperpage}{336}
+\indexentry{minimal polynomial|hyperpage}{336}
+\indexentry{scaled Hyperbolic Tangent|hyperpage}{360}
