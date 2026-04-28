@@ -9,14 +9,13 @@
 \contentsline {figure}{\numberline {1.6}{\ignorespaces A loose illustration of the layering principle. The lower layers do not know what is on the upper part. However, they can receive potential downstream input features, and hence work accordingly. This is the basis of \textbf {abstraction by layers}, thus stating that \textit {\color {blue!60!black}the man in the box do not know, and do not understand, anything but his circumstances and his current capability}}}{46}{figure.caption.29}%
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces An illustration of a vector in two-dimensional vector form in endpoints representation, and directional-magnitude representation.}}{70}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The \textbf {parallelogram law} for vector addition of two vectors $x$ and $y$ on adjacent side.}}{72}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Illustration of matrix multiplication. Taken from \cite {ANDRILLI20101}.}}{76}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Illustration of matrix multiplication for $2\times 2$ shape.}}{76}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces An illustration of a vector in two-dimensional vector form in endpoints representation, and directional-magnitude representation.}}{70}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The \textbf {parallelogram law} for vector addition of two vectors $x$ and $y$ on adjacent side.}}{72}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Illustration of matrix multiplication for $n\times n$ shape. The lower case like $2\times 2$ can be applied just the same. Taken from \href {https://siboehm.com/articles/22/Fast-MMM-on-CPU}{Simon Boehm blog page}.}}{76}{figure.caption.15}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Markov's inequality bounds the probability for the shaded region $\mathbb {P}[X\geq a]$}}{102}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Markov's inequality bounds the probability for the shaded region $\mathbb {P}[X\geq a]$}}{102}{figure.caption.31}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
@@ -93,11 +92,11 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {24.1}{\ignorespaces (a) Figure of the original organization of the biological model of the brain functions. (b) Specifically, note that it is specifically for optical case, but can be extended to others type. Furthermore, the layer between last $A$-unit and the response units, there exists a pattern of feedback loop.}}{350}{figure.caption.171}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1}{\ignorespaces The typical hard limit transfer function with fixed $a$, and fixed range for $x$ in $[0,1]$.}}{355}{figure.caption.177}%
-\contentsline {figure}{\numberline {2}{\ignorespaces The typical hard limit transfer function with variable inhibition $a$, and fixed range for $x$ in $[0,1]$.}}{356}{figure.caption.178}%
-\contentsline {figure}{\numberline {3}{\ignorespaces The typical symmetric hard limit transfer function with static inhibition $a$, and fixed range for $x$ in $[-1,+1]$. As specified, this is the normal-extended range.}}{357}{figure.caption.180}%
-\contentsline {figure}{\numberline {4}{\ignorespaces The saturating linear with linear region of $[0,1]$. A smoother variation would be something like sigmoidal functions, that is.}}{357}{figure.caption.182}%
-\contentsline {figure}{\numberline {5}{\ignorespaces The symmetric saturating linear with linear region of $[-1,1]$, a positive-negative variation of the saturating linear.}}{358}{figure.caption.183}%
-\contentsline {figure}{\numberline {6}{\ignorespaces The sigmoidal function channel}}{358}{figure.caption.185}%
-\contentsline {figure}{\numberline {7}{\ignorespaces The logarithmic sigmoidal function channel. Notice that the range of \texttt {logsigmoid} is $[-\infty , 0]$, making it somewhat weird of a choice for a transfer function.}}{359}{figure.caption.186}%
-\contentsline {figure}{\numberline {8}{\ignorespaces The hyperbolic tangent transfer function channel.}}{359}{figure.caption.188}%
+\contentsline {figure}{\numberline {1}{\ignorespaces The typical hard limit transfer function with fixed $a$, and fixed range for $x$ in $[0,1]$.}}{355}{figure.caption.38}%
+\contentsline {figure}{\numberline {2}{\ignorespaces The typical hard limit transfer function with variable inhibition $a$, and fixed range for $x$ in $[0,1]$.}}{356}{figure.caption.39}%
+\contentsline {figure}{\numberline {3}{\ignorespaces The typical symmetric hard limit transfer function with static inhibition $a$, and fixed range for $x$ in $[-1,+1]$. As specified, this is the normal-extended range.}}{357}{figure.caption.41}%
+\contentsline {figure}{\numberline {4}{\ignorespaces The saturating linear with linear region of $[0,1]$. A smoother variation would be something like sigmoidal functions, that is.}}{357}{figure.caption.43}%
+\contentsline {figure}{\numberline {5}{\ignorespaces The symmetric saturating linear with linear region of $[-1,1]$, a positive-negative variation of the saturating linear.}}{358}{figure.caption.44}%
+\contentsline {figure}{\numberline {6}{\ignorespaces The sigmoidal function channel}}{358}{figure.caption.46}%
+\contentsline {figure}{\numberline {7}{\ignorespaces The logarithmic sigmoidal function channel. Notice that the range of \texttt {logsigmoid} is $[-\infty , 0]$, making it somewhat weird of a choice for a transfer function.}}{359}{figure.caption.47}%
+\contentsline {figure}{\numberline {8}{\ignorespaces The hyperbolic tangent transfer function channel.}}{359}{figure.caption.49}%

@@ -161,7 +161,7 @@ For vectors, there are certainly some special vectors. The \textbf{zero vector},
     \label{fig:vector1}
 \end{figure}
 
-There is a subtle detail in considering the notation for vector. One can see that the notation we used to represent vector is oddly similar to the notation used for $n$-dimensional points in an $n$-space, for example, the Euclidean space $\mathbb{R}^{3}$, which each point can be specified to be $(x,y,z)$ along each axis. Indeed, this is troublesome: if they are mixed up together, it would be difficult to distinguish the notation for coordinate system and one for the vector representation, especially in case of complex manipulation. We can offer certain solutions to this problem. The first one, is to re-interpret coordinate in a space just as similar as vectors - every point is actually a vector starting from the origin, travelling to the point itself. In such sense, a vector is considered like a path composition with respect to each axis, representing the total component path taken to specify the location of such point. Another way to think about a vector is that it is a \textit{compressed form}\index{compressed form} of two point specification - the \textit{starting point} $A_{s}$ and the \textit{endpoint} $B_{e}$, though often we would call them all together as endpoints. Then, a vector is the reduced representation for all pairs of endpoint such that, the vector is defined to be the final absolute path - or in terms of \textit{calculus of variations} sense, the shortest path - a straight line - toward the two endpoints. Any straight line, with direction that satisfies the component path from one endpoint to another is indeed, that one vector; or simply speaking. The direction is characterized by indeed, the order of the path, either from $A$ to $B$ or $B$ to $A$, and also based off their intrinsic location. In such representation, we separate the endpoints from the vectors - an endpoint has no direction and is dimensionless, stationary, while a vector specifies a path from two endpoints together, of the total difference between the two endpoints. In the end, though it is based in the interpretation of the case study, and what structures are considered. In a more advanced situation, one can also specify a point scalar as an element of a manifold, and a vector as an element of the tangent space to such manifold. 
+There is a subtle detail in considering the notation for vector. One can see that the notation we used to represent vector is oddly similar to the notation used for $n$-dimensional points in an $n$-space, for example, the Euclidean space $\mathbb{R}^{3}$, which each point can be specified to be $(x,y,z)$ along each axis. Indeed, this is troublesome: if they are mixed up together, it would be difficult to distinguish the notation for coordinate system and one for the vector representation, especially in case of complex manipulation. We can offer certain solutions to this problem. The first one, is to re-interpret coordinate in a space just as similar as vectors - every point is actually a vector starting from the origin, travelling to the point itself. In such sense, a vector is considered like a path composition with respect to each axis, representing the total component path taken to specify the location of such point. Another way to think about a vector is that it is a \textit{compressed form}\index{compressed form} of two point specification - the \textit{starting point} $A_{s}$ and the \textit{endpoint} $B_{e}$, though often we would call them all together as endpoints. Then, a vector is the reduced representation for all pairs of endpoint such that, the vector is defined to be the final absolute path - or in terms of \textit{calculus of variations} sense, the shortest path - a straight line - toward the two endpoints. Any straight line, with direction that satisfies the component path from one endpoint to another is indeed, that one vector; or simply speaking. The direction is characterized by indeed, the order of the path, either from $A$ to $B$ or $B$ to $A$, and also based off their intrinsic location. In such representation, we separate the endpoints from the vectors - an endpoint has no direction and is dimensionless, stationary, while a vector specifies a path from two endpoints together, of the total difference between the two endpoints. In the end, though it is based in the interpretation of the case study, and what structures are considered. In a more advanced situation, one can also specify a point scalar as an element of a manifold, and a vector as an element of the tangent space to such manifold. Though the topic of manifold is far and wide, and can be found in later section, elucidating such topic on self-study might serve you well, especially to preemptively see the increased sophistry our approach can reach, given such context. 
 
 Two vectors are equal if the components used to specify them are the same. Geometrically, it means they have the same magnitude and direction. \footnote{Settle aside the expression of component for a vector, usually, we can get a lot of the properties and actions on vector using only their intrinsic, geometrical interpretation, that is, the magnitude-direction expression for a vector (as illustrated in Figure~\ref{fig:vector1}). Previously, we have said that anything of certain magnitude and direction, or path, between two endpoints, is the same vector. As we are concerned of here, it is true that only the magnitude and direction of the vector are significant; hence consequently, we regard vectors with the same magnitude and direction as being equal irrespective of their position. This is true for the geometry of a vector, as we guarantee.}
 \begin{definition}
@@ -319,9 +319,23 @@ Matrix is the special type of array that is used in construction of linear algeb
     \end{equation}
 \end{definition}
 
-The bracket is pretty much cosmetic, though, to distinguish from the use of array and matrix, we will use $[\cdot]$ for array and $(\cdot)$ for matrices. 
-
-Given such, what can we do with matrices? First, we can \textit{add} them together; given $A,B$ being two matrices, then $A+B$, the \textit{matrix addition} is defined as: 
+The bracket is pretty much cosmetic, though, to distinguish from the use of array and matrix, we will use $[\cdot]$ for array and $(\cdot)$ for matrices. We can also see why we choose to write it as such, per a very easy example. In retrospect, it will look like that we extend from vectors, into matrix, 
+\begin{equation}
+    \lambda\begin{pmatrix}
+        x_{1}\\
+        x_{2}\\
+        \vdots\\
+        x_{n}\\
+    \end{pmatrix}
+    \to 
+    \begin{pmatrix}
+            a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
+            a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
+            \vdots & \vdots & \vdots & \ddots & \vdots \\
+            a_{m1} & a_{m2} & a_{m3} & \dots & a_{mn}\\
+        \end{pmatrix}
+\end{equation}
+even though such correspondence is often rather more complicated, and it is not really seems to be a direct expansion, aside from entry freedom. That said, the issue would have to be addressed later on, because of said being one of the many discrepancies that gives confusion on the different conventions on how to write objects in an encoding language, in which proliferation, for example of which will be later discussed, \textit{column vector} or \textit{row vector} inside a non-trivial $(m,n)$ matrix full form, are artefact, not like they are inherently a property of the system itself. Then, given such, what can we do with matrices? First, we can \textit{add} them together; given $A,B$ being two matrices, then $A+B$, the \textit{matrix addition} is defined as: 
 \begin{equation}
 A + B = \begin{pmatrix}
             a_{11} + b_{11} & a_{12} + b_{12} & a_{13} + b_{13}& \dots & a_{1n}+ b_{1n}\\
@@ -378,17 +392,51 @@ Finally, we have one more important operation to be defined here at last. For tw
 where \begin{equation}
     c_{ik} = \sum_{j<n} a_{ij}b_{jk}
 \end{equation}
-For certain reason in the theory, or \textbf{matrix theory} and linear algebra in general, the matrix multiplication is explicitly defined only for such shape configuration. Otherwise, the matrix multiplication simply does not exist.
+For certain reason in the theory, or \textbf{matrix theory} and linear algebra in general, the matrix multiplication is explicitly defined only for such shape configuration. Otherwise, the matrix multiplication simply does not exist. From what we can see of illustration of matrix multiplication from \cite{ANDRILLI20101}, we have, this bunch:
+%\begin{figure}[htb]
+%    \centering
+%    \includegraphics[width=0.4\textwidth]{img/jjgh.jpg}
+%    \caption{Illustration of matrix multiplication. Taken %from \cite{ANDRILLI20101}.}
+%    \label{fig:matmuls}
+%\end{figure}
+\begin{equation}
+\underbrace{
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} & \cdots & a_{1n} \\
+a_{21} & a_{22} & a_{23} & \cdots & a_{2n} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+a_{i1} & a_{i2} & a_{i3} & \cdots & a_{in} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m2} & a_{m3} & \cdots & a_{mn}
+\end{bmatrix}
+}_{m \times n \text{ matrix } A}
+\;
+\underbrace{
+\begin{bmatrix}
+b_{11} & b_{12} & \cdots & b_{1j} & \cdots & b_{1p} \\
+b_{21} & b_{22} & \cdots & b_{2j} & \cdots & b_{2p} \\
+b_{31} & b_{32} & \cdots & b_{3j} & \cdots & b_{3p} \\
+\vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+b_{n1} & b_{n2} & \cdots & b_{nj} & \cdots & b_{np}
+\end{bmatrix}
+}_{n \times p \text{ matrix } B}
+=
+\underbrace{
+\begin{bmatrix}
+c_{11} & c_{12} & \cdots & c_{1j} & \cdots & c_{1p} \\
+c_{21} & c_{22} & \cdots & c_{2j} & \cdots & c_{2p} \\
+\vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+c_{i1} & c_{i2} & \cdots & c_{ij} & \cdots & c_{ip} \\
+\vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+c_{m1} & c_{m2} & \cdots & c_{mj} & \cdots & c_{mp}
+\end{bmatrix}
+}_{m \times p \text{ matrix } C}
+\end{equation}
+for the array matrix form. Note that here, we can see that for multiplication, it basically \textbf{combines multiple entries'} aggregation together, that is why there exists the formula for $c_{ik}$ in such $a_{ij}b_{jk}$ is summed together. Interestingly, a consequence of that is then the invariance of ordering for any multiplication steps, and thus for comatrix and additional determinant computation, where one has a similar form of operation in such respect. 
 \begin{figure}[htb]
     \centering
-    \includegraphics[width=0.4\textwidth]{img/jjgh.jpg}
-    \caption{Illustration of matrix multiplication. Taken from \cite{ANDRILLI20101}.}
-    \label{fig:matmuls}
-\end{figure}
-\begin{figure}[htb]
-    \centering
-    \includegraphics[width=0.4\textwidth]{img/matmulss.png}
-    \caption{Illustration of matrix multiplication for $2\times 2$ shape.}
+    \includegraphics[width=0.6\textwidth]{img/matmulss.png}
+    \caption{Illustration of matrix multiplication for $n\times n$ shape. The lower case like $2\times 2$ can be applied just the same. Taken from \href{https://siboehm.com/articles/22/Fast-MMM-on-CPU}{Simon Boehm blog page}.}
     \label{fig:matmuls2}
 \end{figure}
 \subsection{Special matrices, operations, and properties}

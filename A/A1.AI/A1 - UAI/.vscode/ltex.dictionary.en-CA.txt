@@ -2,3 +2,5 @@ idiomic
 frequentist
 priori
 quasiformal
+artefact
+comatrix
